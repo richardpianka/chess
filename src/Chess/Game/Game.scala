@@ -5,7 +5,7 @@ import Colors._
 class Game(playerFactoryA: PlayerFactory, playerFactoryB: PlayerFactory) {
   val board = new Board
 
-  private[this] val (playerWhite, playerBlack) = (playerFactoryA.get(board, White), playerFactoryB.get(board, Black))
+  val playerWhite = playerFactoryA.get(board, White)
 
-  val players: Map[Color, Player] = Map(White -> playerWhite, Black -> playerBlack)
+  val playerBlack = playerFactoryB.get(board, Black)
 }

@@ -10,7 +10,7 @@ import Figurines._
 class Board {
   private[this] val pieces: HashMap[Coordinate, Piece] = HashMap[Coordinate, Piece]()
 
-  def allPieces = pieces.values
+  def allPieces = pieces.keys.map(x => x -> pieces.get(x))
 
   pieces.put(Coordinate("A8"), Piece(Black, Rook))
   pieces.put(Coordinate("B8"), Piece(Black, Knight))

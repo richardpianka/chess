@@ -1,6 +1,5 @@
 package Chess.Game
 
-import Chess.Game._
 import org.junit.Test
 
 class FigurineTests {
@@ -10,14 +9,14 @@ class FigurineTests {
     val start = Coordinate("D5")
 
     val whitePawn = Piece(Colors.White, Figurines.Pawn)
-    whitePawn.setMoved()
+    whitePawn.hasMoved.actuate()
     val whiteMoves = whitePawn.getMoves(start, board)
     val whiteExpected = Set(Move(whitePawn, start, Coordinate("D6")))
 
     assert(whiteMoves.toSet == whiteExpected)
 
     val blackPawn = Piece(Colors.Black, Figurines.Pawn)
-    blackPawn.setMoved()
+    blackPawn.hasMoved.actuate()
     val blackMoves = blackPawn.getMoves(start, board)
     val blackExpected = Set(Move(blackPawn, start, Coordinate("D4")))
 

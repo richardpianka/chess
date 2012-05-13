@@ -1,8 +1,6 @@
-package Chess
-package Game
+package Chess.Game
 
 import Directions._
-import Common.LinearBoolean._
 
 trait Figurine {
   def name: String
