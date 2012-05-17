@@ -7,7 +7,7 @@ abstract class Player(val board: Board, val color: Color) {
 
   val movablePieces = allPieces.filterNot(x => x._2.get.getMoves(x._1, board).isEmpty).toSeq
 
-  def getNextMove: Move
+  def nextMove: Move
 }
 
 trait PlayerFactory {

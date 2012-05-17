@@ -4,7 +4,7 @@ import org.junit.Test
 
 class FigurineTests {
   @Test
-  def Pawn {
+  def Pawn() {
     val board = new Board
     val start = Coordinate("D5")
 
@@ -31,7 +31,7 @@ class FigurineTests {
   }
 
   @Test
-  def Rook {
+  def Rook() {
     val board = new Board
     val start = Coordinate("D5")
 
@@ -53,7 +53,7 @@ class FigurineTests {
   }
 
   @Test
-  def Knight {
+  def Knight() {
     val board = new Board
     val start = Coordinate("D5")
 
