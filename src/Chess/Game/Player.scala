@@ -1,7 +1,7 @@
 package Chess.Game
 
 abstract class Player(val board: Board, val color: Color) {
-  val allPieces = board.allPieces.filterNot(_._2.isEmpty)
+  val allPieces = board.playablePieces.filterNot(_._2.isEmpty)
                                  .filter(_._2.get.color == color)
                                  .toSeq
 

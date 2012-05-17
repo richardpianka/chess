@@ -1,40 +1,43 @@
 package Chess.Game
 
-import collection.mutable.HashMap
 import Colors._
 import Figurines._
+import collection.mutable.{ListBuffer, HashMap}
 
 /**
  * Represents a chess board
  */
 class Board {
-  private[this] val pieces: HashMap[Coordinate, Piece] = HashMap[Coordinate, Piece]()
+  private[this] val figurineOrder = Seq(Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook)
 
-  def allPieces = pieces.keys.map(x => x -> pieces.get(x))
+  private[this] val pieces = HashMap[Coordinate, Piece]()
 
-  pieces.put(Coordinate("A8"), Piece(Black, Rook))
-  pieces.put(Coordinate("B8"), Piece(Black, Knight))
-  pieces.put(Coordinate("C8"), Piece(Black, Bishop))
-  pieces.put(Coordinate("D8"), Piece(Black, Queen))
-  pieces.put(Coordinate("E8"), Piece(Black, King))
-  pieces.put(Coordinate("F8"), Piece(Black, Bishop))
-  pieces.put(Coordinate("G8"), Piece(Black, Knight))
-  pieces.put(Coordinate("H8"), Piece(Black, Rook))
+  private[this] val captured = ListBuffer[Piece]()
 
-  for (file <- 'A' to 'H')
-    pieces.put(Coordinate(File(file), Rank('7')), Piece(Colors.Black, Figurines.Pawn))
+  private[this] def initialize(color: Color, backRow: Rank, frontRow: Rank) {
+    for (val placement <- File.all.zip(figurineOrder))
+      pieces.put(Coordinate(placement._1, backRow), Piece(color, placement._2))
 
-  pieces.put(Coordinate("A1"), Piece(White, Rook))
-  pieces.put(Coordinate("B1"), Piece(White, Knight))
-  pieces.put(Coordinate("C1"), Piece(White, Bishop))
-  pieces.put(Coordinate("D1"), Piece(White, Queen))
-  pieces.put(Coordinate("E1"), Piece(White, King))
-  pieces.put(Coordinate("F1"), Piece(White, Bishop))
-  pieces.put(Coordinate("G1"), Piece(White, Knight))
-  pieces.put(Coordinate("H1"), Piece(White, Rook))
+    for (file <- File.all)
+      pieces.put(Coordinate(file, frontRow), Piece(color, Pawn))
+  }
 
-  for (file <- 'A' to 'H')
-    pieces.put(Coordinate(File(file), Rank('2')), Piece(Colors.White, Figurines.Pawn))
+  initialize(White, Rank('1'), Rank('2'))
+  initialize(Black, Rank('8'), Rank('7'))
+
+  /**
+   * Every piece that is still on the board
+   *
+   * @return The sequence of all pieces on the board
+   */
+  def playablePieces = pieces.keys.map(x => x -> pieces.get(x))
+
+  /**
+   * Every piece that has been captured during play
+   *
+   * @return The sequence of all captured pieces
+   */
+  def capturedPieces = captured.toSeq
 
   /**
    * Gets a piece or null by a coordinate of this board
@@ -47,6 +50,9 @@ class Board {
 
   def makeMove(move: Move) {
     //TODO: add additional checks here (is the piece on the board, is the piece in the starting position, is the new position in it's moves, etc.)
+    if (pieces.contains(move.end)) {
+      captured += pieces(move.end)
+    }
     pieces.put(move.end, move.piece)
     pieces.remove(move.start)
     move.piece.hasMoved.actuate()
@@ -69,6 +75,6 @@ class Board {
       builder append "\n"
     }
 
-    builder.result
+    builder.result()
   }
 }

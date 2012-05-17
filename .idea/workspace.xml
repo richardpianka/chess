@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5f92ca2-5206-45be-854c-37f5de7e685c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chess/Common/Event.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Game/Game.scala" afterPath="$PROJECT_DIR$/src/Chess/Game/Game.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Game/Board.scala" afterPath="$PROJECT_DIR$/src/Chess/Game/Board.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Game/Player.scala" afterPath="$PROJECT_DIR$/src/Chess/Game/Player.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala" afterPath="$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Chess/Game/BoardTests.scala" afterPath="$PROJECT_DIR$/test/Chess/Game/BoardTests.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Chess/Game/FigurineTests.scala" afterPath="$PROJECT_DIR$/test/Chess/Game/FigurineTests.scala" />
     </list>
     <ignored path="Chess.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +66,7 @@
       <file leaf-file-name="RandomPlayer.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerTests.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PlayerTests.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="249" selection-end="249" vertical-scroll-proportion="0.53825855">
+            <state line="12" column="15" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#20#41#0" expanded="true" />
               </folding>
@@ -137,17 +133,19 @@
       <file leaf-file-name="Player.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chess/Game/Player.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+            <state line="14" column="1" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Board.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Chess/Game/Board.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="77" column="20" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.58196723">
+              <folding>
+                <element signature="e#20#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/Chess/Game/Piece.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Common/LinearBoolean.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Figurine.scala" />
-        <option value="$PROJECT_DIR$/src/Chess/Game/Board.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Players/Random.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Player.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala" />
@@ -181,6 +178,7 @@
         <option value="$PROJECT_DIR$/test/Chess/Game/FigurineTests.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Game.scala" />
         <option value="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" />
+        <option value="$PROJECT_DIR$/src/Chess/Game/Board.scala" />
       </list>
     </option>
   </component>
@@ -540,29 +538,7 @@
       <recent name="Chess.Game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTests.Random">
-    <configuration default="false" name="BoardTests" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Chess" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Chess.Test.Game" />
-      <option name="MAIN_CLASS_NAME" value="Chess.Test.Game.BoardTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in Chess">
     <configuration default="false" name="FigurineTests.Knight" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Chess" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -660,6 +636,28 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in Chess" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Chess" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -781,11 +779,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FigurineTests.Knight" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FigurineTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FigurineTests.Pawn" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTests.Random" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FigurineTests.Knight" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FigurineTests" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FigurineTests.Pawn" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTests.Random" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in Chess" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -825,7 +823,11 @@
       <created>1337134513808</created>
       <updated>1337134513808</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Got a random player working.">
+      <created>1337217152047</created>
+      <updated>1337217152047</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -911,7 +913,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got a random player working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored the board piece initialization code." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -927,6 +929,7 @@
     <MESSAGE value="Got everything compiling again.  &quot;Finished&quot; the player &amp; abstract player factory traits.  Wrote the first player; s/he just does random moves (untested)." />
     <MESSAGE value="Nothing visible in the diff...committing anyways." />
     <MESSAGE value="Got a random player working." />
+    <MESSAGE value="Refactored the board piece initialization code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -968,7 +971,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Game/Player.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+        <state line="14" column="1" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -980,14 +983,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Board.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1024,9 +1020,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="249" selection-end="249" vertical-scroll-proportion="0.53825855">
+        <state line="12" column="15" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#20#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Board.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="20" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.58196723">
+          <folding>
+            <element signature="e#20#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

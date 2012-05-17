@@ -6,7 +6,7 @@ import util.Random
 class RandomPlayer extends PlayerFactory {
   def get(board: Board, color: Color) = new Player(board, color) {
     def nextMove: Move = {
-      val piecesThatCanMove = board.allPieces.filterNot(_._2.isEmpty) // squares where there is a piece
+      val piecesThatCanMove = board.playablePieces.filterNot(_._2.isEmpty) // squares where there is a piece
                                              .filter(_._2.get.color == color) // where that piece is our color
                                              .filterNot(x => x._2.get.getMoves(x._1, board).isEmpty) // which can move
                                              .toSeq
