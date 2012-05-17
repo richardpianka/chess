@@ -1,5 +1,12 @@
 package Chess.Game
 
+/**
+ * Represents a direction in which a piece could move
+ *
+ * @param name The name of the direction
+ * @param rank The displacement of files in this direction
+ * @param file The displacement of ranks in this direction
+ */
 final case class Direction(name: String, rank: Int, file: Int)
 
 object Directions {

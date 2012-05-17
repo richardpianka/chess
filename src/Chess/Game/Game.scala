@@ -3,7 +3,13 @@ package Chess.Game
 import Colors._
 import collection.immutable.HashMap
 
-class Game(playerFactoryA: PlayerFactory, playerFactoryB: PlayerFactory) {
+/**
+ * A chess game.  Handles player movement and executes the game loop until the game has ended.
+ *
+ * @param playerFactoryWhite A factory to produce the white player
+ * @param playerFactoryBlack A factory to produce the black player
+ */
+class Game(playerFactoryWhite: PlayerFactory, playerFactoryBlack: PlayerFactory) {
   private[this] var turn = White
 
   private[this] def changeTurn() {
@@ -12,15 +18,15 @@ class Game(playerFactoryA: PlayerFactory, playerFactoryB: PlayerFactory) {
 
   val board = new Board
 
-  val players = HashMap(White -> playerFactoryA.get(board, White),
-                        Black -> playerFactoryB.get(board, Black))
+  val players = HashMap(White -> playerFactoryWhite.get(board, White),
+                        Black -> playerFactoryBlack.get(board, Black))
 
   def play() {
     while (true) {
       board.makeMove(players(turn).nextMove)
       changeTurn()
-      println("----------------")
       print(board.toString)
+      println("----------------")
     }
   }
 }

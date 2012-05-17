@@ -13,9 +13,25 @@ final case class Rank(notation: Char) {
 }
 
 object Rank {
+  /**
+   * Ranks 1..8
+   *
+   * @return A squence of ranks 1..8
+   */
   def all: Seq[Rank] = minimum to maximum map (Rank(_))
 
+  /**
+   * The lowest rank
+   *
+   * @return The lowest rank
+   */
   def minimum: Char = '1'
+
+  /**
+   * The highest rank
+   *
+   * @return The highest rank
+   */
   def maximum: Char = '8'
 }
 
@@ -32,9 +48,25 @@ final case class File(notation: Char) {
 }
 
 object File {
+  /**
+   * Files A..H
+   *
+   * @return A sequence of files A..H
+   */
   def all: Seq[File] = minimum to maximum map (File(_))
 
+  /**
+   * The lowest file
+   *
+   * @return The lowest file
+   */
   def minimum: Char = 'A'
+
+  /**
+   * The highest file
+   *
+   * @return The highest file
+   */
   def maximum: Char = 'H'
 }
 
@@ -77,13 +109,12 @@ final case class Coordinate(file: File, rank: Rank) {
       case _: Exception => return Seq()
     }
 
-    builder.result
+    builder.result()
   }
 
   /**
    * Returns a square on the board in the direction from this coordinate
    *
-   * TODO: turn this contract into something other than a collection
    * @param direction The direction
    * @param board The board
    * @return The square
@@ -102,7 +133,7 @@ final case class Coordinate(file: File, rank: Rank) {
       case _: Exception => return None
     }
 
-    return None
+    None
   }
 }
 

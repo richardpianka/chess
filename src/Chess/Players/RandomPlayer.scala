@@ -3,6 +3,9 @@ package Chess.Players
 import Chess.Game._
 import util.Random
 
+/**
+ * Picks a random possible move, and makes it
+ */
 class RandomPlayer extends PlayerFactory {
   def get(board: Board, color: Color) = new Player(board, color) {
     def nextMove: Move = {

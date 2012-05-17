@@ -2,11 +2,32 @@ package Chess.Game
 
 import Directions._
 
+/**
+ * A type of chess piece
+ */
 trait Figurine {
+  /**
+   * The name of the figurine
+   *
+   * @return The name of the figurine
+   */
   def name: String
 
+  /**
+   * The English single-character notation for the figurine
+   *
+   * @return The English single-character notation for the figurine
+   */
   def notation: Char = name(0)
 
+  /**
+   * Gets available moves for this figurine from a given coordinate on a specific board
+   *
+   * @param coordinate The coordinate from which to move
+   * @param piece The actual piece representing this figurine
+   * @param board The board on which to move
+   * @return The list of legal moves from the given coordinate
+   */
   def getMoves(coordinate: Coordinate, piece: Piece, board: Board): Seq[Move]
 
   protected def inDirections(directions: Seq[Direction], coordinate: Coordinate, piece: Piece, board: Board): Seq[Coordinate] = {

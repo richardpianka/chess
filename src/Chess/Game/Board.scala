@@ -48,6 +48,11 @@ class Board {
   def at(coordinate: Coordinate): Option[Piece] =
     if (pieces.contains(coordinate)) Some(pieces(coordinate)) else None
 
+  /**
+   * Applies a move to the board, and will automatically handle captures
+   *
+   * @param move The move to be applied
+   */
   def makeMove(move: Move) {
     //TODO: add additional checks here (is the piece on the board, is the piece in the starting position, is the new position in it's moves, etc.)
     if (pieces.contains(move.end)) {

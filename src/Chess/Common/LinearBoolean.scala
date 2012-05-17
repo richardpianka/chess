@@ -1,11 +1,24 @@
 package Chess.Common
 
+/**
+ * A boolean that can only be moved from false to true, and never back again
+ */
 final class LinearBoolean {
   private[this] var _value: Boolean = false
 
+  /**
+   * The current value of the boolean
+   *
+   * @return The current value of the boolean
+   */
   def value = _value
 
-  def actuate() = _value = true
+  /**
+   * Sets the boolean to true
+   */
+  def actuate() {
+    _value = true
+  }
 }
 
 object LinearBoolean {
