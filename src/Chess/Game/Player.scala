@@ -17,6 +17,11 @@ abstract class Player(val board: Board, val color: Color) {
   /**
    * Every piece that has been captured
    */
+  val capturedPieces = board.capturedPieces.filter(_.color == color).toSeq
+
+  /**
+   * Every piece that has been captured
+   */
   val movablePieces = playablePieces.filterNot(x => x._2.get.getMoves(x._1, board).isEmpty).toSeq
 
   /**
