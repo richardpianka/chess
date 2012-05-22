@@ -18,7 +18,7 @@ class Game(playerFactoryWhite: PlayerFactory, playerFactoryBlack: PlayerFactory)
   }
 
   private[this] def winner: Option[Player] = {
-    board.capturedPieces.filter(_.figurine == King).map(x => players(x.color)).headOption
+    board.capturedPieces.filter(_.figurine == King).map(x => players(x.color.opposite)).headOption
   }
 
   val board = new Board
@@ -41,8 +41,10 @@ class Game(playerFactoryWhite: PlayerFactory, playerFactoryBlack: PlayerFactory)
 
       board.makeMove(players(turn).nextMove)
       changeTurn()
-      print(board.toString)
       println("----------------")
+      println(turn.name)
+      println("----------------")
+      print(board.toString)
     }
 
     None

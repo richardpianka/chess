@@ -10,10 +10,6 @@ import collection.mutable.{ListBuffer, HashMap}
 class Board {
   private[this] val figurineOrder = Seq(Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook)
 
-  private[this] val pieces = HashMap[Coordinate, Piece]()
-
-  private[this] val captured = ListBuffer[Piece]()
-
   private[this] def initialize(color: Color, backRow: Rank, frontRow: Rank) {
     for (val placement <- File.all.zip(figurineOrder))
       pieces.put(Coordinate(placement._1, backRow), Piece(color, placement._2))
@@ -22,15 +18,41 @@ class Board {
       pieces.put(Coordinate(file, frontRow), Piece(color, Pawn))
   }
 
+  private val pieces = HashMap[Coordinate, Piece]()
+
+  private val captured = ListBuffer[Piece]()
+
   initialize(White, Rank('1'), Rank('2'))
   initialize(Black, Rank('8'), Rank('7'))
+
+  private[this] def copy: Board = {
+    val board = new Board
+
+    board.pieces.clear()
+    board.captured.clear()
+
+    for (val piece <- pieces)
+      board.pieces.put(piece._1, piece._2)
+
+    board.captured ++ captured
+
+    board
+  }
 
   /**
    * Every piece that is still on the board
    *
    * @return The sequence of all pieces on the board
    */
-  def playablePieces = pieces.keys.map(x => x -> pieces.get(x))
+  def playablePieces = pieces.keys.map(x => x -> pieces.get(x).get)
+
+  /**
+   * Every piece that has available moves
+   *
+   * @return Every piece that has available moves
+   */
+  def movablePieces(color: Color) = playablePieces.filterNot(x => x._2.getMoves(x._1, this).isEmpty)
+                                                  .filter(_._2.color == color)
 
   /**
    * Every piece that has been captured during play
@@ -61,6 +83,13 @@ class Board {
     pieces.put(move.end, move.piece)
     pieces.remove(move.start)
     move.piece.hasMoved.actuate()
+  }
+
+  def makeMoveNewBoard(move: Move): Board = {
+    val board = copy
+
+    board.makeMove(move)
+    board
   }
 
   override def toString = {

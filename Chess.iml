@@ -20,7 +20,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/Library/junit/junit-4.10.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Library/jUnit/junit-4.10.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

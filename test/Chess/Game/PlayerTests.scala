@@ -1,7 +1,8 @@
 package Chess.Game
 
 import org.junit.Test
-import Chess.Players.RandomPlayer
+import Chess.Players._
+import Colors._
 
 class PlayerTests {
   @Test
@@ -11,5 +12,16 @@ class PlayerTests {
 
     val game = new Game(playerA, playerB)
     game.play()
+  }
+
+  @Test
+  def Minimax() {
+    val playerA = new MinimaxPlayer
+    val playerB = new RandomPlayer
+
+    val game = new Game(playerA, playerB)
+    val winner = game.play()
+
+    assert(winner.isDefined && winner.get.color == White)
   }
 }
