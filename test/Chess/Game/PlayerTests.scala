@@ -24,4 +24,15 @@ class PlayerTests {
 
     assert(winner.isDefined && winner.get.color == White)
   }
+
+  @Test
+  def AlphaBeta() {
+    val playerA = new AlphaBetaPlayer
+    val playerB = new MinimaxPlayer
+
+    val game = new Game(playerA, playerB)
+    val winner = game.play()
+
+    assert(winner.isDefined && winner.get.color == White)
+  }
 }

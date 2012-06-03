@@ -31,14 +31,14 @@ class MinimaxPlayer extends PlayerFactory {
         val newBoard = board.makeMoveNewBoard(move)
         val children = movementTree(newBoard, color.opposite, levels - 1)
         val scores = children.map(_.value.score)
-        val score = if (children.isEmpty) evaluate(newBoard)
+        val score = if (children.isEmpty) evaluate(newBoard, color)
                     else minOrMax(scores, this.color == color)
 
         new Node(new MoveNode(move, newBoard, score), children)
       }
     }
 
-    private[this] def evaluate(board: Board) = board.playablePieces
+    private[this] def evaluate(board: Board, color: Color) = board.playablePieces
                                                     .map(x => scoring(x._2.figurine) * scoreSign(x._2.color))
                                                     .sum
 

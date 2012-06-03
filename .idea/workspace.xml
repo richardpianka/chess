@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5f92ca2-5206-45be-854c-37f5de7e685c" name="Default" comment="Added a win condition to the game.">
+    <list default="true" id="c5f92ca2-5206-45be-854c-37f5de7e685c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chess.iml" afterPath="$PROJECT_DIR$/Chess.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Common/Node.scala" afterPath="$PROJECT_DIR$/src/Chess/Common/Node.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Game/Board.scala" afterPath="$PROJECT_DIR$/src/Chess/Game/Board.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Game/Game.scala" afterPath="$PROJECT_DIR$/src/Chess/Game/Game.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Game/Player.scala" afterPath="$PROJECT_DIR$/src/Chess/Game/Player.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala" afterPath="$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala" afterPath="$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" afterPath="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" />
     </list>
     <ignored path="Chess.iws" />
@@ -68,55 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MinimaxPlayer.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala">
+      <file leaf-file-name="AlphaBetaPlayer.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="106" selection-start="741" selection-end="741" vertical-scroll-proportion="0.38680318">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomPlayer.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chess/Game/Player.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="56" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerTests.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="11" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chess/Game/Game.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chess/Game/Board.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="9" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.0">
+            <state line="46" column="43" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.36746302">
               <folding />
             </state>
           </provider>
@@ -135,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/Chess/Game/FigurineTests.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Color.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Direction.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Move.scala" />
@@ -147,9 +96,10 @@
         <option value="$PROJECT_DIR$/src/Chess/Common/Node.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Player.scala" />
-        <option value="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Game.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Board.scala" />
+        <option value="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" />
+        <option value="$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala" />
       </list>
     </option>
@@ -186,30 +136,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,136 +215,6 @@
               <option name="myItemId" value="Game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Player.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Figurine.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Direction.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coordinate.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Color.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -440,6 +236,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -470,29 +290,7 @@
       <recent name="Chess.Game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTests.Minimax">
-    <configuration default="false" name="FigurineTests" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Chess" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Chess.Game" />
-      <option name="MAIN_CLASS_NAME" value="Chess.Game.FigurineTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.PlayerTests.AlphaBeta">
     <configuration default="false" name="FigurineTests.Pawn" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Chess" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -590,6 +388,28 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PlayerTests.AlphaBeta" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Chess" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Chess.Game" />
+      <option name="MAIN_CLASS_NAME" value="Chess.Game.PlayerTests" />
+      <option name="METHOD_NAME" value="AlphaBeta" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -711,11 +531,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FigurineTests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FigurineTests.Pawn" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTests.Random" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in Chess" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTests.Minimax" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FigurineTests.Pawn" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PlayerTests.Random" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in Chess" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTests.Minimax" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTests.AlphaBeta" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -771,7 +591,11 @@
       <created>1337385697647</created>
       <updated>1337385697647</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="First whack at a minimax player, no optimization yet.  Also did some minor refactoring.">
+      <created>1337650589328</created>
+      <updated>1337650589328</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -795,27 +619,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4668874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747602" sideWeight="0.49715677" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12079102" sideWeight="0.32560706" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3156733" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49715677" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14323892" sideWeight="0.39845476" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6015453" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15125601" sideWeight="0.5540839" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44591612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3156733" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -857,7 +681,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a win condition to the game." />
+    <option name="LAST_COMMIT_MESSAGE" value="First whack at a minimax player, no optimization yet.  Also did some minor refactoring." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -876,6 +700,7 @@
     <MESSAGE value="Refactored the board piece initialization code." />
     <MESSAGE value="Added a bunch of documentation." />
     <MESSAGE value="Added a win condition to the game." />
+    <MESSAGE value="First whack at a minimax player, no optimization yet.  Also did some minor refactoring." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -885,11 +710,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Coordinate.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="11" selection-start="2769" selection-end="2769" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Common/LinearBoolean.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="17" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" />
@@ -900,91 +720,74 @@
         <state line="7" column="48" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Figurine.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="39" selection-start="4329" selection-end="4329" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Documents/Library/Scala/src/scala-library-src.jar!/scala/util/Random.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="723" selection-end="723" vertical-scroll-proportion="0.3321859">
-          <folding />
-        </state>
+        <state line="18" column="6" selection-start="723" selection-end="723" vertical-scroll-proportion="0.3321859" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Documents/Library/Scala/src/scala-library-src.jar!/scala/collection/mutable/BufferLike.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="6" selection-start="9466" selection-end="9466" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="268" column="6" selection-start="9466" selection-end="9466" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Game/Color.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17406143">
-          <folding />
-        </state>
+        <state line="9" column="23" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17406143" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Chess/Game/FigurineTests.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="15" selection-start="985" selection-end="985" vertical-scroll-proportion="0.3322091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Piece.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="72" selection-end="72" vertical-scroll-proportion="0.07736064">
-          <folding />
-        </state>
+        <state line="37" column="15" selection-start="985" selection-end="985" vertical-scroll-proportion="0.3322091" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Common/Node.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="50" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="50" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Game/Player.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="56" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="56" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="29" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Game/Game.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="46" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Figurine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="6" selection-start="711" selection-end="711" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Piece.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="67" selection-start="181" selection-end="181" vertical-scroll-proportion="0.096700795" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Game/Board.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="9" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="103" column="9" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.576324" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="34" selection-start="357" selection-end="357" vertical-scroll-proportion="0.36746302" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="106" selection-start="741" selection-end="741" vertical-scroll-proportion="0.38680318">
+        <state line="44" column="50" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.67121726" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="43" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.36746302">
           <folding />
         </state>
       </provider>
