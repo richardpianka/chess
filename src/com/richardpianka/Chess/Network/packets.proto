@@ -1,0 +1,18 @@
+package com.richardpianka.Chess.Network;
+
+option java_package = "com.richardpianka.Chess.Network";
+option java_outer_classname = "Packets";
+
+message Success {
+    optional string Message = 1;
+}
+
+message Error {
+    optional string Message = 1;
+}
+
+message Handshake {
+    required int32 VersionMajor = 1;
+    required int32 VersionMinor = 2;
+    required int32 VersionRevision = 3;
+}

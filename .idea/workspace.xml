@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5f92ca2-5206-45be-854c-37f5de7e685c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/protobuf_java_2_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Network/Packets.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Network/packets.proto" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Common\Event.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Common/Event.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Common\LinearBoolean.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Common/LinearBoolean.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Common\Node.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Common/Node.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Board.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Board.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Color.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Color.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Coordinate.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Coordinate.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Direction.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Direction.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Figurine.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Figurine.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Game.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Game.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Move.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Move.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Piece.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Piece.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Game\Player.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Player.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Players\AlphaBetaPlayer.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Players/AlphaBetaPlayer.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Players\MinimaxPlayer.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Players/MinimaxPlayer.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\src\Chess\Players\RandomPlayer.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/Chess/Players/RandomPlayer.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\test\Chess\Game\BoardTests.scala" afterPath="$PROJECT_DIR$/test/com/richardpianka/Chess/Game/BoardTests.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\test\Chess\Game\FigurineTests.scala" afterPath="$PROJECT_DIR$/test/com/richardpianka/Chess/Game/FigurineTests.scala" />
+      <change type="MOVED" beforePath="C:\Users\pianka\IdeaProjects\chess\test\Chess\Game\PlayerTests.scala" afterPath="$PROJECT_DIR$/test/com/richardpianka/Chess/Game/PlayerTests.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala" afterPath="$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" afterPath="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chess.iml" afterPath="$PROJECT_DIR$/Chess.iml" />
     </list>
     <ignored path="Chess.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,6 +36,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -63,10 +88,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AlphaBetaPlayer.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala">
+      <file leaf-file-name="packets.proto" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Network/packets.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="43" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.36746302">
+            <state line="7" column="1" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Packets.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Network/Packets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="25" selection-start="471" selection-end="471" vertical-scroll-proportion="0.24914676">
               <folding />
             </state>
           </provider>
@@ -85,10 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Chess/Game/Color.scala" />
-        <option value="$PROJECT_DIR$/src/Chess/Game/Direction.scala" />
-        <option value="$PROJECT_DIR$/src/Chess/Game/Move.scala" />
-        <option value="$PROJECT_DIR$/src/Chess/Game/Coordinate.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Common/LinearBoolean.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Game/Figurine.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Common/DAG/Graph.scala" />
@@ -101,8 +131,15 @@
         <option value="$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala" />
         <option value="$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala" />
+        <option value="$PROJECT_DIR$/module_chess.xml" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/Chess/Network/packets.proto" />
+        <option value="$PROJECT_DIR$/src/com/richardpianka/Chess/Network/packets.proto" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -189,8 +226,26 @@
               <option name="myItemId" value="Chess" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Players" />
+              <option name="myItemId" value="Chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Network" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,28 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,19 +300,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/test/Chess/Game" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.editor" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="build" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -296,7 +336,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Chess.Game" />
-      <option name="MAIN_CLASS_NAME" value="Chess.Game.FigurineTests" />
+      <option name="MAIN_CLASS_NAME" value="com.richardpianka.Chess.Game.FigurineTests" />
       <option name="METHOD_NAME" value="Pawn" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -318,7 +358,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Chess.Game" />
-      <option name="MAIN_CLASS_NAME" value="Chess.Game.PlayerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.richardpianka.Chess.Game.PlayerTests" />
       <option name="METHOD_NAME" value="Random" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -368,7 +408,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Chess.Game" />
-      <option name="MAIN_CLASS_NAME" value="Chess.Game.PlayerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.richardpianka.Chess.Game.PlayerTests" />
       <option name="METHOD_NAME" value="Minimax" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -396,7 +436,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Chess.Game" />
-      <option name="MAIN_CLASS_NAME" value="Chess.Game.PlayerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.richardpianka.Chess.Game.PlayerTests" />
       <option name="METHOD_NAME" value="AlphaBeta" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -595,7 +635,11 @@
       <created>1337650589328</created>
       <updated>1337650589328</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="First stab at alpha beta pruning.  Couple refactors too.">
+      <created>1338749203402</created>
+      <updated>1338749203402</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -619,27 +663,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35642457" sideWeight="0.6853933" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4668874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747602" sideWeight="0.49715677" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12079102" sideWeight="0.32560706" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31460676" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49715677" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15125601" sideWeight="0.5540839" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15125601" sideWeight="0.6707865" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44591612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3156733" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -681,7 +725,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="First whack at a minimax player, no optimization yet.  Also did some minor refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="First stab at alpha beta pruning.  Couple refactors too." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -701,6 +745,7 @@
     <MESSAGE value="Added a bunch of documentation." />
     <MESSAGE value="Added a win condition to the game." />
     <MESSAGE value="First whack at a minimax player, no optimization yet.  Also did some minor refactoring." />
+    <MESSAGE value="First stab at alpha beta pruning.  Couple refactors too." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -710,84 +755,85 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Chess/Common/LinearBoolean.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Direction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Library/Scala/src/scala-library-src.jar!/scala/util/Random.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="723" selection-end="723" vertical-scroll-proportion="0.3321859" />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Documents/Library/Scala/src/scala-library-src.jar!/scala/collection/mutable/BufferLike.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="268" column="6" selection-start="9466" selection-end="9466" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Color.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Color.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="23" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17406143" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Chess/Game/FigurineTests.scala">
+    <entry file="file://$PROJECT_DIR$/test/com/richardpianka/Chess/Game/FigurineTests.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="15" selection-start="985" selection-end="985" vertical-scroll-proportion="0.3322091" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Common/Node.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Common/Node.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="50" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Player.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Player.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="56" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Players/RandomPlayer.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Players/RandomPlayer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="29" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Game.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Game.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Figurine.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Figurine.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="6" selection-start="711" selection-end="711" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Piece.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Piece.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="67" selection-start="181" selection-end="181" vertical-scroll-proportion="0.096700795" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Game/Board.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="9" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.576324" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Chess/Game/PlayerTests.scala">
+    <entry file="file://$PROJECT_DIR$/test/com/richardpianka/Chess/Game/PlayerTests.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="34" selection-start="357" selection-end="357" vertical-scroll-proportion="0.36746302" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Players/MinimaxPlayer.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Players/MinimaxPlayer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="50" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.67121726" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess/Players/AlphaBetaPlayer.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Players/AlphaBetaPlayer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.36746302">
+        <state line="58" column="7" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.62">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Game/Board.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="9" selection-start="2825" selection-end="2825" vertical-scroll-proportion="2.06">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Network/packets.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="1" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/richardpianka/Chess/Network/Packets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="471" selection-end="471" vertical-scroll-proportion="0.24914676">
           <folding />
         </state>
       </provider>
@@ -850,6 +896,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -869,7 +916,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-library</last-edited>
+          <last-edited>protobuf-java-2.4.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
