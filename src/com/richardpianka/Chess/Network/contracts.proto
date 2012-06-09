@@ -1,0 +1,25 @@
+package com.richardpianka.Chess.Network;
+
+option java_package = "com.richardpianka.Chess.Network";
+option java_outer_classname = "Contracts";
+
+enum Result {
+    Success = 0;
+    Failure = 1;
+}
+
+//The message type and name must be identical
+message Envelope {
+    optional HandshakeRequest HandshakeRequest = 1;
+    optional HandshakeResponse HandshakeResponse = 2;
+}
+
+message HandshakeRequest {
+    required int32 VersionMajor = 1;
+    required int32 VersionMinor = 2;
+    required int32 VersionRevision = 3;
+}
+
+message HandshakeResponse {
+    required Result Result = 1;
+}

@@ -1,3 +1,4 @@
+package com.richardpianka
 package Chess.Players
 
 import Chess.Game._

@@ -1,3 +1,4 @@
+package com.richardpianka
 package Chess.Game
 
 import Directions._

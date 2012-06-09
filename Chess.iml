@@ -27,6 +27,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="protobuf-java-2.4.1" level="project" />
+    <orderEntry type="library" name="scalap" level="application" />
   </component>
 </module>
 

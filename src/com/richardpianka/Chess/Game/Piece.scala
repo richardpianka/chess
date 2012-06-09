@@ -1,3 +1,4 @@
+package com.richardpianka
 package Chess.Game
 
 import Chess.Common.LinearBoolean
