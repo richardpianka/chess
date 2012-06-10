@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="chess" default="contracts">
+  <target name="contracts" depends="" description="Generate protobuf contracts">
+    <exec executable="tools/protoc.exe" failonerror="true">
+        <arg value="--java_out=src" />
+        <arg value="src/com/richardpianka/Chess/Network/contracts.proto" />
+    </exec>
+  </target>
+</project>

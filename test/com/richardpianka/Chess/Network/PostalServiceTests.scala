@@ -17,7 +17,6 @@ class PostalServiceTests {
     PostalService.deliver(envelope.build)
 
     def handle(envelope: Envelope) {
-      println("test")
       val handshakeRequest = envelope.getHandshakeRequest
       assert(handshakeRequest.getVersionMajor == 1)
       assert(handshakeRequest.getVersionMinor == 2)
