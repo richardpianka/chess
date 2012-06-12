@@ -77,6 +77,222 @@ public final class Contracts {
     // @@protoc_insertion_point(enum_scope:com.richardpianka.Chess.Network.Result)
   }
   
+  public enum RoomFlags
+      implements com.google.protobuf.ProtocolMessageEnum {
+    Public(0, 0),
+    Private(1, 1),
+    Restricted(2, 2),
+    ;
+    
+    public static final int Public_VALUE = 0;
+    public static final int Private_VALUE = 1;
+    public static final int Restricted_VALUE = 2;
+    
+    
+    public final int getNumber() { return value; }
+    
+    public static RoomFlags valueOf(int value) {
+      switch (value) {
+        case 0: return Public;
+        case 1: return Private;
+        case 2: return Restricted;
+        default: return null;
+      }
+    }
+    
+    public static com.google.protobuf.Internal.EnumLiteMap<RoomFlags>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<RoomFlags>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<RoomFlags>() {
+            public RoomFlags findValueByNumber(int number) {
+              return RoomFlags.valueOf(number);
+            }
+          };
+    
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.getDescriptor().getEnumTypes().get(1);
+    }
+    
+    private static final RoomFlags[] VALUES = {
+      Public, Private, Restricted, 
+    };
+    
+    public static RoomFlags valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+    
+    private final int index;
+    private final int value;
+    
+    private RoomFlags(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+    
+    // @@protoc_insertion_point(enum_scope:com.richardpianka.Chess.Network.RoomFlags)
+  }
+  
+  public enum UserFlags
+      implements com.google.protobuf.ProtocolMessageEnum {
+    Pedestrian(0, 0),
+    Operator(1, 1),
+    Admin(2, 2),
+    ;
+    
+    public static final int Pedestrian_VALUE = 0;
+    public static final int Operator_VALUE = 1;
+    public static final int Admin_VALUE = 2;
+    
+    
+    public final int getNumber() { return value; }
+    
+    public static UserFlags valueOf(int value) {
+      switch (value) {
+        case 0: return Pedestrian;
+        case 1: return Operator;
+        case 2: return Admin;
+        default: return null;
+      }
+    }
+    
+    public static com.google.protobuf.Internal.EnumLiteMap<UserFlags>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<UserFlags>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<UserFlags>() {
+            public UserFlags findValueByNumber(int number) {
+              return UserFlags.valueOf(number);
+            }
+          };
+    
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.getDescriptor().getEnumTypes().get(2);
+    }
+    
+    private static final UserFlags[] VALUES = {
+      Pedestrian, Operator, Admin, 
+    };
+    
+    public static UserFlags valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+    
+    private final int index;
+    private final int value;
+    
+    private UserFlags(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+    
+    // @@protoc_insertion_point(enum_scope:com.richardpianka.Chess.Network.UserFlags)
+  }
+  
+  public enum SpeakMode
+      implements com.google.protobuf.ProtocolMessageEnum {
+    Normal(0, 0),
+    Whisper(1, 1),
+    Emote(2, 2),
+    ;
+    
+    public static final int Normal_VALUE = 0;
+    public static final int Whisper_VALUE = 1;
+    public static final int Emote_VALUE = 2;
+    
+    
+    public final int getNumber() { return value; }
+    
+    public static SpeakMode valueOf(int value) {
+      switch (value) {
+        case 0: return Normal;
+        case 1: return Whisper;
+        case 2: return Emote;
+        default: return null;
+      }
+    }
+    
+    public static com.google.protobuf.Internal.EnumLiteMap<SpeakMode>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<SpeakMode>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<SpeakMode>() {
+            public SpeakMode findValueByNumber(int number) {
+              return SpeakMode.valueOf(number);
+            }
+          };
+    
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.getDescriptor().getEnumTypes().get(3);
+    }
+    
+    private static final SpeakMode[] VALUES = {
+      Normal, Whisper, Emote, 
+    };
+    
+    public static SpeakMode valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+    
+    private final int index;
+    private final int value;
+    
+    private SpeakMode(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+    
+    // @@protoc_insertion_point(enum_scope:com.richardpianka.Chess.Network.SpeakMode)
+  }
+  
   public interface EnvelopeOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
@@ -89,6 +305,56 @@ public final class Contracts {
     boolean hasHandshakeResponse();
     com.richardpianka.Chess.Network.Contracts.HandshakeResponse getHandshakeResponse();
     com.richardpianka.Chess.Network.Contracts.HandshakeResponseOrBuilder getHandshakeResponseOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.IdentifyRequest IdentifyRequest = 3;
+    boolean hasIdentifyRequest();
+    com.richardpianka.Chess.Network.Contracts.IdentifyRequest getIdentifyRequest();
+    com.richardpianka.Chess.Network.Contracts.IdentifyRequestOrBuilder getIdentifyRequestOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.IdentifyResponse IdentifyResponse = 4;
+    boolean hasIdentifyResponse();
+    com.richardpianka.Chess.Network.Contracts.IdentifyResponse getIdentifyResponse();
+    com.richardpianka.Chess.Network.Contracts.IdentifyResponseOrBuilder getIdentifyResponseOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.JoinChatRequest JoinChatRequest = 5;
+    boolean hasJoinChatRequest();
+    com.richardpianka.Chess.Network.Contracts.JoinChatRequest getJoinChatRequest();
+    com.richardpianka.Chess.Network.Contracts.JoinChatRequestOrBuilder getJoinChatRequestOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.JoinChatResponse JoinChatResponse = 6;
+    boolean hasJoinChatResponse();
+    com.richardpianka.Chess.Network.Contracts.JoinChatResponse getJoinChatResponse();
+    com.richardpianka.Chess.Network.Contracts.JoinChatResponseOrBuilder getJoinChatResponseOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.JoinRoomRequest JoinRoomRequest = 7;
+    boolean hasJoinRoomRequest();
+    com.richardpianka.Chess.Network.Contracts.JoinRoomRequest getJoinRoomRequest();
+    com.richardpianka.Chess.Network.Contracts.JoinRoomRequestOrBuilder getJoinRoomRequestOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.JoinRoomResponse JoinRoomResponse = 8;
+    boolean hasJoinRoomResponse();
+    com.richardpianka.Chess.Network.Contracts.JoinRoomResponse getJoinRoomResponse();
+    com.richardpianka.Chess.Network.Contracts.JoinRoomResponseOrBuilder getJoinRoomResponseOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.SpeakRequest SpeakRequest = 9;
+    boolean hasSpeakRequest();
+    com.richardpianka.Chess.Network.Contracts.SpeakRequest getSpeakRequest();
+    com.richardpianka.Chess.Network.Contracts.SpeakRequestOrBuilder getSpeakRequestOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.ChatRoomEvent ChatRoomEvent = 10;
+    boolean hasChatRoomEvent();
+    com.richardpianka.Chess.Network.Contracts.ChatRoomEvent getChatRoomEvent();
+    com.richardpianka.Chess.Network.Contracts.ChatRoomEventOrBuilder getChatRoomEventOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.ChatUserEvent ChatUserEvent = 11;
+    boolean hasChatUserEvent();
+    com.richardpianka.Chess.Network.Contracts.ChatUserEvent getChatUserEvent();
+    com.richardpianka.Chess.Network.Contracts.ChatUserEventOrBuilder getChatUserEventOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.ChatSpeakEvent ChatSpeakEvent = 12;
+    boolean hasChatSpeakEvent();
+    com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent getChatSpeakEvent();
+    com.richardpianka.Chess.Network.Contracts.ChatSpeakEventOrBuilder getChatSpeakEventOrBuilder();
   }
   public static final class Envelope extends
       com.google.protobuf.GeneratedMessage
@@ -145,9 +411,149 @@ public final class Contracts {
       return handshakeResponse_;
     }
     
+    // optional .com.richardpianka.Chess.Network.IdentifyRequest IdentifyRequest = 3;
+    public static final int IDENTIFYREQUEST_FIELD_NUMBER = 3;
+    private com.richardpianka.Chess.Network.Contracts.IdentifyRequest identifyRequest_;
+    public boolean hasIdentifyRequest() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public com.richardpianka.Chess.Network.Contracts.IdentifyRequest getIdentifyRequest() {
+      return identifyRequest_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.IdentifyRequestOrBuilder getIdentifyRequestOrBuilder() {
+      return identifyRequest_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.IdentifyResponse IdentifyResponse = 4;
+    public static final int IDENTIFYRESPONSE_FIELD_NUMBER = 4;
+    private com.richardpianka.Chess.Network.Contracts.IdentifyResponse identifyResponse_;
+    public boolean hasIdentifyResponse() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public com.richardpianka.Chess.Network.Contracts.IdentifyResponse getIdentifyResponse() {
+      return identifyResponse_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.IdentifyResponseOrBuilder getIdentifyResponseOrBuilder() {
+      return identifyResponse_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.JoinChatRequest JoinChatRequest = 5;
+    public static final int JOINCHATREQUEST_FIELD_NUMBER = 5;
+    private com.richardpianka.Chess.Network.Contracts.JoinChatRequest joinChatRequest_;
+    public boolean hasJoinChatRequest() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinChatRequest getJoinChatRequest() {
+      return joinChatRequest_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinChatRequestOrBuilder getJoinChatRequestOrBuilder() {
+      return joinChatRequest_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.JoinChatResponse JoinChatResponse = 6;
+    public static final int JOINCHATRESPONSE_FIELD_NUMBER = 6;
+    private com.richardpianka.Chess.Network.Contracts.JoinChatResponse joinChatResponse_;
+    public boolean hasJoinChatResponse() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinChatResponse getJoinChatResponse() {
+      return joinChatResponse_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinChatResponseOrBuilder getJoinChatResponseOrBuilder() {
+      return joinChatResponse_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.JoinRoomRequest JoinRoomRequest = 7;
+    public static final int JOINROOMREQUEST_FIELD_NUMBER = 7;
+    private com.richardpianka.Chess.Network.Contracts.JoinRoomRequest joinRoomRequest_;
+    public boolean hasJoinRoomRequest() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinRoomRequest getJoinRoomRequest() {
+      return joinRoomRequest_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinRoomRequestOrBuilder getJoinRoomRequestOrBuilder() {
+      return joinRoomRequest_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.JoinRoomResponse JoinRoomResponse = 8;
+    public static final int JOINROOMRESPONSE_FIELD_NUMBER = 8;
+    private com.richardpianka.Chess.Network.Contracts.JoinRoomResponse joinRoomResponse_;
+    public boolean hasJoinRoomResponse() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinRoomResponse getJoinRoomResponse() {
+      return joinRoomResponse_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.JoinRoomResponseOrBuilder getJoinRoomResponseOrBuilder() {
+      return joinRoomResponse_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.SpeakRequest SpeakRequest = 9;
+    public static final int SPEAKREQUEST_FIELD_NUMBER = 9;
+    private com.richardpianka.Chess.Network.Contracts.SpeakRequest speakRequest_;
+    public boolean hasSpeakRequest() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    public com.richardpianka.Chess.Network.Contracts.SpeakRequest getSpeakRequest() {
+      return speakRequest_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.SpeakRequestOrBuilder getSpeakRequestOrBuilder() {
+      return speakRequest_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.ChatRoomEvent ChatRoomEvent = 10;
+    public static final int CHATROOMEVENT_FIELD_NUMBER = 10;
+    private com.richardpianka.Chess.Network.Contracts.ChatRoomEvent chatRoomEvent_;
+    public boolean hasChatRoomEvent() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    public com.richardpianka.Chess.Network.Contracts.ChatRoomEvent getChatRoomEvent() {
+      return chatRoomEvent_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.ChatRoomEventOrBuilder getChatRoomEventOrBuilder() {
+      return chatRoomEvent_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.ChatUserEvent ChatUserEvent = 11;
+    public static final int CHATUSEREVENT_FIELD_NUMBER = 11;
+    private com.richardpianka.Chess.Network.Contracts.ChatUserEvent chatUserEvent_;
+    public boolean hasChatUserEvent() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    public com.richardpianka.Chess.Network.Contracts.ChatUserEvent getChatUserEvent() {
+      return chatUserEvent_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.ChatUserEventOrBuilder getChatUserEventOrBuilder() {
+      return chatUserEvent_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.ChatSpeakEvent ChatSpeakEvent = 12;
+    public static final int CHATSPEAKEVENT_FIELD_NUMBER = 12;
+    private com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent chatSpeakEvent_;
+    public boolean hasChatSpeakEvent() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    public com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent getChatSpeakEvent() {
+      return chatSpeakEvent_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.ChatSpeakEventOrBuilder getChatSpeakEventOrBuilder() {
+      return chatSpeakEvent_;
+    }
+    
     private void initFields() {
       handshakeRequest_ = com.richardpianka.Chess.Network.Contracts.HandshakeRequest.getDefaultInstance();
       handshakeResponse_ = com.richardpianka.Chess.Network.Contracts.HandshakeResponse.getDefaultInstance();
+      identifyRequest_ = com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDefaultInstance();
+      identifyResponse_ = com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDefaultInstance();
+      joinChatRequest_ = com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDefaultInstance();
+      joinChatResponse_ = com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDefaultInstance();
+      joinRoomRequest_ = com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDefaultInstance();
+      joinRoomResponse_ = com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDefaultInstance();
+      speakRequest_ = com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDefaultInstance();
+      chatRoomEvent_ = com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDefaultInstance();
+      chatUserEvent_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDefaultInstance();
+      chatSpeakEvent_ = com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -166,6 +572,60 @@ public final class Contracts {
           return false;
         }
       }
+      if (hasIdentifyRequest()) {
+        if (!getIdentifyRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasIdentifyResponse()) {
+        if (!getIdentifyResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasJoinChatResponse()) {
+        if (!getJoinChatResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasJoinRoomRequest()) {
+        if (!getJoinRoomRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasJoinRoomResponse()) {
+        if (!getJoinRoomResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSpeakRequest()) {
+        if (!getSpeakRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasChatRoomEvent()) {
+        if (!getChatRoomEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasChatUserEvent()) {
+        if (!getChatUserEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasChatSpeakEvent()) {
+        if (!getChatSpeakEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -178,6 +638,36 @@ public final class Contracts {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeMessage(2, handshakeResponse_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, identifyRequest_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, identifyResponse_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeMessage(5, joinChatRequest_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeMessage(6, joinChatResponse_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeMessage(7, joinRoomRequest_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeMessage(8, joinRoomResponse_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeMessage(9, speakRequest_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeMessage(10, chatRoomEvent_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeMessage(11, chatUserEvent_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeMessage(12, chatSpeakEvent_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -195,6 +685,46 @@ public final class Contracts {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, handshakeResponse_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, identifyRequest_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, identifyResponse_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, joinChatRequest_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, joinChatResponse_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, joinRoomRequest_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, joinRoomResponse_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, speakRequest_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, chatRoomEvent_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, chatUserEvent_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, chatSpeakEvent_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -314,6 +844,16 @@ public final class Contracts {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
           getHandshakeRequestFieldBuilder();
           getHandshakeResponseFieldBuilder();
+          getIdentifyRequestFieldBuilder();
+          getIdentifyResponseFieldBuilder();
+          getJoinChatRequestFieldBuilder();
+          getJoinChatResponseFieldBuilder();
+          getJoinRoomRequestFieldBuilder();
+          getJoinRoomResponseFieldBuilder();
+          getSpeakRequestFieldBuilder();
+          getChatRoomEventFieldBuilder();
+          getChatUserEventFieldBuilder();
+          getChatSpeakEventFieldBuilder();
         }
       }
       private static Builder create() {
@@ -334,6 +874,66 @@ public final class Contracts {
           handshakeResponseBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000002);
+        if (identifyRequestBuilder_ == null) {
+          identifyRequest_ = com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDefaultInstance();
+        } else {
+          identifyRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        if (identifyResponseBuilder_ == null) {
+          identifyResponse_ = com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDefaultInstance();
+        } else {
+          identifyResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        if (joinChatRequestBuilder_ == null) {
+          joinChatRequest_ = com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDefaultInstance();
+        } else {
+          joinChatRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        if (joinChatResponseBuilder_ == null) {
+          joinChatResponse_ = com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDefaultInstance();
+        } else {
+          joinChatResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        if (joinRoomRequestBuilder_ == null) {
+          joinRoomRequest_ = com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDefaultInstance();
+        } else {
+          joinRoomRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
+        if (joinRoomResponseBuilder_ == null) {
+          joinRoomResponse_ = com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDefaultInstance();
+        } else {
+          joinRoomResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
+        if (speakRequestBuilder_ == null) {
+          speakRequest_ = com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDefaultInstance();
+        } else {
+          speakRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000100);
+        if (chatRoomEventBuilder_ == null) {
+          chatRoomEvent_ = com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDefaultInstance();
+        } else {
+          chatRoomEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000200);
+        if (chatUserEventBuilder_ == null) {
+          chatUserEvent_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDefaultInstance();
+        } else {
+          chatUserEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000400);
+        if (chatSpeakEventBuilder_ == null) {
+          chatSpeakEvent_ = com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDefaultInstance();
+        } else {
+          chatSpeakEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000800);
         return this;
       }
       
@@ -388,6 +988,86 @@ public final class Contracts {
         } else {
           result.handshakeResponse_ = handshakeResponseBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (identifyRequestBuilder_ == null) {
+          result.identifyRequest_ = identifyRequest_;
+        } else {
+          result.identifyRequest_ = identifyRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (identifyResponseBuilder_ == null) {
+          result.identifyResponse_ = identifyResponse_;
+        } else {
+          result.identifyResponse_ = identifyResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        if (joinChatRequestBuilder_ == null) {
+          result.joinChatRequest_ = joinChatRequest_;
+        } else {
+          result.joinChatRequest_ = joinChatRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        if (joinChatResponseBuilder_ == null) {
+          result.joinChatResponse_ = joinChatResponse_;
+        } else {
+          result.joinChatResponse_ = joinChatResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        if (joinRoomRequestBuilder_ == null) {
+          result.joinRoomRequest_ = joinRoomRequest_;
+        } else {
+          result.joinRoomRequest_ = joinRoomRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        if (joinRoomResponseBuilder_ == null) {
+          result.joinRoomResponse_ = joinRoomResponse_;
+        } else {
+          result.joinRoomResponse_ = joinRoomResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        if (speakRequestBuilder_ == null) {
+          result.speakRequest_ = speakRequest_;
+        } else {
+          result.speakRequest_ = speakRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        if (chatRoomEventBuilder_ == null) {
+          result.chatRoomEvent_ = chatRoomEvent_;
+        } else {
+          result.chatRoomEvent_ = chatRoomEventBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        if (chatUserEventBuilder_ == null) {
+          result.chatUserEvent_ = chatUserEvent_;
+        } else {
+          result.chatUserEvent_ = chatUserEventBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        if (chatSpeakEventBuilder_ == null) {
+          result.chatSpeakEvent_ = chatSpeakEvent_;
+        } else {
+          result.chatSpeakEvent_ = chatSpeakEventBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -410,6 +1090,36 @@ public final class Contracts {
         if (other.hasHandshakeResponse()) {
           mergeHandshakeResponse(other.getHandshakeResponse());
         }
+        if (other.hasIdentifyRequest()) {
+          mergeIdentifyRequest(other.getIdentifyRequest());
+        }
+        if (other.hasIdentifyResponse()) {
+          mergeIdentifyResponse(other.getIdentifyResponse());
+        }
+        if (other.hasJoinChatRequest()) {
+          mergeJoinChatRequest(other.getJoinChatRequest());
+        }
+        if (other.hasJoinChatResponse()) {
+          mergeJoinChatResponse(other.getJoinChatResponse());
+        }
+        if (other.hasJoinRoomRequest()) {
+          mergeJoinRoomRequest(other.getJoinRoomRequest());
+        }
+        if (other.hasJoinRoomResponse()) {
+          mergeJoinRoomResponse(other.getJoinRoomResponse());
+        }
+        if (other.hasSpeakRequest()) {
+          mergeSpeakRequest(other.getSpeakRequest());
+        }
+        if (other.hasChatRoomEvent()) {
+          mergeChatRoomEvent(other.getChatRoomEvent());
+        }
+        if (other.hasChatUserEvent()) {
+          mergeChatUserEvent(other.getChatUserEvent());
+        }
+        if (other.hasChatSpeakEvent()) {
+          mergeChatSpeakEvent(other.getChatSpeakEvent());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -423,6 +1133,60 @@ public final class Contracts {
         }
         if (hasHandshakeResponse()) {
           if (!getHandshakeResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasIdentifyRequest()) {
+          if (!getIdentifyRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasIdentifyResponse()) {
+          if (!getIdentifyResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasJoinChatResponse()) {
+          if (!getJoinChatResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasJoinRoomRequest()) {
+          if (!getJoinRoomRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasJoinRoomResponse()) {
+          if (!getJoinRoomResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasSpeakRequest()) {
+          if (!getSpeakRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasChatRoomEvent()) {
+          if (!getChatRoomEvent().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasChatUserEvent()) {
+          if (!getChatUserEvent().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasChatSpeakEvent()) {
+          if (!getChatSpeakEvent().isInitialized()) {
             
             return false;
           }
@@ -469,6 +1233,96 @@ public final class Contracts {
               }
               input.readMessage(subBuilder, extensionRegistry);
               setHandshakeResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 26: {
+              com.richardpianka.Chess.Network.Contracts.IdentifyRequest.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.IdentifyRequest.newBuilder();
+              if (hasIdentifyRequest()) {
+                subBuilder.mergeFrom(getIdentifyRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setIdentifyRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 34: {
+              com.richardpianka.Chess.Network.Contracts.IdentifyResponse.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.IdentifyResponse.newBuilder();
+              if (hasIdentifyResponse()) {
+                subBuilder.mergeFrom(getIdentifyResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setIdentifyResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 42: {
+              com.richardpianka.Chess.Network.Contracts.JoinChatRequest.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.JoinChatRequest.newBuilder();
+              if (hasJoinChatRequest()) {
+                subBuilder.mergeFrom(getJoinChatRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setJoinChatRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 50: {
+              com.richardpianka.Chess.Network.Contracts.JoinChatResponse.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.JoinChatResponse.newBuilder();
+              if (hasJoinChatResponse()) {
+                subBuilder.mergeFrom(getJoinChatResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setJoinChatResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 58: {
+              com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.newBuilder();
+              if (hasJoinRoomRequest()) {
+                subBuilder.mergeFrom(getJoinRoomRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setJoinRoomRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 66: {
+              com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.newBuilder();
+              if (hasJoinRoomResponse()) {
+                subBuilder.mergeFrom(getJoinRoomResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setJoinRoomResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 74: {
+              com.richardpianka.Chess.Network.Contracts.SpeakRequest.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.SpeakRequest.newBuilder();
+              if (hasSpeakRequest()) {
+                subBuilder.mergeFrom(getSpeakRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSpeakRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 82: {
+              com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.newBuilder();
+              if (hasChatRoomEvent()) {
+                subBuilder.mergeFrom(getChatRoomEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setChatRoomEvent(subBuilder.buildPartial());
+              break;
+            }
+            case 90: {
+              com.richardpianka.Chess.Network.Contracts.ChatUserEvent.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.newBuilder();
+              if (hasChatUserEvent()) {
+                subBuilder.mergeFrom(getChatUserEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setChatUserEvent(subBuilder.buildPartial());
+              break;
+            }
+            case 98: {
+              com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.newBuilder();
+              if (hasChatSpeakEvent()) {
+                subBuilder.mergeFrom(getChatSpeakEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setChatSpeakEvent(subBuilder.buildPartial());
               break;
             }
           }
@@ -657,6 +1511,906 @@ public final class Contracts {
         return handshakeResponseBuilder_;
       }
       
+      // optional .com.richardpianka.Chess.Network.IdentifyRequest IdentifyRequest = 3;
+      private com.richardpianka.Chess.Network.Contracts.IdentifyRequest identifyRequest_ = com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.IdentifyRequest, com.richardpianka.Chess.Network.Contracts.IdentifyRequest.Builder, com.richardpianka.Chess.Network.Contracts.IdentifyRequestOrBuilder> identifyRequestBuilder_;
+      public boolean hasIdentifyRequest() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public com.richardpianka.Chess.Network.Contracts.IdentifyRequest getIdentifyRequest() {
+        if (identifyRequestBuilder_ == null) {
+          return identifyRequest_;
+        } else {
+          return identifyRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setIdentifyRequest(com.richardpianka.Chess.Network.Contracts.IdentifyRequest value) {
+        if (identifyRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          identifyRequest_ = value;
+          onChanged();
+        } else {
+          identifyRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder setIdentifyRequest(
+          com.richardpianka.Chess.Network.Contracts.IdentifyRequest.Builder builderForValue) {
+        if (identifyRequestBuilder_ == null) {
+          identifyRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          identifyRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder mergeIdentifyRequest(com.richardpianka.Chess.Network.Contracts.IdentifyRequest value) {
+        if (identifyRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              identifyRequest_ != com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDefaultInstance()) {
+            identifyRequest_ =
+              com.richardpianka.Chess.Network.Contracts.IdentifyRequest.newBuilder(identifyRequest_).mergeFrom(value).buildPartial();
+          } else {
+            identifyRequest_ = value;
+          }
+          onChanged();
+        } else {
+          identifyRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder clearIdentifyRequest() {
+        if (identifyRequestBuilder_ == null) {
+          identifyRequest_ = com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          identifyRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.IdentifyRequest.Builder getIdentifyRequestBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getIdentifyRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.IdentifyRequestOrBuilder getIdentifyRequestOrBuilder() {
+        if (identifyRequestBuilder_ != null) {
+          return identifyRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return identifyRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.IdentifyRequest, com.richardpianka.Chess.Network.Contracts.IdentifyRequest.Builder, com.richardpianka.Chess.Network.Contracts.IdentifyRequestOrBuilder> 
+          getIdentifyRequestFieldBuilder() {
+        if (identifyRequestBuilder_ == null) {
+          identifyRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.IdentifyRequest, com.richardpianka.Chess.Network.Contracts.IdentifyRequest.Builder, com.richardpianka.Chess.Network.Contracts.IdentifyRequestOrBuilder>(
+                  identifyRequest_,
+                  getParentForChildren(),
+                  isClean());
+          identifyRequest_ = null;
+        }
+        return identifyRequestBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.IdentifyResponse IdentifyResponse = 4;
+      private com.richardpianka.Chess.Network.Contracts.IdentifyResponse identifyResponse_ = com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.IdentifyResponse, com.richardpianka.Chess.Network.Contracts.IdentifyResponse.Builder, com.richardpianka.Chess.Network.Contracts.IdentifyResponseOrBuilder> identifyResponseBuilder_;
+      public boolean hasIdentifyResponse() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public com.richardpianka.Chess.Network.Contracts.IdentifyResponse getIdentifyResponse() {
+        if (identifyResponseBuilder_ == null) {
+          return identifyResponse_;
+        } else {
+          return identifyResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setIdentifyResponse(com.richardpianka.Chess.Network.Contracts.IdentifyResponse value) {
+        if (identifyResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          identifyResponse_ = value;
+          onChanged();
+        } else {
+          identifyResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder setIdentifyResponse(
+          com.richardpianka.Chess.Network.Contracts.IdentifyResponse.Builder builderForValue) {
+        if (identifyResponseBuilder_ == null) {
+          identifyResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          identifyResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder mergeIdentifyResponse(com.richardpianka.Chess.Network.Contracts.IdentifyResponse value) {
+        if (identifyResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              identifyResponse_ != com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDefaultInstance()) {
+            identifyResponse_ =
+              com.richardpianka.Chess.Network.Contracts.IdentifyResponse.newBuilder(identifyResponse_).mergeFrom(value).buildPartial();
+          } else {
+            identifyResponse_ = value;
+          }
+          onChanged();
+        } else {
+          identifyResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder clearIdentifyResponse() {
+        if (identifyResponseBuilder_ == null) {
+          identifyResponse_ = com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          identifyResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.IdentifyResponse.Builder getIdentifyResponseBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getIdentifyResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.IdentifyResponseOrBuilder getIdentifyResponseOrBuilder() {
+        if (identifyResponseBuilder_ != null) {
+          return identifyResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return identifyResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.IdentifyResponse, com.richardpianka.Chess.Network.Contracts.IdentifyResponse.Builder, com.richardpianka.Chess.Network.Contracts.IdentifyResponseOrBuilder> 
+          getIdentifyResponseFieldBuilder() {
+        if (identifyResponseBuilder_ == null) {
+          identifyResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.IdentifyResponse, com.richardpianka.Chess.Network.Contracts.IdentifyResponse.Builder, com.richardpianka.Chess.Network.Contracts.IdentifyResponseOrBuilder>(
+                  identifyResponse_,
+                  getParentForChildren(),
+                  isClean());
+          identifyResponse_ = null;
+        }
+        return identifyResponseBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.JoinChatRequest JoinChatRequest = 5;
+      private com.richardpianka.Chess.Network.Contracts.JoinChatRequest joinChatRequest_ = com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinChatRequest, com.richardpianka.Chess.Network.Contracts.JoinChatRequest.Builder, com.richardpianka.Chess.Network.Contracts.JoinChatRequestOrBuilder> joinChatRequestBuilder_;
+      public boolean hasJoinChatRequest() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinChatRequest getJoinChatRequest() {
+        if (joinChatRequestBuilder_ == null) {
+          return joinChatRequest_;
+        } else {
+          return joinChatRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setJoinChatRequest(com.richardpianka.Chess.Network.Contracts.JoinChatRequest value) {
+        if (joinChatRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          joinChatRequest_ = value;
+          onChanged();
+        } else {
+          joinChatRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      public Builder setJoinChatRequest(
+          com.richardpianka.Chess.Network.Contracts.JoinChatRequest.Builder builderForValue) {
+        if (joinChatRequestBuilder_ == null) {
+          joinChatRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          joinChatRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      public Builder mergeJoinChatRequest(com.richardpianka.Chess.Network.Contracts.JoinChatRequest value) {
+        if (joinChatRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010) &&
+              joinChatRequest_ != com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDefaultInstance()) {
+            joinChatRequest_ =
+              com.richardpianka.Chess.Network.Contracts.JoinChatRequest.newBuilder(joinChatRequest_).mergeFrom(value).buildPartial();
+          } else {
+            joinChatRequest_ = value;
+          }
+          onChanged();
+        } else {
+          joinChatRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      public Builder clearJoinChatRequest() {
+        if (joinChatRequestBuilder_ == null) {
+          joinChatRequest_ = com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          joinChatRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinChatRequest.Builder getJoinChatRequestBuilder() {
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return getJoinChatRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinChatRequestOrBuilder getJoinChatRequestOrBuilder() {
+        if (joinChatRequestBuilder_ != null) {
+          return joinChatRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return joinChatRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinChatRequest, com.richardpianka.Chess.Network.Contracts.JoinChatRequest.Builder, com.richardpianka.Chess.Network.Contracts.JoinChatRequestOrBuilder> 
+          getJoinChatRequestFieldBuilder() {
+        if (joinChatRequestBuilder_ == null) {
+          joinChatRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.JoinChatRequest, com.richardpianka.Chess.Network.Contracts.JoinChatRequest.Builder, com.richardpianka.Chess.Network.Contracts.JoinChatRequestOrBuilder>(
+                  joinChatRequest_,
+                  getParentForChildren(),
+                  isClean());
+          joinChatRequest_ = null;
+        }
+        return joinChatRequestBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.JoinChatResponse JoinChatResponse = 6;
+      private com.richardpianka.Chess.Network.Contracts.JoinChatResponse joinChatResponse_ = com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinChatResponse, com.richardpianka.Chess.Network.Contracts.JoinChatResponse.Builder, com.richardpianka.Chess.Network.Contracts.JoinChatResponseOrBuilder> joinChatResponseBuilder_;
+      public boolean hasJoinChatResponse() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinChatResponse getJoinChatResponse() {
+        if (joinChatResponseBuilder_ == null) {
+          return joinChatResponse_;
+        } else {
+          return joinChatResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setJoinChatResponse(com.richardpianka.Chess.Network.Contracts.JoinChatResponse value) {
+        if (joinChatResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          joinChatResponse_ = value;
+          onChanged();
+        } else {
+          joinChatResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder setJoinChatResponse(
+          com.richardpianka.Chess.Network.Contracts.JoinChatResponse.Builder builderForValue) {
+        if (joinChatResponseBuilder_ == null) {
+          joinChatResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          joinChatResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder mergeJoinChatResponse(com.richardpianka.Chess.Network.Contracts.JoinChatResponse value) {
+        if (joinChatResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020) &&
+              joinChatResponse_ != com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDefaultInstance()) {
+            joinChatResponse_ =
+              com.richardpianka.Chess.Network.Contracts.JoinChatResponse.newBuilder(joinChatResponse_).mergeFrom(value).buildPartial();
+          } else {
+            joinChatResponse_ = value;
+          }
+          onChanged();
+        } else {
+          joinChatResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder clearJoinChatResponse() {
+        if (joinChatResponseBuilder_ == null) {
+          joinChatResponse_ = com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          joinChatResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinChatResponse.Builder getJoinChatResponseBuilder() {
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return getJoinChatResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinChatResponseOrBuilder getJoinChatResponseOrBuilder() {
+        if (joinChatResponseBuilder_ != null) {
+          return joinChatResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return joinChatResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinChatResponse, com.richardpianka.Chess.Network.Contracts.JoinChatResponse.Builder, com.richardpianka.Chess.Network.Contracts.JoinChatResponseOrBuilder> 
+          getJoinChatResponseFieldBuilder() {
+        if (joinChatResponseBuilder_ == null) {
+          joinChatResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.JoinChatResponse, com.richardpianka.Chess.Network.Contracts.JoinChatResponse.Builder, com.richardpianka.Chess.Network.Contracts.JoinChatResponseOrBuilder>(
+                  joinChatResponse_,
+                  getParentForChildren(),
+                  isClean());
+          joinChatResponse_ = null;
+        }
+        return joinChatResponseBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.JoinRoomRequest JoinRoomRequest = 7;
+      private com.richardpianka.Chess.Network.Contracts.JoinRoomRequest joinRoomRequest_ = com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinRoomRequest, com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.Builder, com.richardpianka.Chess.Network.Contracts.JoinRoomRequestOrBuilder> joinRoomRequestBuilder_;
+      public boolean hasJoinRoomRequest() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomRequest getJoinRoomRequest() {
+        if (joinRoomRequestBuilder_ == null) {
+          return joinRoomRequest_;
+        } else {
+          return joinRoomRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setJoinRoomRequest(com.richardpianka.Chess.Network.Contracts.JoinRoomRequest value) {
+        if (joinRoomRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          joinRoomRequest_ = value;
+          onChanged();
+        } else {
+          joinRoomRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder setJoinRoomRequest(
+          com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.Builder builderForValue) {
+        if (joinRoomRequestBuilder_ == null) {
+          joinRoomRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          joinRoomRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder mergeJoinRoomRequest(com.richardpianka.Chess.Network.Contracts.JoinRoomRequest value) {
+        if (joinRoomRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040) &&
+              joinRoomRequest_ != com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDefaultInstance()) {
+            joinRoomRequest_ =
+              com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.newBuilder(joinRoomRequest_).mergeFrom(value).buildPartial();
+          } else {
+            joinRoomRequest_ = value;
+          }
+          onChanged();
+        } else {
+          joinRoomRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder clearJoinRoomRequest() {
+        if (joinRoomRequestBuilder_ == null) {
+          joinRoomRequest_ = com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          joinRoomRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.Builder getJoinRoomRequestBuilder() {
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return getJoinRoomRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomRequestOrBuilder getJoinRoomRequestOrBuilder() {
+        if (joinRoomRequestBuilder_ != null) {
+          return joinRoomRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return joinRoomRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinRoomRequest, com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.Builder, com.richardpianka.Chess.Network.Contracts.JoinRoomRequestOrBuilder> 
+          getJoinRoomRequestFieldBuilder() {
+        if (joinRoomRequestBuilder_ == null) {
+          joinRoomRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.JoinRoomRequest, com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.Builder, com.richardpianka.Chess.Network.Contracts.JoinRoomRequestOrBuilder>(
+                  joinRoomRequest_,
+                  getParentForChildren(),
+                  isClean());
+          joinRoomRequest_ = null;
+        }
+        return joinRoomRequestBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.JoinRoomResponse JoinRoomResponse = 8;
+      private com.richardpianka.Chess.Network.Contracts.JoinRoomResponse joinRoomResponse_ = com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinRoomResponse, com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.Builder, com.richardpianka.Chess.Network.Contracts.JoinRoomResponseOrBuilder> joinRoomResponseBuilder_;
+      public boolean hasJoinRoomResponse() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomResponse getJoinRoomResponse() {
+        if (joinRoomResponseBuilder_ == null) {
+          return joinRoomResponse_;
+        } else {
+          return joinRoomResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setJoinRoomResponse(com.richardpianka.Chess.Network.Contracts.JoinRoomResponse value) {
+        if (joinRoomResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          joinRoomResponse_ = value;
+          onChanged();
+        } else {
+          joinRoomResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder setJoinRoomResponse(
+          com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.Builder builderForValue) {
+        if (joinRoomResponseBuilder_ == null) {
+          joinRoomResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          joinRoomResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder mergeJoinRoomResponse(com.richardpianka.Chess.Network.Contracts.JoinRoomResponse value) {
+        if (joinRoomResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) == 0x00000080) &&
+              joinRoomResponse_ != com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDefaultInstance()) {
+            joinRoomResponse_ =
+              com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.newBuilder(joinRoomResponse_).mergeFrom(value).buildPartial();
+          } else {
+            joinRoomResponse_ = value;
+          }
+          onChanged();
+        } else {
+          joinRoomResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder clearJoinRoomResponse() {
+        if (joinRoomResponseBuilder_ == null) {
+          joinRoomResponse_ = com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          joinRoomResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.Builder getJoinRoomResponseBuilder() {
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return getJoinRoomResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomResponseOrBuilder getJoinRoomResponseOrBuilder() {
+        if (joinRoomResponseBuilder_ != null) {
+          return joinRoomResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return joinRoomResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.JoinRoomResponse, com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.Builder, com.richardpianka.Chess.Network.Contracts.JoinRoomResponseOrBuilder> 
+          getJoinRoomResponseFieldBuilder() {
+        if (joinRoomResponseBuilder_ == null) {
+          joinRoomResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.JoinRoomResponse, com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.Builder, com.richardpianka.Chess.Network.Contracts.JoinRoomResponseOrBuilder>(
+                  joinRoomResponse_,
+                  getParentForChildren(),
+                  isClean());
+          joinRoomResponse_ = null;
+        }
+        return joinRoomResponseBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.SpeakRequest SpeakRequest = 9;
+      private com.richardpianka.Chess.Network.Contracts.SpeakRequest speakRequest_ = com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.SpeakRequest, com.richardpianka.Chess.Network.Contracts.SpeakRequest.Builder, com.richardpianka.Chess.Network.Contracts.SpeakRequestOrBuilder> speakRequestBuilder_;
+      public boolean hasSpeakRequest() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      public com.richardpianka.Chess.Network.Contracts.SpeakRequest getSpeakRequest() {
+        if (speakRequestBuilder_ == null) {
+          return speakRequest_;
+        } else {
+          return speakRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setSpeakRequest(com.richardpianka.Chess.Network.Contracts.SpeakRequest value) {
+        if (speakRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          speakRequest_ = value;
+          onChanged();
+        } else {
+          speakRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000100;
+        return this;
+      }
+      public Builder setSpeakRequest(
+          com.richardpianka.Chess.Network.Contracts.SpeakRequest.Builder builderForValue) {
+        if (speakRequestBuilder_ == null) {
+          speakRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          speakRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000100;
+        return this;
+      }
+      public Builder mergeSpeakRequest(com.richardpianka.Chess.Network.Contracts.SpeakRequest value) {
+        if (speakRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) == 0x00000100) &&
+              speakRequest_ != com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDefaultInstance()) {
+            speakRequest_ =
+              com.richardpianka.Chess.Network.Contracts.SpeakRequest.newBuilder(speakRequest_).mergeFrom(value).buildPartial();
+          } else {
+            speakRequest_ = value;
+          }
+          onChanged();
+        } else {
+          speakRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000100;
+        return this;
+      }
+      public Builder clearSpeakRequest() {
+        if (speakRequestBuilder_ == null) {
+          speakRequest_ = com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          speakRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000100);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.SpeakRequest.Builder getSpeakRequestBuilder() {
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return getSpeakRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.SpeakRequestOrBuilder getSpeakRequestOrBuilder() {
+        if (speakRequestBuilder_ != null) {
+          return speakRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return speakRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.SpeakRequest, com.richardpianka.Chess.Network.Contracts.SpeakRequest.Builder, com.richardpianka.Chess.Network.Contracts.SpeakRequestOrBuilder> 
+          getSpeakRequestFieldBuilder() {
+        if (speakRequestBuilder_ == null) {
+          speakRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.SpeakRequest, com.richardpianka.Chess.Network.Contracts.SpeakRequest.Builder, com.richardpianka.Chess.Network.Contracts.SpeakRequestOrBuilder>(
+                  speakRequest_,
+                  getParentForChildren(),
+                  isClean());
+          speakRequest_ = null;
+        }
+        return speakRequestBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.ChatRoomEvent ChatRoomEvent = 10;
+      private com.richardpianka.Chess.Network.Contracts.ChatRoomEvent chatRoomEvent_ = com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.ChatRoomEvent, com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatRoomEventOrBuilder> chatRoomEventBuilder_;
+      public boolean hasChatRoomEvent() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatRoomEvent getChatRoomEvent() {
+        if (chatRoomEventBuilder_ == null) {
+          return chatRoomEvent_;
+        } else {
+          return chatRoomEventBuilder_.getMessage();
+        }
+      }
+      public Builder setChatRoomEvent(com.richardpianka.Chess.Network.Contracts.ChatRoomEvent value) {
+        if (chatRoomEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          chatRoomEvent_ = value;
+          onChanged();
+        } else {
+          chatRoomEventBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000200;
+        return this;
+      }
+      public Builder setChatRoomEvent(
+          com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.Builder builderForValue) {
+        if (chatRoomEventBuilder_ == null) {
+          chatRoomEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          chatRoomEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000200;
+        return this;
+      }
+      public Builder mergeChatRoomEvent(com.richardpianka.Chess.Network.Contracts.ChatRoomEvent value) {
+        if (chatRoomEventBuilder_ == null) {
+          if (((bitField0_ & 0x00000200) == 0x00000200) &&
+              chatRoomEvent_ != com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDefaultInstance()) {
+            chatRoomEvent_ =
+              com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.newBuilder(chatRoomEvent_).mergeFrom(value).buildPartial();
+          } else {
+            chatRoomEvent_ = value;
+          }
+          onChanged();
+        } else {
+          chatRoomEventBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000200;
+        return this;
+      }
+      public Builder clearChatRoomEvent() {
+        if (chatRoomEventBuilder_ == null) {
+          chatRoomEvent_ = com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          chatRoomEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000200);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.Builder getChatRoomEventBuilder() {
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return getChatRoomEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatRoomEventOrBuilder getChatRoomEventOrBuilder() {
+        if (chatRoomEventBuilder_ != null) {
+          return chatRoomEventBuilder_.getMessageOrBuilder();
+        } else {
+          return chatRoomEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.ChatRoomEvent, com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatRoomEventOrBuilder> 
+          getChatRoomEventFieldBuilder() {
+        if (chatRoomEventBuilder_ == null) {
+          chatRoomEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.ChatRoomEvent, com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatRoomEventOrBuilder>(
+                  chatRoomEvent_,
+                  getParentForChildren(),
+                  isClean());
+          chatRoomEvent_ = null;
+        }
+        return chatRoomEventBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.ChatUserEvent ChatUserEvent = 11;
+      private com.richardpianka.Chess.Network.Contracts.ChatUserEvent chatUserEvent_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.ChatUserEvent, com.richardpianka.Chess.Network.Contracts.ChatUserEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatUserEventOrBuilder> chatUserEventBuilder_;
+      public boolean hasChatUserEvent() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatUserEvent getChatUserEvent() {
+        if (chatUserEventBuilder_ == null) {
+          return chatUserEvent_;
+        } else {
+          return chatUserEventBuilder_.getMessage();
+        }
+      }
+      public Builder setChatUserEvent(com.richardpianka.Chess.Network.Contracts.ChatUserEvent value) {
+        if (chatUserEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          chatUserEvent_ = value;
+          onChanged();
+        } else {
+          chatUserEventBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      public Builder setChatUserEvent(
+          com.richardpianka.Chess.Network.Contracts.ChatUserEvent.Builder builderForValue) {
+        if (chatUserEventBuilder_ == null) {
+          chatUserEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          chatUserEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      public Builder mergeChatUserEvent(com.richardpianka.Chess.Network.Contracts.ChatUserEvent value) {
+        if (chatUserEventBuilder_ == null) {
+          if (((bitField0_ & 0x00000400) == 0x00000400) &&
+              chatUserEvent_ != com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDefaultInstance()) {
+            chatUserEvent_ =
+              com.richardpianka.Chess.Network.Contracts.ChatUserEvent.newBuilder(chatUserEvent_).mergeFrom(value).buildPartial();
+          } else {
+            chatUserEvent_ = value;
+          }
+          onChanged();
+        } else {
+          chatUserEventBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      public Builder clearChatUserEvent() {
+        if (chatUserEventBuilder_ == null) {
+          chatUserEvent_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          chatUserEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000400);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatUserEvent.Builder getChatUserEventBuilder() {
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return getChatUserEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatUserEventOrBuilder getChatUserEventOrBuilder() {
+        if (chatUserEventBuilder_ != null) {
+          return chatUserEventBuilder_.getMessageOrBuilder();
+        } else {
+          return chatUserEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.ChatUserEvent, com.richardpianka.Chess.Network.Contracts.ChatUserEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatUserEventOrBuilder> 
+          getChatUserEventFieldBuilder() {
+        if (chatUserEventBuilder_ == null) {
+          chatUserEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.ChatUserEvent, com.richardpianka.Chess.Network.Contracts.ChatUserEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatUserEventOrBuilder>(
+                  chatUserEvent_,
+                  getParentForChildren(),
+                  isClean());
+          chatUserEvent_ = null;
+        }
+        return chatUserEventBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.ChatSpeakEvent ChatSpeakEvent = 12;
+      private com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent chatSpeakEvent_ = com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent, com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatSpeakEventOrBuilder> chatSpeakEventBuilder_;
+      public boolean hasChatSpeakEvent() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent getChatSpeakEvent() {
+        if (chatSpeakEventBuilder_ == null) {
+          return chatSpeakEvent_;
+        } else {
+          return chatSpeakEventBuilder_.getMessage();
+        }
+      }
+      public Builder setChatSpeakEvent(com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent value) {
+        if (chatSpeakEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          chatSpeakEvent_ = value;
+          onChanged();
+        } else {
+          chatSpeakEventBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      public Builder setChatSpeakEvent(
+          com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.Builder builderForValue) {
+        if (chatSpeakEventBuilder_ == null) {
+          chatSpeakEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          chatSpeakEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      public Builder mergeChatSpeakEvent(com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent value) {
+        if (chatSpeakEventBuilder_ == null) {
+          if (((bitField0_ & 0x00000800) == 0x00000800) &&
+              chatSpeakEvent_ != com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDefaultInstance()) {
+            chatSpeakEvent_ =
+              com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.newBuilder(chatSpeakEvent_).mergeFrom(value).buildPartial();
+          } else {
+            chatSpeakEvent_ = value;
+          }
+          onChanged();
+        } else {
+          chatSpeakEventBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      public Builder clearChatSpeakEvent() {
+        if (chatSpeakEventBuilder_ == null) {
+          chatSpeakEvent_ = com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          chatSpeakEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000800);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.Builder getChatSpeakEventBuilder() {
+        bitField0_ |= 0x00000800;
+        onChanged();
+        return getChatSpeakEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatSpeakEventOrBuilder getChatSpeakEventOrBuilder() {
+        if (chatSpeakEventBuilder_ != null) {
+          return chatSpeakEventBuilder_.getMessageOrBuilder();
+        } else {
+          return chatSpeakEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent, com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatSpeakEventOrBuilder> 
+          getChatSpeakEventFieldBuilder() {
+        if (chatSpeakEventBuilder_ == null) {
+          chatSpeakEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent, com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.Builder, com.richardpianka.Chess.Network.Contracts.ChatSpeakEventOrBuilder>(
+                  chatSpeakEvent_,
+                  getParentForChildren(),
+                  isClean());
+          chatSpeakEvent_ = null;
+        }
+        return chatSpeakEventBuilder_;
+      }
+      
       // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.Envelope)
     }
     
@@ -666,6 +2420,1678 @@ public final class Contracts {
     }
     
     // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.Envelope)
+  }
+  
+  public interface RoomOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string Name = 1;
+    boolean hasName();
+    String getName();
+    
+    // required .com.richardpianka.Chess.Network.RoomFlags Flags = 2;
+    boolean hasFlags();
+    com.richardpianka.Chess.Network.Contracts.RoomFlags getFlags();
+  }
+  public static final class Room extends
+      com.google.protobuf.GeneratedMessage
+      implements RoomOrBuilder {
+    // Use Room.newBuilder() to construct.
+    private Room(Builder builder) {
+      super(builder);
+    }
+    private Room(boolean noInit) {}
+    
+    private static final Room defaultInstance;
+    public static Room getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Room getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Room_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Room_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string Name = 1;
+    public static final int NAME_FIELD_NUMBER = 1;
+    private java.lang.Object name_;
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required .com.richardpianka.Chess.Network.RoomFlags Flags = 2;
+    public static final int FLAGS_FIELD_NUMBER = 2;
+    private com.richardpianka.Chess.Network.Contracts.RoomFlags flags_;
+    public boolean hasFlags() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public com.richardpianka.Chess.Network.Contracts.RoomFlags getFlags() {
+      return flags_;
+    }
+    
+    private void initFields() {
+      name_ = "";
+      flags_ = com.richardpianka.Chess.Network.Contracts.RoomFlags.Public;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFlags()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeEnum(2, flags_.getNumber());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, flags_.getNumber());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Room parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.Room prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.RoomOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Room_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Room_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.Room.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        flags_ = com.richardpianka.Chess.Network.Contracts.RoomFlags.Public;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.Room.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.Room getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.Room build() {
+        com.richardpianka.Chess.Network.Contracts.Room result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.Room buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.Room result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.Room buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.Room result = new com.richardpianka.Chess.Network.Contracts.Room(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.flags_ = flags_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.Room) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.Room)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.Room other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance()) return this;
+        if (other.hasName()) {
+          setName(other.getName());
+        }
+        if (other.hasFlags()) {
+          setFlags(other.getFlags());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasName()) {
+          
+          return false;
+        }
+        if (!hasFlags()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              name_ = input.readBytes();
+              break;
+            }
+            case 16: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.RoomFlags value = com.richardpianka.Chess.Network.Contracts.RoomFlags.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(2, rawValue);
+              } else {
+                bitField0_ |= 0x00000002;
+                flags_ = value;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string Name = 1;
+      private java.lang.Object name_ = "";
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setName(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      void setName(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+      }
+      
+      // required .com.richardpianka.Chess.Network.RoomFlags Flags = 2;
+      private com.richardpianka.Chess.Network.Contracts.RoomFlags flags_ = com.richardpianka.Chess.Network.Contracts.RoomFlags.Public;
+      public boolean hasFlags() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public com.richardpianka.Chess.Network.Contracts.RoomFlags getFlags() {
+        return flags_;
+      }
+      public Builder setFlags(com.richardpianka.Chess.Network.Contracts.RoomFlags value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000002;
+        flags_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearFlags() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        flags_ = com.richardpianka.Chess.Network.Contracts.RoomFlags.Public;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.Room)
+    }
+    
+    static {
+      defaultInstance = new Room(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.Room)
+  }
+  
+  public interface UserOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string Name = 1;
+    boolean hasName();
+    String getName();
+    
+    // required .com.richardpianka.Chess.Network.UserFlags Flags = 2;
+    boolean hasFlags();
+    com.richardpianka.Chess.Network.Contracts.UserFlags getFlags();
+  }
+  public static final class User extends
+      com.google.protobuf.GeneratedMessage
+      implements UserOrBuilder {
+    // Use User.newBuilder() to construct.
+    private User(Builder builder) {
+      super(builder);
+    }
+    private User(boolean noInit) {}
+    
+    private static final User defaultInstance;
+    public static User getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public User getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_User_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_User_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string Name = 1;
+    public static final int NAME_FIELD_NUMBER = 1;
+    private java.lang.Object name_;
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required .com.richardpianka.Chess.Network.UserFlags Flags = 2;
+    public static final int FLAGS_FIELD_NUMBER = 2;
+    private com.richardpianka.Chess.Network.Contracts.UserFlags flags_;
+    public boolean hasFlags() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserFlags getFlags() {
+      return flags_;
+    }
+    
+    private void initFields() {
+      name_ = "";
+      flags_ = com.richardpianka.Chess.Network.Contracts.UserFlags.Pedestrian;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFlags()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeEnum(2, flags_.getNumber());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, flags_.getNumber());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.User parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.User prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.UserOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_User_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_User_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.User.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        flags_ = com.richardpianka.Chess.Network.Contracts.UserFlags.Pedestrian;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.User.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.User getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.User build() {
+        com.richardpianka.Chess.Network.Contracts.User result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.User buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.User result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.User buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.User result = new com.richardpianka.Chess.Network.Contracts.User(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.flags_ = flags_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.User) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.User)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.User other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance()) return this;
+        if (other.hasName()) {
+          setName(other.getName());
+        }
+        if (other.hasFlags()) {
+          setFlags(other.getFlags());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasName()) {
+          
+          return false;
+        }
+        if (!hasFlags()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              name_ = input.readBytes();
+              break;
+            }
+            case 16: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.UserFlags value = com.richardpianka.Chess.Network.Contracts.UserFlags.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(2, rawValue);
+              } else {
+                bitField0_ |= 0x00000002;
+                flags_ = value;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string Name = 1;
+      private java.lang.Object name_ = "";
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setName(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      void setName(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+      }
+      
+      // required .com.richardpianka.Chess.Network.UserFlags Flags = 2;
+      private com.richardpianka.Chess.Network.Contracts.UserFlags flags_ = com.richardpianka.Chess.Network.Contracts.UserFlags.Pedestrian;
+      public boolean hasFlags() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserFlags getFlags() {
+        return flags_;
+      }
+      public Builder setFlags(com.richardpianka.Chess.Network.Contracts.UserFlags value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000002;
+        flags_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearFlags() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        flags_ = com.richardpianka.Chess.Network.Contracts.UserFlags.Pedestrian;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.User)
+    }
+    
+    static {
+      defaultInstance = new User(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.User)
+  }
+  
+  public interface GameOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string Name = 1;
+    boolean hasName();
+    String getName();
+    
+    // required bool Private = 2;
+    boolean hasPrivate();
+    boolean getPrivate();
+    
+    // optional .com.richardpianka.Chess.Network.User Creator = 3;
+    boolean hasCreator();
+    com.richardpianka.Chess.Network.Contracts.User getCreator();
+    com.richardpianka.Chess.Network.Contracts.UserOrBuilder getCreatorOrBuilder();
+    
+    // optional .com.richardpianka.Chess.Network.User Joiner = 4;
+    boolean hasJoiner();
+    com.richardpianka.Chess.Network.Contracts.User getJoiner();
+    com.richardpianka.Chess.Network.Contracts.UserOrBuilder getJoinerOrBuilder();
+  }
+  public static final class Game extends
+      com.google.protobuf.GeneratedMessage
+      implements GameOrBuilder {
+    // Use Game.newBuilder() to construct.
+    private Game(Builder builder) {
+      super(builder);
+    }
+    private Game(boolean noInit) {}
+    
+    private static final Game defaultInstance;
+    public static Game getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Game getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Game_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Game_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string Name = 1;
+    public static final int NAME_FIELD_NUMBER = 1;
+    private java.lang.Object name_;
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required bool Private = 2;
+    public static final int PRIVATE_FIELD_NUMBER = 2;
+    private boolean private_;
+    public boolean hasPrivate() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public boolean getPrivate() {
+      return private_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.User Creator = 3;
+    public static final int CREATOR_FIELD_NUMBER = 3;
+    private com.richardpianka.Chess.Network.Contracts.User creator_;
+    public boolean hasCreator() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public com.richardpianka.Chess.Network.Contracts.User getCreator() {
+      return creator_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getCreatorOrBuilder() {
+      return creator_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.User Joiner = 4;
+    public static final int JOINER_FIELD_NUMBER = 4;
+    private com.richardpianka.Chess.Network.Contracts.User joiner_;
+    public boolean hasJoiner() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public com.richardpianka.Chess.Network.Contracts.User getJoiner() {
+      return joiner_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getJoinerOrBuilder() {
+      return joiner_;
+    }
+    
+    private void initFields() {
+      name_ = "";
+      private_ = false;
+      creator_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      joiner_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPrivate()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasCreator()) {
+        if (!getCreator().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasJoiner()) {
+        if (!getJoiner().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBool(2, private_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, creator_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, joiner_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, private_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, creator_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, joiner_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.Game parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.Game prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.GameOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Game_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_Game_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.Game.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCreatorFieldBuilder();
+          getJoinerFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        private_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (creatorBuilder_ == null) {
+          creator_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+        } else {
+          creatorBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        if (joinerBuilder_ == null) {
+          joiner_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+        } else {
+          joinerBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.Game.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.Game getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.Game.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.Game build() {
+        com.richardpianka.Chess.Network.Contracts.Game result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.Game buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.Game result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.Game buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.Game result = new com.richardpianka.Chess.Network.Contracts.Game(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.private_ = private_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (creatorBuilder_ == null) {
+          result.creator_ = creator_;
+        } else {
+          result.creator_ = creatorBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (joinerBuilder_ == null) {
+          result.joiner_ = joiner_;
+        } else {
+          result.joiner_ = joinerBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.Game) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.Game)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.Game other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.Game.getDefaultInstance()) return this;
+        if (other.hasName()) {
+          setName(other.getName());
+        }
+        if (other.hasPrivate()) {
+          setPrivate(other.getPrivate());
+        }
+        if (other.hasCreator()) {
+          mergeCreator(other.getCreator());
+        }
+        if (other.hasJoiner()) {
+          mergeJoiner(other.getJoiner());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasName()) {
+          
+          return false;
+        }
+        if (!hasPrivate()) {
+          
+          return false;
+        }
+        if (hasCreator()) {
+          if (!getCreator().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasJoiner()) {
+          if (!getJoiner().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              name_ = input.readBytes();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              private_ = input.readBool();
+              break;
+            }
+            case 26: {
+              com.richardpianka.Chess.Network.Contracts.User.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.User.newBuilder();
+              if (hasCreator()) {
+                subBuilder.mergeFrom(getCreator());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setCreator(subBuilder.buildPartial());
+              break;
+            }
+            case 34: {
+              com.richardpianka.Chess.Network.Contracts.User.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.User.newBuilder();
+              if (hasJoiner()) {
+                subBuilder.mergeFrom(getJoiner());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setJoiner(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string Name = 1;
+      private java.lang.Object name_ = "";
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setName(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      void setName(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+      }
+      
+      // required bool Private = 2;
+      private boolean private_ ;
+      public boolean hasPrivate() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public boolean getPrivate() {
+        return private_;
+      }
+      public Builder setPrivate(boolean value) {
+        bitField0_ |= 0x00000002;
+        private_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearPrivate() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        private_ = false;
+        onChanged();
+        return this;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.User Creator = 3;
+      private com.richardpianka.Chess.Network.Contracts.User creator_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> creatorBuilder_;
+      public boolean hasCreator() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public com.richardpianka.Chess.Network.Contracts.User getCreator() {
+        if (creatorBuilder_ == null) {
+          return creator_;
+        } else {
+          return creatorBuilder_.getMessage();
+        }
+      }
+      public Builder setCreator(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (creatorBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          creator_ = value;
+          onChanged();
+        } else {
+          creatorBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder setCreator(
+          com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (creatorBuilder_ == null) {
+          creator_ = builderForValue.build();
+          onChanged();
+        } else {
+          creatorBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder mergeCreator(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (creatorBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              creator_ != com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance()) {
+            creator_ =
+              com.richardpianka.Chess.Network.Contracts.User.newBuilder(creator_).mergeFrom(value).buildPartial();
+          } else {
+            creator_ = value;
+          }
+          onChanged();
+        } else {
+          creatorBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder clearCreator() {
+        if (creatorBuilder_ == null) {
+          creator_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+          onChanged();
+        } else {
+          creatorBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder getCreatorBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getCreatorFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getCreatorOrBuilder() {
+        if (creatorBuilder_ != null) {
+          return creatorBuilder_.getMessageOrBuilder();
+        } else {
+          return creator_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+          getCreatorFieldBuilder() {
+        if (creatorBuilder_ == null) {
+          creatorBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder>(
+                  creator_,
+                  getParentForChildren(),
+                  isClean());
+          creator_ = null;
+        }
+        return creatorBuilder_;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.User Joiner = 4;
+      private com.richardpianka.Chess.Network.Contracts.User joiner_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> joinerBuilder_;
+      public boolean hasJoiner() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public com.richardpianka.Chess.Network.Contracts.User getJoiner() {
+        if (joinerBuilder_ == null) {
+          return joiner_;
+        } else {
+          return joinerBuilder_.getMessage();
+        }
+      }
+      public Builder setJoiner(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (joinerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          joiner_ = value;
+          onChanged();
+        } else {
+          joinerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder setJoiner(
+          com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (joinerBuilder_ == null) {
+          joiner_ = builderForValue.build();
+          onChanged();
+        } else {
+          joinerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder mergeJoiner(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (joinerBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              joiner_ != com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance()) {
+            joiner_ =
+              com.richardpianka.Chess.Network.Contracts.User.newBuilder(joiner_).mergeFrom(value).buildPartial();
+          } else {
+            joiner_ = value;
+          }
+          onChanged();
+        } else {
+          joinerBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder clearJoiner() {
+        if (joinerBuilder_ == null) {
+          joiner_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+          onChanged();
+        } else {
+          joinerBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder getJoinerBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getJoinerFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getJoinerOrBuilder() {
+        if (joinerBuilder_ != null) {
+          return joinerBuilder_.getMessageOrBuilder();
+        } else {
+          return joiner_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+          getJoinerFieldBuilder() {
+        if (joinerBuilder_ == null) {
+          joinerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder>(
+                  joiner_,
+                  getParentForChildren(),
+                  isClean());
+          joiner_ = null;
+        }
+        return joinerBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.Game)
+    }
+    
+    static {
+      defaultInstance = new Game(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.Game)
   }
   
   public interface HandshakeRequestOrBuilder
@@ -1499,11 +4925,7629 @@ public final class Contracts {
     // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.HandshakeResponse)
   }
   
+  public interface IdentifyRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string Username = 1;
+    boolean hasUsername();
+    String getUsername();
+    
+    // optional string Password = 2;
+    boolean hasPassword();
+    String getPassword();
+  }
+  public static final class IdentifyRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements IdentifyRequestOrBuilder {
+    // Use IdentifyRequest.newBuilder() to construct.
+    private IdentifyRequest(Builder builder) {
+      super(builder);
+    }
+    private IdentifyRequest(boolean noInit) {}
+    
+    private static final IdentifyRequest defaultInstance;
+    public static IdentifyRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public IdentifyRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyRequest_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string Username = 1;
+    public static final int USERNAME_FIELD_NUMBER = 1;
+    private java.lang.Object username_;
+    public boolean hasUsername() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          username_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getUsernameBytes() {
+      java.lang.Object ref = username_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        username_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // optional string Password = 2;
+    public static final int PASSWORD_FIELD_NUMBER = 2;
+    private java.lang.Object password_;
+    public boolean hasPassword() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getPassword() {
+      java.lang.Object ref = password_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          password_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getPasswordBytes() {
+      java.lang.Object ref = password_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        password_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      username_ = "";
+      password_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasUsername()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getUsernameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getPasswordBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getUsernameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getPasswordBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.IdentifyRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.IdentifyRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.IdentifyRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        username_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        password_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.IdentifyRequest getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.IdentifyRequest build() {
+        com.richardpianka.Chess.Network.Contracts.IdentifyRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.IdentifyRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.IdentifyRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.IdentifyRequest buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.IdentifyRequest result = new com.richardpianka.Chess.Network.Contracts.IdentifyRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.username_ = username_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.password_ = password_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.IdentifyRequest) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.IdentifyRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.IdentifyRequest other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.IdentifyRequest.getDefaultInstance()) return this;
+        if (other.hasUsername()) {
+          setUsername(other.getUsername());
+        }
+        if (other.hasPassword()) {
+          setPassword(other.getPassword());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasUsername()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              username_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              password_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string Username = 1;
+      private java.lang.Object username_ = "";
+      public boolean hasUsername() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          username_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setUsername(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        username_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearUsername() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        username_ = getDefaultInstance().getUsername();
+        onChanged();
+        return this;
+      }
+      void setUsername(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        username_ = value;
+        onChanged();
+      }
+      
+      // optional string Password = 2;
+      private java.lang.Object password_ = "";
+      public boolean hasPassword() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getPassword() {
+        java.lang.Object ref = password_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          password_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setPassword(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        password_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearPassword() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        password_ = getDefaultInstance().getPassword();
+        onChanged();
+        return this;
+      }
+      void setPassword(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        password_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.IdentifyRequest)
+    }
+    
+    static {
+      defaultInstance = new IdentifyRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.IdentifyRequest)
+  }
+  
+  public interface IdentifyResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    boolean hasResult();
+    com.richardpianka.Chess.Network.Contracts.Result getResult();
+    
+    // optional string Message = 2;
+    boolean hasMessage();
+    String getMessage();
+  }
+  public static final class IdentifyResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements IdentifyResponseOrBuilder {
+    // Use IdentifyResponse.newBuilder() to construct.
+    private IdentifyResponse(Builder builder) {
+      super(builder);
+    }
+    private IdentifyResponse(boolean noInit) {}
+    
+    private static final IdentifyResponse defaultInstance;
+    public static IdentifyResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public IdentifyResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyResponse_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.Result result_;
+    public boolean hasResult() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+      return result_;
+    }
+    
+    // optional string Message = 2;
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private java.lang.Object message_;
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+      message_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, result_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getMessageBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, result_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getMessageBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.IdentifyResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.IdentifyResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.IdentifyResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_IdentifyResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.IdentifyResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.IdentifyResponse getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.IdentifyResponse build() {
+        com.richardpianka.Chess.Network.Contracts.IdentifyResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.IdentifyResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.IdentifyResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.IdentifyResponse buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.IdentifyResponse result = new com.richardpianka.Chess.Network.Contracts.IdentifyResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.result_ = result_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.message_ = message_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.IdentifyResponse) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.IdentifyResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.IdentifyResponse other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.IdentifyResponse.getDefaultInstance()) return this;
+        if (other.hasResult()) {
+          setResult(other.getResult());
+        }
+        if (other.hasMessage()) {
+          setMessage(other.getMessage());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasResult()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.Result value = com.richardpianka.Chess.Network.Contracts.Result.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                result_ = value;
+              }
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              message_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.Result Result = 1;
+      private com.richardpianka.Chess.Network.Contracts.Result result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+      public boolean hasResult() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+        return result_;
+      }
+      public Builder setResult(com.richardpianka.Chess.Network.Contracts.Result value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearResult() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        onChanged();
+        return this;
+      }
+      
+      // optional string Message = 2;
+      private java.lang.Object message_ = "";
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setMessage(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.IdentifyResponse)
+    }
+    
+    static {
+      defaultInstance = new IdentifyResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.IdentifyResponse)
+  }
+  
+  public interface JoinChatRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  public static final class JoinChatRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements JoinChatRequestOrBuilder {
+    // Use JoinChatRequest.newBuilder() to construct.
+    private JoinChatRequest(Builder builder) {
+      super(builder);
+    }
+    private JoinChatRequest(boolean noInit) {}
+    
+    private static final JoinChatRequest defaultInstance;
+    public static JoinChatRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public JoinChatRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatRequest_fieldAccessorTable;
+    }
+    
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.JoinChatRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.JoinChatRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.JoinChatRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinChatRequest getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinChatRequest build() {
+        com.richardpianka.Chess.Network.Contracts.JoinChatRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.JoinChatRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.JoinChatRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinChatRequest buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.JoinChatRequest result = new com.richardpianka.Chess.Network.Contracts.JoinChatRequest(this);
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.JoinChatRequest) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.JoinChatRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.JoinChatRequest other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.JoinChatRequest.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.JoinChatRequest)
+    }
+    
+    static {
+      defaultInstance = new JoinChatRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.JoinChatRequest)
+  }
+  
+  public interface JoinChatResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    boolean hasResult();
+    com.richardpianka.Chess.Network.Contracts.Result getResult();
+  }
+  public static final class JoinChatResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements JoinChatResponseOrBuilder {
+    // Use JoinChatResponse.newBuilder() to construct.
+    private JoinChatResponse(Builder builder) {
+      super(builder);
+    }
+    private JoinChatResponse(boolean noInit) {}
+    
+    private static final JoinChatResponse defaultInstance;
+    public static JoinChatResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public JoinChatResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatResponse_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.Result result_;
+    public boolean hasResult() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+      return result_;
+    }
+    
+    private void initFields() {
+      result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, result_.getNumber());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, result_.getNumber());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinChatResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.JoinChatResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.JoinChatResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinChatResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.JoinChatResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinChatResponse getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinChatResponse build() {
+        com.richardpianka.Chess.Network.Contracts.JoinChatResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.JoinChatResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.JoinChatResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinChatResponse buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.JoinChatResponse result = new com.richardpianka.Chess.Network.Contracts.JoinChatResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.result_ = result_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.JoinChatResponse) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.JoinChatResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.JoinChatResponse other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.JoinChatResponse.getDefaultInstance()) return this;
+        if (other.hasResult()) {
+          setResult(other.getResult());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasResult()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.Result value = com.richardpianka.Chess.Network.Contracts.Result.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                result_ = value;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.Result Result = 1;
+      private com.richardpianka.Chess.Network.Contracts.Result result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+      public boolean hasResult() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+        return result_;
+      }
+      public Builder setResult(com.richardpianka.Chess.Network.Contracts.Result value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearResult() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.JoinChatResponse)
+    }
+    
+    static {
+      defaultInstance = new JoinChatResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.JoinChatResponse)
+  }
+  
+  public interface RoomListRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  public static final class RoomListRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements RoomListRequestOrBuilder {
+    // Use RoomListRequest.newBuilder() to construct.
+    private RoomListRequest(Builder builder) {
+      super(builder);
+    }
+    private RoomListRequest(boolean noInit) {}
+    
+    private static final RoomListRequest defaultInstance;
+    public static RoomListRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public RoomListRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListRequest_fieldAccessorTable;
+    }
+    
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.RoomListRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.RoomListRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.RoomListRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.RoomListRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.RoomListRequest getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.RoomListRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.RoomListRequest build() {
+        com.richardpianka.Chess.Network.Contracts.RoomListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.RoomListRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.RoomListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.RoomListRequest buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.RoomListRequest result = new com.richardpianka.Chess.Network.Contracts.RoomListRequest(this);
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.RoomListRequest) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.RoomListRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.RoomListRequest other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.RoomListRequest.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.RoomListRequest)
+    }
+    
+    static {
+      defaultInstance = new RoomListRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.RoomListRequest)
+  }
+  
+  public interface RoomListResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // repeated .com.richardpianka.Chess.Network.Room Rooms = 1;
+    java.util.List<com.richardpianka.Chess.Network.Contracts.Room> 
+        getRoomsList();
+    com.richardpianka.Chess.Network.Contracts.Room getRooms(int index);
+    int getRoomsCount();
+    java.util.List<? extends com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> 
+        getRoomsOrBuilderList();
+    com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomsOrBuilder(
+        int index);
+  }
+  public static final class RoomListResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements RoomListResponseOrBuilder {
+    // Use RoomListResponse.newBuilder() to construct.
+    private RoomListResponse(Builder builder) {
+      super(builder);
+    }
+    private RoomListResponse(boolean noInit) {}
+    
+    private static final RoomListResponse defaultInstance;
+    public static RoomListResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public RoomListResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListResponse_fieldAccessorTable;
+    }
+    
+    // repeated .com.richardpianka.Chess.Network.Room Rooms = 1;
+    public static final int ROOMS_FIELD_NUMBER = 1;
+    private java.util.List<com.richardpianka.Chess.Network.Contracts.Room> rooms_;
+    public java.util.List<com.richardpianka.Chess.Network.Contracts.Room> getRoomsList() {
+      return rooms_;
+    }
+    public java.util.List<? extends com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> 
+        getRoomsOrBuilderList() {
+      return rooms_;
+    }
+    public int getRoomsCount() {
+      return rooms_.size();
+    }
+    public com.richardpianka.Chess.Network.Contracts.Room getRooms(int index) {
+      return rooms_.get(index);
+    }
+    public com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomsOrBuilder(
+        int index) {
+      return rooms_.get(index);
+    }
+    
+    private void initFields() {
+      rooms_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      for (int i = 0; i < getRoomsCount(); i++) {
+        if (!getRooms(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < rooms_.size(); i++) {
+        output.writeMessage(1, rooms_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      for (int i = 0; i < rooms_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, rooms_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.RoomListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.RoomListResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.RoomListResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_RoomListResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.RoomListResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRoomsFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (roomsBuilder_ == null) {
+          rooms_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          roomsBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.RoomListResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.RoomListResponse getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.RoomListResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.RoomListResponse build() {
+        com.richardpianka.Chess.Network.Contracts.RoomListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.RoomListResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.RoomListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.RoomListResponse buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.RoomListResponse result = new com.richardpianka.Chess.Network.Contracts.RoomListResponse(this);
+        int from_bitField0_ = bitField0_;
+        if (roomsBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            rooms_ = java.util.Collections.unmodifiableList(rooms_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.rooms_ = rooms_;
+        } else {
+          result.rooms_ = roomsBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.RoomListResponse) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.RoomListResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.RoomListResponse other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.RoomListResponse.getDefaultInstance()) return this;
+        if (roomsBuilder_ == null) {
+          if (!other.rooms_.isEmpty()) {
+            if (rooms_.isEmpty()) {
+              rooms_ = other.rooms_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureRoomsIsMutable();
+              rooms_.addAll(other.rooms_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.rooms_.isEmpty()) {
+            if (roomsBuilder_.isEmpty()) {
+              roomsBuilder_.dispose();
+              roomsBuilder_ = null;
+              rooms_ = other.rooms_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              roomsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getRoomsFieldBuilder() : null;
+            } else {
+              roomsBuilder_.addAllMessages(other.rooms_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        for (int i = 0; i < getRoomsCount(); i++) {
+          if (!getRooms(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              com.richardpianka.Chess.Network.Contracts.Room.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.Room.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addRooms(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // repeated .com.richardpianka.Chess.Network.Room Rooms = 1;
+      private java.util.List<com.richardpianka.Chess.Network.Contracts.Room> rooms_ =
+        java.util.Collections.emptyList();
+      private void ensureRoomsIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          rooms_ = new java.util.ArrayList<com.richardpianka.Chess.Network.Contracts.Room>(rooms_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> roomsBuilder_;
+      
+      public java.util.List<com.richardpianka.Chess.Network.Contracts.Room> getRoomsList() {
+        if (roomsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(rooms_);
+        } else {
+          return roomsBuilder_.getMessageList();
+        }
+      }
+      public int getRoomsCount() {
+        if (roomsBuilder_ == null) {
+          return rooms_.size();
+        } else {
+          return roomsBuilder_.getCount();
+        }
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room getRooms(int index) {
+        if (roomsBuilder_ == null) {
+          return rooms_.get(index);
+        } else {
+          return roomsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setRooms(
+          int index, com.richardpianka.Chess.Network.Contracts.Room value) {
+        if (roomsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoomsIsMutable();
+          rooms_.set(index, value);
+          onChanged();
+        } else {
+          roomsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setRooms(
+          int index, com.richardpianka.Chess.Network.Contracts.Room.Builder builderForValue) {
+        if (roomsBuilder_ == null) {
+          ensureRoomsIsMutable();
+          rooms_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          roomsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addRooms(com.richardpianka.Chess.Network.Contracts.Room value) {
+        if (roomsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoomsIsMutable();
+          rooms_.add(value);
+          onChanged();
+        } else {
+          roomsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addRooms(
+          int index, com.richardpianka.Chess.Network.Contracts.Room value) {
+        if (roomsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoomsIsMutable();
+          rooms_.add(index, value);
+          onChanged();
+        } else {
+          roomsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addRooms(
+          com.richardpianka.Chess.Network.Contracts.Room.Builder builderForValue) {
+        if (roomsBuilder_ == null) {
+          ensureRoomsIsMutable();
+          rooms_.add(builderForValue.build());
+          onChanged();
+        } else {
+          roomsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addRooms(
+          int index, com.richardpianka.Chess.Network.Contracts.Room.Builder builderForValue) {
+        if (roomsBuilder_ == null) {
+          ensureRoomsIsMutable();
+          rooms_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          roomsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllRooms(
+          java.lang.Iterable<? extends com.richardpianka.Chess.Network.Contracts.Room> values) {
+        if (roomsBuilder_ == null) {
+          ensureRoomsIsMutable();
+          super.addAll(values, rooms_);
+          onChanged();
+        } else {
+          roomsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearRooms() {
+        if (roomsBuilder_ == null) {
+          rooms_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          roomsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeRooms(int index) {
+        if (roomsBuilder_ == null) {
+          ensureRoomsIsMutable();
+          rooms_.remove(index);
+          onChanged();
+        } else {
+          roomsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room.Builder getRoomsBuilder(
+          int index) {
+        return getRoomsFieldBuilder().getBuilder(index);
+      }
+      public com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomsOrBuilder(
+          int index) {
+        if (roomsBuilder_ == null) {
+          return rooms_.get(index);  } else {
+          return roomsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> 
+           getRoomsOrBuilderList() {
+        if (roomsBuilder_ != null) {
+          return roomsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(rooms_);
+        }
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room.Builder addRoomsBuilder() {
+        return getRoomsFieldBuilder().addBuilder(
+            com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance());
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room.Builder addRoomsBuilder(
+          int index) {
+        return getRoomsFieldBuilder().addBuilder(
+            index, com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance());
+      }
+      public java.util.List<com.richardpianka.Chess.Network.Contracts.Room.Builder> 
+           getRoomsBuilderList() {
+        return getRoomsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> 
+          getRoomsFieldBuilder() {
+        if (roomsBuilder_ == null) {
+          roomsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder>(
+                  rooms_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          rooms_ = null;
+        }
+        return roomsBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.RoomListResponse)
+    }
+    
+    static {
+      defaultInstance = new RoomListResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.RoomListResponse)
+  }
+  
+  public interface JoinRoomRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.Room Room = 1;
+    boolean hasRoom();
+    com.richardpianka.Chess.Network.Contracts.Room getRoom();
+    com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomOrBuilder();
+  }
+  public static final class JoinRoomRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements JoinRoomRequestOrBuilder {
+    // Use JoinRoomRequest.newBuilder() to construct.
+    private JoinRoomRequest(Builder builder) {
+      super(builder);
+    }
+    private JoinRoomRequest(boolean noInit) {}
+    
+    private static final JoinRoomRequest defaultInstance;
+    public static JoinRoomRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public JoinRoomRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.Room Room = 1;
+    public static final int ROOM_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.Room room_;
+    public boolean hasRoom() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.Room getRoom() {
+      return room_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomOrBuilder() {
+      return room_;
+    }
+    
+    private void initFields() {
+      room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasRoom()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getRoom().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, room_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, room_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.JoinRoomRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.JoinRoomRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRoomFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (roomBuilder_ == null) {
+          room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+        } else {
+          roomBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomRequest getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomRequest build() {
+        com.richardpianka.Chess.Network.Contracts.JoinRoomRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.JoinRoomRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.JoinRoomRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomRequest buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.JoinRoomRequest result = new com.richardpianka.Chess.Network.Contracts.JoinRoomRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (roomBuilder_ == null) {
+          result.room_ = room_;
+        } else {
+          result.room_ = roomBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.JoinRoomRequest) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.JoinRoomRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.JoinRoomRequest other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.getDefaultInstance()) return this;
+        if (other.hasRoom()) {
+          mergeRoom(other.getRoom());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasRoom()) {
+          
+          return false;
+        }
+        if (!getRoom().isInitialized()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              com.richardpianka.Chess.Network.Contracts.Room.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.Room.newBuilder();
+              if (hasRoom()) {
+                subBuilder.mergeFrom(getRoom());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setRoom(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.Room Room = 1;
+      private com.richardpianka.Chess.Network.Contracts.Room room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> roomBuilder_;
+      public boolean hasRoom() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room getRoom() {
+        if (roomBuilder_ == null) {
+          return room_;
+        } else {
+          return roomBuilder_.getMessage();
+        }
+      }
+      public Builder setRoom(com.richardpianka.Chess.Network.Contracts.Room value) {
+        if (roomBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          room_ = value;
+          onChanged();
+        } else {
+          roomBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder setRoom(
+          com.richardpianka.Chess.Network.Contracts.Room.Builder builderForValue) {
+        if (roomBuilder_ == null) {
+          room_ = builderForValue.build();
+          onChanged();
+        } else {
+          roomBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeRoom(com.richardpianka.Chess.Network.Contracts.Room value) {
+        if (roomBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              room_ != com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance()) {
+            room_ =
+              com.richardpianka.Chess.Network.Contracts.Room.newBuilder(room_).mergeFrom(value).buildPartial();
+          } else {
+            room_ = value;
+          }
+          onChanged();
+        } else {
+          roomBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearRoom() {
+        if (roomBuilder_ == null) {
+          room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+          onChanged();
+        } else {
+          roomBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room.Builder getRoomBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getRoomFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomOrBuilder() {
+        if (roomBuilder_ != null) {
+          return roomBuilder_.getMessageOrBuilder();
+        } else {
+          return room_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> 
+          getRoomFieldBuilder() {
+        if (roomBuilder_ == null) {
+          roomBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder>(
+                  room_,
+                  getParentForChildren(),
+                  isClean());
+          room_ = null;
+        }
+        return roomBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.JoinRoomRequest)
+    }
+    
+    static {
+      defaultInstance = new JoinRoomRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.JoinRoomRequest)
+  }
+  
+  public interface JoinRoomResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    boolean hasResult();
+    com.richardpianka.Chess.Network.Contracts.Result getResult();
+  }
+  public static final class JoinRoomResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements JoinRoomResponseOrBuilder {
+    // Use JoinRoomResponse.newBuilder() to construct.
+    private JoinRoomResponse(Builder builder) {
+      super(builder);
+    }
+    private JoinRoomResponse(boolean noInit) {}
+    
+    private static final JoinRoomResponse defaultInstance;
+    public static JoinRoomResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public JoinRoomResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.Result result_;
+    public boolean hasResult() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+      return result_;
+    }
+    
+    private void initFields() {
+      result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, result_.getNumber());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, result_.getNumber());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.JoinRoomResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.JoinRoomResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.JoinRoomResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomResponse getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomResponse build() {
+        com.richardpianka.Chess.Network.Contracts.JoinRoomResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.JoinRoomResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.JoinRoomResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.JoinRoomResponse buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.JoinRoomResponse result = new com.richardpianka.Chess.Network.Contracts.JoinRoomResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.result_ = result_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.JoinRoomResponse) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.JoinRoomResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.JoinRoomResponse other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.getDefaultInstance()) return this;
+        if (other.hasResult()) {
+          setResult(other.getResult());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasResult()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.Result value = com.richardpianka.Chess.Network.Contracts.Result.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                result_ = value;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.Result Result = 1;
+      private com.richardpianka.Chess.Network.Contracts.Result result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+      public boolean hasResult() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+        return result_;
+      }
+      public Builder setResult(com.richardpianka.Chess.Network.Contracts.Result value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearResult() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.JoinRoomResponse)
+    }
+    
+    static {
+      defaultInstance = new JoinRoomResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.JoinRoomResponse)
+  }
+  
+  public interface SpeakRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.SpeakMode Mode = 1;
+    boolean hasMode();
+    com.richardpianka.Chess.Network.Contracts.SpeakMode getMode();
+    
+    // required string Message = 2;
+    boolean hasMessage();
+    String getMessage();
+    
+    // optional .com.richardpianka.Chess.Network.User Recipient = 3;
+    boolean hasRecipient();
+    com.richardpianka.Chess.Network.Contracts.User getRecipient();
+    com.richardpianka.Chess.Network.Contracts.UserOrBuilder getRecipientOrBuilder();
+  }
+  public static final class SpeakRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements SpeakRequestOrBuilder {
+    // Use SpeakRequest.newBuilder() to construct.
+    private SpeakRequest(Builder builder) {
+      super(builder);
+    }
+    private SpeakRequest(boolean noInit) {}
+    
+    private static final SpeakRequest defaultInstance;
+    public static SpeakRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public SpeakRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_SpeakRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_SpeakRequest_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.SpeakMode Mode = 1;
+    public static final int MODE_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.SpeakMode mode_;
+    public boolean hasMode() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.SpeakMode getMode() {
+      return mode_;
+    }
+    
+    // required string Message = 2;
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private java.lang.Object message_;
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // optional .com.richardpianka.Chess.Network.User Recipient = 3;
+    public static final int RECIPIENT_FIELD_NUMBER = 3;
+    private com.richardpianka.Chess.Network.Contracts.User recipient_;
+    public boolean hasRecipient() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public com.richardpianka.Chess.Network.Contracts.User getRecipient() {
+      return recipient_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getRecipientOrBuilder() {
+      return recipient_;
+    }
+    
+    private void initFields() {
+      mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+      message_ = "";
+      recipient_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasMode()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMessage()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasRecipient()) {
+        if (!getRecipient().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, mode_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getMessageBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, recipient_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, mode_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getMessageBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, recipient_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.SpeakRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.SpeakRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.SpeakRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_SpeakRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_SpeakRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.SpeakRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRecipientFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (recipientBuilder_ == null) {
+          recipient_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+        } else {
+          recipientBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.SpeakRequest getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.SpeakRequest build() {
+        com.richardpianka.Chess.Network.Contracts.SpeakRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.SpeakRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.SpeakRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.SpeakRequest buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.SpeakRequest result = new com.richardpianka.Chess.Network.Contracts.SpeakRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.mode_ = mode_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.message_ = message_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (recipientBuilder_ == null) {
+          result.recipient_ = recipient_;
+        } else {
+          result.recipient_ = recipientBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.SpeakRequest) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.SpeakRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.SpeakRequest other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.SpeakRequest.getDefaultInstance()) return this;
+        if (other.hasMode()) {
+          setMode(other.getMode());
+        }
+        if (other.hasMessage()) {
+          setMessage(other.getMessage());
+        }
+        if (other.hasRecipient()) {
+          mergeRecipient(other.getRecipient());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasMode()) {
+          
+          return false;
+        }
+        if (!hasMessage()) {
+          
+          return false;
+        }
+        if (hasRecipient()) {
+          if (!getRecipient().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.SpeakMode value = com.richardpianka.Chess.Network.Contracts.SpeakMode.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                mode_ = value;
+              }
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              message_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              com.richardpianka.Chess.Network.Contracts.User.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.User.newBuilder();
+              if (hasRecipient()) {
+                subBuilder.mergeFrom(getRecipient());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setRecipient(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.SpeakMode Mode = 1;
+      private com.richardpianka.Chess.Network.Contracts.SpeakMode mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+      public boolean hasMode() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.SpeakMode getMode() {
+        return mode_;
+      }
+      public Builder setMode(com.richardpianka.Chess.Network.Contracts.SpeakMode value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        mode_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMode() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+        onChanged();
+        return this;
+      }
+      
+      // required string Message = 2;
+      private java.lang.Object message_ = "";
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setMessage(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+      }
+      
+      // optional .com.richardpianka.Chess.Network.User Recipient = 3;
+      private com.richardpianka.Chess.Network.Contracts.User recipient_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> recipientBuilder_;
+      public boolean hasRecipient() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public com.richardpianka.Chess.Network.Contracts.User getRecipient() {
+        if (recipientBuilder_ == null) {
+          return recipient_;
+        } else {
+          return recipientBuilder_.getMessage();
+        }
+      }
+      public Builder setRecipient(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (recipientBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          recipient_ = value;
+          onChanged();
+        } else {
+          recipientBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder setRecipient(
+          com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (recipientBuilder_ == null) {
+          recipient_ = builderForValue.build();
+          onChanged();
+        } else {
+          recipientBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder mergeRecipient(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (recipientBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              recipient_ != com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance()) {
+            recipient_ =
+              com.richardpianka.Chess.Network.Contracts.User.newBuilder(recipient_).mergeFrom(value).buildPartial();
+          } else {
+            recipient_ = value;
+          }
+          onChanged();
+        } else {
+          recipientBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder clearRecipient() {
+        if (recipientBuilder_ == null) {
+          recipient_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+          onChanged();
+        } else {
+          recipientBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder getRecipientBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getRecipientFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getRecipientOrBuilder() {
+        if (recipientBuilder_ != null) {
+          return recipientBuilder_.getMessageOrBuilder();
+        } else {
+          return recipient_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+          getRecipientFieldBuilder() {
+        if (recipientBuilder_ == null) {
+          recipientBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder>(
+                  recipient_,
+                  getParentForChildren(),
+                  isClean());
+          recipient_ = null;
+        }
+        return recipientBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.SpeakRequest)
+    }
+    
+    static {
+      defaultInstance = new SpeakRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.SpeakRequest)
+  }
+  
+  public interface OperatorRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.OperatorRequest.OperatorAction Action = 1;
+    boolean hasAction();
+    com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction getAction();
+    
+    // optional .com.richardpianka.Chess.Network.User User = 2;
+    boolean hasUser();
+    com.richardpianka.Chess.Network.Contracts.User getUser();
+    com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder();
+  }
+  public static final class OperatorRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements OperatorRequestOrBuilder {
+    // Use OperatorRequest.newBuilder() to construct.
+    private OperatorRequest(Builder builder) {
+      super(builder);
+    }
+    private OperatorRequest(boolean noInit) {}
+    
+    private static final OperatorRequest defaultInstance;
+    public static OperatorRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public OperatorRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorRequest_fieldAccessorTable;
+    }
+    
+    public enum OperatorAction
+        implements com.google.protobuf.ProtocolMessageEnum {
+      Designate(0, 0),
+      Resign(1, 1),
+      Kick(2, 2),
+      Ban(3, 3),
+      ;
+      
+      public static final int Designate_VALUE = 0;
+      public static final int Resign_VALUE = 1;
+      public static final int Kick_VALUE = 2;
+      public static final int Ban_VALUE = 3;
+      
+      
+      public final int getNumber() { return value; }
+      
+      public static OperatorAction valueOf(int value) {
+        switch (value) {
+          case 0: return Designate;
+          case 1: return Resign;
+          case 2: return Kick;
+          case 3: return Ban;
+          default: return null;
+        }
+      }
+      
+      public static com.google.protobuf.Internal.EnumLiteMap<OperatorAction>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static com.google.protobuf.Internal.EnumLiteMap<OperatorAction>
+          internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<OperatorAction>() {
+              public OperatorAction findValueByNumber(int number) {
+                return OperatorAction.valueOf(number);
+              }
+            };
+      
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.OperatorRequest.getDescriptor().getEnumTypes().get(0);
+      }
+      
+      private static final OperatorAction[] VALUES = {
+        Designate, Resign, Kick, Ban, 
+      };
+      
+      public static OperatorAction valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        return VALUES[desc.getIndex()];
+      }
+      
+      private final int index;
+      private final int value;
+      
+      private OperatorAction(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+      
+      // @@protoc_insertion_point(enum_scope:com.richardpianka.Chess.Network.OperatorRequest.OperatorAction)
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.OperatorRequest.OperatorAction Action = 1;
+    public static final int ACTION_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction action_;
+    public boolean hasAction() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction getAction() {
+      return action_;
+    }
+    
+    // optional .com.richardpianka.Chess.Network.User User = 2;
+    public static final int USER_FIELD_NUMBER = 2;
+    private com.richardpianka.Chess.Network.Contracts.User user_;
+    public boolean hasUser() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public com.richardpianka.Chess.Network.Contracts.User getUser() {
+      return user_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder() {
+      return user_;
+    }
+    
+    private void initFields() {
+      action_ = com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction.Designate;
+      user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasAction()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasUser()) {
+        if (!getUser().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, action_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, user_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, action_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, user_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.OperatorRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.OperatorRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.OperatorRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getUserFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        action_ = com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction.Designate;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (userBuilder_ == null) {
+          user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+        } else {
+          userBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.OperatorRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.OperatorRequest getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.OperatorRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.OperatorRequest build() {
+        com.richardpianka.Chess.Network.Contracts.OperatorRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.OperatorRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.OperatorRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.OperatorRequest buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.OperatorRequest result = new com.richardpianka.Chess.Network.Contracts.OperatorRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.action_ = action_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (userBuilder_ == null) {
+          result.user_ = user_;
+        } else {
+          result.user_ = userBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.OperatorRequest) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.OperatorRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.OperatorRequest other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.OperatorRequest.getDefaultInstance()) return this;
+        if (other.hasAction()) {
+          setAction(other.getAction());
+        }
+        if (other.hasUser()) {
+          mergeUser(other.getUser());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasAction()) {
+          
+          return false;
+        }
+        if (hasUser()) {
+          if (!getUser().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction value = com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                action_ = value;
+              }
+              break;
+            }
+            case 18: {
+              com.richardpianka.Chess.Network.Contracts.User.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.User.newBuilder();
+              if (hasUser()) {
+                subBuilder.mergeFrom(getUser());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setUser(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.OperatorRequest.OperatorAction Action = 1;
+      private com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction action_ = com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction.Designate;
+      public boolean hasAction() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction getAction() {
+        return action_;
+      }
+      public Builder setAction(com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        action_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearAction() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        action_ = com.richardpianka.Chess.Network.Contracts.OperatorRequest.OperatorAction.Designate;
+        onChanged();
+        return this;
+      }
+      
+      // optional .com.richardpianka.Chess.Network.User User = 2;
+      private com.richardpianka.Chess.Network.Contracts.User user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> userBuilder_;
+      public boolean hasUser() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public com.richardpianka.Chess.Network.Contracts.User getUser() {
+        if (userBuilder_ == null) {
+          return user_;
+        } else {
+          return userBuilder_.getMessage();
+        }
+      }
+      public Builder setUser(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (userBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          user_ = value;
+          onChanged();
+        } else {
+          userBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder setUser(
+          com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (userBuilder_ == null) {
+          user_ = builderForValue.build();
+          onChanged();
+        } else {
+          userBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder mergeUser(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (userBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              user_ != com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance()) {
+            user_ =
+              com.richardpianka.Chess.Network.Contracts.User.newBuilder(user_).mergeFrom(value).buildPartial();
+          } else {
+            user_ = value;
+          }
+          onChanged();
+        } else {
+          userBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder clearUser() {
+        if (userBuilder_ == null) {
+          user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+          onChanged();
+        } else {
+          userBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder getUserBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getUserFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder() {
+        if (userBuilder_ != null) {
+          return userBuilder_.getMessageOrBuilder();
+        } else {
+          return user_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+          getUserFieldBuilder() {
+        if (userBuilder_ == null) {
+          userBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder>(
+                  user_,
+                  getParentForChildren(),
+                  isClean());
+          user_ = null;
+        }
+        return userBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.OperatorRequest)
+    }
+    
+    static {
+      defaultInstance = new OperatorRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.OperatorRequest)
+  }
+  
+  public interface OperatorResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    boolean hasResult();
+    com.richardpianka.Chess.Network.Contracts.Result getResult();
+  }
+  public static final class OperatorResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements OperatorResponseOrBuilder {
+    // Use OperatorResponse.newBuilder() to construct.
+    private OperatorResponse(Builder builder) {
+      super(builder);
+    }
+    private OperatorResponse(boolean noInit) {}
+    
+    private static final OperatorResponse defaultInstance;
+    public static OperatorResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public OperatorResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorResponse_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.Result Result = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.Result result_;
+    public boolean hasResult() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+      return result_;
+    }
+    
+    private void initFields() {
+      result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, result_.getNumber());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, result_.getNumber());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.OperatorResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.OperatorResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.OperatorResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_OperatorResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.OperatorResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.OperatorResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.OperatorResponse getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.OperatorResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.OperatorResponse build() {
+        com.richardpianka.Chess.Network.Contracts.OperatorResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.OperatorResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.OperatorResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.OperatorResponse buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.OperatorResponse result = new com.richardpianka.Chess.Network.Contracts.OperatorResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.result_ = result_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.OperatorResponse) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.OperatorResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.OperatorResponse other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.OperatorResponse.getDefaultInstance()) return this;
+        if (other.hasResult()) {
+          setResult(other.getResult());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasResult()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.Result value = com.richardpianka.Chess.Network.Contracts.Result.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                result_ = value;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.Result Result = 1;
+      private com.richardpianka.Chess.Network.Contracts.Result result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+      public boolean hasResult() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.Result getResult() {
+        return result_;
+      }
+      public Builder setResult(com.richardpianka.Chess.Network.Contracts.Result value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearResult() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        result_ = com.richardpianka.Chess.Network.Contracts.Result.Success;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.OperatorResponse)
+    }
+    
+    static {
+      defaultInstance = new OperatorResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.OperatorResponse)
+  }
+  
+  public interface ChatRoomEventOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.Room Room = 1;
+    boolean hasRoom();
+    com.richardpianka.Chess.Network.Contracts.Room getRoom();
+    com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomOrBuilder();
+    
+    // repeated .com.richardpianka.Chess.Network.User Users = 2;
+    java.util.List<com.richardpianka.Chess.Network.Contracts.User> 
+        getUsersList();
+    com.richardpianka.Chess.Network.Contracts.User getUsers(int index);
+    int getUsersCount();
+    java.util.List<? extends com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+        getUsersOrBuilderList();
+    com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUsersOrBuilder(
+        int index);
+  }
+  public static final class ChatRoomEvent extends
+      com.google.protobuf.GeneratedMessage
+      implements ChatRoomEventOrBuilder {
+    // Use ChatRoomEvent.newBuilder() to construct.
+    private ChatRoomEvent(Builder builder) {
+      super(builder);
+    }
+    private ChatRoomEvent(boolean noInit) {}
+    
+    private static final ChatRoomEvent defaultInstance;
+    public static ChatRoomEvent getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public ChatRoomEvent getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.Room Room = 1;
+    public static final int ROOM_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.Room room_;
+    public boolean hasRoom() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.Room getRoom() {
+      return room_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomOrBuilder() {
+      return room_;
+    }
+    
+    // repeated .com.richardpianka.Chess.Network.User Users = 2;
+    public static final int USERS_FIELD_NUMBER = 2;
+    private java.util.List<com.richardpianka.Chess.Network.Contracts.User> users_;
+    public java.util.List<com.richardpianka.Chess.Network.Contracts.User> getUsersList() {
+      return users_;
+    }
+    public java.util.List<? extends com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+        getUsersOrBuilderList() {
+      return users_;
+    }
+    public int getUsersCount() {
+      return users_.size();
+    }
+    public com.richardpianka.Chess.Network.Contracts.User getUsers(int index) {
+      return users_.get(index);
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUsersOrBuilder(
+        int index) {
+      return users_.get(index);
+    }
+    
+    private void initFields() {
+      room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+      users_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasRoom()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getRoom().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getUsersCount(); i++) {
+        if (!getUsers(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, room_);
+      }
+      for (int i = 0; i < users_.size(); i++) {
+        output.writeMessage(2, users_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, room_);
+      }
+      for (int i = 0; i < users_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, users_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatRoomEvent parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.ChatRoomEvent prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.ChatRoomEventOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRoomFieldBuilder();
+          getUsersFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (roomBuilder_ == null) {
+          room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+        } else {
+          roomBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (usersBuilder_ == null) {
+          users_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          usersBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatRoomEvent getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatRoomEvent build() {
+        com.richardpianka.Chess.Network.Contracts.ChatRoomEvent result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.ChatRoomEvent buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.ChatRoomEvent result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatRoomEvent buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.ChatRoomEvent result = new com.richardpianka.Chess.Network.Contracts.ChatRoomEvent(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (roomBuilder_ == null) {
+          result.room_ = room_;
+        } else {
+          result.room_ = roomBuilder_.build();
+        }
+        if (usersBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            users_ = java.util.Collections.unmodifiableList(users_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.users_ = users_;
+        } else {
+          result.users_ = usersBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.ChatRoomEvent) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.ChatRoomEvent)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.ChatRoomEvent other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.getDefaultInstance()) return this;
+        if (other.hasRoom()) {
+          mergeRoom(other.getRoom());
+        }
+        if (usersBuilder_ == null) {
+          if (!other.users_.isEmpty()) {
+            if (users_.isEmpty()) {
+              users_ = other.users_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureUsersIsMutable();
+              users_.addAll(other.users_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.users_.isEmpty()) {
+            if (usersBuilder_.isEmpty()) {
+              usersBuilder_.dispose();
+              usersBuilder_ = null;
+              users_ = other.users_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              usersBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getUsersFieldBuilder() : null;
+            } else {
+              usersBuilder_.addAllMessages(other.users_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasRoom()) {
+          
+          return false;
+        }
+        if (!getRoom().isInitialized()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getUsersCount(); i++) {
+          if (!getUsers(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              com.richardpianka.Chess.Network.Contracts.Room.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.Room.newBuilder();
+              if (hasRoom()) {
+                subBuilder.mergeFrom(getRoom());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setRoom(subBuilder.buildPartial());
+              break;
+            }
+            case 18: {
+              com.richardpianka.Chess.Network.Contracts.User.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.User.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addUsers(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.Room Room = 1;
+      private com.richardpianka.Chess.Network.Contracts.Room room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> roomBuilder_;
+      public boolean hasRoom() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room getRoom() {
+        if (roomBuilder_ == null) {
+          return room_;
+        } else {
+          return roomBuilder_.getMessage();
+        }
+      }
+      public Builder setRoom(com.richardpianka.Chess.Network.Contracts.Room value) {
+        if (roomBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          room_ = value;
+          onChanged();
+        } else {
+          roomBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder setRoom(
+          com.richardpianka.Chess.Network.Contracts.Room.Builder builderForValue) {
+        if (roomBuilder_ == null) {
+          room_ = builderForValue.build();
+          onChanged();
+        } else {
+          roomBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeRoom(com.richardpianka.Chess.Network.Contracts.Room value) {
+        if (roomBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              room_ != com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance()) {
+            room_ =
+              com.richardpianka.Chess.Network.Contracts.Room.newBuilder(room_).mergeFrom(value).buildPartial();
+          } else {
+            room_ = value;
+          }
+          onChanged();
+        } else {
+          roomBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearRoom() {
+        if (roomBuilder_ == null) {
+          room_ = com.richardpianka.Chess.Network.Contracts.Room.getDefaultInstance();
+          onChanged();
+        } else {
+          roomBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.Room.Builder getRoomBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getRoomFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.RoomOrBuilder getRoomOrBuilder() {
+        if (roomBuilder_ != null) {
+          return roomBuilder_.getMessageOrBuilder();
+        } else {
+          return room_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder> 
+          getRoomFieldBuilder() {
+        if (roomBuilder_ == null) {
+          roomBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.Room, com.richardpianka.Chess.Network.Contracts.Room.Builder, com.richardpianka.Chess.Network.Contracts.RoomOrBuilder>(
+                  room_,
+                  getParentForChildren(),
+                  isClean());
+          room_ = null;
+        }
+        return roomBuilder_;
+      }
+      
+      // repeated .com.richardpianka.Chess.Network.User Users = 2;
+      private java.util.List<com.richardpianka.Chess.Network.Contracts.User> users_ =
+        java.util.Collections.emptyList();
+      private void ensureUsersIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          users_ = new java.util.ArrayList<com.richardpianka.Chess.Network.Contracts.User>(users_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> usersBuilder_;
+      
+      public java.util.List<com.richardpianka.Chess.Network.Contracts.User> getUsersList() {
+        if (usersBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(users_);
+        } else {
+          return usersBuilder_.getMessageList();
+        }
+      }
+      public int getUsersCount() {
+        if (usersBuilder_ == null) {
+          return users_.size();
+        } else {
+          return usersBuilder_.getCount();
+        }
+      }
+      public com.richardpianka.Chess.Network.Contracts.User getUsers(int index) {
+        if (usersBuilder_ == null) {
+          return users_.get(index);
+        } else {
+          return usersBuilder_.getMessage(index);
+        }
+      }
+      public Builder setUsers(
+          int index, com.richardpianka.Chess.Network.Contracts.User value) {
+        if (usersBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUsersIsMutable();
+          users_.set(index, value);
+          onChanged();
+        } else {
+          usersBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setUsers(
+          int index, com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (usersBuilder_ == null) {
+          ensureUsersIsMutable();
+          users_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          usersBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addUsers(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (usersBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUsersIsMutable();
+          users_.add(value);
+          onChanged();
+        } else {
+          usersBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addUsers(
+          int index, com.richardpianka.Chess.Network.Contracts.User value) {
+        if (usersBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUsersIsMutable();
+          users_.add(index, value);
+          onChanged();
+        } else {
+          usersBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addUsers(
+          com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (usersBuilder_ == null) {
+          ensureUsersIsMutable();
+          users_.add(builderForValue.build());
+          onChanged();
+        } else {
+          usersBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addUsers(
+          int index, com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (usersBuilder_ == null) {
+          ensureUsersIsMutable();
+          users_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          usersBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllUsers(
+          java.lang.Iterable<? extends com.richardpianka.Chess.Network.Contracts.User> values) {
+        if (usersBuilder_ == null) {
+          ensureUsersIsMutable();
+          super.addAll(values, users_);
+          onChanged();
+        } else {
+          usersBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearUsers() {
+        if (usersBuilder_ == null) {
+          users_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          usersBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeUsers(int index) {
+        if (usersBuilder_ == null) {
+          ensureUsersIsMutable();
+          users_.remove(index);
+          onChanged();
+        } else {
+          usersBuilder_.remove(index);
+        }
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder getUsersBuilder(
+          int index) {
+        return getUsersFieldBuilder().getBuilder(index);
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUsersOrBuilder(
+          int index) {
+        if (usersBuilder_ == null) {
+          return users_.get(index);  } else {
+          return usersBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+           getUsersOrBuilderList() {
+        if (usersBuilder_ != null) {
+          return usersBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(users_);
+        }
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder addUsersBuilder() {
+        return getUsersFieldBuilder().addBuilder(
+            com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance());
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder addUsersBuilder(
+          int index) {
+        return getUsersFieldBuilder().addBuilder(
+            index, com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance());
+      }
+      public java.util.List<com.richardpianka.Chess.Network.Contracts.User.Builder> 
+           getUsersBuilderList() {
+        return getUsersFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+          getUsersFieldBuilder() {
+        if (usersBuilder_ == null) {
+          usersBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder>(
+                  users_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          users_ = null;
+        }
+        return usersBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.ChatRoomEvent)
+    }
+    
+    static {
+      defaultInstance = new ChatRoomEvent(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.ChatRoomEvent)
+  }
+  
+  public interface ChatUserEventOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.User User = 1;
+    boolean hasUser();
+    com.richardpianka.Chess.Network.Contracts.User getUser();
+    com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder();
+    
+    // required .com.richardpianka.Chess.Network.ChatUserEvent.UserStatus Status = 2;
+    boolean hasStatus();
+    com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus getStatus();
+    
+    // optional string Message = 3;
+    boolean hasMessage();
+    String getMessage();
+  }
+  public static final class ChatUserEvent extends
+      com.google.protobuf.GeneratedMessage
+      implements ChatUserEventOrBuilder {
+    // Use ChatUserEvent.newBuilder() to construct.
+    private ChatUserEvent(Builder builder) {
+      super(builder);
+    }
+    private ChatUserEvent(boolean noInit) {}
+    
+    private static final ChatUserEvent defaultInstance;
+    public static ChatUserEvent getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public ChatUserEvent getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatUserEvent_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatUserEvent_fieldAccessorTable;
+    }
+    
+    public enum UserStatus
+        implements com.google.protobuf.ProtocolMessageEnum {
+      Joined(0, 0),
+      Left(1, 1),
+      Update(2, 2),
+      ;
+      
+      public static final int Joined_VALUE = 0;
+      public static final int Left_VALUE = 1;
+      public static final int Update_VALUE = 2;
+      
+      
+      public final int getNumber() { return value; }
+      
+      public static UserStatus valueOf(int value) {
+        switch (value) {
+          case 0: return Joined;
+          case 1: return Left;
+          case 2: return Update;
+          default: return null;
+        }
+      }
+      
+      public static com.google.protobuf.Internal.EnumLiteMap<UserStatus>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static com.google.protobuf.Internal.EnumLiteMap<UserStatus>
+          internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<UserStatus>() {
+              public UserStatus findValueByNumber(int number) {
+                return UserStatus.valueOf(number);
+              }
+            };
+      
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDescriptor().getEnumTypes().get(0);
+      }
+      
+      private static final UserStatus[] VALUES = {
+        Joined, Left, Update, 
+      };
+      
+      public static UserStatus valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        return VALUES[desc.getIndex()];
+      }
+      
+      private final int index;
+      private final int value;
+      
+      private UserStatus(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+      
+      // @@protoc_insertion_point(enum_scope:com.richardpianka.Chess.Network.ChatUserEvent.UserStatus)
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.User User = 1;
+    public static final int USER_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.User user_;
+    public boolean hasUser() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.User getUser() {
+      return user_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder() {
+      return user_;
+    }
+    
+    // required .com.richardpianka.Chess.Network.ChatUserEvent.UserStatus Status = 2;
+    public static final int STATUS_FIELD_NUMBER = 2;
+    private com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus status_;
+    public boolean hasStatus() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus getStatus() {
+      return status_;
+    }
+    
+    // optional string Message = 3;
+    public static final int MESSAGE_FIELD_NUMBER = 3;
+    private java.lang.Object message_;
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      status_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus.Joined;
+      message_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasUser()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasStatus()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getUser().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, user_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeEnum(2, status_.getNumber());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getMessageBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, user_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, status_.getNumber());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getMessageBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatUserEvent parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.ChatUserEvent prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.ChatUserEventOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatUserEvent_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatUserEvent_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.ChatUserEvent.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getUserFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (userBuilder_ == null) {
+          user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+        } else {
+          userBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        status_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus.Joined;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatUserEvent getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatUserEvent build() {
+        com.richardpianka.Chess.Network.Contracts.ChatUserEvent result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.ChatUserEvent buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.ChatUserEvent result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatUserEvent buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.ChatUserEvent result = new com.richardpianka.Chess.Network.Contracts.ChatUserEvent(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (userBuilder_ == null) {
+          result.user_ = user_;
+        } else {
+          result.user_ = userBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.status_ = status_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.message_ = message_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.ChatUserEvent) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.ChatUserEvent)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.ChatUserEvent other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.ChatUserEvent.getDefaultInstance()) return this;
+        if (other.hasUser()) {
+          mergeUser(other.getUser());
+        }
+        if (other.hasStatus()) {
+          setStatus(other.getStatus());
+        }
+        if (other.hasMessage()) {
+          setMessage(other.getMessage());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasUser()) {
+          
+          return false;
+        }
+        if (!hasStatus()) {
+          
+          return false;
+        }
+        if (!getUser().isInitialized()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              com.richardpianka.Chess.Network.Contracts.User.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.User.newBuilder();
+              if (hasUser()) {
+                subBuilder.mergeFrom(getUser());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setUser(subBuilder.buildPartial());
+              break;
+            }
+            case 16: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus value = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(2, rawValue);
+              } else {
+                bitField0_ |= 0x00000002;
+                status_ = value;
+              }
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              message_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.User User = 1;
+      private com.richardpianka.Chess.Network.Contracts.User user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> userBuilder_;
+      public boolean hasUser() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.User getUser() {
+        if (userBuilder_ == null) {
+          return user_;
+        } else {
+          return userBuilder_.getMessage();
+        }
+      }
+      public Builder setUser(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (userBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          user_ = value;
+          onChanged();
+        } else {
+          userBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder setUser(
+          com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (userBuilder_ == null) {
+          user_ = builderForValue.build();
+          onChanged();
+        } else {
+          userBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeUser(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (userBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              user_ != com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance()) {
+            user_ =
+              com.richardpianka.Chess.Network.Contracts.User.newBuilder(user_).mergeFrom(value).buildPartial();
+          } else {
+            user_ = value;
+          }
+          onChanged();
+        } else {
+          userBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearUser() {
+        if (userBuilder_ == null) {
+          user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+          onChanged();
+        } else {
+          userBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder getUserBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getUserFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder() {
+        if (userBuilder_ != null) {
+          return userBuilder_.getMessageOrBuilder();
+        } else {
+          return user_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+          getUserFieldBuilder() {
+        if (userBuilder_ == null) {
+          userBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder>(
+                  user_,
+                  getParentForChildren(),
+                  isClean());
+          user_ = null;
+        }
+        return userBuilder_;
+      }
+      
+      // required .com.richardpianka.Chess.Network.ChatUserEvent.UserStatus Status = 2;
+      private com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus status_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus.Joined;
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus getStatus() {
+        return status_;
+      }
+      public Builder setStatus(com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000002;
+        status_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearStatus() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        status_ = com.richardpianka.Chess.Network.Contracts.ChatUserEvent.UserStatus.Joined;
+        onChanged();
+        return this;
+      }
+      
+      // optional string Message = 3;
+      private java.lang.Object message_ = "";
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setMessage(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        message_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.ChatUserEvent)
+    }
+    
+    static {
+      defaultInstance = new ChatUserEvent(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.ChatUserEvent)
+  }
+  
+  public interface ChatSpeakEventOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.Chess.Network.User User = 1;
+    boolean hasUser();
+    com.richardpianka.Chess.Network.Contracts.User getUser();
+    com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder();
+    
+    // required string Message = 2;
+    boolean hasMessage();
+    String getMessage();
+    
+    // required .com.richardpianka.Chess.Network.SpeakMode Mode = 3;
+    boolean hasMode();
+    com.richardpianka.Chess.Network.Contracts.SpeakMode getMode();
+  }
+  public static final class ChatSpeakEvent extends
+      com.google.protobuf.GeneratedMessage
+      implements ChatSpeakEventOrBuilder {
+    // Use ChatSpeakEvent.newBuilder() to construct.
+    private ChatSpeakEvent(Builder builder) {
+      super(builder);
+    }
+    private ChatSpeakEvent(boolean noInit) {}
+    
+    private static final ChatSpeakEvent defaultInstance;
+    public static ChatSpeakEvent getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public ChatSpeakEvent getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.Chess.Network.User User = 1;
+    public static final int USER_FIELD_NUMBER = 1;
+    private com.richardpianka.Chess.Network.Contracts.User user_;
+    public boolean hasUser() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.Chess.Network.Contracts.User getUser() {
+      return user_;
+    }
+    public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder() {
+      return user_;
+    }
+    
+    // required string Message = 2;
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private java.lang.Object message_;
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required .com.richardpianka.Chess.Network.SpeakMode Mode = 3;
+    public static final int MODE_FIELD_NUMBER = 3;
+    private com.richardpianka.Chess.Network.Contracts.SpeakMode mode_;
+    public boolean hasMode() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public com.richardpianka.Chess.Network.Contracts.SpeakMode getMode() {
+      return mode_;
+    }
+    
+    private void initFields() {
+      user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      message_ = "";
+      mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasUser()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMessage()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMode()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getUser().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, user_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getMessageBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeEnum(3, mode_.getNumber());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, user_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getMessageBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, mode_.getNumber());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.ChatSpeakEventOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getUserFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (userBuilder_ == null) {
+          user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+        } else {
+          userBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent build() {
+        com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent result = new com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (userBuilder_ == null) {
+          result.user_ = user_;
+        } else {
+          result.user_ = userBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.message_ = message_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.mode_ = mode_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.getDefaultInstance()) return this;
+        if (other.hasUser()) {
+          mergeUser(other.getUser());
+        }
+        if (other.hasMessage()) {
+          setMessage(other.getMessage());
+        }
+        if (other.hasMode()) {
+          setMode(other.getMode());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasUser()) {
+          
+          return false;
+        }
+        if (!hasMessage()) {
+          
+          return false;
+        }
+        if (!hasMode()) {
+          
+          return false;
+        }
+        if (!getUser().isInitialized()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              com.richardpianka.Chess.Network.Contracts.User.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.User.newBuilder();
+              if (hasUser()) {
+                subBuilder.mergeFrom(getUser());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setUser(subBuilder.buildPartial());
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              message_ = input.readBytes();
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+              com.richardpianka.Chess.Network.Contracts.SpeakMode value = com.richardpianka.Chess.Network.Contracts.SpeakMode.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(3, rawValue);
+              } else {
+                bitField0_ |= 0x00000004;
+                mode_ = value;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.Chess.Network.User User = 1;
+      private com.richardpianka.Chess.Network.Contracts.User user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> userBuilder_;
+      public boolean hasUser() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.Chess.Network.Contracts.User getUser() {
+        if (userBuilder_ == null) {
+          return user_;
+        } else {
+          return userBuilder_.getMessage();
+        }
+      }
+      public Builder setUser(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (userBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          user_ = value;
+          onChanged();
+        } else {
+          userBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder setUser(
+          com.richardpianka.Chess.Network.Contracts.User.Builder builderForValue) {
+        if (userBuilder_ == null) {
+          user_ = builderForValue.build();
+          onChanged();
+        } else {
+          userBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeUser(com.richardpianka.Chess.Network.Contracts.User value) {
+        if (userBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              user_ != com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance()) {
+            user_ =
+              com.richardpianka.Chess.Network.Contracts.User.newBuilder(user_).mergeFrom(value).buildPartial();
+          } else {
+            user_ = value;
+          }
+          onChanged();
+        } else {
+          userBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearUser() {
+        if (userBuilder_ == null) {
+          user_ = com.richardpianka.Chess.Network.Contracts.User.getDefaultInstance();
+          onChanged();
+        } else {
+          userBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.User.Builder getUserBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getUserFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.Chess.Network.Contracts.UserOrBuilder getUserOrBuilder() {
+        if (userBuilder_ != null) {
+          return userBuilder_.getMessageOrBuilder();
+        } else {
+          return user_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder> 
+          getUserFieldBuilder() {
+        if (userBuilder_ == null) {
+          userBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.User, com.richardpianka.Chess.Network.Contracts.User.Builder, com.richardpianka.Chess.Network.Contracts.UserOrBuilder>(
+                  user_,
+                  getParentForChildren(),
+                  isClean());
+          user_ = null;
+        }
+        return userBuilder_;
+      }
+      
+      // required string Message = 2;
+      private java.lang.Object message_ = "";
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setMessage(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+      }
+      
+      // required .com.richardpianka.Chess.Network.SpeakMode Mode = 3;
+      private com.richardpianka.Chess.Network.Contracts.SpeakMode mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+      public boolean hasMode() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public com.richardpianka.Chess.Network.Contracts.SpeakMode getMode() {
+        return mode_;
+      }
+      public Builder setMode(com.richardpianka.Chess.Network.Contracts.SpeakMode value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000004;
+        mode_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMode() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        mode_ = com.richardpianka.Chess.Network.Contracts.SpeakMode.Normal;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.ChatSpeakEvent)
+    }
+    
+    static {
+      defaultInstance = new ChatSpeakEvent(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.ChatSpeakEvent)
+  }
+  
+  public interface GameListRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  public static final class GameListRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements GameListRequestOrBuilder {
+    // Use GameListRequest.newBuilder() to construct.
+    private GameListRequest(Builder builder) {
+      super(builder);
+    }
+    private GameListRequest(boolean noInit) {}
+    
+    private static final GameListRequest defaultInstance;
+    public static GameListRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public GameListRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListRequest_fieldAccessorTable;
+    }
+    
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.GameListRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.GameListRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.GameListRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.GameListRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.GameListRequest getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.GameListRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.GameListRequest build() {
+        com.richardpianka.Chess.Network.Contracts.GameListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.GameListRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.GameListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.GameListRequest buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.GameListRequest result = new com.richardpianka.Chess.Network.Contracts.GameListRequest(this);
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.GameListRequest) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.GameListRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.GameListRequest other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.GameListRequest.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.GameListRequest)
+    }
+    
+    static {
+      defaultInstance = new GameListRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.GameListRequest)
+  }
+  
+  public interface GameListResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // repeated .com.richardpianka.Chess.Network.Game Games = 1;
+    java.util.List<com.richardpianka.Chess.Network.Contracts.Game> 
+        getGamesList();
+    com.richardpianka.Chess.Network.Contracts.Game getGames(int index);
+    int getGamesCount();
+    java.util.List<? extends com.richardpianka.Chess.Network.Contracts.GameOrBuilder> 
+        getGamesOrBuilderList();
+    com.richardpianka.Chess.Network.Contracts.GameOrBuilder getGamesOrBuilder(
+        int index);
+  }
+  public static final class GameListResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements GameListResponseOrBuilder {
+    // Use GameListResponse.newBuilder() to construct.
+    private GameListResponse(Builder builder) {
+      super(builder);
+    }
+    private GameListResponse(boolean noInit) {}
+    
+    private static final GameListResponse defaultInstance;
+    public static GameListResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public GameListResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListResponse_fieldAccessorTable;
+    }
+    
+    // repeated .com.richardpianka.Chess.Network.Game Games = 1;
+    public static final int GAMES_FIELD_NUMBER = 1;
+    private java.util.List<com.richardpianka.Chess.Network.Contracts.Game> games_;
+    public java.util.List<com.richardpianka.Chess.Network.Contracts.Game> getGamesList() {
+      return games_;
+    }
+    public java.util.List<? extends com.richardpianka.Chess.Network.Contracts.GameOrBuilder> 
+        getGamesOrBuilderList() {
+      return games_;
+    }
+    public int getGamesCount() {
+      return games_.size();
+    }
+    public com.richardpianka.Chess.Network.Contracts.Game getGames(int index) {
+      return games_.get(index);
+    }
+    public com.richardpianka.Chess.Network.Contracts.GameOrBuilder getGamesOrBuilder(
+        int index) {
+      return games_.get(index);
+    }
+    
+    private void initFields() {
+      games_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      for (int i = 0; i < getGamesCount(); i++) {
+        if (!getGames(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < games_.size(); i++) {
+        output.writeMessage(1, games_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      for (int i = 0; i < games_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, games_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.Chess.Network.Contracts.GameListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.richardpianka.Chess.Network.Contracts.GameListResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.Chess.Network.Contracts.GameListResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.Chess.Network.Contracts.internal_static_com_richardpianka_Chess_Network_GameListResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.Chess.Network.Contracts.GameListResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getGamesFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (gamesBuilder_ == null) {
+          games_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          gamesBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.Chess.Network.Contracts.GameListResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.GameListResponse getDefaultInstanceForType() {
+        return com.richardpianka.Chess.Network.Contracts.GameListResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.GameListResponse build() {
+        com.richardpianka.Chess.Network.Contracts.GameListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.Chess.Network.Contracts.GameListResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.Chess.Network.Contracts.GameListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.Chess.Network.Contracts.GameListResponse buildPartial() {
+        com.richardpianka.Chess.Network.Contracts.GameListResponse result = new com.richardpianka.Chess.Network.Contracts.GameListResponse(this);
+        int from_bitField0_ = bitField0_;
+        if (gamesBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            games_ = java.util.Collections.unmodifiableList(games_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.games_ = games_;
+        } else {
+          result.games_ = gamesBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.Chess.Network.Contracts.GameListResponse) {
+          return mergeFrom((com.richardpianka.Chess.Network.Contracts.GameListResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(com.richardpianka.Chess.Network.Contracts.GameListResponse other) {
+        if (other == com.richardpianka.Chess.Network.Contracts.GameListResponse.getDefaultInstance()) return this;
+        if (gamesBuilder_ == null) {
+          if (!other.games_.isEmpty()) {
+            if (games_.isEmpty()) {
+              games_ = other.games_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureGamesIsMutable();
+              games_.addAll(other.games_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.games_.isEmpty()) {
+            if (gamesBuilder_.isEmpty()) {
+              gamesBuilder_.dispose();
+              gamesBuilder_ = null;
+              games_ = other.games_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              gamesBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getGamesFieldBuilder() : null;
+            } else {
+              gamesBuilder_.addAllMessages(other.games_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        for (int i = 0; i < getGamesCount(); i++) {
+          if (!getGames(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              com.richardpianka.Chess.Network.Contracts.Game.Builder subBuilder = com.richardpianka.Chess.Network.Contracts.Game.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addGames(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // repeated .com.richardpianka.Chess.Network.Game Games = 1;
+      private java.util.List<com.richardpianka.Chess.Network.Contracts.Game> games_ =
+        java.util.Collections.emptyList();
+      private void ensureGamesIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          games_ = new java.util.ArrayList<com.richardpianka.Chess.Network.Contracts.Game>(games_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Game, com.richardpianka.Chess.Network.Contracts.Game.Builder, com.richardpianka.Chess.Network.Contracts.GameOrBuilder> gamesBuilder_;
+      
+      public java.util.List<com.richardpianka.Chess.Network.Contracts.Game> getGamesList() {
+        if (gamesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(games_);
+        } else {
+          return gamesBuilder_.getMessageList();
+        }
+      }
+      public int getGamesCount() {
+        if (gamesBuilder_ == null) {
+          return games_.size();
+        } else {
+          return gamesBuilder_.getCount();
+        }
+      }
+      public com.richardpianka.Chess.Network.Contracts.Game getGames(int index) {
+        if (gamesBuilder_ == null) {
+          return games_.get(index);
+        } else {
+          return gamesBuilder_.getMessage(index);
+        }
+      }
+      public Builder setGames(
+          int index, com.richardpianka.Chess.Network.Contracts.Game value) {
+        if (gamesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGamesIsMutable();
+          games_.set(index, value);
+          onChanged();
+        } else {
+          gamesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setGames(
+          int index, com.richardpianka.Chess.Network.Contracts.Game.Builder builderForValue) {
+        if (gamesBuilder_ == null) {
+          ensureGamesIsMutable();
+          games_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          gamesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addGames(com.richardpianka.Chess.Network.Contracts.Game value) {
+        if (gamesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGamesIsMutable();
+          games_.add(value);
+          onChanged();
+        } else {
+          gamesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addGames(
+          int index, com.richardpianka.Chess.Network.Contracts.Game value) {
+        if (gamesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGamesIsMutable();
+          games_.add(index, value);
+          onChanged();
+        } else {
+          gamesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addGames(
+          com.richardpianka.Chess.Network.Contracts.Game.Builder builderForValue) {
+        if (gamesBuilder_ == null) {
+          ensureGamesIsMutable();
+          games_.add(builderForValue.build());
+          onChanged();
+        } else {
+          gamesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addGames(
+          int index, com.richardpianka.Chess.Network.Contracts.Game.Builder builderForValue) {
+        if (gamesBuilder_ == null) {
+          ensureGamesIsMutable();
+          games_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          gamesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllGames(
+          java.lang.Iterable<? extends com.richardpianka.Chess.Network.Contracts.Game> values) {
+        if (gamesBuilder_ == null) {
+          ensureGamesIsMutable();
+          super.addAll(values, games_);
+          onChanged();
+        } else {
+          gamesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearGames() {
+        if (gamesBuilder_ == null) {
+          games_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          gamesBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeGames(int index) {
+        if (gamesBuilder_ == null) {
+          ensureGamesIsMutable();
+          games_.remove(index);
+          onChanged();
+        } else {
+          gamesBuilder_.remove(index);
+        }
+        return this;
+      }
+      public com.richardpianka.Chess.Network.Contracts.Game.Builder getGamesBuilder(
+          int index) {
+        return getGamesFieldBuilder().getBuilder(index);
+      }
+      public com.richardpianka.Chess.Network.Contracts.GameOrBuilder getGamesOrBuilder(
+          int index) {
+        if (gamesBuilder_ == null) {
+          return games_.get(index);  } else {
+          return gamesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends com.richardpianka.Chess.Network.Contracts.GameOrBuilder> 
+           getGamesOrBuilderList() {
+        if (gamesBuilder_ != null) {
+          return gamesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(games_);
+        }
+      }
+      public com.richardpianka.Chess.Network.Contracts.Game.Builder addGamesBuilder() {
+        return getGamesFieldBuilder().addBuilder(
+            com.richardpianka.Chess.Network.Contracts.Game.getDefaultInstance());
+      }
+      public com.richardpianka.Chess.Network.Contracts.Game.Builder addGamesBuilder(
+          int index) {
+        return getGamesFieldBuilder().addBuilder(
+            index, com.richardpianka.Chess.Network.Contracts.Game.getDefaultInstance());
+      }
+      public java.util.List<com.richardpianka.Chess.Network.Contracts.Game.Builder> 
+           getGamesBuilderList() {
+        return getGamesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.richardpianka.Chess.Network.Contracts.Game, com.richardpianka.Chess.Network.Contracts.Game.Builder, com.richardpianka.Chess.Network.Contracts.GameOrBuilder> 
+          getGamesFieldBuilder() {
+        if (gamesBuilder_ == null) {
+          gamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.richardpianka.Chess.Network.Contracts.Game, com.richardpianka.Chess.Network.Contracts.Game.Builder, com.richardpianka.Chess.Network.Contracts.GameOrBuilder>(
+                  games_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          games_ = null;
+        }
+        return gamesBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.Chess.Network.GameListResponse)
+    }
+    
+    static {
+      defaultInstance = new GameListResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.Chess.Network.GameListResponse)
+  }
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_richardpianka_Chess_Network_Envelope_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_richardpianka_Chess_Network_Envelope_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_Room_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_Room_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_User_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_User_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_Game_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_Game_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_richardpianka_Chess_Network_HandshakeRequest_descriptor;
   private static
@@ -1514,6 +12558,86 @@ public final class Contracts {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_richardpianka_Chess_Network_HandshakeResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_IdentifyRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_IdentifyRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_IdentifyResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_IdentifyResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_JoinChatRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_JoinChatRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_JoinChatResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_JoinChatResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_RoomListRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_RoomListRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_RoomListResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_RoomListResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_SpeakRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_SpeakRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_OperatorRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_OperatorRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_OperatorResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_OperatorResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_ChatUserEvent_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_ChatUserEvent_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_GameListRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_GameListRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_Chess_Network_GameListResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_Chess_Network_GameListResponse_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1525,17 +12649,85 @@ public final class Contracts {
     java.lang.String[] descriptorData = {
       "\n3src/com/richardpianka/Chess/Network/co" +
       "ntracts.proto\022\037com.richardpianka.Chess.N" +
-      "etwork\"\246\001\n\010Envelope\022K\n\020HandshakeRequest\030" +
+      "etwork\"\212\007\n\010Envelope\022K\n\020HandshakeRequest\030" +
       "\001 \001(\01321.com.richardpianka.Chess.Network." +
       "HandshakeRequest\022M\n\021HandshakeResponse\030\002 " +
       "\001(\01322.com.richardpianka.Chess.Network.Ha" +
-      "ndshakeResponse\"W\n\020HandshakeRequest\022\024\n\014V" +
-      "ersionMajor\030\001 \002(\005\022\024\n\014VersionMinor\030\002 \002(\005\022" +
-      "\027\n\017VersionRevision\030\003 \002(\005\"L\n\021HandshakeRes" +
-      "ponse\0227\n\006Result\030\001 \002(\0162\'.com.richardpiank",
-      "a.Chess.Network.Result*\"\n\006Result\022\013\n\007Succ" +
-      "ess\020\000\022\013\n\007Failure\020\001B,\n\037com.richardpianka." +
-      "Chess.NetworkB\tContracts"
+      "ndshakeResponse\022I\n\017IdentifyRequest\030\003 \001(\013" +
+      "20.com.richardpianka.Chess.Network.Ident" +
+      "ifyRequest\022K\n\020IdentifyResponse\030\004 \001(\01321.c" +
+      "om.richardpianka.Chess.Network.IdentifyR",
+      "esponse\022I\n\017JoinChatRequest\030\005 \001(\01320.com.r" +
+      "ichardpianka.Chess.Network.JoinChatReque" +
+      "st\022K\n\020JoinChatResponse\030\006 \001(\01321.com.richa" +
+      "rdpianka.Chess.Network.JoinChatResponse\022" +
+      "I\n\017JoinRoomRequest\030\007 \001(\01320.com.richardpi" +
+      "anka.Chess.Network.JoinRoomRequest\022K\n\020Jo" +
+      "inRoomResponse\030\010 \001(\01321.com.richardpianka" +
+      ".Chess.Network.JoinRoomResponse\022C\n\014Speak" +
+      "Request\030\t \001(\0132-.com.richardpianka.Chess." +
+      "Network.SpeakRequest\022E\n\rChatRoomEvent\030\n ",
+      "\001(\0132..com.richardpianka.Chess.Network.Ch" +
+      "atRoomEvent\022E\n\rChatUserEvent\030\013 \001(\0132..com" +
+      ".richardpianka.Chess.Network.ChatUserEve" +
+      "nt\022G\n\016ChatSpeakEvent\030\014 \001(\0132/.com.richard" +
+      "pianka.Chess.Network.ChatSpeakEvent\"O\n\004R" +
+      "oom\022\014\n\004Name\030\001 \002(\t\0229\n\005Flags\030\002 \002(\0162*.com.r" +
+      "ichardpianka.Chess.Network.RoomFlags\"O\n\004" +
+      "User\022\014\n\004Name\030\001 \002(\t\0229\n\005Flags\030\002 \002(\0162*.com." +
+      "richardpianka.Chess.Network.UserFlags\"\224\001" +
+      "\n\004Game\022\014\n\004Name\030\001 \002(\t\022\017\n\007Private\030\002 \002(\010\0226\n",
+      "\007Creator\030\003 \001(\0132%.com.richardpianka.Chess" +
+      ".Network.User\0225\n\006Joiner\030\004 \001(\0132%.com.rich" +
+      "ardpianka.Chess.Network.User\"W\n\020Handshak" +
+      "eRequest\022\024\n\014VersionMajor\030\001 \002(\005\022\024\n\014Versio" +
+      "nMinor\030\002 \002(\005\022\027\n\017VersionRevision\030\003 \002(\005\"L\n" +
+      "\021HandshakeResponse\0227\n\006Result\030\001 \002(\0162\'.com" +
+      ".richardpianka.Chess.Network.Result\"5\n\017I" +
+      "dentifyRequest\022\020\n\010Username\030\001 \002(\t\022\020\n\010Pass" +
+      "word\030\002 \001(\t\"\\\n\020IdentifyResponse\0227\n\006Result" +
+      "\030\001 \002(\0162\'.com.richardpianka.Chess.Network",
+      ".Result\022\017\n\007Message\030\002 \001(\t\"\021\n\017JoinChatRequ" +
+      "est\"K\n\020JoinChatResponse\0227\n\006Result\030\001 \002(\0162" +
+      "\'.com.richardpianka.Chess.Network.Result" +
+      "\"\021\n\017RoomListRequest\"H\n\020RoomListResponse\022" +
+      "4\n\005Rooms\030\001 \003(\0132%.com.richardpianka.Chess" +
+      ".Network.Room\"F\n\017JoinRoomRequest\0223\n\004Room" +
+      "\030\001 \002(\0132%.com.richardpianka.Chess.Network" +
+      ".Room\"K\n\020JoinRoomResponse\0227\n\006Result\030\001 \002(" +
+      "\0162\'.com.richardpianka.Chess.Network.Resu" +
+      "lt\"\223\001\n\014SpeakRequest\0228\n\004Mode\030\001 \002(\0162*.com.",
+      "richardpianka.Chess.Network.SpeakMode\022\017\n" +
+      "\007Message\030\002 \002(\t\0228\n\tRecipient\030\003 \001(\0132%.com." +
+      "richardpianka.Chess.Network.User\"\327\001\n\017Ope" +
+      "ratorRequest\022O\n\006Action\030\001 \002(\0162?.com.richa" +
+      "rdpianka.Chess.Network.OperatorRequest.O" +
+      "peratorAction\0223\n\004User\030\002 \001(\0132%.com.richar" +
+      "dpianka.Chess.Network.User\">\n\016OperatorAc" +
+      "tion\022\r\n\tDesignate\020\000\022\n\n\006Resign\020\001\022\010\n\004Kick\020" +
+      "\002\022\007\n\003Ban\020\003\"K\n\020OperatorResponse\0227\n\006Result" +
+      "\030\001 \002(\0162\'.com.richardpianka.Chess.Network",
+      ".Result\"z\n\rChatRoomEvent\0223\n\004Room\030\001 \002(\0132%" +
+      ".com.richardpianka.Chess.Network.Room\0224\n" +
+      "\005Users\030\002 \003(\0132%.com.richardpianka.Chess.N" +
+      "etwork.User\"\320\001\n\rChatUserEvent\0223\n\004User\030\001 " +
+      "\002(\0132%.com.richardpianka.Chess.Network.Us" +
+      "er\022I\n\006Status\030\002 \002(\01629.com.richardpianka.C" +
+      "hess.Network.ChatUserEvent.UserStatus\022\017\n" +
+      "\007Message\030\003 \001(\t\".\n\nUserStatus\022\n\n\006Joined\020\000" +
+      "\022\010\n\004Left\020\001\022\n\n\006Update\020\002\"\220\001\n\016ChatSpeakEven" +
+      "t\0223\n\004User\030\001 \002(\0132%.com.richardpianka.Ches",
+      "s.Network.User\022\017\n\007Message\030\002 \002(\t\0228\n\004Mode\030" +
+      "\003 \002(\0162*.com.richardpianka.Chess.Network." +
+      "SpeakMode\"\021\n\017GameListRequest\"H\n\020GameList" +
+      "Response\0224\n\005Games\030\001 \003(\0132%.com.richardpia" +
+      "nka.Chess.Network.Game*\"\n\006Result\022\013\n\007Succ" +
+      "ess\020\000\022\013\n\007Failure\020\001*4\n\tRoomFlags\022\n\n\006Publi" +
+      "c\020\000\022\013\n\007Private\020\001\022\016\n\nRestricted\020\002*4\n\tUser" +
+      "Flags\022\016\n\nPedestrian\020\000\022\014\n\010Operator\020\001\022\t\n\005A" +
+      "dmin\020\002*/\n\tSpeakMode\022\n\n\006Normal\020\000\022\013\n\007Whisp" +
+      "er\020\001\022\t\n\005Emote\020\002B,\n\037com.richardpianka.Che",
+      "ss.NetworkB\tContracts"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1547,11 +12739,35 @@ public final class Contracts {
           internal_static_com_richardpianka_Chess_Network_Envelope_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_Chess_Network_Envelope_descriptor,
-              new java.lang.String[] { "HandshakeRequest", "HandshakeResponse", },
+              new java.lang.String[] { "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "JoinChatRequest", "JoinChatResponse", "JoinRoomRequest", "JoinRoomResponse", "SpeakRequest", "ChatRoomEvent", "ChatUserEvent", "ChatSpeakEvent", },
               com.richardpianka.Chess.Network.Contracts.Envelope.class,
               com.richardpianka.Chess.Network.Contracts.Envelope.Builder.class);
-          internal_static_com_richardpianka_Chess_Network_HandshakeRequest_descriptor =
+          internal_static_com_richardpianka_Chess_Network_Room_descriptor =
             getDescriptor().getMessageTypes().get(1);
+          internal_static_com_richardpianka_Chess_Network_Room_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_Room_descriptor,
+              new java.lang.String[] { "Name", "Flags", },
+              com.richardpianka.Chess.Network.Contracts.Room.class,
+              com.richardpianka.Chess.Network.Contracts.Room.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_User_descriptor =
+            getDescriptor().getMessageTypes().get(2);
+          internal_static_com_richardpianka_Chess_Network_User_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_User_descriptor,
+              new java.lang.String[] { "Name", "Flags", },
+              com.richardpianka.Chess.Network.Contracts.User.class,
+              com.richardpianka.Chess.Network.Contracts.User.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_Game_descriptor =
+            getDescriptor().getMessageTypes().get(3);
+          internal_static_com_richardpianka_Chess_Network_Game_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_Game_descriptor,
+              new java.lang.String[] { "Name", "Private", "Creator", "Joiner", },
+              com.richardpianka.Chess.Network.Contracts.Game.class,
+              com.richardpianka.Chess.Network.Contracts.Game.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_HandshakeRequest_descriptor =
+            getDescriptor().getMessageTypes().get(4);
           internal_static_com_richardpianka_Chess_Network_HandshakeRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_Chess_Network_HandshakeRequest_descriptor,
@@ -1559,13 +12775,141 @@ public final class Contracts {
               com.richardpianka.Chess.Network.Contracts.HandshakeRequest.class,
               com.richardpianka.Chess.Network.Contracts.HandshakeRequest.Builder.class);
           internal_static_com_richardpianka_Chess_Network_HandshakeResponse_descriptor =
-            getDescriptor().getMessageTypes().get(2);
+            getDescriptor().getMessageTypes().get(5);
           internal_static_com_richardpianka_Chess_Network_HandshakeResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_Chess_Network_HandshakeResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.Chess.Network.Contracts.HandshakeResponse.class,
               com.richardpianka.Chess.Network.Contracts.HandshakeResponse.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_IdentifyRequest_descriptor =
+            getDescriptor().getMessageTypes().get(6);
+          internal_static_com_richardpianka_Chess_Network_IdentifyRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_IdentifyRequest_descriptor,
+              new java.lang.String[] { "Username", "Password", },
+              com.richardpianka.Chess.Network.Contracts.IdentifyRequest.class,
+              com.richardpianka.Chess.Network.Contracts.IdentifyRequest.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_IdentifyResponse_descriptor =
+            getDescriptor().getMessageTypes().get(7);
+          internal_static_com_richardpianka_Chess_Network_IdentifyResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_IdentifyResponse_descriptor,
+              new java.lang.String[] { "Result", "Message", },
+              com.richardpianka.Chess.Network.Contracts.IdentifyResponse.class,
+              com.richardpianka.Chess.Network.Contracts.IdentifyResponse.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_JoinChatRequest_descriptor =
+            getDescriptor().getMessageTypes().get(8);
+          internal_static_com_richardpianka_Chess_Network_JoinChatRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_JoinChatRequest_descriptor,
+              new java.lang.String[] { },
+              com.richardpianka.Chess.Network.Contracts.JoinChatRequest.class,
+              com.richardpianka.Chess.Network.Contracts.JoinChatRequest.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_JoinChatResponse_descriptor =
+            getDescriptor().getMessageTypes().get(9);
+          internal_static_com_richardpianka_Chess_Network_JoinChatResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_JoinChatResponse_descriptor,
+              new java.lang.String[] { "Result", },
+              com.richardpianka.Chess.Network.Contracts.JoinChatResponse.class,
+              com.richardpianka.Chess.Network.Contracts.JoinChatResponse.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_RoomListRequest_descriptor =
+            getDescriptor().getMessageTypes().get(10);
+          internal_static_com_richardpianka_Chess_Network_RoomListRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_RoomListRequest_descriptor,
+              new java.lang.String[] { },
+              com.richardpianka.Chess.Network.Contracts.RoomListRequest.class,
+              com.richardpianka.Chess.Network.Contracts.RoomListRequest.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_RoomListResponse_descriptor =
+            getDescriptor().getMessageTypes().get(11);
+          internal_static_com_richardpianka_Chess_Network_RoomListResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_RoomListResponse_descriptor,
+              new java.lang.String[] { "Rooms", },
+              com.richardpianka.Chess.Network.Contracts.RoomListResponse.class,
+              com.richardpianka.Chess.Network.Contracts.RoomListResponse.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_descriptor =
+            getDescriptor().getMessageTypes().get(12);
+          internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_JoinRoomRequest_descriptor,
+              new java.lang.String[] { "Room", },
+              com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.class,
+              com.richardpianka.Chess.Network.Contracts.JoinRoomRequest.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_descriptor =
+            getDescriptor().getMessageTypes().get(13);
+          internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_JoinRoomResponse_descriptor,
+              new java.lang.String[] { "Result", },
+              com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.class,
+              com.richardpianka.Chess.Network.Contracts.JoinRoomResponse.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_SpeakRequest_descriptor =
+            getDescriptor().getMessageTypes().get(14);
+          internal_static_com_richardpianka_Chess_Network_SpeakRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_SpeakRequest_descriptor,
+              new java.lang.String[] { "Mode", "Message", "Recipient", },
+              com.richardpianka.Chess.Network.Contracts.SpeakRequest.class,
+              com.richardpianka.Chess.Network.Contracts.SpeakRequest.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_OperatorRequest_descriptor =
+            getDescriptor().getMessageTypes().get(15);
+          internal_static_com_richardpianka_Chess_Network_OperatorRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_OperatorRequest_descriptor,
+              new java.lang.String[] { "Action", "User", },
+              com.richardpianka.Chess.Network.Contracts.OperatorRequest.class,
+              com.richardpianka.Chess.Network.Contracts.OperatorRequest.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_OperatorResponse_descriptor =
+            getDescriptor().getMessageTypes().get(16);
+          internal_static_com_richardpianka_Chess_Network_OperatorResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_OperatorResponse_descriptor,
+              new java.lang.String[] { "Result", },
+              com.richardpianka.Chess.Network.Contracts.OperatorResponse.class,
+              com.richardpianka.Chess.Network.Contracts.OperatorResponse.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_descriptor =
+            getDescriptor().getMessageTypes().get(17);
+          internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_ChatRoomEvent_descriptor,
+              new java.lang.String[] { "Room", "Users", },
+              com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.class,
+              com.richardpianka.Chess.Network.Contracts.ChatRoomEvent.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_ChatUserEvent_descriptor =
+            getDescriptor().getMessageTypes().get(18);
+          internal_static_com_richardpianka_Chess_Network_ChatUserEvent_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_ChatUserEvent_descriptor,
+              new java.lang.String[] { "User", "Status", "Message", },
+              com.richardpianka.Chess.Network.Contracts.ChatUserEvent.class,
+              com.richardpianka.Chess.Network.Contracts.ChatUserEvent.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_descriptor =
+            getDescriptor().getMessageTypes().get(19);
+          internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_ChatSpeakEvent_descriptor,
+              new java.lang.String[] { "User", "Message", "Mode", },
+              com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.class,
+              com.richardpianka.Chess.Network.Contracts.ChatSpeakEvent.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_GameListRequest_descriptor =
+            getDescriptor().getMessageTypes().get(20);
+          internal_static_com_richardpianka_Chess_Network_GameListRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_GameListRequest_descriptor,
+              new java.lang.String[] { },
+              com.richardpianka.Chess.Network.Contracts.GameListRequest.class,
+              com.richardpianka.Chess.Network.Contracts.GameListRequest.Builder.class);
+          internal_static_com_richardpianka_Chess_Network_GameListResponse_descriptor =
+            getDescriptor().getMessageTypes().get(21);
+          internal_static_com_richardpianka_Chess_Network_GameListResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_Chess_Network_GameListResponse_descriptor,
+              new java.lang.String[] { "Games", },
+              com.richardpianka.Chess.Network.Contracts.GameListResponse.class,
+              com.richardpianka.Chess.Network.Contracts.GameListResponse.Builder.class);
           return null;
         }
       };

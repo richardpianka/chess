@@ -3,17 +3,77 @@ package com.richardpianka.Chess.Network;
 option java_package = "com.richardpianka.Chess.Network";
 option java_outer_classname = "Contracts";
 
+/**
+ * =======================================
+ * Transport layer
+ * =======================================
+ */
+//The message type and name must be identical
+message Envelope {
+    optional HandshakeRequest HandshakeRequest = 1;
+    optional HandshakeResponse HandshakeResponse = 2;
+    optional IdentifyRequest IdentifyRequest = 3;
+    optional IdentifyResponse IdentifyResponse = 4;
+    optional JoinChatRequest JoinChatRequest = 5;
+    optional JoinChatResponse JoinChatResponse = 6;
+    optional JoinRoomRequest JoinRoomRequest = 7;
+    optional JoinRoomResponse JoinRoomResponse = 8;
+    optional SpeakRequest SpeakRequest = 9;
+    optional ChatRoomEvent ChatRoomEvent = 10;
+    optional ChatUserEvent ChatUserEvent = 11;
+    optional ChatSpeakEvent ChatSpeakEvent = 12;
+}
+
+/**
+ * =======================================
+ * Common objects & enums
+ * =======================================
+ */
 enum Result {
     Success = 0;
     Failure = 1;
 }
 
-//The message type and name must be identical
-message Envelope {
-    optional HandshakeRequest HandshakeRequest = 1;
-    optional HandshakeResponse HandshakeResponse = 2;
+enum RoomFlags {
+    Public = 0;
+    Private = 1;
+    Restricted = 2;
 }
 
+enum UserFlags {
+    Pedestrian = 0;
+    Operator = 1;
+    Admin = 2;
+}
+
+enum SpeakMode {
+    Normal = 0;
+    Whisper = 1;
+    Emote = 2;
+}
+
+message Room {
+    required string Name = 1;
+    required RoomFlags Flags = 2;
+}
+
+message User {
+    required string Name = 1;
+    required UserFlags Flags = 2;
+}
+
+message Game {
+    required string Name = 1;
+    required bool Private = 2;
+    optional User Creator = 3;
+    optional User Joiner = 4;
+}
+
+/**
+ * =======================================
+ * Login sequence
+ * =======================================
+ */
 message HandshakeRequest {
     required int32 VersionMajor = 1;
     required int32 VersionMinor = 2;
@@ -22,4 +82,108 @@ message HandshakeRequest {
 
 message HandshakeResponse {
     required Result Result = 1;
+}
+
+message IdentifyRequest {
+    required string Username = 1;
+    optional string Password = 2;
+}
+
+message IdentifyResponse {
+    required Result Result = 1;
+    optional string Message = 2;
+}
+
+message JoinChatRequest {
+    // empty
+}
+
+message JoinChatResponse {
+    required Result Result = 1;
+}
+
+/**
+ * =======================================
+ * Chat environment
+ * =======================================
+ */
+
+/**
+ * Commands
+ */
+message RoomListRequest {
+    // empty
+}
+
+message RoomListResponse {
+    repeated Room Rooms = 1;
+}
+
+message JoinRoomRequest {
+    required Room Room = 1;
+}
+
+message JoinRoomResponse {
+    required Result Result = 1;
+}
+
+message SpeakRequest {
+    required SpeakMode Mode = 1;
+    required string Message = 2;
+    optional User Recipient = 3;
+} // no response
+
+message OperatorRequest {
+    enum OperatorAction {
+        Designate = 0;
+        Resign = 1;
+        Kick = 2;
+        Ban = 3;
+    }
+
+    required OperatorAction Action = 1;
+    optional User User = 2;
+}
+
+message OperatorResponse {
+    required Result Result = 1;
+}
+
+/**
+ * Events
+ */
+message ChatRoomEvent {
+    required Room Room = 1;
+    repeated User Users = 2;
+}
+
+message ChatUserEvent {
+    enum UserStatus {
+        Joined = 0;
+        Left = 1;
+        Update = 2;
+    }
+
+    required User User = 1;
+    required UserStatus Status = 2;
+    optional string Message = 3;
+}
+
+message ChatSpeakEvent {
+    required User User = 1;
+    required string Message = 2;
+    required SpeakMode Mode = 3;
+}
+
+/**
+ * =======================================
+ * Game list
+ * =======================================
+ */
+message GameListRequest {
+    // empty
+}
+
+message GameListResponse {
+    repeated Game Games = 1;
 }
