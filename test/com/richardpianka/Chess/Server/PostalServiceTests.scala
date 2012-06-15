@@ -9,11 +9,11 @@ class PostalServiceTests {
     val service = new PostalService[String]
 
     val handshake = HandshakeRequest.newBuilder
-      .setVersionMajor(1)
-      .setVersionMinor(2)
-      .setVersionRevision(3)
+                                    .setVersionMajor(1)
+                                    .setVersionMinor(2)
+                                    .setVersionRevision(3)
     val envelope = Envelope.newBuilder
-      .setHandshakeRequest(handshake)
+                           .setHandshakeRequest(handshake)
 
     service.address(classOf[HandshakeRequest], handle)
     service.deliver("source", envelope.build)

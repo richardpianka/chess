@@ -2,22 +2,24 @@ package com.richardpianka.chess.network
 
 import actors.Actor
 import java.net._
-import java.io._
 import collection.mutable._
 import com.richardpianka.chess.network.Contracts.Envelope
 import com.codehale.logula.Logging
 import com.richardpianka.chess.commons.PostalService
 
 /**
+ * A tcp server that uses [[com.richardpianka.chess.network.Contracts.Envelope]] as a transport.
  *
+ * @param distribution The postal service instance for routing envelopes
+ * @param port The port on which to accept connection
  */
-class Server(val distribution: PostalService[Connection], val port: Int = 1000) extends Logging {
+class Server(val distribution: PostalService[Connection], val port: Int = 1000) extends Actor with Logging {
   val clients = new ListBuffer[Connection]
 
   /**
-   *
+   * Begins listening for connections on its own thread
    */
-  def start() {
+  def act() {
     val sockets = new ServerSocket(port)
 
     log.info("Listening on %s:%d", sockets.getInetAddress.toString, sockets.getLocalPort)

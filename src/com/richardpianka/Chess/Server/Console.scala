@@ -5,6 +5,9 @@ import com.richardpianka.chess.commons.PostalService
 import com.richardpianka.chess.network.{Server, Connection}
 import org.apache.log4j.Level
 
+/**
+ * A terminal-based chess server
+ */
 object Console extends Logging {
   def main(args: Array[String]) {
     initializeLogging()
