@@ -3,6 +3,11 @@ package com.richardpianka.chess.commons
 import collection.mutable._
 import com.richardpianka.chess.network.Contracts._
 
+/**
+ * Routes [[com.richardpianka.chess.network.Contracts.Envelope]]
+ *
+ * @tparam A The source which generates [[com.richardpianka.chess.network.Contracts.Envelope]]
+ */
 class PostalService[A] {
   private[this] def classTrail = "com.richardpianka.chess.network.Contracts"
 
@@ -19,10 +24,22 @@ class PostalService[A] {
       .map(_.getName.substring(3))
   }
 
+  /**
+   * Register a handler for a given message
+   *
+   * @param packet The message type
+   * @param handler The handler function
+   */
   def address(packet: Class[_], handler: Function2[A, Envelope, Unit]) {
     directory += packet -> handler
   }
 
+  /**
+   * Route a message to its handler
+   *
+   * @param source The source that generated the message
+   * @param envelope The message to be delivered
+   */
   def deliver(source: A, envelope: Envelope) {
     messages(envelope).map(getClass(_))
       .filter(directory.contains(_))
