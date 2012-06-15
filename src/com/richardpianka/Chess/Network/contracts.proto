@@ -1,6 +1,6 @@
-package com.richardpianka.Chess.Network;
+package com.richardpianka.chess.network;
 
-option java_package = "com.richardpianka.Chess.Network";
+option java_package = "com.richardpianka.chess.network";
 option java_outer_classname = "Contracts";
 
 /**
@@ -52,14 +52,29 @@ enum SpeakMode {
     Emote = 2;
 }
 
+enum OperatorAction {
+    Designate = 0;
+    Resign = 1;
+    Kick = 2;
+    Ban = 3;
+}
+
 message Room {
     required string Name = 1;
     required RoomFlags Flags = 2;
 }
 
+message Record {
+    required uint32 Wins = 1;
+    required uint32 Losses = 2;
+    required uint32 Stalemates = 3;
+    required uint32 Disconnects = 4;
+}
+
 message User {
     required string Name = 1;
     required UserFlags Flags = 2;
+    required Record Record = 3;
 }
 
 message Game {
@@ -134,13 +149,6 @@ message SpeakRequest {
 } // no response
 
 message OperatorRequest {
-    enum OperatorAction {
-        Designate = 0;
-        Resign = 1;
-        Kick = 2;
-        Ban = 3;
-    }
-
     required OperatorAction Action = 1;
     optional User User = 2;
 }
@@ -186,4 +194,24 @@ message GameListRequest {
 
 message GameListResponse {
     repeated Game Games = 1;
+}
+
+message CreateGameRequest {
+    required string Name = 1;
+    optional string Password = 2;
+}
+
+message CreateGameResponse {
+    required Result Result = 1;
+    optional Game Game = 2;
+    optional string Message = 3;
+}
+
+message JoinGameRequest {
+    required Game Game = 1;
+    optional string Password = 2;
+}
+
+message JoinGameResponse {
+    required Result Result = 1;
 }

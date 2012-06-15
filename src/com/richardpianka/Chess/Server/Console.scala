@@ -1,38 +1,30 @@
-package com.richardpianka.Chess.Server
+package com.richardpianka.chess.server
 
-object Console {
+import com.codehale.logula.Logging
+import com.richardpianka.chess.commons.PostalService
+import com.richardpianka.chess.network.{Server, Connection}
+import org.apache.log4j.Level
+
+object Console extends Logging {
   def main(args: Array[String]) {
-//    val builder = Handshake.newBuilder()
-//    val out = new FileOutputStream("c:/handshake2.txt");
-//    builder.setVersionMajor(4)
-//           .setVersionMinor(5)
-//           .setVersionRevision(6)
-//    builder.build().writeTo(out)
+    initializeLogging()
 
-//    val envelope = Class.forName("com.richardpianka.Chess.Network.Packets$Envelope")
-//    val hasMethods = envelope.getDeclaredMethods.filter(_.getName.startsWith("has"))
-//    val packets = hasMethods.map(_.getName.substring(3))
-//
-//    for (val method <- hasMethods) {
-//      method.invoke()
-//    }
-//
-//    for (val packet <- packets) {
-//      println(packet)
-//    }
+    val distribution = new PostalService[Connection]
+    val server = new Server(distribution)
+    server.start()
+  }
 
+  private[this] def initializeLogging() {
+    Logging.configure { log =>
+      log.level = Level.INFO
 
-//
-//    val packets = Class.forName("com.richardpianka.Chess.Network.Packets")
-//    val classes = packets.getClasses.filterNot(_.getName.endsWith("OrBuilder"))
-//
-//    for (val clazz <- classes) {
-//      println(clazz.getName)
-//
-//      val methods = clazz.getDeclaredMethods.filter(_.getName.startsWith("has"))
-//      for (val method <- methods) {
-//        println("  " + method.getName)
-//      }
-//    }
+      log.console.enabled = true
+      log.console.threshold = Level.ALL
+
+      log.file.enabled = true
+      log.file.filename = "logs/server.log"
+      log.file.maxSize = 10 * 1024
+      log.file.retainedFiles = 5
+    }
   }
 }
