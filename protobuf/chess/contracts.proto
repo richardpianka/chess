@@ -1,7 +1,17 @@
 package com.richardpianka.chess.network;
 
+import "protobuf/google/csharp_options.proto";
+
 option java_package = "com.richardpianka.chess.network";
 option java_outer_classname = "Contracts";
+
+option (google.protobuf.csharp_file_options).namespace = "Chess.Contracts";
+option (google.protobuf.csharp_file_options).umbrella_classname = "Contracts";
+option (google.protobuf.csharp_file_options).ignore_google_protobuf = true;
+
+/**
+ * The protocol version is defined in the Version message
+ */
 
 /**
  * =======================================
@@ -59,6 +69,12 @@ enum OperatorAction {
     Ban = 3;
 }
 
+message Version {
+    optional uint32 VersionMajor = 1    [default = 1];
+    optional uint32 VersionMinor = 2    [default = 0];
+    optional uint32 VersionRevision = 3 [default = 0];
+}
+
 message Room {
     required string Name = 1;
     required RoomFlags Flags = 2;
@@ -90,9 +106,7 @@ message Game {
  * =======================================
  */
 message HandshakeRequest {
-    required int32 VersionMajor = 1;
-    required int32 VersionMinor = 2;
-    required int32 VersionRevision = 3;
+    required Version Version = 1;
 }
 
 message HandshakeResponse {

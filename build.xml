@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="chess" default="contracts">
-  <target name="contracts" depends="" description="Generate protobuf contracts">
-    <exec executable="tools/protoc.exe" failonerror="true">
-        <arg value="--java_out=src" />
-        <arg value="src/com/richardpianka/Chess/Network/contracts.proto" />
-    </exec>
-  </target>
+<project name="chess">
+    <target name="contracts-java" depends="" description="Generate protobuf contracts in Java">
+        <exec executable="tools/protoc.exe" failonerror="true">
+            <arg value="--java_out=src" />
+            <arg value="--proto_path=." />
+            <arg value="protobuf/google/descriptor.proto" />
+            <arg value="protobuf/google/csharp_options.proto" />
+            <arg value="protobuf/chess/contracts.proto" />
+        </exec>
+    </target>
+    <target name="contracts-csharp" depends="" description="Generate protobuf contracts in C#">
+        <exec executable="tools/ProtoGen.exe" failonerror="true">
+            <arg value="--proto_path=." />
+            <arg value="-output_directory=csharp/Chess.contracts" />
+            <arg value="protobuf/google/descriptor.proto" />
+            <arg value="protobuf/google/csharp_options.proto" />
+            <arg value="protobuf/chess/contracts.proto" />
+        </exec>
+    </target>
+    <target name="build-csharp" depends="contracts-csharp" description="Build C# protobuf contracts library">
+        <exec executable="C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe" failonerror="true">
+            <arg value="csharp/Chess.proj" />
+        </exec>
+    </target>
 </project>

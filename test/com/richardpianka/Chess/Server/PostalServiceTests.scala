@@ -2,16 +2,19 @@ package com.richardpianka.chess.commons
 
 import org.junit.Test
 import com.richardpianka.chess.network.Contracts._
+import sun.reflect.Reflection
 
 class PostalServiceTests {
   @Test
   def Handshake() {
     val service = new PostalService[String]
 
+    val version = Version.newBuilder
+                         .setVersionMajor(1)
+                         .setVersionMinor(2)
+                         .setVersionRevision(3)
     val handshake = HandshakeRequest.newBuilder
-                                    .setVersionMajor(1)
-                                    .setVersionMinor(2)
-                                    .setVersionRevision(3)
+                                    .setVersion(version)
     val envelope = Envelope.newBuilder
                            .setHandshakeRequest(handshake)
 
@@ -22,9 +25,9 @@ class PostalServiceTests {
       assert(source.equals("source"))
 
       val handshakeRequest = envelope.getHandshakeRequest
-      assert(handshakeRequest.getVersionMajor == 1)
-      assert(handshakeRequest.getVersionMinor == 2)
-      assert(handshakeRequest.getVersionRevision == 3)
+      assert(handshakeRequest.getVersion.getVersionMajor == 1)
+      assert(handshakeRequest.getVersion.getVersionMinor == 2)
+      assert(handshakeRequest.getVersion.getVersionRevision == 3)
     }
   }
 }

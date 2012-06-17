@@ -12,8 +12,7 @@ object Console extends Logging {
   def main(args: Array[String]) {
     initializeLogging()
 
-    val distribution = new PostalService[Connection]
-    val server = new Server(distribution)
+    val server = new Server(Handler.distribution)
     server.start()
   }
 
