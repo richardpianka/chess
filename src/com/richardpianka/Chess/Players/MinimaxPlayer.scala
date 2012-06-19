@@ -1,11 +1,10 @@
-package com.richardpianka
-package Chess.Players
+package com.richardpianka.chess.players
 
-import Chess.Common._
-import Chess.Game._
-import Figurines._
 import collection.mutable._
 import collection.Iterable
+import com.richardpianka.chess.game._
+import com.richardpianka.chess.game.Figurines._
+import com.richardpianka.chess.commons._
 
 class MinimaxPlayer extends PlayerFactory {
   private[this] val scoring = Map(Pawn -> 1,

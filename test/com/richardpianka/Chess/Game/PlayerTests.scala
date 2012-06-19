@@ -1,9 +1,8 @@
-package com.richardpianka
-package Chess.Game
+package com.richardpianka.chess.game
 
 import org.junit.Test
-import Chess.Players._
 import Colors._
+import com.richardpianka.chess.players._
 
 class PlayerTests {
   @Test

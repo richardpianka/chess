@@ -1,5 +1,4 @@
-package com.richardpianka
-package Chess.Game
+package com.richardpianka.chess.game
 
 /**
  * Defines a the color of a chess piece or player

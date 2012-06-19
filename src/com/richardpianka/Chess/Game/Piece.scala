@@ -1,7 +1,6 @@
-package com.richardpianka
-package Chess.Game
+package com.richardpianka.chess.game
 
-import Chess.Common.LinearBoolean
+import com.richardpianka.chess.commons.LinearBoolean
 
 final case class Piece(color: Color, figurine: Figurine) {
   def getMoves(coordinate: Coordinate, board: Board) = figurine.getMoves(coordinate, this, board)

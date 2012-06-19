@@ -1,5 +1,4 @@
-package com.richardpianka
-package Chess.Common
+package com.richardpianka.chess.commons
 
 /**
  * A boolean that can only be moved from false to true, and never back again

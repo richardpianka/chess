@@ -1,8 +1,7 @@
-package com.richardpianka
-package Chess.Players
+package com.richardpianka.chess.players
 
-import Chess.Game._
 import util.Random
+import com.richardpianka.chess.game._
 
 /**
  * Picks a random possible move, and makes it

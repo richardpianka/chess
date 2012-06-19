@@ -1,5 +1,4 @@
-package com.richardpianka
-package Chess.Game
+package com.richardpianka.chess.game
 
 /**
  * Describes the rank of a square on the chess board

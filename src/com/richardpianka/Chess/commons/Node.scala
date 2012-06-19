@@ -1,5 +1,4 @@
-package com.richardpianka
-package Chess.Common
+package com.richardpianka.chess.commons
 
 /**
  * Directed acyclic graph
