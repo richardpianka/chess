@@ -4,9 +4,9 @@ import collection.mutable._
 import com.richardpianka.chess.network.Contracts._
 
 /**
- * Routes [[com.richardpianka.chess.network.Contracts.Envelope]]
+ * Routes Envelopes
  *
- * @tparam A The source which generates [[com.richardpianka.chess.network.Contracts.Envelope]]
+ * @tparam A The source which generates Envelope
  */
 class PostalService[A] {
   private[this] def classTrail = "com.richardpianka.chess.network.Contracts"

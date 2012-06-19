@@ -25,7 +25,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements FileDescriptorSetOrBuilder {
     // Use FileDescriptorSet.newBuilder() to construct.
-    private FileDescriptorSet(Builder builder) {
+    private FileDescriptorSet(FileDescriptorSet.Builder builder) {
       super(builder);
     }
     private FileDescriptorSet(boolean noInit) {}
@@ -186,17 +186,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.FileDescriptorSet prototype) {
+    public static google.protobuf.DescriptorProtos.FileDescriptorSet.Builder newBuilder() { return google.protobuf.DescriptorProtos.FileDescriptorSet.Builder.create(); }
+    public google.protobuf.DescriptorProtos.FileDescriptorSet.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.FileDescriptorSet.Builder newBuilder(google.protobuf.DescriptorProtos.FileDescriptorSet prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.FileDescriptorSet.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.FileDescriptorSet.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.FileDescriptorSet.Builder builder = new google.protobuf.DescriptorProtos.FileDescriptorSet.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -217,7 +217,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -288,7 +288,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.FileDescriptorSet.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.FileDescriptorSet) {
           return mergeFrom((google.protobuf.DescriptorProtos.FileDescriptorSet)other);
         } else {
@@ -297,7 +297,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.FileDescriptorSet other) {
+      public google.protobuf.DescriptorProtos.FileDescriptorSet.Builder mergeFrom(google.protobuf.DescriptorProtos.FileDescriptorSet other) {
         if (other == google.protobuf.DescriptorProtos.FileDescriptorSet.getDefaultInstance()) return this;
         if (fileBuilder_ == null) {
           if (!other.file_.isEmpty()) {
@@ -641,7 +641,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements FileDescriptorProtoOrBuilder {
     // Use FileDescriptorProto.newBuilder() to construct.
-    private FileDescriptorProto(Builder builder) {
+    private FileDescriptorProto(FileDescriptorProto.Builder builder) {
       super(builder);
     }
     private FileDescriptorProto(boolean noInit) {}
@@ -1063,17 +1063,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.FileDescriptorProto prototype) {
+    public static google.protobuf.DescriptorProtos.FileDescriptorProto.Builder newBuilder() { return google.protobuf.DescriptorProtos.FileDescriptorProto.Builder.create(); }
+    public google.protobuf.DescriptorProtos.FileDescriptorProto.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.FileDescriptorProto.Builder newBuilder(google.protobuf.DescriptorProtos.FileDescriptorProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.FileDescriptorProto.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.FileDescriptorProto.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.FileDescriptorProto.Builder builder = new google.protobuf.DescriptorProtos.FileDescriptorProto.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -1094,7 +1094,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1265,7 +1265,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.FileDescriptorProto.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.FileDescriptorProto) {
           return mergeFrom((google.protobuf.DescriptorProtos.FileDescriptorProto)other);
         } else {
@@ -1274,7 +1274,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.FileDescriptorProto other) {
+      public google.protobuf.DescriptorProtos.FileDescriptorProto.Builder mergeFrom(google.protobuf.DescriptorProtos.FileDescriptorProto other) {
         if (other == google.protobuf.DescriptorProtos.FileDescriptorProto.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -2655,7 +2655,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements DescriptorProtoOrBuilder {
     // Use DescriptorProto.newBuilder() to construct.
-    private DescriptorProto(Builder builder) {
+    private DescriptorProto(DescriptorProto.Builder builder) {
       super(builder);
     }
     private DescriptorProto(boolean noInit) {}
@@ -2694,7 +2694,7 @@ public final class DescriptorProtos {
         com.google.protobuf.GeneratedMessage
         implements ExtensionRangeOrBuilder {
       // Use ExtensionRange.newBuilder() to construct.
-      private ExtensionRange(Builder builder) {
+      private ExtensionRange(ExtensionRange.Builder builder) {
         super(builder);
       }
       private ExtensionRange(boolean noInit) {}
@@ -2857,17 +2857,17 @@ public final class DescriptorProtos {
                  .buildParsed();
       }
       
-      public static Builder newBuilder() { return Builder.create(); }
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange prototype) {
+      public static google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder newBuilder() { return google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder.create(); }
+      public google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder newBuilderForType() { return newBuilder(); }
+      public static google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder newBuilder(google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange prototype) {
         return newBuilder().mergeFrom(prototype);
       }
-      public Builder toBuilder() { return newBuilder(this); }
+      public google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder toBuilder() { return newBuilder(this); }
       
       @java.lang.Override
-      protected Builder newBuilderForType(
+      protected google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder newBuilderForType(
           com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        Builder builder = new Builder(parent);
+        google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder builder = new google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder(parent);
         return builder;
       }
       public static final class Builder extends
@@ -2888,7 +2888,7 @@ public final class DescriptorProtos {
           maybeForceBuilderInitialization();
         }
         
-        private Builder(BuilderParent parent) {
+        private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -2957,7 +2957,7 @@ public final class DescriptorProtos {
           return result;
         }
         
-        public Builder mergeFrom(com.google.protobuf.Message other) {
+        public google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder mergeFrom(com.google.protobuf.Message other) {
           if (other instanceof google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange) {
             return mergeFrom((google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange)other);
           } else {
@@ -2966,7 +2966,7 @@ public final class DescriptorProtos {
           }
         }
         
-        public Builder mergeFrom(google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange other) {
+        public google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder mergeFrom(google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange other) {
           if (other == google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.getDefaultInstance()) return this;
           if (other.hasStart()) {
             setStart(other.getStart());
@@ -3413,17 +3413,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.DescriptorProto prototype) {
+    public static google.protobuf.DescriptorProtos.DescriptorProto.Builder newBuilder() { return google.protobuf.DescriptorProtos.DescriptorProto.Builder.create(); }
+    public google.protobuf.DescriptorProtos.DescriptorProto.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.DescriptorProto.Builder newBuilder(google.protobuf.DescriptorProtos.DescriptorProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.DescriptorProto.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.DescriptorProto.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.DescriptorProto.Builder builder = new google.protobuf.DescriptorProtos.DescriptorProto.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -3444,7 +3444,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3602,7 +3602,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.DescriptorProto.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.DescriptorProto) {
           return mergeFrom((google.protobuf.DescriptorProtos.DescriptorProto)other);
         } else {
@@ -3611,7 +3611,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.DescriptorProto other) {
+      public google.protobuf.DescriptorProtos.DescriptorProto.Builder mergeFrom(google.protobuf.DescriptorProtos.DescriptorProto other) {
         if (other == google.protobuf.DescriptorProtos.DescriptorProto.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -4967,7 +4967,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements FieldDescriptorProtoOrBuilder {
     // Use FieldDescriptorProto.newBuilder() to construct.
-    private FieldDescriptorProto(Builder builder) {
+    private FieldDescriptorProto(FieldDescriptorProto.Builder builder) {
       super(builder);
     }
     private FieldDescriptorProto(boolean noInit) {}
@@ -5524,17 +5524,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.FieldDescriptorProto prototype) {
+    public static google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder newBuilder() { return google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder.create(); }
+    public google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder newBuilder(google.protobuf.DescriptorProtos.FieldDescriptorProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder builder = new google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -5555,7 +5555,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5669,7 +5669,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.FieldDescriptorProto) {
           return mergeFrom((google.protobuf.DescriptorProtos.FieldDescriptorProto)other);
         } else {
@@ -5678,7 +5678,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.FieldDescriptorProto other) {
+      public google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder mergeFrom(google.protobuf.DescriptorProtos.FieldDescriptorProto other) {
         if (other == google.protobuf.DescriptorProtos.FieldDescriptorProto.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -6143,7 +6143,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements EnumDescriptorProtoOrBuilder {
     // Use EnumDescriptorProto.newBuilder() to construct.
-    private EnumDescriptorProto(Builder builder) {
+    private EnumDescriptorProto(EnumDescriptorProto.Builder builder) {
       super(builder);
     }
     private EnumDescriptorProto(boolean noInit) {}
@@ -6372,17 +6372,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.EnumDescriptorProto prototype) {
+    public static google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder newBuilder() { return google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder.create(); }
+    public google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder newBuilder(google.protobuf.DescriptorProtos.EnumDescriptorProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder builder = new google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -6403,7 +6403,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6497,7 +6497,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.EnumDescriptorProto) {
           return mergeFrom((google.protobuf.DescriptorProtos.EnumDescriptorProto)other);
         } else {
@@ -6506,7 +6506,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.EnumDescriptorProto other) {
+      public google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder mergeFrom(google.protobuf.DescriptorProtos.EnumDescriptorProto other) {
         if (other == google.protobuf.DescriptorProtos.EnumDescriptorProto.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -6952,7 +6952,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements EnumValueDescriptorProtoOrBuilder {
     // Use EnumValueDescriptorProto.newBuilder() to construct.
-    private EnumValueDescriptorProto(Builder builder) {
+    private EnumValueDescriptorProto(EnumValueDescriptorProto.Builder builder) {
       super(builder);
     }
     private EnumValueDescriptorProto(boolean noInit) {}
@@ -7164,17 +7164,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.EnumValueDescriptorProto prototype) {
+    public static google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder newBuilder() { return google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder.create(); }
+    public google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder newBuilder(google.protobuf.DescriptorProtos.EnumValueDescriptorProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder builder = new google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -7195,7 +7195,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7279,7 +7279,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.EnumValueDescriptorProto) {
           return mergeFrom((google.protobuf.DescriptorProtos.EnumValueDescriptorProto)other);
         } else {
@@ -7288,7 +7288,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.EnumValueDescriptorProto other) {
+      public google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder mergeFrom(google.protobuf.DescriptorProtos.EnumValueDescriptorProto other) {
         if (other == google.protobuf.DescriptorProtos.EnumValueDescriptorProto.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -7545,7 +7545,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements ServiceDescriptorProtoOrBuilder {
     // Use ServiceDescriptorProto.newBuilder() to construct.
-    private ServiceDescriptorProto(Builder builder) {
+    private ServiceDescriptorProto(ServiceDescriptorProto.Builder builder) {
       super(builder);
     }
     private ServiceDescriptorProto(boolean noInit) {}
@@ -7774,17 +7774,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.ServiceDescriptorProto prototype) {
+    public static google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder newBuilder() { return google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder.create(); }
+    public google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder newBuilder(google.protobuf.DescriptorProtos.ServiceDescriptorProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder builder = new google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -7805,7 +7805,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7899,7 +7899,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.ServiceDescriptorProto) {
           return mergeFrom((google.protobuf.DescriptorProtos.ServiceDescriptorProto)other);
         } else {
@@ -7908,7 +7908,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.ServiceDescriptorProto other) {
+      public google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder mergeFrom(google.protobuf.DescriptorProtos.ServiceDescriptorProto other) {
         if (other == google.protobuf.DescriptorProtos.ServiceDescriptorProto.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -8358,7 +8358,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements MethodDescriptorProtoOrBuilder {
     // Use MethodDescriptorProto.newBuilder() to construct.
-    private MethodDescriptorProto(Builder builder) {
+    private MethodDescriptorProto(MethodDescriptorProto.Builder builder) {
       super(builder);
     }
     private MethodDescriptorProto(boolean noInit) {}
@@ -8632,17 +8632,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.MethodDescriptorProto prototype) {
+    public static google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder newBuilder() { return google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder.create(); }
+    public google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder newBuilder(google.protobuf.DescriptorProtos.MethodDescriptorProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder builder = new google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -8663,7 +8663,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8753,7 +8753,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.MethodDescriptorProto) {
           return mergeFrom((google.protobuf.DescriptorProtos.MethodDescriptorProto)other);
         } else {
@@ -8762,7 +8762,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.MethodDescriptorProto other) {
+      public google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder mergeFrom(google.protobuf.DescriptorProtos.MethodDescriptorProto other) {
         if (other == google.protobuf.DescriptorProtos.MethodDescriptorProto.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -9102,7 +9102,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage.ExtendableMessage<
         FileOptions> implements FileOptionsOrBuilder {
     // Use FileOptions.newBuilder() to construct.
-    private FileOptions(Builder builder) {
+    private FileOptions(FileOptions.Builder builder) {
       super(builder);
     }
     private FileOptions(boolean noInit) {}
@@ -9533,17 +9533,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.FileOptions prototype) {
+    public static google.protobuf.DescriptorProtos.FileOptions.Builder newBuilder() { return google.protobuf.DescriptorProtos.FileOptions.Builder.create(); }
+    public google.protobuf.DescriptorProtos.FileOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.FileOptions.Builder newBuilder(google.protobuf.DescriptorProtos.FileOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.FileOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.FileOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.FileOptions.Builder builder = new google.protobuf.DescriptorProtos.FileOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -9564,7 +9564,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9685,7 +9685,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.FileOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.FileOptions) {
           return mergeFrom((google.protobuf.DescriptorProtos.FileOptions)other);
         } else {
@@ -9694,7 +9694,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.FileOptions other) {
+      public google.protobuf.DescriptorProtos.FileOptions.Builder mergeFrom(google.protobuf.DescriptorProtos.FileOptions other) {
         if (other == google.protobuf.DescriptorProtos.FileOptions.getDefaultInstance()) return this;
         if (other.hasJavaPackage()) {
           setJavaPackage(other.getJavaPackage());
@@ -10270,7 +10270,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage.ExtendableMessage<
         MessageOptions> implements MessageOptionsOrBuilder {
     // Use MessageOptions.newBuilder() to construct.
-    private MessageOptions(Builder builder) {
+    private MessageOptions(MessageOptions.Builder builder) {
       super(builder);
     }
     private MessageOptions(boolean noInit) {}
@@ -10477,17 +10477,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.MessageOptions prototype) {
+    public static google.protobuf.DescriptorProtos.MessageOptions.Builder newBuilder() { return google.protobuf.DescriptorProtos.MessageOptions.Builder.create(); }
+    public google.protobuf.DescriptorProtos.MessageOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.MessageOptions.Builder newBuilder(google.protobuf.DescriptorProtos.MessageOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.MessageOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.MessageOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.MessageOptions.Builder builder = new google.protobuf.DescriptorProtos.MessageOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -10508,7 +10508,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -10593,7 +10593,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.MessageOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.MessageOptions) {
           return mergeFrom((google.protobuf.DescriptorProtos.MessageOptions)other);
         } else {
@@ -10602,7 +10602,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.MessageOptions other) {
+      public google.protobuf.DescriptorProtos.MessageOptions.Builder mergeFrom(google.protobuf.DescriptorProtos.MessageOptions other) {
         if (other == google.protobuf.DescriptorProtos.MessageOptions.getDefaultInstance()) return this;
         if (other.hasMessageSetWireFormat()) {
           setMessageSetWireFormat(other.getMessageSetWireFormat());
@@ -10973,7 +10973,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage.ExtendableMessage<
         FieldOptions> implements FieldOptionsOrBuilder {
     // Use FieldOptions.newBuilder() to construct.
-    private FieldOptions(Builder builder) {
+    private FieldOptions(FieldOptions.Builder builder) {
       super(builder);
     }
     private FieldOptions(boolean noInit) {}
@@ -11310,17 +11310,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.FieldOptions prototype) {
+    public static google.protobuf.DescriptorProtos.FieldOptions.Builder newBuilder() { return google.protobuf.DescriptorProtos.FieldOptions.Builder.create(); }
+    public google.protobuf.DescriptorProtos.FieldOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.FieldOptions.Builder newBuilder(google.protobuf.DescriptorProtos.FieldOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.FieldOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.FieldOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.FieldOptions.Builder builder = new google.protobuf.DescriptorProtos.FieldOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -11341,7 +11341,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -11438,7 +11438,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.FieldOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.FieldOptions) {
           return mergeFrom((google.protobuf.DescriptorProtos.FieldOptions)other);
         } else {
@@ -11447,7 +11447,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.FieldOptions other) {
+      public google.protobuf.DescriptorProtos.FieldOptions.Builder mergeFrom(google.protobuf.DescriptorProtos.FieldOptions other) {
         if (other == google.protobuf.DescriptorProtos.FieldOptions.getDefaultInstance()) return this;
         if (other.hasCtype()) {
           setCtype(other.getCtype());
@@ -11884,7 +11884,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage.ExtendableMessage<
         EnumOptions> implements EnumOptionsOrBuilder {
     // Use EnumOptions.newBuilder() to construct.
-    private EnumOptions(Builder builder) {
+    private EnumOptions(EnumOptions.Builder builder) {
       super(builder);
     }
     private EnumOptions(boolean noInit) {}
@@ -12054,17 +12054,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.EnumOptions prototype) {
+    public static google.protobuf.DescriptorProtos.EnumOptions.Builder newBuilder() { return google.protobuf.DescriptorProtos.EnumOptions.Builder.create(); }
+    public google.protobuf.DescriptorProtos.EnumOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.EnumOptions.Builder newBuilder(google.protobuf.DescriptorProtos.EnumOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.EnumOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.EnumOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.EnumOptions.Builder builder = new google.protobuf.DescriptorProtos.EnumOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -12085,7 +12085,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -12156,7 +12156,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.EnumOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.EnumOptions) {
           return mergeFrom((google.protobuf.DescriptorProtos.EnumOptions)other);
         } else {
@@ -12165,7 +12165,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.EnumOptions other) {
+      public google.protobuf.DescriptorProtos.EnumOptions.Builder mergeFrom(google.protobuf.DescriptorProtos.EnumOptions other) {
         if (other == google.protobuf.DescriptorProtos.EnumOptions.getDefaultInstance()) return this;
         if (uninterpretedOptionBuilder_ == null) {
           if (!other.uninterpretedOption_.isEmpty()) {
@@ -12462,7 +12462,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage.ExtendableMessage<
         EnumValueOptions> implements EnumValueOptionsOrBuilder {
     // Use EnumValueOptions.newBuilder() to construct.
-    private EnumValueOptions(Builder builder) {
+    private EnumValueOptions(EnumValueOptions.Builder builder) {
       super(builder);
     }
     private EnumValueOptions(boolean noInit) {}
@@ -12632,17 +12632,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.EnumValueOptions prototype) {
+    public static google.protobuf.DescriptorProtos.EnumValueOptions.Builder newBuilder() { return google.protobuf.DescriptorProtos.EnumValueOptions.Builder.create(); }
+    public google.protobuf.DescriptorProtos.EnumValueOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.EnumValueOptions.Builder newBuilder(google.protobuf.DescriptorProtos.EnumValueOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.EnumValueOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.EnumValueOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.EnumValueOptions.Builder builder = new google.protobuf.DescriptorProtos.EnumValueOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -12663,7 +12663,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -12734,7 +12734,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.EnumValueOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.EnumValueOptions) {
           return mergeFrom((google.protobuf.DescriptorProtos.EnumValueOptions)other);
         } else {
@@ -12743,7 +12743,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.EnumValueOptions other) {
+      public google.protobuf.DescriptorProtos.EnumValueOptions.Builder mergeFrom(google.protobuf.DescriptorProtos.EnumValueOptions other) {
         if (other == google.protobuf.DescriptorProtos.EnumValueOptions.getDefaultInstance()) return this;
         if (uninterpretedOptionBuilder_ == null) {
           if (!other.uninterpretedOption_.isEmpty()) {
@@ -13040,7 +13040,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage.ExtendableMessage<
         ServiceOptions> implements ServiceOptionsOrBuilder {
     // Use ServiceOptions.newBuilder() to construct.
-    private ServiceOptions(Builder builder) {
+    private ServiceOptions(ServiceOptions.Builder builder) {
       super(builder);
     }
     private ServiceOptions(boolean noInit) {}
@@ -13210,17 +13210,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.ServiceOptions prototype) {
+    public static google.protobuf.DescriptorProtos.ServiceOptions.Builder newBuilder() { return google.protobuf.DescriptorProtos.ServiceOptions.Builder.create(); }
+    public google.protobuf.DescriptorProtos.ServiceOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.ServiceOptions.Builder newBuilder(google.protobuf.DescriptorProtos.ServiceOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.ServiceOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.ServiceOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.ServiceOptions.Builder builder = new google.protobuf.DescriptorProtos.ServiceOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -13241,7 +13241,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13312,7 +13312,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.ServiceOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.ServiceOptions) {
           return mergeFrom((google.protobuf.DescriptorProtos.ServiceOptions)other);
         } else {
@@ -13321,7 +13321,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.ServiceOptions other) {
+      public google.protobuf.DescriptorProtos.ServiceOptions.Builder mergeFrom(google.protobuf.DescriptorProtos.ServiceOptions other) {
         if (other == google.protobuf.DescriptorProtos.ServiceOptions.getDefaultInstance()) return this;
         if (uninterpretedOptionBuilder_ == null) {
           if (!other.uninterpretedOption_.isEmpty()) {
@@ -13618,7 +13618,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage.ExtendableMessage<
         MethodOptions> implements MethodOptionsOrBuilder {
     // Use MethodOptions.newBuilder() to construct.
-    private MethodOptions(Builder builder) {
+    private MethodOptions(MethodOptions.Builder builder) {
       super(builder);
     }
     private MethodOptions(boolean noInit) {}
@@ -13788,17 +13788,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.MethodOptions prototype) {
+    public static google.protobuf.DescriptorProtos.MethodOptions.Builder newBuilder() { return google.protobuf.DescriptorProtos.MethodOptions.Builder.create(); }
+    public google.protobuf.DescriptorProtos.MethodOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.MethodOptions.Builder newBuilder(google.protobuf.DescriptorProtos.MethodOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.MethodOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.MethodOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.MethodOptions.Builder builder = new google.protobuf.DescriptorProtos.MethodOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -13819,7 +13819,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13890,7 +13890,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.MethodOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.MethodOptions) {
           return mergeFrom((google.protobuf.DescriptorProtos.MethodOptions)other);
         } else {
@@ -13899,7 +13899,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.MethodOptions other) {
+      public google.protobuf.DescriptorProtos.MethodOptions.Builder mergeFrom(google.protobuf.DescriptorProtos.MethodOptions other) {
         if (other == google.protobuf.DescriptorProtos.MethodOptions.getDefaultInstance()) return this;
         if (uninterpretedOptionBuilder_ == null) {
           if (!other.uninterpretedOption_.isEmpty()) {
@@ -14219,7 +14219,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements UninterpretedOptionOrBuilder {
     // Use UninterpretedOption.newBuilder() to construct.
-    private UninterpretedOption(Builder builder) {
+    private UninterpretedOption(UninterpretedOption.Builder builder) {
       super(builder);
     }
     private UninterpretedOption(boolean noInit) {}
@@ -14258,7 +14258,7 @@ public final class DescriptorProtos {
         com.google.protobuf.GeneratedMessage
         implements NamePartOrBuilder {
       // Use NamePart.newBuilder() to construct.
-      private NamePart(Builder builder) {
+      private NamePart(NamePart.Builder builder) {
         super(builder);
       }
       private NamePart(boolean noInit) {}
@@ -14451,17 +14451,17 @@ public final class DescriptorProtos {
                  .buildParsed();
       }
       
-      public static Builder newBuilder() { return Builder.create(); }
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(google.protobuf.DescriptorProtos.UninterpretedOption.NamePart prototype) {
+      public static google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder newBuilder() { return google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder.create(); }
+      public google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder newBuilderForType() { return newBuilder(); }
+      public static google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder newBuilder(google.protobuf.DescriptorProtos.UninterpretedOption.NamePart prototype) {
         return newBuilder().mergeFrom(prototype);
       }
-      public Builder toBuilder() { return newBuilder(this); }
+      public google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder toBuilder() { return newBuilder(this); }
       
       @java.lang.Override
-      protected Builder newBuilderForType(
+      protected google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder newBuilderForType(
           com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        Builder builder = new Builder(parent);
+        google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder builder = new google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder(parent);
         return builder;
       }
       public static final class Builder extends
@@ -14482,7 +14482,7 @@ public final class DescriptorProtos {
           maybeForceBuilderInitialization();
         }
         
-        private Builder(BuilderParent parent) {
+        private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -14551,7 +14551,7 @@ public final class DescriptorProtos {
           return result;
         }
         
-        public Builder mergeFrom(com.google.protobuf.Message other) {
+        public google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder mergeFrom(com.google.protobuf.Message other) {
           if (other instanceof google.protobuf.DescriptorProtos.UninterpretedOption.NamePart) {
             return mergeFrom((google.protobuf.DescriptorProtos.UninterpretedOption.NamePart)other);
           } else {
@@ -14560,7 +14560,7 @@ public final class DescriptorProtos {
           }
         }
         
-        public Builder mergeFrom(google.protobuf.DescriptorProtos.UninterpretedOption.NamePart other) {
+        public google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder mergeFrom(google.protobuf.DescriptorProtos.UninterpretedOption.NamePart other) {
           if (other == google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.getDefaultInstance()) return this;
           if (other.hasNamePart()) {
             setNamePart(other.getNamePart());
@@ -14981,17 +14981,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.UninterpretedOption prototype) {
+    public static google.protobuf.DescriptorProtos.UninterpretedOption.Builder newBuilder() { return google.protobuf.DescriptorProtos.UninterpretedOption.Builder.create(); }
+    public google.protobuf.DescriptorProtos.UninterpretedOption.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.UninterpretedOption.Builder newBuilder(google.protobuf.DescriptorProtos.UninterpretedOption prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.UninterpretedOption.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.UninterpretedOption.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.UninterpretedOption.Builder builder = new google.protobuf.DescriptorProtos.UninterpretedOption.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -15012,7 +15012,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -15121,7 +15121,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.UninterpretedOption.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.UninterpretedOption) {
           return mergeFrom((google.protobuf.DescriptorProtos.UninterpretedOption)other);
         } else {
@@ -15130,7 +15130,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.UninterpretedOption other) {
+      public google.protobuf.DescriptorProtos.UninterpretedOption.Builder mergeFrom(google.protobuf.DescriptorProtos.UninterpretedOption other) {
         if (other == google.protobuf.DescriptorProtos.UninterpretedOption.getDefaultInstance()) return this;
         if (nameBuilder_ == null) {
           if (!other.name_.isEmpty()) {
@@ -15628,7 +15628,7 @@ public final class DescriptorProtos {
       com.google.protobuf.GeneratedMessage
       implements SourceCodeInfoOrBuilder {
     // Use SourceCodeInfo.newBuilder() to construct.
-    private SourceCodeInfo(Builder builder) {
+    private SourceCodeInfo(SourceCodeInfo.Builder builder) {
       super(builder);
     }
     private SourceCodeInfo(boolean noInit) {}
@@ -15669,7 +15669,7 @@ public final class DescriptorProtos {
         com.google.protobuf.GeneratedMessage
         implements LocationOrBuilder {
       // Use Location.newBuilder() to construct.
-      private Location(Builder builder) {
+      private Location(Location.Builder builder) {
         super(builder);
       }
       private Location(boolean noInit) {}
@@ -15869,17 +15869,17 @@ public final class DescriptorProtos {
                  .buildParsed();
       }
       
-      public static Builder newBuilder() { return Builder.create(); }
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(google.protobuf.DescriptorProtos.SourceCodeInfo.Location prototype) {
+      public static google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder newBuilder() { return google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder.create(); }
+      public google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder newBuilderForType() { return newBuilder(); }
+      public static google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder newBuilder(google.protobuf.DescriptorProtos.SourceCodeInfo.Location prototype) {
         return newBuilder().mergeFrom(prototype);
       }
-      public Builder toBuilder() { return newBuilder(this); }
+      public google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder toBuilder() { return newBuilder(this); }
       
       @java.lang.Override
-      protected Builder newBuilderForType(
+      protected google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder newBuilderForType(
           com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        Builder builder = new Builder(parent);
+        google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder builder = new google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder(parent);
         return builder;
       }
       public static final class Builder extends
@@ -15900,7 +15900,7 @@ public final class DescriptorProtos {
           maybeForceBuilderInitialization();
         }
         
-        private Builder(BuilderParent parent) {
+        private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -15969,7 +15969,7 @@ public final class DescriptorProtos {
           return result;
         }
         
-        public Builder mergeFrom(com.google.protobuf.Message other) {
+        public google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder mergeFrom(com.google.protobuf.Message other) {
           if (other instanceof google.protobuf.DescriptorProtos.SourceCodeInfo.Location) {
             return mergeFrom((google.protobuf.DescriptorProtos.SourceCodeInfo.Location)other);
           } else {
@@ -15978,7 +15978,7 @@ public final class DescriptorProtos {
           }
         }
         
-        public Builder mergeFrom(google.protobuf.DescriptorProtos.SourceCodeInfo.Location other) {
+        public google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder mergeFrom(google.protobuf.DescriptorProtos.SourceCodeInfo.Location other) {
           if (other == google.protobuf.DescriptorProtos.SourceCodeInfo.Location.getDefaultInstance()) return this;
           if (!other.path_.isEmpty()) {
             if (path_.isEmpty()) {
@@ -16297,17 +16297,17 @@ public final class DescriptorProtos {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.DescriptorProtos.SourceCodeInfo prototype) {
+    public static google.protobuf.DescriptorProtos.SourceCodeInfo.Builder newBuilder() { return google.protobuf.DescriptorProtos.SourceCodeInfo.Builder.create(); }
+    public google.protobuf.DescriptorProtos.SourceCodeInfo.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.DescriptorProtos.SourceCodeInfo.Builder newBuilder(google.protobuf.DescriptorProtos.SourceCodeInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.DescriptorProtos.SourceCodeInfo.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.DescriptorProtos.SourceCodeInfo.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.DescriptorProtos.SourceCodeInfo.Builder builder = new google.protobuf.DescriptorProtos.SourceCodeInfo.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -16328,7 +16328,7 @@ public final class DescriptorProtos {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -16399,7 +16399,7 @@ public final class DescriptorProtos {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.DescriptorProtos.SourceCodeInfo.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.DescriptorProtos.SourceCodeInfo) {
           return mergeFrom((google.protobuf.DescriptorProtos.SourceCodeInfo)other);
         } else {
@@ -16408,7 +16408,7 @@ public final class DescriptorProtos {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.DescriptorProtos.SourceCodeInfo other) {
+      public google.protobuf.DescriptorProtos.SourceCodeInfo.Builder mergeFrom(google.protobuf.DescriptorProtos.SourceCodeInfo other) {
         if (other == google.protobuf.DescriptorProtos.SourceCodeInfo.getDefaultInstance()) return this;
         if (locationBuilder_ == null) {
           if (!other.location_.isEmpty()) {

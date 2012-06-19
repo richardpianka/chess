@@ -435,7 +435,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements EnvelopeOrBuilder {
     // Use Envelope.newBuilder() to construct.
-    private Envelope(Builder builder) {
+    private Envelope(Envelope.Builder builder) {
       super(builder);
     }
     private Envelope(boolean noInit) {}
@@ -880,17 +880,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.Envelope prototype) {
+    public static com.richardpianka.chess.network.Contracts.Envelope.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.Envelope.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.Envelope.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.Envelope.Builder newBuilder(com.richardpianka.chess.network.Contracts.Envelope prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.Envelope.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.Envelope.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.Envelope.Builder builder = new com.richardpianka.chess.network.Contracts.Envelope.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -911,7 +911,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1148,7 +1148,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.Envelope.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.Envelope) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.Envelope)other);
         } else {
@@ -1157,7 +1157,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.Envelope other) {
+      public com.richardpianka.chess.network.Contracts.Envelope.Builder mergeFrom(com.richardpianka.chess.network.Contracts.Envelope other) {
         if (other == com.richardpianka.chess.network.Contracts.Envelope.getDefaultInstance()) return this;
         if (other.hasHandshakeRequest()) {
           mergeHandshakeRequest(other.getHandshakeRequest());
@@ -2516,7 +2516,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements VersionOrBuilder {
     // Use Version.newBuilder() to construct.
-    private Version(Builder builder) {
+    private Version(Version.Builder builder) {
       super(builder);
     }
     private Version(boolean noInit) {}
@@ -2697,17 +2697,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.Version prototype) {
+    public static com.richardpianka.chess.network.Contracts.Version.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.Version.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.Version.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.Version.Builder newBuilder(com.richardpianka.chess.network.Contracts.Version prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.Version.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.Version.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.Version.Builder builder = new com.richardpianka.chess.network.Contracts.Version.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -2728,7 +2728,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2803,7 +2803,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.Version.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.Version) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.Version)other);
         } else {
@@ -2812,7 +2812,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.Version other) {
+      public com.richardpianka.chess.network.Contracts.Version.Builder mergeFrom(com.richardpianka.chess.network.Contracts.Version other) {
         if (other == com.richardpianka.chess.network.Contracts.Version.getDefaultInstance()) return this;
         if (other.hasVersionMajor()) {
           setVersionMajor(other.getVersionMajor());
@@ -2964,7 +2964,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements RoomOrBuilder {
     // Use Room.newBuilder() to construct.
-    private Room(Builder builder) {
+    private Room(Room.Builder builder) {
       super(builder);
     }
     private Room(boolean noInit) {}
@@ -3157,17 +3157,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.Room prototype) {
+    public static com.richardpianka.chess.network.Contracts.Room.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.Room.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.Room.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.Room.Builder newBuilder(com.richardpianka.chess.network.Contracts.Room prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.Room.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.Room.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.Room.Builder builder = new com.richardpianka.chess.network.Contracts.Room.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -3188,7 +3188,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3257,7 +3257,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.Room.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.Room) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.Room)other);
         } else {
@@ -3266,7 +3266,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.Room other) {
+      public com.richardpianka.chess.network.Contracts.Room.Builder mergeFrom(com.richardpianka.chess.network.Contracts.Room other) {
         if (other == com.richardpianka.chess.network.Contracts.Room.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -3429,7 +3429,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements RecordOrBuilder {
     // Use Record.newBuilder() to construct.
-    private Record(Builder builder) {
+    private Record(Record.Builder builder) {
       super(builder);
     }
     private Record(boolean noInit) {}
@@ -3644,17 +3644,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.Record prototype) {
+    public static com.richardpianka.chess.network.Contracts.Record.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.Record.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.Record.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.Record.Builder newBuilder(com.richardpianka.chess.network.Contracts.Record prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.Record.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.Record.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.Record.Builder builder = new com.richardpianka.chess.network.Contracts.Record.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -3675,7 +3675,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3756,7 +3756,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.Record.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.Record) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.Record)other);
         } else {
@@ -3765,7 +3765,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.Record other) {
+      public com.richardpianka.chess.network.Contracts.Record.Builder mergeFrom(com.richardpianka.chess.network.Contracts.Record other) {
         if (other == com.richardpianka.chess.network.Contracts.Record.getDefaultInstance()) return this;
         if (other.hasWins()) {
           setWins(other.getWins());
@@ -3967,7 +3967,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements UserOrBuilder {
     // Use User.newBuilder() to construct.
-    private User(Builder builder) {
+    private User(User.Builder builder) {
       super(builder);
     }
     private User(boolean noInit) {}
@@ -4189,17 +4189,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.User prototype) {
+    public static com.richardpianka.chess.network.Contracts.User.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.User.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.User.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.User.Builder newBuilder(com.richardpianka.chess.network.Contracts.User prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.User.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.User.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.User.Builder builder = new com.richardpianka.chess.network.Contracts.User.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -4220,7 +4220,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4304,7 +4304,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.User.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.User) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.User)other);
         } else {
@@ -4313,7 +4313,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.User other) {
+      public com.richardpianka.chess.network.Contracts.User.Builder mergeFrom(com.richardpianka.chess.network.Contracts.User other) {
         if (other == com.richardpianka.chess.network.Contracts.User.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -4588,7 +4588,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements GameOrBuilder {
     // Use Game.newBuilder() to construct.
-    private Game(Builder builder) {
+    private Game(Game.Builder builder) {
       super(builder);
     }
     private Game(boolean noInit) {}
@@ -4835,17 +4835,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.Game prototype) {
+    public static com.richardpianka.chess.network.Contracts.Game.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.Game.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.Game.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.Game.Builder newBuilder(com.richardpianka.chess.network.Contracts.Game prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.Game.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.Game.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.Game.Builder builder = new com.richardpianka.chess.network.Contracts.Game.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -4866,7 +4866,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4965,7 +4965,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.Game.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.Game) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.Game)other);
         } else {
@@ -4974,7 +4974,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.Game other) {
+      public com.richardpianka.chess.network.Contracts.Game.Builder mergeFrom(com.richardpianka.chess.network.Contracts.Game other) {
         if (other == com.richardpianka.chess.network.Contracts.Game.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -5333,7 +5333,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements HandshakeRequestOrBuilder {
     // Use HandshakeRequest.newBuilder() to construct.
-    private HandshakeRequest(Builder builder) {
+    private HandshakeRequest(HandshakeRequest.Builder builder) {
       super(builder);
     }
     private HandshakeRequest(boolean noInit) {}
@@ -5485,17 +5485,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.HandshakeRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.HandshakeRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder builder = new com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -5516,7 +5516,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5588,7 +5588,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.HandshakeRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.HandshakeRequest)other);
         } else {
@@ -5597,7 +5597,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.HandshakeRequest other) {
+      public com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.HandshakeRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.HandshakeRequest.getDefaultInstance()) return this;
         if (other.hasVersion()) {
           mergeVersion(other.getVersion());
@@ -5764,7 +5764,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements HandshakeResponseOrBuilder {
     // Use HandshakeResponse.newBuilder() to construct.
-    private HandshakeResponse(Builder builder) {
+    private HandshakeResponse(HandshakeResponse.Builder builder) {
       super(builder);
     }
     private HandshakeResponse(boolean noInit) {}
@@ -5913,17 +5913,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.HandshakeResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.HandshakeResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder builder = new com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -5944,7 +5944,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6007,7 +6007,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.HandshakeResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.HandshakeResponse)other);
         } else {
@@ -6016,7 +6016,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.HandshakeResponse other) {
+      public com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.HandshakeResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.HandshakeResponse.getDefaultInstance()) return this;
         if (other.hasResult()) {
           setResult(other.getResult());
@@ -6123,7 +6123,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements IdentifyRequestOrBuilder {
     // Use IdentifyRequest.newBuilder() to construct.
-    private IdentifyRequest(Builder builder) {
+    private IdentifyRequest(IdentifyRequest.Builder builder) {
       super(builder);
     }
     private IdentifyRequest(boolean noInit) {}
@@ -6334,17 +6334,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.IdentifyRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.IdentifyRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder builder = new com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -6365,7 +6365,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6434,7 +6434,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.IdentifyRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.IdentifyRequest)other);
         } else {
@@ -6443,7 +6443,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.IdentifyRequest other) {
+      public com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.IdentifyRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.IdentifyRequest.getDefaultInstance()) return this;
         if (other.hasUsername()) {
           setUsername(other.getUsername());
@@ -6600,7 +6600,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements IdentifyResponseOrBuilder {
     // Use IdentifyResponse.newBuilder() to construct.
-    private IdentifyResponse(Builder builder) {
+    private IdentifyResponse(IdentifyResponse.Builder builder) {
       super(builder);
     }
     private IdentifyResponse(boolean noInit) {}
@@ -6789,17 +6789,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.IdentifyResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.IdentifyResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder builder = new com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -6820,7 +6820,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6889,7 +6889,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.IdentifyResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.IdentifyResponse)other);
         } else {
@@ -6898,7 +6898,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.IdentifyResponse other) {
+      public com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.IdentifyResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.IdentifyResponse.getDefaultInstance()) return this;
         if (other.hasResult()) {
           setResult(other.getResult());
@@ -7041,7 +7041,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements JoinChatRequestOrBuilder {
     // Use JoinChatRequest.newBuilder() to construct.
-    private JoinChatRequest(Builder builder) {
+    private JoinChatRequest(JoinChatRequest.Builder builder) {
       super(builder);
     }
     private JoinChatRequest(boolean noInit) {}
@@ -7167,17 +7167,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinChatRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinChatRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder builder = new com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -7198,7 +7198,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7252,7 +7252,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.JoinChatRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.JoinChatRequest)other);
         } else {
@@ -7261,7 +7261,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinChatRequest other) {
+      public com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinChatRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.JoinChatRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -7321,7 +7321,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements JoinChatResponseOrBuilder {
     // Use JoinChatResponse.newBuilder() to construct.
-    private JoinChatResponse(Builder builder) {
+    private JoinChatResponse(JoinChatResponse.Builder builder) {
       super(builder);
     }
     private JoinChatResponse(boolean noInit) {}
@@ -7470,17 +7470,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinChatResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinChatResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder builder = new com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -7501,7 +7501,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7564,7 +7564,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.JoinChatResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.JoinChatResponse)other);
         } else {
@@ -7573,7 +7573,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinChatResponse other) {
+      public com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinChatResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.JoinChatResponse.getDefaultInstance()) return this;
         if (other.hasResult()) {
           setResult(other.getResult());
@@ -7672,7 +7672,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements RoomListRequestOrBuilder {
     // Use RoomListRequest.newBuilder() to construct.
-    private RoomListRequest(Builder builder) {
+    private RoomListRequest(RoomListRequest.Builder builder) {
       super(builder);
     }
     private RoomListRequest(boolean noInit) {}
@@ -7798,17 +7798,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.RoomListRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.RoomListRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.RoomListRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.RoomListRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.RoomListRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.RoomListRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.RoomListRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.RoomListRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.RoomListRequest.Builder builder = new com.richardpianka.chess.network.Contracts.RoomListRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -7829,7 +7829,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7883,7 +7883,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.RoomListRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.RoomListRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.RoomListRequest)other);
         } else {
@@ -7892,7 +7892,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.RoomListRequest other) {
+      public com.richardpianka.chess.network.Contracts.RoomListRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.RoomListRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -7958,7 +7958,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements RoomListResponseOrBuilder {
     // Use RoomListResponse.newBuilder() to construct.
-    private RoomListResponse(Builder builder) {
+    private RoomListResponse(RoomListResponse.Builder builder) {
       super(builder);
     }
     private RoomListResponse(boolean noInit) {}
@@ -8119,17 +8119,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.RoomListResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.RoomListResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.RoomListResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.RoomListResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.RoomListResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.RoomListResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.RoomListResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.RoomListResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.RoomListResponse.Builder builder = new com.richardpianka.chess.network.Contracts.RoomListResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -8150,7 +8150,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8221,7 +8221,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.RoomListResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.RoomListResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.RoomListResponse)other);
         } else {
@@ -8230,7 +8230,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.RoomListResponse other) {
+      public com.richardpianka.chess.network.Contracts.RoomListResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.RoomListResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance()) return this;
         if (roomsBuilder_ == null) {
           if (!other.rooms_.isEmpty()) {
@@ -8516,7 +8516,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements JoinRoomRequestOrBuilder {
     // Use JoinRoomRequest.newBuilder() to construct.
-    private JoinRoomRequest(Builder builder) {
+    private JoinRoomRequest(JoinRoomRequest.Builder builder) {
       super(builder);
     }
     private JoinRoomRequest(boolean noInit) {}
@@ -8672,17 +8672,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinRoomRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinRoomRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder builder = new com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -8703,7 +8703,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8775,7 +8775,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.JoinRoomRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.JoinRoomRequest)other);
         } else {
@@ -8784,7 +8784,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinRoomRequest other) {
+      public com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinRoomRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance()) return this;
         if (other.hasRoom()) {
           mergeRoom(other.getRoom());
@@ -8955,7 +8955,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements JoinRoomResponseOrBuilder {
     // Use JoinRoomResponse.newBuilder() to construct.
-    private JoinRoomResponse(Builder builder) {
+    private JoinRoomResponse(JoinRoomResponse.Builder builder) {
       super(builder);
     }
     private JoinRoomResponse(boolean noInit) {}
@@ -9104,17 +9104,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinRoomResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinRoomResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder builder = new com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -9135,7 +9135,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9198,7 +9198,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.JoinRoomResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.JoinRoomResponse)other);
         } else {
@@ -9207,7 +9207,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinRoomResponse other) {
+      public com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinRoomResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance()) return this;
         if (other.hasResult()) {
           setResult(other.getResult());
@@ -9319,7 +9319,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements SpeakRequestOrBuilder {
     // Use SpeakRequest.newBuilder() to construct.
-    private SpeakRequest(Builder builder) {
+    private SpeakRequest(SpeakRequest.Builder builder) {
       super(builder);
     }
     private SpeakRequest(boolean noInit) {}
@@ -9539,17 +9539,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.SpeakRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.SpeakRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.SpeakRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.SpeakRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.SpeakRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.SpeakRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.SpeakRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.SpeakRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.SpeakRequest.Builder builder = new com.richardpianka.chess.network.Contracts.SpeakRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -9570,7 +9570,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9654,7 +9654,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.SpeakRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.SpeakRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.SpeakRequest)other);
         } else {
@@ -9663,7 +9663,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.SpeakRequest other) {
+      public com.richardpianka.chess.network.Contracts.SpeakRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.SpeakRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance()) return this;
         if (other.hasMode()) {
           setMode(other.getMode());
@@ -9927,7 +9927,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements OperatorRequestOrBuilder {
     // Use OperatorRequest.newBuilder() to construct.
-    private OperatorRequest(Builder builder) {
+    private OperatorRequest(OperatorRequest.Builder builder) {
       super(builder);
     }
     private OperatorRequest(boolean noInit) {}
@@ -10103,17 +10103,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.OperatorRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.OperatorRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.OperatorRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.OperatorRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.OperatorRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.OperatorRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.OperatorRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.OperatorRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.OperatorRequest.Builder builder = new com.richardpianka.chess.network.Contracts.OperatorRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -10134,7 +10134,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -10212,7 +10212,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.OperatorRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.OperatorRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.OperatorRequest)other);
         } else {
@@ -10221,7 +10221,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.OperatorRequest other) {
+      public com.richardpianka.chess.network.Contracts.OperatorRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.OperatorRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance()) return this;
         if (other.hasAction()) {
           setAction(other.getAction());
@@ -10432,7 +10432,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements OperatorResponseOrBuilder {
     // Use OperatorResponse.newBuilder() to construct.
-    private OperatorResponse(Builder builder) {
+    private OperatorResponse(OperatorResponse.Builder builder) {
       super(builder);
     }
     private OperatorResponse(boolean noInit) {}
@@ -10581,17 +10581,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.OperatorResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.OperatorResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.OperatorResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.OperatorResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.OperatorResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.OperatorResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.OperatorResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.OperatorResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.OperatorResponse.Builder builder = new com.richardpianka.chess.network.Contracts.OperatorResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -10612,7 +10612,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -10675,7 +10675,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.OperatorResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.OperatorResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.OperatorResponse)other);
         } else {
@@ -10684,7 +10684,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.OperatorResponse other) {
+      public com.richardpianka.chess.network.Contracts.OperatorResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.OperatorResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance()) return this;
         if (other.hasResult()) {
           setResult(other.getResult());
@@ -10798,7 +10798,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements ChatRoomEventOrBuilder {
     // Use ChatRoomEvent.newBuilder() to construct.
-    private ChatRoomEvent(Builder builder) {
+    private ChatRoomEvent(ChatRoomEvent.Builder builder) {
       super(builder);
     }
     private ChatRoomEvent(boolean noInit) {}
@@ -10989,17 +10989,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.ChatRoomEvent prototype) {
+    public static com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder newBuilder(com.richardpianka.chess.network.Contracts.ChatRoomEvent prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder builder = new com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -11020,7 +11020,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -11108,7 +11108,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.ChatRoomEvent) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.ChatRoomEvent)other);
         } else {
@@ -11117,7 +11117,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChatRoomEvent other) {
+      public com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChatRoomEvent other) {
         if (other == com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance()) return this;
         if (other.hasRoom()) {
           mergeRoom(other.getRoom());
@@ -11521,7 +11521,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements ChatUserEventOrBuilder {
     // Use ChatUserEvent.newBuilder() to construct.
-    private ChatUserEvent(Builder builder) {
+    private ChatUserEvent(ChatUserEvent.Builder builder) {
       super(builder);
     }
     private ChatUserEvent(boolean noInit) {}
@@ -11811,17 +11811,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.ChatUserEvent prototype) {
+    public static com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder newBuilder(com.richardpianka.chess.network.Contracts.ChatUserEvent prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder builder = new com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -11842,7 +11842,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -11926,7 +11926,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.ChatUserEvent) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.ChatUserEvent)other);
         } else {
@@ -11935,7 +11935,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChatUserEvent other) {
+      public com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChatUserEvent other) {
         if (other == com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance()) return this;
         if (other.hasUser()) {
           mergeUser(other.getUser());
@@ -12201,7 +12201,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements ChatSpeakEventOrBuilder {
     // Use ChatSpeakEvent.newBuilder() to construct.
-    private ChatSpeakEvent(Builder builder) {
+    private ChatSpeakEvent(ChatSpeakEvent.Builder builder) {
       super(builder);
     }
     private ChatSpeakEvent(boolean noInit) {}
@@ -12423,17 +12423,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.ChatSpeakEvent prototype) {
+    public static com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder newBuilder(com.richardpianka.chess.network.Contracts.ChatSpeakEvent prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder builder = new com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -12454,7 +12454,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -12538,7 +12538,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.ChatSpeakEvent) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.ChatSpeakEvent)other);
         } else {
@@ -12547,7 +12547,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChatSpeakEvent other) {
+      public com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChatSpeakEvent other) {
         if (other == com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance()) return this;
         if (other.hasUser()) {
           mergeUser(other.getUser());
@@ -12804,7 +12804,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements GameListRequestOrBuilder {
     // Use GameListRequest.newBuilder() to construct.
-    private GameListRequest(Builder builder) {
+    private GameListRequest(GameListRequest.Builder builder) {
       super(builder);
     }
     private GameListRequest(boolean noInit) {}
@@ -12930,17 +12930,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.GameListRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.GameListRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.GameListRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.GameListRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.GameListRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.GameListRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.GameListRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.GameListRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.GameListRequest.Builder builder = new com.richardpianka.chess.network.Contracts.GameListRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -12961,7 +12961,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13015,7 +13015,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.GameListRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.GameListRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.GameListRequest)other);
         } else {
@@ -13024,7 +13024,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.GameListRequest other) {
+      public com.richardpianka.chess.network.Contracts.GameListRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.GameListRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -13090,7 +13090,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements GameListResponseOrBuilder {
     // Use GameListResponse.newBuilder() to construct.
-    private GameListResponse(Builder builder) {
+    private GameListResponse(GameListResponse.Builder builder) {
       super(builder);
     }
     private GameListResponse(boolean noInit) {}
@@ -13251,17 +13251,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.GameListResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.GameListResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.GameListResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.GameListResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.GameListResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.GameListResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.GameListResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.GameListResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.GameListResponse.Builder builder = new com.richardpianka.chess.network.Contracts.GameListResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -13282,7 +13282,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13353,7 +13353,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.GameListResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.GameListResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.GameListResponse)other);
         } else {
@@ -13362,7 +13362,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.GameListResponse other) {
+      public com.richardpianka.chess.network.Contracts.GameListResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.GameListResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance()) return this;
         if (gamesBuilder_ == null) {
           if (!other.games_.isEmpty()) {
@@ -13651,7 +13651,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements CreateGameRequestOrBuilder {
     // Use CreateGameRequest.newBuilder() to construct.
-    private CreateGameRequest(Builder builder) {
+    private CreateGameRequest(CreateGameRequest.Builder builder) {
       super(builder);
     }
     private CreateGameRequest(boolean noInit) {}
@@ -13862,17 +13862,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.CreateGameRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.CreateGameRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder builder = new com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -13893,7 +13893,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -13962,7 +13962,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.CreateGameRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.CreateGameRequest)other);
         } else {
@@ -13971,7 +13971,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.CreateGameRequest other) {
+      public com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.CreateGameRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance()) return this;
         if (other.hasName()) {
           setName(other.getName());
@@ -14133,7 +14133,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements CreateGameResponseOrBuilder {
     // Use CreateGameResponse.newBuilder() to construct.
-    private CreateGameResponse(Builder builder) {
+    private CreateGameResponse(CreateGameResponse.Builder builder) {
       super(builder);
     }
     private CreateGameResponse(boolean noInit) {}
@@ -14349,17 +14349,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.CreateGameResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.CreateGameResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder builder = new com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -14380,7 +14380,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -14464,7 +14464,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.CreateGameResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.CreateGameResponse)other);
         } else {
@@ -14473,7 +14473,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.CreateGameResponse other) {
+      public com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.CreateGameResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance()) return this;
         if (other.hasResult()) {
           setResult(other.getResult());
@@ -14733,7 +14733,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements JoinGameRequestOrBuilder {
     // Use JoinGameRequest.newBuilder() to construct.
-    private JoinGameRequest(Builder builder) {
+    private JoinGameRequest(JoinGameRequest.Builder builder) {
       super(builder);
     }
     private JoinGameRequest(boolean noInit) {}
@@ -14929,17 +14929,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinGameRequest prototype) {
+    public static com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinGameRequest prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder builder = new com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -14960,7 +14960,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -15038,7 +15038,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.JoinGameRequest) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.JoinGameRequest)other);
         } else {
@@ -15047,7 +15047,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinGameRequest other) {
+      public com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinGameRequest other) {
         if (other == com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance()) return this;
         if (other.hasGame()) {
           mergeGame(other.getGame());
@@ -15262,7 +15262,7 @@ public final class Contracts {
       com.google.protobuf.GeneratedMessage
       implements JoinGameResponseOrBuilder {
     // Use JoinGameResponse.newBuilder() to construct.
-    private JoinGameResponse(Builder builder) {
+    private JoinGameResponse(JoinGameResponse.Builder builder) {
       super(builder);
     }
     private JoinGameResponse(boolean noInit) {}
@@ -15411,17 +15411,17 @@ public final class Contracts {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinGameResponse prototype) {
+    public static com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.JoinGameResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder builder = new com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -15442,7 +15442,7 @@ public final class Contracts {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -15505,7 +15505,7 @@ public final class Contracts {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.richardpianka.chess.network.Contracts.JoinGameResponse) {
           return mergeFrom((com.richardpianka.chess.network.Contracts.JoinGameResponse)other);
         } else {
@@ -15514,7 +15514,7 @@ public final class Contracts {
         }
       }
       
-      public Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinGameResponse other) {
+      public com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.JoinGameResponse other) {
         if (other == com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance()) return this;
         if (other.hasResult()) {
           setResult(other.getResult());

@@ -18,7 +18,7 @@ class AlphaBetaPlayer extends PlayerFactory {
       val piecesThatCanMove = board.movablePieces(color)
       piecesThatCanMove.map(getMoves(_)).flatten
       val moves =
-        for (val move <- piecesThatCanMove.map(getMoves(_)).flatten)
+        for (move <- piecesThatCanMove.map(getMoves(_)).flatten)
           yield alphaBeta(move, board.makeMoveNewBoard(move), color, -1000, 1000, depth)
 
       moves.max(Ordering[Int].on((x: MoveNode) => x.score)).move
@@ -36,7 +36,7 @@ class AlphaBetaPlayer extends PlayerFactory {
 
       if (color == this.color) {
         // maximize
-        for (val move <- piecesThatCanMove.map(getMoves(_)).flatten
+        for (move <- piecesThatCanMove.map(getMoves(_)).flatten
              if continue) {
           val node = alphaBeta(move, board.makeMoveNewBoard(move), color.opposite, newAlpha, newBeta, levels - 1)
           newAlpha = math.max(alpha, node.score)
@@ -47,7 +47,7 @@ class AlphaBetaPlayer extends PlayerFactory {
         new MoveNode(move, board, newAlpha)
       } else {
         // minimize
-        for (val move <- piecesThatCanMove.map(getMoves(_)).flatten
+        for (move <- piecesThatCanMove.map(getMoves(_)).flatten
              if continue) {
           val node = alphaBeta(move, board.makeMoveNewBoard(move), color.opposite, newAlpha, newBeta, levels - 1)
           newBeta = math.min(beta, node.score)

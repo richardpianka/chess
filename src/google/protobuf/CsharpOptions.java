@@ -154,7 +154,7 @@ public final class CsharpOptions {
       com.google.protobuf.GeneratedMessage
       implements CSharpFileOptionsOrBuilder {
     // Use CSharpFileOptions.newBuilder() to construct.
-    private CSharpFileOptions(Builder builder) {
+    private CSharpFileOptions(CSharpFileOptions.Builder builder) {
       super(builder);
     }
     private CSharpFileOptions(boolean noInit) {}
@@ -661,17 +661,17 @@ public final class CsharpOptions {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.CsharpOptions.CSharpFileOptions prototype) {
+    public static google.protobuf.CsharpOptions.CSharpFileOptions.Builder newBuilder() { return google.protobuf.CsharpOptions.CSharpFileOptions.Builder.create(); }
+    public google.protobuf.CsharpOptions.CSharpFileOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.CsharpOptions.CSharpFileOptions.Builder newBuilder(google.protobuf.CsharpOptions.CSharpFileOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.CsharpOptions.CSharpFileOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.CsharpOptions.CSharpFileOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.CsharpOptions.CSharpFileOptions.Builder builder = new google.protobuf.CsharpOptions.CSharpFileOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -692,7 +692,7 @@ public final class CsharpOptions {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -839,7 +839,7 @@ public final class CsharpOptions {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.CsharpOptions.CSharpFileOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.CsharpOptions.CSharpFileOptions) {
           return mergeFrom((google.protobuf.CsharpOptions.CSharpFileOptions)other);
         } else {
@@ -848,7 +848,7 @@ public final class CsharpOptions {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.CsharpOptions.CSharpFileOptions other) {
+      public google.protobuf.CsharpOptions.CSharpFileOptions.Builder mergeFrom(google.protobuf.CsharpOptions.CSharpFileOptions other) {
         if (other == google.protobuf.CsharpOptions.CSharpFileOptions.getDefaultInstance()) return this;
         if (other.hasNamespace()) {
           setNamespace(other.getNamespace());
@@ -1428,7 +1428,7 @@ public final class CsharpOptions {
       com.google.protobuf.GeneratedMessage
       implements CSharpFieldOptionsOrBuilder {
     // Use CSharpFieldOptions.newBuilder() to construct.
-    private CSharpFieldOptions(Builder builder) {
+    private CSharpFieldOptions(CSharpFieldOptions.Builder builder) {
       super(builder);
     }
     private CSharpFieldOptions(boolean noInit) {}
@@ -1595,17 +1595,17 @@ public final class CsharpOptions {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.CsharpOptions.CSharpFieldOptions prototype) {
+    public static google.protobuf.CsharpOptions.CSharpFieldOptions.Builder newBuilder() { return google.protobuf.CsharpOptions.CSharpFieldOptions.Builder.create(); }
+    public google.protobuf.CsharpOptions.CSharpFieldOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.CsharpOptions.CSharpFieldOptions.Builder newBuilder(google.protobuf.CsharpOptions.CSharpFieldOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.CsharpOptions.CSharpFieldOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.CsharpOptions.CSharpFieldOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.CsharpOptions.CSharpFieldOptions.Builder builder = new google.protobuf.CsharpOptions.CSharpFieldOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -1626,7 +1626,7 @@ public final class CsharpOptions {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1689,7 +1689,7 @@ public final class CsharpOptions {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.CsharpOptions.CSharpFieldOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.CsharpOptions.CSharpFieldOptions) {
           return mergeFrom((google.protobuf.CsharpOptions.CSharpFieldOptions)other);
         } else {
@@ -1698,7 +1698,7 @@ public final class CsharpOptions {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.CsharpOptions.CSharpFieldOptions other) {
+      public google.protobuf.CsharpOptions.CSharpFieldOptions.Builder mergeFrom(google.protobuf.CsharpOptions.CSharpFieldOptions other) {
         if (other == google.protobuf.CsharpOptions.CSharpFieldOptions.getDefaultInstance()) return this;
         if (other.hasPropertyName()) {
           setPropertyName(other.getPropertyName());
@@ -1803,7 +1803,7 @@ public final class CsharpOptions {
       com.google.protobuf.GeneratedMessage
       implements CSharpServiceOptionsOrBuilder {
     // Use CSharpServiceOptions.newBuilder() to construct.
-    private CSharpServiceOptions(Builder builder) {
+    private CSharpServiceOptions(CSharpServiceOptions.Builder builder) {
       super(builder);
     }
     private CSharpServiceOptions(boolean noInit) {}
@@ -1970,17 +1970,17 @@ public final class CsharpOptions {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.CsharpOptions.CSharpServiceOptions prototype) {
+    public static google.protobuf.CsharpOptions.CSharpServiceOptions.Builder newBuilder() { return google.protobuf.CsharpOptions.CSharpServiceOptions.Builder.create(); }
+    public google.protobuf.CsharpOptions.CSharpServiceOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.CsharpOptions.CSharpServiceOptions.Builder newBuilder(google.protobuf.CsharpOptions.CSharpServiceOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.CsharpOptions.CSharpServiceOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.CsharpOptions.CSharpServiceOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.CsharpOptions.CSharpServiceOptions.Builder builder = new google.protobuf.CsharpOptions.CSharpServiceOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -2001,7 +2001,7 @@ public final class CsharpOptions {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2064,7 +2064,7 @@ public final class CsharpOptions {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.CsharpOptions.CSharpServiceOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.CsharpOptions.CSharpServiceOptions) {
           return mergeFrom((google.protobuf.CsharpOptions.CSharpServiceOptions)other);
         } else {
@@ -2073,7 +2073,7 @@ public final class CsharpOptions {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.CsharpOptions.CSharpServiceOptions other) {
+      public google.protobuf.CsharpOptions.CSharpServiceOptions.Builder mergeFrom(google.protobuf.CsharpOptions.CSharpServiceOptions other) {
         if (other == google.protobuf.CsharpOptions.CSharpServiceOptions.getDefaultInstance()) return this;
         if (other.hasInterfaceId()) {
           setInterfaceId(other.getInterfaceId());
@@ -2178,7 +2178,7 @@ public final class CsharpOptions {
       com.google.protobuf.GeneratedMessage
       implements CSharpMethodOptionsOrBuilder {
     // Use CSharpMethodOptions.newBuilder() to construct.
-    private CSharpMethodOptions(Builder builder) {
+    private CSharpMethodOptions(CSharpMethodOptions.Builder builder) {
       super(builder);
     }
     private CSharpMethodOptions(boolean noInit) {}
@@ -2323,17 +2323,17 @@ public final class CsharpOptions {
                .buildParsed();
     }
     
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(google.protobuf.CsharpOptions.CSharpMethodOptions prototype) {
+    public static google.protobuf.CsharpOptions.CSharpMethodOptions.Builder newBuilder() { return google.protobuf.CsharpOptions.CSharpMethodOptions.Builder.create(); }
+    public google.protobuf.CsharpOptions.CSharpMethodOptions.Builder newBuilderForType() { return newBuilder(); }
+    public static google.protobuf.CsharpOptions.CSharpMethodOptions.Builder newBuilder(google.protobuf.CsharpOptions.CSharpMethodOptions prototype) {
       return newBuilder().mergeFrom(prototype);
     }
-    public Builder toBuilder() { return newBuilder(this); }
+    public google.protobuf.CsharpOptions.CSharpMethodOptions.Builder toBuilder() { return newBuilder(this); }
     
     @java.lang.Override
-    protected Builder newBuilderForType(
+    protected google.protobuf.CsharpOptions.CSharpMethodOptions.Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
+      google.protobuf.CsharpOptions.CSharpMethodOptions.Builder builder = new google.protobuf.CsharpOptions.CSharpMethodOptions.Builder(parent);
       return builder;
     }
     public static final class Builder extends
@@ -2354,7 +2354,7 @@ public final class CsharpOptions {
         maybeForceBuilderInitialization();
       }
       
-      private Builder(BuilderParent parent) {
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2417,7 +2417,7 @@ public final class CsharpOptions {
         return result;
       }
       
-      public Builder mergeFrom(com.google.protobuf.Message other) {
+      public google.protobuf.CsharpOptions.CSharpMethodOptions.Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof google.protobuf.CsharpOptions.CSharpMethodOptions) {
           return mergeFrom((google.protobuf.CsharpOptions.CSharpMethodOptions)other);
         } else {
@@ -2426,7 +2426,7 @@ public final class CsharpOptions {
         }
       }
       
-      public Builder mergeFrom(google.protobuf.CsharpOptions.CSharpMethodOptions other) {
+      public google.protobuf.CsharpOptions.CSharpMethodOptions.Builder mergeFrom(google.protobuf.CsharpOptions.CSharpMethodOptions other) {
         if (other == google.protobuf.CsharpOptions.CSharpMethodOptions.getDefaultInstance()) return this;
         if (other.hasDispatchId()) {
           setDispatchId(other.getDispatchId());

@@ -11,7 +11,7 @@ class Board {
   private[this] val figurineOrder = Seq(Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook)
 
   private[this] def initialize(color: Color, backRow: Rank, frontRow: Rank) {
-    for (val placement <- File.all.zip(figurineOrder))
+    for (placement <- File.all.zip(figurineOrder))
       pieces.put(Coordinate(placement._1, backRow), Piece(color, placement._2))
 
     for (file <- File.all)
@@ -31,7 +31,7 @@ class Board {
     board.pieces.clear()
     board.captured.clear()
 
-    for (val piece <- pieces)
+    for (piece <- pieces)
       board.pieces.put(piece._1, piece._2)
 
     board.captured ++ captured

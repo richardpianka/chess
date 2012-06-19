@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Contracts.cs" />
-    <Compile Include="CSharpOptions.cs" />
     <Compile Include="DescriptorProtoFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -12,7 +12,7 @@ final case class Event[A]() {
   private var invocationList : List[A => Unit] = Nil
 
   def apply(args: A) {
-    for (val invoker <- invocationList)
+    for (invoker <- invocationList)
       invoker(args)
   }
 

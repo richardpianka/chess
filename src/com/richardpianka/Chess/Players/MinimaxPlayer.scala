@@ -27,7 +27,7 @@ class MinimaxPlayer extends PlayerFactory {
       val piecesThatCanMove = board.movablePieces(color)
       piecesThatCanMove.map(getMoves(_)).flatten
 
-      for (val move <- piecesThatCanMove.map(getMoves(_)).flatten) yield {
+      for (move <- piecesThatCanMove.map(getMoves(_)).flatten) yield {
         val newBoard = board.makeMoveNewBoard(move)
         val children = movementTree(newBoard, color.opposite, levels - 1)
         val scores = children.map(_.value.score)
