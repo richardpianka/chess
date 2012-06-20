@@ -11,11 +11,16 @@ class Board {
   private[this] val figurineOrder = Seq(Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook)
 
   private[this] def initialize(color: Color, backRow: Rank, frontRow: Rank) {
-    for (placement <- File.all.zip(figurineOrder))
-      pieces.put(Coordinate(placement._1, backRow), Piece(color, placement._2))
+    var number = 1
+    for (placement <- File.all.zip(figurineOrder)) {
+      pieces.put(Coordinate(placement._1, backRow), Piece(color, placement._2, number))
+      number += 1
+    }
 
-    for (file <- File.all)
-      pieces.put(Coordinate(file, frontRow), Piece(color, Pawn))
+    number = 1
+    for (file <- File.all) {
+      pieces.put(Coordinate(file, frontRow), Piece(color, Pawn, number))
+    }
   }
 
   private val pieces = HashMap[Coordinate, Piece]()

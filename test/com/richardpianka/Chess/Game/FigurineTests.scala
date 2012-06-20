@@ -8,14 +8,14 @@ class FigurineTests {
     val board = new Board
     val start = Coordinate("D5")
 
-    val whitePawn = Piece(Colors.White, Figurines.Pawn)
+    val whitePawn = Piece(Colors.White, Figurines.Pawn, 1)
     whitePawn.hasMoved.actuate()
     val whiteMoves = whitePawn.getMoves(start, board)
     val whiteExpected = Set(Move(whitePawn, start, Coordinate("D6")))
 
     assert(whiteMoves.toSet == whiteExpected)
 
-    val blackPawn = Piece(Colors.Black, Figurines.Pawn)
+    val blackPawn = Piece(Colors.Black, Figurines.Pawn, 1)
     blackPawn.hasMoved.actuate()
     val blackMoves = blackPawn.getMoves(start, board)
     val blackExpected = Set(Move(blackPawn, start, Coordinate("D4")))
@@ -35,7 +35,7 @@ class FigurineTests {
     val board = new Board
     val start = Coordinate("D5")
 
-    val rook = Piece(Colors.Black, Figurines.Rook)
+    val rook = Piece(Colors.Black, Figurines.Rook, 1)
     val moves = rook.getMoves(start, board)
     val expected = Seq(Move(rook, start, Coordinate("D6")),
                        Move(rook, start, Coordinate("D4")),
@@ -57,7 +57,7 @@ class FigurineTests {
     val board = new Board
     val start = Coordinate("D5")
 
-    val knight = Piece(Colors.Black, Figurines.Knight)
+    val knight = Piece(Colors.Black, Figurines.Knight, 1)
     val moves = knight.getMoves(start, board)
     val expected = Seq(Move(knight, start, Coordinate("B6")),
                        Move(knight, start, Coordinate("B4")),
