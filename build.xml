@@ -6,9 +6,9 @@
     <property name="lib.dir" value="${base.dir}/lib" />
     <property name="docs.dir" value="${base.dir}/docs" />
     <property name="build.dir" value="${base.dir}/build" />
-    <property name="deploy.dir" value="${base.dir}/deploy" />
-    <property name="deploy.artifact" value="chess.jar" />
-    <property name="deploy.artifact.path" value="${deploy.dir}/${deploy.artifact}" />
+    <property name="package.dir" value="${base.dir}/deploy" />
+    <property name="package.artifact" value="chess.jar" />
+    <property name="package.artifact.path" value="${package.dir}/${package.artifact}" />
 
     <path id="build.classpath">
         <fileset dir="${lib.dir}">
@@ -17,24 +17,24 @@
         </fileset>
     </path>
 
-    <target name="all" depends="deploy"/>
+    <target name="all" depends="package"/>
 
-    <target name="deploy" depends="docs">
-        <mkdir dir="${deploy.dir}" />
-        <manifestclasspath property="deploy.classpath" jarfile="${deploy.artifact.path}">
+    <target name="package" depends="docs">
+        <mkdir dir="${package.dir}" />
+        <manifestclasspath property="package.classpath" jarfile="${package.artifact.path}">
             <classpath refid="build.classpath"/>
         </manifestclasspath>
-        <jar destfile="${deploy.artifact.path}" basedir="${build.dir}" >
+        <jar destfile="${package.artifact.path}" basedir="${build.dir}" >
             <manifest>
                 <attribute name="Main-Class" value="com.richardpianka.chess.server.Console"/>
-                <attribute name="Class-Path" value="${deploy.classpath}"/>
+                <attribute name="Class-Path" value="${package.classpath}"/>
             </manifest>
         </jar>
-        <copyfile src="${artifacts.dir}/run_server.bat" dest="${deploy.dir}/run_server.bat" />
-        <replace file="${deploy.dir}/run_server.bat" token="JAR_FILE" value="${deploy.artifact}"/>
+        <copyfile src="${artifacts.dir}/run_server.bat" dest="${package.dir}/run_server.bat" />
+        <replace file="${package.dir}/run_server.bat" token="JAR_FILE" value="${package.artifact}"/>
     </target>
 
-    <target name="docs" depends="build">
+    <target name="docs" depends="build.scala">
         <mkdir dir="${docs.dir}" />
         <scaladoc srcdir="${src.dir}"
                   destdir="${docs.dir}"
@@ -46,7 +46,7 @@
         </scaladoc>
     </target>
 
-    <target name="build" depends="init,contracts">
+    <target name="build.scala" depends="init,contracts.java">
         <mkdir dir="${build.dir}" />
         <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath">
             <include name="**/*.java" />
@@ -54,22 +54,29 @@
         <scalac srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath">
             <include name="**/*.scala" />
         </scalac>
+    </target>
+
+    <target name="build.csharp" depends="contracts.csharp">
+        <mkdir dir="${build.dir}" />
         <exec executable="C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe" failonerror="true">
             <arg value="csharp/Chess.proj" />
         </exec>
     </target>
 
-    <target name="contracts" depends="" description="Generate protobuf contracts">
-        <exec executable="tools/protoc.exe" failonerror="true">
-            <arg value="--java_out=src" />
+    <target name="contracts.java" depends="" description="Generate protobuf contracts">
+        <exec executable="tools/ProtoGen.exe" failonerror="true">
             <arg value="--proto_path=." />
+            <arg value="-output_directory=csharp/Chess.contracts" />
             <arg value="protobuf/google/descriptor.proto" />
             <arg value="protobuf/google/csharp_options.proto" />
             <arg value="protobuf/chess/contracts.proto" />
         </exec>
-        <exec executable="tools/ProtoGen.exe" failonerror="true">
+    </target>
+
+    <target name="contracts.csharp" depends="" description="Generate protobuf contracts">
+        <exec executable="tools/protoc.exe" failonerror="true">
+            <arg value="--java_out=src" />
             <arg value="--proto_path=." />
-            <arg value="-output_directory=csharp/Chess.contracts" />
             <arg value="protobuf/google/descriptor.proto" />
             <arg value="protobuf/google/csharp_options.proto" />
             <arg value="protobuf/chess/contracts.proto" />
@@ -88,6 +95,6 @@
     <target name="clean">
         <delete dir="${docs.dir}" />
         <delete dir="${build.dir}" />
-        <delete dir="${deploy.dir}" />
+        <delete dir="${package.dir}" />
     </target>
 </project>
