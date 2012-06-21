@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5f92ca2-5206-45be-854c-37f5de7e685c" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Development\chess\src\com\codehale\codahale.logula\Formatter.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\chess\src\com\codehale\codahale.logula\Log.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\chess\src\com\codehale\codahale.logula\Logging.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\chess\src\com\codehale\codahale.logula\LoggingMXBean.scala" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf/chess/contracts.proto" afterPath="$PROJECT_DIR$/protobuf/chess/contracts.proto" />
-      <change type="MODIFICATION" beforePath="C:\Development\chess\src\com\richardpianka\chess\game\Board.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/chess/game/Board.scala" />
-      <change type="MODIFICATION" beforePath="C:\Development\chess\src\com\richardpianka\chess\game\Piece.scala" afterPath="$PROJECT_DIR$/src/com/richardpianka/chess/game/Piece.scala" />
-      <change type="MODIFICATION" beforePath="C:\Development\chess\test\com\richardpianka\chess\game\FigurineTests.scala" afterPath="$PROJECT_DIR$/test/com/richardpianka/chess/game/FigurineTests.scala" />
     </list>
     <ignored path="chess.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,17 +78,18 @@
       <file leaf-file-name="contracts.proto" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="31" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.27160493">
+            <state line="367" column="1" selection-start="6789" selection-end="6789" vertical-scroll-proportion="0.67019403">
               <folding>
                 <element signature="e#423#488#0" expanded="true" />
                 <element signature="e#490#602#0" expanded="true" />
                 <element signature="e#1270#1387#0" expanded="true" />
-                <element signature="e#2077#2196#0" expanded="true" />
-                <element signature="e#3260#3371#0" expanded="true" />
-                <element signature="e#3795#3908#0" expanded="true" />
-                <element signature="e#3910#3929#0" expanded="true" />
-                <element signature="e#4449#4466#0" expanded="true" />
-                <element signature="e#4884#4990#0" expanded="true" />
+                <element signature="e#2229#2348#0" expanded="true" />
+                <element signature="e#3747#3858#0" expanded="true" />
+                <element signature="e#4282#4395#0" expanded="true" />
+                <element signature="e#4397#4416#0" expanded="true" />
+                <element signature="e#4936#4953#0" expanded="true" />
+                <element signature="e#5371#5477#0" expanded="true" />
+                <element signature="e#6144#6248#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -754,7 +748,11 @@
       <created>1340226733486</created>
       <updated>1340226733486</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Adding a number to Piece to distinguish pawns, rooks, knights and bishops.">
+      <created>1340230969990</created>
+      <updated>1340230969990</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1006,17 +1004,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="31" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.27160493">
+        <state line="367" column="1" selection-start="6789" selection-end="6789" vertical-scroll-proportion="0.67019403">
           <folding>
             <element signature="e#423#488#0" expanded="true" />
             <element signature="e#490#602#0" expanded="true" />
             <element signature="e#1270#1387#0" expanded="true" />
-            <element signature="e#2077#2196#0" expanded="true" />
-            <element signature="e#3260#3371#0" expanded="true" />
-            <element signature="e#3795#3908#0" expanded="true" />
-            <element signature="e#3910#3929#0" expanded="true" />
-            <element signature="e#4449#4466#0" expanded="true" />
-            <element signature="e#4884#4990#0" expanded="true" />
+            <element signature="e#2229#2348#0" expanded="true" />
+            <element signature="e#3747#3858#0" expanded="true" />
+            <element signature="e#4282#4395#0" expanded="true" />
+            <element signature="e#4397#4416#0" expanded="true" />
+            <element signature="e#4936#4953#0" expanded="true" />
+            <element signature="e#5371#5477#0" expanded="true" />
+            <element signature="e#6144#6248#0" expanded="true" />
           </folding>
         </state>
       </provider>

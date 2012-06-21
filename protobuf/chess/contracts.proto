@@ -92,6 +92,15 @@ message Move {
     required Coordinate End = 2;
 }
 
+message SpecialMove {
+    optional Castle Castle = 0;
+}
+
+message Castle {
+    required Piece Rook = 0;
+    required Piece King = 1;
+} // not supported
+
 /**
  * =======================================
  * Common objects & enums
@@ -127,6 +136,14 @@ enum OperatorAction {
     Ban = 3;
 }
 
+enum GameStatus {
+    Play = 0;
+    Paused = 1; //unsupported
+    Victory = 2;
+    Resign = 3;
+    Stalemate = 4;
+}
+
 message Version {
     optional uint32 VersionMajor = 1    [default = 1];
     optional uint32 VersionMinor = 2    [default = 0];
@@ -155,9 +172,19 @@ message Game {
     required string Name = 1;
     optional string Password = 2;
     required bool Private = 3;
-    optional User Creator = 4;
-    optional User Joiner = 5;
+    optional GameMetadata MetaData = 4;
 }
+
+message GameMetadata {
+    optional User Created = 0;
+    optional User Joined = 1;
+    optional UserTime UserTime = 2;
+}
+
+message UserTime {
+    required bool Timed = 0;
+    required uint32 SecondsPerUser = 1;
+} // so the fields are iff
 
 /**
  * =======================================
@@ -302,6 +329,45 @@ message StartGameResponse {
     required Result Result = 1;
 }
 
+/**
+ * =======================================
+ * In-game
+ * =======================================
+ */
 message GameStartedEvent {
     required Color Color = 1;
+}
+
+message MovePieceRequest {
+    required Move Move = 0;
+}
+
+message MovePieceResponse {
+    required Result Result = 0;
+}
+
+message MovePieceEvent {
+    required Move Move = 0;
+}
+
+message SpecialMovePieceRequest {
+    required SpecialMove Move = 0;
+}
+
+message SpecialMovePieceResponse {
+    required Result Result = 0;
+}
+
+message SpecialMovePieceEvent {
+    required SpecialMove Move = 0;
+}
+
+message GameStatusEvent {
+    optional GameStatus Status = 0;
+    optional User User = 1;
+}
+
+message TimeLeftEvent {
+    required uint32 WhiteSeconds = 0;
+    required uint32 BlackSeconds = 1;
 }
