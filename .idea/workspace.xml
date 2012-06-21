@@ -4,8 +4,7 @@
     <list default="true" id="c5f92ca2-5206-45be-854c-37f5de7e685c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf/chess/contracts.proto" afterPath="$PROJECT_DIR$/protobuf/chess/contracts.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/google/protobuf/CsharpOptions.java" afterPath="$PROJECT_DIR$/src/google/protobuf/CsharpOptions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/google/protobuf/DescriptorProtos.java" afterPath="$PROJECT_DIR$/src/google/protobuf/DescriptorProtos.java" />
+      <change type="MODIFICATION" beforePath="C:\Development\chess\src\com\richardpianka\chess\network\Contracts.java" afterPath="$PROJECT_DIR$/src/com/richardpianka/chess/network/Contracts.java" />
     </list>
     <ignored path="chess.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,84 +66,56 @@
     <favorites_list name="chess" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contracts.proto" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="294" column="26" selection-start="5547" selection-end="5547" vertical-scroll-proportion="0.89880955">
-              <folding>
-                <element signature="e#423#488#0" expanded="true" />
-                <element signature="e#490#602#0" expanded="true" />
-                <element signature="e#1270#1387#0" expanded="true" />
-                <element signature="e#2229#2348#0" expanded="true" />
-                <element signature="e#3748#3859#0" expanded="true" />
-                <element signature="e#4283#4396#0" expanded="true" />
-                <element signature="e#4398#4417#0" expanded="true" />
-                <element signature="e#4937#4954#0" expanded="true" />
-                <element signature="e#5372#5478#0" expanded="true" />
-                <element signature="e#6145#6249#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Piece.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/richardpianka/chess/game/Piece.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="1" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/richardpianka/chess/game/Board.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#38#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FigurineTests.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/richardpianka/chess/game/FigurineTests.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="61" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Move.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/richardpianka/chess/game/Move.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Figurine.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/richardpianka/chess/game/Figurine.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="contracts.proto" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="391" column="21" selection-start="7996" selection-end="8009" vertical-scroll-proportion="0.71022725">
+                  <folding>
+                    <element signature="e#423#488#0" expanded="true" />
+                    <element signature="e#490#602#0" expanded="true" />
+                    <element signature="e#2466#2583#0" expanded="true" />
+                    <element signature="e#3425#3544#0" expanded="true" />
+                    <element signature="e#4944#5055#0" expanded="true" />
+                    <element signature="e#5479#5592#0" expanded="true" />
+                    <element signature="e#5594#5613#0" expanded="true" />
+                    <element signature="e#6133#6150#0" expanded="true" />
+                    <element signature="e#6568#6674#0" expanded="true" />
+                    <element signature="e#7341#7445#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="contracts.proto" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="55" column="46" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.666065">
+                  <folding>
+                    <element signature="e#423#488#0" expanded="true" />
+                    <element signature="e#490#602#0" expanded="true" />
+                    <element signature="e#2466#2583#0" expanded="true" />
+                    <element signature="e#3425#3544#0" expanded="true" />
+                    <element signature="e#4944#5055#0" expanded="true" />
+                    <element signature="e#5479#5592#0" expanded="true" />
+                    <element signature="e#5594#5613#0" expanded="true" />
+                    <element signature="e#6133#6150#0" expanded="true" />
+                    <element signature="e#6568#6674#0" expanded="true" />
+                    <element signature="e#7341#7445#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -758,7 +729,11 @@
       <created>1340315389141</created>
       <updated>1340315389141</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixing contracts.">
+      <created>1340316512767</created>
+      <updated>1340316512767</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -783,19 +758,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.49734244" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12680334" sideWeight="0.65488213" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12224753" sideWeight="0.65488213" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4668874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6936027" sideWeight="0.49734244" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12079102" sideWeight="0.32560706" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34511784" sideWeight="0.49734244" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34511784" sideWeight="0.49734244" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49715677" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -845,7 +820,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating contracts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing contracts." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -881,6 +856,7 @@
     <MESSAGE value="Splitting out C# build &amp; contracts." />
     <MESSAGE value="Adding a number to Piece to distinguish pawns, rooks, knights and bishops." />
     <MESSAGE value="Updating contracts." />
+    <MESSAGE value="Fixing contracts." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1011,18 +987,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="294" column="26" selection-start="5547" selection-end="5547" vertical-scroll-proportion="0.89880955">
+        <state line="55" column="46" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.666065">
           <folding>
             <element signature="e#423#488#0" expanded="true" />
             <element signature="e#490#602#0" expanded="true" />
-            <element signature="e#1270#1387#0" expanded="true" />
-            <element signature="e#2229#2348#0" expanded="true" />
-            <element signature="e#3748#3859#0" expanded="true" />
-            <element signature="e#4283#4396#0" expanded="true" />
-            <element signature="e#4398#4417#0" expanded="true" />
-            <element signature="e#4937#4954#0" expanded="true" />
-            <element signature="e#5372#5478#0" expanded="true" />
-            <element signature="e#6145#6249#0" expanded="true" />
+            <element signature="e#2466#2583#0" expanded="true" />
+            <element signature="e#3425#3544#0" expanded="true" />
+            <element signature="e#4944#5055#0" expanded="true" />
+            <element signature="e#5479#5592#0" expanded="true" />
+            <element signature="e#5594#5613#0" expanded="true" />
+            <element signature="e#6133#6150#0" expanded="true" />
+            <element signature="e#6568#6674#0" expanded="true" />
+            <element signature="e#7341#7445#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -26,12 +26,34 @@ message Envelope {
     optional IdentifyResponse IdentifyResponse = 4;
     optional JoinChatRequest JoinChatRequest = 5;
     optional JoinChatResponse JoinChatResponse = 6;
-    optional JoinRoomRequest JoinRoomRequest = 7;
-    optional JoinRoomResponse JoinRoomResponse = 8;
-    optional SpeakRequest SpeakRequest = 9;
-    optional ChatRoomEvent ChatRoomEvent = 10;
-    optional ChatUserEvent ChatUserEvent = 11;
-    optional ChatSpeakEvent ChatSpeakEvent = 12;
+    optional RoomListRequest RoomListRequest = 7;
+    optional RoomListResponse RoomListResponse = 8;
+    optional JoinRoomRequest JoinRoomRequest = 9;
+    optional JoinRoomResponse JoinRoomResponse = 10;
+    optional SpeakRequest SpeakRequest = 11;
+    optional OperatorRequest OperatorRequest = 12;
+    optional OperatorResponse OperatorResponse = 13;
+    optional ChatRoomEvent ChatRoomEvent = 14;
+    optional ChatUserEvent ChatUserEvent = 15;
+    optional ChatSpeakEvent ChatSpeakEvent = 16;
+    optional GameListRequest GameListRequest = 17;
+    optional GameListResponse GameListResponse = 18;
+    optional CreateGameRequest CreateGameRequest = 19;
+    optional CreateGameResponse CreateGameResponse = 20;
+    optional JoinGameRequest JoinGameRequest = 21;
+    optional JoinGameResponse JoinGameResponse = 22;
+    optional LeaveGameRequest LeaveGameRequest = 23;
+    optional StartGameRequest StartGameRequest = 24;
+    optional StartGameResponse StartGameResponse = 25;
+    optional GameStartedEvent GameStartedEvent = 26;
+    optional MovePieceRequest MovePieceRequest = 27;
+    optional MovePieceResponse MovePieceResponse = 28;
+    optional MovePieceEvent MovePieceEvent = 29;
+    optional SpecialMovePieceRequest SpecialMovePieceRequest = 30;
+    optional SpecialMovePieceResponse SpecialMovePieceResponse = 31;
+    optional SpecialMovePieceEvent SpecialMovePieceEvent = 32;
+    optional GameStatusEvent GameStatusEvent = 34;
+    optional TimeLeftEvent TimeLeftEvent = 35;
 }
 
 /**
