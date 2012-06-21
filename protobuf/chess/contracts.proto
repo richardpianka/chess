@@ -76,29 +76,29 @@ enum File {
 }
 
 message Coordinate {
-    required File File = 0;
-    required Rank Rank = 1;
+    required File File = 1;
+    required Rank Rank = 2;
 }
 
 message Piece {
-    required Color Color = 0;
-    required Figurine Figurine = 1;
-    required uint32 Number = 2;
+    required Color Color = 1;
+    required Figurine Figurine = 2;
+    required uint32 Number = 3;
 }
 
 message Move {
-    required Piece Piece = 0;
-    required Coordinate Start = 1;
-    required Coordinate End = 2;
+    required Piece Piece = 1;
+    required Coordinate Start = 2;
+    required Coordinate End = 3;
 }
 
 message SpecialMove {
-    optional Castle Castle = 0;
+    optional Castle Castle = 1;
 }
 
 message Castle {
-    required Piece Rook = 0;
-    required Piece King = 1;
+    required Piece Rook = 1;
+    required Piece King = 2;
 } // not supported
 
 /**
@@ -140,7 +140,7 @@ enum GameStatus {
     Play = 0;
     Paused = 1; //unsupported
     Victory = 2;
-    Resign = 3;
+    Forfeit = 3;
     Stalemate = 4;
 }
 
@@ -176,14 +176,14 @@ message Game {
 }
 
 message GameMetadata {
-    optional User Created = 0;
-    optional User Joined = 1;
-    optional UserTime UserTime = 2;
+    optional User Created = 1;
+    optional User Joined = 2;
+    optional UserTime UserTime = 3;
 }
 
 message UserTime {
-    required bool Timed = 0;
-    required uint32 SecondsPerUser = 1;
+    required bool Timed = 1;
+    required uint32 SecondsPerUser = 2;
 } // so the fields are iff
 
 /**
@@ -339,35 +339,35 @@ message GameStartedEvent {
 }
 
 message MovePieceRequest {
-    required Move Move = 0;
+    required Move Move = 1;
 }
 
 message MovePieceResponse {
-    required Result Result = 0;
+    required Result Result = 1;
 }
 
 message MovePieceEvent {
-    required Move Move = 0;
+    required Move Move = 1;
 }
 
 message SpecialMovePieceRequest {
-    required SpecialMove Move = 0;
+    required SpecialMove Move = 1;
 }
 
 message SpecialMovePieceResponse {
-    required Result Result = 0;
+    required Result Result = 1;
 }
 
 message SpecialMovePieceEvent {
-    required SpecialMove Move = 0;
+    required SpecialMove Move = 1;
 }
 
 message GameStatusEvent {
-    optional GameStatus Status = 0;
-    optional User User = 1;
+    optional GameStatus Status = 1;
+    optional User User = 2;
 }
 
 message TimeLeftEvent {
-    required uint32 WhiteSeconds = 0;
-    required uint32 BlackSeconds = 1;
+    required uint32 WhiteSeconds = 1;
+    required uint32 BlackSeconds = 2;
 }

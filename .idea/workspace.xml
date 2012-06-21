@@ -4,6 +4,8 @@
     <list default="true" id="c5f92ca2-5206-45be-854c-37f5de7e685c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf/chess/contracts.proto" afterPath="$PROJECT_DIR$/protobuf/chess/contracts.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/google/protobuf/CsharpOptions.java" afterPath="$PROJECT_DIR$/src/google/protobuf/CsharpOptions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/google/protobuf/DescriptorProtos.java" afterPath="$PROJECT_DIR$/src/google/protobuf/DescriptorProtos.java" />
     </list>
     <ignored path="chess.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,18 +80,18 @@
       <file leaf-file-name="contracts.proto" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="1" selection-start="6789" selection-end="6789" vertical-scroll-proportion="0.67019403">
+            <state line="294" column="26" selection-start="5547" selection-end="5547" vertical-scroll-proportion="0.89880955">
               <folding>
                 <element signature="e#423#488#0" expanded="true" />
                 <element signature="e#490#602#0" expanded="true" />
                 <element signature="e#1270#1387#0" expanded="true" />
                 <element signature="e#2229#2348#0" expanded="true" />
-                <element signature="e#3747#3858#0" expanded="true" />
-                <element signature="e#4282#4395#0" expanded="true" />
-                <element signature="e#4397#4416#0" expanded="true" />
-                <element signature="e#4936#4953#0" expanded="true" />
-                <element signature="e#5371#5477#0" expanded="true" />
-                <element signature="e#6144#6248#0" expanded="true" />
+                <element signature="e#3748#3859#0" expanded="true" />
+                <element signature="e#4283#4396#0" expanded="true" />
+                <element signature="e#4398#4417#0" expanded="true" />
+                <element signature="e#4937#4954#0" expanded="true" />
+                <element signature="e#5372#5478#0" expanded="true" />
+                <element signature="e#6145#6249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -752,7 +754,11 @@
       <created>1340230969990</created>
       <updated>1340230969990</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Updating contracts.">
+      <created>1340315389141</created>
+      <updated>1340315389141</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -777,19 +783,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.49734244" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12604403" sideWeight="0.65488213" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12680334" sideWeight="0.65488213" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4668874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6936027" sideWeight="0.49734244" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12079102" sideWeight="0.32560706" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34511784" sideWeight="0.49734244" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34511784" sideWeight="0.49734244" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49715677" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -839,7 +845,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a number to Piece to distinguish pawns, rooks, knights and bishops." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating contracts." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -874,6 +880,7 @@
     <MESSAGE value="More work on the Ant build file.  Added a batch script artifact to run the server." />
     <MESSAGE value="Splitting out C# build &amp; contracts." />
     <MESSAGE value="Adding a number to Piece to distinguish pawns, rooks, knights and bishops." />
+    <MESSAGE value="Updating contracts." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1004,18 +1011,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protobuf/chess/contracts.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="1" selection-start="6789" selection-end="6789" vertical-scroll-proportion="0.67019403">
+        <state line="294" column="26" selection-start="5547" selection-end="5547" vertical-scroll-proportion="0.89880955">
           <folding>
             <element signature="e#423#488#0" expanded="true" />
             <element signature="e#490#602#0" expanded="true" />
             <element signature="e#1270#1387#0" expanded="true" />
             <element signature="e#2229#2348#0" expanded="true" />
-            <element signature="e#3747#3858#0" expanded="true" />
-            <element signature="e#4282#4395#0" expanded="true" />
-            <element signature="e#4397#4416#0" expanded="true" />
-            <element signature="e#4936#4953#0" expanded="true" />
-            <element signature="e#5371#5477#0" expanded="true" />
-            <element signature="e#6144#6248#0" expanded="true" />
+            <element signature="e#3748#3859#0" expanded="true" />
+            <element signature="e#4283#4396#0" expanded="true" />
+            <element signature="e#4398#4417#0" expanded="true" />
+            <element signature="e#4937#4954#0" expanded="true" />
+            <element signature="e#5372#5478#0" expanded="true" />
+            <element signature="e#6145#6249#0" expanded="true" />
           </folding>
         </state>
       </provider>
