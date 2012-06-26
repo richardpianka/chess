@@ -64,21 +64,17 @@
     </target>
 
     <target name="contracts.java" depends="" description="Generate protobuf contracts">
-        <exec executable="tools/ProtoGen.exe" failonerror="true">
+        <exec executable="tools/protoc.exe" failonerror="true">
+            <arg value="--java_out=src" />
             <arg value="--proto_path=." />
-            <arg value="-output_directory=csharp/Chess.contracts" />
-            <arg value="protobuf/google/descriptor.proto" />
-            <arg value="protobuf/google/csharp_options.proto" />
             <arg value="protobuf/chess/contracts.proto" />
         </exec>
     </target>
 
     <target name="contracts.csharp" depends="" description="Generate protobuf contracts">
-        <exec executable="tools/protoc.exe" failonerror="true">
-            <arg value="--java_out=src" />
+        <exec executable="tools/ProtoGen.exe" failonerror="true">
             <arg value="--proto_path=." />
-            <arg value="protobuf/google/descriptor.proto" />
-            <arg value="protobuf/google/csharp_options.proto" />
+            <arg value="-output_directory=csharp/Chess.Contracts" />
             <arg value="protobuf/chess/contracts.proto" />
         </exec>
     </target>

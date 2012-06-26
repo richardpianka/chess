@@ -74,7 +74,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.Color)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.Color)
   }
   
   public enum Figurine
@@ -155,7 +155,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.Figurine)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.Figurine)
   }
   
   public enum Rank
@@ -242,7 +242,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.Rank)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.Rank)
   }
   
   public enum File
@@ -329,7 +329,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.File)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.File)
   }
   
   public enum Result
@@ -398,7 +398,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.Result)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.Result)
   }
   
   public enum RoomFlags
@@ -470,7 +470,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.RoomFlags)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.RoomFlags)
   }
   
   public enum UserFlags
@@ -542,7 +542,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.UserFlags)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.UserFlags)
   }
   
   public enum SpeakMode
@@ -614,7 +614,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.SpeakMode)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.SpeakMode)
   }
   
   public enum OperatorAction
@@ -689,7 +689,7 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.OperatorAction)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.OperatorAction)
   }
   
   public enum GameStatus
@@ -767,71 +767,181 @@ public final class Contracts {
       this.value = value;
     }
     
-    // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.GameStatus)
+    // @@protoc_insertion_point(enum_scope:Chess.Contracts.GameStatus)
   }
   
   public interface EnvelopeOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // optional .com.richardpianka.chess.network.HandshakeRequest HandshakeRequest = 1;
+    // optional .Chess.Contracts.HandshakeRequest HandshakeRequest = 1;
     boolean hasHandshakeRequest();
     com.richardpianka.chess.network.Contracts.HandshakeRequest getHandshakeRequest();
     com.richardpianka.chess.network.Contracts.HandshakeRequestOrBuilder getHandshakeRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.HandshakeResponse HandshakeResponse = 2;
+    // optional .Chess.Contracts.HandshakeResponse HandshakeResponse = 2;
     boolean hasHandshakeResponse();
     com.richardpianka.chess.network.Contracts.HandshakeResponse getHandshakeResponse();
     com.richardpianka.chess.network.Contracts.HandshakeResponseOrBuilder getHandshakeResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.IdentifyRequest IdentifyRequest = 3;
+    // optional .Chess.Contracts.IdentifyRequest IdentifyRequest = 3;
     boolean hasIdentifyRequest();
     com.richardpianka.chess.network.Contracts.IdentifyRequest getIdentifyRequest();
     com.richardpianka.chess.network.Contracts.IdentifyRequestOrBuilder getIdentifyRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.IdentifyResponse IdentifyResponse = 4;
+    // optional .Chess.Contracts.IdentifyResponse IdentifyResponse = 4;
     boolean hasIdentifyResponse();
     com.richardpianka.chess.network.Contracts.IdentifyResponse getIdentifyResponse();
     com.richardpianka.chess.network.Contracts.IdentifyResponseOrBuilder getIdentifyResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 5;
+    // optional .Chess.Contracts.JoinChatRequest JoinChatRequest = 5;
     boolean hasJoinChatRequest();
     com.richardpianka.chess.network.Contracts.JoinChatRequest getJoinChatRequest();
     com.richardpianka.chess.network.Contracts.JoinChatRequestOrBuilder getJoinChatRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 6;
+    // optional .Chess.Contracts.JoinChatResponse JoinChatResponse = 6;
     boolean hasJoinChatResponse();
     com.richardpianka.chess.network.Contracts.JoinChatResponse getJoinChatResponse();
     com.richardpianka.chess.network.Contracts.JoinChatResponseOrBuilder getJoinChatResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 7;
+    // optional .Chess.Contracts.RoomListRequest RoomListRequest = 7;
+    boolean hasRoomListRequest();
+    com.richardpianka.chess.network.Contracts.RoomListRequest getRoomListRequest();
+    com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder getRoomListRequestOrBuilder();
+    
+    // optional .Chess.Contracts.RoomListResponse RoomListResponse = 8;
+    boolean hasRoomListResponse();
+    com.richardpianka.chess.network.Contracts.RoomListResponse getRoomListResponse();
+    com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder getRoomListResponseOrBuilder();
+    
+    // optional .Chess.Contracts.JoinRoomRequest JoinRoomRequest = 9;
     boolean hasJoinRoomRequest();
     com.richardpianka.chess.network.Contracts.JoinRoomRequest getJoinRoomRequest();
     com.richardpianka.chess.network.Contracts.JoinRoomRequestOrBuilder getJoinRoomRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 8;
+    // optional .Chess.Contracts.JoinRoomResponse JoinRoomResponse = 10;
     boolean hasJoinRoomResponse();
     com.richardpianka.chess.network.Contracts.JoinRoomResponse getJoinRoomResponse();
     com.richardpianka.chess.network.Contracts.JoinRoomResponseOrBuilder getJoinRoomResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 9;
+    // optional .Chess.Contracts.SpeakRequest SpeakRequest = 11;
     boolean hasSpeakRequest();
     com.richardpianka.chess.network.Contracts.SpeakRequest getSpeakRequest();
     com.richardpianka.chess.network.Contracts.SpeakRequestOrBuilder getSpeakRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 10;
+    // optional .Chess.Contracts.OperatorRequest OperatorRequest = 12;
+    boolean hasOperatorRequest();
+    com.richardpianka.chess.network.Contracts.OperatorRequest getOperatorRequest();
+    com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder getOperatorRequestOrBuilder();
+    
+    // optional .Chess.Contracts.OperatorResponse OperatorResponse = 13;
+    boolean hasOperatorResponse();
+    com.richardpianka.chess.network.Contracts.OperatorResponse getOperatorResponse();
+    com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder getOperatorResponseOrBuilder();
+    
+    // optional .Chess.Contracts.ChatRoomEvent ChatRoomEvent = 14;
     boolean hasChatRoomEvent();
     com.richardpianka.chess.network.Contracts.ChatRoomEvent getChatRoomEvent();
     com.richardpianka.chess.network.Contracts.ChatRoomEventOrBuilder getChatRoomEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 11;
+    // optional .Chess.Contracts.ChatUserEvent ChatUserEvent = 15;
     boolean hasChatUserEvent();
     com.richardpianka.chess.network.Contracts.ChatUserEvent getChatUserEvent();
     com.richardpianka.chess.network.Contracts.ChatUserEventOrBuilder getChatUserEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 12;
+    // optional .Chess.Contracts.ChatSpeakEvent ChatSpeakEvent = 16;
     boolean hasChatSpeakEvent();
     com.richardpianka.chess.network.Contracts.ChatSpeakEvent getChatSpeakEvent();
     com.richardpianka.chess.network.Contracts.ChatSpeakEventOrBuilder getChatSpeakEventOrBuilder();
+    
+    // optional .Chess.Contracts.GameListRequest GameListRequest = 17;
+    boolean hasGameListRequest();
+    com.richardpianka.chess.network.Contracts.GameListRequest getGameListRequest();
+    com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder getGameListRequestOrBuilder();
+    
+    // optional .Chess.Contracts.GameListResponse GameListResponse = 18;
+    boolean hasGameListResponse();
+    com.richardpianka.chess.network.Contracts.GameListResponse getGameListResponse();
+    com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder getGameListResponseOrBuilder();
+    
+    // optional .Chess.Contracts.CreateGameRequest CreateGameRequest = 19;
+    boolean hasCreateGameRequest();
+    com.richardpianka.chess.network.Contracts.CreateGameRequest getCreateGameRequest();
+    com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder getCreateGameRequestOrBuilder();
+    
+    // optional .Chess.Contracts.CreateGameResponse CreateGameResponse = 20;
+    boolean hasCreateGameResponse();
+    com.richardpianka.chess.network.Contracts.CreateGameResponse getCreateGameResponse();
+    com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder getCreateGameResponseOrBuilder();
+    
+    // optional .Chess.Contracts.JoinGameRequest JoinGameRequest = 21;
+    boolean hasJoinGameRequest();
+    com.richardpianka.chess.network.Contracts.JoinGameRequest getJoinGameRequest();
+    com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder getJoinGameRequestOrBuilder();
+    
+    // optional .Chess.Contracts.JoinGameResponse JoinGameResponse = 22;
+    boolean hasJoinGameResponse();
+    com.richardpianka.chess.network.Contracts.JoinGameResponse getJoinGameResponse();
+    com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder getJoinGameResponseOrBuilder();
+    
+    // optional .Chess.Contracts.LeaveGameRequest LeaveGameRequest = 23;
+    boolean hasLeaveGameRequest();
+    com.richardpianka.chess.network.Contracts.LeaveGameRequest getLeaveGameRequest();
+    com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder getLeaveGameRequestOrBuilder();
+    
+    // optional .Chess.Contracts.StartGameRequest StartGameRequest = 24;
+    boolean hasStartGameRequest();
+    com.richardpianka.chess.network.Contracts.StartGameRequest getStartGameRequest();
+    com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder getStartGameRequestOrBuilder();
+    
+    // optional .Chess.Contracts.StartGameResponse StartGameResponse = 25;
+    boolean hasStartGameResponse();
+    com.richardpianka.chess.network.Contracts.StartGameResponse getStartGameResponse();
+    com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder getStartGameResponseOrBuilder();
+    
+    // optional .Chess.Contracts.GameStartedEvent GameStartedEvent = 26;
+    boolean hasGameStartedEvent();
+    com.richardpianka.chess.network.Contracts.GameStartedEvent getGameStartedEvent();
+    com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder getGameStartedEventOrBuilder();
+    
+    // optional .Chess.Contracts.MovePieceRequest MovePieceRequest = 27;
+    boolean hasMovePieceRequest();
+    com.richardpianka.chess.network.Contracts.MovePieceRequest getMovePieceRequest();
+    com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder getMovePieceRequestOrBuilder();
+    
+    // optional .Chess.Contracts.MovePieceResponse MovePieceResponse = 28;
+    boolean hasMovePieceResponse();
+    com.richardpianka.chess.network.Contracts.MovePieceResponse getMovePieceResponse();
+    com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder getMovePieceResponseOrBuilder();
+    
+    // optional .Chess.Contracts.MovePieceEvent MovePieceEvent = 29;
+    boolean hasMovePieceEvent();
+    com.richardpianka.chess.network.Contracts.MovePieceEvent getMovePieceEvent();
+    com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder getMovePieceEventOrBuilder();
+    
+    // optional .Chess.Contracts.SpecialMovePieceRequest SpecialMovePieceRequest = 30;
+    boolean hasSpecialMovePieceRequest();
+    com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest getSpecialMovePieceRequest();
+    com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder getSpecialMovePieceRequestOrBuilder();
+    
+    // optional .Chess.Contracts.SpecialMovePieceResponse SpecialMovePieceResponse = 31;
+    boolean hasSpecialMovePieceResponse();
+    com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse getSpecialMovePieceResponse();
+    com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder getSpecialMovePieceResponseOrBuilder();
+    
+    // optional .Chess.Contracts.SpecialMovePieceEvent SpecialMovePieceEvent = 32;
+    boolean hasSpecialMovePieceEvent();
+    com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent getSpecialMovePieceEvent();
+    com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder getSpecialMovePieceEventOrBuilder();
+    
+    // optional .Chess.Contracts.GameStatusEvent GameStatusEvent = 34;
+    boolean hasGameStatusEvent();
+    com.richardpianka.chess.network.Contracts.GameStatusEvent getGameStatusEvent();
+    com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder getGameStatusEventOrBuilder();
+    
+    // optional .Chess.Contracts.TimeLeftEvent TimeLeftEvent = 35;
+    boolean hasTimeLeftEvent();
+    com.richardpianka.chess.network.Contracts.TimeLeftEvent getTimeLeftEvent();
+    com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder getTimeLeftEventOrBuilder();
   }
   public static final class Envelope extends
       com.google.protobuf.GeneratedMessage
@@ -853,16 +963,17 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Envelope_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Envelope_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Envelope_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Envelope_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // optional .com.richardpianka.chess.network.HandshakeRequest HandshakeRequest = 1;
+    private int bitField1_;
+    // optional .Chess.Contracts.HandshakeRequest HandshakeRequest = 1;
     public static final int HANDSHAKEREQUEST_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.HandshakeRequest handshakeRequest_;
     public boolean hasHandshakeRequest() {
@@ -875,7 +986,7 @@ public final class Contracts {
       return handshakeRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.HandshakeResponse HandshakeResponse = 2;
+    // optional .Chess.Contracts.HandshakeResponse HandshakeResponse = 2;
     public static final int HANDSHAKERESPONSE_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.HandshakeResponse handshakeResponse_;
     public boolean hasHandshakeResponse() {
@@ -888,7 +999,7 @@ public final class Contracts {
       return handshakeResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.IdentifyRequest IdentifyRequest = 3;
+    // optional .Chess.Contracts.IdentifyRequest IdentifyRequest = 3;
     public static final int IDENTIFYREQUEST_FIELD_NUMBER = 3;
     private com.richardpianka.chess.network.Contracts.IdentifyRequest identifyRequest_;
     public boolean hasIdentifyRequest() {
@@ -901,7 +1012,7 @@ public final class Contracts {
       return identifyRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.IdentifyResponse IdentifyResponse = 4;
+    // optional .Chess.Contracts.IdentifyResponse IdentifyResponse = 4;
     public static final int IDENTIFYRESPONSE_FIELD_NUMBER = 4;
     private com.richardpianka.chess.network.Contracts.IdentifyResponse identifyResponse_;
     public boolean hasIdentifyResponse() {
@@ -914,7 +1025,7 @@ public final class Contracts {
       return identifyResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 5;
+    // optional .Chess.Contracts.JoinChatRequest JoinChatRequest = 5;
     public static final int JOINCHATREQUEST_FIELD_NUMBER = 5;
     private com.richardpianka.chess.network.Contracts.JoinChatRequest joinChatRequest_;
     public boolean hasJoinChatRequest() {
@@ -927,7 +1038,7 @@ public final class Contracts {
       return joinChatRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 6;
+    // optional .Chess.Contracts.JoinChatResponse JoinChatResponse = 6;
     public static final int JOINCHATRESPONSE_FIELD_NUMBER = 6;
     private com.richardpianka.chess.network.Contracts.JoinChatResponse joinChatResponse_;
     public boolean hasJoinChatResponse() {
@@ -940,11 +1051,37 @@ public final class Contracts {
       return joinChatResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 7;
-    public static final int JOINROOMREQUEST_FIELD_NUMBER = 7;
+    // optional .Chess.Contracts.RoomListRequest RoomListRequest = 7;
+    public static final int ROOMLISTREQUEST_FIELD_NUMBER = 7;
+    private com.richardpianka.chess.network.Contracts.RoomListRequest roomListRequest_;
+    public boolean hasRoomListRequest() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public com.richardpianka.chess.network.Contracts.RoomListRequest getRoomListRequest() {
+      return roomListRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder getRoomListRequestOrBuilder() {
+      return roomListRequest_;
+    }
+    
+    // optional .Chess.Contracts.RoomListResponse RoomListResponse = 8;
+    public static final int ROOMLISTRESPONSE_FIELD_NUMBER = 8;
+    private com.richardpianka.chess.network.Contracts.RoomListResponse roomListResponse_;
+    public boolean hasRoomListResponse() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    public com.richardpianka.chess.network.Contracts.RoomListResponse getRoomListResponse() {
+      return roomListResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder getRoomListResponseOrBuilder() {
+      return roomListResponse_;
+    }
+    
+    // optional .Chess.Contracts.JoinRoomRequest JoinRoomRequest = 9;
+    public static final int JOINROOMREQUEST_FIELD_NUMBER = 9;
     private com.richardpianka.chess.network.Contracts.JoinRoomRequest joinRoomRequest_;
     public boolean hasJoinRoomRequest() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
+      return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     public com.richardpianka.chess.network.Contracts.JoinRoomRequest getJoinRoomRequest() {
       return joinRoomRequest_;
@@ -953,11 +1090,11 @@ public final class Contracts {
       return joinRoomRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 8;
-    public static final int JOINROOMRESPONSE_FIELD_NUMBER = 8;
+    // optional .Chess.Contracts.JoinRoomResponse JoinRoomResponse = 10;
+    public static final int JOINROOMRESPONSE_FIELD_NUMBER = 10;
     private com.richardpianka.chess.network.Contracts.JoinRoomResponse joinRoomResponse_;
     public boolean hasJoinRoomResponse() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
+      return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     public com.richardpianka.chess.network.Contracts.JoinRoomResponse getJoinRoomResponse() {
       return joinRoomResponse_;
@@ -966,11 +1103,11 @@ public final class Contracts {
       return joinRoomResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 9;
-    public static final int SPEAKREQUEST_FIELD_NUMBER = 9;
+    // optional .Chess.Contracts.SpeakRequest SpeakRequest = 11;
+    public static final int SPEAKREQUEST_FIELD_NUMBER = 11;
     private com.richardpianka.chess.network.Contracts.SpeakRequest speakRequest_;
     public boolean hasSpeakRequest() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
+      return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     public com.richardpianka.chess.network.Contracts.SpeakRequest getSpeakRequest() {
       return speakRequest_;
@@ -979,11 +1116,37 @@ public final class Contracts {
       return speakRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 10;
-    public static final int CHATROOMEVENT_FIELD_NUMBER = 10;
+    // optional .Chess.Contracts.OperatorRequest OperatorRequest = 12;
+    public static final int OPERATORREQUEST_FIELD_NUMBER = 12;
+    private com.richardpianka.chess.network.Contracts.OperatorRequest operatorRequest_;
+    public boolean hasOperatorRequest() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    public com.richardpianka.chess.network.Contracts.OperatorRequest getOperatorRequest() {
+      return operatorRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder getOperatorRequestOrBuilder() {
+      return operatorRequest_;
+    }
+    
+    // optional .Chess.Contracts.OperatorResponse OperatorResponse = 13;
+    public static final int OPERATORRESPONSE_FIELD_NUMBER = 13;
+    private com.richardpianka.chess.network.Contracts.OperatorResponse operatorResponse_;
+    public boolean hasOperatorResponse() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    public com.richardpianka.chess.network.Contracts.OperatorResponse getOperatorResponse() {
+      return operatorResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder getOperatorResponseOrBuilder() {
+      return operatorResponse_;
+    }
+    
+    // optional .Chess.Contracts.ChatRoomEvent ChatRoomEvent = 14;
+    public static final int CHATROOMEVENT_FIELD_NUMBER = 14;
     private com.richardpianka.chess.network.Contracts.ChatRoomEvent chatRoomEvent_;
     public boolean hasChatRoomEvent() {
-      return ((bitField0_ & 0x00000200) == 0x00000200);
+      return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     public com.richardpianka.chess.network.Contracts.ChatRoomEvent getChatRoomEvent() {
       return chatRoomEvent_;
@@ -992,11 +1155,11 @@ public final class Contracts {
       return chatRoomEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 11;
-    public static final int CHATUSEREVENT_FIELD_NUMBER = 11;
+    // optional .Chess.Contracts.ChatUserEvent ChatUserEvent = 15;
+    public static final int CHATUSEREVENT_FIELD_NUMBER = 15;
     private com.richardpianka.chess.network.Contracts.ChatUserEvent chatUserEvent_;
     public boolean hasChatUserEvent() {
-      return ((bitField0_ & 0x00000400) == 0x00000400);
+      return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     public com.richardpianka.chess.network.Contracts.ChatUserEvent getChatUserEvent() {
       return chatUserEvent_;
@@ -1005,17 +1168,251 @@ public final class Contracts {
       return chatUserEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 12;
-    public static final int CHATSPEAKEVENT_FIELD_NUMBER = 12;
+    // optional .Chess.Contracts.ChatSpeakEvent ChatSpeakEvent = 16;
+    public static final int CHATSPEAKEVENT_FIELD_NUMBER = 16;
     private com.richardpianka.chess.network.Contracts.ChatSpeakEvent chatSpeakEvent_;
     public boolean hasChatSpeakEvent() {
-      return ((bitField0_ & 0x00000800) == 0x00000800);
+      return ((bitField0_ & 0x00008000) == 0x00008000);
     }
     public com.richardpianka.chess.network.Contracts.ChatSpeakEvent getChatSpeakEvent() {
       return chatSpeakEvent_;
     }
     public com.richardpianka.chess.network.Contracts.ChatSpeakEventOrBuilder getChatSpeakEventOrBuilder() {
       return chatSpeakEvent_;
+    }
+    
+    // optional .Chess.Contracts.GameListRequest GameListRequest = 17;
+    public static final int GAMELISTREQUEST_FIELD_NUMBER = 17;
+    private com.richardpianka.chess.network.Contracts.GameListRequest gameListRequest_;
+    public boolean hasGameListRequest() {
+      return ((bitField0_ & 0x00010000) == 0x00010000);
+    }
+    public com.richardpianka.chess.network.Contracts.GameListRequest getGameListRequest() {
+      return gameListRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder getGameListRequestOrBuilder() {
+      return gameListRequest_;
+    }
+    
+    // optional .Chess.Contracts.GameListResponse GameListResponse = 18;
+    public static final int GAMELISTRESPONSE_FIELD_NUMBER = 18;
+    private com.richardpianka.chess.network.Contracts.GameListResponse gameListResponse_;
+    public boolean hasGameListResponse() {
+      return ((bitField0_ & 0x00020000) == 0x00020000);
+    }
+    public com.richardpianka.chess.network.Contracts.GameListResponse getGameListResponse() {
+      return gameListResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder getGameListResponseOrBuilder() {
+      return gameListResponse_;
+    }
+    
+    // optional .Chess.Contracts.CreateGameRequest CreateGameRequest = 19;
+    public static final int CREATEGAMEREQUEST_FIELD_NUMBER = 19;
+    private com.richardpianka.chess.network.Contracts.CreateGameRequest createGameRequest_;
+    public boolean hasCreateGameRequest() {
+      return ((bitField0_ & 0x00040000) == 0x00040000);
+    }
+    public com.richardpianka.chess.network.Contracts.CreateGameRequest getCreateGameRequest() {
+      return createGameRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder getCreateGameRequestOrBuilder() {
+      return createGameRequest_;
+    }
+    
+    // optional .Chess.Contracts.CreateGameResponse CreateGameResponse = 20;
+    public static final int CREATEGAMERESPONSE_FIELD_NUMBER = 20;
+    private com.richardpianka.chess.network.Contracts.CreateGameResponse createGameResponse_;
+    public boolean hasCreateGameResponse() {
+      return ((bitField0_ & 0x00080000) == 0x00080000);
+    }
+    public com.richardpianka.chess.network.Contracts.CreateGameResponse getCreateGameResponse() {
+      return createGameResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder getCreateGameResponseOrBuilder() {
+      return createGameResponse_;
+    }
+    
+    // optional .Chess.Contracts.JoinGameRequest JoinGameRequest = 21;
+    public static final int JOINGAMEREQUEST_FIELD_NUMBER = 21;
+    private com.richardpianka.chess.network.Contracts.JoinGameRequest joinGameRequest_;
+    public boolean hasJoinGameRequest() {
+      return ((bitField0_ & 0x00100000) == 0x00100000);
+    }
+    public com.richardpianka.chess.network.Contracts.JoinGameRequest getJoinGameRequest() {
+      return joinGameRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder getJoinGameRequestOrBuilder() {
+      return joinGameRequest_;
+    }
+    
+    // optional .Chess.Contracts.JoinGameResponse JoinGameResponse = 22;
+    public static final int JOINGAMERESPONSE_FIELD_NUMBER = 22;
+    private com.richardpianka.chess.network.Contracts.JoinGameResponse joinGameResponse_;
+    public boolean hasJoinGameResponse() {
+      return ((bitField0_ & 0x00200000) == 0x00200000);
+    }
+    public com.richardpianka.chess.network.Contracts.JoinGameResponse getJoinGameResponse() {
+      return joinGameResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder getJoinGameResponseOrBuilder() {
+      return joinGameResponse_;
+    }
+    
+    // optional .Chess.Contracts.LeaveGameRequest LeaveGameRequest = 23;
+    public static final int LEAVEGAMEREQUEST_FIELD_NUMBER = 23;
+    private com.richardpianka.chess.network.Contracts.LeaveGameRequest leaveGameRequest_;
+    public boolean hasLeaveGameRequest() {
+      return ((bitField0_ & 0x00400000) == 0x00400000);
+    }
+    public com.richardpianka.chess.network.Contracts.LeaveGameRequest getLeaveGameRequest() {
+      return leaveGameRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder getLeaveGameRequestOrBuilder() {
+      return leaveGameRequest_;
+    }
+    
+    // optional .Chess.Contracts.StartGameRequest StartGameRequest = 24;
+    public static final int STARTGAMEREQUEST_FIELD_NUMBER = 24;
+    private com.richardpianka.chess.network.Contracts.StartGameRequest startGameRequest_;
+    public boolean hasStartGameRequest() {
+      return ((bitField0_ & 0x00800000) == 0x00800000);
+    }
+    public com.richardpianka.chess.network.Contracts.StartGameRequest getStartGameRequest() {
+      return startGameRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder getStartGameRequestOrBuilder() {
+      return startGameRequest_;
+    }
+    
+    // optional .Chess.Contracts.StartGameResponse StartGameResponse = 25;
+    public static final int STARTGAMERESPONSE_FIELD_NUMBER = 25;
+    private com.richardpianka.chess.network.Contracts.StartGameResponse startGameResponse_;
+    public boolean hasStartGameResponse() {
+      return ((bitField0_ & 0x01000000) == 0x01000000);
+    }
+    public com.richardpianka.chess.network.Contracts.StartGameResponse getStartGameResponse() {
+      return startGameResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder getStartGameResponseOrBuilder() {
+      return startGameResponse_;
+    }
+    
+    // optional .Chess.Contracts.GameStartedEvent GameStartedEvent = 26;
+    public static final int GAMESTARTEDEVENT_FIELD_NUMBER = 26;
+    private com.richardpianka.chess.network.Contracts.GameStartedEvent gameStartedEvent_;
+    public boolean hasGameStartedEvent() {
+      return ((bitField0_ & 0x02000000) == 0x02000000);
+    }
+    public com.richardpianka.chess.network.Contracts.GameStartedEvent getGameStartedEvent() {
+      return gameStartedEvent_;
+    }
+    public com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder getGameStartedEventOrBuilder() {
+      return gameStartedEvent_;
+    }
+    
+    // optional .Chess.Contracts.MovePieceRequest MovePieceRequest = 27;
+    public static final int MOVEPIECEREQUEST_FIELD_NUMBER = 27;
+    private com.richardpianka.chess.network.Contracts.MovePieceRequest movePieceRequest_;
+    public boolean hasMovePieceRequest() {
+      return ((bitField0_ & 0x04000000) == 0x04000000);
+    }
+    public com.richardpianka.chess.network.Contracts.MovePieceRequest getMovePieceRequest() {
+      return movePieceRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder getMovePieceRequestOrBuilder() {
+      return movePieceRequest_;
+    }
+    
+    // optional .Chess.Contracts.MovePieceResponse MovePieceResponse = 28;
+    public static final int MOVEPIECERESPONSE_FIELD_NUMBER = 28;
+    private com.richardpianka.chess.network.Contracts.MovePieceResponse movePieceResponse_;
+    public boolean hasMovePieceResponse() {
+      return ((bitField0_ & 0x08000000) == 0x08000000);
+    }
+    public com.richardpianka.chess.network.Contracts.MovePieceResponse getMovePieceResponse() {
+      return movePieceResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder getMovePieceResponseOrBuilder() {
+      return movePieceResponse_;
+    }
+    
+    // optional .Chess.Contracts.MovePieceEvent MovePieceEvent = 29;
+    public static final int MOVEPIECEEVENT_FIELD_NUMBER = 29;
+    private com.richardpianka.chess.network.Contracts.MovePieceEvent movePieceEvent_;
+    public boolean hasMovePieceEvent() {
+      return ((bitField0_ & 0x10000000) == 0x10000000);
+    }
+    public com.richardpianka.chess.network.Contracts.MovePieceEvent getMovePieceEvent() {
+      return movePieceEvent_;
+    }
+    public com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder getMovePieceEventOrBuilder() {
+      return movePieceEvent_;
+    }
+    
+    // optional .Chess.Contracts.SpecialMovePieceRequest SpecialMovePieceRequest = 30;
+    public static final int SPECIALMOVEPIECEREQUEST_FIELD_NUMBER = 30;
+    private com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest specialMovePieceRequest_;
+    public boolean hasSpecialMovePieceRequest() {
+      return ((bitField0_ & 0x20000000) == 0x20000000);
+    }
+    public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest getSpecialMovePieceRequest() {
+      return specialMovePieceRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder getSpecialMovePieceRequestOrBuilder() {
+      return specialMovePieceRequest_;
+    }
+    
+    // optional .Chess.Contracts.SpecialMovePieceResponse SpecialMovePieceResponse = 31;
+    public static final int SPECIALMOVEPIECERESPONSE_FIELD_NUMBER = 31;
+    private com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse specialMovePieceResponse_;
+    public boolean hasSpecialMovePieceResponse() {
+      return ((bitField0_ & 0x40000000) == 0x40000000);
+    }
+    public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse getSpecialMovePieceResponse() {
+      return specialMovePieceResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder getSpecialMovePieceResponseOrBuilder() {
+      return specialMovePieceResponse_;
+    }
+    
+    // optional .Chess.Contracts.SpecialMovePieceEvent SpecialMovePieceEvent = 32;
+    public static final int SPECIALMOVEPIECEEVENT_FIELD_NUMBER = 32;
+    private com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent specialMovePieceEvent_;
+    public boolean hasSpecialMovePieceEvent() {
+      return ((bitField0_ & 0x80000000) == 0x80000000);
+    }
+    public com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent getSpecialMovePieceEvent() {
+      return specialMovePieceEvent_;
+    }
+    public com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder getSpecialMovePieceEventOrBuilder() {
+      return specialMovePieceEvent_;
+    }
+    
+    // optional .Chess.Contracts.GameStatusEvent GameStatusEvent = 34;
+    public static final int GAMESTATUSEVENT_FIELD_NUMBER = 34;
+    private com.richardpianka.chess.network.Contracts.GameStatusEvent gameStatusEvent_;
+    public boolean hasGameStatusEvent() {
+      return ((bitField1_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.chess.network.Contracts.GameStatusEvent getGameStatusEvent() {
+      return gameStatusEvent_;
+    }
+    public com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder getGameStatusEventOrBuilder() {
+      return gameStatusEvent_;
+    }
+    
+    // optional .Chess.Contracts.TimeLeftEvent TimeLeftEvent = 35;
+    public static final int TIMELEFTEVENT_FIELD_NUMBER = 35;
+    private com.richardpianka.chess.network.Contracts.TimeLeftEvent timeLeftEvent_;
+    public boolean hasTimeLeftEvent() {
+      return ((bitField1_ & 0x00000002) == 0x00000002);
+    }
+    public com.richardpianka.chess.network.Contracts.TimeLeftEvent getTimeLeftEvent() {
+      return timeLeftEvent_;
+    }
+    public com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder getTimeLeftEventOrBuilder() {
+      return timeLeftEvent_;
     }
     
     private void initFields() {
@@ -1025,12 +1422,34 @@ public final class Contracts {
       identifyResponse_ = com.richardpianka.chess.network.Contracts.IdentifyResponse.getDefaultInstance();
       joinChatRequest_ = com.richardpianka.chess.network.Contracts.JoinChatRequest.getDefaultInstance();
       joinChatResponse_ = com.richardpianka.chess.network.Contracts.JoinChatResponse.getDefaultInstance();
+      roomListRequest_ = com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance();
+      roomListResponse_ = com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance();
       joinRoomRequest_ = com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance();
       joinRoomResponse_ = com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance();
       speakRequest_ = com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance();
+      operatorRequest_ = com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance();
+      operatorResponse_ = com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance();
       chatRoomEvent_ = com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance();
       chatUserEvent_ = com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance();
       chatSpeakEvent_ = com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance();
+      gameListRequest_ = com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance();
+      gameListResponse_ = com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance();
+      createGameRequest_ = com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance();
+      createGameResponse_ = com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance();
+      joinGameRequest_ = com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance();
+      joinGameResponse_ = com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance();
+      leaveGameRequest_ = com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance();
+      startGameRequest_ = com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance();
+      startGameResponse_ = com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance();
+      gameStartedEvent_ = com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance();
+      movePieceRequest_ = com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance();
+      movePieceResponse_ = com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance();
+      movePieceEvent_ = com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance();
+      specialMovePieceRequest_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance();
+      specialMovePieceResponse_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance();
+      specialMovePieceEvent_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance();
+      gameStatusEvent_ = com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance();
+      timeLeftEvent_ = com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1067,6 +1486,12 @@ public final class Contracts {
           return false;
         }
       }
+      if (hasRoomListResponse()) {
+        if (!getRoomListResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       if (hasJoinRoomRequest()) {
         if (!getJoinRoomRequest().isInitialized()) {
           memoizedIsInitialized = 0;
@@ -1085,6 +1510,18 @@ public final class Contracts {
           return false;
         }
       }
+      if (hasOperatorRequest()) {
+        if (!getOperatorRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasOperatorResponse()) {
+        if (!getOperatorResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       if (hasChatRoomEvent()) {
         if (!getChatRoomEvent().isInitialized()) {
           memoizedIsInitialized = 0;
@@ -1099,6 +1536,96 @@ public final class Contracts {
       }
       if (hasChatSpeakEvent()) {
         if (!getChatSpeakEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGameListResponse()) {
+        if (!getGameListResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasCreateGameRequest()) {
+        if (!getCreateGameRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasCreateGameResponse()) {
+        if (!getCreateGameResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasJoinGameRequest()) {
+        if (!getJoinGameRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasJoinGameResponse()) {
+        if (!getJoinGameResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasStartGameResponse()) {
+        if (!getStartGameResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGameStartedEvent()) {
+        if (!getGameStartedEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasMovePieceRequest()) {
+        if (!getMovePieceRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasMovePieceResponse()) {
+        if (!getMovePieceResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasMovePieceEvent()) {
+        if (!getMovePieceEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSpecialMovePieceRequest()) {
+        if (!getSpecialMovePieceRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSpecialMovePieceResponse()) {
+        if (!getSpecialMovePieceResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSpecialMovePieceEvent()) {
+        if (!getSpecialMovePieceEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGameStatusEvent()) {
+        if (!getGameStatusEvent().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasTimeLeftEvent()) {
+        if (!getTimeLeftEvent().isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -1129,22 +1656,88 @@ public final class Contracts {
         output.writeMessage(6, joinChatResponse_);
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeMessage(7, joinRoomRequest_);
+        output.writeMessage(7, roomListRequest_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeMessage(8, joinRoomResponse_);
+        output.writeMessage(8, roomListResponse_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeMessage(9, speakRequest_);
+        output.writeMessage(9, joinRoomRequest_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeMessage(10, chatRoomEvent_);
+        output.writeMessage(10, joinRoomResponse_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        output.writeMessage(11, chatUserEvent_);
+        output.writeMessage(11, speakRequest_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeMessage(12, chatSpeakEvent_);
+        output.writeMessage(12, operatorRequest_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeMessage(13, operatorResponse_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeMessage(14, chatRoomEvent_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeMessage(15, chatUserEvent_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        output.writeMessage(16, chatSpeakEvent_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        output.writeMessage(17, gameListRequest_);
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        output.writeMessage(18, gameListResponse_);
+      }
+      if (((bitField0_ & 0x00040000) == 0x00040000)) {
+        output.writeMessage(19, createGameRequest_);
+      }
+      if (((bitField0_ & 0x00080000) == 0x00080000)) {
+        output.writeMessage(20, createGameResponse_);
+      }
+      if (((bitField0_ & 0x00100000) == 0x00100000)) {
+        output.writeMessage(21, joinGameRequest_);
+      }
+      if (((bitField0_ & 0x00200000) == 0x00200000)) {
+        output.writeMessage(22, joinGameResponse_);
+      }
+      if (((bitField0_ & 0x00400000) == 0x00400000)) {
+        output.writeMessage(23, leaveGameRequest_);
+      }
+      if (((bitField0_ & 0x00800000) == 0x00800000)) {
+        output.writeMessage(24, startGameRequest_);
+      }
+      if (((bitField0_ & 0x01000000) == 0x01000000)) {
+        output.writeMessage(25, startGameResponse_);
+      }
+      if (((bitField0_ & 0x02000000) == 0x02000000)) {
+        output.writeMessage(26, gameStartedEvent_);
+      }
+      if (((bitField0_ & 0x04000000) == 0x04000000)) {
+        output.writeMessage(27, movePieceRequest_);
+      }
+      if (((bitField0_ & 0x08000000) == 0x08000000)) {
+        output.writeMessage(28, movePieceResponse_);
+      }
+      if (((bitField0_ & 0x10000000) == 0x10000000)) {
+        output.writeMessage(29, movePieceEvent_);
+      }
+      if (((bitField0_ & 0x20000000) == 0x20000000)) {
+        output.writeMessage(30, specialMovePieceRequest_);
+      }
+      if (((bitField0_ & 0x40000000) == 0x40000000)) {
+        output.writeMessage(31, specialMovePieceResponse_);
+      }
+      if (((bitField0_ & 0x80000000) == 0x80000000)) {
+        output.writeMessage(32, specialMovePieceEvent_);
+      }
+      if (((bitField1_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(34, gameStatusEvent_);
+      }
+      if (((bitField1_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(35, timeLeftEvent_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1181,27 +1774,115 @@ public final class Contracts {
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, joinRoomRequest_);
+          .computeMessageSize(7, roomListRequest_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, joinRoomResponse_);
+          .computeMessageSize(8, roomListResponse_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, speakRequest_);
+          .computeMessageSize(9, joinRoomRequest_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, chatRoomEvent_);
+          .computeMessageSize(10, joinRoomResponse_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, chatUserEvent_);
+          .computeMessageSize(11, speakRequest_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, chatSpeakEvent_);
+          .computeMessageSize(12, operatorRequest_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, operatorResponse_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, chatRoomEvent_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, chatUserEvent_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(16, chatSpeakEvent_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(17, gameListRequest_);
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(18, gameListResponse_);
+      }
+      if (((bitField0_ & 0x00040000) == 0x00040000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(19, createGameRequest_);
+      }
+      if (((bitField0_ & 0x00080000) == 0x00080000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20, createGameResponse_);
+      }
+      if (((bitField0_ & 0x00100000) == 0x00100000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(21, joinGameRequest_);
+      }
+      if (((bitField0_ & 0x00200000) == 0x00200000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(22, joinGameResponse_);
+      }
+      if (((bitField0_ & 0x00400000) == 0x00400000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(23, leaveGameRequest_);
+      }
+      if (((bitField0_ & 0x00800000) == 0x00800000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(24, startGameRequest_);
+      }
+      if (((bitField0_ & 0x01000000) == 0x01000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(25, startGameResponse_);
+      }
+      if (((bitField0_ & 0x02000000) == 0x02000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(26, gameStartedEvent_);
+      }
+      if (((bitField0_ & 0x04000000) == 0x04000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(27, movePieceRequest_);
+      }
+      if (((bitField0_ & 0x08000000) == 0x08000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(28, movePieceResponse_);
+      }
+      if (((bitField0_ & 0x10000000) == 0x10000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(29, movePieceEvent_);
+      }
+      if (((bitField0_ & 0x20000000) == 0x20000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(30, specialMovePieceRequest_);
+      }
+      if (((bitField0_ & 0x40000000) == 0x40000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(31, specialMovePieceResponse_);
+      }
+      if (((bitField0_ & 0x80000000) == 0x80000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(32, specialMovePieceEvent_);
+      }
+      if (((bitField1_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(34, gameStatusEvent_);
+      }
+      if (((bitField1_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(35, timeLeftEvent_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1300,12 +1981,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.EnvelopeOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Envelope_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Envelope_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Envelope_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Envelope_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Envelope.newBuilder()
@@ -1325,12 +2006,34 @@ public final class Contracts {
           getIdentifyResponseFieldBuilder();
           getJoinChatRequestFieldBuilder();
           getJoinChatResponseFieldBuilder();
+          getRoomListRequestFieldBuilder();
+          getRoomListResponseFieldBuilder();
           getJoinRoomRequestFieldBuilder();
           getJoinRoomResponseFieldBuilder();
           getSpeakRequestFieldBuilder();
+          getOperatorRequestFieldBuilder();
+          getOperatorResponseFieldBuilder();
           getChatRoomEventFieldBuilder();
           getChatUserEventFieldBuilder();
           getChatSpeakEventFieldBuilder();
+          getGameListRequestFieldBuilder();
+          getGameListResponseFieldBuilder();
+          getCreateGameRequestFieldBuilder();
+          getCreateGameResponseFieldBuilder();
+          getJoinGameRequestFieldBuilder();
+          getJoinGameResponseFieldBuilder();
+          getLeaveGameRequestFieldBuilder();
+          getStartGameRequestFieldBuilder();
+          getStartGameResponseFieldBuilder();
+          getGameStartedEventFieldBuilder();
+          getMovePieceRequestFieldBuilder();
+          getMovePieceResponseFieldBuilder();
+          getMovePieceEventFieldBuilder();
+          getSpecialMovePieceRequestFieldBuilder();
+          getSpecialMovePieceResponseFieldBuilder();
+          getSpecialMovePieceEventFieldBuilder();
+          getGameStatusEventFieldBuilder();
+          getTimeLeftEventFieldBuilder();
         }
       }
       private static Builder create() {
@@ -1375,42 +2078,174 @@ public final class Contracts {
           joinChatResponseBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000020);
+        if (roomListRequestBuilder_ == null) {
+          roomListRequest_ = com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance();
+        } else {
+          roomListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
+        if (roomListResponseBuilder_ == null) {
+          roomListResponse_ = com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance();
+        } else {
+          roomListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
         if (joinRoomRequestBuilder_ == null) {
           joinRoomRequest_ = com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance();
         } else {
           joinRoomRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000100);
         if (joinRoomResponseBuilder_ == null) {
           joinRoomResponse_ = com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance();
         } else {
           joinRoomResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000200);
         if (speakRequestBuilder_ == null) {
           speakRequest_ = com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance();
         } else {
           speakRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00000400);
+        if (operatorRequestBuilder_ == null) {
+          operatorRequest_ = com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance();
+        } else {
+          operatorRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000800);
+        if (operatorResponseBuilder_ == null) {
+          operatorResponse_ = com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance();
+        } else {
+          operatorResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00001000);
         if (chatRoomEventBuilder_ == null) {
           chatRoomEvent_ = com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance();
         } else {
           chatRoomEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00002000);
         if (chatUserEventBuilder_ == null) {
           chatUserEvent_ = com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance();
         } else {
           chatUserEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00004000);
         if (chatSpeakEventBuilder_ == null) {
           chatSpeakEvent_ = com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance();
         } else {
           chatSpeakEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00008000);
+        if (gameListRequestBuilder_ == null) {
+          gameListRequest_ = com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance();
+        } else {
+          gameListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00010000);
+        if (gameListResponseBuilder_ == null) {
+          gameListResponse_ = com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance();
+        } else {
+          gameListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00020000);
+        if (createGameRequestBuilder_ == null) {
+          createGameRequest_ = com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance();
+        } else {
+          createGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00040000);
+        if (createGameResponseBuilder_ == null) {
+          createGameResponse_ = com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance();
+        } else {
+          createGameResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00080000);
+        if (joinGameRequestBuilder_ == null) {
+          joinGameRequest_ = com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance();
+        } else {
+          joinGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00100000);
+        if (joinGameResponseBuilder_ == null) {
+          joinGameResponse_ = com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance();
+        } else {
+          joinGameResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00200000);
+        if (leaveGameRequestBuilder_ == null) {
+          leaveGameRequest_ = com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance();
+        } else {
+          leaveGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00400000);
+        if (startGameRequestBuilder_ == null) {
+          startGameRequest_ = com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance();
+        } else {
+          startGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00800000);
+        if (startGameResponseBuilder_ == null) {
+          startGameResponse_ = com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance();
+        } else {
+          startGameResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x01000000);
+        if (gameStartedEventBuilder_ == null) {
+          gameStartedEvent_ = com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance();
+        } else {
+          gameStartedEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x02000000);
+        if (movePieceRequestBuilder_ == null) {
+          movePieceRequest_ = com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance();
+        } else {
+          movePieceRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x04000000);
+        if (movePieceResponseBuilder_ == null) {
+          movePieceResponse_ = com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance();
+        } else {
+          movePieceResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x08000000);
+        if (movePieceEventBuilder_ == null) {
+          movePieceEvent_ = com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance();
+        } else {
+          movePieceEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x10000000);
+        if (specialMovePieceRequestBuilder_ == null) {
+          specialMovePieceRequest_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance();
+        } else {
+          specialMovePieceRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x20000000);
+        if (specialMovePieceResponseBuilder_ == null) {
+          specialMovePieceResponse_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance();
+        } else {
+          specialMovePieceResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x40000000);
+        if (specialMovePieceEventBuilder_ == null) {
+          specialMovePieceEvent_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance();
+        } else {
+          specialMovePieceEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x80000000);
+        if (gameStatusEventBuilder_ == null) {
+          gameStatusEvent_ = com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance();
+        } else {
+          gameStatusEventBuilder_.clear();
+        }
+        bitField1_ = (bitField1_ & ~0x00000001);
+        if (timeLeftEventBuilder_ == null) {
+          timeLeftEvent_ = com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance();
+        } else {
+          timeLeftEventBuilder_.clear();
+        }
+        bitField1_ = (bitField1_ & ~0x00000002);
         return this;
       }
       
@@ -1448,7 +2283,9 @@ public final class Contracts {
       public com.richardpianka.chess.network.Contracts.Envelope buildPartial() {
         com.richardpianka.chess.network.Contracts.Envelope result = new com.richardpianka.chess.network.Contracts.Envelope(this);
         int from_bitField0_ = bitField0_;
+        int from_bitField1_ = bitField1_;
         int to_bitField0_ = 0;
+        int to_bitField1_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
@@ -1500,52 +2337,229 @@ public final class Contracts {
         if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
           to_bitField0_ |= 0x00000040;
         }
+        if (roomListRequestBuilder_ == null) {
+          result.roomListRequest_ = roomListRequest_;
+        } else {
+          result.roomListRequest_ = roomListRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        if (roomListResponseBuilder_ == null) {
+          result.roomListResponse_ = roomListResponse_;
+        } else {
+          result.roomListResponse_ = roomListResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
         if (joinRoomRequestBuilder_ == null) {
           result.joinRoomRequest_ = joinRoomRequest_;
         } else {
           result.joinRoomRequest_ = joinRoomRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
-          to_bitField0_ |= 0x00000080;
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
         }
         if (joinRoomResponseBuilder_ == null) {
           result.joinRoomResponse_ = joinRoomResponse_;
         } else {
           result.joinRoomResponse_ = joinRoomResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
-          to_bitField0_ |= 0x00000100;
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
         }
         if (speakRequestBuilder_ == null) {
           result.speakRequest_ = speakRequest_;
         } else {
           result.speakRequest_ = speakRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
-          to_bitField0_ |= 0x00000200;
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        if (operatorRequestBuilder_ == null) {
+          result.operatorRequest_ = operatorRequest_;
+        } else {
+          result.operatorRequest_ = operatorRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        if (operatorResponseBuilder_ == null) {
+          result.operatorResponse_ = operatorResponse_;
+        } else {
+          result.operatorResponse_ = operatorResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00002000;
         }
         if (chatRoomEventBuilder_ == null) {
           result.chatRoomEvent_ = chatRoomEvent_;
         } else {
           result.chatRoomEvent_ = chatRoomEventBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
-          to_bitField0_ |= 0x00000400;
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00004000;
         }
         if (chatUserEventBuilder_ == null) {
           result.chatUserEvent_ = chatUserEvent_;
         } else {
           result.chatUserEvent_ = chatUserEventBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
-          to_bitField0_ |= 0x00000800;
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00008000;
         }
         if (chatSpeakEventBuilder_ == null) {
           result.chatSpeakEvent_ = chatSpeakEvent_;
         } else {
           result.chatSpeakEvent_ = chatSpeakEventBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00010000;
+        }
+        if (gameListRequestBuilder_ == null) {
+          result.gameListRequest_ = gameListRequest_;
+        } else {
+          result.gameListRequest_ = gameListRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00020000;
+        }
+        if (gameListResponseBuilder_ == null) {
+          result.gameListResponse_ = gameListResponse_;
+        } else {
+          result.gameListResponse_ = gameListResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
+          to_bitField0_ |= 0x00040000;
+        }
+        if (createGameRequestBuilder_ == null) {
+          result.createGameRequest_ = createGameRequest_;
+        } else {
+          result.createGameRequest_ = createGameRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00080000) == 0x00080000)) {
+          to_bitField0_ |= 0x00080000;
+        }
+        if (createGameResponseBuilder_ == null) {
+          result.createGameResponse_ = createGameResponse_;
+        } else {
+          result.createGameResponse_ = createGameResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00100000) == 0x00100000)) {
+          to_bitField0_ |= 0x00100000;
+        }
+        if (joinGameRequestBuilder_ == null) {
+          result.joinGameRequest_ = joinGameRequest_;
+        } else {
+          result.joinGameRequest_ = joinGameRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00200000) == 0x00200000)) {
+          to_bitField0_ |= 0x00200000;
+        }
+        if (joinGameResponseBuilder_ == null) {
+          result.joinGameResponse_ = joinGameResponse_;
+        } else {
+          result.joinGameResponse_ = joinGameResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00400000) == 0x00400000)) {
+          to_bitField0_ |= 0x00400000;
+        }
+        if (leaveGameRequestBuilder_ == null) {
+          result.leaveGameRequest_ = leaveGameRequest_;
+        } else {
+          result.leaveGameRequest_ = leaveGameRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00800000) == 0x00800000)) {
+          to_bitField0_ |= 0x00800000;
+        }
+        if (startGameRequestBuilder_ == null) {
+          result.startGameRequest_ = startGameRequest_;
+        } else {
+          result.startGameRequest_ = startGameRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x01000000) == 0x01000000)) {
+          to_bitField0_ |= 0x01000000;
+        }
+        if (startGameResponseBuilder_ == null) {
+          result.startGameResponse_ = startGameResponse_;
+        } else {
+          result.startGameResponse_ = startGameResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x02000000) == 0x02000000)) {
+          to_bitField0_ |= 0x02000000;
+        }
+        if (gameStartedEventBuilder_ == null) {
+          result.gameStartedEvent_ = gameStartedEvent_;
+        } else {
+          result.gameStartedEvent_ = gameStartedEventBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x04000000) == 0x04000000)) {
+          to_bitField0_ |= 0x04000000;
+        }
+        if (movePieceRequestBuilder_ == null) {
+          result.movePieceRequest_ = movePieceRequest_;
+        } else {
+          result.movePieceRequest_ = movePieceRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x08000000) == 0x08000000)) {
+          to_bitField0_ |= 0x08000000;
+        }
+        if (movePieceResponseBuilder_ == null) {
+          result.movePieceResponse_ = movePieceResponse_;
+        } else {
+          result.movePieceResponse_ = movePieceResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x10000000) == 0x10000000)) {
+          to_bitField0_ |= 0x10000000;
+        }
+        if (movePieceEventBuilder_ == null) {
+          result.movePieceEvent_ = movePieceEvent_;
+        } else {
+          result.movePieceEvent_ = movePieceEventBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x20000000) == 0x20000000)) {
+          to_bitField0_ |= 0x20000000;
+        }
+        if (specialMovePieceRequestBuilder_ == null) {
+          result.specialMovePieceRequest_ = specialMovePieceRequest_;
+        } else {
+          result.specialMovePieceRequest_ = specialMovePieceRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x40000000) == 0x40000000)) {
+          to_bitField0_ |= 0x40000000;
+        }
+        if (specialMovePieceResponseBuilder_ == null) {
+          result.specialMovePieceResponse_ = specialMovePieceResponse_;
+        } else {
+          result.specialMovePieceResponse_ = specialMovePieceResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x80000000) == 0x80000000)) {
+          to_bitField0_ |= 0x80000000;
+        }
+        if (specialMovePieceEventBuilder_ == null) {
+          result.specialMovePieceEvent_ = specialMovePieceEvent_;
+        } else {
+          result.specialMovePieceEvent_ = specialMovePieceEventBuilder_.build();
+        }
+        if (((from_bitField1_ & 0x00000001) == 0x00000001)) {
+          to_bitField1_ |= 0x00000001;
+        }
+        if (gameStatusEventBuilder_ == null) {
+          result.gameStatusEvent_ = gameStatusEvent_;
+        } else {
+          result.gameStatusEvent_ = gameStatusEventBuilder_.build();
+        }
+        if (((from_bitField1_ & 0x00000002) == 0x00000002)) {
+          to_bitField1_ |= 0x00000002;
+        }
+        if (timeLeftEventBuilder_ == null) {
+          result.timeLeftEvent_ = timeLeftEvent_;
+        } else {
+          result.timeLeftEvent_ = timeLeftEventBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
+        result.bitField1_ = to_bitField1_;
         onBuilt();
         return result;
       }
@@ -1579,6 +2593,12 @@ public final class Contracts {
         if (other.hasJoinChatResponse()) {
           mergeJoinChatResponse(other.getJoinChatResponse());
         }
+        if (other.hasRoomListRequest()) {
+          mergeRoomListRequest(other.getRoomListRequest());
+        }
+        if (other.hasRoomListResponse()) {
+          mergeRoomListResponse(other.getRoomListResponse());
+        }
         if (other.hasJoinRoomRequest()) {
           mergeJoinRoomRequest(other.getJoinRoomRequest());
         }
@@ -1588,6 +2608,12 @@ public final class Contracts {
         if (other.hasSpeakRequest()) {
           mergeSpeakRequest(other.getSpeakRequest());
         }
+        if (other.hasOperatorRequest()) {
+          mergeOperatorRequest(other.getOperatorRequest());
+        }
+        if (other.hasOperatorResponse()) {
+          mergeOperatorResponse(other.getOperatorResponse());
+        }
         if (other.hasChatRoomEvent()) {
           mergeChatRoomEvent(other.getChatRoomEvent());
         }
@@ -1596,6 +2622,60 @@ public final class Contracts {
         }
         if (other.hasChatSpeakEvent()) {
           mergeChatSpeakEvent(other.getChatSpeakEvent());
+        }
+        if (other.hasGameListRequest()) {
+          mergeGameListRequest(other.getGameListRequest());
+        }
+        if (other.hasGameListResponse()) {
+          mergeGameListResponse(other.getGameListResponse());
+        }
+        if (other.hasCreateGameRequest()) {
+          mergeCreateGameRequest(other.getCreateGameRequest());
+        }
+        if (other.hasCreateGameResponse()) {
+          mergeCreateGameResponse(other.getCreateGameResponse());
+        }
+        if (other.hasJoinGameRequest()) {
+          mergeJoinGameRequest(other.getJoinGameRequest());
+        }
+        if (other.hasJoinGameResponse()) {
+          mergeJoinGameResponse(other.getJoinGameResponse());
+        }
+        if (other.hasLeaveGameRequest()) {
+          mergeLeaveGameRequest(other.getLeaveGameRequest());
+        }
+        if (other.hasStartGameRequest()) {
+          mergeStartGameRequest(other.getStartGameRequest());
+        }
+        if (other.hasStartGameResponse()) {
+          mergeStartGameResponse(other.getStartGameResponse());
+        }
+        if (other.hasGameStartedEvent()) {
+          mergeGameStartedEvent(other.getGameStartedEvent());
+        }
+        if (other.hasMovePieceRequest()) {
+          mergeMovePieceRequest(other.getMovePieceRequest());
+        }
+        if (other.hasMovePieceResponse()) {
+          mergeMovePieceResponse(other.getMovePieceResponse());
+        }
+        if (other.hasMovePieceEvent()) {
+          mergeMovePieceEvent(other.getMovePieceEvent());
+        }
+        if (other.hasSpecialMovePieceRequest()) {
+          mergeSpecialMovePieceRequest(other.getSpecialMovePieceRequest());
+        }
+        if (other.hasSpecialMovePieceResponse()) {
+          mergeSpecialMovePieceResponse(other.getSpecialMovePieceResponse());
+        }
+        if (other.hasSpecialMovePieceEvent()) {
+          mergeSpecialMovePieceEvent(other.getSpecialMovePieceEvent());
+        }
+        if (other.hasGameStatusEvent()) {
+          mergeGameStatusEvent(other.getGameStatusEvent());
+        }
+        if (other.hasTimeLeftEvent()) {
+          mergeTimeLeftEvent(other.getTimeLeftEvent());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -1632,6 +2712,12 @@ public final class Contracts {
             return false;
           }
         }
+        if (hasRoomListResponse()) {
+          if (!getRoomListResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
         if (hasJoinRoomRequest()) {
           if (!getJoinRoomRequest().isInitialized()) {
             
@@ -1650,6 +2736,18 @@ public final class Contracts {
             return false;
           }
         }
+        if (hasOperatorRequest()) {
+          if (!getOperatorRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasOperatorResponse()) {
+          if (!getOperatorResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
         if (hasChatRoomEvent()) {
           if (!getChatRoomEvent().isInitialized()) {
             
@@ -1664,6 +2762,96 @@ public final class Contracts {
         }
         if (hasChatSpeakEvent()) {
           if (!getChatSpeakEvent().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasGameListResponse()) {
+          if (!getGameListResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasCreateGameRequest()) {
+          if (!getCreateGameRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasCreateGameResponse()) {
+          if (!getCreateGameResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasJoinGameRequest()) {
+          if (!getJoinGameRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasJoinGameResponse()) {
+          if (!getJoinGameResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasStartGameResponse()) {
+          if (!getStartGameResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasGameStartedEvent()) {
+          if (!getGameStartedEvent().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasMovePieceRequest()) {
+          if (!getMovePieceRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasMovePieceResponse()) {
+          if (!getMovePieceResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasMovePieceEvent()) {
+          if (!getMovePieceEvent().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasSpecialMovePieceRequest()) {
+          if (!getSpecialMovePieceRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasSpecialMovePieceResponse()) {
+          if (!getSpecialMovePieceResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasSpecialMovePieceEvent()) {
+          if (!getSpecialMovePieceEvent().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasGameStatusEvent()) {
+          if (!getGameStatusEvent().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasTimeLeftEvent()) {
+          if (!getTimeLeftEvent().isInitialized()) {
             
             return false;
           }
@@ -1749,6 +2937,24 @@ public final class Contracts {
               break;
             }
             case 58: {
+              com.richardpianka.chess.network.Contracts.RoomListRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.RoomListRequest.newBuilder();
+              if (hasRoomListRequest()) {
+                subBuilder.mergeFrom(getRoomListRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setRoomListRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 66: {
+              com.richardpianka.chess.network.Contracts.RoomListResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.RoomListResponse.newBuilder();
+              if (hasRoomListResponse()) {
+                subBuilder.mergeFrom(getRoomListResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setRoomListResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 74: {
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinRoomRequest.newBuilder();
               if (hasJoinRoomRequest()) {
                 subBuilder.mergeFrom(getJoinRoomRequest());
@@ -1757,7 +2963,7 @@ public final class Contracts {
               setJoinRoomRequest(subBuilder.buildPartial());
               break;
             }
-            case 66: {
+            case 82: {
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinRoomResponse.newBuilder();
               if (hasJoinRoomResponse()) {
                 subBuilder.mergeFrom(getJoinRoomResponse());
@@ -1766,7 +2972,7 @@ public final class Contracts {
               setJoinRoomResponse(subBuilder.buildPartial());
               break;
             }
-            case 74: {
+            case 90: {
               com.richardpianka.chess.network.Contracts.SpeakRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpeakRequest.newBuilder();
               if (hasSpeakRequest()) {
                 subBuilder.mergeFrom(getSpeakRequest());
@@ -1775,7 +2981,25 @@ public final class Contracts {
               setSpeakRequest(subBuilder.buildPartial());
               break;
             }
-            case 82: {
+            case 98: {
+              com.richardpianka.chess.network.Contracts.OperatorRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.OperatorRequest.newBuilder();
+              if (hasOperatorRequest()) {
+                subBuilder.mergeFrom(getOperatorRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setOperatorRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 106: {
+              com.richardpianka.chess.network.Contracts.OperatorResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.OperatorResponse.newBuilder();
+              if (hasOperatorResponse()) {
+                subBuilder.mergeFrom(getOperatorResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setOperatorResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 114: {
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChatRoomEvent.newBuilder();
               if (hasChatRoomEvent()) {
                 subBuilder.mergeFrom(getChatRoomEvent());
@@ -1784,7 +3008,7 @@ public final class Contracts {
               setChatRoomEvent(subBuilder.buildPartial());
               break;
             }
-            case 90: {
+            case 122: {
               com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChatUserEvent.newBuilder();
               if (hasChatUserEvent()) {
                 subBuilder.mergeFrom(getChatUserEvent());
@@ -1793,7 +3017,7 @@ public final class Contracts {
               setChatUserEvent(subBuilder.buildPartial());
               break;
             }
-            case 98: {
+            case 130: {
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChatSpeakEvent.newBuilder();
               if (hasChatSpeakEvent()) {
                 subBuilder.mergeFrom(getChatSpeakEvent());
@@ -1802,13 +3026,176 @@ public final class Contracts {
               setChatSpeakEvent(subBuilder.buildPartial());
               break;
             }
+            case 138: {
+              com.richardpianka.chess.network.Contracts.GameListRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameListRequest.newBuilder();
+              if (hasGameListRequest()) {
+                subBuilder.mergeFrom(getGameListRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setGameListRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 146: {
+              com.richardpianka.chess.network.Contracts.GameListResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameListResponse.newBuilder();
+              if (hasGameListResponse()) {
+                subBuilder.mergeFrom(getGameListResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setGameListResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 154: {
+              com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.CreateGameRequest.newBuilder();
+              if (hasCreateGameRequest()) {
+                subBuilder.mergeFrom(getCreateGameRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setCreateGameRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 162: {
+              com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.CreateGameResponse.newBuilder();
+              if (hasCreateGameResponse()) {
+                subBuilder.mergeFrom(getCreateGameResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setCreateGameResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 170: {
+              com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinGameRequest.newBuilder();
+              if (hasJoinGameRequest()) {
+                subBuilder.mergeFrom(getJoinGameRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setJoinGameRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 178: {
+              com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinGameResponse.newBuilder();
+              if (hasJoinGameResponse()) {
+                subBuilder.mergeFrom(getJoinGameResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setJoinGameResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 186: {
+              com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.LeaveGameRequest.newBuilder();
+              if (hasLeaveGameRequest()) {
+                subBuilder.mergeFrom(getLeaveGameRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setLeaveGameRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 194: {
+              com.richardpianka.chess.network.Contracts.StartGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.StartGameRequest.newBuilder();
+              if (hasStartGameRequest()) {
+                subBuilder.mergeFrom(getStartGameRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setStartGameRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 202: {
+              com.richardpianka.chess.network.Contracts.StartGameResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.StartGameResponse.newBuilder();
+              if (hasStartGameResponse()) {
+                subBuilder.mergeFrom(getStartGameResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setStartGameResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 210: {
+              com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameStartedEvent.newBuilder();
+              if (hasGameStartedEvent()) {
+                subBuilder.mergeFrom(getGameStartedEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setGameStartedEvent(subBuilder.buildPartial());
+              break;
+            }
+            case 218: {
+              com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.MovePieceRequest.newBuilder();
+              if (hasMovePieceRequest()) {
+                subBuilder.mergeFrom(getMovePieceRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setMovePieceRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 226: {
+              com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.MovePieceResponse.newBuilder();
+              if (hasMovePieceResponse()) {
+                subBuilder.mergeFrom(getMovePieceResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setMovePieceResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 234: {
+              com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.MovePieceEvent.newBuilder();
+              if (hasMovePieceEvent()) {
+                subBuilder.mergeFrom(getMovePieceEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setMovePieceEvent(subBuilder.buildPartial());
+              break;
+            }
+            case 242: {
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.newBuilder();
+              if (hasSpecialMovePieceRequest()) {
+                subBuilder.mergeFrom(getSpecialMovePieceRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSpecialMovePieceRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 250: {
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.newBuilder();
+              if (hasSpecialMovePieceResponse()) {
+                subBuilder.mergeFrom(getSpecialMovePieceResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSpecialMovePieceResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 258: {
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.newBuilder();
+              if (hasSpecialMovePieceEvent()) {
+                subBuilder.mergeFrom(getSpecialMovePieceEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSpecialMovePieceEvent(subBuilder.buildPartial());
+              break;
+            }
+            case 274: {
+              com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameStatusEvent.newBuilder();
+              if (hasGameStatusEvent()) {
+                subBuilder.mergeFrom(getGameStatusEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setGameStatusEvent(subBuilder.buildPartial());
+              break;
+            }
+            case 282: {
+              com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.TimeLeftEvent.newBuilder();
+              if (hasTimeLeftEvent()) {
+                subBuilder.mergeFrom(getTimeLeftEvent());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setTimeLeftEvent(subBuilder.buildPartial());
+              break;
+            }
           }
         }
       }
       
       private int bitField0_;
+      private int bitField1_;
       
-      // optional .com.richardpianka.chess.network.HandshakeRequest HandshakeRequest = 1;
+      // optional .Chess.Contracts.HandshakeRequest HandshakeRequest = 1;
       private com.richardpianka.chess.network.Contracts.HandshakeRequest handshakeRequest_ = com.richardpianka.chess.network.Contracts.HandshakeRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.HandshakeRequest, com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder, com.richardpianka.chess.network.Contracts.HandshakeRequestOrBuilder> handshakeRequestBuilder_;
@@ -1898,7 +3285,7 @@ public final class Contracts {
         return handshakeRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.HandshakeResponse HandshakeResponse = 2;
+      // optional .Chess.Contracts.HandshakeResponse HandshakeResponse = 2;
       private com.richardpianka.chess.network.Contracts.HandshakeResponse handshakeResponse_ = com.richardpianka.chess.network.Contracts.HandshakeResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.HandshakeResponse, com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder, com.richardpianka.chess.network.Contracts.HandshakeResponseOrBuilder> handshakeResponseBuilder_;
@@ -1988,7 +3375,7 @@ public final class Contracts {
         return handshakeResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.IdentifyRequest IdentifyRequest = 3;
+      // optional .Chess.Contracts.IdentifyRequest IdentifyRequest = 3;
       private com.richardpianka.chess.network.Contracts.IdentifyRequest identifyRequest_ = com.richardpianka.chess.network.Contracts.IdentifyRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.IdentifyRequest, com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder, com.richardpianka.chess.network.Contracts.IdentifyRequestOrBuilder> identifyRequestBuilder_;
@@ -2078,7 +3465,7 @@ public final class Contracts {
         return identifyRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.IdentifyResponse IdentifyResponse = 4;
+      // optional .Chess.Contracts.IdentifyResponse IdentifyResponse = 4;
       private com.richardpianka.chess.network.Contracts.IdentifyResponse identifyResponse_ = com.richardpianka.chess.network.Contracts.IdentifyResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.IdentifyResponse, com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder, com.richardpianka.chess.network.Contracts.IdentifyResponseOrBuilder> identifyResponseBuilder_;
@@ -2168,7 +3555,7 @@ public final class Contracts {
         return identifyResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 5;
+      // optional .Chess.Contracts.JoinChatRequest JoinChatRequest = 5;
       private com.richardpianka.chess.network.Contracts.JoinChatRequest joinChatRequest_ = com.richardpianka.chess.network.Contracts.JoinChatRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinChatRequest, com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder, com.richardpianka.chess.network.Contracts.JoinChatRequestOrBuilder> joinChatRequestBuilder_;
@@ -2258,7 +3645,7 @@ public final class Contracts {
         return joinChatRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 6;
+      // optional .Chess.Contracts.JoinChatResponse JoinChatResponse = 6;
       private com.richardpianka.chess.network.Contracts.JoinChatResponse joinChatResponse_ = com.richardpianka.chess.network.Contracts.JoinChatResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinChatResponse, com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder, com.richardpianka.chess.network.Contracts.JoinChatResponseOrBuilder> joinChatResponseBuilder_;
@@ -2348,12 +3735,192 @@ public final class Contracts {
         return joinChatResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 7;
+      // optional .Chess.Contracts.RoomListRequest RoomListRequest = 7;
+      private com.richardpianka.chess.network.Contracts.RoomListRequest roomListRequest_ = com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.RoomListRequest, com.richardpianka.chess.network.Contracts.RoomListRequest.Builder, com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder> roomListRequestBuilder_;
+      public boolean hasRoomListRequest() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      public com.richardpianka.chess.network.Contracts.RoomListRequest getRoomListRequest() {
+        if (roomListRequestBuilder_ == null) {
+          return roomListRequest_;
+        } else {
+          return roomListRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setRoomListRequest(com.richardpianka.chess.network.Contracts.RoomListRequest value) {
+        if (roomListRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          roomListRequest_ = value;
+          onChanged();
+        } else {
+          roomListRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder setRoomListRequest(
+          com.richardpianka.chess.network.Contracts.RoomListRequest.Builder builderForValue) {
+        if (roomListRequestBuilder_ == null) {
+          roomListRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          roomListRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder mergeRoomListRequest(com.richardpianka.chess.network.Contracts.RoomListRequest value) {
+        if (roomListRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040) &&
+              roomListRequest_ != com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance()) {
+            roomListRequest_ =
+              com.richardpianka.chess.network.Contracts.RoomListRequest.newBuilder(roomListRequest_).mergeFrom(value).buildPartial();
+          } else {
+            roomListRequest_ = value;
+          }
+          onChanged();
+        } else {
+          roomListRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder clearRoomListRequest() {
+        if (roomListRequestBuilder_ == null) {
+          roomListRequest_ = com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          roomListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.RoomListRequest.Builder getRoomListRequestBuilder() {
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return getRoomListRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder getRoomListRequestOrBuilder() {
+        if (roomListRequestBuilder_ != null) {
+          return roomListRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return roomListRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.RoomListRequest, com.richardpianka.chess.network.Contracts.RoomListRequest.Builder, com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder> 
+          getRoomListRequestFieldBuilder() {
+        if (roomListRequestBuilder_ == null) {
+          roomListRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.RoomListRequest, com.richardpianka.chess.network.Contracts.RoomListRequest.Builder, com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder>(
+                  roomListRequest_,
+                  getParentForChildren(),
+                  isClean());
+          roomListRequest_ = null;
+        }
+        return roomListRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.RoomListResponse RoomListResponse = 8;
+      private com.richardpianka.chess.network.Contracts.RoomListResponse roomListResponse_ = com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.RoomListResponse, com.richardpianka.chess.network.Contracts.RoomListResponse.Builder, com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder> roomListResponseBuilder_;
+      public boolean hasRoomListResponse() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      public com.richardpianka.chess.network.Contracts.RoomListResponse getRoomListResponse() {
+        if (roomListResponseBuilder_ == null) {
+          return roomListResponse_;
+        } else {
+          return roomListResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setRoomListResponse(com.richardpianka.chess.network.Contracts.RoomListResponse value) {
+        if (roomListResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          roomListResponse_ = value;
+          onChanged();
+        } else {
+          roomListResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder setRoomListResponse(
+          com.richardpianka.chess.network.Contracts.RoomListResponse.Builder builderForValue) {
+        if (roomListResponseBuilder_ == null) {
+          roomListResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          roomListResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder mergeRoomListResponse(com.richardpianka.chess.network.Contracts.RoomListResponse value) {
+        if (roomListResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) == 0x00000080) &&
+              roomListResponse_ != com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance()) {
+            roomListResponse_ =
+              com.richardpianka.chess.network.Contracts.RoomListResponse.newBuilder(roomListResponse_).mergeFrom(value).buildPartial();
+          } else {
+            roomListResponse_ = value;
+          }
+          onChanged();
+        } else {
+          roomListResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder clearRoomListResponse() {
+        if (roomListResponseBuilder_ == null) {
+          roomListResponse_ = com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          roomListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.RoomListResponse.Builder getRoomListResponseBuilder() {
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return getRoomListResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder getRoomListResponseOrBuilder() {
+        if (roomListResponseBuilder_ != null) {
+          return roomListResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return roomListResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.RoomListResponse, com.richardpianka.chess.network.Contracts.RoomListResponse.Builder, com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder> 
+          getRoomListResponseFieldBuilder() {
+        if (roomListResponseBuilder_ == null) {
+          roomListResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.RoomListResponse, com.richardpianka.chess.network.Contracts.RoomListResponse.Builder, com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder>(
+                  roomListResponse_,
+                  getParentForChildren(),
+                  isClean());
+          roomListResponse_ = null;
+        }
+        return roomListResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.JoinRoomRequest JoinRoomRequest = 9;
       private com.richardpianka.chess.network.Contracts.JoinRoomRequest joinRoomRequest_ = com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinRoomRequest, com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder, com.richardpianka.chess.network.Contracts.JoinRoomRequestOrBuilder> joinRoomRequestBuilder_;
       public boolean hasJoinRoomRequest() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
+        return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomRequest getJoinRoomRequest() {
         if (joinRoomRequestBuilder_ == null) {
@@ -2372,7 +3939,7 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         return this;
       }
       public Builder setJoinRoomRequest(
@@ -2383,12 +3950,12 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         return this;
       }
       public Builder mergeJoinRoomRequest(com.richardpianka.chess.network.Contracts.JoinRoomRequest value) {
         if (joinRoomRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) == 0x00000040) &&
+          if (((bitField0_ & 0x00000100) == 0x00000100) &&
               joinRoomRequest_ != com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance()) {
             joinRoomRequest_ =
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.newBuilder(joinRoomRequest_).mergeFrom(value).buildPartial();
@@ -2399,7 +3966,7 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         return this;
       }
       public Builder clearJoinRoomRequest() {
@@ -2409,11 +3976,11 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder getJoinRoomRequestBuilder() {
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         onChanged();
         return getJoinRoomRequestFieldBuilder().getBuilder();
       }
@@ -2438,12 +4005,12 @@ public final class Contracts {
         return joinRoomRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 8;
+      // optional .Chess.Contracts.JoinRoomResponse JoinRoomResponse = 10;
       private com.richardpianka.chess.network.Contracts.JoinRoomResponse joinRoomResponse_ = com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinRoomResponse, com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder, com.richardpianka.chess.network.Contracts.JoinRoomResponseOrBuilder> joinRoomResponseBuilder_;
       public boolean hasJoinRoomResponse() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
+        return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomResponse getJoinRoomResponse() {
         if (joinRoomResponseBuilder_ == null) {
@@ -2462,7 +4029,7 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000200;
         return this;
       }
       public Builder setJoinRoomResponse(
@@ -2473,12 +4040,12 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000200;
         return this;
       }
       public Builder mergeJoinRoomResponse(com.richardpianka.chess.network.Contracts.JoinRoomResponse value) {
         if (joinRoomResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00000080) == 0x00000080) &&
+          if (((bitField0_ & 0x00000200) == 0x00000200) &&
               joinRoomResponse_ != com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance()) {
             joinRoomResponse_ =
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.newBuilder(joinRoomResponse_).mergeFrom(value).buildPartial();
@@ -2489,7 +4056,7 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000200;
         return this;
       }
       public Builder clearJoinRoomResponse() {
@@ -2499,11 +4066,11 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000200);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder getJoinRoomResponseBuilder() {
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000200;
         onChanged();
         return getJoinRoomResponseFieldBuilder().getBuilder();
       }
@@ -2528,12 +4095,12 @@ public final class Contracts {
         return joinRoomResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 9;
+      // optional .Chess.Contracts.SpeakRequest SpeakRequest = 11;
       private com.richardpianka.chess.network.Contracts.SpeakRequest speakRequest_ = com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.SpeakRequest, com.richardpianka.chess.network.Contracts.SpeakRequest.Builder, com.richardpianka.chess.network.Contracts.SpeakRequestOrBuilder> speakRequestBuilder_;
       public boolean hasSpeakRequest() {
-        return ((bitField0_ & 0x00000100) == 0x00000100);
+        return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       public com.richardpianka.chess.network.Contracts.SpeakRequest getSpeakRequest() {
         if (speakRequestBuilder_ == null) {
@@ -2552,7 +4119,7 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00000400;
         return this;
       }
       public Builder setSpeakRequest(
@@ -2563,12 +4130,12 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00000400;
         return this;
       }
       public Builder mergeSpeakRequest(com.richardpianka.chess.network.Contracts.SpeakRequest value) {
         if (speakRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00000100) == 0x00000100) &&
+          if (((bitField0_ & 0x00000400) == 0x00000400) &&
               speakRequest_ != com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance()) {
             speakRequest_ =
               com.richardpianka.chess.network.Contracts.SpeakRequest.newBuilder(speakRequest_).mergeFrom(value).buildPartial();
@@ -2579,7 +4146,7 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00000400;
         return this;
       }
       public Builder clearSpeakRequest() {
@@ -2589,11 +4156,11 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00000400);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.SpeakRequest.Builder getSpeakRequestBuilder() {
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00000400;
         onChanged();
         return getSpeakRequestFieldBuilder().getBuilder();
       }
@@ -2618,12 +4185,192 @@ public final class Contracts {
         return speakRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 10;
+      // optional .Chess.Contracts.OperatorRequest OperatorRequest = 12;
+      private com.richardpianka.chess.network.Contracts.OperatorRequest operatorRequest_ = com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.OperatorRequest, com.richardpianka.chess.network.Contracts.OperatorRequest.Builder, com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder> operatorRequestBuilder_;
+      public boolean hasOperatorRequest() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      public com.richardpianka.chess.network.Contracts.OperatorRequest getOperatorRequest() {
+        if (operatorRequestBuilder_ == null) {
+          return operatorRequest_;
+        } else {
+          return operatorRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setOperatorRequest(com.richardpianka.chess.network.Contracts.OperatorRequest value) {
+        if (operatorRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          operatorRequest_ = value;
+          onChanged();
+        } else {
+          operatorRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      public Builder setOperatorRequest(
+          com.richardpianka.chess.network.Contracts.OperatorRequest.Builder builderForValue) {
+        if (operatorRequestBuilder_ == null) {
+          operatorRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          operatorRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      public Builder mergeOperatorRequest(com.richardpianka.chess.network.Contracts.OperatorRequest value) {
+        if (operatorRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000800) == 0x00000800) &&
+              operatorRequest_ != com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance()) {
+            operatorRequest_ =
+              com.richardpianka.chess.network.Contracts.OperatorRequest.newBuilder(operatorRequest_).mergeFrom(value).buildPartial();
+          } else {
+            operatorRequest_ = value;
+          }
+          onChanged();
+        } else {
+          operatorRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      public Builder clearOperatorRequest() {
+        if (operatorRequestBuilder_ == null) {
+          operatorRequest_ = com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          operatorRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000800);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.OperatorRequest.Builder getOperatorRequestBuilder() {
+        bitField0_ |= 0x00000800;
+        onChanged();
+        return getOperatorRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder getOperatorRequestOrBuilder() {
+        if (operatorRequestBuilder_ != null) {
+          return operatorRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return operatorRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.OperatorRequest, com.richardpianka.chess.network.Contracts.OperatorRequest.Builder, com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder> 
+          getOperatorRequestFieldBuilder() {
+        if (operatorRequestBuilder_ == null) {
+          operatorRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.OperatorRequest, com.richardpianka.chess.network.Contracts.OperatorRequest.Builder, com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder>(
+                  operatorRequest_,
+                  getParentForChildren(),
+                  isClean());
+          operatorRequest_ = null;
+        }
+        return operatorRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.OperatorResponse OperatorResponse = 13;
+      private com.richardpianka.chess.network.Contracts.OperatorResponse operatorResponse_ = com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.OperatorResponse, com.richardpianka.chess.network.Contracts.OperatorResponse.Builder, com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder> operatorResponseBuilder_;
+      public boolean hasOperatorResponse() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      public com.richardpianka.chess.network.Contracts.OperatorResponse getOperatorResponse() {
+        if (operatorResponseBuilder_ == null) {
+          return operatorResponse_;
+        } else {
+          return operatorResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setOperatorResponse(com.richardpianka.chess.network.Contracts.OperatorResponse value) {
+        if (operatorResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          operatorResponse_ = value;
+          onChanged();
+        } else {
+          operatorResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      public Builder setOperatorResponse(
+          com.richardpianka.chess.network.Contracts.OperatorResponse.Builder builderForValue) {
+        if (operatorResponseBuilder_ == null) {
+          operatorResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          operatorResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      public Builder mergeOperatorResponse(com.richardpianka.chess.network.Contracts.OperatorResponse value) {
+        if (operatorResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00001000) == 0x00001000) &&
+              operatorResponse_ != com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance()) {
+            operatorResponse_ =
+              com.richardpianka.chess.network.Contracts.OperatorResponse.newBuilder(operatorResponse_).mergeFrom(value).buildPartial();
+          } else {
+            operatorResponse_ = value;
+          }
+          onChanged();
+        } else {
+          operatorResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      public Builder clearOperatorResponse() {
+        if (operatorResponseBuilder_ == null) {
+          operatorResponse_ = com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          operatorResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00001000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.OperatorResponse.Builder getOperatorResponseBuilder() {
+        bitField0_ |= 0x00001000;
+        onChanged();
+        return getOperatorResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder getOperatorResponseOrBuilder() {
+        if (operatorResponseBuilder_ != null) {
+          return operatorResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return operatorResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.OperatorResponse, com.richardpianka.chess.network.Contracts.OperatorResponse.Builder, com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder> 
+          getOperatorResponseFieldBuilder() {
+        if (operatorResponseBuilder_ == null) {
+          operatorResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.OperatorResponse, com.richardpianka.chess.network.Contracts.OperatorResponse.Builder, com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder>(
+                  operatorResponse_,
+                  getParentForChildren(),
+                  isClean());
+          operatorResponse_ = null;
+        }
+        return operatorResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.ChatRoomEvent ChatRoomEvent = 14;
       private com.richardpianka.chess.network.Contracts.ChatRoomEvent chatRoomEvent_ = com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.ChatRoomEvent, com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder, com.richardpianka.chess.network.Contracts.ChatRoomEventOrBuilder> chatRoomEventBuilder_;
       public boolean hasChatRoomEvent() {
-        return ((bitField0_ & 0x00000200) == 0x00000200);
+        return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       public com.richardpianka.chess.network.Contracts.ChatRoomEvent getChatRoomEvent() {
         if (chatRoomEventBuilder_ == null) {
@@ -2642,7 +4389,7 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         return this;
       }
       public Builder setChatRoomEvent(
@@ -2653,12 +4400,12 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         return this;
       }
       public Builder mergeChatRoomEvent(com.richardpianka.chess.network.Contracts.ChatRoomEvent value) {
         if (chatRoomEventBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) == 0x00000200) &&
+          if (((bitField0_ & 0x00002000) == 0x00002000) &&
               chatRoomEvent_ != com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance()) {
             chatRoomEvent_ =
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.newBuilder(chatRoomEvent_).mergeFrom(value).buildPartial();
@@ -2669,7 +4416,7 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         return this;
       }
       public Builder clearChatRoomEvent() {
@@ -2679,11 +4426,11 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00002000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder getChatRoomEventBuilder() {
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         onChanged();
         return getChatRoomEventFieldBuilder().getBuilder();
       }
@@ -2708,12 +4455,12 @@ public final class Contracts {
         return chatRoomEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 11;
+      // optional .Chess.Contracts.ChatUserEvent ChatUserEvent = 15;
       private com.richardpianka.chess.network.Contracts.ChatUserEvent chatUserEvent_ = com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.ChatUserEvent, com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder, com.richardpianka.chess.network.Contracts.ChatUserEventOrBuilder> chatUserEventBuilder_;
       public boolean hasChatUserEvent() {
-        return ((bitField0_ & 0x00000400) == 0x00000400);
+        return ((bitField0_ & 0x00004000) == 0x00004000);
       }
       public com.richardpianka.chess.network.Contracts.ChatUserEvent getChatUserEvent() {
         if (chatUserEventBuilder_ == null) {
@@ -2732,7 +4479,7 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         return this;
       }
       public Builder setChatUserEvent(
@@ -2743,12 +4490,12 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         return this;
       }
       public Builder mergeChatUserEvent(com.richardpianka.chess.network.Contracts.ChatUserEvent value) {
         if (chatUserEventBuilder_ == null) {
-          if (((bitField0_ & 0x00000400) == 0x00000400) &&
+          if (((bitField0_ & 0x00004000) == 0x00004000) &&
               chatUserEvent_ != com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance()) {
             chatUserEvent_ =
               com.richardpianka.chess.network.Contracts.ChatUserEvent.newBuilder(chatUserEvent_).mergeFrom(value).buildPartial();
@@ -2759,7 +4506,7 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         return this;
       }
       public Builder clearChatUserEvent() {
@@ -2769,11 +4516,11 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00004000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder getChatUserEventBuilder() {
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         onChanged();
         return getChatUserEventFieldBuilder().getBuilder();
       }
@@ -2798,12 +4545,12 @@ public final class Contracts {
         return chatUserEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 12;
+      // optional .Chess.Contracts.ChatSpeakEvent ChatSpeakEvent = 16;
       private com.richardpianka.chess.network.Contracts.ChatSpeakEvent chatSpeakEvent_ = com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.ChatSpeakEvent, com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder, com.richardpianka.chess.network.Contracts.ChatSpeakEventOrBuilder> chatSpeakEventBuilder_;
       public boolean hasChatSpeakEvent() {
-        return ((bitField0_ & 0x00000800) == 0x00000800);
+        return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       public com.richardpianka.chess.network.Contracts.ChatSpeakEvent getChatSpeakEvent() {
         if (chatSpeakEventBuilder_ == null) {
@@ -2822,7 +4569,7 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         return this;
       }
       public Builder setChatSpeakEvent(
@@ -2833,12 +4580,12 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         return this;
       }
       public Builder mergeChatSpeakEvent(com.richardpianka.chess.network.Contracts.ChatSpeakEvent value) {
         if (chatSpeakEventBuilder_ == null) {
-          if (((bitField0_ & 0x00000800) == 0x00000800) &&
+          if (((bitField0_ & 0x00008000) == 0x00008000) &&
               chatSpeakEvent_ != com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance()) {
             chatSpeakEvent_ =
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.newBuilder(chatSpeakEvent_).mergeFrom(value).buildPartial();
@@ -2849,7 +4596,7 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         return this;
       }
       public Builder clearChatSpeakEvent() {
@@ -2859,11 +4606,11 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00008000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder getChatSpeakEventBuilder() {
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         onChanged();
         return getChatSpeakEventFieldBuilder().getBuilder();
       }
@@ -2888,7 +4635,1627 @@ public final class Contracts {
         return chatSpeakEventBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Envelope)
+      // optional .Chess.Contracts.GameListRequest GameListRequest = 17;
+      private com.richardpianka.chess.network.Contracts.GameListRequest gameListRequest_ = com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameListRequest, com.richardpianka.chess.network.Contracts.GameListRequest.Builder, com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder> gameListRequestBuilder_;
+      public boolean hasGameListRequest() {
+        return ((bitField0_ & 0x00010000) == 0x00010000);
+      }
+      public com.richardpianka.chess.network.Contracts.GameListRequest getGameListRequest() {
+        if (gameListRequestBuilder_ == null) {
+          return gameListRequest_;
+        } else {
+          return gameListRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setGameListRequest(com.richardpianka.chess.network.Contracts.GameListRequest value) {
+        if (gameListRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gameListRequest_ = value;
+          onChanged();
+        } else {
+          gameListRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00010000;
+        return this;
+      }
+      public Builder setGameListRequest(
+          com.richardpianka.chess.network.Contracts.GameListRequest.Builder builderForValue) {
+        if (gameListRequestBuilder_ == null) {
+          gameListRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          gameListRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00010000;
+        return this;
+      }
+      public Builder mergeGameListRequest(com.richardpianka.chess.network.Contracts.GameListRequest value) {
+        if (gameListRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00010000) == 0x00010000) &&
+              gameListRequest_ != com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance()) {
+            gameListRequest_ =
+              com.richardpianka.chess.network.Contracts.GameListRequest.newBuilder(gameListRequest_).mergeFrom(value).buildPartial();
+          } else {
+            gameListRequest_ = value;
+          }
+          onChanged();
+        } else {
+          gameListRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00010000;
+        return this;
+      }
+      public Builder clearGameListRequest() {
+        if (gameListRequestBuilder_ == null) {
+          gameListRequest_ = com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          gameListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00010000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.GameListRequest.Builder getGameListRequestBuilder() {
+        bitField0_ |= 0x00010000;
+        onChanged();
+        return getGameListRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder getGameListRequestOrBuilder() {
+        if (gameListRequestBuilder_ != null) {
+          return gameListRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return gameListRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameListRequest, com.richardpianka.chess.network.Contracts.GameListRequest.Builder, com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder> 
+          getGameListRequestFieldBuilder() {
+        if (gameListRequestBuilder_ == null) {
+          gameListRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.GameListRequest, com.richardpianka.chess.network.Contracts.GameListRequest.Builder, com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder>(
+                  gameListRequest_,
+                  getParentForChildren(),
+                  isClean());
+          gameListRequest_ = null;
+        }
+        return gameListRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.GameListResponse GameListResponse = 18;
+      private com.richardpianka.chess.network.Contracts.GameListResponse gameListResponse_ = com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameListResponse, com.richardpianka.chess.network.Contracts.GameListResponse.Builder, com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder> gameListResponseBuilder_;
+      public boolean hasGameListResponse() {
+        return ((bitField0_ & 0x00020000) == 0x00020000);
+      }
+      public com.richardpianka.chess.network.Contracts.GameListResponse getGameListResponse() {
+        if (gameListResponseBuilder_ == null) {
+          return gameListResponse_;
+        } else {
+          return gameListResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setGameListResponse(com.richardpianka.chess.network.Contracts.GameListResponse value) {
+        if (gameListResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gameListResponse_ = value;
+          onChanged();
+        } else {
+          gameListResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00020000;
+        return this;
+      }
+      public Builder setGameListResponse(
+          com.richardpianka.chess.network.Contracts.GameListResponse.Builder builderForValue) {
+        if (gameListResponseBuilder_ == null) {
+          gameListResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          gameListResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00020000;
+        return this;
+      }
+      public Builder mergeGameListResponse(com.richardpianka.chess.network.Contracts.GameListResponse value) {
+        if (gameListResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00020000) == 0x00020000) &&
+              gameListResponse_ != com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance()) {
+            gameListResponse_ =
+              com.richardpianka.chess.network.Contracts.GameListResponse.newBuilder(gameListResponse_).mergeFrom(value).buildPartial();
+          } else {
+            gameListResponse_ = value;
+          }
+          onChanged();
+        } else {
+          gameListResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00020000;
+        return this;
+      }
+      public Builder clearGameListResponse() {
+        if (gameListResponseBuilder_ == null) {
+          gameListResponse_ = com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          gameListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00020000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.GameListResponse.Builder getGameListResponseBuilder() {
+        bitField0_ |= 0x00020000;
+        onChanged();
+        return getGameListResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder getGameListResponseOrBuilder() {
+        if (gameListResponseBuilder_ != null) {
+          return gameListResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return gameListResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameListResponse, com.richardpianka.chess.network.Contracts.GameListResponse.Builder, com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder> 
+          getGameListResponseFieldBuilder() {
+        if (gameListResponseBuilder_ == null) {
+          gameListResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.GameListResponse, com.richardpianka.chess.network.Contracts.GameListResponse.Builder, com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder>(
+                  gameListResponse_,
+                  getParentForChildren(),
+                  isClean());
+          gameListResponse_ = null;
+        }
+        return gameListResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.CreateGameRequest CreateGameRequest = 19;
+      private com.richardpianka.chess.network.Contracts.CreateGameRequest createGameRequest_ = com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateGameRequest, com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder, com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder> createGameRequestBuilder_;
+      public boolean hasCreateGameRequest() {
+        return ((bitField0_ & 0x00040000) == 0x00040000);
+      }
+      public com.richardpianka.chess.network.Contracts.CreateGameRequest getCreateGameRequest() {
+        if (createGameRequestBuilder_ == null) {
+          return createGameRequest_;
+        } else {
+          return createGameRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setCreateGameRequest(com.richardpianka.chess.network.Contracts.CreateGameRequest value) {
+        if (createGameRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          createGameRequest_ = value;
+          onChanged();
+        } else {
+          createGameRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00040000;
+        return this;
+      }
+      public Builder setCreateGameRequest(
+          com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder builderForValue) {
+        if (createGameRequestBuilder_ == null) {
+          createGameRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          createGameRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00040000;
+        return this;
+      }
+      public Builder mergeCreateGameRequest(com.richardpianka.chess.network.Contracts.CreateGameRequest value) {
+        if (createGameRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00040000) == 0x00040000) &&
+              createGameRequest_ != com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance()) {
+            createGameRequest_ =
+              com.richardpianka.chess.network.Contracts.CreateGameRequest.newBuilder(createGameRequest_).mergeFrom(value).buildPartial();
+          } else {
+            createGameRequest_ = value;
+          }
+          onChanged();
+        } else {
+          createGameRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00040000;
+        return this;
+      }
+      public Builder clearCreateGameRequest() {
+        if (createGameRequestBuilder_ == null) {
+          createGameRequest_ = com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          createGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00040000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder getCreateGameRequestBuilder() {
+        bitField0_ |= 0x00040000;
+        onChanged();
+        return getCreateGameRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder getCreateGameRequestOrBuilder() {
+        if (createGameRequestBuilder_ != null) {
+          return createGameRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return createGameRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateGameRequest, com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder, com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder> 
+          getCreateGameRequestFieldBuilder() {
+        if (createGameRequestBuilder_ == null) {
+          createGameRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.CreateGameRequest, com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder, com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder>(
+                  createGameRequest_,
+                  getParentForChildren(),
+                  isClean());
+          createGameRequest_ = null;
+        }
+        return createGameRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.CreateGameResponse CreateGameResponse = 20;
+      private com.richardpianka.chess.network.Contracts.CreateGameResponse createGameResponse_ = com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateGameResponse, com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder, com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder> createGameResponseBuilder_;
+      public boolean hasCreateGameResponse() {
+        return ((bitField0_ & 0x00080000) == 0x00080000);
+      }
+      public com.richardpianka.chess.network.Contracts.CreateGameResponse getCreateGameResponse() {
+        if (createGameResponseBuilder_ == null) {
+          return createGameResponse_;
+        } else {
+          return createGameResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setCreateGameResponse(com.richardpianka.chess.network.Contracts.CreateGameResponse value) {
+        if (createGameResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          createGameResponse_ = value;
+          onChanged();
+        } else {
+          createGameResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      public Builder setCreateGameResponse(
+          com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder builderForValue) {
+        if (createGameResponseBuilder_ == null) {
+          createGameResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          createGameResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      public Builder mergeCreateGameResponse(com.richardpianka.chess.network.Contracts.CreateGameResponse value) {
+        if (createGameResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00080000) == 0x00080000) &&
+              createGameResponse_ != com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance()) {
+            createGameResponse_ =
+              com.richardpianka.chess.network.Contracts.CreateGameResponse.newBuilder(createGameResponse_).mergeFrom(value).buildPartial();
+          } else {
+            createGameResponse_ = value;
+          }
+          onChanged();
+        } else {
+          createGameResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      public Builder clearCreateGameResponse() {
+        if (createGameResponseBuilder_ == null) {
+          createGameResponse_ = com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          createGameResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00080000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder getCreateGameResponseBuilder() {
+        bitField0_ |= 0x00080000;
+        onChanged();
+        return getCreateGameResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder getCreateGameResponseOrBuilder() {
+        if (createGameResponseBuilder_ != null) {
+          return createGameResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return createGameResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateGameResponse, com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder, com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder> 
+          getCreateGameResponseFieldBuilder() {
+        if (createGameResponseBuilder_ == null) {
+          createGameResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.CreateGameResponse, com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder, com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder>(
+                  createGameResponse_,
+                  getParentForChildren(),
+                  isClean());
+          createGameResponse_ = null;
+        }
+        return createGameResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.JoinGameRequest JoinGameRequest = 21;
+      private com.richardpianka.chess.network.Contracts.JoinGameRequest joinGameRequest_ = com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.JoinGameRequest, com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder, com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder> joinGameRequestBuilder_;
+      public boolean hasJoinGameRequest() {
+        return ((bitField0_ & 0x00100000) == 0x00100000);
+      }
+      public com.richardpianka.chess.network.Contracts.JoinGameRequest getJoinGameRequest() {
+        if (joinGameRequestBuilder_ == null) {
+          return joinGameRequest_;
+        } else {
+          return joinGameRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setJoinGameRequest(com.richardpianka.chess.network.Contracts.JoinGameRequest value) {
+        if (joinGameRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          joinGameRequest_ = value;
+          onChanged();
+        } else {
+          joinGameRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      public Builder setJoinGameRequest(
+          com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder builderForValue) {
+        if (joinGameRequestBuilder_ == null) {
+          joinGameRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          joinGameRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      public Builder mergeJoinGameRequest(com.richardpianka.chess.network.Contracts.JoinGameRequest value) {
+        if (joinGameRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00100000) == 0x00100000) &&
+              joinGameRequest_ != com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance()) {
+            joinGameRequest_ =
+              com.richardpianka.chess.network.Contracts.JoinGameRequest.newBuilder(joinGameRequest_).mergeFrom(value).buildPartial();
+          } else {
+            joinGameRequest_ = value;
+          }
+          onChanged();
+        } else {
+          joinGameRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      public Builder clearJoinGameRequest() {
+        if (joinGameRequestBuilder_ == null) {
+          joinGameRequest_ = com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          joinGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00100000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder getJoinGameRequestBuilder() {
+        bitField0_ |= 0x00100000;
+        onChanged();
+        return getJoinGameRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder getJoinGameRequestOrBuilder() {
+        if (joinGameRequestBuilder_ != null) {
+          return joinGameRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return joinGameRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.JoinGameRequest, com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder, com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder> 
+          getJoinGameRequestFieldBuilder() {
+        if (joinGameRequestBuilder_ == null) {
+          joinGameRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.JoinGameRequest, com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder, com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder>(
+                  joinGameRequest_,
+                  getParentForChildren(),
+                  isClean());
+          joinGameRequest_ = null;
+        }
+        return joinGameRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.JoinGameResponse JoinGameResponse = 22;
+      private com.richardpianka.chess.network.Contracts.JoinGameResponse joinGameResponse_ = com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.JoinGameResponse, com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder, com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder> joinGameResponseBuilder_;
+      public boolean hasJoinGameResponse() {
+        return ((bitField0_ & 0x00200000) == 0x00200000);
+      }
+      public com.richardpianka.chess.network.Contracts.JoinGameResponse getJoinGameResponse() {
+        if (joinGameResponseBuilder_ == null) {
+          return joinGameResponse_;
+        } else {
+          return joinGameResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setJoinGameResponse(com.richardpianka.chess.network.Contracts.JoinGameResponse value) {
+        if (joinGameResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          joinGameResponse_ = value;
+          onChanged();
+        } else {
+          joinGameResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00200000;
+        return this;
+      }
+      public Builder setJoinGameResponse(
+          com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder builderForValue) {
+        if (joinGameResponseBuilder_ == null) {
+          joinGameResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          joinGameResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00200000;
+        return this;
+      }
+      public Builder mergeJoinGameResponse(com.richardpianka.chess.network.Contracts.JoinGameResponse value) {
+        if (joinGameResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00200000) == 0x00200000) &&
+              joinGameResponse_ != com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance()) {
+            joinGameResponse_ =
+              com.richardpianka.chess.network.Contracts.JoinGameResponse.newBuilder(joinGameResponse_).mergeFrom(value).buildPartial();
+          } else {
+            joinGameResponse_ = value;
+          }
+          onChanged();
+        } else {
+          joinGameResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00200000;
+        return this;
+      }
+      public Builder clearJoinGameResponse() {
+        if (joinGameResponseBuilder_ == null) {
+          joinGameResponse_ = com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          joinGameResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00200000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder getJoinGameResponseBuilder() {
+        bitField0_ |= 0x00200000;
+        onChanged();
+        return getJoinGameResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder getJoinGameResponseOrBuilder() {
+        if (joinGameResponseBuilder_ != null) {
+          return joinGameResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return joinGameResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.JoinGameResponse, com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder, com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder> 
+          getJoinGameResponseFieldBuilder() {
+        if (joinGameResponseBuilder_ == null) {
+          joinGameResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.JoinGameResponse, com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder, com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder>(
+                  joinGameResponse_,
+                  getParentForChildren(),
+                  isClean());
+          joinGameResponse_ = null;
+        }
+        return joinGameResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.LeaveGameRequest LeaveGameRequest = 23;
+      private com.richardpianka.chess.network.Contracts.LeaveGameRequest leaveGameRequest_ = com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.LeaveGameRequest, com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder, com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder> leaveGameRequestBuilder_;
+      public boolean hasLeaveGameRequest() {
+        return ((bitField0_ & 0x00400000) == 0x00400000);
+      }
+      public com.richardpianka.chess.network.Contracts.LeaveGameRequest getLeaveGameRequest() {
+        if (leaveGameRequestBuilder_ == null) {
+          return leaveGameRequest_;
+        } else {
+          return leaveGameRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setLeaveGameRequest(com.richardpianka.chess.network.Contracts.LeaveGameRequest value) {
+        if (leaveGameRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          leaveGameRequest_ = value;
+          onChanged();
+        } else {
+          leaveGameRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00400000;
+        return this;
+      }
+      public Builder setLeaveGameRequest(
+          com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder builderForValue) {
+        if (leaveGameRequestBuilder_ == null) {
+          leaveGameRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          leaveGameRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00400000;
+        return this;
+      }
+      public Builder mergeLeaveGameRequest(com.richardpianka.chess.network.Contracts.LeaveGameRequest value) {
+        if (leaveGameRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00400000) == 0x00400000) &&
+              leaveGameRequest_ != com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance()) {
+            leaveGameRequest_ =
+              com.richardpianka.chess.network.Contracts.LeaveGameRequest.newBuilder(leaveGameRequest_).mergeFrom(value).buildPartial();
+          } else {
+            leaveGameRequest_ = value;
+          }
+          onChanged();
+        } else {
+          leaveGameRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00400000;
+        return this;
+      }
+      public Builder clearLeaveGameRequest() {
+        if (leaveGameRequestBuilder_ == null) {
+          leaveGameRequest_ = com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          leaveGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00400000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder getLeaveGameRequestBuilder() {
+        bitField0_ |= 0x00400000;
+        onChanged();
+        return getLeaveGameRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder getLeaveGameRequestOrBuilder() {
+        if (leaveGameRequestBuilder_ != null) {
+          return leaveGameRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return leaveGameRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.LeaveGameRequest, com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder, com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder> 
+          getLeaveGameRequestFieldBuilder() {
+        if (leaveGameRequestBuilder_ == null) {
+          leaveGameRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.LeaveGameRequest, com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder, com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder>(
+                  leaveGameRequest_,
+                  getParentForChildren(),
+                  isClean());
+          leaveGameRequest_ = null;
+        }
+        return leaveGameRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.StartGameRequest StartGameRequest = 24;
+      private com.richardpianka.chess.network.Contracts.StartGameRequest startGameRequest_ = com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.StartGameRequest, com.richardpianka.chess.network.Contracts.StartGameRequest.Builder, com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder> startGameRequestBuilder_;
+      public boolean hasStartGameRequest() {
+        return ((bitField0_ & 0x00800000) == 0x00800000);
+      }
+      public com.richardpianka.chess.network.Contracts.StartGameRequest getStartGameRequest() {
+        if (startGameRequestBuilder_ == null) {
+          return startGameRequest_;
+        } else {
+          return startGameRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setStartGameRequest(com.richardpianka.chess.network.Contracts.StartGameRequest value) {
+        if (startGameRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          startGameRequest_ = value;
+          onChanged();
+        } else {
+          startGameRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00800000;
+        return this;
+      }
+      public Builder setStartGameRequest(
+          com.richardpianka.chess.network.Contracts.StartGameRequest.Builder builderForValue) {
+        if (startGameRequestBuilder_ == null) {
+          startGameRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          startGameRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00800000;
+        return this;
+      }
+      public Builder mergeStartGameRequest(com.richardpianka.chess.network.Contracts.StartGameRequest value) {
+        if (startGameRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00800000) == 0x00800000) &&
+              startGameRequest_ != com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance()) {
+            startGameRequest_ =
+              com.richardpianka.chess.network.Contracts.StartGameRequest.newBuilder(startGameRequest_).mergeFrom(value).buildPartial();
+          } else {
+            startGameRequest_ = value;
+          }
+          onChanged();
+        } else {
+          startGameRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00800000;
+        return this;
+      }
+      public Builder clearStartGameRequest() {
+        if (startGameRequestBuilder_ == null) {
+          startGameRequest_ = com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          startGameRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00800000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.StartGameRequest.Builder getStartGameRequestBuilder() {
+        bitField0_ |= 0x00800000;
+        onChanged();
+        return getStartGameRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder getStartGameRequestOrBuilder() {
+        if (startGameRequestBuilder_ != null) {
+          return startGameRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return startGameRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.StartGameRequest, com.richardpianka.chess.network.Contracts.StartGameRequest.Builder, com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder> 
+          getStartGameRequestFieldBuilder() {
+        if (startGameRequestBuilder_ == null) {
+          startGameRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.StartGameRequest, com.richardpianka.chess.network.Contracts.StartGameRequest.Builder, com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder>(
+                  startGameRequest_,
+                  getParentForChildren(),
+                  isClean());
+          startGameRequest_ = null;
+        }
+        return startGameRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.StartGameResponse StartGameResponse = 25;
+      private com.richardpianka.chess.network.Contracts.StartGameResponse startGameResponse_ = com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.StartGameResponse, com.richardpianka.chess.network.Contracts.StartGameResponse.Builder, com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder> startGameResponseBuilder_;
+      public boolean hasStartGameResponse() {
+        return ((bitField0_ & 0x01000000) == 0x01000000);
+      }
+      public com.richardpianka.chess.network.Contracts.StartGameResponse getStartGameResponse() {
+        if (startGameResponseBuilder_ == null) {
+          return startGameResponse_;
+        } else {
+          return startGameResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setStartGameResponse(com.richardpianka.chess.network.Contracts.StartGameResponse value) {
+        if (startGameResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          startGameResponse_ = value;
+          onChanged();
+        } else {
+          startGameResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x01000000;
+        return this;
+      }
+      public Builder setStartGameResponse(
+          com.richardpianka.chess.network.Contracts.StartGameResponse.Builder builderForValue) {
+        if (startGameResponseBuilder_ == null) {
+          startGameResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          startGameResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x01000000;
+        return this;
+      }
+      public Builder mergeStartGameResponse(com.richardpianka.chess.network.Contracts.StartGameResponse value) {
+        if (startGameResponseBuilder_ == null) {
+          if (((bitField0_ & 0x01000000) == 0x01000000) &&
+              startGameResponse_ != com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance()) {
+            startGameResponse_ =
+              com.richardpianka.chess.network.Contracts.StartGameResponse.newBuilder(startGameResponse_).mergeFrom(value).buildPartial();
+          } else {
+            startGameResponse_ = value;
+          }
+          onChanged();
+        } else {
+          startGameResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x01000000;
+        return this;
+      }
+      public Builder clearStartGameResponse() {
+        if (startGameResponseBuilder_ == null) {
+          startGameResponse_ = com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          startGameResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x01000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.StartGameResponse.Builder getStartGameResponseBuilder() {
+        bitField0_ |= 0x01000000;
+        onChanged();
+        return getStartGameResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder getStartGameResponseOrBuilder() {
+        if (startGameResponseBuilder_ != null) {
+          return startGameResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return startGameResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.StartGameResponse, com.richardpianka.chess.network.Contracts.StartGameResponse.Builder, com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder> 
+          getStartGameResponseFieldBuilder() {
+        if (startGameResponseBuilder_ == null) {
+          startGameResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.StartGameResponse, com.richardpianka.chess.network.Contracts.StartGameResponse.Builder, com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder>(
+                  startGameResponse_,
+                  getParentForChildren(),
+                  isClean());
+          startGameResponse_ = null;
+        }
+        return startGameResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.GameStartedEvent GameStartedEvent = 26;
+      private com.richardpianka.chess.network.Contracts.GameStartedEvent gameStartedEvent_ = com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameStartedEvent, com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder, com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder> gameStartedEventBuilder_;
+      public boolean hasGameStartedEvent() {
+        return ((bitField0_ & 0x02000000) == 0x02000000);
+      }
+      public com.richardpianka.chess.network.Contracts.GameStartedEvent getGameStartedEvent() {
+        if (gameStartedEventBuilder_ == null) {
+          return gameStartedEvent_;
+        } else {
+          return gameStartedEventBuilder_.getMessage();
+        }
+      }
+      public Builder setGameStartedEvent(com.richardpianka.chess.network.Contracts.GameStartedEvent value) {
+        if (gameStartedEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gameStartedEvent_ = value;
+          onChanged();
+        } else {
+          gameStartedEventBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x02000000;
+        return this;
+      }
+      public Builder setGameStartedEvent(
+          com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder builderForValue) {
+        if (gameStartedEventBuilder_ == null) {
+          gameStartedEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          gameStartedEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x02000000;
+        return this;
+      }
+      public Builder mergeGameStartedEvent(com.richardpianka.chess.network.Contracts.GameStartedEvent value) {
+        if (gameStartedEventBuilder_ == null) {
+          if (((bitField0_ & 0x02000000) == 0x02000000) &&
+              gameStartedEvent_ != com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance()) {
+            gameStartedEvent_ =
+              com.richardpianka.chess.network.Contracts.GameStartedEvent.newBuilder(gameStartedEvent_).mergeFrom(value).buildPartial();
+          } else {
+            gameStartedEvent_ = value;
+          }
+          onChanged();
+        } else {
+          gameStartedEventBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x02000000;
+        return this;
+      }
+      public Builder clearGameStartedEvent() {
+        if (gameStartedEventBuilder_ == null) {
+          gameStartedEvent_ = com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          gameStartedEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x02000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder getGameStartedEventBuilder() {
+        bitField0_ |= 0x02000000;
+        onChanged();
+        return getGameStartedEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder getGameStartedEventOrBuilder() {
+        if (gameStartedEventBuilder_ != null) {
+          return gameStartedEventBuilder_.getMessageOrBuilder();
+        } else {
+          return gameStartedEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameStartedEvent, com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder, com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder> 
+          getGameStartedEventFieldBuilder() {
+        if (gameStartedEventBuilder_ == null) {
+          gameStartedEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.GameStartedEvent, com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder, com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder>(
+                  gameStartedEvent_,
+                  getParentForChildren(),
+                  isClean());
+          gameStartedEvent_ = null;
+        }
+        return gameStartedEventBuilder_;
+      }
+      
+      // optional .Chess.Contracts.MovePieceRequest MovePieceRequest = 27;
+      private com.richardpianka.chess.network.Contracts.MovePieceRequest movePieceRequest_ = com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.MovePieceRequest, com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder> movePieceRequestBuilder_;
+      public boolean hasMovePieceRequest() {
+        return ((bitField0_ & 0x04000000) == 0x04000000);
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceRequest getMovePieceRequest() {
+        if (movePieceRequestBuilder_ == null) {
+          return movePieceRequest_;
+        } else {
+          return movePieceRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setMovePieceRequest(com.richardpianka.chess.network.Contracts.MovePieceRequest value) {
+        if (movePieceRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          movePieceRequest_ = value;
+          onChanged();
+        } else {
+          movePieceRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x04000000;
+        return this;
+      }
+      public Builder setMovePieceRequest(
+          com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder builderForValue) {
+        if (movePieceRequestBuilder_ == null) {
+          movePieceRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          movePieceRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x04000000;
+        return this;
+      }
+      public Builder mergeMovePieceRequest(com.richardpianka.chess.network.Contracts.MovePieceRequest value) {
+        if (movePieceRequestBuilder_ == null) {
+          if (((bitField0_ & 0x04000000) == 0x04000000) &&
+              movePieceRequest_ != com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance()) {
+            movePieceRequest_ =
+              com.richardpianka.chess.network.Contracts.MovePieceRequest.newBuilder(movePieceRequest_).mergeFrom(value).buildPartial();
+          } else {
+            movePieceRequest_ = value;
+          }
+          onChanged();
+        } else {
+          movePieceRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x04000000;
+        return this;
+      }
+      public Builder clearMovePieceRequest() {
+        if (movePieceRequestBuilder_ == null) {
+          movePieceRequest_ = com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          movePieceRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x04000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder getMovePieceRequestBuilder() {
+        bitField0_ |= 0x04000000;
+        onChanged();
+        return getMovePieceRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder getMovePieceRequestOrBuilder() {
+        if (movePieceRequestBuilder_ != null) {
+          return movePieceRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return movePieceRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.MovePieceRequest, com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder> 
+          getMovePieceRequestFieldBuilder() {
+        if (movePieceRequestBuilder_ == null) {
+          movePieceRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.MovePieceRequest, com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder>(
+                  movePieceRequest_,
+                  getParentForChildren(),
+                  isClean());
+          movePieceRequest_ = null;
+        }
+        return movePieceRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.MovePieceResponse MovePieceResponse = 28;
+      private com.richardpianka.chess.network.Contracts.MovePieceResponse movePieceResponse_ = com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.MovePieceResponse, com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder> movePieceResponseBuilder_;
+      public boolean hasMovePieceResponse() {
+        return ((bitField0_ & 0x08000000) == 0x08000000);
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceResponse getMovePieceResponse() {
+        if (movePieceResponseBuilder_ == null) {
+          return movePieceResponse_;
+        } else {
+          return movePieceResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setMovePieceResponse(com.richardpianka.chess.network.Contracts.MovePieceResponse value) {
+        if (movePieceResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          movePieceResponse_ = value;
+          onChanged();
+        } else {
+          movePieceResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x08000000;
+        return this;
+      }
+      public Builder setMovePieceResponse(
+          com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder builderForValue) {
+        if (movePieceResponseBuilder_ == null) {
+          movePieceResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          movePieceResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x08000000;
+        return this;
+      }
+      public Builder mergeMovePieceResponse(com.richardpianka.chess.network.Contracts.MovePieceResponse value) {
+        if (movePieceResponseBuilder_ == null) {
+          if (((bitField0_ & 0x08000000) == 0x08000000) &&
+              movePieceResponse_ != com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance()) {
+            movePieceResponse_ =
+              com.richardpianka.chess.network.Contracts.MovePieceResponse.newBuilder(movePieceResponse_).mergeFrom(value).buildPartial();
+          } else {
+            movePieceResponse_ = value;
+          }
+          onChanged();
+        } else {
+          movePieceResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x08000000;
+        return this;
+      }
+      public Builder clearMovePieceResponse() {
+        if (movePieceResponseBuilder_ == null) {
+          movePieceResponse_ = com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          movePieceResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x08000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder getMovePieceResponseBuilder() {
+        bitField0_ |= 0x08000000;
+        onChanged();
+        return getMovePieceResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder getMovePieceResponseOrBuilder() {
+        if (movePieceResponseBuilder_ != null) {
+          return movePieceResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return movePieceResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.MovePieceResponse, com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder> 
+          getMovePieceResponseFieldBuilder() {
+        if (movePieceResponseBuilder_ == null) {
+          movePieceResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.MovePieceResponse, com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder>(
+                  movePieceResponse_,
+                  getParentForChildren(),
+                  isClean());
+          movePieceResponse_ = null;
+        }
+        return movePieceResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.MovePieceEvent MovePieceEvent = 29;
+      private com.richardpianka.chess.network.Contracts.MovePieceEvent movePieceEvent_ = com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.MovePieceEvent, com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder> movePieceEventBuilder_;
+      public boolean hasMovePieceEvent() {
+        return ((bitField0_ & 0x10000000) == 0x10000000);
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceEvent getMovePieceEvent() {
+        if (movePieceEventBuilder_ == null) {
+          return movePieceEvent_;
+        } else {
+          return movePieceEventBuilder_.getMessage();
+        }
+      }
+      public Builder setMovePieceEvent(com.richardpianka.chess.network.Contracts.MovePieceEvent value) {
+        if (movePieceEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          movePieceEvent_ = value;
+          onChanged();
+        } else {
+          movePieceEventBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x10000000;
+        return this;
+      }
+      public Builder setMovePieceEvent(
+          com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder builderForValue) {
+        if (movePieceEventBuilder_ == null) {
+          movePieceEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          movePieceEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x10000000;
+        return this;
+      }
+      public Builder mergeMovePieceEvent(com.richardpianka.chess.network.Contracts.MovePieceEvent value) {
+        if (movePieceEventBuilder_ == null) {
+          if (((bitField0_ & 0x10000000) == 0x10000000) &&
+              movePieceEvent_ != com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance()) {
+            movePieceEvent_ =
+              com.richardpianka.chess.network.Contracts.MovePieceEvent.newBuilder(movePieceEvent_).mergeFrom(value).buildPartial();
+          } else {
+            movePieceEvent_ = value;
+          }
+          onChanged();
+        } else {
+          movePieceEventBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x10000000;
+        return this;
+      }
+      public Builder clearMovePieceEvent() {
+        if (movePieceEventBuilder_ == null) {
+          movePieceEvent_ = com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          movePieceEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x10000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder getMovePieceEventBuilder() {
+        bitField0_ |= 0x10000000;
+        onChanged();
+        return getMovePieceEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder getMovePieceEventOrBuilder() {
+        if (movePieceEventBuilder_ != null) {
+          return movePieceEventBuilder_.getMessageOrBuilder();
+        } else {
+          return movePieceEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.MovePieceEvent, com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder> 
+          getMovePieceEventFieldBuilder() {
+        if (movePieceEventBuilder_ == null) {
+          movePieceEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.MovePieceEvent, com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder>(
+                  movePieceEvent_,
+                  getParentForChildren(),
+                  isClean());
+          movePieceEvent_ = null;
+        }
+        return movePieceEventBuilder_;
+      }
+      
+      // optional .Chess.Contracts.SpecialMovePieceRequest SpecialMovePieceRequest = 30;
+      private com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest specialMovePieceRequest_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder> specialMovePieceRequestBuilder_;
+      public boolean hasSpecialMovePieceRequest() {
+        return ((bitField0_ & 0x20000000) == 0x20000000);
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest getSpecialMovePieceRequest() {
+        if (specialMovePieceRequestBuilder_ == null) {
+          return specialMovePieceRequest_;
+        } else {
+          return specialMovePieceRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setSpecialMovePieceRequest(com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest value) {
+        if (specialMovePieceRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          specialMovePieceRequest_ = value;
+          onChanged();
+        } else {
+          specialMovePieceRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x20000000;
+        return this;
+      }
+      public Builder setSpecialMovePieceRequest(
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder builderForValue) {
+        if (specialMovePieceRequestBuilder_ == null) {
+          specialMovePieceRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          specialMovePieceRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x20000000;
+        return this;
+      }
+      public Builder mergeSpecialMovePieceRequest(com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest value) {
+        if (specialMovePieceRequestBuilder_ == null) {
+          if (((bitField0_ & 0x20000000) == 0x20000000) &&
+              specialMovePieceRequest_ != com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance()) {
+            specialMovePieceRequest_ =
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.newBuilder(specialMovePieceRequest_).mergeFrom(value).buildPartial();
+          } else {
+            specialMovePieceRequest_ = value;
+          }
+          onChanged();
+        } else {
+          specialMovePieceRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x20000000;
+        return this;
+      }
+      public Builder clearSpecialMovePieceRequest() {
+        if (specialMovePieceRequestBuilder_ == null) {
+          specialMovePieceRequest_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          specialMovePieceRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x20000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder getSpecialMovePieceRequestBuilder() {
+        bitField0_ |= 0x20000000;
+        onChanged();
+        return getSpecialMovePieceRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder getSpecialMovePieceRequestOrBuilder() {
+        if (specialMovePieceRequestBuilder_ != null) {
+          return specialMovePieceRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return specialMovePieceRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder> 
+          getSpecialMovePieceRequestFieldBuilder() {
+        if (specialMovePieceRequestBuilder_ == null) {
+          specialMovePieceRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder>(
+                  specialMovePieceRequest_,
+                  getParentForChildren(),
+                  isClean());
+          specialMovePieceRequest_ = null;
+        }
+        return specialMovePieceRequestBuilder_;
+      }
+      
+      // optional .Chess.Contracts.SpecialMovePieceResponse SpecialMovePieceResponse = 31;
+      private com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse specialMovePieceResponse_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder> specialMovePieceResponseBuilder_;
+      public boolean hasSpecialMovePieceResponse() {
+        return ((bitField0_ & 0x40000000) == 0x40000000);
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse getSpecialMovePieceResponse() {
+        if (specialMovePieceResponseBuilder_ == null) {
+          return specialMovePieceResponse_;
+        } else {
+          return specialMovePieceResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setSpecialMovePieceResponse(com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse value) {
+        if (specialMovePieceResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          specialMovePieceResponse_ = value;
+          onChanged();
+        } else {
+          specialMovePieceResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x40000000;
+        return this;
+      }
+      public Builder setSpecialMovePieceResponse(
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder builderForValue) {
+        if (specialMovePieceResponseBuilder_ == null) {
+          specialMovePieceResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          specialMovePieceResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x40000000;
+        return this;
+      }
+      public Builder mergeSpecialMovePieceResponse(com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse value) {
+        if (specialMovePieceResponseBuilder_ == null) {
+          if (((bitField0_ & 0x40000000) == 0x40000000) &&
+              specialMovePieceResponse_ != com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance()) {
+            specialMovePieceResponse_ =
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.newBuilder(specialMovePieceResponse_).mergeFrom(value).buildPartial();
+          } else {
+            specialMovePieceResponse_ = value;
+          }
+          onChanged();
+        } else {
+          specialMovePieceResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x40000000;
+        return this;
+      }
+      public Builder clearSpecialMovePieceResponse() {
+        if (specialMovePieceResponseBuilder_ == null) {
+          specialMovePieceResponse_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          specialMovePieceResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x40000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder getSpecialMovePieceResponseBuilder() {
+        bitField0_ |= 0x40000000;
+        onChanged();
+        return getSpecialMovePieceResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder getSpecialMovePieceResponseOrBuilder() {
+        if (specialMovePieceResponseBuilder_ != null) {
+          return specialMovePieceResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return specialMovePieceResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder> 
+          getSpecialMovePieceResponseFieldBuilder() {
+        if (specialMovePieceResponseBuilder_ == null) {
+          specialMovePieceResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder>(
+                  specialMovePieceResponse_,
+                  getParentForChildren(),
+                  isClean());
+          specialMovePieceResponse_ = null;
+        }
+        return specialMovePieceResponseBuilder_;
+      }
+      
+      // optional .Chess.Contracts.SpecialMovePieceEvent SpecialMovePieceEvent = 32;
+      private com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent specialMovePieceEvent_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent, com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder> specialMovePieceEventBuilder_;
+      public boolean hasSpecialMovePieceEvent() {
+        return ((bitField0_ & 0x80000000) == 0x80000000);
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent getSpecialMovePieceEvent() {
+        if (specialMovePieceEventBuilder_ == null) {
+          return specialMovePieceEvent_;
+        } else {
+          return specialMovePieceEventBuilder_.getMessage();
+        }
+      }
+      public Builder setSpecialMovePieceEvent(com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent value) {
+        if (specialMovePieceEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          specialMovePieceEvent_ = value;
+          onChanged();
+        } else {
+          specialMovePieceEventBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x80000000;
+        return this;
+      }
+      public Builder setSpecialMovePieceEvent(
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder builderForValue) {
+        if (specialMovePieceEventBuilder_ == null) {
+          specialMovePieceEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          specialMovePieceEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x80000000;
+        return this;
+      }
+      public Builder mergeSpecialMovePieceEvent(com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent value) {
+        if (specialMovePieceEventBuilder_ == null) {
+          if (((bitField0_ & 0x80000000) == 0x80000000) &&
+              specialMovePieceEvent_ != com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance()) {
+            specialMovePieceEvent_ =
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.newBuilder(specialMovePieceEvent_).mergeFrom(value).buildPartial();
+          } else {
+            specialMovePieceEvent_ = value;
+          }
+          onChanged();
+        } else {
+          specialMovePieceEventBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x80000000;
+        return this;
+      }
+      public Builder clearSpecialMovePieceEvent() {
+        if (specialMovePieceEventBuilder_ == null) {
+          specialMovePieceEvent_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          specialMovePieceEventBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x80000000);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder getSpecialMovePieceEventBuilder() {
+        bitField0_ |= 0x80000000;
+        onChanged();
+        return getSpecialMovePieceEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder getSpecialMovePieceEventOrBuilder() {
+        if (specialMovePieceEventBuilder_ != null) {
+          return specialMovePieceEventBuilder_.getMessageOrBuilder();
+        } else {
+          return specialMovePieceEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent, com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder> 
+          getSpecialMovePieceEventFieldBuilder() {
+        if (specialMovePieceEventBuilder_ == null) {
+          specialMovePieceEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent, com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder>(
+                  specialMovePieceEvent_,
+                  getParentForChildren(),
+                  isClean());
+          specialMovePieceEvent_ = null;
+        }
+        return specialMovePieceEventBuilder_;
+      }
+      
+      // optional .Chess.Contracts.GameStatusEvent GameStatusEvent = 34;
+      private com.richardpianka.chess.network.Contracts.GameStatusEvent gameStatusEvent_ = com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameStatusEvent, com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder, com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder> gameStatusEventBuilder_;
+      public boolean hasGameStatusEvent() {
+        return ((bitField1_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.chess.network.Contracts.GameStatusEvent getGameStatusEvent() {
+        if (gameStatusEventBuilder_ == null) {
+          return gameStatusEvent_;
+        } else {
+          return gameStatusEventBuilder_.getMessage();
+        }
+      }
+      public Builder setGameStatusEvent(com.richardpianka.chess.network.Contracts.GameStatusEvent value) {
+        if (gameStatusEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gameStatusEvent_ = value;
+          onChanged();
+        } else {
+          gameStatusEventBuilder_.setMessage(value);
+        }
+        bitField1_ |= 0x00000001;
+        return this;
+      }
+      public Builder setGameStatusEvent(
+          com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder builderForValue) {
+        if (gameStatusEventBuilder_ == null) {
+          gameStatusEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          gameStatusEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField1_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeGameStatusEvent(com.richardpianka.chess.network.Contracts.GameStatusEvent value) {
+        if (gameStatusEventBuilder_ == null) {
+          if (((bitField1_ & 0x00000001) == 0x00000001) &&
+              gameStatusEvent_ != com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance()) {
+            gameStatusEvent_ =
+              com.richardpianka.chess.network.Contracts.GameStatusEvent.newBuilder(gameStatusEvent_).mergeFrom(value).buildPartial();
+          } else {
+            gameStatusEvent_ = value;
+          }
+          onChanged();
+        } else {
+          gameStatusEventBuilder_.mergeFrom(value);
+        }
+        bitField1_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearGameStatusEvent() {
+        if (gameStatusEventBuilder_ == null) {
+          gameStatusEvent_ = com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          gameStatusEventBuilder_.clear();
+        }
+        bitField1_ = (bitField1_ & ~0x00000001);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder getGameStatusEventBuilder() {
+        bitField1_ |= 0x00000001;
+        onChanged();
+        return getGameStatusEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder getGameStatusEventOrBuilder() {
+        if (gameStatusEventBuilder_ != null) {
+          return gameStatusEventBuilder_.getMessageOrBuilder();
+        } else {
+          return gameStatusEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.GameStatusEvent, com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder, com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder> 
+          getGameStatusEventFieldBuilder() {
+        if (gameStatusEventBuilder_ == null) {
+          gameStatusEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.GameStatusEvent, com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder, com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder>(
+                  gameStatusEvent_,
+                  getParentForChildren(),
+                  isClean());
+          gameStatusEvent_ = null;
+        }
+        return gameStatusEventBuilder_;
+      }
+      
+      // optional .Chess.Contracts.TimeLeftEvent TimeLeftEvent = 35;
+      private com.richardpianka.chess.network.Contracts.TimeLeftEvent timeLeftEvent_ = com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.TimeLeftEvent, com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder, com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder> timeLeftEventBuilder_;
+      public boolean hasTimeLeftEvent() {
+        return ((bitField1_ & 0x00000002) == 0x00000002);
+      }
+      public com.richardpianka.chess.network.Contracts.TimeLeftEvent getTimeLeftEvent() {
+        if (timeLeftEventBuilder_ == null) {
+          return timeLeftEvent_;
+        } else {
+          return timeLeftEventBuilder_.getMessage();
+        }
+      }
+      public Builder setTimeLeftEvent(com.richardpianka.chess.network.Contracts.TimeLeftEvent value) {
+        if (timeLeftEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          timeLeftEvent_ = value;
+          onChanged();
+        } else {
+          timeLeftEventBuilder_.setMessage(value);
+        }
+        bitField1_ |= 0x00000002;
+        return this;
+      }
+      public Builder setTimeLeftEvent(
+          com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder builderForValue) {
+        if (timeLeftEventBuilder_ == null) {
+          timeLeftEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          timeLeftEventBuilder_.setMessage(builderForValue.build());
+        }
+        bitField1_ |= 0x00000002;
+        return this;
+      }
+      public Builder mergeTimeLeftEvent(com.richardpianka.chess.network.Contracts.TimeLeftEvent value) {
+        if (timeLeftEventBuilder_ == null) {
+          if (((bitField1_ & 0x00000002) == 0x00000002) &&
+              timeLeftEvent_ != com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance()) {
+            timeLeftEvent_ =
+              com.richardpianka.chess.network.Contracts.TimeLeftEvent.newBuilder(timeLeftEvent_).mergeFrom(value).buildPartial();
+          } else {
+            timeLeftEvent_ = value;
+          }
+          onChanged();
+        } else {
+          timeLeftEventBuilder_.mergeFrom(value);
+        }
+        bitField1_ |= 0x00000002;
+        return this;
+      }
+      public Builder clearTimeLeftEvent() {
+        if (timeLeftEventBuilder_ == null) {
+          timeLeftEvent_ = com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance();
+          onChanged();
+        } else {
+          timeLeftEventBuilder_.clear();
+        }
+        bitField1_ = (bitField1_ & ~0x00000002);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder getTimeLeftEventBuilder() {
+        bitField1_ |= 0x00000002;
+        onChanged();
+        return getTimeLeftEventFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder getTimeLeftEventOrBuilder() {
+        if (timeLeftEventBuilder_ != null) {
+          return timeLeftEventBuilder_.getMessageOrBuilder();
+        } else {
+          return timeLeftEvent_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.TimeLeftEvent, com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder, com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder> 
+          getTimeLeftEventFieldBuilder() {
+        if (timeLeftEventBuilder_ == null) {
+          timeLeftEventBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.TimeLeftEvent, com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder, com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder>(
+                  timeLeftEvent_,
+                  getParentForChildren(),
+                  isClean());
+          timeLeftEvent_ = null;
+        }
+        return timeLeftEventBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Envelope)
     }
     
     static {
@@ -2896,17 +6263,17 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Envelope)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Envelope)
   }
   
   public interface CoordinateOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.File File = 1;
+    // required .Chess.Contracts.File File = 1;
     boolean hasFile();
     com.richardpianka.chess.network.Contracts.File getFile();
     
-    // required .com.richardpianka.chess.network.Rank Rank = 2;
+    // required .Chess.Contracts.Rank Rank = 2;
     boolean hasRank();
     com.richardpianka.chess.network.Contracts.Rank getRank();
   }
@@ -2930,16 +6297,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Coordinate_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Coordinate_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Coordinate_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Coordinate_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.File File = 1;
+    // required .Chess.Contracts.File File = 1;
     public static final int FILE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.File file_;
     public boolean hasFile() {
@@ -2949,7 +6316,7 @@ public final class Contracts {
       return file_;
     }
     
-    // required .com.richardpianka.chess.network.Rank Rank = 2;
+    // required .Chess.Contracts.Rank Rank = 2;
     public static final int RANK_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.Rank rank_;
     public boolean hasRank() {
@@ -3103,12 +6470,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.CoordinateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Coordinate_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Coordinate_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Coordinate_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Coordinate_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Coordinate.newBuilder()
@@ -3269,7 +6636,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.File File = 1;
+      // required .Chess.Contracts.File File = 1;
       private com.richardpianka.chess.network.Contracts.File file_ = com.richardpianka.chess.network.Contracts.File._A;
       public boolean hasFile() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -3293,7 +6660,7 @@ public final class Contracts {
         return this;
       }
       
-      // required .com.richardpianka.chess.network.Rank Rank = 2;
+      // required .Chess.Contracts.Rank Rank = 2;
       private com.richardpianka.chess.network.Contracts.Rank rank_ = com.richardpianka.chess.network.Contracts.Rank._1;
       public boolean hasRank() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -3317,7 +6684,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Coordinate)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Coordinate)
     }
     
     static {
@@ -3325,17 +6692,17 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Coordinate)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Coordinate)
   }
   
   public interface PieceOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Color Color = 1;
+    // required .Chess.Contracts.Color Color = 1;
     boolean hasColor();
     com.richardpianka.chess.network.Contracts.Color getColor();
     
-    // required .com.richardpianka.chess.network.Figurine Figurine = 2;
+    // required .Chess.Contracts.Figurine Figurine = 2;
     boolean hasFigurine();
     com.richardpianka.chess.network.Contracts.Figurine getFigurine();
     
@@ -3363,16 +6730,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Piece_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Piece_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Piece_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Piece_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Color Color = 1;
+    // required .Chess.Contracts.Color Color = 1;
     public static final int COLOR_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Color color_;
     public boolean hasColor() {
@@ -3382,7 +6749,7 @@ public final class Contracts {
       return color_;
     }
     
-    // required .com.richardpianka.chess.network.Figurine Figurine = 2;
+    // required .Chess.Contracts.Figurine Figurine = 2;
     public static final int FIGURINE_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.Figurine figurine_;
     public boolean hasFigurine() {
@@ -3558,12 +6925,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.PieceOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Piece_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Piece_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Piece_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Piece_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Piece.newBuilder()
@@ -3742,7 +7109,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Color Color = 1;
+      // required .Chess.Contracts.Color Color = 1;
       private com.richardpianka.chess.network.Contracts.Color color_ = com.richardpianka.chess.network.Contracts.Color.White;
       public boolean hasColor() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -3766,7 +7133,7 @@ public final class Contracts {
         return this;
       }
       
-      // required .com.richardpianka.chess.network.Figurine Figurine = 2;
+      // required .Chess.Contracts.Figurine Figurine = 2;
       private com.richardpianka.chess.network.Contracts.Figurine figurine_ = com.richardpianka.chess.network.Contracts.Figurine.King;
       public boolean hasFigurine() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -3811,7 +7178,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Piece)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Piece)
     }
     
     static {
@@ -3819,23 +7186,23 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Piece)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Piece)
   }
   
   public interface MoveOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Piece Piece = 1;
+    // required .Chess.Contracts.Piece Piece = 1;
     boolean hasPiece();
     com.richardpianka.chess.network.Contracts.Piece getPiece();
     com.richardpianka.chess.network.Contracts.PieceOrBuilder getPieceOrBuilder();
     
-    // required .com.richardpianka.chess.network.Coordinate Start = 2;
+    // required .Chess.Contracts.Coordinate Start = 2;
     boolean hasStart();
     com.richardpianka.chess.network.Contracts.Coordinate getStart();
     com.richardpianka.chess.network.Contracts.CoordinateOrBuilder getStartOrBuilder();
     
-    // required .com.richardpianka.chess.network.Coordinate End = 3;
+    // required .Chess.Contracts.Coordinate End = 3;
     boolean hasEnd();
     com.richardpianka.chess.network.Contracts.Coordinate getEnd();
     com.richardpianka.chess.network.Contracts.CoordinateOrBuilder getEndOrBuilder();
@@ -3860,16 +7227,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Move_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Move_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Move_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Move_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Piece Piece = 1;
+    // required .Chess.Contracts.Piece Piece = 1;
     public static final int PIECE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Piece piece_;
     public boolean hasPiece() {
@@ -3882,7 +7249,7 @@ public final class Contracts {
       return piece_;
     }
     
-    // required .com.richardpianka.chess.network.Coordinate Start = 2;
+    // required .Chess.Contracts.Coordinate Start = 2;
     public static final int START_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.Coordinate start_;
     public boolean hasStart() {
@@ -3895,7 +7262,7 @@ public final class Contracts {
       return start_;
     }
     
-    // required .com.richardpianka.chess.network.Coordinate End = 3;
+    // required .Chess.Contracts.Coordinate End = 3;
     public static final int END_FIELD_NUMBER = 3;
     private com.richardpianka.chess.network.Contracts.Coordinate end_;
     public boolean hasEnd() {
@@ -4076,12 +7443,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.MoveOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Move_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Move_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Move_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Move_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Move.newBuilder()
@@ -4299,7 +7666,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Piece Piece = 1;
+      // required .Chess.Contracts.Piece Piece = 1;
       private com.richardpianka.chess.network.Contracts.Piece piece_ = com.richardpianka.chess.network.Contracts.Piece.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Piece, com.richardpianka.chess.network.Contracts.Piece.Builder, com.richardpianka.chess.network.Contracts.PieceOrBuilder> pieceBuilder_;
@@ -4389,7 +7756,7 @@ public final class Contracts {
         return pieceBuilder_;
       }
       
-      // required .com.richardpianka.chess.network.Coordinate Start = 2;
+      // required .Chess.Contracts.Coordinate Start = 2;
       private com.richardpianka.chess.network.Contracts.Coordinate start_ = com.richardpianka.chess.network.Contracts.Coordinate.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Coordinate, com.richardpianka.chess.network.Contracts.Coordinate.Builder, com.richardpianka.chess.network.Contracts.CoordinateOrBuilder> startBuilder_;
@@ -4479,7 +7846,7 @@ public final class Contracts {
         return startBuilder_;
       }
       
-      // required .com.richardpianka.chess.network.Coordinate End = 3;
+      // required .Chess.Contracts.Coordinate End = 3;
       private com.richardpianka.chess.network.Contracts.Coordinate end_ = com.richardpianka.chess.network.Contracts.Coordinate.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Coordinate, com.richardpianka.chess.network.Contracts.Coordinate.Builder, com.richardpianka.chess.network.Contracts.CoordinateOrBuilder> endBuilder_;
@@ -4569,7 +7936,7 @@ public final class Contracts {
         return endBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Move)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Move)
     }
     
     static {
@@ -4577,13 +7944,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Move)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Move)
   }
   
   public interface SpecialMoveOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // optional .com.richardpianka.chess.network.Castle Castle = 1;
+    // optional .Chess.Contracts.Castle Castle = 1;
     boolean hasCastle();
     com.richardpianka.chess.network.Contracts.Castle getCastle();
     com.richardpianka.chess.network.Contracts.CastleOrBuilder getCastleOrBuilder();
@@ -4608,16 +7975,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMove_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMove_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMove_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMove_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // optional .com.richardpianka.chess.network.Castle Castle = 1;
+    // optional .Chess.Contracts.Castle Castle = 1;
     public static final int CASTLE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Castle castle_;
     public boolean hasCastle() {
@@ -4764,12 +8131,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.SpecialMoveOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMove_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMove_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMove_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMove_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.SpecialMove.newBuilder()
@@ -4915,7 +8282,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // optional .com.richardpianka.chess.network.Castle Castle = 1;
+      // optional .Chess.Contracts.Castle Castle = 1;
       private com.richardpianka.chess.network.Contracts.Castle castle_ = com.richardpianka.chess.network.Contracts.Castle.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Castle, com.richardpianka.chess.network.Contracts.Castle.Builder, com.richardpianka.chess.network.Contracts.CastleOrBuilder> castleBuilder_;
@@ -5005,7 +8372,7 @@ public final class Contracts {
         return castleBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.SpecialMove)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.SpecialMove)
     }
     
     static {
@@ -5013,18 +8380,18 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.SpecialMove)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.SpecialMove)
   }
   
   public interface CastleOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Piece Rook = 1;
+    // required .Chess.Contracts.Piece Rook = 1;
     boolean hasRook();
     com.richardpianka.chess.network.Contracts.Piece getRook();
     com.richardpianka.chess.network.Contracts.PieceOrBuilder getRookOrBuilder();
     
-    // required .com.richardpianka.chess.network.Piece King = 2;
+    // required .Chess.Contracts.Piece King = 2;
     boolean hasKing();
     com.richardpianka.chess.network.Contracts.Piece getKing();
     com.richardpianka.chess.network.Contracts.PieceOrBuilder getKingOrBuilder();
@@ -5049,16 +8416,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Castle_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Castle_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Castle_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Castle_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Piece Rook = 1;
+    // required .Chess.Contracts.Piece Rook = 1;
     public static final int ROOK_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Piece rook_;
     public boolean hasRook() {
@@ -5071,7 +8438,7 @@ public final class Contracts {
       return rook_;
     }
     
-    // required .com.richardpianka.chess.network.Piece King = 2;
+    // required .Chess.Contracts.Piece King = 2;
     public static final int KING_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.Piece king_;
     public boolean hasKing() {
@@ -5236,12 +8603,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.CastleOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Castle_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Castle_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Castle_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Castle_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Castle.newBuilder()
@@ -5424,7 +8791,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Piece Rook = 1;
+      // required .Chess.Contracts.Piece Rook = 1;
       private com.richardpianka.chess.network.Contracts.Piece rook_ = com.richardpianka.chess.network.Contracts.Piece.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Piece, com.richardpianka.chess.network.Contracts.Piece.Builder, com.richardpianka.chess.network.Contracts.PieceOrBuilder> rookBuilder_;
@@ -5514,7 +8881,7 @@ public final class Contracts {
         return rookBuilder_;
       }
       
-      // required .com.richardpianka.chess.network.Piece King = 2;
+      // required .Chess.Contracts.Piece King = 2;
       private com.richardpianka.chess.network.Contracts.Piece king_ = com.richardpianka.chess.network.Contracts.Piece.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Piece, com.richardpianka.chess.network.Contracts.Piece.Builder, com.richardpianka.chess.network.Contracts.PieceOrBuilder> kingBuilder_;
@@ -5604,7 +8971,7 @@ public final class Contracts {
         return kingBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Castle)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Castle)
     }
     
     static {
@@ -5612,7 +8979,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Castle)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Castle)
   }
   
   public interface VersionOrBuilder
@@ -5650,12 +9017,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Version_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Version_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Version_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Version_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -5833,12 +9200,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.VersionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Version_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Version_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Version_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Version_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Version.newBuilder()
@@ -6056,7 +9423,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Version)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Version)
     }
     
     static {
@@ -6064,7 +9431,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Version)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Version)
   }
   
   public interface RoomOrBuilder
@@ -6074,7 +9441,7 @@ public final class Contracts {
     boolean hasName();
     String getName();
     
-    // required .com.richardpianka.chess.network.RoomFlags Flags = 2;
+    // required .Chess.Contracts.RoomFlags Flags = 2;
     boolean hasFlags();
     com.richardpianka.chess.network.Contracts.RoomFlags getFlags();
   }
@@ -6098,12 +9465,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Room_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Room_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Room_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Room_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -6139,7 +9506,7 @@ public final class Contracts {
       }
     }
     
-    // required .com.richardpianka.chess.network.RoomFlags Flags = 2;
+    // required .Chess.Contracts.RoomFlags Flags = 2;
     public static final int FLAGS_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.RoomFlags flags_;
     public boolean hasFlags() {
@@ -6293,12 +9660,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.RoomOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Room_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Room_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Room_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Room_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Room.newBuilder()
@@ -6489,7 +9856,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // required .com.richardpianka.chess.network.RoomFlags Flags = 2;
+      // required .Chess.Contracts.RoomFlags Flags = 2;
       private com.richardpianka.chess.network.Contracts.RoomFlags flags_ = com.richardpianka.chess.network.Contracts.RoomFlags.Public;
       public boolean hasFlags() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -6513,7 +9880,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Room)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Room)
     }
     
     static {
@@ -6521,7 +9888,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Room)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Room)
   }
   
   public interface RecordOrBuilder
@@ -6563,12 +9930,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Record_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Record_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Record_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Record_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -6780,12 +10147,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.RecordOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Record_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Record_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Record_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Record_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Record.newBuilder()
@@ -7054,7 +10421,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Record)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Record)
     }
     
     static {
@@ -7062,7 +10429,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Record)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Record)
   }
   
   public interface UserOrBuilder
@@ -7072,11 +10439,11 @@ public final class Contracts {
     boolean hasName();
     String getName();
     
-    // required .com.richardpianka.chess.network.UserFlags Flags = 2;
+    // required .Chess.Contracts.UserFlags Flags = 2;
     boolean hasFlags();
     com.richardpianka.chess.network.Contracts.UserFlags getFlags();
     
-    // required .com.richardpianka.chess.network.Record Record = 3;
+    // required .Chess.Contracts.Record Record = 3;
     boolean hasRecord();
     com.richardpianka.chess.network.Contracts.Record getRecord();
     com.richardpianka.chess.network.Contracts.RecordOrBuilder getRecordOrBuilder();
@@ -7101,12 +10468,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_User_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_User_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_User_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_User_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -7142,7 +10509,7 @@ public final class Contracts {
       }
     }
     
-    // required .com.richardpianka.chess.network.UserFlags Flags = 2;
+    // required .Chess.Contracts.UserFlags Flags = 2;
     public static final int FLAGS_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.UserFlags flags_;
     public boolean hasFlags() {
@@ -7152,7 +10519,7 @@ public final class Contracts {
       return flags_;
     }
     
-    // required .com.richardpianka.chess.network.Record Record = 3;
+    // required .Chess.Contracts.Record Record = 3;
     public static final int RECORD_FIELD_NUMBER = 3;
     private com.richardpianka.chess.network.Contracts.Record record_;
     public boolean hasRecord() {
@@ -7325,12 +10692,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.UserOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_User_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_User_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_User_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_User_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.User.newBuilder()
@@ -7556,7 +10923,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // required .com.richardpianka.chess.network.UserFlags Flags = 2;
+      // required .Chess.Contracts.UserFlags Flags = 2;
       private com.richardpianka.chess.network.Contracts.UserFlags flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
       public boolean hasFlags() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -7580,7 +10947,7 @@ public final class Contracts {
         return this;
       }
       
-      // required .com.richardpianka.chess.network.Record Record = 3;
+      // required .Chess.Contracts.Record Record = 3;
       private com.richardpianka.chess.network.Contracts.Record record_ = com.richardpianka.chess.network.Contracts.Record.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Record, com.richardpianka.chess.network.Contracts.Record.Builder, com.richardpianka.chess.network.Contracts.RecordOrBuilder> recordBuilder_;
@@ -7670,7 +11037,7 @@ public final class Contracts {
         return recordBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.User)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.User)
     }
     
     static {
@@ -7678,7 +11045,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.User)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.User)
   }
   
   public interface GameOrBuilder
@@ -7696,7 +11063,7 @@ public final class Contracts {
     boolean hasPrivate();
     boolean getPrivate();
     
-    // optional .com.richardpianka.chess.network.GameMetadata MetaData = 4;
+    // optional .Chess.Contracts.GameMetadata MetaData = 4;
     boolean hasMetaData();
     com.richardpianka.chess.network.Contracts.GameMetadata getMetaData();
     com.richardpianka.chess.network.Contracts.GameMetadataOrBuilder getMetaDataOrBuilder();
@@ -7721,12 +11088,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Game_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Game_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Game_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Game_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -7804,7 +11171,7 @@ public final class Contracts {
       return private_;
     }
     
-    // optional .com.richardpianka.chess.network.GameMetadata MetaData = 4;
+    // optional .Chess.Contracts.GameMetadata MetaData = 4;
     public static final int METADATA_FIELD_NUMBER = 4;
     private com.richardpianka.chess.network.Contracts.GameMetadata metaData_;
     public boolean hasMetaData() {
@@ -7983,12 +11350,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.GameOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Game_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Game_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_Game_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_Game_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.Game.newBuilder()
@@ -8277,7 +11644,7 @@ public final class Contracts {
         return this;
       }
       
-      // optional .com.richardpianka.chess.network.GameMetadata MetaData = 4;
+      // optional .Chess.Contracts.GameMetadata MetaData = 4;
       private com.richardpianka.chess.network.Contracts.GameMetadata metaData_ = com.richardpianka.chess.network.Contracts.GameMetadata.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.GameMetadata, com.richardpianka.chess.network.Contracts.GameMetadata.Builder, com.richardpianka.chess.network.Contracts.GameMetadataOrBuilder> metaDataBuilder_;
@@ -8367,7 +11734,7 @@ public final class Contracts {
         return metaDataBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.Game)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.Game)
     }
     
     static {
@@ -8375,23 +11742,23 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.Game)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.Game)
   }
   
   public interface GameMetadataOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // optional .com.richardpianka.chess.network.User Created = 1;
+    // optional .Chess.Contracts.User Created = 1;
     boolean hasCreated();
     com.richardpianka.chess.network.Contracts.User getCreated();
     com.richardpianka.chess.network.Contracts.UserOrBuilder getCreatedOrBuilder();
     
-    // optional .com.richardpianka.chess.network.User Joined = 2;
+    // optional .Chess.Contracts.User Joined = 2;
     boolean hasJoined();
     com.richardpianka.chess.network.Contracts.User getJoined();
     com.richardpianka.chess.network.Contracts.UserOrBuilder getJoinedOrBuilder();
     
-    // optional .com.richardpianka.chess.network.UserTime UserTime = 3;
+    // optional .Chess.Contracts.UserTime UserTime = 3;
     boolean hasUserTime();
     com.richardpianka.chess.network.Contracts.UserTime getUserTime();
     com.richardpianka.chess.network.Contracts.UserTimeOrBuilder getUserTimeOrBuilder();
@@ -8416,16 +11783,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameMetadata_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameMetadata_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameMetadata_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameMetadata_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // optional .com.richardpianka.chess.network.User Created = 1;
+    // optional .Chess.Contracts.User Created = 1;
     public static final int CREATED_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.User created_;
     public boolean hasCreated() {
@@ -8438,7 +11805,7 @@ public final class Contracts {
       return created_;
     }
     
-    // optional .com.richardpianka.chess.network.User Joined = 2;
+    // optional .Chess.Contracts.User Joined = 2;
     public static final int JOINED_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.User joined_;
     public boolean hasJoined() {
@@ -8451,7 +11818,7 @@ public final class Contracts {
       return joined_;
     }
     
-    // optional .com.richardpianka.chess.network.UserTime UserTime = 3;
+    // optional .Chess.Contracts.UserTime UserTime = 3;
     public static final int USERTIME_FIELD_NUMBER = 3;
     private com.richardpianka.chess.network.Contracts.UserTime userTime_;
     public boolean hasUserTime() {
@@ -8626,12 +11993,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.GameMetadataOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameMetadata_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameMetadata_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameMetadata_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameMetadata_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.GameMetadata.newBuilder()
@@ -8843,7 +12210,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // optional .com.richardpianka.chess.network.User Created = 1;
+      // optional .Chess.Contracts.User Created = 1;
       private com.richardpianka.chess.network.Contracts.User created_ = com.richardpianka.chess.network.Contracts.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.User, com.richardpianka.chess.network.Contracts.User.Builder, com.richardpianka.chess.network.Contracts.UserOrBuilder> createdBuilder_;
@@ -8933,7 +12300,7 @@ public final class Contracts {
         return createdBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.User Joined = 2;
+      // optional .Chess.Contracts.User Joined = 2;
       private com.richardpianka.chess.network.Contracts.User joined_ = com.richardpianka.chess.network.Contracts.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.User, com.richardpianka.chess.network.Contracts.User.Builder, com.richardpianka.chess.network.Contracts.UserOrBuilder> joinedBuilder_;
@@ -9023,7 +12390,7 @@ public final class Contracts {
         return joinedBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.UserTime UserTime = 3;
+      // optional .Chess.Contracts.UserTime UserTime = 3;
       private com.richardpianka.chess.network.Contracts.UserTime userTime_ = com.richardpianka.chess.network.Contracts.UserTime.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.UserTime, com.richardpianka.chess.network.Contracts.UserTime.Builder, com.richardpianka.chess.network.Contracts.UserTimeOrBuilder> userTimeBuilder_;
@@ -9113,7 +12480,7 @@ public final class Contracts {
         return userTimeBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.GameMetadata)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.GameMetadata)
     }
     
     static {
@@ -9121,7 +12488,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.GameMetadata)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.GameMetadata)
   }
   
   public interface UserTimeOrBuilder
@@ -9155,12 +12522,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_UserTime_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_UserTime_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_UserTime_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_UserTime_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -9328,12 +12695,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.UserTimeOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_UserTime_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_UserTime_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_UserTime_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_UserTime_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.UserTime.newBuilder()
@@ -9524,7 +12891,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.UserTime)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.UserTime)
     }
     
     static {
@@ -9532,13 +12899,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.UserTime)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.UserTime)
   }
   
   public interface HandshakeRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Version Version = 1;
+    // required .Chess.Contracts.Version Version = 1;
     boolean hasVersion();
     com.richardpianka.chess.network.Contracts.Version getVersion();
     com.richardpianka.chess.network.Contracts.VersionOrBuilder getVersionOrBuilder();
@@ -9563,16 +12930,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Version Version = 1;
+    // required .Chess.Contracts.Version Version = 1;
     public static final int VERSION_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Version version_;
     public boolean hasVersion() {
@@ -9717,12 +13084,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.HandshakeRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.HandshakeRequest.newBuilder()
@@ -9866,7 +13233,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Version Version = 1;
+      // required .Chess.Contracts.Version Version = 1;
       private com.richardpianka.chess.network.Contracts.Version version_ = com.richardpianka.chess.network.Contracts.Version.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Version, com.richardpianka.chess.network.Contracts.Version.Builder, com.richardpianka.chess.network.Contracts.VersionOrBuilder> versionBuilder_;
@@ -9956,7 +13323,7 @@ public final class Contracts {
         return versionBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.HandshakeRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.HandshakeRequest)
     }
     
     static {
@@ -9964,13 +13331,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.HandshakeRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.HandshakeRequest)
   }
   
   public interface HandshakeResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -9994,16 +13361,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -10145,12 +13512,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.HandshakeResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_HandshakeResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_HandshakeResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.HandshakeResponse.newBuilder()
@@ -10287,7 +13654,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -10311,7 +13678,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.HandshakeResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.HandshakeResponse)
     }
     
     static {
@@ -10319,7 +13686,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.HandshakeResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.HandshakeResponse)
   }
   
   public interface IdentifyRequestOrBuilder
@@ -10353,12 +13720,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -10566,12 +13933,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.IdentifyRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.IdentifyRequest.newBuilder()
@@ -10788,7 +14155,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.IdentifyRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.IdentifyRequest)
     }
     
     static {
@@ -10796,13 +14163,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.IdentifyRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.IdentifyRequest)
   }
   
   public interface IdentifyResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
     
@@ -10830,16 +14197,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -11021,12 +14388,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.IdentifyResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_IdentifyResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_IdentifyResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.IdentifyResponse.newBuilder()
@@ -11177,7 +14544,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -11237,7 +14604,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.IdentifyResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.IdentifyResponse)
     }
     
     static {
@@ -11245,7 +14612,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.IdentifyResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.IdentifyResponse)
   }
   
   public interface JoinChatRequestOrBuilder
@@ -11271,12 +14638,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatRequest_fieldAccessorTable;
     }
     
     private void initFields() {
@@ -11399,12 +14766,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.JoinChatRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.JoinChatRequest.newBuilder()
@@ -11513,7 +14880,7 @@ public final class Contracts {
       }
       
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.JoinChatRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.JoinChatRequest)
     }
     
     static {
@@ -11521,13 +14888,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.JoinChatRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.JoinChatRequest)
   }
   
   public interface JoinChatResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -11551,16 +14918,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -11702,12 +15069,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.JoinChatResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinChatResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinChatResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.JoinChatResponse.newBuilder()
@@ -11844,7 +15211,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -11868,7 +15235,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.JoinChatResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.JoinChatResponse)
     }
     
     static {
@@ -11876,7 +15243,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.JoinChatResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.JoinChatResponse)
   }
   
   public interface RoomListRequestOrBuilder
@@ -11902,12 +15269,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListRequest_fieldAccessorTable;
     }
     
     private void initFields() {
@@ -12030,12 +15397,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.RoomListRequest.newBuilder()
@@ -12144,7 +15511,7 @@ public final class Contracts {
       }
       
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.RoomListRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.RoomListRequest)
     }
     
     static {
@@ -12152,13 +15519,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.RoomListRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.RoomListRequest)
   }
   
   public interface RoomListResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // repeated .com.richardpianka.chess.network.Room Rooms = 1;
+    // repeated .Chess.Contracts.Room Rooms = 1;
     java.util.List<com.richardpianka.chess.network.Contracts.Room> 
         getRoomsList();
     com.richardpianka.chess.network.Contracts.Room getRooms(int index);
@@ -12188,15 +15555,15 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListResponse_fieldAccessorTable;
     }
     
-    // repeated .com.richardpianka.chess.network.Room Rooms = 1;
+    // repeated .Chess.Contracts.Room Rooms = 1;
     public static final int ROOMS_FIELD_NUMBER = 1;
     private java.util.List<com.richardpianka.chess.network.Contracts.Room> rooms_;
     public java.util.List<com.richardpianka.chess.network.Contracts.Room> getRoomsList() {
@@ -12351,12 +15718,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_RoomListResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_RoomListResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.RoomListResponse.newBuilder()
@@ -12521,7 +15888,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // repeated .com.richardpianka.chess.network.Room Rooms = 1;
+      // repeated .Chess.Contracts.Room Rooms = 1;
       private java.util.List<com.richardpianka.chess.network.Contracts.Room> rooms_ =
         java.util.Collections.emptyList();
       private void ensureRoomsIsMutable() {
@@ -12707,7 +16074,7 @@ public final class Contracts {
         return roomsBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.RoomListResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.RoomListResponse)
     }
     
     static {
@@ -12715,13 +16082,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.RoomListResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.RoomListResponse)
   }
   
   public interface JoinRoomRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Room Room = 1;
+    // required .Chess.Contracts.Room Room = 1;
     boolean hasRoom();
     com.richardpianka.chess.network.Contracts.Room getRoom();
     com.richardpianka.chess.network.Contracts.RoomOrBuilder getRoomOrBuilder();
@@ -12746,16 +16113,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Room Room = 1;
+    // required .Chess.Contracts.Room Room = 1;
     public static final int ROOM_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Room room_;
     public boolean hasRoom() {
@@ -12904,12 +16271,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.JoinRoomRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.JoinRoomRequest.newBuilder()
@@ -13057,7 +16424,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Room Room = 1;
+      // required .Chess.Contracts.Room Room = 1;
       private com.richardpianka.chess.network.Contracts.Room room_ = com.richardpianka.chess.network.Contracts.Room.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Room, com.richardpianka.chess.network.Contracts.Room.Builder, com.richardpianka.chess.network.Contracts.RoomOrBuilder> roomBuilder_;
@@ -13147,7 +16514,7 @@ public final class Contracts {
         return roomBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.JoinRoomRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.JoinRoomRequest)
     }
     
     static {
@@ -13155,13 +16522,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.JoinRoomRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.JoinRoomRequest)
   }
   
   public interface JoinRoomResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -13185,16 +16552,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -13336,12 +16703,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.JoinRoomResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinRoomResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinRoomResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.JoinRoomResponse.newBuilder()
@@ -13478,7 +16845,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -13502,7 +16869,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.JoinRoomResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.JoinRoomResponse)
     }
     
     static {
@@ -13510,13 +16877,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.JoinRoomResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.JoinRoomResponse)
   }
   
   public interface SpeakRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.SpeakMode Mode = 1;
+    // required .Chess.Contracts.SpeakMode Mode = 1;
     boolean hasMode();
     com.richardpianka.chess.network.Contracts.SpeakMode getMode();
     
@@ -13524,7 +16891,7 @@ public final class Contracts {
     boolean hasMessage();
     String getMessage();
     
-    // optional .com.richardpianka.chess.network.User Recipient = 3;
+    // optional .Chess.Contracts.User Recipient = 3;
     boolean hasRecipient();
     com.richardpianka.chess.network.Contracts.User getRecipient();
     com.richardpianka.chess.network.Contracts.UserOrBuilder getRecipientOrBuilder();
@@ -13549,16 +16916,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpeakRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpeakRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpeakRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpeakRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.SpeakMode Mode = 1;
+    // required .Chess.Contracts.SpeakMode Mode = 1;
     public static final int MODE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.SpeakMode mode_;
     public boolean hasMode() {
@@ -13600,7 +16967,7 @@ public final class Contracts {
       }
     }
     
-    // optional .com.richardpianka.chess.network.User Recipient = 3;
+    // optional .Chess.Contracts.User Recipient = 3;
     public static final int RECIPIENT_FIELD_NUMBER = 3;
     private com.richardpianka.chess.network.Contracts.User recipient_;
     public boolean hasRecipient() {
@@ -13771,12 +17138,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.SpeakRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpeakRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpeakRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpeakRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpeakRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.SpeakRequest.newBuilder()
@@ -13964,7 +17331,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.SpeakMode Mode = 1;
+      // required .Chess.Contracts.SpeakMode Mode = 1;
       private com.richardpianka.chess.network.Contracts.SpeakMode mode_ = com.richardpianka.chess.network.Contracts.SpeakMode.Normal;
       public boolean hasMode() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -14024,7 +17391,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // optional .com.richardpianka.chess.network.User Recipient = 3;
+      // optional .Chess.Contracts.User Recipient = 3;
       private com.richardpianka.chess.network.Contracts.User recipient_ = com.richardpianka.chess.network.Contracts.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.User, com.richardpianka.chess.network.Contracts.User.Builder, com.richardpianka.chess.network.Contracts.UserOrBuilder> recipientBuilder_;
@@ -14114,7 +17481,7 @@ public final class Contracts {
         return recipientBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.SpeakRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.SpeakRequest)
     }
     
     static {
@@ -14122,17 +17489,17 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.SpeakRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.SpeakRequest)
   }
   
   public interface OperatorRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.OperatorAction Action = 1;
+    // required .Chess.Contracts.OperatorAction Action = 1;
     boolean hasAction();
     com.richardpianka.chess.network.Contracts.OperatorAction getAction();
     
-    // optional .com.richardpianka.chess.network.User User = 2;
+    // optional .Chess.Contracts.User User = 2;
     boolean hasUser();
     com.richardpianka.chess.network.Contracts.User getUser();
     com.richardpianka.chess.network.Contracts.UserOrBuilder getUserOrBuilder();
@@ -14157,16 +17524,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.OperatorAction Action = 1;
+    // required .Chess.Contracts.OperatorAction Action = 1;
     public static final int ACTION_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.OperatorAction action_;
     public boolean hasAction() {
@@ -14176,7 +17543,7 @@ public final class Contracts {
       return action_;
     }
     
-    // optional .com.richardpianka.chess.network.User User = 2;
+    // optional .Chess.Contracts.User User = 2;
     public static final int USER_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.User user_;
     public boolean hasUser() {
@@ -14335,12 +17702,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.OperatorRequest.newBuilder()
@@ -14510,7 +17877,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.OperatorAction Action = 1;
+      // required .Chess.Contracts.OperatorAction Action = 1;
       private com.richardpianka.chess.network.Contracts.OperatorAction action_ = com.richardpianka.chess.network.Contracts.OperatorAction.Designate;
       public boolean hasAction() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -14534,7 +17901,7 @@ public final class Contracts {
         return this;
       }
       
-      // optional .com.richardpianka.chess.network.User User = 2;
+      // optional .Chess.Contracts.User User = 2;
       private com.richardpianka.chess.network.Contracts.User user_ = com.richardpianka.chess.network.Contracts.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.User, com.richardpianka.chess.network.Contracts.User.Builder, com.richardpianka.chess.network.Contracts.UserOrBuilder> userBuilder_;
@@ -14624,7 +17991,7 @@ public final class Contracts {
         return userBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.OperatorRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.OperatorRequest)
     }
     
     static {
@@ -14632,13 +17999,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.OperatorRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.OperatorRequest)
   }
   
   public interface OperatorResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -14662,16 +18029,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -14813,12 +18180,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_OperatorResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_OperatorResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.OperatorResponse.newBuilder()
@@ -14955,7 +18322,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -14979,7 +18346,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.OperatorResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.OperatorResponse)
     }
     
     static {
@@ -14987,18 +18354,18 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.OperatorResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.OperatorResponse)
   }
   
   public interface ChatRoomEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Room Room = 1;
+    // required .Chess.Contracts.Room Room = 1;
     boolean hasRoom();
     com.richardpianka.chess.network.Contracts.Room getRoom();
     com.richardpianka.chess.network.Contracts.RoomOrBuilder getRoomOrBuilder();
     
-    // repeated .com.richardpianka.chess.network.User Users = 2;
+    // repeated .Chess.Contracts.User Users = 2;
     java.util.List<com.richardpianka.chess.network.Contracts.User> 
         getUsersList();
     com.richardpianka.chess.network.Contracts.User getUsers(int index);
@@ -15028,16 +18395,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatRoomEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatRoomEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatRoomEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatRoomEvent_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Room Room = 1;
+    // required .Chess.Contracts.Room Room = 1;
     public static final int ROOM_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Room room_;
     public boolean hasRoom() {
@@ -15050,7 +18417,7 @@ public final class Contracts {
       return room_;
     }
     
-    // repeated .com.richardpianka.chess.network.User Users = 2;
+    // repeated .Chess.Contracts.User Users = 2;
     public static final int USERS_FIELD_NUMBER = 2;
     private java.util.List<com.richardpianka.chess.network.Contracts.User> users_;
     public java.util.List<com.richardpianka.chess.network.Contracts.User> getUsersList() {
@@ -15221,12 +18588,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.ChatRoomEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatRoomEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatRoomEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatRoomEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatRoomEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.ChatRoomEvent.newBuilder()
@@ -15428,7 +18795,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Room Room = 1;
+      // required .Chess.Contracts.Room Room = 1;
       private com.richardpianka.chess.network.Contracts.Room room_ = com.richardpianka.chess.network.Contracts.Room.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Room, com.richardpianka.chess.network.Contracts.Room.Builder, com.richardpianka.chess.network.Contracts.RoomOrBuilder> roomBuilder_;
@@ -15518,7 +18885,7 @@ public final class Contracts {
         return roomBuilder_;
       }
       
-      // repeated .com.richardpianka.chess.network.User Users = 2;
+      // repeated .Chess.Contracts.User Users = 2;
       private java.util.List<com.richardpianka.chess.network.Contracts.User> users_ =
         java.util.Collections.emptyList();
       private void ensureUsersIsMutable() {
@@ -15704,7 +19071,7 @@ public final class Contracts {
         return usersBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.ChatRoomEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.ChatRoomEvent)
     }
     
     static {
@@ -15712,18 +19079,18 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.ChatRoomEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.ChatRoomEvent)
   }
   
   public interface ChatUserEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.User User = 1;
+    // required .Chess.Contracts.User User = 1;
     boolean hasUser();
     com.richardpianka.chess.network.Contracts.User getUser();
     com.richardpianka.chess.network.Contracts.UserOrBuilder getUserOrBuilder();
     
-    // required .com.richardpianka.chess.network.ChatUserEvent.UserStatus Status = 2;
+    // required .Chess.Contracts.ChatUserEvent.UserStatus Status = 2;
     boolean hasStatus();
     com.richardpianka.chess.network.Contracts.ChatUserEvent.UserStatus getStatus();
     
@@ -15751,12 +19118,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatUserEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatUserEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatUserEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatUserEvent_fieldAccessorTable;
     }
     
     public enum UserStatus
@@ -15828,11 +19195,11 @@ public final class Contracts {
         this.value = value;
       }
       
-      // @@protoc_insertion_point(enum_scope:com.richardpianka.chess.network.ChatUserEvent.UserStatus)
+      // @@protoc_insertion_point(enum_scope:Chess.Contracts.ChatUserEvent.UserStatus)
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.User User = 1;
+    // required .Chess.Contracts.User User = 1;
     public static final int USER_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.User user_;
     public boolean hasUser() {
@@ -15845,7 +19212,7 @@ public final class Contracts {
       return user_;
     }
     
-    // required .com.richardpianka.chess.network.ChatUserEvent.UserStatus Status = 2;
+    // required .Chess.Contracts.ChatUserEvent.UserStatus Status = 2;
     public static final int STATUS_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.ChatUserEvent.UserStatus status_;
     public boolean hasStatus() {
@@ -16043,12 +19410,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.ChatUserEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatUserEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatUserEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatUserEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatUserEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.ChatUserEvent.newBuilder()
@@ -16234,7 +19601,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.User User = 1;
+      // required .Chess.Contracts.User User = 1;
       private com.richardpianka.chess.network.Contracts.User user_ = com.richardpianka.chess.network.Contracts.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.User, com.richardpianka.chess.network.Contracts.User.Builder, com.richardpianka.chess.network.Contracts.UserOrBuilder> userBuilder_;
@@ -16324,7 +19691,7 @@ public final class Contracts {
         return userBuilder_;
       }
       
-      // required .com.richardpianka.chess.network.ChatUserEvent.UserStatus Status = 2;
+      // required .Chess.Contracts.ChatUserEvent.UserStatus Status = 2;
       private com.richardpianka.chess.network.Contracts.ChatUserEvent.UserStatus status_ = com.richardpianka.chess.network.Contracts.ChatUserEvent.UserStatus.Joined;
       public boolean hasStatus() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -16384,7 +19751,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.ChatUserEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.ChatUserEvent)
     }
     
     static {
@@ -16392,13 +19759,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.ChatUserEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.ChatUserEvent)
   }
   
   public interface ChatSpeakEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.User User = 1;
+    // required .Chess.Contracts.User User = 1;
     boolean hasUser();
     com.richardpianka.chess.network.Contracts.User getUser();
     com.richardpianka.chess.network.Contracts.UserOrBuilder getUserOrBuilder();
@@ -16407,7 +19774,7 @@ public final class Contracts {
     boolean hasMessage();
     String getMessage();
     
-    // required .com.richardpianka.chess.network.SpeakMode Mode = 3;
+    // required .Chess.Contracts.SpeakMode Mode = 3;
     boolean hasMode();
     com.richardpianka.chess.network.Contracts.SpeakMode getMode();
   }
@@ -16431,16 +19798,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatSpeakEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatSpeakEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatSpeakEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatSpeakEvent_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.User User = 1;
+    // required .Chess.Contracts.User User = 1;
     public static final int USER_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.User user_;
     public boolean hasUser() {
@@ -16485,7 +19852,7 @@ public final class Contracts {
       }
     }
     
-    // required .com.richardpianka.chess.network.SpeakMode Mode = 3;
+    // required .Chess.Contracts.SpeakMode Mode = 3;
     public static final int MODE_FIELD_NUMBER = 3;
     private com.richardpianka.chess.network.Contracts.SpeakMode mode_;
     public boolean hasMode() {
@@ -16655,12 +20022,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.ChatSpeakEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatSpeakEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatSpeakEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChatSpeakEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_ChatSpeakEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.ChatSpeakEvent.newBuilder()
@@ -16850,7 +20217,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.User User = 1;
+      // required .Chess.Contracts.User User = 1;
       private com.richardpianka.chess.network.Contracts.User user_ = com.richardpianka.chess.network.Contracts.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.User, com.richardpianka.chess.network.Contracts.User.Builder, com.richardpianka.chess.network.Contracts.UserOrBuilder> userBuilder_;
@@ -16976,7 +20343,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // required .com.richardpianka.chess.network.SpeakMode Mode = 3;
+      // required .Chess.Contracts.SpeakMode Mode = 3;
       private com.richardpianka.chess.network.Contracts.SpeakMode mode_ = com.richardpianka.chess.network.Contracts.SpeakMode.Normal;
       public boolean hasMode() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
@@ -17000,7 +20367,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.ChatSpeakEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.ChatSpeakEvent)
     }
     
     static {
@@ -17008,7 +20375,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.ChatSpeakEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.ChatSpeakEvent)
   }
   
   public interface GameListRequestOrBuilder
@@ -17034,12 +20401,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListRequest_fieldAccessorTable;
     }
     
     private void initFields() {
@@ -17162,12 +20529,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.GameListRequest.newBuilder()
@@ -17276,7 +20643,7 @@ public final class Contracts {
       }
       
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.GameListRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.GameListRequest)
     }
     
     static {
@@ -17284,13 +20651,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.GameListRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.GameListRequest)
   }
   
   public interface GameListResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // repeated .com.richardpianka.chess.network.Game Games = 1;
+    // repeated .Chess.Contracts.Game Games = 1;
     java.util.List<com.richardpianka.chess.network.Contracts.Game> 
         getGamesList();
     com.richardpianka.chess.network.Contracts.Game getGames(int index);
@@ -17320,15 +20687,15 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListResponse_fieldAccessorTable;
     }
     
-    // repeated .com.richardpianka.chess.network.Game Games = 1;
+    // repeated .Chess.Contracts.Game Games = 1;
     public static final int GAMES_FIELD_NUMBER = 1;
     private java.util.List<com.richardpianka.chess.network.Contracts.Game> games_;
     public java.util.List<com.richardpianka.chess.network.Contracts.Game> getGamesList() {
@@ -17483,12 +20850,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameListResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameListResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.GameListResponse.newBuilder()
@@ -17653,7 +21020,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // repeated .com.richardpianka.chess.network.Game Games = 1;
+      // repeated .Chess.Contracts.Game Games = 1;
       private java.util.List<com.richardpianka.chess.network.Contracts.Game> games_ =
         java.util.Collections.emptyList();
       private void ensureGamesIsMutable() {
@@ -17839,7 +21206,7 @@ public final class Contracts {
         return gamesBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.GameListResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.GameListResponse)
     }
     
     static {
@@ -17847,7 +21214,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.GameListResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.GameListResponse)
   }
   
   public interface CreateGameRequestOrBuilder
@@ -17881,12 +21248,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -18094,12 +21461,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.CreateGameRequest.newBuilder()
@@ -18316,7 +21683,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.CreateGameRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.CreateGameRequest)
     }
     
     static {
@@ -18324,17 +21691,17 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.CreateGameRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.CreateGameRequest)
   }
   
   public interface CreateGameResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
     
-    // optional .com.richardpianka.chess.network.Game Game = 2;
+    // optional .Chess.Contracts.Game Game = 2;
     boolean hasGame();
     com.richardpianka.chess.network.Contracts.Game getGame();
     com.richardpianka.chess.network.Contracts.GameOrBuilder getGameOrBuilder();
@@ -18363,16 +21730,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -18382,7 +21749,7 @@ public final class Contracts {
       return result_;
     }
     
-    // optional .com.richardpianka.chess.network.Game Game = 2;
+    // optional .Chess.Contracts.Game Game = 2;
     public static final int GAME_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.Game game_;
     public boolean hasGame() {
@@ -18581,12 +21948,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateGameResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_CreateGameResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.CreateGameResponse.newBuilder()
@@ -18770,7 +22137,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -18794,7 +22161,7 @@ public final class Contracts {
         return this;
       }
       
-      // optional .com.richardpianka.chess.network.Game Game = 2;
+      // optional .Chess.Contracts.Game Game = 2;
       private com.richardpianka.chess.network.Contracts.Game game_ = com.richardpianka.chess.network.Contracts.Game.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Game, com.richardpianka.chess.network.Contracts.Game.Builder, com.richardpianka.chess.network.Contracts.GameOrBuilder> gameBuilder_;
@@ -18920,7 +22287,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.CreateGameResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.CreateGameResponse)
     }
     
     static {
@@ -18928,13 +22295,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.CreateGameResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.CreateGameResponse)
   }
   
   public interface JoinGameRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Game Game = 1;
+    // required .Chess.Contracts.Game Game = 1;
     boolean hasGame();
     com.richardpianka.chess.network.Contracts.Game getGame();
     com.richardpianka.chess.network.Contracts.GameOrBuilder getGameOrBuilder();
@@ -18963,16 +22330,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Game Game = 1;
+    // required .Chess.Contracts.Game Game = 1;
     public static final int GAME_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Game game_;
     public boolean hasGame() {
@@ -19161,12 +22528,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.JoinGameRequest.newBuilder()
@@ -19328,7 +22695,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Game Game = 1;
+      // required .Chess.Contracts.Game Game = 1;
       private com.richardpianka.chess.network.Contracts.Game game_ = com.richardpianka.chess.network.Contracts.Game.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Game, com.richardpianka.chess.network.Contracts.Game.Builder, com.richardpianka.chess.network.Contracts.GameOrBuilder> gameBuilder_;
@@ -19454,7 +22821,7 @@ public final class Contracts {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.JoinGameRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.JoinGameRequest)
     }
     
     static {
@@ -19462,18 +22829,18 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.JoinGameRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.JoinGameRequest)
   }
   
   public interface JoinGameResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Game Game = 1;
+    // required .Chess.Contracts.Game Game = 1;
     boolean hasGame();
     com.richardpianka.chess.network.Contracts.Game getGame();
     com.richardpianka.chess.network.Contracts.GameOrBuilder getGameOrBuilder();
     
-    // required .com.richardpianka.chess.network.Result Result = 2;
+    // required .Chess.Contracts.Result Result = 2;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -19497,16 +22864,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Game Game = 1;
+    // required .Chess.Contracts.Game Game = 1;
     public static final int GAME_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Game game_;
     public boolean hasGame() {
@@ -19519,7 +22886,7 @@ public final class Contracts {
       return game_;
     }
     
-    // required .com.richardpianka.chess.network.Result Result = 2;
+    // required .Chess.Contracts.Result Result = 2;
     public static final int RESULT_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -19677,12 +23044,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_JoinGameResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_JoinGameResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.JoinGameResponse.newBuilder()
@@ -19854,7 +23221,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Game Game = 1;
+      // required .Chess.Contracts.Game Game = 1;
       private com.richardpianka.chess.network.Contracts.Game game_ = com.richardpianka.chess.network.Contracts.Game.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Game, com.richardpianka.chess.network.Contracts.Game.Builder, com.richardpianka.chess.network.Contracts.GameOrBuilder> gameBuilder_;
@@ -19944,7 +23311,7 @@ public final class Contracts {
         return gameBuilder_;
       }
       
-      // required .com.richardpianka.chess.network.Result Result = 2;
+      // required .Chess.Contracts.Result Result = 2;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -19968,7 +23335,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.JoinGameResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.JoinGameResponse)
     }
     
     static {
@@ -19976,7 +23343,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.JoinGameResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.JoinGameResponse)
   }
   
   public interface LeaveGameRequestOrBuilder
@@ -20002,12 +23369,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_LeaveGameRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_LeaveGameRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_LeaveGameRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_LeaveGameRequest_fieldAccessorTable;
     }
     
     private void initFields() {
@@ -20130,12 +23497,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_LeaveGameRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_LeaveGameRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_LeaveGameRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_LeaveGameRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.LeaveGameRequest.newBuilder()
@@ -20244,7 +23611,7 @@ public final class Contracts {
       }
       
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.LeaveGameRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.LeaveGameRequest)
     }
     
     static {
@@ -20252,7 +23619,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.LeaveGameRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.LeaveGameRequest)
   }
   
   public interface StartGameRequestOrBuilder
@@ -20278,12 +23645,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameRequest_fieldAccessorTable;
     }
     
     private void initFields() {
@@ -20406,12 +23773,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.StartGameRequest.newBuilder()
@@ -20520,7 +23887,7 @@ public final class Contracts {
       }
       
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.StartGameRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.StartGameRequest)
     }
     
     static {
@@ -20528,13 +23895,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.StartGameRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.StartGameRequest)
   }
   
   public interface StartGameResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -20558,16 +23925,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -20709,12 +24076,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_StartGameResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_StartGameResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.StartGameResponse.newBuilder()
@@ -20851,7 +24218,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -20875,7 +24242,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.StartGameResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.StartGameResponse)
     }
     
     static {
@@ -20883,13 +24250,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.StartGameResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.StartGameResponse)
   }
   
   public interface GameStartedEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Color Color = 1;
+    // required .Chess.Contracts.Color Color = 1;
     boolean hasColor();
     com.richardpianka.chess.network.Contracts.Color getColor();
   }
@@ -20913,16 +24280,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStartedEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStartedEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStartedEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStartedEvent_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Color Color = 1;
+    // required .Chess.Contracts.Color Color = 1;
     public static final int COLOR_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Color color_;
     public boolean hasColor() {
@@ -21064,12 +24431,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStartedEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStartedEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStartedEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStartedEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.GameStartedEvent.newBuilder()
@@ -21206,7 +24573,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Color Color = 1;
+      // required .Chess.Contracts.Color Color = 1;
       private com.richardpianka.chess.network.Contracts.Color color_ = com.richardpianka.chess.network.Contracts.Color.White;
       public boolean hasColor() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -21230,7 +24597,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.GameStartedEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.GameStartedEvent)
     }
     
     static {
@@ -21238,13 +24605,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.GameStartedEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.GameStartedEvent)
   }
   
   public interface MovePieceRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Move Move = 1;
+    // required .Chess.Contracts.Move Move = 1;
     boolean hasMove();
     com.richardpianka.chess.network.Contracts.Move getMove();
     com.richardpianka.chess.network.Contracts.MoveOrBuilder getMoveOrBuilder();
@@ -21269,16 +24636,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Move Move = 1;
+    // required .Chess.Contracts.Move Move = 1;
     public static final int MOVE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Move move_;
     public boolean hasMove() {
@@ -21427,12 +24794,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.MovePieceRequest.newBuilder()
@@ -21580,7 +24947,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Move Move = 1;
+      // required .Chess.Contracts.Move Move = 1;
       private com.richardpianka.chess.network.Contracts.Move move_ = com.richardpianka.chess.network.Contracts.Move.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Move, com.richardpianka.chess.network.Contracts.Move.Builder, com.richardpianka.chess.network.Contracts.MoveOrBuilder> moveBuilder_;
@@ -21670,7 +25037,7 @@ public final class Contracts {
         return moveBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.MovePieceRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.MovePieceRequest)
     }
     
     static {
@@ -21678,13 +25045,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.MovePieceRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.MovePieceRequest)
   }
   
   public interface MovePieceResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -21708,16 +25075,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -21859,12 +25226,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.MovePieceResponse.newBuilder()
@@ -22001,7 +25368,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -22025,7 +25392,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.MovePieceResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.MovePieceResponse)
     }
     
     static {
@@ -22033,13 +25400,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.MovePieceResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.MovePieceResponse)
   }
   
   public interface MovePieceEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Move Move = 1;
+    // required .Chess.Contracts.Move Move = 1;
     boolean hasMove();
     com.richardpianka.chess.network.Contracts.Move getMove();
     com.richardpianka.chess.network.Contracts.MoveOrBuilder getMoveOrBuilder();
@@ -22064,16 +25431,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceEvent_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Move Move = 1;
+    // required .Chess.Contracts.Move Move = 1;
     public static final int MOVE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Move move_;
     public boolean hasMove() {
@@ -22222,12 +25589,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_MovePieceEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_MovePieceEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.MovePieceEvent.newBuilder()
@@ -22375,7 +25742,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Move Move = 1;
+      // required .Chess.Contracts.Move Move = 1;
       private com.richardpianka.chess.network.Contracts.Move move_ = com.richardpianka.chess.network.Contracts.Move.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Move, com.richardpianka.chess.network.Contracts.Move.Builder, com.richardpianka.chess.network.Contracts.MoveOrBuilder> moveBuilder_;
@@ -22465,7 +25832,7 @@ public final class Contracts {
         return moveBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.MovePieceEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.MovePieceEvent)
     }
     
     static {
@@ -22473,13 +25840,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.MovePieceEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.MovePieceEvent)
   }
   
   public interface SpecialMovePieceRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.SpecialMove Move = 1;
+    // required .Chess.Contracts.SpecialMove Move = 1;
     boolean hasMove();
     com.richardpianka.chess.network.Contracts.SpecialMove getMove();
     com.richardpianka.chess.network.Contracts.SpecialMoveOrBuilder getMoveOrBuilder();
@@ -22504,16 +25871,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceRequest_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceRequest_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.SpecialMove Move = 1;
+    // required .Chess.Contracts.SpecialMove Move = 1;
     public static final int MOVE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.SpecialMove move_;
     public boolean hasMove() {
@@ -22662,12 +26029,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceRequest_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceRequest_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.newBuilder()
@@ -22815,7 +26182,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.SpecialMove Move = 1;
+      // required .Chess.Contracts.SpecialMove Move = 1;
       private com.richardpianka.chess.network.Contracts.SpecialMove move_ = com.richardpianka.chess.network.Contracts.SpecialMove.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.SpecialMove, com.richardpianka.chess.network.Contracts.SpecialMove.Builder, com.richardpianka.chess.network.Contracts.SpecialMoveOrBuilder> moveBuilder_;
@@ -22905,7 +26272,7 @@ public final class Contracts {
         return moveBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.SpecialMovePieceRequest)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.SpecialMovePieceRequest)
     }
     
     static {
@@ -22913,13 +26280,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.SpecialMovePieceRequest)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.SpecialMovePieceRequest)
   }
   
   public interface SpecialMovePieceResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     boolean hasResult();
     com.richardpianka.chess.network.Contracts.Result getResult();
   }
@@ -22943,16 +26310,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceResponse_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceResponse_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.Result Result = 1;
+    // required .Chess.Contracts.Result Result = 1;
     public static final int RESULT_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.Result result_;
     public boolean hasResult() {
@@ -23094,12 +26461,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceResponse_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceResponse_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.newBuilder()
@@ -23236,7 +26603,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.Result Result = 1;
+      // required .Chess.Contracts.Result Result = 1;
       private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
       public boolean hasResult() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -23260,7 +26627,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.SpecialMovePieceResponse)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.SpecialMovePieceResponse)
     }
     
     static {
@@ -23268,13 +26635,13 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.SpecialMovePieceResponse)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.SpecialMovePieceResponse)
   }
   
   public interface SpecialMovePieceEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .com.richardpianka.chess.network.SpecialMove Move = 1;
+    // required .Chess.Contracts.SpecialMove Move = 1;
     boolean hasMove();
     com.richardpianka.chess.network.Contracts.SpecialMove getMove();
     com.richardpianka.chess.network.Contracts.SpecialMoveOrBuilder getMoveOrBuilder();
@@ -23299,16 +26666,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceEvent_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .com.richardpianka.chess.network.SpecialMove Move = 1;
+    // required .Chess.Contracts.SpecialMove Move = 1;
     public static final int MOVE_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.SpecialMove move_;
     public boolean hasMove() {
@@ -23457,12 +26824,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_SpecialMovePieceEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.newBuilder()
@@ -23610,7 +26977,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // required .com.richardpianka.chess.network.SpecialMove Move = 1;
+      // required .Chess.Contracts.SpecialMove Move = 1;
       private com.richardpianka.chess.network.Contracts.SpecialMove move_ = com.richardpianka.chess.network.Contracts.SpecialMove.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.SpecialMove, com.richardpianka.chess.network.Contracts.SpecialMove.Builder, com.richardpianka.chess.network.Contracts.SpecialMoveOrBuilder> moveBuilder_;
@@ -23700,7 +27067,7 @@ public final class Contracts {
         return moveBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.SpecialMovePieceEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.SpecialMovePieceEvent)
     }
     
     static {
@@ -23708,17 +27075,17 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.SpecialMovePieceEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.SpecialMovePieceEvent)
   }
   
   public interface GameStatusEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // optional .com.richardpianka.chess.network.GameStatus Status = 1;
+    // optional .Chess.Contracts.GameStatus Status = 1;
     boolean hasStatus();
     com.richardpianka.chess.network.Contracts.GameStatus getStatus();
     
-    // optional .com.richardpianka.chess.network.User User = 2;
+    // optional .Chess.Contracts.User User = 2;
     boolean hasUser();
     com.richardpianka.chess.network.Contracts.User getUser();
     com.richardpianka.chess.network.Contracts.UserOrBuilder getUserOrBuilder();
@@ -23743,16 +27110,16 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStatusEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStatusEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStatusEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStatusEvent_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // optional .com.richardpianka.chess.network.GameStatus Status = 1;
+    // optional .Chess.Contracts.GameStatus Status = 1;
     public static final int STATUS_FIELD_NUMBER = 1;
     private com.richardpianka.chess.network.Contracts.GameStatus status_;
     public boolean hasStatus() {
@@ -23762,7 +27129,7 @@ public final class Contracts {
       return status_;
     }
     
-    // optional .com.richardpianka.chess.network.User User = 2;
+    // optional .Chess.Contracts.User User = 2;
     public static final int USER_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.User user_;
     public boolean hasUser() {
@@ -23917,12 +27284,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStatusEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStatusEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_GameStatusEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_GameStatusEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.GameStatusEvent.newBuilder()
@@ -24088,7 +27455,7 @@ public final class Contracts {
       
       private int bitField0_;
       
-      // optional .com.richardpianka.chess.network.GameStatus Status = 1;
+      // optional .Chess.Contracts.GameStatus Status = 1;
       private com.richardpianka.chess.network.Contracts.GameStatus status_ = com.richardpianka.chess.network.Contracts.GameStatus.Play;
       public boolean hasStatus() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -24112,7 +27479,7 @@ public final class Contracts {
         return this;
       }
       
-      // optional .com.richardpianka.chess.network.User User = 2;
+      // optional .Chess.Contracts.User User = 2;
       private com.richardpianka.chess.network.Contracts.User user_ = com.richardpianka.chess.network.Contracts.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.User, com.richardpianka.chess.network.Contracts.User.Builder, com.richardpianka.chess.network.Contracts.UserOrBuilder> userBuilder_;
@@ -24202,7 +27569,7 @@ public final class Contracts {
         return userBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.GameStatusEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.GameStatusEvent)
     }
     
     static {
@@ -24210,7 +27577,7 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.GameStatusEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.GameStatusEvent)
   }
   
   public interface TimeLeftEventOrBuilder
@@ -24244,12 +27611,12 @@ public final class Contracts {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_TimeLeftEvent_descriptor;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_TimeLeftEvent_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_TimeLeftEvent_fieldAccessorTable;
+      return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_TimeLeftEvent_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -24417,12 +27784,12 @@ public final class Contracts {
        implements com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_TimeLeftEvent_descriptor;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_TimeLeftEvent_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_TimeLeftEvent_fieldAccessorTable;
+        return com.richardpianka.chess.network.Contracts.internal_static_Chess_Contracts_TimeLeftEvent_fieldAccessorTable;
       }
       
       // Construct using com.richardpianka.chess.network.Contracts.TimeLeftEvent.newBuilder()
@@ -24613,7 +27980,7 @@ public final class Contracts {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.TimeLeftEvent)
+      // @@protoc_insertion_point(builder_scope:Chess.Contracts.TimeLeftEvent)
     }
     
     static {
@@ -24621,244 +27988,244 @@ public final class Contracts {
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.TimeLeftEvent)
+    // @@protoc_insertion_point(class_scope:Chess.Contracts.TimeLeftEvent)
   }
   
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Envelope_descriptor;
+    internal_static_Chess_Contracts_Envelope_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Envelope_fieldAccessorTable;
+      internal_static_Chess_Contracts_Envelope_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Coordinate_descriptor;
+    internal_static_Chess_Contracts_Coordinate_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Coordinate_fieldAccessorTable;
+      internal_static_Chess_Contracts_Coordinate_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Piece_descriptor;
+    internal_static_Chess_Contracts_Piece_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Piece_fieldAccessorTable;
+      internal_static_Chess_Contracts_Piece_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Move_descriptor;
+    internal_static_Chess_Contracts_Move_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Move_fieldAccessorTable;
+      internal_static_Chess_Contracts_Move_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_SpecialMove_descriptor;
+    internal_static_Chess_Contracts_SpecialMove_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_SpecialMove_fieldAccessorTable;
+      internal_static_Chess_Contracts_SpecialMove_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Castle_descriptor;
+    internal_static_Chess_Contracts_Castle_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Castle_fieldAccessorTable;
+      internal_static_Chess_Contracts_Castle_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Version_descriptor;
+    internal_static_Chess_Contracts_Version_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Version_fieldAccessorTable;
+      internal_static_Chess_Contracts_Version_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Room_descriptor;
+    internal_static_Chess_Contracts_Room_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Room_fieldAccessorTable;
+      internal_static_Chess_Contracts_Room_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Record_descriptor;
+    internal_static_Chess_Contracts_Record_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Record_fieldAccessorTable;
+      internal_static_Chess_Contracts_Record_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_User_descriptor;
+    internal_static_Chess_Contracts_User_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_User_fieldAccessorTable;
+      internal_static_Chess_Contracts_User_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_Game_descriptor;
+    internal_static_Chess_Contracts_Game_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_Game_fieldAccessorTable;
+      internal_static_Chess_Contracts_Game_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_GameMetadata_descriptor;
+    internal_static_Chess_Contracts_GameMetadata_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_GameMetadata_fieldAccessorTable;
+      internal_static_Chess_Contracts_GameMetadata_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_UserTime_descriptor;
+    internal_static_Chess_Contracts_UserTime_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_UserTime_fieldAccessorTable;
+      internal_static_Chess_Contracts_UserTime_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_HandshakeRequest_descriptor;
+    internal_static_Chess_Contracts_HandshakeRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_HandshakeRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_HandshakeRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_HandshakeResponse_descriptor;
+    internal_static_Chess_Contracts_HandshakeResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_HandshakeResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_HandshakeResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_IdentifyRequest_descriptor;
+    internal_static_Chess_Contracts_IdentifyRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_IdentifyRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_IdentifyRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_IdentifyResponse_descriptor;
+    internal_static_Chess_Contracts_IdentifyResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_IdentifyResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_IdentifyResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor;
+    internal_static_Chess_Contracts_JoinChatRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_JoinChatRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_JoinChatRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_JoinChatResponse_descriptor;
+    internal_static_Chess_Contracts_JoinChatResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_JoinChatResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_JoinChatResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_RoomListRequest_descriptor;
+    internal_static_Chess_Contracts_RoomListRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_RoomListRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_RoomListRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_RoomListResponse_descriptor;
+    internal_static_Chess_Contracts_RoomListResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_RoomListResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_RoomListResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_JoinRoomRequest_descriptor;
+    internal_static_Chess_Contracts_JoinRoomRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_JoinRoomRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_JoinRoomRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_JoinRoomResponse_descriptor;
+    internal_static_Chess_Contracts_JoinRoomResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_JoinRoomResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_JoinRoomResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_SpeakRequest_descriptor;
+    internal_static_Chess_Contracts_SpeakRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_SpeakRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_SpeakRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_OperatorRequest_descriptor;
+    internal_static_Chess_Contracts_OperatorRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_OperatorRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_OperatorRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_OperatorResponse_descriptor;
+    internal_static_Chess_Contracts_OperatorResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_OperatorResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_OperatorResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_ChatRoomEvent_descriptor;
+    internal_static_Chess_Contracts_ChatRoomEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_ChatRoomEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_ChatRoomEvent_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_ChatUserEvent_descriptor;
+    internal_static_Chess_Contracts_ChatUserEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_ChatUserEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_ChatUserEvent_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_ChatSpeakEvent_descriptor;
+    internal_static_Chess_Contracts_ChatSpeakEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_ChatSpeakEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_ChatSpeakEvent_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_GameListRequest_descriptor;
+    internal_static_Chess_Contracts_GameListRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_GameListRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_GameListRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_GameListResponse_descriptor;
+    internal_static_Chess_Contracts_GameListResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_GameListResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_GameListResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_CreateGameRequest_descriptor;
+    internal_static_Chess_Contracts_CreateGameRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_CreateGameRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_CreateGameRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_CreateGameResponse_descriptor;
+    internal_static_Chess_Contracts_CreateGameResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_CreateGameResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_CreateGameResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_JoinGameRequest_descriptor;
+    internal_static_Chess_Contracts_JoinGameRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_JoinGameRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_JoinGameRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_JoinGameResponse_descriptor;
+    internal_static_Chess_Contracts_JoinGameResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_JoinGameResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_JoinGameResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_LeaveGameRequest_descriptor;
+    internal_static_Chess_Contracts_LeaveGameRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_LeaveGameRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_LeaveGameRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_StartGameRequest_descriptor;
+    internal_static_Chess_Contracts_StartGameRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_StartGameRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_StartGameRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_StartGameResponse_descriptor;
+    internal_static_Chess_Contracts_StartGameResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_StartGameResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_StartGameResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_GameStartedEvent_descriptor;
+    internal_static_Chess_Contracts_GameStartedEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_GameStartedEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_GameStartedEvent_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_MovePieceRequest_descriptor;
+    internal_static_Chess_Contracts_MovePieceRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_MovePieceRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_MovePieceRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_MovePieceResponse_descriptor;
+    internal_static_Chess_Contracts_MovePieceResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_MovePieceResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_MovePieceResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_MovePieceEvent_descriptor;
+    internal_static_Chess_Contracts_MovePieceEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_MovePieceEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_MovePieceEvent_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_descriptor;
+    internal_static_Chess_Contracts_SpecialMovePieceRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_fieldAccessorTable;
+      internal_static_Chess_Contracts_SpecialMovePieceRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_descriptor;
+    internal_static_Chess_Contracts_SpecialMovePieceResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_fieldAccessorTable;
+      internal_static_Chess_Contracts_SpecialMovePieceResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_descriptor;
+    internal_static_Chess_Contracts_SpecialMovePieceEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_SpecialMovePieceEvent_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_GameStatusEvent_descriptor;
+    internal_static_Chess_Contracts_GameStatusEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_GameStatusEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_GameStatusEvent_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_richardpianka_chess_network_TimeLeftEvent_descriptor;
+    internal_static_Chess_Contracts_TimeLeftEvent_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_com_richardpianka_chess_network_TimeLeftEvent_fieldAccessorTable;
+      internal_static_Chess_Contracts_TimeLeftEvent_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -24868,548 +28235,550 @@ public final class Contracts {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036protobuf/chess/contracts.proto\022\037com.ri" +
-      "chardpianka.chess.network\032$protobuf/goog" +
-      "le/csharp_options.proto\"\212\007\n\010Envelope\022K\n\020" +
-      "HandshakeRequest\030\001 \001(\01321.com.richardpian" +
-      "ka.chess.network.HandshakeRequest\022M\n\021Han" +
-      "dshakeResponse\030\002 \001(\01322.com.richardpianka" +
-      ".chess.network.HandshakeResponse\022I\n\017Iden" +
-      "tifyRequest\030\003 \001(\01320.com.richardpianka.ch" +
-      "ess.network.IdentifyRequest\022K\n\020IdentifyR" +
-      "esponse\030\004 \001(\01321.com.richardpianka.chess.",
-      "network.IdentifyResponse\022I\n\017JoinChatRequ" +
-      "est\030\005 \001(\01320.com.richardpianka.chess.netw" +
-      "ork.JoinChatRequest\022K\n\020JoinChatResponse\030" +
-      "\006 \001(\01321.com.richardpianka.chess.network." +
-      "JoinChatResponse\022I\n\017JoinRoomRequest\030\007 \001(" +
-      "\01320.com.richardpianka.chess.network.Join" +
-      "RoomRequest\022K\n\020JoinRoomResponse\030\010 \001(\01321." +
-      "com.richardpianka.chess.network.JoinRoom" +
-      "Response\022C\n\014SpeakRequest\030\t \001(\0132-.com.ric" +
-      "hardpianka.chess.network.SpeakRequest\022E\n",
-      "\rChatRoomEvent\030\n \001(\0132..com.richardpianka" +
-      ".chess.network.ChatRoomEvent\022E\n\rChatUser" +
-      "Event\030\013 \001(\0132..com.richardpianka.chess.ne" +
-      "twork.ChatUserEvent\022G\n\016ChatSpeakEvent\030\014 " +
-      "\001(\0132/.com.richardpianka.chess.network.Ch" +
-      "atSpeakEvent\"v\n\nCoordinate\0223\n\004File\030\001 \002(\016" +
-      "2%.com.richardpianka.chess.network.File\022" +
-      "3\n\004Rank\030\002 \002(\0162%.com.richardpianka.chess." +
-      "network.Rank\"\213\001\n\005Piece\0225\n\005Color\030\001 \002(\0162&." +
-      "com.richardpianka.chess.network.Color\022;\n",
-      "\010Figurine\030\002 \002(\0162).com.richardpianka.ches" +
-      "s.network.Figurine\022\016\n\006Number\030\003 \002(\r\"\263\001\n\004M" +
-      "ove\0225\n\005Piece\030\001 \002(\0132&.com.richardpianka.c" +
-      "hess.network.Piece\022:\n\005Start\030\002 \002(\0132+.com." +
-      "richardpianka.chess.network.Coordinate\0228" +
-      "\n\003End\030\003 \002(\0132+.com.richardpianka.chess.ne" +
-      "twork.Coordinate\"F\n\013SpecialMove\0227\n\006Castl" +
-      "e\030\001 \001(\0132\'.com.richardpianka.chess.networ" +
-      "k.Castle\"t\n\006Castle\0224\n\004Rook\030\001 \002(\0132&.com.r" +
-      "ichardpianka.chess.network.Piece\0224\n\004King",
-      "\030\002 \002(\0132&.com.richardpianka.chess.network" +
-      ".Piece\"W\n\007Version\022\027\n\014VersionMajor\030\001 \001(\r:" +
-      "\0011\022\027\n\014VersionMinor\030\002 \001(\r:\0010\022\032\n\017VersionRe" +
-      "vision\030\003 \001(\r:\0010\"O\n\004Room\022\014\n\004Name\030\001 \002(\t\0229\n" +
-      "\005Flags\030\002 \002(\0162*.com.richardpianka.chess.n" +
-      "etwork.RoomFlags\"O\n\006Record\022\014\n\004Wins\030\001 \002(\r" +
-      "\022\016\n\006Losses\030\002 \002(\r\022\022\n\nStalemates\030\003 \002(\r\022\023\n\013" +
-      "Disconnects\030\004 \002(\r\"\210\001\n\004User\022\014\n\004Name\030\001 \002(\t" +
-      "\0229\n\005Flags\030\002 \002(\0162*.com.richardpianka.ches" +
-      "s.network.UserFlags\0227\n\006Record\030\003 \002(\0132\'.co",
-      "m.richardpianka.chess.network.Record\"x\n\004" +
-      "Game\022\014\n\004Name\030\001 \002(\t\022\020\n\010Password\030\002 \001(\t\022\017\n\007" +
-      "Private\030\003 \002(\010\022?\n\010MetaData\030\004 \001(\0132-.com.ri" +
-      "chardpianka.chess.network.GameMetadata\"\272" +
-      "\001\n\014GameMetadata\0226\n\007Created\030\001 \001(\0132%.com.r" +
-      "ichardpianka.chess.network.User\0225\n\006Joine" +
-      "d\030\002 \001(\0132%.com.richardpianka.chess.networ" +
-      "k.User\022;\n\010UserTime\030\003 \001(\0132).com.richardpi" +
-      "anka.chess.network.UserTime\"1\n\010UserTime\022" +
-      "\r\n\005Timed\030\001 \002(\010\022\026\n\016SecondsPerUser\030\002 \002(\r\"M",
-      "\n\020HandshakeRequest\0229\n\007Version\030\001 \002(\0132(.co" +
-      "m.richardpianka.chess.network.Version\"L\n" +
-      "\021HandshakeResponse\0227\n\006Result\030\001 \002(\0162\'.com" +
-      ".richardpianka.chess.network.Result\"5\n\017I" +
-      "dentifyRequest\022\020\n\010Username\030\001 \002(\t\022\020\n\010Pass" +
-      "word\030\002 \001(\t\"\\\n\020IdentifyResponse\0227\n\006Result" +
-      "\030\001 \002(\0162\'.com.richardpianka.chess.network" +
-      ".Result\022\017\n\007Message\030\002 \001(\t\"\021\n\017JoinChatRequ" +
-      "est\"K\n\020JoinChatResponse\0227\n\006Result\030\001 \002(\0162" +
-      "\'.com.richardpianka.chess.network.Result",
-      "\"\021\n\017RoomListRequest\"H\n\020RoomListResponse\022" +
-      "4\n\005Rooms\030\001 \003(\0132%.com.richardpianka.chess" +
-      ".network.Room\"F\n\017JoinRoomRequest\0223\n\004Room" +
-      "\030\001 \002(\0132%.com.richardpianka.chess.network" +
-      ".Room\"K\n\020JoinRoomResponse\0227\n\006Result\030\001 \002(" +
-      "\0162\'.com.richardpianka.chess.network.Resu" +
-      "lt\"\223\001\n\014SpeakRequest\0228\n\004Mode\030\001 \002(\0162*.com." +
-      "richardpianka.chess.network.SpeakMode\022\017\n" +
-      "\007Message\030\002 \002(\t\0228\n\tRecipient\030\003 \001(\0132%.com." +
-      "richardpianka.chess.network.User\"\207\001\n\017Ope",
-      "ratorRequest\022?\n\006Action\030\001 \002(\0162/.com.richa" +
-      "rdpianka.chess.network.OperatorAction\0223\n" +
-      "\004User\030\002 \001(\0132%.com.richardpianka.chess.ne" +
-      "twork.User\"K\n\020OperatorResponse\0227\n\006Result" +
-      "\030\001 \002(\0162\'.com.richardpianka.chess.network" +
-      ".Result\"z\n\rChatRoomEvent\0223\n\004Room\030\001 \002(\0132%" +
-      ".com.richardpianka.chess.network.Room\0224\n" +
-      "\005Users\030\002 \003(\0132%.com.richardpianka.chess.n" +
-      "etwork.User\"\320\001\n\rChatUserEvent\0223\n\004User\030\001 " +
-      "\002(\0132%.com.richardpianka.chess.network.Us",
-      "er\022I\n\006Status\030\002 \002(\01629.com.richardpianka.c" +
-      "hess.network.ChatUserEvent.UserStatus\022\017\n" +
-      "\007Message\030\003 \001(\t\".\n\nUserStatus\022\n\n\006Joined\020\000" +
-      "\022\010\n\004Left\020\001\022\n\n\006Update\020\002\"\220\001\n\016ChatSpeakEven" +
-      "t\0223\n\004User\030\001 \002(\0132%.com.richardpianka.ches" +
-      "s.network.User\022\017\n\007Message\030\002 \002(\t\0228\n\004Mode\030" +
-      "\003 \002(\0162*.com.richardpianka.chess.network." +
-      "SpeakMode\"\021\n\017GameListRequest\"H\n\020GameList" +
-      "Response\0224\n\005Games\030\001 \003(\0132%.com.richardpia" +
-      "nka.chess.network.Game\"3\n\021CreateGameRequ",
-      "est\022\014\n\004Name\030\001 \002(\t\022\020\n\010Password\030\002 \001(\t\"\223\001\n\022" +
-      "CreateGameResponse\0227\n\006Result\030\001 \002(\0162\'.com" +
-      ".richardpianka.chess.network.Result\0223\n\004G" +
-      "ame\030\002 \001(\0132%.com.richardpianka.chess.netw" +
-      "ork.Game\022\017\n\007Message\030\003 \001(\t\"X\n\017JoinGameReq" +
-      "uest\0223\n\004Game\030\001 \002(\0132%.com.richardpianka.c" +
-      "hess.network.Game\022\020\n\010Password\030\002 \001(\t\"\200\001\n\020" +
-      "JoinGameResponse\0223\n\004Game\030\001 \002(\0132%.com.ric" +
-      "hardpianka.chess.network.Game\0227\n\006Result\030" +
-      "\002 \002(\0162\'.com.richardpianka.chess.network.",
-      "Result\"\022\n\020LeaveGameRequest\"\022\n\020StartGameR" +
-      "equest\"L\n\021StartGameResponse\0227\n\006Result\030\001 " +
-      "\002(\0162\'.com.richardpianka.chess.network.Re" +
-      "sult\"I\n\020GameStartedEvent\0225\n\005Color\030\001 \002(\0162" +
-      "&.com.richardpianka.chess.network.Color\"" +
-      "G\n\020MovePieceRequest\0223\n\004Move\030\001 \002(\0132%.com." +
-      "richardpianka.chess.network.Move\"L\n\021Move" +
-      "PieceResponse\0227\n\006Result\030\001 \002(\0162\'.com.rich" +
-      "ardpianka.chess.network.Result\"E\n\016MovePi" +
-      "eceEvent\0223\n\004Move\030\001 \002(\0132%.com.richardpian",
-      "ka.chess.network.Move\"U\n\027SpecialMovePiec" +
-      "eRequest\022:\n\004Move\030\001 \002(\0132,.com.richardpian" +
-      "ka.chess.network.SpecialMove\"S\n\030SpecialM" +
-      "ovePieceResponse\0227\n\006Result\030\001 \002(\0162\'.com.r" +
-      "ichardpianka.chess.network.Result\"S\n\025Spe" +
-      "cialMovePieceEvent\022:\n\004Move\030\001 \002(\0132,.com.r" +
-      "ichardpianka.chess.network.SpecialMove\"\203" +
-      "\001\n\017GameStatusEvent\022;\n\006Status\030\001 \001(\0162+.com" +
-      ".richardpianka.chess.network.GameStatus\022" +
-      "3\n\004User\030\002 \001(\0132%.com.richardpianka.chess.",
-      "network.User\";\n\rTimeLeftEvent\022\024\n\014WhiteSe" +
-      "conds\030\001 \002(\r\022\024\n\014BlackSeconds\030\002 \002(\r*\035\n\005Col" +
-      "or\022\t\n\005White\020\000\022\t\n\005Black\020\001*K\n\010Figurine\022\010\n\004" +
-      "King\020\000\022\t\n\005Queen\020\001\022\n\n\006Bishop\020\002\022\n\n\006Knight\020" +
-      "\003\022\010\n\004Rook\020\004\022\010\n\004Pawn\020\005*F\n\004Rank\022\006\n\002_1\020\000\022\006\n" +
-      "\002_2\020\001\022\006\n\002_3\020\002\022\006\n\002_4\020\003\022\006\n\002_5\020\004\022\006\n\002_6\020\005\022\006\n" +
-      "\002_7\020\006\022\006\n\002_8\020\007*F\n\004File\022\006\n\002_A\020\000\022\006\n\002_B\020\001\022\006\n" +
-      "\002_C\020\002\022\006\n\002_D\020\003\022\006\n\002_E\020\004\022\006\n\002_F\020\005\022\006\n\002_G\020\006\022\006\n" +
-      "\002_H\020\007*\"\n\006Result\022\013\n\007Success\020\000\022\013\n\007Failure\020" +
-      "\001*4\n\tRoomFlags\022\n\n\006Public\020\000\022\013\n\007Private\020\001\022",
-      "\016\n\nRestricted\020\002*4\n\tUserFlags\022\016\n\nPedestri" +
-      "an\020\000\022\014\n\010Operator\020\001\022\t\n\005Admin\020\002*/\n\tSpeakMo" +
-      "de\022\n\n\006Normal\020\000\022\013\n\007Whisper\020\001\022\t\n\005Emote\020\002*>" +
-      "\n\016OperatorAction\022\r\n\tDesignate\020\000\022\n\n\006Resig" +
-      "n\020\001\022\010\n\004Kick\020\002\022\007\n\003Ban\020\003*K\n\nGameStatus\022\010\n\004" +
-      "Play\020\000\022\n\n\006Paused\020\001\022\013\n\007Victory\020\002\022\013\n\007Forfe" +
-      "it\020\003\022\r\n\tStalemate\020\004BT\n\037com.richardpianka" +
-      ".chess.networkB\tContracts\302>\021\n\017Chess.Cont" +
-      "racts\302>\013\022\tContracts\302>\003\200\016\001"
+      "\n\036protobuf/chess/contracts.proto\022\017Chess." +
+      "Contracts\"\246\020\n\010Envelope\022;\n\020HandshakeReque" +
+      "st\030\001 \001(\0132!.Chess.Contracts.HandshakeRequ" +
+      "est\022=\n\021HandshakeResponse\030\002 \001(\0132\".Chess.C" +
+      "ontracts.HandshakeResponse\0229\n\017IdentifyRe" +
+      "quest\030\003 \001(\0132 .Chess.Contracts.IdentifyRe" +
+      "quest\022;\n\020IdentifyResponse\030\004 \001(\0132!.Chess." +
+      "Contracts.IdentifyResponse\0229\n\017JoinChatRe" +
+      "quest\030\005 \001(\0132 .Chess.Contracts.JoinChatRe" +
+      "quest\022;\n\020JoinChatResponse\030\006 \001(\0132!.Chess.",
+      "Contracts.JoinChatResponse\0229\n\017RoomListRe" +
+      "quest\030\007 \001(\0132 .Chess.Contracts.RoomListRe" +
+      "quest\022;\n\020RoomListResponse\030\010 \001(\0132!.Chess." +
+      "Contracts.RoomListResponse\0229\n\017JoinRoomRe" +
+      "quest\030\t \001(\0132 .Chess.Contracts.JoinRoomRe" +
+      "quest\022;\n\020JoinRoomResponse\030\n \001(\0132!.Chess." +
+      "Contracts.JoinRoomResponse\0223\n\014SpeakReque" +
+      "st\030\013 \001(\0132\035.Chess.Contracts.SpeakRequest\022" +
+      "9\n\017OperatorRequest\030\014 \001(\0132 .Chess.Contrac" +
+      "ts.OperatorRequest\022;\n\020OperatorResponse\030\r",
+      " \001(\0132!.Chess.Contracts.OperatorResponse\022" +
+      "5\n\rChatRoomEvent\030\016 \001(\0132\036.Chess.Contracts" +
+      ".ChatRoomEvent\0225\n\rChatUserEvent\030\017 \001(\0132\036." +
+      "Chess.Contracts.ChatUserEvent\0227\n\016ChatSpe" +
+      "akEvent\030\020 \001(\0132\037.Chess.Contracts.ChatSpea" +
+      "kEvent\0229\n\017GameListRequest\030\021 \001(\0132 .Chess." +
+      "Contracts.GameListRequest\022;\n\020GameListRes" +
+      "ponse\030\022 \001(\0132!.Chess.Contracts.GameListRe" +
+      "sponse\022=\n\021CreateGameRequest\030\023 \001(\0132\".Ches" +
+      "s.Contracts.CreateGameRequest\022?\n\022CreateG",
+      "ameResponse\030\024 \001(\0132#.Chess.Contracts.Crea" +
+      "teGameResponse\0229\n\017JoinGameRequest\030\025 \001(\0132" +
+      " .Chess.Contracts.JoinGameRequest\022;\n\020Joi" +
+      "nGameResponse\030\026 \001(\0132!.Chess.Contracts.Jo" +
+      "inGameResponse\022;\n\020LeaveGameRequest\030\027 \001(\013" +
+      "2!.Chess.Contracts.LeaveGameRequest\022;\n\020S" +
+      "tartGameRequest\030\030 \001(\0132!.Chess.Contracts." +
+      "StartGameRequest\022=\n\021StartGameResponse\030\031 " +
+      "\001(\0132\".Chess.Contracts.StartGameResponse\022" +
+      ";\n\020GameStartedEvent\030\032 \001(\0132!.Chess.Contra",
+      "cts.GameStartedEvent\022;\n\020MovePieceRequest" +
+      "\030\033 \001(\0132!.Chess.Contracts.MovePieceReques" +
+      "t\022=\n\021MovePieceResponse\030\034 \001(\0132\".Chess.Con" +
+      "tracts.MovePieceResponse\0227\n\016MovePieceEve" +
+      "nt\030\035 \001(\0132\037.Chess.Contracts.MovePieceEven" +
+      "t\022I\n\027SpecialMovePieceRequest\030\036 \001(\0132(.Che" +
+      "ss.Contracts.SpecialMovePieceRequest\022K\n\030" +
+      "SpecialMovePieceResponse\030\037 \001(\0132).Chess.C" +
+      "ontracts.SpecialMovePieceResponse\022E\n\025Spe" +
+      "cialMovePieceEvent\030  \001(\0132&.Chess.Contrac",
+      "ts.SpecialMovePieceEvent\0229\n\017GameStatusEv" +
+      "ent\030\" \001(\0132 .Chess.Contracts.GameStatusEv" +
+      "ent\0225\n\rTimeLeftEvent\030# \001(\0132\036.Chess.Contr" +
+      "acts.TimeLeftEvent\"V\n\nCoordinate\022#\n\004File" +
+      "\030\001 \002(\0162\025.Chess.Contracts.File\022#\n\004Rank\030\002 " +
+      "\002(\0162\025.Chess.Contracts.Rank\"k\n\005Piece\022%\n\005C" +
+      "olor\030\001 \002(\0162\026.Chess.Contracts.Color\022+\n\010Fi" +
+      "gurine\030\002 \002(\0162\031.Chess.Contracts.Figurine\022" +
+      "\016\n\006Number\030\003 \002(\r\"\203\001\n\004Move\022%\n\005Piece\030\001 \002(\0132" +
+      "\026.Chess.Contracts.Piece\022*\n\005Start\030\002 \002(\0132\033",
+      ".Chess.Contracts.Coordinate\022(\n\003End\030\003 \002(\013" +
+      "2\033.Chess.Contracts.Coordinate\"6\n\013Special" +
+      "Move\022\'\n\006Castle\030\001 \001(\0132\027.Chess.Contracts.C" +
+      "astle\"T\n\006Castle\022$\n\004Rook\030\001 \002(\0132\026.Chess.Co" +
+      "ntracts.Piece\022$\n\004King\030\002 \002(\0132\026.Chess.Cont" +
+      "racts.Piece\"W\n\007Version\022\027\n\014VersionMajor\030\001" +
+      " \001(\r:\0011\022\027\n\014VersionMinor\030\002 \001(\r:\0010\022\032\n\017Vers" +
+      "ionRevision\030\003 \001(\r:\0010\"?\n\004Room\022\014\n\004Name\030\001 \002" +
+      "(\t\022)\n\005Flags\030\002 \002(\0162\032.Chess.Contracts.Room" +
+      "Flags\"O\n\006Record\022\014\n\004Wins\030\001 \002(\r\022\016\n\006Losses\030",
+      "\002 \002(\r\022\022\n\nStalemates\030\003 \002(\r\022\023\n\013Disconnects" +
+      "\030\004 \002(\r\"h\n\004User\022\014\n\004Name\030\001 \002(\t\022)\n\005Flags\030\002 " +
+      "\002(\0162\032.Chess.Contracts.UserFlags\022\'\n\006Recor" +
+      "d\030\003 \002(\0132\027.Chess.Contracts.Record\"h\n\004Game" +
+      "\022\014\n\004Name\030\001 \002(\t\022\020\n\010Password\030\002 \001(\t\022\017\n\007Priv" +
+      "ate\030\003 \002(\010\022/\n\010MetaData\030\004 \001(\0132\035.Chess.Cont" +
+      "racts.GameMetadata\"\212\001\n\014GameMetadata\022&\n\007C" +
+      "reated\030\001 \001(\0132\025.Chess.Contracts.User\022%\n\006J" +
+      "oined\030\002 \001(\0132\025.Chess.Contracts.User\022+\n\010Us" +
+      "erTime\030\003 \001(\0132\031.Chess.Contracts.UserTime\"",
+      "1\n\010UserTime\022\r\n\005Timed\030\001 \002(\010\022\026\n\016SecondsPer" +
+      "User\030\002 \002(\r\"=\n\020HandshakeRequest\022)\n\007Versio" +
+      "n\030\001 \002(\0132\030.Chess.Contracts.Version\"<\n\021Han" +
+      "dshakeResponse\022\'\n\006Result\030\001 \002(\0162\027.Chess.C" +
+      "ontracts.Result\"5\n\017IdentifyRequest\022\020\n\010Us" +
+      "ername\030\001 \002(\t\022\020\n\010Password\030\002 \001(\t\"L\n\020Identi" +
+      "fyResponse\022\'\n\006Result\030\001 \002(\0162\027.Chess.Contr" +
+      "acts.Result\022\017\n\007Message\030\002 \001(\t\"\021\n\017JoinChat" +
+      "Request\";\n\020JoinChatResponse\022\'\n\006Result\030\001 " +
+      "\002(\0162\027.Chess.Contracts.Result\"\021\n\017RoomList",
+      "Request\"8\n\020RoomListResponse\022$\n\005Rooms\030\001 \003" +
+      "(\0132\025.Chess.Contracts.Room\"6\n\017JoinRoomReq" +
+      "uest\022#\n\004Room\030\001 \002(\0132\025.Chess.Contracts.Roo" +
+      "m\";\n\020JoinRoomResponse\022\'\n\006Result\030\001 \002(\0162\027." +
+      "Chess.Contracts.Result\"s\n\014SpeakRequest\022(" +
+      "\n\004Mode\030\001 \002(\0162\032.Chess.Contracts.SpeakMode" +
+      "\022\017\n\007Message\030\002 \002(\t\022(\n\tRecipient\030\003 \001(\0132\025.C" +
+      "hess.Contracts.User\"g\n\017OperatorRequest\022/" +
+      "\n\006Action\030\001 \002(\0162\037.Chess.Contracts.Operato" +
+      "rAction\022#\n\004User\030\002 \001(\0132\025.Chess.Contracts.",
+      "User\";\n\020OperatorResponse\022\'\n\006Result\030\001 \002(\016" +
+      "2\027.Chess.Contracts.Result\"Z\n\rChatRoomEve" +
+      "nt\022#\n\004Room\030\001 \002(\0132\025.Chess.Contracts.Room\022" +
+      "$\n\005Users\030\002 \003(\0132\025.Chess.Contracts.User\"\260\001" +
+      "\n\rChatUserEvent\022#\n\004User\030\001 \002(\0132\025.Chess.Co" +
+      "ntracts.User\0229\n\006Status\030\002 \002(\0162).Chess.Con" +
+      "tracts.ChatUserEvent.UserStatus\022\017\n\007Messa" +
+      "ge\030\003 \001(\t\".\n\nUserStatus\022\n\n\006Joined\020\000\022\010\n\004Le" +
+      "ft\020\001\022\n\n\006Update\020\002\"p\n\016ChatSpeakEvent\022#\n\004Us" +
+      "er\030\001 \002(\0132\025.Chess.Contracts.User\022\017\n\007Messa",
+      "ge\030\002 \002(\t\022(\n\004Mode\030\003 \002(\0162\032.Chess.Contracts" +
+      ".SpeakMode\"\021\n\017GameListRequest\"8\n\020GameLis" +
+      "tResponse\022$\n\005Games\030\001 \003(\0132\025.Chess.Contrac" +
+      "ts.Game\"3\n\021CreateGameRequest\022\014\n\004Name\030\001 \002" +
+      "(\t\022\020\n\010Password\030\002 \001(\t\"s\n\022CreateGameRespon" +
+      "se\022\'\n\006Result\030\001 \002(\0162\027.Chess.Contracts.Res" +
+      "ult\022#\n\004Game\030\002 \001(\0132\025.Chess.Contracts.Game" +
+      "\022\017\n\007Message\030\003 \001(\t\"H\n\017JoinGameRequest\022#\n\004" +
+      "Game\030\001 \002(\0132\025.Chess.Contracts.Game\022\020\n\010Pas" +
+      "sword\030\002 \001(\t\"`\n\020JoinGameResponse\022#\n\004Game\030",
+      "\001 \002(\0132\025.Chess.Contracts.Game\022\'\n\006Result\030\002" +
+      " \002(\0162\027.Chess.Contracts.Result\"\022\n\020LeaveGa" +
+      "meRequest\"\022\n\020StartGameRequest\"<\n\021StartGa" +
+      "meResponse\022\'\n\006Result\030\001 \002(\0162\027.Chess.Contr" +
+      "acts.Result\"9\n\020GameStartedEvent\022%\n\005Color" +
+      "\030\001 \002(\0162\026.Chess.Contracts.Color\"7\n\020MovePi" +
+      "eceRequest\022#\n\004Move\030\001 \002(\0132\025.Chess.Contrac" +
+      "ts.Move\"<\n\021MovePieceResponse\022\'\n\006Result\030\001" +
+      " \002(\0162\027.Chess.Contracts.Result\"5\n\016MovePie" +
+      "ceEvent\022#\n\004Move\030\001 \002(\0132\025.Chess.Contracts.",
+      "Move\"E\n\027SpecialMovePieceRequest\022*\n\004Move\030" +
+      "\001 \002(\0132\034.Chess.Contracts.SpecialMove\"C\n\030S" +
+      "pecialMovePieceResponse\022\'\n\006Result\030\001 \002(\0162" +
+      "\027.Chess.Contracts.Result\"C\n\025SpecialMoveP" +
+      "ieceEvent\022*\n\004Move\030\001 \002(\0132\034.Chess.Contract" +
+      "s.SpecialMove\"c\n\017GameStatusEvent\022+\n\006Stat" +
+      "us\030\001 \001(\0162\033.Chess.Contracts.GameStatus\022#\n" +
+      "\004User\030\002 \001(\0132\025.Chess.Contracts.User\";\n\rTi" +
+      "meLeftEvent\022\024\n\014WhiteSeconds\030\001 \002(\r\022\024\n\014Bla" +
+      "ckSeconds\030\002 \002(\r*\035\n\005Color\022\t\n\005White\020\000\022\t\n\005B",
+      "lack\020\001*K\n\010Figurine\022\010\n\004King\020\000\022\t\n\005Queen\020\001\022" +
+      "\n\n\006Bishop\020\002\022\n\n\006Knight\020\003\022\010\n\004Rook\020\004\022\010\n\004Paw" +
+      "n\020\005*F\n\004Rank\022\006\n\002_1\020\000\022\006\n\002_2\020\001\022\006\n\002_3\020\002\022\006\n\002_" +
+      "4\020\003\022\006\n\002_5\020\004\022\006\n\002_6\020\005\022\006\n\002_7\020\006\022\006\n\002_8\020\007*F\n\004F" +
+      "ile\022\006\n\002_A\020\000\022\006\n\002_B\020\001\022\006\n\002_C\020\002\022\006\n\002_D\020\003\022\006\n\002_" +
+      "E\020\004\022\006\n\002_F\020\005\022\006\n\002_G\020\006\022\006\n\002_H\020\007*\"\n\006Result\022\013\n" +
+      "\007Success\020\000\022\013\n\007Failure\020\001*4\n\tRoomFlags\022\n\n\006" +
+      "Public\020\000\022\013\n\007Private\020\001\022\016\n\nRestricted\020\002*4\n" +
+      "\tUserFlags\022\016\n\nPedestrian\020\000\022\014\n\010Operator\020\001" +
+      "\022\t\n\005Admin\020\002*/\n\tSpeakMode\022\n\n\006Normal\020\000\022\013\n\007",
+      "Whisper\020\001\022\t\n\005Emote\020\002*>\n\016OperatorAction\022\r" +
+      "\n\tDesignate\020\000\022\n\n\006Resign\020\001\022\010\n\004Kick\020\002\022\007\n\003B" +
+      "an\020\003*K\n\nGameStatus\022\010\n\004Play\020\000\022\n\n\006Paused\020\001" +
+      "\022\013\n\007Victory\020\002\022\013\n\007Forfeit\020\003\022\r\n\tStalemate\020" +
+      "\004B,\n\037com.richardpianka.chess.networkB\tCo" +
+      "ntracts"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
         public com.google.protobuf.ExtensionRegistry assignDescriptors(
             com.google.protobuf.Descriptors.FileDescriptor root) {
           descriptor = root;
-          internal_static_com_richardpianka_chess_network_Envelope_descriptor =
+          internal_static_Chess_Contracts_Envelope_descriptor =
             getDescriptor().getMessageTypes().get(0);
-          internal_static_com_richardpianka_chess_network_Envelope_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Envelope_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Envelope_descriptor,
-              new java.lang.String[] { "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "JoinChatRequest", "JoinChatResponse", "JoinRoomRequest", "JoinRoomResponse", "SpeakRequest", "ChatRoomEvent", "ChatUserEvent", "ChatSpeakEvent", },
+              internal_static_Chess_Contracts_Envelope_descriptor,
+              new java.lang.String[] { "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "JoinChatRequest", "JoinChatResponse", "RoomListRequest", "RoomListResponse", "JoinRoomRequest", "JoinRoomResponse", "SpeakRequest", "OperatorRequest", "OperatorResponse", "ChatRoomEvent", "ChatUserEvent", "ChatSpeakEvent", "GameListRequest", "GameListResponse", "CreateGameRequest", "CreateGameResponse", "JoinGameRequest", "JoinGameResponse", "LeaveGameRequest", "StartGameRequest", "StartGameResponse", "GameStartedEvent", "MovePieceRequest", "MovePieceResponse", "MovePieceEvent", "SpecialMovePieceRequest", "SpecialMovePieceResponse", "SpecialMovePieceEvent", "GameStatusEvent", "TimeLeftEvent", },
               com.richardpianka.chess.network.Contracts.Envelope.class,
               com.richardpianka.chess.network.Contracts.Envelope.Builder.class);
-          internal_static_com_richardpianka_chess_network_Coordinate_descriptor =
+          internal_static_Chess_Contracts_Coordinate_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_com_richardpianka_chess_network_Coordinate_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Coordinate_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Coordinate_descriptor,
+              internal_static_Chess_Contracts_Coordinate_descriptor,
               new java.lang.String[] { "File", "Rank", },
               com.richardpianka.chess.network.Contracts.Coordinate.class,
               com.richardpianka.chess.network.Contracts.Coordinate.Builder.class);
-          internal_static_com_richardpianka_chess_network_Piece_descriptor =
+          internal_static_Chess_Contracts_Piece_descriptor =
             getDescriptor().getMessageTypes().get(2);
-          internal_static_com_richardpianka_chess_network_Piece_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Piece_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Piece_descriptor,
+              internal_static_Chess_Contracts_Piece_descriptor,
               new java.lang.String[] { "Color", "Figurine", "Number", },
               com.richardpianka.chess.network.Contracts.Piece.class,
               com.richardpianka.chess.network.Contracts.Piece.Builder.class);
-          internal_static_com_richardpianka_chess_network_Move_descriptor =
+          internal_static_Chess_Contracts_Move_descriptor =
             getDescriptor().getMessageTypes().get(3);
-          internal_static_com_richardpianka_chess_network_Move_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Move_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Move_descriptor,
+              internal_static_Chess_Contracts_Move_descriptor,
               new java.lang.String[] { "Piece", "Start", "End", },
               com.richardpianka.chess.network.Contracts.Move.class,
               com.richardpianka.chess.network.Contracts.Move.Builder.class);
-          internal_static_com_richardpianka_chess_network_SpecialMove_descriptor =
+          internal_static_Chess_Contracts_SpecialMove_descriptor =
             getDescriptor().getMessageTypes().get(4);
-          internal_static_com_richardpianka_chess_network_SpecialMove_fieldAccessorTable = new
+          internal_static_Chess_Contracts_SpecialMove_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_SpecialMove_descriptor,
+              internal_static_Chess_Contracts_SpecialMove_descriptor,
               new java.lang.String[] { "Castle", },
               com.richardpianka.chess.network.Contracts.SpecialMove.class,
               com.richardpianka.chess.network.Contracts.SpecialMove.Builder.class);
-          internal_static_com_richardpianka_chess_network_Castle_descriptor =
+          internal_static_Chess_Contracts_Castle_descriptor =
             getDescriptor().getMessageTypes().get(5);
-          internal_static_com_richardpianka_chess_network_Castle_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Castle_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Castle_descriptor,
+              internal_static_Chess_Contracts_Castle_descriptor,
               new java.lang.String[] { "Rook", "King", },
               com.richardpianka.chess.network.Contracts.Castle.class,
               com.richardpianka.chess.network.Contracts.Castle.Builder.class);
-          internal_static_com_richardpianka_chess_network_Version_descriptor =
+          internal_static_Chess_Contracts_Version_descriptor =
             getDescriptor().getMessageTypes().get(6);
-          internal_static_com_richardpianka_chess_network_Version_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Version_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Version_descriptor,
+              internal_static_Chess_Contracts_Version_descriptor,
               new java.lang.String[] { "VersionMajor", "VersionMinor", "VersionRevision", },
               com.richardpianka.chess.network.Contracts.Version.class,
               com.richardpianka.chess.network.Contracts.Version.Builder.class);
-          internal_static_com_richardpianka_chess_network_Room_descriptor =
+          internal_static_Chess_Contracts_Room_descriptor =
             getDescriptor().getMessageTypes().get(7);
-          internal_static_com_richardpianka_chess_network_Room_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Room_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Room_descriptor,
+              internal_static_Chess_Contracts_Room_descriptor,
               new java.lang.String[] { "Name", "Flags", },
               com.richardpianka.chess.network.Contracts.Room.class,
               com.richardpianka.chess.network.Contracts.Room.Builder.class);
-          internal_static_com_richardpianka_chess_network_Record_descriptor =
+          internal_static_Chess_Contracts_Record_descriptor =
             getDescriptor().getMessageTypes().get(8);
-          internal_static_com_richardpianka_chess_network_Record_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Record_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Record_descriptor,
+              internal_static_Chess_Contracts_Record_descriptor,
               new java.lang.String[] { "Wins", "Losses", "Stalemates", "Disconnects", },
               com.richardpianka.chess.network.Contracts.Record.class,
               com.richardpianka.chess.network.Contracts.Record.Builder.class);
-          internal_static_com_richardpianka_chess_network_User_descriptor =
+          internal_static_Chess_Contracts_User_descriptor =
             getDescriptor().getMessageTypes().get(9);
-          internal_static_com_richardpianka_chess_network_User_fieldAccessorTable = new
+          internal_static_Chess_Contracts_User_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_User_descriptor,
+              internal_static_Chess_Contracts_User_descriptor,
               new java.lang.String[] { "Name", "Flags", "Record", },
               com.richardpianka.chess.network.Contracts.User.class,
               com.richardpianka.chess.network.Contracts.User.Builder.class);
-          internal_static_com_richardpianka_chess_network_Game_descriptor =
+          internal_static_Chess_Contracts_Game_descriptor =
             getDescriptor().getMessageTypes().get(10);
-          internal_static_com_richardpianka_chess_network_Game_fieldAccessorTable = new
+          internal_static_Chess_Contracts_Game_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_Game_descriptor,
+              internal_static_Chess_Contracts_Game_descriptor,
               new java.lang.String[] { "Name", "Password", "Private", "MetaData", },
               com.richardpianka.chess.network.Contracts.Game.class,
               com.richardpianka.chess.network.Contracts.Game.Builder.class);
-          internal_static_com_richardpianka_chess_network_GameMetadata_descriptor =
+          internal_static_Chess_Contracts_GameMetadata_descriptor =
             getDescriptor().getMessageTypes().get(11);
-          internal_static_com_richardpianka_chess_network_GameMetadata_fieldAccessorTable = new
+          internal_static_Chess_Contracts_GameMetadata_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_GameMetadata_descriptor,
+              internal_static_Chess_Contracts_GameMetadata_descriptor,
               new java.lang.String[] { "Created", "Joined", "UserTime", },
               com.richardpianka.chess.network.Contracts.GameMetadata.class,
               com.richardpianka.chess.network.Contracts.GameMetadata.Builder.class);
-          internal_static_com_richardpianka_chess_network_UserTime_descriptor =
+          internal_static_Chess_Contracts_UserTime_descriptor =
             getDescriptor().getMessageTypes().get(12);
-          internal_static_com_richardpianka_chess_network_UserTime_fieldAccessorTable = new
+          internal_static_Chess_Contracts_UserTime_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_UserTime_descriptor,
+              internal_static_Chess_Contracts_UserTime_descriptor,
               new java.lang.String[] { "Timed", "SecondsPerUser", },
               com.richardpianka.chess.network.Contracts.UserTime.class,
               com.richardpianka.chess.network.Contracts.UserTime.Builder.class);
-          internal_static_com_richardpianka_chess_network_HandshakeRequest_descriptor =
+          internal_static_Chess_Contracts_HandshakeRequest_descriptor =
             getDescriptor().getMessageTypes().get(13);
-          internal_static_com_richardpianka_chess_network_HandshakeRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_HandshakeRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_HandshakeRequest_descriptor,
+              internal_static_Chess_Contracts_HandshakeRequest_descriptor,
               new java.lang.String[] { "Version", },
               com.richardpianka.chess.network.Contracts.HandshakeRequest.class,
               com.richardpianka.chess.network.Contracts.HandshakeRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_HandshakeResponse_descriptor =
+          internal_static_Chess_Contracts_HandshakeResponse_descriptor =
             getDescriptor().getMessageTypes().get(14);
-          internal_static_com_richardpianka_chess_network_HandshakeResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_HandshakeResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_HandshakeResponse_descriptor,
+              internal_static_Chess_Contracts_HandshakeResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.chess.network.Contracts.HandshakeResponse.class,
               com.richardpianka.chess.network.Contracts.HandshakeResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_IdentifyRequest_descriptor =
+          internal_static_Chess_Contracts_IdentifyRequest_descriptor =
             getDescriptor().getMessageTypes().get(15);
-          internal_static_com_richardpianka_chess_network_IdentifyRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_IdentifyRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_IdentifyRequest_descriptor,
+              internal_static_Chess_Contracts_IdentifyRequest_descriptor,
               new java.lang.String[] { "Username", "Password", },
               com.richardpianka.chess.network.Contracts.IdentifyRequest.class,
               com.richardpianka.chess.network.Contracts.IdentifyRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_IdentifyResponse_descriptor =
+          internal_static_Chess_Contracts_IdentifyResponse_descriptor =
             getDescriptor().getMessageTypes().get(16);
-          internal_static_com_richardpianka_chess_network_IdentifyResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_IdentifyResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_IdentifyResponse_descriptor,
+              internal_static_Chess_Contracts_IdentifyResponse_descriptor,
               new java.lang.String[] { "Result", "Message", },
               com.richardpianka.chess.network.Contracts.IdentifyResponse.class,
               com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor =
+          internal_static_Chess_Contracts_JoinChatRequest_descriptor =
             getDescriptor().getMessageTypes().get(17);
-          internal_static_com_richardpianka_chess_network_JoinChatRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_JoinChatRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor,
+              internal_static_Chess_Contracts_JoinChatRequest_descriptor,
               new java.lang.String[] { },
               com.richardpianka.chess.network.Contracts.JoinChatRequest.class,
               com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_JoinChatResponse_descriptor =
+          internal_static_Chess_Contracts_JoinChatResponse_descriptor =
             getDescriptor().getMessageTypes().get(18);
-          internal_static_com_richardpianka_chess_network_JoinChatResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_JoinChatResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_JoinChatResponse_descriptor,
+              internal_static_Chess_Contracts_JoinChatResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.chess.network.Contracts.JoinChatResponse.class,
               com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_RoomListRequest_descriptor =
+          internal_static_Chess_Contracts_RoomListRequest_descriptor =
             getDescriptor().getMessageTypes().get(19);
-          internal_static_com_richardpianka_chess_network_RoomListRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_RoomListRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_RoomListRequest_descriptor,
+              internal_static_Chess_Contracts_RoomListRequest_descriptor,
               new java.lang.String[] { },
               com.richardpianka.chess.network.Contracts.RoomListRequest.class,
               com.richardpianka.chess.network.Contracts.RoomListRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_RoomListResponse_descriptor =
+          internal_static_Chess_Contracts_RoomListResponse_descriptor =
             getDescriptor().getMessageTypes().get(20);
-          internal_static_com_richardpianka_chess_network_RoomListResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_RoomListResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_RoomListResponse_descriptor,
+              internal_static_Chess_Contracts_RoomListResponse_descriptor,
               new java.lang.String[] { "Rooms", },
               com.richardpianka.chess.network.Contracts.RoomListResponse.class,
               com.richardpianka.chess.network.Contracts.RoomListResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_JoinRoomRequest_descriptor =
+          internal_static_Chess_Contracts_JoinRoomRequest_descriptor =
             getDescriptor().getMessageTypes().get(21);
-          internal_static_com_richardpianka_chess_network_JoinRoomRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_JoinRoomRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_JoinRoomRequest_descriptor,
+              internal_static_Chess_Contracts_JoinRoomRequest_descriptor,
               new java.lang.String[] { "Room", },
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.class,
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_JoinRoomResponse_descriptor =
+          internal_static_Chess_Contracts_JoinRoomResponse_descriptor =
             getDescriptor().getMessageTypes().get(22);
-          internal_static_com_richardpianka_chess_network_JoinRoomResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_JoinRoomResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_JoinRoomResponse_descriptor,
+              internal_static_Chess_Contracts_JoinRoomResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.class,
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_SpeakRequest_descriptor =
+          internal_static_Chess_Contracts_SpeakRequest_descriptor =
             getDescriptor().getMessageTypes().get(23);
-          internal_static_com_richardpianka_chess_network_SpeakRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_SpeakRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_SpeakRequest_descriptor,
+              internal_static_Chess_Contracts_SpeakRequest_descriptor,
               new java.lang.String[] { "Mode", "Message", "Recipient", },
               com.richardpianka.chess.network.Contracts.SpeakRequest.class,
               com.richardpianka.chess.network.Contracts.SpeakRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_OperatorRequest_descriptor =
+          internal_static_Chess_Contracts_OperatorRequest_descriptor =
             getDescriptor().getMessageTypes().get(24);
-          internal_static_com_richardpianka_chess_network_OperatorRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_OperatorRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_OperatorRequest_descriptor,
+              internal_static_Chess_Contracts_OperatorRequest_descriptor,
               new java.lang.String[] { "Action", "User", },
               com.richardpianka.chess.network.Contracts.OperatorRequest.class,
               com.richardpianka.chess.network.Contracts.OperatorRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_OperatorResponse_descriptor =
+          internal_static_Chess_Contracts_OperatorResponse_descriptor =
             getDescriptor().getMessageTypes().get(25);
-          internal_static_com_richardpianka_chess_network_OperatorResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_OperatorResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_OperatorResponse_descriptor,
+              internal_static_Chess_Contracts_OperatorResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.chess.network.Contracts.OperatorResponse.class,
               com.richardpianka.chess.network.Contracts.OperatorResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_ChatRoomEvent_descriptor =
+          internal_static_Chess_Contracts_ChatRoomEvent_descriptor =
             getDescriptor().getMessageTypes().get(26);
-          internal_static_com_richardpianka_chess_network_ChatRoomEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_ChatRoomEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_ChatRoomEvent_descriptor,
+              internal_static_Chess_Contracts_ChatRoomEvent_descriptor,
               new java.lang.String[] { "Room", "Users", },
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.class,
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder.class);
-          internal_static_com_richardpianka_chess_network_ChatUserEvent_descriptor =
+          internal_static_Chess_Contracts_ChatUserEvent_descriptor =
             getDescriptor().getMessageTypes().get(27);
-          internal_static_com_richardpianka_chess_network_ChatUserEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_ChatUserEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_ChatUserEvent_descriptor,
+              internal_static_Chess_Contracts_ChatUserEvent_descriptor,
               new java.lang.String[] { "User", "Status", "Message", },
               com.richardpianka.chess.network.Contracts.ChatUserEvent.class,
               com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder.class);
-          internal_static_com_richardpianka_chess_network_ChatSpeakEvent_descriptor =
+          internal_static_Chess_Contracts_ChatSpeakEvent_descriptor =
             getDescriptor().getMessageTypes().get(28);
-          internal_static_com_richardpianka_chess_network_ChatSpeakEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_ChatSpeakEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_ChatSpeakEvent_descriptor,
+              internal_static_Chess_Contracts_ChatSpeakEvent_descriptor,
               new java.lang.String[] { "User", "Message", "Mode", },
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.class,
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder.class);
-          internal_static_com_richardpianka_chess_network_GameListRequest_descriptor =
+          internal_static_Chess_Contracts_GameListRequest_descriptor =
             getDescriptor().getMessageTypes().get(29);
-          internal_static_com_richardpianka_chess_network_GameListRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_GameListRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_GameListRequest_descriptor,
+              internal_static_Chess_Contracts_GameListRequest_descriptor,
               new java.lang.String[] { },
               com.richardpianka.chess.network.Contracts.GameListRequest.class,
               com.richardpianka.chess.network.Contracts.GameListRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_GameListResponse_descriptor =
+          internal_static_Chess_Contracts_GameListResponse_descriptor =
             getDescriptor().getMessageTypes().get(30);
-          internal_static_com_richardpianka_chess_network_GameListResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_GameListResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_GameListResponse_descriptor,
+              internal_static_Chess_Contracts_GameListResponse_descriptor,
               new java.lang.String[] { "Games", },
               com.richardpianka.chess.network.Contracts.GameListResponse.class,
               com.richardpianka.chess.network.Contracts.GameListResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_CreateGameRequest_descriptor =
+          internal_static_Chess_Contracts_CreateGameRequest_descriptor =
             getDescriptor().getMessageTypes().get(31);
-          internal_static_com_richardpianka_chess_network_CreateGameRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_CreateGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_CreateGameRequest_descriptor,
+              internal_static_Chess_Contracts_CreateGameRequest_descriptor,
               new java.lang.String[] { "Name", "Password", },
               com.richardpianka.chess.network.Contracts.CreateGameRequest.class,
               com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_CreateGameResponse_descriptor =
+          internal_static_Chess_Contracts_CreateGameResponse_descriptor =
             getDescriptor().getMessageTypes().get(32);
-          internal_static_com_richardpianka_chess_network_CreateGameResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_CreateGameResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_CreateGameResponse_descriptor,
+              internal_static_Chess_Contracts_CreateGameResponse_descriptor,
               new java.lang.String[] { "Result", "Game", "Message", },
               com.richardpianka.chess.network.Contracts.CreateGameResponse.class,
               com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_JoinGameRequest_descriptor =
+          internal_static_Chess_Contracts_JoinGameRequest_descriptor =
             getDescriptor().getMessageTypes().get(33);
-          internal_static_com_richardpianka_chess_network_JoinGameRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_JoinGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_JoinGameRequest_descriptor,
+              internal_static_Chess_Contracts_JoinGameRequest_descriptor,
               new java.lang.String[] { "Game", "Password", },
               com.richardpianka.chess.network.Contracts.JoinGameRequest.class,
               com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_JoinGameResponse_descriptor =
+          internal_static_Chess_Contracts_JoinGameResponse_descriptor =
             getDescriptor().getMessageTypes().get(34);
-          internal_static_com_richardpianka_chess_network_JoinGameResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_JoinGameResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_JoinGameResponse_descriptor,
+              internal_static_Chess_Contracts_JoinGameResponse_descriptor,
               new java.lang.String[] { "Game", "Result", },
               com.richardpianka.chess.network.Contracts.JoinGameResponse.class,
               com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_LeaveGameRequest_descriptor =
+          internal_static_Chess_Contracts_LeaveGameRequest_descriptor =
             getDescriptor().getMessageTypes().get(35);
-          internal_static_com_richardpianka_chess_network_LeaveGameRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_LeaveGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_LeaveGameRequest_descriptor,
+              internal_static_Chess_Contracts_LeaveGameRequest_descriptor,
               new java.lang.String[] { },
               com.richardpianka.chess.network.Contracts.LeaveGameRequest.class,
               com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_StartGameRequest_descriptor =
+          internal_static_Chess_Contracts_StartGameRequest_descriptor =
             getDescriptor().getMessageTypes().get(36);
-          internal_static_com_richardpianka_chess_network_StartGameRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_StartGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_StartGameRequest_descriptor,
+              internal_static_Chess_Contracts_StartGameRequest_descriptor,
               new java.lang.String[] { },
               com.richardpianka.chess.network.Contracts.StartGameRequest.class,
               com.richardpianka.chess.network.Contracts.StartGameRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_StartGameResponse_descriptor =
+          internal_static_Chess_Contracts_StartGameResponse_descriptor =
             getDescriptor().getMessageTypes().get(37);
-          internal_static_com_richardpianka_chess_network_StartGameResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_StartGameResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_StartGameResponse_descriptor,
+              internal_static_Chess_Contracts_StartGameResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.chess.network.Contracts.StartGameResponse.class,
               com.richardpianka.chess.network.Contracts.StartGameResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_GameStartedEvent_descriptor =
+          internal_static_Chess_Contracts_GameStartedEvent_descriptor =
             getDescriptor().getMessageTypes().get(38);
-          internal_static_com_richardpianka_chess_network_GameStartedEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_GameStartedEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_GameStartedEvent_descriptor,
+              internal_static_Chess_Contracts_GameStartedEvent_descriptor,
               new java.lang.String[] { "Color", },
               com.richardpianka.chess.network.Contracts.GameStartedEvent.class,
               com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder.class);
-          internal_static_com_richardpianka_chess_network_MovePieceRequest_descriptor =
+          internal_static_Chess_Contracts_MovePieceRequest_descriptor =
             getDescriptor().getMessageTypes().get(39);
-          internal_static_com_richardpianka_chess_network_MovePieceRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_MovePieceRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_MovePieceRequest_descriptor,
+              internal_static_Chess_Contracts_MovePieceRequest_descriptor,
               new java.lang.String[] { "Move", },
               com.richardpianka.chess.network.Contracts.MovePieceRequest.class,
               com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_MovePieceResponse_descriptor =
+          internal_static_Chess_Contracts_MovePieceResponse_descriptor =
             getDescriptor().getMessageTypes().get(40);
-          internal_static_com_richardpianka_chess_network_MovePieceResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_MovePieceResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_MovePieceResponse_descriptor,
+              internal_static_Chess_Contracts_MovePieceResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.chess.network.Contracts.MovePieceResponse.class,
               com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_MovePieceEvent_descriptor =
+          internal_static_Chess_Contracts_MovePieceEvent_descriptor =
             getDescriptor().getMessageTypes().get(41);
-          internal_static_com_richardpianka_chess_network_MovePieceEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_MovePieceEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_MovePieceEvent_descriptor,
+              internal_static_Chess_Contracts_MovePieceEvent_descriptor,
               new java.lang.String[] { "Move", },
               com.richardpianka.chess.network.Contracts.MovePieceEvent.class,
               com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder.class);
-          internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_descriptor =
+          internal_static_Chess_Contracts_SpecialMovePieceRequest_descriptor =
             getDescriptor().getMessageTypes().get(42);
-          internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_fieldAccessorTable = new
+          internal_static_Chess_Contracts_SpecialMovePieceRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_descriptor,
+              internal_static_Chess_Contracts_SpecialMovePieceRequest_descriptor,
               new java.lang.String[] { "Move", },
               com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.class,
               com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder.class);
-          internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_descriptor =
+          internal_static_Chess_Contracts_SpecialMovePieceResponse_descriptor =
             getDescriptor().getMessageTypes().get(43);
-          internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_fieldAccessorTable = new
+          internal_static_Chess_Contracts_SpecialMovePieceResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_descriptor,
+              internal_static_Chess_Contracts_SpecialMovePieceResponse_descriptor,
               new java.lang.String[] { "Result", },
               com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.class,
               com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_descriptor =
+          internal_static_Chess_Contracts_SpecialMovePieceEvent_descriptor =
             getDescriptor().getMessageTypes().get(44);
-          internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_SpecialMovePieceEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_descriptor,
+              internal_static_Chess_Contracts_SpecialMovePieceEvent_descriptor,
               new java.lang.String[] { "Move", },
               com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.class,
               com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder.class);
-          internal_static_com_richardpianka_chess_network_GameStatusEvent_descriptor =
+          internal_static_Chess_Contracts_GameStatusEvent_descriptor =
             getDescriptor().getMessageTypes().get(45);
-          internal_static_com_richardpianka_chess_network_GameStatusEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_GameStatusEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_GameStatusEvent_descriptor,
+              internal_static_Chess_Contracts_GameStatusEvent_descriptor,
               new java.lang.String[] { "Status", "User", },
               com.richardpianka.chess.network.Contracts.GameStatusEvent.class,
               com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder.class);
-          internal_static_com_richardpianka_chess_network_TimeLeftEvent_descriptor =
+          internal_static_Chess_Contracts_TimeLeftEvent_descriptor =
             getDescriptor().getMessageTypes().get(46);
-          internal_static_com_richardpianka_chess_network_TimeLeftEvent_fieldAccessorTable = new
+          internal_static_Chess_Contracts_TimeLeftEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_com_richardpianka_chess_network_TimeLeftEvent_descriptor,
+              internal_static_Chess_Contracts_TimeLeftEvent_descriptor,
               new java.lang.String[] { "WhiteSeconds", "BlackSeconds", },
               com.richardpianka.chess.network.Contracts.TimeLeftEvent.class,
               com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder.class);
-          com.google.protobuf.ExtensionRegistry registry =
-            com.google.protobuf.ExtensionRegistry.newInstance();
-          registerAllExtensions(registry);
-          google.protobuf.CsharpOptions.registerAllExtensions(registry);
-          return registry;
+          return null;
         }
       };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          google.protobuf.CsharpOptions.getDescriptor(),
         }, assigner);
   }
   
