@@ -6,7 +6,7 @@
     <property name="lib.dir" value="${base.dir}/lib" />
     <property name="docs.dir" value="${base.dir}/docs" />
     <property name="build.dir" value="${base.dir}/build" />
-    <property name="package.dir" value="${base.dir}/deploy" />
+    <property name="package.dir" value="${base.dir}/package" />
     <property name="package.artifact" value="chess.jar" />
     <property name="package.artifact.path" value="${package.dir}/${package.artifact}" />
 

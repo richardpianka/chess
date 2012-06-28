@@ -1,5 +1,6 @@
 .git/
-.idea/
+.idea/tasks.xml
+.idea/workspace.xml
 build/
 csharp/Chess.Contracts/bin/
 csharp/Chess.Contracts/obj/

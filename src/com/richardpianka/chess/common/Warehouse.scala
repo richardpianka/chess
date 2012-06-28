@@ -2,6 +2,6 @@ package com.richardpianka.chess.common
 
 import com.google.protobuf.AbstractMessageLite
 
-class Warehouse[A <: AbstractMessageLite] {
-
+abstract class Warehouse[A <: AbstractMessageLite] {
+  def apply()
 }
