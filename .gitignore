@@ -1,0 +1,10 @@
+.git/
+.idea/
+build/
+csharp/Chess.Contracts/bin/
+csharp/Chess.Contracts/obj/
+deploy/
+package/
+docs/
+logs/
+out/

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="chess">
+    <property name="base.dir" value="." />
+    <property name="artifacts.dir" value="${base.dir}/artifacts" />
+    <property name="src.dir" value="${base.dir}/src" />
+    <property name="lib.dir" value="${base.dir}/lib" />
+    <property name="docs.dir" value="${base.dir}/docs" />
+    <property name="build.dir" value="${base.dir}/build" />
+    <property name="package.dir" value="${base.dir}/deploy" />
+    <property name="package.artifact" value="chess.jar" />
+    <property name="package.artifact.path" value="${package.dir}/${package.artifact}" />
+
+    <path id="build.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar" />
+            <exclude name="junit-4.10.jar" />
+        </fileset>
+    </path>
+
+    <target name="all" depends="package"/>
+
+    <target name="package" depends="docs">
+        <mkdir dir="${package.dir}" />
+        <manifestclasspath property="package.classpath" jarfile="${package.artifact.path}">
+            <classpath refid="build.classpath"/>
+        </manifestclasspath>
+        <jar destfile="${package.artifact.path}" basedir="${build.dir}" >
+            <manifest>
+                <attribute name="Main-Class" value="com.richardpianka.chess.server.Console"/>
+                <attribute name="Class-Path" value="${package.classpath}"/>
+            </manifest>
+        </jar>
+        <copyfile src="${artifacts.dir}/run_server.bat" dest="${package.dir}/run_server.bat" />
+        <replace file="${package.dir}/run_server.bat" token="JAR_FILE" value="${package.artifact}"/>
+    </target>
+
+    <target name="docs" depends="build.scala">
+        <mkdir dir="${docs.dir}" />
+        <scaladoc srcdir="${src.dir}"
+                  destdir="${docs.dir}"
+                  deprecation="yes" unchecked="yes"
+                  doctitle="chess"
+                  classpathref="build.classpath">
+            <include name="**/*.java" />
+            <include name="**/*.scala" />
+        </scaladoc>
+    </target>
+
+    <target name="build.scala" depends="init,contracts.java">
+        <mkdir dir="${build.dir}" />
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath">
+            <include name="**/*.java" />
+        </javac>
+        <scalac srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath">
+            <include name="**/*.scala" />
+        </scalac>
+    </target>
+
+    <target name="build.csharp" depends="contracts.csharp">
+        <mkdir dir="${build.dir}" />
+        <exec executable="C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe" failonerror="true">
+            <arg value="csharp/Chess.proj" />
+        </exec>
+    </target>
+
+    <target name="contracts.java" depends="" description="Generate protobuf contracts">
+        <exec executable="tools/protoc.exe" failonerror="true">
+            <arg value="--java_out=src" />
+            <arg value="--proto_path=." />
+            <arg value="protobuf/chess/contracts.proto" />
+        </exec>
+    </target>
+
+    <target name="contracts.csharp" depends="" description="Generate protobuf contracts">
+        <exec executable="tools/ProtoGen.exe" failonerror="true">
+            <arg value="--proto_path=." />
+            <arg value="-output_directory=csharp/Chess.Contracts" />
+            <arg value="protobuf/chess/contracts.proto" />
+        </exec>
+    </target>
+
+    <target name="init" depends="clean">
+        <taskdef resource="scala/tools/ant/antlib.xml">
+            <classpath>
+                <pathelement location="${lib.dir}/scala-compiler.jar" />
+                <pathelement location="${lib.dir}/scala-library.jar" />
+            </classpath>
+        </taskdef>
+    </target>
+
+    <target name="clean">
+        <delete dir="${docs.dir}" />
+        <delete dir="${build.dir}" />
+        <delete dir="${package.dir}" />
+    </target>
+</project>
