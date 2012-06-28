@@ -1,5 +1,7 @@
 package com.richardpianka.chess.common
 
-class Warehouse {
+import com.google.protobuf.AbstractMessageLite
+
+class Warehouse[A <: AbstractMessageLite] {
 
 }
