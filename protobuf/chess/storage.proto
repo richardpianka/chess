@@ -1,0 +1,10 @@
+package com.richardpianka.chess.server.storage;
+
+option java_package = "com.richardpianka.chess.server.storage";
+option java_outer_classname = "Storables";
+
+message Account {
+    required int32 Id = 1;
+    required string Username = 2;
+    required string Password = 3;
+}

@@ -46,7 +46,7 @@
         </scaladoc>
     </target>
 
-    <target name="build.scala" depends="init,contracts.java">
+    <target name="build.scala" depends="init,protobuf">
         <mkdir dir="${build.dir}" />
         <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath">
             <include name="**/*.java" />
@@ -56,22 +56,20 @@
         </scalac>
     </target>
 
-    <target name="build.csharp" depends="contracts.csharp">
+    <target name="build.csharp" depends="protobuf">
         <mkdir dir="${build.dir}" />
         <exec executable="C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe" failonerror="true">
             <arg value="csharp/Chess.proj" />
         </exec>
     </target>
 
-    <target name="contracts.java" depends="" description="Generate protobuf contracts">
+    <target name="protobuf" depends="" description="Generate protobuf objects">
         <exec executable="tools/protoc.exe" failonerror="true">
             <arg value="--java_out=src" />
             <arg value="--proto_path=." />
             <arg value="protobuf/chess/contracts.proto" />
+            <arg value="protobuf/chess/storage.proto" />
         </exec>
-    </target>
-
-    <target name="contracts.csharp" depends="" description="Generate protobuf contracts">
         <exec executable="tools/ProtoGen.exe" failonerror="true">
             <arg value="--proto_path=." />
             <arg value="-output_directory=csharp/Chess.Contracts" />
