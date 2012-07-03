@@ -11,7 +11,7 @@ public final class Storables {
   public interface AccountOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int32 Id = 1;
+    // required uint32 Id = 1;
     boolean hasId();
     int getId();
     
@@ -22,6 +22,11 @@ public final class Storables {
     // required string Password = 3;
     boolean hasPassword();
     String getPassword();
+    
+    // required .com.richardpianka.chess.server.storage.Record Record = 4;
+    boolean hasRecord();
+    com.richardpianka.chess.server.storage.Storables.Record getRecord();
+    com.richardpianka.chess.server.storage.Storables.RecordOrBuilder getRecordOrBuilder();
   }
   public static final class Account extends
       com.google.protobuf.GeneratedMessage
@@ -52,7 +57,7 @@ public final class Storables {
     }
     
     private int bitField0_;
-    // required int32 Id = 1;
+    // required uint32 Id = 1;
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     public boolean hasId() {
@@ -126,10 +131,24 @@ public final class Storables {
       }
     }
     
+    // required .com.richardpianka.chess.server.storage.Record Record = 4;
+    public static final int RECORD_FIELD_NUMBER = 4;
+    private com.richardpianka.chess.server.storage.Storables.Record record_;
+    public boolean hasRecord() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public com.richardpianka.chess.server.storage.Storables.Record getRecord() {
+      return record_;
+    }
+    public com.richardpianka.chess.server.storage.Storables.RecordOrBuilder getRecordOrBuilder() {
+      return record_;
+    }
+    
     private void initFields() {
       id_ = 0;
       username_ = "";
       password_ = "";
+      record_ = com.richardpianka.chess.server.storage.Storables.Record.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -148,6 +167,14 @@ public final class Storables {
         memoizedIsInitialized = 0;
         return false;
       }
+      if (!hasRecord()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getRecord().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -156,13 +183,16 @@ public final class Storables {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, id_);
+        output.writeUInt32(1, id_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(2, getUsernameBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeBytes(3, getPasswordBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, record_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -175,7 +205,7 @@ public final class Storables {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, id_);
+          .computeUInt32Size(1, id_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -184,6 +214,10 @@ public final class Storables {
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, getPasswordBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, record_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -301,6 +335,7 @@ public final class Storables {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRecordFieldBuilder();
         }
       }
       private static Builder create() {
@@ -315,6 +350,12 @@ public final class Storables {
         bitField0_ = (bitField0_ & ~0x00000002);
         password_ = "";
         bitField0_ = (bitField0_ & ~0x00000004);
+        if (recordBuilder_ == null) {
+          record_ = com.richardpianka.chess.server.storage.Storables.Record.getDefaultInstance();
+        } else {
+          recordBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
       
@@ -365,6 +406,14 @@ public final class Storables {
           to_bitField0_ |= 0x00000004;
         }
         result.password_ = password_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (recordBuilder_ == null) {
+          result.record_ = record_;
+        } else {
+          result.record_ = recordBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -390,6 +439,9 @@ public final class Storables {
         if (other.hasPassword()) {
           setPassword(other.getPassword());
         }
+        if (other.hasRecord()) {
+          mergeRecord(other.getRecord());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -404,6 +456,14 @@ public final class Storables {
           return false;
         }
         if (!hasPassword()) {
+          
+          return false;
+        }
+        if (!hasRecord()) {
+          
+          return false;
+        }
+        if (!getRecord().isInitialized()) {
           
           return false;
         }
@@ -435,7 +495,7 @@ public final class Storables {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              id_ = input.readInt32();
+              id_ = input.readUInt32();
               break;
             }
             case 18: {
@@ -448,13 +508,22 @@ public final class Storables {
               password_ = input.readBytes();
               break;
             }
+            case 34: {
+              com.richardpianka.chess.server.storage.Storables.Record.Builder subBuilder = com.richardpianka.chess.server.storage.Storables.Record.newBuilder();
+              if (hasRecord()) {
+                subBuilder.mergeFrom(getRecord());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setRecord(subBuilder.buildPartial());
+              break;
+            }
           }
         }
       }
       
       private int bitField0_;
       
-      // required int32 Id = 1;
+      // required uint32 Id = 1;
       private int id_ ;
       public boolean hasId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -547,6 +616,96 @@ public final class Storables {
         onChanged();
       }
       
+      // required .com.richardpianka.chess.server.storage.Record Record = 4;
+      private com.richardpianka.chess.server.storage.Storables.Record record_ = com.richardpianka.chess.server.storage.Storables.Record.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.server.storage.Storables.Record, com.richardpianka.chess.server.storage.Storables.Record.Builder, com.richardpianka.chess.server.storage.Storables.RecordOrBuilder> recordBuilder_;
+      public boolean hasRecord() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public com.richardpianka.chess.server.storage.Storables.Record getRecord() {
+        if (recordBuilder_ == null) {
+          return record_;
+        } else {
+          return recordBuilder_.getMessage();
+        }
+      }
+      public Builder setRecord(com.richardpianka.chess.server.storage.Storables.Record value) {
+        if (recordBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          record_ = value;
+          onChanged();
+        } else {
+          recordBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder setRecord(
+          com.richardpianka.chess.server.storage.Storables.Record.Builder builderForValue) {
+        if (recordBuilder_ == null) {
+          record_ = builderForValue.build();
+          onChanged();
+        } else {
+          recordBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder mergeRecord(com.richardpianka.chess.server.storage.Storables.Record value) {
+        if (recordBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              record_ != com.richardpianka.chess.server.storage.Storables.Record.getDefaultInstance()) {
+            record_ =
+              com.richardpianka.chess.server.storage.Storables.Record.newBuilder(record_).mergeFrom(value).buildPartial();
+          } else {
+            record_ = value;
+          }
+          onChanged();
+        } else {
+          recordBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder clearRecord() {
+        if (recordBuilder_ == null) {
+          record_ = com.richardpianka.chess.server.storage.Storables.Record.getDefaultInstance();
+          onChanged();
+        } else {
+          recordBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      public com.richardpianka.chess.server.storage.Storables.Record.Builder getRecordBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getRecordFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.server.storage.Storables.RecordOrBuilder getRecordOrBuilder() {
+        if (recordBuilder_ != null) {
+          return recordBuilder_.getMessageOrBuilder();
+        } else {
+          return record_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.server.storage.Storables.Record, com.richardpianka.chess.server.storage.Storables.Record.Builder, com.richardpianka.chess.server.storage.Storables.RecordOrBuilder> 
+          getRecordFieldBuilder() {
+        if (recordBuilder_ == null) {
+          recordBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.server.storage.Storables.Record, com.richardpianka.chess.server.storage.Storables.Record.Builder, com.richardpianka.chess.server.storage.Storables.RecordOrBuilder>(
+                  record_,
+                  getParentForChildren(),
+                  isClean());
+          record_ = null;
+        }
+        return recordBuilder_;
+      }
+      
       // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.server.storage.Account)
     }
     
@@ -558,11 +717,557 @@ public final class Storables {
     // @@protoc_insertion_point(class_scope:com.richardpianka.chess.server.storage.Account)
   }
   
+  public interface RecordOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required uint32 Wins = 1;
+    boolean hasWins();
+    int getWins();
+    
+    // required uint32 Loses = 2;
+    boolean hasLoses();
+    int getLoses();
+    
+    // required uint32 Stalemates = 3;
+    boolean hasStalemates();
+    int getStalemates();
+    
+    // required uint32 Disconnects = 4;
+    boolean hasDisconnects();
+    int getDisconnects();
+  }
+  public static final class Record extends
+      com.google.protobuf.GeneratedMessage
+      implements RecordOrBuilder {
+    // Use Record.newBuilder() to construct.
+    private Record(Record.Builder builder) {
+      super(builder);
+    }
+    private Record(boolean noInit) {}
+    
+    private static final Record defaultInstance;
+    public static Record getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public Record getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.chess.server.storage.Storables.internal_static_com_richardpianka_chess_server_storage_Record_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.chess.server.storage.Storables.internal_static_com_richardpianka_chess_server_storage_Record_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required uint32 Wins = 1;
+    public static final int WINS_FIELD_NUMBER = 1;
+    private int wins_;
+    public boolean hasWins() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public int getWins() {
+      return wins_;
+    }
+    
+    // required uint32 Loses = 2;
+    public static final int LOSES_FIELD_NUMBER = 2;
+    private int loses_;
+    public boolean hasLoses() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public int getLoses() {
+      return loses_;
+    }
+    
+    // required uint32 Stalemates = 3;
+    public static final int STALEMATES_FIELD_NUMBER = 3;
+    private int stalemates_;
+    public boolean hasStalemates() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public int getStalemates() {
+      return stalemates_;
+    }
+    
+    // required uint32 Disconnects = 4;
+    public static final int DISCONNECTS_FIELD_NUMBER = 4;
+    private int disconnects_;
+    public boolean hasDisconnects() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public int getDisconnects() {
+      return disconnects_;
+    }
+    
+    private void initFields() {
+      wins_ = 0;
+      loses_ = 0;
+      stalemates_ = 0;
+      disconnects_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasWins()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasLoses()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasStalemates()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDisconnects()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeUInt32(1, wins_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeUInt32(2, loses_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeUInt32(3, stalemates_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeUInt32(4, disconnects_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, wins_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, loses_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, stalemates_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, disconnects_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.server.storage.Storables.Record parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static com.richardpianka.chess.server.storage.Storables.Record.Builder newBuilder() { return com.richardpianka.chess.server.storage.Storables.Record.Builder.create(); }
+    public com.richardpianka.chess.server.storage.Storables.Record.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.server.storage.Storables.Record.Builder newBuilder(com.richardpianka.chess.server.storage.Storables.Record prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public com.richardpianka.chess.server.storage.Storables.Record.Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected com.richardpianka.chess.server.storage.Storables.Record.Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.richardpianka.chess.server.storage.Storables.Record.Builder builder = new com.richardpianka.chess.server.storage.Storables.Record.Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.chess.server.storage.Storables.RecordOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.chess.server.storage.Storables.internal_static_com_richardpianka_chess_server_storage_Record_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.chess.server.storage.Storables.internal_static_com_richardpianka_chess_server_storage_Record_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.chess.server.storage.Storables.Record.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        wins_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        loses_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        stalemates_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        disconnects_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.chess.server.storage.Storables.Record.getDescriptor();
+      }
+      
+      public com.richardpianka.chess.server.storage.Storables.Record getDefaultInstanceForType() {
+        return com.richardpianka.chess.server.storage.Storables.Record.getDefaultInstance();
+      }
+      
+      public com.richardpianka.chess.server.storage.Storables.Record build() {
+        com.richardpianka.chess.server.storage.Storables.Record result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.chess.server.storage.Storables.Record buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.chess.server.storage.Storables.Record result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.chess.server.storage.Storables.Record buildPartial() {
+        com.richardpianka.chess.server.storage.Storables.Record result = new com.richardpianka.chess.server.storage.Storables.Record(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.wins_ = wins_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.loses_ = loses_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.stalemates_ = stalemates_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.disconnects_ = disconnects_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public com.richardpianka.chess.server.storage.Storables.Record.Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.chess.server.storage.Storables.Record) {
+          return mergeFrom((com.richardpianka.chess.server.storage.Storables.Record)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public com.richardpianka.chess.server.storage.Storables.Record.Builder mergeFrom(com.richardpianka.chess.server.storage.Storables.Record other) {
+        if (other == com.richardpianka.chess.server.storage.Storables.Record.getDefaultInstance()) return this;
+        if (other.hasWins()) {
+          setWins(other.getWins());
+        }
+        if (other.hasLoses()) {
+          setLoses(other.getLoses());
+        }
+        if (other.hasStalemates()) {
+          setStalemates(other.getStalemates());
+        }
+        if (other.hasDisconnects()) {
+          setDisconnects(other.getDisconnects());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasWins()) {
+          
+          return false;
+        }
+        if (!hasLoses()) {
+          
+          return false;
+        }
+        if (!hasStalemates()) {
+          
+          return false;
+        }
+        if (!hasDisconnects()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              wins_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              loses_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              stalemates_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              disconnects_ = input.readUInt32();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required uint32 Wins = 1;
+      private int wins_ ;
+      public boolean hasWins() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getWins() {
+        return wins_;
+      }
+      public Builder setWins(int value) {
+        bitField0_ |= 0x00000001;
+        wins_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearWins() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        wins_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required uint32 Loses = 2;
+      private int loses_ ;
+      public boolean hasLoses() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public int getLoses() {
+        return loses_;
+      }
+      public Builder setLoses(int value) {
+        bitField0_ |= 0x00000002;
+        loses_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearLoses() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        loses_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required uint32 Stalemates = 3;
+      private int stalemates_ ;
+      public boolean hasStalemates() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public int getStalemates() {
+        return stalemates_;
+      }
+      public Builder setStalemates(int value) {
+        bitField0_ |= 0x00000004;
+        stalemates_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearStalemates() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        stalemates_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required uint32 Disconnects = 4;
+      private int disconnects_ ;
+      public boolean hasDisconnects() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public int getDisconnects() {
+        return disconnects_;
+      }
+      public Builder setDisconnects(int value) {
+        bitField0_ |= 0x00000008;
+        disconnects_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDisconnects() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        disconnects_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.server.storage.Record)
+    }
+    
+    static {
+      defaultInstance = new Record(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.server.storage.Record)
+  }
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_richardpianka_chess_server_storage_Account_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_richardpianka_chess_server_storage_Account_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_chess_server_storage_Record_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_chess_server_storage_Record_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -573,10 +1278,14 @@ public final class Storables {
   static {
     java.lang.String[] descriptorData = {
       "\n\034protobuf/chess/storage.proto\022&com.rich" +
-      "ardpianka.chess.server.storage\"9\n\007Accoun" +
-      "t\022\n\n\002Id\030\001 \002(\005\022\020\n\010Username\030\002 \002(\t\022\020\n\010Passw" +
-      "ord\030\003 \002(\tB3\n&com.richardpianka.chess.ser" +
-      "ver.storageB\tStorables"
+      "ardpianka.chess.server.storage\"y\n\007Accoun" +
+      "t\022\n\n\002Id\030\001 \002(\r\022\020\n\010Username\030\002 \002(\t\022\020\n\010Passw" +
+      "ord\030\003 \002(\t\022>\n\006Record\030\004 \002(\0132..com.richardp" +
+      "ianka.chess.server.storage.Record\"N\n\006Rec" +
+      "ord\022\014\n\004Wins\030\001 \002(\r\022\r\n\005Loses\030\002 \002(\r\022\022\n\nStal" +
+      "emates\030\003 \002(\r\022\023\n\013Disconnects\030\004 \002(\rB3\n&com" +
+      ".richardpianka.chess.server.storageB\tSto" +
+      "rables"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -588,9 +1297,17 @@ public final class Storables {
           internal_static_com_richardpianka_chess_server_storage_Account_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_server_storage_Account_descriptor,
-              new java.lang.String[] { "Id", "Username", "Password", },
+              new java.lang.String[] { "Id", "Username", "Password", "Record", },
               com.richardpianka.chess.server.storage.Storables.Account.class,
               com.richardpianka.chess.server.storage.Storables.Account.Builder.class);
+          internal_static_com_richardpianka_chess_server_storage_Record_descriptor =
+            getDescriptor().getMessageTypes().get(1);
+          internal_static_com_richardpianka_chess_server_storage_Record_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_chess_server_storage_Record_descriptor,
+              new java.lang.String[] { "Wins", "Loses", "Stalemates", "Disconnects", },
+              com.richardpianka.chess.server.storage.Storables.Record.class,
+              com.richardpianka.chess.server.storage.Storables.Record.Builder.class);
           return null;
         }
       };

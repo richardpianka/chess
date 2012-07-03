@@ -4,7 +4,15 @@ option java_package = "com.richardpianka.chess.server.storage";
 option java_outer_classname = "Storables";
 
 message Account {
-    required int32 Id = 1;
+    required uint32 Id = 1;
     required string Username = 2;
     required string Password = 3;
+    required Record Record = 4;
+}
+
+message Record {
+    required uint32 Wins = 1;
+    required uint32 Loses = 2;
+    required uint32 Stalemates = 3;
+    required uint32 Disconnects = 4;
 }

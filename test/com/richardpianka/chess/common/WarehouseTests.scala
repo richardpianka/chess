@@ -21,7 +21,7 @@ class WarehouseTests {
 
     warehouse.add(version, false)
 
-    val retrieved = warehouse.map(1)
+    val retrieved = warehouse(1)
 
     assert(warehouse.all.size == 1)
     assert(retrieved.getVersionMajor == version.getVersionMajor &&
@@ -45,8 +45,8 @@ class WarehouseTests {
     warehouseA.add(version2, true)
     warehouseB.load()
 
-    val retrieved1 = warehouseB.map(1)
-    val retrieved2 = warehouseB.map(2)
+    val retrieved1 = warehouseB(1)
+    val retrieved2 = warehouseB(2)
 
     assert(warehouseB.all.size == 2)
     assert(retrieved1.getVersionMajor == version1.getVersionMajor &&
