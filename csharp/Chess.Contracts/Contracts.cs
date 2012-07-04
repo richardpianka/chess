@@ -52,6 +52,14 @@ namespace com.richardpianka.chess.network {
     internal static pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.IdentifyRequest, global::com.richardpianka.chess.network.IdentifyRequest.Builder> internal__static_com_richardpianka_chess_network_IdentifyRequest__FieldAccessorTable;
     internal static pbd::MessageDescriptor internal__static_com_richardpianka_chess_network_IdentifyResponse__Descriptor;
     internal static pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.IdentifyResponse, global::com.richardpianka.chess.network.IdentifyResponse.Builder> internal__static_com_richardpianka_chess_network_IdentifyResponse__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_com_richardpianka_chess_network_CreateAccountRequest__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.CreateAccountRequest, global::com.richardpianka.chess.network.CreateAccountRequest.Builder> internal__static_com_richardpianka_chess_network_CreateAccountRequest__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_com_richardpianka_chess_network_CreateAccountResponse__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.CreateAccountResponse, global::com.richardpianka.chess.network.CreateAccountResponse.Builder> internal__static_com_richardpianka_chess_network_CreateAccountResponse__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_com_richardpianka_chess_network_ChangePasswordRequest__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.ChangePasswordRequest, global::com.richardpianka.chess.network.ChangePasswordRequest.Builder> internal__static_com_richardpianka_chess_network_ChangePasswordRequest__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_com_richardpianka_chess_network_ChangePasswordResponse__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.ChangePasswordResponse, global::com.richardpianka.chess.network.ChangePasswordResponse.Builder> internal__static_com_richardpianka_chess_network_ChangePasswordResponse__FieldAccessorTable;
     internal static pbd::MessageDescriptor internal__static_com_richardpianka_chess_network_JoinChatRequest__Descriptor;
     internal static pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.JoinChatRequest, global::com.richardpianka.chess.network.JoinChatRequest.Builder> internal__static_com_richardpianka_chess_network_JoinChatRequest__FieldAccessorTable;
     internal static pbd::MessageDescriptor internal__static_com_richardpianka_chess_network_JoinChatResponse__Descriptor;
@@ -122,180 +130,196 @@ namespace com.richardpianka.chess.network {
     static Contracts() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           "Ch5wcm90b2J1Zi9jaGVzcy9jb250cmFjdHMucHJvdG8SH2NvbS5yaWNoYXJk" + 
-          "cGlhbmthLmNoZXNzLm5ldHdvcmsixhQKCEVudmVsb3BlEksKEEhhbmRzaGFr" + 
+          "cGlhbmthLmNoZXNzLm5ldHdvcmsiohcKCEVudmVsb3BlEksKEEhhbmRzaGFr" + 
           "ZVJlcXVlc3QYASABKAsyMS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3" + 
           "b3JrLkhhbmRzaGFrZVJlcXVlc3QSTQoRSGFuZHNoYWtlUmVzcG9uc2UYAiAB" + 
           "KAsyMi5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkhhbmRzaGFr" + 
           "ZVJlc3BvbnNlEkkKD0lkZW50aWZ5UmVxdWVzdBgDIAEoCzIwLmNvbS5yaWNo" + 
           "YXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuSWRlbnRpZnlSZXF1ZXN0EksKEElk" + 
           "ZW50aWZ5UmVzcG9uc2UYBCABKAsyMS5jb20ucmljaGFyZHBpYW5rYS5jaGVz" + 
-          "cy5uZXR3b3JrLklkZW50aWZ5UmVzcG9uc2USSQoPSm9pbkNoYXRSZXF1ZXN0" + 
-          "GAUgASgLMjAuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Kb2lu" + 
-          "Q2hhdFJlcXVlc3QSSwoQSm9pbkNoYXRSZXNwb25zZRgGIAEoCzIxLmNvbS5y" + 
-          "aWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuSm9pbkNoYXRSZXNwb25zZRJJ" + 
-          "Cg9Sb29tTGlzdFJlcXVlc3QYByABKAsyMC5jb20ucmljaGFyZHBpYW5rYS5j" + 
-          "aGVzcy5uZXR3b3JrLlJvb21MaXN0UmVxdWVzdBJLChBSb29tTGlzdFJlc3Bv" + 
-          "bnNlGAggASgLMjEuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5S" + 
-          "b29tTGlzdFJlc3BvbnNlEkkKD0pvaW5Sb29tUmVxdWVzdBgJIAEoCzIwLmNv" + 
-          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuSm9pblJvb21SZXF1ZXN0" + 
-          "EksKEEpvaW5Sb29tUmVzcG9uc2UYCiABKAsyMS5jb20ucmljaGFyZHBpYW5r" + 
-          "YS5jaGVzcy5uZXR3b3JrLkpvaW5Sb29tUmVzcG9uc2USQwoMU3BlYWtSZXF1" + 
-          "ZXN0GAsgASgLMi0uY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5T" + 
-          "cGVha1JlcXVlc3QSSQoPT3BlcmF0b3JSZXF1ZXN0GAwgASgLMjAuY29tLnJp" + 
-          "Y2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5PcGVyYXRvclJlcXVlc3QSSwoQ" + 
-          "T3BlcmF0b3JSZXNwb25zZRgNIAEoCzIxLmNvbS5yaWNoYXJkcGlhbmthLmNo" + 
-          "ZXNzLm5ldHdvcmsuT3BlcmF0b3JSZXNwb25zZRJFCg1DaGF0Um9vbUV2ZW50" + 
-          "GA4gASgLMi4uY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5DaGF0" + 
-          "Um9vbUV2ZW50EkUKDUNoYXRVc2VyRXZlbnQYDyABKAsyLi5jb20ucmljaGFy" + 
-          "ZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkNoYXRVc2VyRXZlbnQSRwoOQ2hhdFNw" + 
-          "ZWFrRXZlbnQYECABKAsyLy5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3" + 
-          "b3JrLkNoYXRTcGVha0V2ZW50EkkKD0dhbWVMaXN0UmVxdWVzdBgRIAEoCzIw" + 
-          "LmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuR2FtZUxpc3RSZXF1" + 
-          "ZXN0EksKEEdhbWVMaXN0UmVzcG9uc2UYEiABKAsyMS5jb20ucmljaGFyZHBp" + 
-          "YW5rYS5jaGVzcy5uZXR3b3JrLkdhbWVMaXN0UmVzcG9uc2USTQoRQ3JlYXRl" + 
-          "R2FtZVJlcXVlc3QYEyABKAsyMi5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5u" + 
-          "ZXR3b3JrLkNyZWF0ZUdhbWVSZXF1ZXN0Ek8KEkNyZWF0ZUdhbWVSZXNwb25z" + 
-          "ZRgUIAEoCzIzLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuQ3Jl" + 
-          "YXRlR2FtZVJlc3BvbnNlEkkKD0pvaW5HYW1lUmVxdWVzdBgVIAEoCzIwLmNv" + 
-          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuSm9pbkdhbWVSZXF1ZXN0" + 
-          "EksKEEpvaW5HYW1lUmVzcG9uc2UYFiABKAsyMS5jb20ucmljaGFyZHBpYW5r" + 
-          "YS5jaGVzcy5uZXR3b3JrLkpvaW5HYW1lUmVzcG9uc2USSwoQTGVhdmVHYW1l" + 
-          "UmVxdWVzdBgXIAEoCzIxLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdv" + 
-          "cmsuTGVhdmVHYW1lUmVxdWVzdBJLChBTdGFydEdhbWVSZXF1ZXN0GBggASgL" + 
-          "MjEuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5TdGFydEdhbWVS" + 
-          "ZXF1ZXN0Ek0KEVN0YXJ0R2FtZVJlc3BvbnNlGBkgASgLMjIuY29tLnJpY2hh" + 
-          "cmRwaWFua2EuY2hlc3MubmV0d29yay5TdGFydEdhbWVSZXNwb25zZRJLChBH" + 
-          "YW1lU3RhcnRlZEV2ZW50GBogASgLMjEuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
-          "c3MubmV0d29yay5HYW1lU3RhcnRlZEV2ZW50EksKEE1vdmVQaWVjZVJlcXVl" + 
-          "c3QYGyABKAsyMS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLk1v" + 
-          "dmVQaWVjZVJlcXVlc3QSTQoRTW92ZVBpZWNlUmVzcG9uc2UYHCABKAsyMi5j" + 
-          "b20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLk1vdmVQaWVjZVJlc3Bv" + 
-          "bnNlEkcKDk1vdmVQaWVjZUV2ZW50GB0gASgLMi8uY29tLnJpY2hhcmRwaWFu" + 
-          "a2EuY2hlc3MubmV0d29yay5Nb3ZlUGllY2VFdmVudBJZChdTcGVjaWFsTW92" + 
-          "ZVBpZWNlUmVxdWVzdBgeIAEoCzI4LmNvbS5yaWNoYXJkcGlhbmthLmNoZXNz" + 
-          "Lm5ldHdvcmsuU3BlY2lhbE1vdmVQaWVjZVJlcXVlc3QSWwoYU3BlY2lhbE1v" + 
-          "dmVQaWVjZVJlc3BvbnNlGB8gASgLMjkuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
-          "c3MubmV0d29yay5TcGVjaWFsTW92ZVBpZWNlUmVzcG9uc2USVQoVU3BlY2lh" + 
-          "bE1vdmVQaWVjZUV2ZW50GCAgASgLMjYuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
-          "c3MubmV0d29yay5TcGVjaWFsTW92ZVBpZWNlRXZlbnQSSQoPR2FtZVN0YXR1" + 
-          "c0V2ZW50GCIgASgLMjAuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29y" + 
-          "ay5HYW1lU3RhdHVzRXZlbnQSRQoNVGltZUxlZnRFdmVudBgjIAEoCzIuLmNv" + 
-          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuVGltZUxlZnRFdmVudCJ2" + 
-          "CgpDb29yZGluYXRlEjMKBEZpbGUYASACKA4yJS5jb20ucmljaGFyZHBpYW5r" + 
-          "YS5jaGVzcy5uZXR3b3JrLkZpbGUSMwoEUmFuaxgCIAIoDjIlLmNvbS5yaWNo" + 
-          "YXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUmFuayKLAQoFUGllY2USNQoFQ29s" + 
-          "b3IYASACKA4yJi5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkNv" + 
-          "bG9yEjsKCEZpZ3VyaW5lGAIgAigOMikuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
-          "c3MubmV0d29yay5GaWd1cmluZRIOCgZOdW1iZXIYAyACKA0iswEKBE1vdmUS" + 
-          "NQoFUGllY2UYASACKAsyJi5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3" + 
-          "b3JrLlBpZWNlEjoKBVN0YXJ0GAIgAigLMisuY29tLnJpY2hhcmRwaWFua2Eu" + 
-          "Y2hlc3MubmV0d29yay5Db29yZGluYXRlEjgKA0VuZBgDIAIoCzIrLmNvbS5y" + 
-          "aWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuQ29vcmRpbmF0ZSJGCgtTcGVj" + 
-          "aWFsTW92ZRI3CgZDYXN0bGUYASABKAsyJy5jb20ucmljaGFyZHBpYW5rYS5j" + 
-          "aGVzcy5uZXR3b3JrLkNhc3RsZSJ0CgZDYXN0bGUSNAoEUm9vaxgBIAIoCzIm" + 
-          "LmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUGllY2USNAoES2lu" + 
-          "ZxgCIAIoCzImLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUGll" + 
-          "Y2UiVwoHVmVyc2lvbhIXCgxWZXJzaW9uTWFqb3IYASABKA06ATESFwoMVmVy" + 
-          "c2lvbk1pbm9yGAIgASgNOgEwEhoKD1ZlcnNpb25SZXZpc2lvbhgDIAEoDToB" + 
-          "MCJPCgRSb29tEgwKBE5hbWUYASACKAkSOQoFRmxhZ3MYAiACKA4yKi5jb20u" + 
-          "cmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlJvb21GbGFncyJPCgZSZWNv" + 
-          "cmQSDAoEV2lucxgBIAIoDRIOCgZMb3NzZXMYAiACKA0SEgoKU3RhbGVtYXRl" + 
-          "cxgDIAIoDRITCgtEaXNjb25uZWN0cxgEIAIoDSKIAQoEVXNlchIMCgROYW1l" + 
-          "GAEgAigJEjkKBUZsYWdzGAIgAigOMiouY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
-          "c3MubmV0d29yay5Vc2VyRmxhZ3MSNwoGUmVjb3JkGAMgAigLMicuY29tLnJp" + 
-          "Y2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5SZWNvcmQieAoER2FtZRIMCgRO" + 
-          "YW1lGAEgAigJEhAKCFBhc3N3b3JkGAIgASgJEg8KB1ByaXZhdGUYAyACKAgS" + 
-          "PwoITWV0YURhdGEYBCABKAsyLS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5u" + 
-          "ZXR3b3JrLkdhbWVNZXRhZGF0YSK6AQoMR2FtZU1ldGFkYXRhEjYKB0NyZWF0" + 
-          "ZWQYASABKAsyJS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlVz" + 
-          "ZXISNQoGSm9pbmVkGAIgASgLMiUuY29tLnJpY2hhcmRwaWFua2EuY2hlc3Mu" + 
-          "bmV0d29yay5Vc2VyEjsKCFVzZXJUaW1lGAMgASgLMikuY29tLnJpY2hhcmRw" + 
-          "aWFua2EuY2hlc3MubmV0d29yay5Vc2VyVGltZSIxCghVc2VyVGltZRINCgVU" + 
-          "aW1lZBgBIAIoCBIWCg5TZWNvbmRzUGVyVXNlchgCIAIoDSJNChBIYW5kc2hh" + 
-          "a2VSZXF1ZXN0EjkKB1ZlcnNpb24YASACKAsyKC5jb20ucmljaGFyZHBpYW5r" + 
-          "YS5jaGVzcy5uZXR3b3JrLlZlcnNpb24iTAoRSGFuZHNoYWtlUmVzcG9uc2US" + 
-          "NwoGUmVzdWx0GAEgAigOMicuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0" + 
-          "d29yay5SZXN1bHQiNQoPSWRlbnRpZnlSZXF1ZXN0EhAKCFVzZXJuYW1lGAEg" + 
-          "AigJEhAKCFBhc3N3b3JkGAIgASgJIlwKEElkZW50aWZ5UmVzcG9uc2USNwoG" + 
-          "UmVzdWx0GAEgAigOMicuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29y" + 
-          "ay5SZXN1bHQSDwoHTWVzc2FnZRgCIAEoCSIRCg9Kb2luQ2hhdFJlcXVlc3Qi" + 
-          "SwoQSm9pbkNoYXRSZXNwb25zZRI3CgZSZXN1bHQYASACKA4yJy5jb20ucmlj" + 
-          "aGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlJlc3VsdCIRCg9Sb29tTGlzdFJl" + 
-          "cXVlc3QiSAoQUm9vbUxpc3RSZXNwb25zZRI0CgVSb29tcxgBIAMoCzIlLmNv" + 
-          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUm9vbSJGCg9Kb2luUm9v" + 
-          "bVJlcXVlc3QSMwoEUm9vbRgBIAIoCzIlLmNvbS5yaWNoYXJkcGlhbmthLmNo" + 
-          "ZXNzLm5ldHdvcmsuUm9vbSJLChBKb2luUm9vbVJlc3BvbnNlEjcKBlJlc3Vs" + 
+          "cy5uZXR3b3JrLklkZW50aWZ5UmVzcG9uc2USUwoUQ3JlYXRlQWNjb3VudFJl" + 
+          "cXVlc3QYBSABKAsyNS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3Jr" + 
+          "LkNyZWF0ZUFjY291bnRSZXF1ZXN0ElUKFUNyZWF0ZUFjY291bnRSZXNwb25z" + 
+          "ZRgGIAEoCzI2LmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuQ3Jl" + 
+          "YXRlQWNjb3VudFJlc3BvbnNlElUKFUNoYW5nZVBhc3N3b3JkUmVxdWVzdBgH" + 
+          "IAEoCzI2LmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuQ2hhbmdl" + 
+          "UGFzc3dvcmRSZXF1ZXN0ElcKFkNoYW5nZVBhc3N3b3JkUmVzcG9uc2UYCCAB" + 
+          "KAsyNy5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkNoYW5nZVBh" + 
+          "c3N3b3JkUmVzcG9uc2USSQoPSm9pbkNoYXRSZXF1ZXN0GAkgASgLMjAuY29t" + 
+          "LnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Kb2luQ2hhdFJlcXVlc3QS" + 
+          "SwoQSm9pbkNoYXRSZXNwb25zZRgKIAEoCzIxLmNvbS5yaWNoYXJkcGlhbmth" + 
+          "LmNoZXNzLm5ldHdvcmsuSm9pbkNoYXRSZXNwb25zZRJJCg9Sb29tTGlzdFJl" + 
+          "cXVlc3QYCyABKAsyMC5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3Jr" + 
+          "LlJvb21MaXN0UmVxdWVzdBJLChBSb29tTGlzdFJlc3BvbnNlGAwgASgLMjEu" + 
+          "Y29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Sb29tTGlzdFJlc3Bv" + 
+          "bnNlEkkKD0pvaW5Sb29tUmVxdWVzdBgNIAEoCzIwLmNvbS5yaWNoYXJkcGlh" + 
+          "bmthLmNoZXNzLm5ldHdvcmsuSm9pblJvb21SZXF1ZXN0EksKEEpvaW5Sb29t" + 
+          "UmVzcG9uc2UYDiABKAsyMS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3" + 
+          "b3JrLkpvaW5Sb29tUmVzcG9uc2USQwoMU3BlYWtSZXF1ZXN0GA8gASgLMi0u" + 
+          "Y29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5TcGVha1JlcXVlc3QS" + 
+          "SQoPT3BlcmF0b3JSZXF1ZXN0GBAgASgLMjAuY29tLnJpY2hhcmRwaWFua2Eu" + 
+          "Y2hlc3MubmV0d29yay5PcGVyYXRvclJlcXVlc3QSSwoQT3BlcmF0b3JSZXNw" + 
+          "b25zZRgRIAEoCzIxLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsu" + 
+          "T3BlcmF0b3JSZXNwb25zZRJFCg1DaGF0Um9vbUV2ZW50GBIgASgLMi4uY29t" + 
+          "LnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5DaGF0Um9vbUV2ZW50EkUK" + 
+          "DUNoYXRVc2VyRXZlbnQYEyABKAsyLi5jb20ucmljaGFyZHBpYW5rYS5jaGVz" + 
+          "cy5uZXR3b3JrLkNoYXRVc2VyRXZlbnQSRwoOQ2hhdFNwZWFrRXZlbnQYFCAB" + 
+          "KAsyLy5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkNoYXRTcGVh" + 
+          "a0V2ZW50EkkKD0dhbWVMaXN0UmVxdWVzdBgVIAEoCzIwLmNvbS5yaWNoYXJk" + 
+          "cGlhbmthLmNoZXNzLm5ldHdvcmsuR2FtZUxpc3RSZXF1ZXN0EksKEEdhbWVM" + 
+          "aXN0UmVzcG9uc2UYFiABKAsyMS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5u" + 
+          "ZXR3b3JrLkdhbWVMaXN0UmVzcG9uc2USTQoRQ3JlYXRlR2FtZVJlcXVlc3QY" + 
+          "FyABKAsyMi5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkNyZWF0" + 
+          "ZUdhbWVSZXF1ZXN0Ek8KEkNyZWF0ZUdhbWVSZXNwb25zZRgYIAEoCzIzLmNv" + 
+          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuQ3JlYXRlR2FtZVJlc3Bv" + 
+          "bnNlEkkKD0pvaW5HYW1lUmVxdWVzdBgZIAEoCzIwLmNvbS5yaWNoYXJkcGlh" + 
+          "bmthLmNoZXNzLm5ldHdvcmsuSm9pbkdhbWVSZXF1ZXN0EksKEEpvaW5HYW1l" + 
+          "UmVzcG9uc2UYGiABKAsyMS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3" + 
+          "b3JrLkpvaW5HYW1lUmVzcG9uc2USSwoQTGVhdmVHYW1lUmVxdWVzdBgbIAEo" + 
+          "CzIxLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuTGVhdmVHYW1l" + 
+          "UmVxdWVzdBJLChBTdGFydEdhbWVSZXF1ZXN0GBwgASgLMjEuY29tLnJpY2hh" + 
+          "cmRwaWFua2EuY2hlc3MubmV0d29yay5TdGFydEdhbWVSZXF1ZXN0Ek0KEVN0" + 
+          "YXJ0R2FtZVJlc3BvbnNlGB0gASgLMjIuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
+          "c3MubmV0d29yay5TdGFydEdhbWVSZXNwb25zZRJLChBHYW1lU3RhcnRlZEV2" + 
+          "ZW50GB4gASgLMjEuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5H" + 
+          "YW1lU3RhcnRlZEV2ZW50EksKEE1vdmVQaWVjZVJlcXVlc3QYHyABKAsyMS5j" + 
+          "b20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLk1vdmVQaWVjZVJlcXVl" + 
+          "c3QSTQoRTW92ZVBpZWNlUmVzcG9uc2UYICABKAsyMi5jb20ucmljaGFyZHBp" + 
+          "YW5rYS5jaGVzcy5uZXR3b3JrLk1vdmVQaWVjZVJlc3BvbnNlEkcKDk1vdmVQ" + 
+          "aWVjZUV2ZW50GCEgASgLMi8uY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0" + 
+          "d29yay5Nb3ZlUGllY2VFdmVudBJZChdTcGVjaWFsTW92ZVBpZWNlUmVxdWVz" + 
+          "dBgiIAEoCzI4LmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuU3Bl" + 
+          "Y2lhbE1vdmVQaWVjZVJlcXVlc3QSWwoYU3BlY2lhbE1vdmVQaWVjZVJlc3Bv" + 
+          "bnNlGCMgASgLMjkuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5T" + 
+          "cGVjaWFsTW92ZVBpZWNlUmVzcG9uc2USVQoVU3BlY2lhbE1vdmVQaWVjZUV2" + 
+          "ZW50GCQgASgLMjYuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5T" + 
+          "cGVjaWFsTW92ZVBpZWNlRXZlbnQSSQoPR2FtZVN0YXR1c0V2ZW50GCUgASgL" + 
+          "MjAuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5HYW1lU3RhdHVz" + 
+          "RXZlbnQSRQoNVGltZUxlZnRFdmVudBgmIAEoCzIuLmNvbS5yaWNoYXJkcGlh" + 
+          "bmthLmNoZXNzLm5ldHdvcmsuVGltZUxlZnRFdmVudCJ2CgpDb29yZGluYXRl" + 
+          "EjMKBEZpbGUYASACKA4yJS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3" + 
+          "b3JrLkZpbGUSMwoEUmFuaxgCIAIoDjIlLmNvbS5yaWNoYXJkcGlhbmthLmNo" + 
+          "ZXNzLm5ldHdvcmsuUmFuayKLAQoFUGllY2USNQoFQ29sb3IYASACKA4yJi5j" + 
+          "b20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkNvbG9yEjsKCEZpZ3Vy" + 
+          "aW5lGAIgAigOMikuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5G" + 
+          "aWd1cmluZRIOCgZOdW1iZXIYAyACKA0iswEKBE1vdmUSNQoFUGllY2UYASAC" + 
+          "KAsyJi5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlBpZWNlEjoK" + 
+          "BVN0YXJ0GAIgAigLMisuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29y" + 
+          "ay5Db29yZGluYXRlEjgKA0VuZBgDIAIoCzIrLmNvbS5yaWNoYXJkcGlhbmth" + 
+          "LmNoZXNzLm5ldHdvcmsuQ29vcmRpbmF0ZSJGCgtTcGVjaWFsTW92ZRI3CgZD" + 
+          "YXN0bGUYASABKAsyJy5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3Jr" + 
+          "LkNhc3RsZSJ0CgZDYXN0bGUSNAoEUm9vaxgBIAIoCzImLmNvbS5yaWNoYXJk" + 
+          "cGlhbmthLmNoZXNzLm5ldHdvcmsuUGllY2USNAoES2luZxgCIAIoCzImLmNv" + 
+          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUGllY2UiVwoHVmVyc2lv" + 
+          "bhIXCgxWZXJzaW9uTWFqb3IYASABKA06ATESFwoMVmVyc2lvbk1pbm9yGAIg" + 
+          "ASgNOgEwEhoKD1ZlcnNpb25SZXZpc2lvbhgDIAEoDToBMCJPCgRSb29tEgwK" + 
+          "BE5hbWUYASACKAkSOQoFRmxhZ3MYAiACKA4yKi5jb20ucmljaGFyZHBpYW5r" + 
+          "YS5jaGVzcy5uZXR3b3JrLlJvb21GbGFncyJPCgZSZWNvcmQSDAoEV2lucxgB" + 
+          "IAIoDRIOCgZMb3NzZXMYAiACKA0SEgoKU3RhbGVtYXRlcxgDIAIoDRITCgtE" + 
+          "aXNjb25uZWN0cxgEIAIoDSKIAQoEVXNlchIMCgROYW1lGAEgAigJEjcKBlJl" + 
+          "Y29yZBgCIAIoCzInLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsu" + 
+          "UmVjb3JkEjkKBUZsYWdzGAMgASgOMiouY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
+          "c3MubmV0d29yay5Vc2VyRmxhZ3MieAoER2FtZRIMCgROYW1lGAEgAigJEhAK" + 
+          "CFBhc3N3b3JkGAIgASgJEg8KB1ByaXZhdGUYAyACKAgSPwoITWV0YURhdGEY" + 
+          "BCABKAsyLS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkdhbWVN" + 
+          "ZXRhZGF0YSK6AQoMR2FtZU1ldGFkYXRhEjYKB0NyZWF0ZWQYASABKAsyJS5j" + 
+          "b20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlVzZXISNQoGSm9pbmVk" + 
+          "GAIgASgLMiUuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Vc2Vy" + 
+          "EjsKCFVzZXJUaW1lGAMgASgLMikuY29tLnJpY2hhcmRwaWFua2EuY2hlc3Mu" + 
+          "bmV0d29yay5Vc2VyVGltZSIxCghVc2VyVGltZRINCgVUaW1lZBgBIAIoCBIW" + 
+          "Cg5TZWNvbmRzUGVyVXNlchgCIAIoDSJNChBIYW5kc2hha2VSZXF1ZXN0EjkK" + 
+          "B1ZlcnNpb24YASACKAsyKC5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3" + 
+          "b3JrLlZlcnNpb24iTAoRSGFuZHNoYWtlUmVzcG9uc2USNwoGUmVzdWx0GAEg" + 
+          "AigOMicuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5SZXN1bHQi" + 
+          "NQoPSWRlbnRpZnlSZXF1ZXN0EhAKCFVzZXJuYW1lGAEgAigJEhAKCFBhc3N3" + 
+          "b3JkGAIgASgJIlwKEElkZW50aWZ5UmVzcG9uc2USNwoGUmVzdWx0GAEgAigO" + 
+          "MicuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5SZXN1bHQSDwoH" + 
+          "TWVzc2FnZRgCIAEoCSI6ChRDcmVhdGVBY2NvdW50UmVxdWVzdBIQCghVc2Vy" + 
+          "bmFtZRgBIAIoCRIQCghQYXNzd29yZBgCIAIoCSJhChVDcmVhdGVBY2NvdW50" + 
+          "UmVzcG9uc2USNwoGUmVzdWx0GAEgAigOMicuY29tLnJpY2hhcmRwaWFua2Eu" + 
+          "Y2hlc3MubmV0d29yay5SZXN1bHQSDwoHTWVzc2FnZRgCIAEoCSJTChVDaGFu" + 
+          "Z2VQYXNzd29yZFJlcXVlc3QSEAoIVXNlcm5hbWUYASACKAkSEwoLT2xkUGFz" + 
+          "c3dvcmQYAiACKAkSEwoLTmV3UGFzc3dvcmQYAyACKAkiYgoWQ2hhbmdlUGFz" + 
+          "c3dvcmRSZXNwb25zZRI3CgZSZXN1bHQYASACKA4yJy5jb20ucmljaGFyZHBp" + 
+          "YW5rYS5jaGVzcy5uZXR3b3JrLlJlc3VsdBIPCgdNZXNzYWdlGAIgASgJIhEK" + 
+          "D0pvaW5DaGF0UmVxdWVzdCJLChBKb2luQ2hhdFJlc3BvbnNlEjcKBlJlc3Vs" + 
           "dBgBIAIoDjInLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUmVz" + 
-          "dWx0IpMBCgxTcGVha1JlcXVlc3QSOAoETW9kZRgBIAIoDjIqLmNvbS5yaWNo" + 
-          "YXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuU3BlYWtNb2RlEg8KB01lc3NhZ2UY" + 
-          "AiACKAkSOAoJUmVjaXBpZW50GAMgASgLMiUuY29tLnJpY2hhcmRwaWFua2Eu" + 
-          "Y2hlc3MubmV0d29yay5Vc2VyIocBCg9PcGVyYXRvclJlcXVlc3QSPwoGQWN0" + 
-          "aW9uGAEgAigOMi8uY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5P" + 
-          "cGVyYXRvckFjdGlvbhIzCgRVc2VyGAIgASgLMiUuY29tLnJpY2hhcmRwaWFu" + 
-          "a2EuY2hlc3MubmV0d29yay5Vc2VyIksKEE9wZXJhdG9yUmVzcG9uc2USNwoG" + 
-          "UmVzdWx0GAEgAigOMicuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29y" + 
-          "ay5SZXN1bHQiegoNQ2hhdFJvb21FdmVudBIzCgRSb29tGAEgAigLMiUuY29t" + 
-          "LnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Sb29tEjQKBVVzZXJzGAIg" + 
-          "AygLMiUuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Vc2VyItAB" + 
-          "Cg1DaGF0VXNlckV2ZW50EjMKBFVzZXIYASACKAsyJS5jb20ucmljaGFyZHBp" + 
-          "YW5rYS5jaGVzcy5uZXR3b3JrLlVzZXISSQoGU3RhdHVzGAIgAigOMjkuY29t" + 
-          "LnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5DaGF0VXNlckV2ZW50LlVz" + 
-          "ZXJTdGF0dXMSDwoHTWVzc2FnZRgDIAEoCSIuCgpVc2VyU3RhdHVzEgoKBkpv" + 
-          "aW5lZBAAEggKBExlZnQQARIKCgZVcGRhdGUQAiKQAQoOQ2hhdFNwZWFrRXZl" + 
-          "bnQSMwoEVXNlchgBIAIoCzIlLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5l" + 
-          "dHdvcmsuVXNlchIPCgdNZXNzYWdlGAIgAigJEjgKBE1vZGUYAyACKA4yKi5j" + 
-          "b20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlNwZWFrTW9kZSIRCg9H" + 
-          "YW1lTGlzdFJlcXVlc3QiSAoQR2FtZUxpc3RSZXNwb25zZRI0CgVHYW1lcxgB" + 
-          "IAMoCzIlLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuR2FtZSIz" + 
-          "ChFDcmVhdGVHYW1lUmVxdWVzdBIMCgROYW1lGAEgAigJEhAKCFBhc3N3b3Jk" + 
-          "GAIgASgJIpMBChJDcmVhdGVHYW1lUmVzcG9uc2USNwoGUmVzdWx0GAEgAigO" + 
-          "MicuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5SZXN1bHQSMwoE" + 
-          "R2FtZRgCIAEoCzIlLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsu" + 
-          "R2FtZRIPCgdNZXNzYWdlGAMgASgJIlgKD0pvaW5HYW1lUmVxdWVzdBIzCgRH" + 
-          "YW1lGAEgAigLMiUuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5H" + 
-          "YW1lEhAKCFBhc3N3b3JkGAIgASgJIoABChBKb2luR2FtZVJlc3BvbnNlEjMK" + 
-          "BEdhbWUYASACKAsyJS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3Jr" + 
-          "LkdhbWUSNwoGUmVzdWx0GAIgAigOMicuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
-          "c3MubmV0d29yay5SZXN1bHQiEgoQTGVhdmVHYW1lUmVxdWVzdCISChBTdGFy" + 
-          "dEdhbWVSZXF1ZXN0IkwKEVN0YXJ0R2FtZVJlc3BvbnNlEjcKBlJlc3VsdBgB" + 
-          "IAIoDjInLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUmVzdWx0" + 
-          "IkkKEEdhbWVTdGFydGVkRXZlbnQSNQoFQ29sb3IYASACKA4yJi5jb20ucmlj" + 
-          "aGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkNvbG9yIkcKEE1vdmVQaWVjZVJl" + 
-          "cXVlc3QSMwoETW92ZRgBIAIoCzIlLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNz" + 
-          "Lm5ldHdvcmsuTW92ZSJMChFNb3ZlUGllY2VSZXNwb25zZRI3CgZSZXN1bHQY" + 
-          "ASACKA4yJy5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlJlc3Vs" + 
-          "dCJFCg5Nb3ZlUGllY2VFdmVudBIzCgRNb3ZlGAEgAigLMiUuY29tLnJpY2hh" + 
-          "cmRwaWFua2EuY2hlc3MubmV0d29yay5Nb3ZlIlUKF1NwZWNpYWxNb3ZlUGll" + 
-          "Y2VSZXF1ZXN0EjoKBE1vdmUYASACKAsyLC5jb20ucmljaGFyZHBpYW5rYS5j" + 
-          "aGVzcy5uZXR3b3JrLlNwZWNpYWxNb3ZlIlMKGFNwZWNpYWxNb3ZlUGllY2VS" + 
-          "ZXNwb25zZRI3CgZSZXN1bHQYASACKA4yJy5jb20ucmljaGFyZHBpYW5rYS5j" + 
-          "aGVzcy5uZXR3b3JrLlJlc3VsdCJTChVTcGVjaWFsTW92ZVBpZWNlRXZlbnQS" + 
-          "OgoETW92ZRgBIAIoCzIsLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdv" + 
-          "cmsuU3BlY2lhbE1vdmUigwEKD0dhbWVTdGF0dXNFdmVudBI7CgZTdGF0dXMY" + 
-          "ASABKA4yKy5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLkdhbWVT" + 
-          "dGF0dXMSMwoEVXNlchgCIAEoCzIlLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNz" + 
-          "Lm5ldHdvcmsuVXNlciI7Cg1UaW1lTGVmdEV2ZW50EhQKDFdoaXRlU2Vjb25k" + 
-          "cxgBIAIoDRIUCgxCbGFja1NlY29uZHMYAiACKA0qHQoFQ29sb3ISCQoFV2hp" + 
-          "dGUQABIJCgVCbGFjaxABKksKCEZpZ3VyaW5lEggKBEtpbmcQABIJCgVRdWVl" + 
-          "bhABEgoKBkJpc2hvcBACEgoKBktuaWdodBADEggKBFJvb2sQBBIICgRQYXdu" + 
-          "EAUqRgoEUmFuaxIGCgJfMRAAEgYKAl8yEAESBgoCXzMQAhIGCgJfNBADEgYK" + 
-          "Al81EAQSBgoCXzYQBRIGCgJfNxAGEgYKAl84EAcqRgoERmlsZRIGCgJfQRAA" + 
-          "EgYKAl9CEAESBgoCX0MQAhIGCgJfRBADEgYKAl9FEAQSBgoCX0YQBRIGCgJf" + 
-          "RxAGEgYKAl9IEAcqIgoGUmVzdWx0EgsKB1N1Y2Nlc3MQABILCgdGYWlsdXJl" + 
-          "EAEqNAoJUm9vbUZsYWdzEgoKBlB1YmxpYxAAEgsKB1ByaXZhdGUQARIOCgpS" + 
-          "ZXN0cmljdGVkEAIqNAoJVXNlckZsYWdzEg4KClBlZGVzdHJpYW4QABIMCghP" + 
-          "cGVyYXRvchABEgkKBUFkbWluEAIqLwoJU3BlYWtNb2RlEgoKBk5vcm1hbBAA" + 
-          "EgsKB1doaXNwZXIQARIJCgVFbW90ZRACKj4KDk9wZXJhdG9yQWN0aW9uEg0K" + 
-          "CURlc2lnbmF0ZRAAEgoKBlJlc2lnbhABEggKBEtpY2sQAhIHCgNCYW4QAypL" + 
-          "CgpHYW1lU3RhdHVzEggKBFBsYXkQABIKCgZQYXVzZWQQARILCgdWaWN0b3J5" + 
-          "EAISCwoHRm9yZmVpdBADEg0KCVN0YWxlbWF0ZRAEQiwKH2NvbS5yaWNoYXJk" + 
-          "cGlhbmthLmNoZXNzLm5ldHdvcmtCCUNvbnRyYWN0cw==");
+          "dWx0IhEKD1Jvb21MaXN0UmVxdWVzdCJIChBSb29tTGlzdFJlc3BvbnNlEjQK" + 
+          "BVJvb21zGAEgAygLMiUuY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29y" + 
+          "ay5Sb29tIkYKD0pvaW5Sb29tUmVxdWVzdBIzCgRSb29tGAEgAigLMiUuY29t" + 
+          "LnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Sb29tIksKEEpvaW5Sb29t" + 
+          "UmVzcG9uc2USNwoGUmVzdWx0GAEgAigOMicuY29tLnJpY2hhcmRwaWFua2Eu" + 
+          "Y2hlc3MubmV0d29yay5SZXN1bHQikwEKDFNwZWFrUmVxdWVzdBI4CgRNb2Rl" + 
+          "GAEgAigOMiouY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5TcGVh" + 
+          "a01vZGUSDwoHTWVzc2FnZRgCIAIoCRI4CglSZWNpcGllbnQYAyABKAsyJS5j" + 
+          "b20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlVzZXIihwEKD09wZXJh" + 
+          "dG9yUmVxdWVzdBI/CgZBY3Rpb24YASACKA4yLy5jb20ucmljaGFyZHBpYW5r" + 
+          "YS5jaGVzcy5uZXR3b3JrLk9wZXJhdG9yQWN0aW9uEjMKBFVzZXIYAiABKAsy" + 
+          "JS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlVzZXIiSwoQT3Bl" + 
+          "cmF0b3JSZXNwb25zZRI3CgZSZXN1bHQYASACKA4yJy5jb20ucmljaGFyZHBp" + 
+          "YW5rYS5jaGVzcy5uZXR3b3JrLlJlc3VsdCJ6Cg1DaGF0Um9vbUV2ZW50EjMK" + 
+          "BFJvb20YASACKAsyJS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3Jr" + 
+          "LlJvb20SNAoFVXNlcnMYAiADKAsyJS5jb20ucmljaGFyZHBpYW5rYS5jaGVz" + 
+          "cy5uZXR3b3JrLlVzZXIi0AEKDUNoYXRVc2VyRXZlbnQSMwoEVXNlchgBIAIo" + 
+          "CzIlLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuVXNlchJJCgZT" + 
+          "dGF0dXMYAiACKA4yOS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3Jr" + 
+          "LkNoYXRVc2VyRXZlbnQuVXNlclN0YXR1cxIPCgdNZXNzYWdlGAMgASgJIi4K" + 
+          "ClVzZXJTdGF0dXMSCgoGSm9pbmVkEAASCAoETGVmdBABEgoKBlVwZGF0ZRAC" + 
+          "IpABCg5DaGF0U3BlYWtFdmVudBIzCgRVc2VyGAEgAigLMiUuY29tLnJpY2hh" + 
+          "cmRwaWFua2EuY2hlc3MubmV0d29yay5Vc2VyEg8KB01lc3NhZ2UYAiACKAkS" + 
+          "OAoETW9kZRgDIAIoDjIqLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdv" + 
+          "cmsuU3BlYWtNb2RlIhEKD0dhbWVMaXN0UmVxdWVzdCJIChBHYW1lTGlzdFJl" + 
+          "c3BvbnNlEjQKBUdhbWVzGAEgAygLMiUuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
+          "c3MubmV0d29yay5HYW1lIjMKEUNyZWF0ZUdhbWVSZXF1ZXN0EgwKBE5hbWUY" + 
+          "ASACKAkSEAoIUGFzc3dvcmQYAiABKAkikwEKEkNyZWF0ZUdhbWVSZXNwb25z" + 
+          "ZRI3CgZSZXN1bHQYASACKA4yJy5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5u" + 
+          "ZXR3b3JrLlJlc3VsdBIzCgRHYW1lGAIgASgLMiUuY29tLnJpY2hhcmRwaWFu" + 
+          "a2EuY2hlc3MubmV0d29yay5HYW1lEg8KB01lc3NhZ2UYAyABKAkiWAoPSm9p" + 
+          "bkdhbWVSZXF1ZXN0EjMKBEdhbWUYASACKAsyJS5jb20ucmljaGFyZHBpYW5r" + 
+          "YS5jaGVzcy5uZXR3b3JrLkdhbWUSEAoIUGFzc3dvcmQYAiABKAkigAEKEEpv" + 
+          "aW5HYW1lUmVzcG9uc2USMwoER2FtZRgBIAIoCzIlLmNvbS5yaWNoYXJkcGlh" + 
+          "bmthLmNoZXNzLm5ldHdvcmsuR2FtZRI3CgZSZXN1bHQYAiACKA4yJy5jb20u" + 
+          "cmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLlJlc3VsdCISChBMZWF2ZUdh" + 
+          "bWVSZXF1ZXN0IhIKEFN0YXJ0R2FtZVJlcXVlc3QiTAoRU3RhcnRHYW1lUmVz" + 
+          "cG9uc2USNwoGUmVzdWx0GAEgAigOMicuY29tLnJpY2hhcmRwaWFua2EuY2hl" + 
+          "c3MubmV0d29yay5SZXN1bHQiSQoQR2FtZVN0YXJ0ZWRFdmVudBI1CgVDb2xv" + 
+          "chgBIAIoDjImLmNvbS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuQ29s" + 
+          "b3IiRwoQTW92ZVBpZWNlUmVxdWVzdBIzCgRNb3ZlGAEgAigLMiUuY29tLnJp" + 
+          "Y2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Nb3ZlIkwKEU1vdmVQaWVjZVJl" + 
+          "c3BvbnNlEjcKBlJlc3VsdBgBIAIoDjInLmNvbS5yaWNoYXJkcGlhbmthLmNo" + 
+          "ZXNzLm5ldHdvcmsuUmVzdWx0IkUKDk1vdmVQaWVjZUV2ZW50EjMKBE1vdmUY" + 
+          "ASACKAsyJS5jb20ucmljaGFyZHBpYW5rYS5jaGVzcy5uZXR3b3JrLk1vdmUi" + 
+          "VQoXU3BlY2lhbE1vdmVQaWVjZVJlcXVlc3QSOgoETW92ZRgBIAIoCzIsLmNv" + 
+          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuU3BlY2lhbE1vdmUiUwoY" + 
+          "U3BlY2lhbE1vdmVQaWVjZVJlc3BvbnNlEjcKBlJlc3VsdBgBIAIoDjInLmNv" + 
+          "bS5yaWNoYXJkcGlhbmthLmNoZXNzLm5ldHdvcmsuUmVzdWx0IlMKFVNwZWNp" + 
+          "YWxNb3ZlUGllY2VFdmVudBI6CgRNb3ZlGAEgAigLMiwuY29tLnJpY2hhcmRw" + 
+          "aWFua2EuY2hlc3MubmV0d29yay5TcGVjaWFsTW92ZSKDAQoPR2FtZVN0YXR1" + 
+          "c0V2ZW50EjsKBlN0YXR1cxgBIAEoDjIrLmNvbS5yaWNoYXJkcGlhbmthLmNo" + 
+          "ZXNzLm5ldHdvcmsuR2FtZVN0YXR1cxIzCgRVc2VyGAIgASgLMiUuY29tLnJp" + 
+          "Y2hhcmRwaWFua2EuY2hlc3MubmV0d29yay5Vc2VyIjsKDVRpbWVMZWZ0RXZl" + 
+          "bnQSFAoMV2hpdGVTZWNvbmRzGAEgAigNEhQKDEJsYWNrU2Vjb25kcxgCIAIo" + 
+          "DSodCgVDb2xvchIJCgVXaGl0ZRAAEgkKBUJsYWNrEAEqSwoIRmlndXJpbmUS" + 
+          "CAoES2luZxAAEgkKBVF1ZWVuEAESCgoGQmlzaG9wEAISCgoGS25pZ2h0EAMS" + 
+          "CAoEUm9vaxAEEggKBFBhd24QBSpGCgRSYW5rEgYKAl8xEAASBgoCXzIQARIG" + 
+          "CgJfMxACEgYKAl80EAMSBgoCXzUQBBIGCgJfNhAFEgYKAl83EAYSBgoCXzgQ" + 
+          "BypGCgRGaWxlEgYKAl9BEAASBgoCX0IQARIGCgJfQxACEgYKAl9EEAMSBgoC" + 
+          "X0UQBBIGCgJfRhAFEgYKAl9HEAYSBgoCX0gQByoiCgZSZXN1bHQSCwoHU3Vj" + 
+          "Y2VzcxAAEgsKB0ZhaWx1cmUQASo0CglSb29tRmxhZ3MSCgoGUHVibGljEAAS" + 
+          "CwoHUHJpdmF0ZRABEg4KClJlc3RyaWN0ZWQQAio0CglVc2VyRmxhZ3MSDgoK" + 
+          "UGVkZXN0cmlhbhAAEgwKCE9wZXJhdG9yEAESCQoFQWRtaW4QAiovCglTcGVh" + 
+          "a01vZGUSCgoGTm9ybWFsEAASCwoHV2hpc3BlchABEgkKBUVtb3RlEAIqPgoO" + 
+          "T3BlcmF0b3JBY3Rpb24SDQoJRGVzaWduYXRlEAASCgoGUmVzaWduEAESCAoE" + 
+          "S2ljaxACEgcKA0JhbhADKksKCkdhbWVTdGF0dXMSCAoEUGxheRAAEgoKBlBh" + 
+          "dXNlZBABEgsKB1ZpY3RvcnkQAhILCgdGb3JmZWl0EAMSDQoJU3RhbGVtYXRl" + 
+          "EARCLAofY29tLnJpY2hhcmRwaWFua2EuY2hlc3MubmV0d29ya0IJQ29udHJh" + 
+          "Y3Rz");
       pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
         descriptor = root;
         internal__static_com_richardpianka_chess_network_Envelope__Descriptor = Descriptor.MessageTypes[0];
         internal__static_com_richardpianka_chess_network_Envelope__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.Envelope, global::com.richardpianka.chess.network.Envelope.Builder>(internal__static_com_richardpianka_chess_network_Envelope__Descriptor,
-                new string[] { "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "JoinChatRequest", "JoinChatResponse", "RoomListRequest", "RoomListResponse", "JoinRoomRequest", "JoinRoomResponse", "SpeakRequest", "OperatorRequest", "OperatorResponse", "ChatRoomEvent", "ChatUserEvent", "ChatSpeakEvent", "GameListRequest", "GameListResponse", "CreateGameRequest", "CreateGameResponse", "JoinGameRequest", "JoinGameResponse", "LeaveGameRequest", "StartGameRequest", "StartGameResponse", "GameStartedEvent", "MovePieceRequest", "MovePieceResponse", "MovePieceEvent", "SpecialMovePieceRequest", "SpecialMovePieceResponse", "SpecialMovePieceEvent", "GameStatusEvent", "TimeLeftEvent", });
+                new string[] { "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "CreateAccountRequest", "CreateAccountResponse", "ChangePasswordRequest", "ChangePasswordResponse", "JoinChatRequest", "JoinChatResponse", "RoomListRequest", "RoomListResponse", "JoinRoomRequest", "JoinRoomResponse", "SpeakRequest", "OperatorRequest", "OperatorResponse", "ChatRoomEvent", "ChatUserEvent", "ChatSpeakEvent", "GameListRequest", "GameListResponse", "CreateGameRequest", "CreateGameResponse", "JoinGameRequest", "JoinGameResponse", "LeaveGameRequest", "StartGameRequest", "StartGameResponse", "GameStartedEvent", "MovePieceRequest", "MovePieceResponse", "MovePieceEvent", "SpecialMovePieceRequest", "SpecialMovePieceResponse", "SpecialMovePieceEvent", "GameStatusEvent", "TimeLeftEvent", });
         internal__static_com_richardpianka_chess_network_Coordinate__Descriptor = Descriptor.MessageTypes[1];
         internal__static_com_richardpianka_chess_network_Coordinate__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.Coordinate, global::com.richardpianka.chess.network.Coordinate.Builder>(internal__static_com_richardpianka_chess_network_Coordinate__Descriptor,
@@ -331,7 +355,7 @@ namespace com.richardpianka.chess.network {
         internal__static_com_richardpianka_chess_network_User__Descriptor = Descriptor.MessageTypes[9];
         internal__static_com_richardpianka_chess_network_User__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.User, global::com.richardpianka.chess.network.User.Builder>(internal__static_com_richardpianka_chess_network_User__Descriptor,
-                new string[] { "Name", "Flags", "Record", });
+                new string[] { "Name", "Record", "Flags", });
         internal__static_com_richardpianka_chess_network_Game__Descriptor = Descriptor.MessageTypes[10];
         internal__static_com_richardpianka_chess_network_Game__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.Game, global::com.richardpianka.chess.network.Game.Builder>(internal__static_com_richardpianka_chess_network_Game__Descriptor,
@@ -360,123 +384,139 @@ namespace com.richardpianka.chess.network {
         internal__static_com_richardpianka_chess_network_IdentifyResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.IdentifyResponse, global::com.richardpianka.chess.network.IdentifyResponse.Builder>(internal__static_com_richardpianka_chess_network_IdentifyResponse__Descriptor,
                 new string[] { "Result", "Message", });
-        internal__static_com_richardpianka_chess_network_JoinChatRequest__Descriptor = Descriptor.MessageTypes[17];
+        internal__static_com_richardpianka_chess_network_CreateAccountRequest__Descriptor = Descriptor.MessageTypes[17];
+        internal__static_com_richardpianka_chess_network_CreateAccountRequest__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.CreateAccountRequest, global::com.richardpianka.chess.network.CreateAccountRequest.Builder>(internal__static_com_richardpianka_chess_network_CreateAccountRequest__Descriptor,
+                new string[] { "Username", "Password", });
+        internal__static_com_richardpianka_chess_network_CreateAccountResponse__Descriptor = Descriptor.MessageTypes[18];
+        internal__static_com_richardpianka_chess_network_CreateAccountResponse__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.CreateAccountResponse, global::com.richardpianka.chess.network.CreateAccountResponse.Builder>(internal__static_com_richardpianka_chess_network_CreateAccountResponse__Descriptor,
+                new string[] { "Result", "Message", });
+        internal__static_com_richardpianka_chess_network_ChangePasswordRequest__Descriptor = Descriptor.MessageTypes[19];
+        internal__static_com_richardpianka_chess_network_ChangePasswordRequest__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.ChangePasswordRequest, global::com.richardpianka.chess.network.ChangePasswordRequest.Builder>(internal__static_com_richardpianka_chess_network_ChangePasswordRequest__Descriptor,
+                new string[] { "Username", "OldPassword", "NewPassword", });
+        internal__static_com_richardpianka_chess_network_ChangePasswordResponse__Descriptor = Descriptor.MessageTypes[20];
+        internal__static_com_richardpianka_chess_network_ChangePasswordResponse__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.ChangePasswordResponse, global::com.richardpianka.chess.network.ChangePasswordResponse.Builder>(internal__static_com_richardpianka_chess_network_ChangePasswordResponse__Descriptor,
+                new string[] { "Result", "Message", });
+        internal__static_com_richardpianka_chess_network_JoinChatRequest__Descriptor = Descriptor.MessageTypes[21];
         internal__static_com_richardpianka_chess_network_JoinChatRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.JoinChatRequest, global::com.richardpianka.chess.network.JoinChatRequest.Builder>(internal__static_com_richardpianka_chess_network_JoinChatRequest__Descriptor,
                 new string[] { });
-        internal__static_com_richardpianka_chess_network_JoinChatResponse__Descriptor = Descriptor.MessageTypes[18];
+        internal__static_com_richardpianka_chess_network_JoinChatResponse__Descriptor = Descriptor.MessageTypes[22];
         internal__static_com_richardpianka_chess_network_JoinChatResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.JoinChatResponse, global::com.richardpianka.chess.network.JoinChatResponse.Builder>(internal__static_com_richardpianka_chess_network_JoinChatResponse__Descriptor,
                 new string[] { "Result", });
-        internal__static_com_richardpianka_chess_network_RoomListRequest__Descriptor = Descriptor.MessageTypes[19];
+        internal__static_com_richardpianka_chess_network_RoomListRequest__Descriptor = Descriptor.MessageTypes[23];
         internal__static_com_richardpianka_chess_network_RoomListRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.RoomListRequest, global::com.richardpianka.chess.network.RoomListRequest.Builder>(internal__static_com_richardpianka_chess_network_RoomListRequest__Descriptor,
                 new string[] { });
-        internal__static_com_richardpianka_chess_network_RoomListResponse__Descriptor = Descriptor.MessageTypes[20];
+        internal__static_com_richardpianka_chess_network_RoomListResponse__Descriptor = Descriptor.MessageTypes[24];
         internal__static_com_richardpianka_chess_network_RoomListResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.RoomListResponse, global::com.richardpianka.chess.network.RoomListResponse.Builder>(internal__static_com_richardpianka_chess_network_RoomListResponse__Descriptor,
                 new string[] { "Rooms", });
-        internal__static_com_richardpianka_chess_network_JoinRoomRequest__Descriptor = Descriptor.MessageTypes[21];
+        internal__static_com_richardpianka_chess_network_JoinRoomRequest__Descriptor = Descriptor.MessageTypes[25];
         internal__static_com_richardpianka_chess_network_JoinRoomRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.JoinRoomRequest, global::com.richardpianka.chess.network.JoinRoomRequest.Builder>(internal__static_com_richardpianka_chess_network_JoinRoomRequest__Descriptor,
                 new string[] { "Room", });
-        internal__static_com_richardpianka_chess_network_JoinRoomResponse__Descriptor = Descriptor.MessageTypes[22];
+        internal__static_com_richardpianka_chess_network_JoinRoomResponse__Descriptor = Descriptor.MessageTypes[26];
         internal__static_com_richardpianka_chess_network_JoinRoomResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.JoinRoomResponse, global::com.richardpianka.chess.network.JoinRoomResponse.Builder>(internal__static_com_richardpianka_chess_network_JoinRoomResponse__Descriptor,
                 new string[] { "Result", });
-        internal__static_com_richardpianka_chess_network_SpeakRequest__Descriptor = Descriptor.MessageTypes[23];
+        internal__static_com_richardpianka_chess_network_SpeakRequest__Descriptor = Descriptor.MessageTypes[27];
         internal__static_com_richardpianka_chess_network_SpeakRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.SpeakRequest, global::com.richardpianka.chess.network.SpeakRequest.Builder>(internal__static_com_richardpianka_chess_network_SpeakRequest__Descriptor,
                 new string[] { "Mode", "Message", "Recipient", });
-        internal__static_com_richardpianka_chess_network_OperatorRequest__Descriptor = Descriptor.MessageTypes[24];
+        internal__static_com_richardpianka_chess_network_OperatorRequest__Descriptor = Descriptor.MessageTypes[28];
         internal__static_com_richardpianka_chess_network_OperatorRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.OperatorRequest, global::com.richardpianka.chess.network.OperatorRequest.Builder>(internal__static_com_richardpianka_chess_network_OperatorRequest__Descriptor,
                 new string[] { "Action", "User", });
-        internal__static_com_richardpianka_chess_network_OperatorResponse__Descriptor = Descriptor.MessageTypes[25];
+        internal__static_com_richardpianka_chess_network_OperatorResponse__Descriptor = Descriptor.MessageTypes[29];
         internal__static_com_richardpianka_chess_network_OperatorResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.OperatorResponse, global::com.richardpianka.chess.network.OperatorResponse.Builder>(internal__static_com_richardpianka_chess_network_OperatorResponse__Descriptor,
                 new string[] { "Result", });
-        internal__static_com_richardpianka_chess_network_ChatRoomEvent__Descriptor = Descriptor.MessageTypes[26];
+        internal__static_com_richardpianka_chess_network_ChatRoomEvent__Descriptor = Descriptor.MessageTypes[30];
         internal__static_com_richardpianka_chess_network_ChatRoomEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.ChatRoomEvent, global::com.richardpianka.chess.network.ChatRoomEvent.Builder>(internal__static_com_richardpianka_chess_network_ChatRoomEvent__Descriptor,
                 new string[] { "Room", "Users", });
-        internal__static_com_richardpianka_chess_network_ChatUserEvent__Descriptor = Descriptor.MessageTypes[27];
+        internal__static_com_richardpianka_chess_network_ChatUserEvent__Descriptor = Descriptor.MessageTypes[31];
         internal__static_com_richardpianka_chess_network_ChatUserEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.ChatUserEvent, global::com.richardpianka.chess.network.ChatUserEvent.Builder>(internal__static_com_richardpianka_chess_network_ChatUserEvent__Descriptor,
                 new string[] { "User", "Status", "Message", });
-        internal__static_com_richardpianka_chess_network_ChatSpeakEvent__Descriptor = Descriptor.MessageTypes[28];
+        internal__static_com_richardpianka_chess_network_ChatSpeakEvent__Descriptor = Descriptor.MessageTypes[32];
         internal__static_com_richardpianka_chess_network_ChatSpeakEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.ChatSpeakEvent, global::com.richardpianka.chess.network.ChatSpeakEvent.Builder>(internal__static_com_richardpianka_chess_network_ChatSpeakEvent__Descriptor,
                 new string[] { "User", "Message", "Mode", });
-        internal__static_com_richardpianka_chess_network_GameListRequest__Descriptor = Descriptor.MessageTypes[29];
+        internal__static_com_richardpianka_chess_network_GameListRequest__Descriptor = Descriptor.MessageTypes[33];
         internal__static_com_richardpianka_chess_network_GameListRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.GameListRequest, global::com.richardpianka.chess.network.GameListRequest.Builder>(internal__static_com_richardpianka_chess_network_GameListRequest__Descriptor,
                 new string[] { });
-        internal__static_com_richardpianka_chess_network_GameListResponse__Descriptor = Descriptor.MessageTypes[30];
+        internal__static_com_richardpianka_chess_network_GameListResponse__Descriptor = Descriptor.MessageTypes[34];
         internal__static_com_richardpianka_chess_network_GameListResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.GameListResponse, global::com.richardpianka.chess.network.GameListResponse.Builder>(internal__static_com_richardpianka_chess_network_GameListResponse__Descriptor,
                 new string[] { "Games", });
-        internal__static_com_richardpianka_chess_network_CreateGameRequest__Descriptor = Descriptor.MessageTypes[31];
+        internal__static_com_richardpianka_chess_network_CreateGameRequest__Descriptor = Descriptor.MessageTypes[35];
         internal__static_com_richardpianka_chess_network_CreateGameRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.CreateGameRequest, global::com.richardpianka.chess.network.CreateGameRequest.Builder>(internal__static_com_richardpianka_chess_network_CreateGameRequest__Descriptor,
                 new string[] { "Name", "Password", });
-        internal__static_com_richardpianka_chess_network_CreateGameResponse__Descriptor = Descriptor.MessageTypes[32];
+        internal__static_com_richardpianka_chess_network_CreateGameResponse__Descriptor = Descriptor.MessageTypes[36];
         internal__static_com_richardpianka_chess_network_CreateGameResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.CreateGameResponse, global::com.richardpianka.chess.network.CreateGameResponse.Builder>(internal__static_com_richardpianka_chess_network_CreateGameResponse__Descriptor,
                 new string[] { "Result", "Game", "Message", });
-        internal__static_com_richardpianka_chess_network_JoinGameRequest__Descriptor = Descriptor.MessageTypes[33];
+        internal__static_com_richardpianka_chess_network_JoinGameRequest__Descriptor = Descriptor.MessageTypes[37];
         internal__static_com_richardpianka_chess_network_JoinGameRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.JoinGameRequest, global::com.richardpianka.chess.network.JoinGameRequest.Builder>(internal__static_com_richardpianka_chess_network_JoinGameRequest__Descriptor,
                 new string[] { "Game", "Password", });
-        internal__static_com_richardpianka_chess_network_JoinGameResponse__Descriptor = Descriptor.MessageTypes[34];
+        internal__static_com_richardpianka_chess_network_JoinGameResponse__Descriptor = Descriptor.MessageTypes[38];
         internal__static_com_richardpianka_chess_network_JoinGameResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.JoinGameResponse, global::com.richardpianka.chess.network.JoinGameResponse.Builder>(internal__static_com_richardpianka_chess_network_JoinGameResponse__Descriptor,
                 new string[] { "Game", "Result", });
-        internal__static_com_richardpianka_chess_network_LeaveGameRequest__Descriptor = Descriptor.MessageTypes[35];
+        internal__static_com_richardpianka_chess_network_LeaveGameRequest__Descriptor = Descriptor.MessageTypes[39];
         internal__static_com_richardpianka_chess_network_LeaveGameRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.LeaveGameRequest, global::com.richardpianka.chess.network.LeaveGameRequest.Builder>(internal__static_com_richardpianka_chess_network_LeaveGameRequest__Descriptor,
                 new string[] { });
-        internal__static_com_richardpianka_chess_network_StartGameRequest__Descriptor = Descriptor.MessageTypes[36];
+        internal__static_com_richardpianka_chess_network_StartGameRequest__Descriptor = Descriptor.MessageTypes[40];
         internal__static_com_richardpianka_chess_network_StartGameRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.StartGameRequest, global::com.richardpianka.chess.network.StartGameRequest.Builder>(internal__static_com_richardpianka_chess_network_StartGameRequest__Descriptor,
                 new string[] { });
-        internal__static_com_richardpianka_chess_network_StartGameResponse__Descriptor = Descriptor.MessageTypes[37];
+        internal__static_com_richardpianka_chess_network_StartGameResponse__Descriptor = Descriptor.MessageTypes[41];
         internal__static_com_richardpianka_chess_network_StartGameResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.StartGameResponse, global::com.richardpianka.chess.network.StartGameResponse.Builder>(internal__static_com_richardpianka_chess_network_StartGameResponse__Descriptor,
                 new string[] { "Result", });
-        internal__static_com_richardpianka_chess_network_GameStartedEvent__Descriptor = Descriptor.MessageTypes[38];
+        internal__static_com_richardpianka_chess_network_GameStartedEvent__Descriptor = Descriptor.MessageTypes[42];
         internal__static_com_richardpianka_chess_network_GameStartedEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.GameStartedEvent, global::com.richardpianka.chess.network.GameStartedEvent.Builder>(internal__static_com_richardpianka_chess_network_GameStartedEvent__Descriptor,
                 new string[] { "Color", });
-        internal__static_com_richardpianka_chess_network_MovePieceRequest__Descriptor = Descriptor.MessageTypes[39];
+        internal__static_com_richardpianka_chess_network_MovePieceRequest__Descriptor = Descriptor.MessageTypes[43];
         internal__static_com_richardpianka_chess_network_MovePieceRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.MovePieceRequest, global::com.richardpianka.chess.network.MovePieceRequest.Builder>(internal__static_com_richardpianka_chess_network_MovePieceRequest__Descriptor,
                 new string[] { "Move", });
-        internal__static_com_richardpianka_chess_network_MovePieceResponse__Descriptor = Descriptor.MessageTypes[40];
+        internal__static_com_richardpianka_chess_network_MovePieceResponse__Descriptor = Descriptor.MessageTypes[44];
         internal__static_com_richardpianka_chess_network_MovePieceResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.MovePieceResponse, global::com.richardpianka.chess.network.MovePieceResponse.Builder>(internal__static_com_richardpianka_chess_network_MovePieceResponse__Descriptor,
                 new string[] { "Result", });
-        internal__static_com_richardpianka_chess_network_MovePieceEvent__Descriptor = Descriptor.MessageTypes[41];
+        internal__static_com_richardpianka_chess_network_MovePieceEvent__Descriptor = Descriptor.MessageTypes[45];
         internal__static_com_richardpianka_chess_network_MovePieceEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.MovePieceEvent, global::com.richardpianka.chess.network.MovePieceEvent.Builder>(internal__static_com_richardpianka_chess_network_MovePieceEvent__Descriptor,
                 new string[] { "Move", });
-        internal__static_com_richardpianka_chess_network_SpecialMovePieceRequest__Descriptor = Descriptor.MessageTypes[42];
+        internal__static_com_richardpianka_chess_network_SpecialMovePieceRequest__Descriptor = Descriptor.MessageTypes[46];
         internal__static_com_richardpianka_chess_network_SpecialMovePieceRequest__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.SpecialMovePieceRequest, global::com.richardpianka.chess.network.SpecialMovePieceRequest.Builder>(internal__static_com_richardpianka_chess_network_SpecialMovePieceRequest__Descriptor,
                 new string[] { "Move", });
-        internal__static_com_richardpianka_chess_network_SpecialMovePieceResponse__Descriptor = Descriptor.MessageTypes[43];
+        internal__static_com_richardpianka_chess_network_SpecialMovePieceResponse__Descriptor = Descriptor.MessageTypes[47];
         internal__static_com_richardpianka_chess_network_SpecialMovePieceResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.SpecialMovePieceResponse, global::com.richardpianka.chess.network.SpecialMovePieceResponse.Builder>(internal__static_com_richardpianka_chess_network_SpecialMovePieceResponse__Descriptor,
                 new string[] { "Result", });
-        internal__static_com_richardpianka_chess_network_SpecialMovePieceEvent__Descriptor = Descriptor.MessageTypes[44];
+        internal__static_com_richardpianka_chess_network_SpecialMovePieceEvent__Descriptor = Descriptor.MessageTypes[48];
         internal__static_com_richardpianka_chess_network_SpecialMovePieceEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.SpecialMovePieceEvent, global::com.richardpianka.chess.network.SpecialMovePieceEvent.Builder>(internal__static_com_richardpianka_chess_network_SpecialMovePieceEvent__Descriptor,
                 new string[] { "Move", });
-        internal__static_com_richardpianka_chess_network_GameStatusEvent__Descriptor = Descriptor.MessageTypes[45];
+        internal__static_com_richardpianka_chess_network_GameStatusEvent__Descriptor = Descriptor.MessageTypes[49];
         internal__static_com_richardpianka_chess_network_GameStatusEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.GameStatusEvent, global::com.richardpianka.chess.network.GameStatusEvent.Builder>(internal__static_com_richardpianka_chess_network_GameStatusEvent__Descriptor,
                 new string[] { "Status", "User", });
-        internal__static_com_richardpianka_chess_network_TimeLeftEvent__Descriptor = Descriptor.MessageTypes[46];
+        internal__static_com_richardpianka_chess_network_TimeLeftEvent__Descriptor = Descriptor.MessageTypes[50];
         internal__static_com_richardpianka_chess_network_TimeLeftEvent__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::com.richardpianka.chess.network.TimeLeftEvent, global::com.richardpianka.chess.network.TimeLeftEvent.Builder>(internal__static_com_richardpianka_chess_network_TimeLeftEvent__Descriptor,
                 new string[] { "WhiteSeconds", "BlackSeconds", });
@@ -593,8 +633,8 @@ namespace com.richardpianka.chess.network {
   public sealed partial class Envelope : pb::GeneratedMessage<Envelope, Envelope.Builder> {
     private Envelope() { }
     private static readonly Envelope defaultInstance = new Envelope().MakeReadOnly();
-    private static readonly string[] _envelopeFieldNames = new string[] { "ChatRoomEvent", "ChatSpeakEvent", "ChatUserEvent", "CreateGameRequest", "CreateGameResponse", "GameListRequest", "GameListResponse", "GameStartedEvent", "GameStatusEvent", "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "JoinChatRequest", "JoinChatResponse", "JoinGameRequest", "JoinGameResponse", "JoinRoomRequest", "JoinRoomResponse", "LeaveGameRequest", "MovePieceEvent", "MovePieceRequest", "MovePieceResponse", "OperatorRequest", "OperatorResponse", "RoomListRequest", "RoomListResponse", "SpeakRequest", "SpecialMovePieceEvent", "SpecialMovePieceRequest", "SpecialMovePieceResponse", "StartGameRequest", "StartGameResponse", "TimeLeftEvent" };
-    private static readonly uint[] _envelopeFieldTags = new uint[] { 114, 130, 122, 154, 162, 138, 146, 210, 274, 10, 18, 26, 34, 42, 50, 170, 178, 74, 82, 186, 234, 218, 226, 98, 106, 58, 66, 90, 258, 242, 250, 194, 202, 282 };
+    private static readonly string[] _envelopeFieldNames = new string[] { "ChangePasswordRequest", "ChangePasswordResponse", "ChatRoomEvent", "ChatSpeakEvent", "ChatUserEvent", "CreateAccountRequest", "CreateAccountResponse", "CreateGameRequest", "CreateGameResponse", "GameListRequest", "GameListResponse", "GameStartedEvent", "GameStatusEvent", "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "JoinChatRequest", "JoinChatResponse", "JoinGameRequest", "JoinGameResponse", "JoinRoomRequest", "JoinRoomResponse", "LeaveGameRequest", "MovePieceEvent", "MovePieceRequest", "MovePieceResponse", "OperatorRequest", "OperatorResponse", "RoomListRequest", "RoomListResponse", "SpeakRequest", "SpecialMovePieceEvent", "SpecialMovePieceRequest", "SpecialMovePieceResponse", "StartGameRequest", "StartGameResponse", "TimeLeftEvent" };
+    private static readonly uint[] _envelopeFieldTags = new uint[] { 58, 66, 146, 162, 154, 42, 50, 186, 194, 170, 178, 242, 298, 10, 18, 26, 34, 74, 82, 202, 210, 106, 114, 218, 266, 250, 258, 130, 138, 90, 98, 122, 290, 274, 282, 226, 234, 306 };
     public static Envelope DefaultInstance {
       get { return defaultInstance; }
     }
@@ -655,7 +695,47 @@ namespace com.richardpianka.chess.network {
       get { return identifyResponse_ ?? global::com.richardpianka.chess.network.IdentifyResponse.DefaultInstance; }
     }
     
-    public const int JoinChatRequestFieldNumber = 5;
+    public const int CreateAccountRequestFieldNumber = 5;
+    private bool hasCreateAccountRequest;
+    private global::com.richardpianka.chess.network.CreateAccountRequest createAccountRequest_;
+    public bool HasCreateAccountRequest {
+      get { return hasCreateAccountRequest; }
+    }
+    public global::com.richardpianka.chess.network.CreateAccountRequest CreateAccountRequest {
+      get { return createAccountRequest_ ?? global::com.richardpianka.chess.network.CreateAccountRequest.DefaultInstance; }
+    }
+    
+    public const int CreateAccountResponseFieldNumber = 6;
+    private bool hasCreateAccountResponse;
+    private global::com.richardpianka.chess.network.CreateAccountResponse createAccountResponse_;
+    public bool HasCreateAccountResponse {
+      get { return hasCreateAccountResponse; }
+    }
+    public global::com.richardpianka.chess.network.CreateAccountResponse CreateAccountResponse {
+      get { return createAccountResponse_ ?? global::com.richardpianka.chess.network.CreateAccountResponse.DefaultInstance; }
+    }
+    
+    public const int ChangePasswordRequestFieldNumber = 7;
+    private bool hasChangePasswordRequest;
+    private global::com.richardpianka.chess.network.ChangePasswordRequest changePasswordRequest_;
+    public bool HasChangePasswordRequest {
+      get { return hasChangePasswordRequest; }
+    }
+    public global::com.richardpianka.chess.network.ChangePasswordRequest ChangePasswordRequest {
+      get { return changePasswordRequest_ ?? global::com.richardpianka.chess.network.ChangePasswordRequest.DefaultInstance; }
+    }
+    
+    public const int ChangePasswordResponseFieldNumber = 8;
+    private bool hasChangePasswordResponse;
+    private global::com.richardpianka.chess.network.ChangePasswordResponse changePasswordResponse_;
+    public bool HasChangePasswordResponse {
+      get { return hasChangePasswordResponse; }
+    }
+    public global::com.richardpianka.chess.network.ChangePasswordResponse ChangePasswordResponse {
+      get { return changePasswordResponse_ ?? global::com.richardpianka.chess.network.ChangePasswordResponse.DefaultInstance; }
+    }
+    
+    public const int JoinChatRequestFieldNumber = 9;
     private bool hasJoinChatRequest;
     private global::com.richardpianka.chess.network.JoinChatRequest joinChatRequest_;
     public bool HasJoinChatRequest {
@@ -665,7 +745,7 @@ namespace com.richardpianka.chess.network {
       get { return joinChatRequest_ ?? global::com.richardpianka.chess.network.JoinChatRequest.DefaultInstance; }
     }
     
-    public const int JoinChatResponseFieldNumber = 6;
+    public const int JoinChatResponseFieldNumber = 10;
     private bool hasJoinChatResponse;
     private global::com.richardpianka.chess.network.JoinChatResponse joinChatResponse_;
     public bool HasJoinChatResponse {
@@ -675,7 +755,7 @@ namespace com.richardpianka.chess.network {
       get { return joinChatResponse_ ?? global::com.richardpianka.chess.network.JoinChatResponse.DefaultInstance; }
     }
     
-    public const int RoomListRequestFieldNumber = 7;
+    public const int RoomListRequestFieldNumber = 11;
     private bool hasRoomListRequest;
     private global::com.richardpianka.chess.network.RoomListRequest roomListRequest_;
     public bool HasRoomListRequest {
@@ -685,7 +765,7 @@ namespace com.richardpianka.chess.network {
       get { return roomListRequest_ ?? global::com.richardpianka.chess.network.RoomListRequest.DefaultInstance; }
     }
     
-    public const int RoomListResponseFieldNumber = 8;
+    public const int RoomListResponseFieldNumber = 12;
     private bool hasRoomListResponse;
     private global::com.richardpianka.chess.network.RoomListResponse roomListResponse_;
     public bool HasRoomListResponse {
@@ -695,7 +775,7 @@ namespace com.richardpianka.chess.network {
       get { return roomListResponse_ ?? global::com.richardpianka.chess.network.RoomListResponse.DefaultInstance; }
     }
     
-    public const int JoinRoomRequestFieldNumber = 9;
+    public const int JoinRoomRequestFieldNumber = 13;
     private bool hasJoinRoomRequest;
     private global::com.richardpianka.chess.network.JoinRoomRequest joinRoomRequest_;
     public bool HasJoinRoomRequest {
@@ -705,7 +785,7 @@ namespace com.richardpianka.chess.network {
       get { return joinRoomRequest_ ?? global::com.richardpianka.chess.network.JoinRoomRequest.DefaultInstance; }
     }
     
-    public const int JoinRoomResponseFieldNumber = 10;
+    public const int JoinRoomResponseFieldNumber = 14;
     private bool hasJoinRoomResponse;
     private global::com.richardpianka.chess.network.JoinRoomResponse joinRoomResponse_;
     public bool HasJoinRoomResponse {
@@ -715,7 +795,7 @@ namespace com.richardpianka.chess.network {
       get { return joinRoomResponse_ ?? global::com.richardpianka.chess.network.JoinRoomResponse.DefaultInstance; }
     }
     
-    public const int SpeakRequestFieldNumber = 11;
+    public const int SpeakRequestFieldNumber = 15;
     private bool hasSpeakRequest;
     private global::com.richardpianka.chess.network.SpeakRequest speakRequest_;
     public bool HasSpeakRequest {
@@ -725,7 +805,7 @@ namespace com.richardpianka.chess.network {
       get { return speakRequest_ ?? global::com.richardpianka.chess.network.SpeakRequest.DefaultInstance; }
     }
     
-    public const int OperatorRequestFieldNumber = 12;
+    public const int OperatorRequestFieldNumber = 16;
     private bool hasOperatorRequest;
     private global::com.richardpianka.chess.network.OperatorRequest operatorRequest_;
     public bool HasOperatorRequest {
@@ -735,7 +815,7 @@ namespace com.richardpianka.chess.network {
       get { return operatorRequest_ ?? global::com.richardpianka.chess.network.OperatorRequest.DefaultInstance; }
     }
     
-    public const int OperatorResponseFieldNumber = 13;
+    public const int OperatorResponseFieldNumber = 17;
     private bool hasOperatorResponse;
     private global::com.richardpianka.chess.network.OperatorResponse operatorResponse_;
     public bool HasOperatorResponse {
@@ -745,7 +825,7 @@ namespace com.richardpianka.chess.network {
       get { return operatorResponse_ ?? global::com.richardpianka.chess.network.OperatorResponse.DefaultInstance; }
     }
     
-    public const int ChatRoomEventFieldNumber = 14;
+    public const int ChatRoomEventFieldNumber = 18;
     private bool hasChatRoomEvent;
     private global::com.richardpianka.chess.network.ChatRoomEvent chatRoomEvent_;
     public bool HasChatRoomEvent {
@@ -755,7 +835,7 @@ namespace com.richardpianka.chess.network {
       get { return chatRoomEvent_ ?? global::com.richardpianka.chess.network.ChatRoomEvent.DefaultInstance; }
     }
     
-    public const int ChatUserEventFieldNumber = 15;
+    public const int ChatUserEventFieldNumber = 19;
     private bool hasChatUserEvent;
     private global::com.richardpianka.chess.network.ChatUserEvent chatUserEvent_;
     public bool HasChatUserEvent {
@@ -765,7 +845,7 @@ namespace com.richardpianka.chess.network {
       get { return chatUserEvent_ ?? global::com.richardpianka.chess.network.ChatUserEvent.DefaultInstance; }
     }
     
-    public const int ChatSpeakEventFieldNumber = 16;
+    public const int ChatSpeakEventFieldNumber = 20;
     private bool hasChatSpeakEvent;
     private global::com.richardpianka.chess.network.ChatSpeakEvent chatSpeakEvent_;
     public bool HasChatSpeakEvent {
@@ -775,7 +855,7 @@ namespace com.richardpianka.chess.network {
       get { return chatSpeakEvent_ ?? global::com.richardpianka.chess.network.ChatSpeakEvent.DefaultInstance; }
     }
     
-    public const int GameListRequestFieldNumber = 17;
+    public const int GameListRequestFieldNumber = 21;
     private bool hasGameListRequest;
     private global::com.richardpianka.chess.network.GameListRequest gameListRequest_;
     public bool HasGameListRequest {
@@ -785,7 +865,7 @@ namespace com.richardpianka.chess.network {
       get { return gameListRequest_ ?? global::com.richardpianka.chess.network.GameListRequest.DefaultInstance; }
     }
     
-    public const int GameListResponseFieldNumber = 18;
+    public const int GameListResponseFieldNumber = 22;
     private bool hasGameListResponse;
     private global::com.richardpianka.chess.network.GameListResponse gameListResponse_;
     public bool HasGameListResponse {
@@ -795,7 +875,7 @@ namespace com.richardpianka.chess.network {
       get { return gameListResponse_ ?? global::com.richardpianka.chess.network.GameListResponse.DefaultInstance; }
     }
     
-    public const int CreateGameRequestFieldNumber = 19;
+    public const int CreateGameRequestFieldNumber = 23;
     private bool hasCreateGameRequest;
     private global::com.richardpianka.chess.network.CreateGameRequest createGameRequest_;
     public bool HasCreateGameRequest {
@@ -805,7 +885,7 @@ namespace com.richardpianka.chess.network {
       get { return createGameRequest_ ?? global::com.richardpianka.chess.network.CreateGameRequest.DefaultInstance; }
     }
     
-    public const int CreateGameResponseFieldNumber = 20;
+    public const int CreateGameResponseFieldNumber = 24;
     private bool hasCreateGameResponse;
     private global::com.richardpianka.chess.network.CreateGameResponse createGameResponse_;
     public bool HasCreateGameResponse {
@@ -815,7 +895,7 @@ namespace com.richardpianka.chess.network {
       get { return createGameResponse_ ?? global::com.richardpianka.chess.network.CreateGameResponse.DefaultInstance; }
     }
     
-    public const int JoinGameRequestFieldNumber = 21;
+    public const int JoinGameRequestFieldNumber = 25;
     private bool hasJoinGameRequest;
     private global::com.richardpianka.chess.network.JoinGameRequest joinGameRequest_;
     public bool HasJoinGameRequest {
@@ -825,7 +905,7 @@ namespace com.richardpianka.chess.network {
       get { return joinGameRequest_ ?? global::com.richardpianka.chess.network.JoinGameRequest.DefaultInstance; }
     }
     
-    public const int JoinGameResponseFieldNumber = 22;
+    public const int JoinGameResponseFieldNumber = 26;
     private bool hasJoinGameResponse;
     private global::com.richardpianka.chess.network.JoinGameResponse joinGameResponse_;
     public bool HasJoinGameResponse {
@@ -835,7 +915,7 @@ namespace com.richardpianka.chess.network {
       get { return joinGameResponse_ ?? global::com.richardpianka.chess.network.JoinGameResponse.DefaultInstance; }
     }
     
-    public const int LeaveGameRequestFieldNumber = 23;
+    public const int LeaveGameRequestFieldNumber = 27;
     private bool hasLeaveGameRequest;
     private global::com.richardpianka.chess.network.LeaveGameRequest leaveGameRequest_;
     public bool HasLeaveGameRequest {
@@ -845,7 +925,7 @@ namespace com.richardpianka.chess.network {
       get { return leaveGameRequest_ ?? global::com.richardpianka.chess.network.LeaveGameRequest.DefaultInstance; }
     }
     
-    public const int StartGameRequestFieldNumber = 24;
+    public const int StartGameRequestFieldNumber = 28;
     private bool hasStartGameRequest;
     private global::com.richardpianka.chess.network.StartGameRequest startGameRequest_;
     public bool HasStartGameRequest {
@@ -855,7 +935,7 @@ namespace com.richardpianka.chess.network {
       get { return startGameRequest_ ?? global::com.richardpianka.chess.network.StartGameRequest.DefaultInstance; }
     }
     
-    public const int StartGameResponseFieldNumber = 25;
+    public const int StartGameResponseFieldNumber = 29;
     private bool hasStartGameResponse;
     private global::com.richardpianka.chess.network.StartGameResponse startGameResponse_;
     public bool HasStartGameResponse {
@@ -865,7 +945,7 @@ namespace com.richardpianka.chess.network {
       get { return startGameResponse_ ?? global::com.richardpianka.chess.network.StartGameResponse.DefaultInstance; }
     }
     
-    public const int GameStartedEventFieldNumber = 26;
+    public const int GameStartedEventFieldNumber = 30;
     private bool hasGameStartedEvent;
     private global::com.richardpianka.chess.network.GameStartedEvent gameStartedEvent_;
     public bool HasGameStartedEvent {
@@ -875,7 +955,7 @@ namespace com.richardpianka.chess.network {
       get { return gameStartedEvent_ ?? global::com.richardpianka.chess.network.GameStartedEvent.DefaultInstance; }
     }
     
-    public const int MovePieceRequestFieldNumber = 27;
+    public const int MovePieceRequestFieldNumber = 31;
     private bool hasMovePieceRequest;
     private global::com.richardpianka.chess.network.MovePieceRequest movePieceRequest_;
     public bool HasMovePieceRequest {
@@ -885,7 +965,7 @@ namespace com.richardpianka.chess.network {
       get { return movePieceRequest_ ?? global::com.richardpianka.chess.network.MovePieceRequest.DefaultInstance; }
     }
     
-    public const int MovePieceResponseFieldNumber = 28;
+    public const int MovePieceResponseFieldNumber = 32;
     private bool hasMovePieceResponse;
     private global::com.richardpianka.chess.network.MovePieceResponse movePieceResponse_;
     public bool HasMovePieceResponse {
@@ -895,7 +975,7 @@ namespace com.richardpianka.chess.network {
       get { return movePieceResponse_ ?? global::com.richardpianka.chess.network.MovePieceResponse.DefaultInstance; }
     }
     
-    public const int MovePieceEventFieldNumber = 29;
+    public const int MovePieceEventFieldNumber = 33;
     private bool hasMovePieceEvent;
     private global::com.richardpianka.chess.network.MovePieceEvent movePieceEvent_;
     public bool HasMovePieceEvent {
@@ -905,7 +985,7 @@ namespace com.richardpianka.chess.network {
       get { return movePieceEvent_ ?? global::com.richardpianka.chess.network.MovePieceEvent.DefaultInstance; }
     }
     
-    public const int SpecialMovePieceRequestFieldNumber = 30;
+    public const int SpecialMovePieceRequestFieldNumber = 34;
     private bool hasSpecialMovePieceRequest;
     private global::com.richardpianka.chess.network.SpecialMovePieceRequest specialMovePieceRequest_;
     public bool HasSpecialMovePieceRequest {
@@ -915,7 +995,7 @@ namespace com.richardpianka.chess.network {
       get { return specialMovePieceRequest_ ?? global::com.richardpianka.chess.network.SpecialMovePieceRequest.DefaultInstance; }
     }
     
-    public const int SpecialMovePieceResponseFieldNumber = 31;
+    public const int SpecialMovePieceResponseFieldNumber = 35;
     private bool hasSpecialMovePieceResponse;
     private global::com.richardpianka.chess.network.SpecialMovePieceResponse specialMovePieceResponse_;
     public bool HasSpecialMovePieceResponse {
@@ -925,7 +1005,7 @@ namespace com.richardpianka.chess.network {
       get { return specialMovePieceResponse_ ?? global::com.richardpianka.chess.network.SpecialMovePieceResponse.DefaultInstance; }
     }
     
-    public const int SpecialMovePieceEventFieldNumber = 32;
+    public const int SpecialMovePieceEventFieldNumber = 36;
     private bool hasSpecialMovePieceEvent;
     private global::com.richardpianka.chess.network.SpecialMovePieceEvent specialMovePieceEvent_;
     public bool HasSpecialMovePieceEvent {
@@ -935,7 +1015,7 @@ namespace com.richardpianka.chess.network {
       get { return specialMovePieceEvent_ ?? global::com.richardpianka.chess.network.SpecialMovePieceEvent.DefaultInstance; }
     }
     
-    public const int GameStatusEventFieldNumber = 34;
+    public const int GameStatusEventFieldNumber = 37;
     private bool hasGameStatusEvent;
     private global::com.richardpianka.chess.network.GameStatusEvent gameStatusEvent_;
     public bool HasGameStatusEvent {
@@ -945,7 +1025,7 @@ namespace com.richardpianka.chess.network {
       get { return gameStatusEvent_ ?? global::com.richardpianka.chess.network.GameStatusEvent.DefaultInstance; }
     }
     
-    public const int TimeLeftEventFieldNumber = 35;
+    public const int TimeLeftEventFieldNumber = 38;
     private bool hasTimeLeftEvent;
     private global::com.richardpianka.chess.network.TimeLeftEvent timeLeftEvent_;
     public bool HasTimeLeftEvent {
@@ -968,6 +1048,18 @@ namespace com.richardpianka.chess.network {
         }
         if (HasIdentifyResponse) {
           if (!IdentifyResponse.IsInitialized) return false;
+        }
+        if (HasCreateAccountRequest) {
+          if (!CreateAccountRequest.IsInitialized) return false;
+        }
+        if (HasCreateAccountResponse) {
+          if (!CreateAccountResponse.IsInitialized) return false;
+        }
+        if (HasChangePasswordRequest) {
+          if (!ChangePasswordRequest.IsInitialized) return false;
+        }
+        if (HasChangePasswordResponse) {
+          if (!ChangePasswordResponse.IsInitialized) return false;
         }
         if (HasJoinChatResponse) {
           if (!JoinChatResponse.IsInitialized) return false;
@@ -1052,106 +1144,118 @@ namespace com.richardpianka.chess.network {
       int size = SerializedSize;
       string[] field_names = _envelopeFieldNames;
       if (hasHandshakeRequest) {
-        output.WriteMessage(1, field_names[9], HandshakeRequest);
+        output.WriteMessage(1, field_names[13], HandshakeRequest);
       }
       if (hasHandshakeResponse) {
-        output.WriteMessage(2, field_names[10], HandshakeResponse);
+        output.WriteMessage(2, field_names[14], HandshakeResponse);
       }
       if (hasIdentifyRequest) {
-        output.WriteMessage(3, field_names[11], IdentifyRequest);
+        output.WriteMessage(3, field_names[15], IdentifyRequest);
       }
       if (hasIdentifyResponse) {
-        output.WriteMessage(4, field_names[12], IdentifyResponse);
+        output.WriteMessage(4, field_names[16], IdentifyResponse);
+      }
+      if (hasCreateAccountRequest) {
+        output.WriteMessage(5, field_names[5], CreateAccountRequest);
+      }
+      if (hasCreateAccountResponse) {
+        output.WriteMessage(6, field_names[6], CreateAccountResponse);
+      }
+      if (hasChangePasswordRequest) {
+        output.WriteMessage(7, field_names[0], ChangePasswordRequest);
+      }
+      if (hasChangePasswordResponse) {
+        output.WriteMessage(8, field_names[1], ChangePasswordResponse);
       }
       if (hasJoinChatRequest) {
-        output.WriteMessage(5, field_names[13], JoinChatRequest);
+        output.WriteMessage(9, field_names[17], JoinChatRequest);
       }
       if (hasJoinChatResponse) {
-        output.WriteMessage(6, field_names[14], JoinChatResponse);
+        output.WriteMessage(10, field_names[18], JoinChatResponse);
       }
       if (hasRoomListRequest) {
-        output.WriteMessage(7, field_names[25], RoomListRequest);
+        output.WriteMessage(11, field_names[29], RoomListRequest);
       }
       if (hasRoomListResponse) {
-        output.WriteMessage(8, field_names[26], RoomListResponse);
+        output.WriteMessage(12, field_names[30], RoomListResponse);
       }
       if (hasJoinRoomRequest) {
-        output.WriteMessage(9, field_names[17], JoinRoomRequest);
+        output.WriteMessage(13, field_names[21], JoinRoomRequest);
       }
       if (hasJoinRoomResponse) {
-        output.WriteMessage(10, field_names[18], JoinRoomResponse);
+        output.WriteMessage(14, field_names[22], JoinRoomResponse);
       }
       if (hasSpeakRequest) {
-        output.WriteMessage(11, field_names[27], SpeakRequest);
+        output.WriteMessage(15, field_names[31], SpeakRequest);
       }
       if (hasOperatorRequest) {
-        output.WriteMessage(12, field_names[23], OperatorRequest);
+        output.WriteMessage(16, field_names[27], OperatorRequest);
       }
       if (hasOperatorResponse) {
-        output.WriteMessage(13, field_names[24], OperatorResponse);
+        output.WriteMessage(17, field_names[28], OperatorResponse);
       }
       if (hasChatRoomEvent) {
-        output.WriteMessage(14, field_names[0], ChatRoomEvent);
+        output.WriteMessage(18, field_names[2], ChatRoomEvent);
       }
       if (hasChatUserEvent) {
-        output.WriteMessage(15, field_names[2], ChatUserEvent);
+        output.WriteMessage(19, field_names[4], ChatUserEvent);
       }
       if (hasChatSpeakEvent) {
-        output.WriteMessage(16, field_names[1], ChatSpeakEvent);
+        output.WriteMessage(20, field_names[3], ChatSpeakEvent);
       }
       if (hasGameListRequest) {
-        output.WriteMessage(17, field_names[5], GameListRequest);
+        output.WriteMessage(21, field_names[9], GameListRequest);
       }
       if (hasGameListResponse) {
-        output.WriteMessage(18, field_names[6], GameListResponse);
+        output.WriteMessage(22, field_names[10], GameListResponse);
       }
       if (hasCreateGameRequest) {
-        output.WriteMessage(19, field_names[3], CreateGameRequest);
+        output.WriteMessage(23, field_names[7], CreateGameRequest);
       }
       if (hasCreateGameResponse) {
-        output.WriteMessage(20, field_names[4], CreateGameResponse);
+        output.WriteMessage(24, field_names[8], CreateGameResponse);
       }
       if (hasJoinGameRequest) {
-        output.WriteMessage(21, field_names[15], JoinGameRequest);
+        output.WriteMessage(25, field_names[19], JoinGameRequest);
       }
       if (hasJoinGameResponse) {
-        output.WriteMessage(22, field_names[16], JoinGameResponse);
+        output.WriteMessage(26, field_names[20], JoinGameResponse);
       }
       if (hasLeaveGameRequest) {
-        output.WriteMessage(23, field_names[19], LeaveGameRequest);
+        output.WriteMessage(27, field_names[23], LeaveGameRequest);
       }
       if (hasStartGameRequest) {
-        output.WriteMessage(24, field_names[31], StartGameRequest);
+        output.WriteMessage(28, field_names[35], StartGameRequest);
       }
       if (hasStartGameResponse) {
-        output.WriteMessage(25, field_names[32], StartGameResponse);
+        output.WriteMessage(29, field_names[36], StartGameResponse);
       }
       if (hasGameStartedEvent) {
-        output.WriteMessage(26, field_names[7], GameStartedEvent);
+        output.WriteMessage(30, field_names[11], GameStartedEvent);
       }
       if (hasMovePieceRequest) {
-        output.WriteMessage(27, field_names[21], MovePieceRequest);
+        output.WriteMessage(31, field_names[25], MovePieceRequest);
       }
       if (hasMovePieceResponse) {
-        output.WriteMessage(28, field_names[22], MovePieceResponse);
+        output.WriteMessage(32, field_names[26], MovePieceResponse);
       }
       if (hasMovePieceEvent) {
-        output.WriteMessage(29, field_names[20], MovePieceEvent);
+        output.WriteMessage(33, field_names[24], MovePieceEvent);
       }
       if (hasSpecialMovePieceRequest) {
-        output.WriteMessage(30, field_names[29], SpecialMovePieceRequest);
+        output.WriteMessage(34, field_names[33], SpecialMovePieceRequest);
       }
       if (hasSpecialMovePieceResponse) {
-        output.WriteMessage(31, field_names[30], SpecialMovePieceResponse);
+        output.WriteMessage(35, field_names[34], SpecialMovePieceResponse);
       }
       if (hasSpecialMovePieceEvent) {
-        output.WriteMessage(32, field_names[28], SpecialMovePieceEvent);
+        output.WriteMessage(36, field_names[32], SpecialMovePieceEvent);
       }
       if (hasGameStatusEvent) {
-        output.WriteMessage(34, field_names[8], GameStatusEvent);
+        output.WriteMessage(37, field_names[12], GameStatusEvent);
       }
       if (hasTimeLeftEvent) {
-        output.WriteMessage(35, field_names[33], TimeLeftEvent);
+        output.WriteMessage(38, field_names[37], TimeLeftEvent);
       }
       UnknownFields.WriteTo(output);
     }
@@ -1175,95 +1279,107 @@ namespace com.richardpianka.chess.network {
         if (hasIdentifyResponse) {
           size += pb::CodedOutputStream.ComputeMessageSize(4, IdentifyResponse);
         }
+        if (hasCreateAccountRequest) {
+          size += pb::CodedOutputStream.ComputeMessageSize(5, CreateAccountRequest);
+        }
+        if (hasCreateAccountResponse) {
+          size += pb::CodedOutputStream.ComputeMessageSize(6, CreateAccountResponse);
+        }
+        if (hasChangePasswordRequest) {
+          size += pb::CodedOutputStream.ComputeMessageSize(7, ChangePasswordRequest);
+        }
+        if (hasChangePasswordResponse) {
+          size += pb::CodedOutputStream.ComputeMessageSize(8, ChangePasswordResponse);
+        }
         if (hasJoinChatRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(5, JoinChatRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(9, JoinChatRequest);
         }
         if (hasJoinChatResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(6, JoinChatResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(10, JoinChatResponse);
         }
         if (hasRoomListRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(7, RoomListRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(11, RoomListRequest);
         }
         if (hasRoomListResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(8, RoomListResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(12, RoomListResponse);
         }
         if (hasJoinRoomRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(9, JoinRoomRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(13, JoinRoomRequest);
         }
         if (hasJoinRoomResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(10, JoinRoomResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(14, JoinRoomResponse);
         }
         if (hasSpeakRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(11, SpeakRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(15, SpeakRequest);
         }
         if (hasOperatorRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(12, OperatorRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(16, OperatorRequest);
         }
         if (hasOperatorResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(13, OperatorResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(17, OperatorResponse);
         }
         if (hasChatRoomEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(14, ChatRoomEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(18, ChatRoomEvent);
         }
         if (hasChatUserEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(15, ChatUserEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(19, ChatUserEvent);
         }
         if (hasChatSpeakEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(16, ChatSpeakEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(20, ChatSpeakEvent);
         }
         if (hasGameListRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(17, GameListRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(21, GameListRequest);
         }
         if (hasGameListResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(18, GameListResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(22, GameListResponse);
         }
         if (hasCreateGameRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(19, CreateGameRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(23, CreateGameRequest);
         }
         if (hasCreateGameResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(20, CreateGameResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(24, CreateGameResponse);
         }
         if (hasJoinGameRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(21, JoinGameRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(25, JoinGameRequest);
         }
         if (hasJoinGameResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(22, JoinGameResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(26, JoinGameResponse);
         }
         if (hasLeaveGameRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(23, LeaveGameRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(27, LeaveGameRequest);
         }
         if (hasStartGameRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(24, StartGameRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(28, StartGameRequest);
         }
         if (hasStartGameResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(25, StartGameResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(29, StartGameResponse);
         }
         if (hasGameStartedEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(26, GameStartedEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(30, GameStartedEvent);
         }
         if (hasMovePieceRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(27, MovePieceRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(31, MovePieceRequest);
         }
         if (hasMovePieceResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(28, MovePieceResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(32, MovePieceResponse);
         }
         if (hasMovePieceEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(29, MovePieceEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(33, MovePieceEvent);
         }
         if (hasSpecialMovePieceRequest) {
-          size += pb::CodedOutputStream.ComputeMessageSize(30, SpecialMovePieceRequest);
+          size += pb::CodedOutputStream.ComputeMessageSize(34, SpecialMovePieceRequest);
         }
         if (hasSpecialMovePieceResponse) {
-          size += pb::CodedOutputStream.ComputeMessageSize(31, SpecialMovePieceResponse);
+          size += pb::CodedOutputStream.ComputeMessageSize(35, SpecialMovePieceResponse);
         }
         if (hasSpecialMovePieceEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(32, SpecialMovePieceEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(36, SpecialMovePieceEvent);
         }
         if (hasGameStatusEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(34, GameStatusEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(37, GameStatusEvent);
         }
         if (hasTimeLeftEvent) {
-          size += pb::CodedOutputStream.ComputeMessageSize(35, TimeLeftEvent);
+          size += pb::CodedOutputStream.ComputeMessageSize(38, TimeLeftEvent);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -1402,6 +1518,18 @@ namespace com.richardpianka.chess.network {
         }
         if (other.HasIdentifyResponse) {
           MergeIdentifyResponse(other.IdentifyResponse);
+        }
+        if (other.HasCreateAccountRequest) {
+          MergeCreateAccountRequest(other.CreateAccountRequest);
+        }
+        if (other.HasCreateAccountResponse) {
+          MergeCreateAccountResponse(other.CreateAccountResponse);
+        }
+        if (other.HasChangePasswordRequest) {
+          MergeChangePasswordRequest(other.ChangePasswordRequest);
+        }
+        if (other.HasChangePasswordResponse) {
+          MergeChangePasswordResponse(other.ChangePasswordResponse);
         }
         if (other.HasJoinChatRequest) {
           MergeJoinChatRequest(other.JoinChatRequest);
@@ -1573,6 +1701,42 @@ namespace com.richardpianka.chess.network {
               break;
             }
             case 42: {
+              global::com.richardpianka.chess.network.CreateAccountRequest.Builder subBuilder = global::com.richardpianka.chess.network.CreateAccountRequest.CreateBuilder();
+              if (result.hasCreateAccountRequest) {
+                subBuilder.MergeFrom(CreateAccountRequest);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              CreateAccountRequest = subBuilder.BuildPartial();
+              break;
+            }
+            case 50: {
+              global::com.richardpianka.chess.network.CreateAccountResponse.Builder subBuilder = global::com.richardpianka.chess.network.CreateAccountResponse.CreateBuilder();
+              if (result.hasCreateAccountResponse) {
+                subBuilder.MergeFrom(CreateAccountResponse);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              CreateAccountResponse = subBuilder.BuildPartial();
+              break;
+            }
+            case 58: {
+              global::com.richardpianka.chess.network.ChangePasswordRequest.Builder subBuilder = global::com.richardpianka.chess.network.ChangePasswordRequest.CreateBuilder();
+              if (result.hasChangePasswordRequest) {
+                subBuilder.MergeFrom(ChangePasswordRequest);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              ChangePasswordRequest = subBuilder.BuildPartial();
+              break;
+            }
+            case 66: {
+              global::com.richardpianka.chess.network.ChangePasswordResponse.Builder subBuilder = global::com.richardpianka.chess.network.ChangePasswordResponse.CreateBuilder();
+              if (result.hasChangePasswordResponse) {
+                subBuilder.MergeFrom(ChangePasswordResponse);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              ChangePasswordResponse = subBuilder.BuildPartial();
+              break;
+            }
+            case 74: {
               global::com.richardpianka.chess.network.JoinChatRequest.Builder subBuilder = global::com.richardpianka.chess.network.JoinChatRequest.CreateBuilder();
               if (result.hasJoinChatRequest) {
                 subBuilder.MergeFrom(JoinChatRequest);
@@ -1581,7 +1745,7 @@ namespace com.richardpianka.chess.network {
               JoinChatRequest = subBuilder.BuildPartial();
               break;
             }
-            case 50: {
+            case 82: {
               global::com.richardpianka.chess.network.JoinChatResponse.Builder subBuilder = global::com.richardpianka.chess.network.JoinChatResponse.CreateBuilder();
               if (result.hasJoinChatResponse) {
                 subBuilder.MergeFrom(JoinChatResponse);
@@ -1590,7 +1754,7 @@ namespace com.richardpianka.chess.network {
               JoinChatResponse = subBuilder.BuildPartial();
               break;
             }
-            case 58: {
+            case 90: {
               global::com.richardpianka.chess.network.RoomListRequest.Builder subBuilder = global::com.richardpianka.chess.network.RoomListRequest.CreateBuilder();
               if (result.hasRoomListRequest) {
                 subBuilder.MergeFrom(RoomListRequest);
@@ -1599,7 +1763,7 @@ namespace com.richardpianka.chess.network {
               RoomListRequest = subBuilder.BuildPartial();
               break;
             }
-            case 66: {
+            case 98: {
               global::com.richardpianka.chess.network.RoomListResponse.Builder subBuilder = global::com.richardpianka.chess.network.RoomListResponse.CreateBuilder();
               if (result.hasRoomListResponse) {
                 subBuilder.MergeFrom(RoomListResponse);
@@ -1608,7 +1772,7 @@ namespace com.richardpianka.chess.network {
               RoomListResponse = subBuilder.BuildPartial();
               break;
             }
-            case 74: {
+            case 106: {
               global::com.richardpianka.chess.network.JoinRoomRequest.Builder subBuilder = global::com.richardpianka.chess.network.JoinRoomRequest.CreateBuilder();
               if (result.hasJoinRoomRequest) {
                 subBuilder.MergeFrom(JoinRoomRequest);
@@ -1617,7 +1781,7 @@ namespace com.richardpianka.chess.network {
               JoinRoomRequest = subBuilder.BuildPartial();
               break;
             }
-            case 82: {
+            case 114: {
               global::com.richardpianka.chess.network.JoinRoomResponse.Builder subBuilder = global::com.richardpianka.chess.network.JoinRoomResponse.CreateBuilder();
               if (result.hasJoinRoomResponse) {
                 subBuilder.MergeFrom(JoinRoomResponse);
@@ -1626,7 +1790,7 @@ namespace com.richardpianka.chess.network {
               JoinRoomResponse = subBuilder.BuildPartial();
               break;
             }
-            case 90: {
+            case 122: {
               global::com.richardpianka.chess.network.SpeakRequest.Builder subBuilder = global::com.richardpianka.chess.network.SpeakRequest.CreateBuilder();
               if (result.hasSpeakRequest) {
                 subBuilder.MergeFrom(SpeakRequest);
@@ -1635,7 +1799,7 @@ namespace com.richardpianka.chess.network {
               SpeakRequest = subBuilder.BuildPartial();
               break;
             }
-            case 98: {
+            case 130: {
               global::com.richardpianka.chess.network.OperatorRequest.Builder subBuilder = global::com.richardpianka.chess.network.OperatorRequest.CreateBuilder();
               if (result.hasOperatorRequest) {
                 subBuilder.MergeFrom(OperatorRequest);
@@ -1644,7 +1808,7 @@ namespace com.richardpianka.chess.network {
               OperatorRequest = subBuilder.BuildPartial();
               break;
             }
-            case 106: {
+            case 138: {
               global::com.richardpianka.chess.network.OperatorResponse.Builder subBuilder = global::com.richardpianka.chess.network.OperatorResponse.CreateBuilder();
               if (result.hasOperatorResponse) {
                 subBuilder.MergeFrom(OperatorResponse);
@@ -1653,7 +1817,7 @@ namespace com.richardpianka.chess.network {
               OperatorResponse = subBuilder.BuildPartial();
               break;
             }
-            case 114: {
+            case 146: {
               global::com.richardpianka.chess.network.ChatRoomEvent.Builder subBuilder = global::com.richardpianka.chess.network.ChatRoomEvent.CreateBuilder();
               if (result.hasChatRoomEvent) {
                 subBuilder.MergeFrom(ChatRoomEvent);
@@ -1662,7 +1826,7 @@ namespace com.richardpianka.chess.network {
               ChatRoomEvent = subBuilder.BuildPartial();
               break;
             }
-            case 122: {
+            case 154: {
               global::com.richardpianka.chess.network.ChatUserEvent.Builder subBuilder = global::com.richardpianka.chess.network.ChatUserEvent.CreateBuilder();
               if (result.hasChatUserEvent) {
                 subBuilder.MergeFrom(ChatUserEvent);
@@ -1671,7 +1835,7 @@ namespace com.richardpianka.chess.network {
               ChatUserEvent = subBuilder.BuildPartial();
               break;
             }
-            case 130: {
+            case 162: {
               global::com.richardpianka.chess.network.ChatSpeakEvent.Builder subBuilder = global::com.richardpianka.chess.network.ChatSpeakEvent.CreateBuilder();
               if (result.hasChatSpeakEvent) {
                 subBuilder.MergeFrom(ChatSpeakEvent);
@@ -1680,7 +1844,7 @@ namespace com.richardpianka.chess.network {
               ChatSpeakEvent = subBuilder.BuildPartial();
               break;
             }
-            case 138: {
+            case 170: {
               global::com.richardpianka.chess.network.GameListRequest.Builder subBuilder = global::com.richardpianka.chess.network.GameListRequest.CreateBuilder();
               if (result.hasGameListRequest) {
                 subBuilder.MergeFrom(GameListRequest);
@@ -1689,7 +1853,7 @@ namespace com.richardpianka.chess.network {
               GameListRequest = subBuilder.BuildPartial();
               break;
             }
-            case 146: {
+            case 178: {
               global::com.richardpianka.chess.network.GameListResponse.Builder subBuilder = global::com.richardpianka.chess.network.GameListResponse.CreateBuilder();
               if (result.hasGameListResponse) {
                 subBuilder.MergeFrom(GameListResponse);
@@ -1698,7 +1862,7 @@ namespace com.richardpianka.chess.network {
               GameListResponse = subBuilder.BuildPartial();
               break;
             }
-            case 154: {
+            case 186: {
               global::com.richardpianka.chess.network.CreateGameRequest.Builder subBuilder = global::com.richardpianka.chess.network.CreateGameRequest.CreateBuilder();
               if (result.hasCreateGameRequest) {
                 subBuilder.MergeFrom(CreateGameRequest);
@@ -1707,7 +1871,7 @@ namespace com.richardpianka.chess.network {
               CreateGameRequest = subBuilder.BuildPartial();
               break;
             }
-            case 162: {
+            case 194: {
               global::com.richardpianka.chess.network.CreateGameResponse.Builder subBuilder = global::com.richardpianka.chess.network.CreateGameResponse.CreateBuilder();
               if (result.hasCreateGameResponse) {
                 subBuilder.MergeFrom(CreateGameResponse);
@@ -1716,7 +1880,7 @@ namespace com.richardpianka.chess.network {
               CreateGameResponse = subBuilder.BuildPartial();
               break;
             }
-            case 170: {
+            case 202: {
               global::com.richardpianka.chess.network.JoinGameRequest.Builder subBuilder = global::com.richardpianka.chess.network.JoinGameRequest.CreateBuilder();
               if (result.hasJoinGameRequest) {
                 subBuilder.MergeFrom(JoinGameRequest);
@@ -1725,7 +1889,7 @@ namespace com.richardpianka.chess.network {
               JoinGameRequest = subBuilder.BuildPartial();
               break;
             }
-            case 178: {
+            case 210: {
               global::com.richardpianka.chess.network.JoinGameResponse.Builder subBuilder = global::com.richardpianka.chess.network.JoinGameResponse.CreateBuilder();
               if (result.hasJoinGameResponse) {
                 subBuilder.MergeFrom(JoinGameResponse);
@@ -1734,7 +1898,7 @@ namespace com.richardpianka.chess.network {
               JoinGameResponse = subBuilder.BuildPartial();
               break;
             }
-            case 186: {
+            case 218: {
               global::com.richardpianka.chess.network.LeaveGameRequest.Builder subBuilder = global::com.richardpianka.chess.network.LeaveGameRequest.CreateBuilder();
               if (result.hasLeaveGameRequest) {
                 subBuilder.MergeFrom(LeaveGameRequest);
@@ -1743,7 +1907,7 @@ namespace com.richardpianka.chess.network {
               LeaveGameRequest = subBuilder.BuildPartial();
               break;
             }
-            case 194: {
+            case 226: {
               global::com.richardpianka.chess.network.StartGameRequest.Builder subBuilder = global::com.richardpianka.chess.network.StartGameRequest.CreateBuilder();
               if (result.hasStartGameRequest) {
                 subBuilder.MergeFrom(StartGameRequest);
@@ -1752,7 +1916,7 @@ namespace com.richardpianka.chess.network {
               StartGameRequest = subBuilder.BuildPartial();
               break;
             }
-            case 202: {
+            case 234: {
               global::com.richardpianka.chess.network.StartGameResponse.Builder subBuilder = global::com.richardpianka.chess.network.StartGameResponse.CreateBuilder();
               if (result.hasStartGameResponse) {
                 subBuilder.MergeFrom(StartGameResponse);
@@ -1761,7 +1925,7 @@ namespace com.richardpianka.chess.network {
               StartGameResponse = subBuilder.BuildPartial();
               break;
             }
-            case 210: {
+            case 242: {
               global::com.richardpianka.chess.network.GameStartedEvent.Builder subBuilder = global::com.richardpianka.chess.network.GameStartedEvent.CreateBuilder();
               if (result.hasGameStartedEvent) {
                 subBuilder.MergeFrom(GameStartedEvent);
@@ -1770,7 +1934,7 @@ namespace com.richardpianka.chess.network {
               GameStartedEvent = subBuilder.BuildPartial();
               break;
             }
-            case 218: {
+            case 250: {
               global::com.richardpianka.chess.network.MovePieceRequest.Builder subBuilder = global::com.richardpianka.chess.network.MovePieceRequest.CreateBuilder();
               if (result.hasMovePieceRequest) {
                 subBuilder.MergeFrom(MovePieceRequest);
@@ -1779,7 +1943,7 @@ namespace com.richardpianka.chess.network {
               MovePieceRequest = subBuilder.BuildPartial();
               break;
             }
-            case 226: {
+            case 258: {
               global::com.richardpianka.chess.network.MovePieceResponse.Builder subBuilder = global::com.richardpianka.chess.network.MovePieceResponse.CreateBuilder();
               if (result.hasMovePieceResponse) {
                 subBuilder.MergeFrom(MovePieceResponse);
@@ -1788,7 +1952,7 @@ namespace com.richardpianka.chess.network {
               MovePieceResponse = subBuilder.BuildPartial();
               break;
             }
-            case 234: {
+            case 266: {
               global::com.richardpianka.chess.network.MovePieceEvent.Builder subBuilder = global::com.richardpianka.chess.network.MovePieceEvent.CreateBuilder();
               if (result.hasMovePieceEvent) {
                 subBuilder.MergeFrom(MovePieceEvent);
@@ -1797,7 +1961,7 @@ namespace com.richardpianka.chess.network {
               MovePieceEvent = subBuilder.BuildPartial();
               break;
             }
-            case 242: {
+            case 274: {
               global::com.richardpianka.chess.network.SpecialMovePieceRequest.Builder subBuilder = global::com.richardpianka.chess.network.SpecialMovePieceRequest.CreateBuilder();
               if (result.hasSpecialMovePieceRequest) {
                 subBuilder.MergeFrom(SpecialMovePieceRequest);
@@ -1806,7 +1970,7 @@ namespace com.richardpianka.chess.network {
               SpecialMovePieceRequest = subBuilder.BuildPartial();
               break;
             }
-            case 250: {
+            case 282: {
               global::com.richardpianka.chess.network.SpecialMovePieceResponse.Builder subBuilder = global::com.richardpianka.chess.network.SpecialMovePieceResponse.CreateBuilder();
               if (result.hasSpecialMovePieceResponse) {
                 subBuilder.MergeFrom(SpecialMovePieceResponse);
@@ -1815,7 +1979,7 @@ namespace com.richardpianka.chess.network {
               SpecialMovePieceResponse = subBuilder.BuildPartial();
               break;
             }
-            case 258: {
+            case 290: {
               global::com.richardpianka.chess.network.SpecialMovePieceEvent.Builder subBuilder = global::com.richardpianka.chess.network.SpecialMovePieceEvent.CreateBuilder();
               if (result.hasSpecialMovePieceEvent) {
                 subBuilder.MergeFrom(SpecialMovePieceEvent);
@@ -1824,7 +1988,7 @@ namespace com.richardpianka.chess.network {
               SpecialMovePieceEvent = subBuilder.BuildPartial();
               break;
             }
-            case 274: {
+            case 298: {
               global::com.richardpianka.chess.network.GameStatusEvent.Builder subBuilder = global::com.richardpianka.chess.network.GameStatusEvent.CreateBuilder();
               if (result.hasGameStatusEvent) {
                 subBuilder.MergeFrom(GameStatusEvent);
@@ -1833,7 +1997,7 @@ namespace com.richardpianka.chess.network {
               GameStatusEvent = subBuilder.BuildPartial();
               break;
             }
-            case 282: {
+            case 306: {
               global::com.richardpianka.chess.network.TimeLeftEvent.Builder subBuilder = global::com.richardpianka.chess.network.TimeLeftEvent.CreateBuilder();
               if (result.hasTimeLeftEvent) {
                 subBuilder.MergeFrom(TimeLeftEvent);
@@ -2009,6 +2173,166 @@ namespace com.richardpianka.chess.network {
         PrepareBuilder();
         result.hasIdentifyResponse = false;
         result.identifyResponse_ = null;
+        return this;
+      }
+      
+      public bool HasCreateAccountRequest {
+       get { return result.hasCreateAccountRequest; }
+      }
+      public global::com.richardpianka.chess.network.CreateAccountRequest CreateAccountRequest {
+        get { return result.CreateAccountRequest; }
+        set { SetCreateAccountRequest(value); }
+      }
+      public Builder SetCreateAccountRequest(global::com.richardpianka.chess.network.CreateAccountRequest value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasCreateAccountRequest = true;
+        result.createAccountRequest_ = value;
+        return this;
+      }
+      public Builder SetCreateAccountRequest(global::com.richardpianka.chess.network.CreateAccountRequest.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasCreateAccountRequest = true;
+        result.createAccountRequest_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeCreateAccountRequest(global::com.richardpianka.chess.network.CreateAccountRequest value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasCreateAccountRequest &&
+            result.createAccountRequest_ != global::com.richardpianka.chess.network.CreateAccountRequest.DefaultInstance) {
+            result.createAccountRequest_ = global::com.richardpianka.chess.network.CreateAccountRequest.CreateBuilder(result.createAccountRequest_).MergeFrom(value).BuildPartial();
+        } else {
+          result.createAccountRequest_ = value;
+        }
+        result.hasCreateAccountRequest = true;
+        return this;
+      }
+      public Builder ClearCreateAccountRequest() {
+        PrepareBuilder();
+        result.hasCreateAccountRequest = false;
+        result.createAccountRequest_ = null;
+        return this;
+      }
+      
+      public bool HasCreateAccountResponse {
+       get { return result.hasCreateAccountResponse; }
+      }
+      public global::com.richardpianka.chess.network.CreateAccountResponse CreateAccountResponse {
+        get { return result.CreateAccountResponse; }
+        set { SetCreateAccountResponse(value); }
+      }
+      public Builder SetCreateAccountResponse(global::com.richardpianka.chess.network.CreateAccountResponse value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasCreateAccountResponse = true;
+        result.createAccountResponse_ = value;
+        return this;
+      }
+      public Builder SetCreateAccountResponse(global::com.richardpianka.chess.network.CreateAccountResponse.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasCreateAccountResponse = true;
+        result.createAccountResponse_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeCreateAccountResponse(global::com.richardpianka.chess.network.CreateAccountResponse value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasCreateAccountResponse &&
+            result.createAccountResponse_ != global::com.richardpianka.chess.network.CreateAccountResponse.DefaultInstance) {
+            result.createAccountResponse_ = global::com.richardpianka.chess.network.CreateAccountResponse.CreateBuilder(result.createAccountResponse_).MergeFrom(value).BuildPartial();
+        } else {
+          result.createAccountResponse_ = value;
+        }
+        result.hasCreateAccountResponse = true;
+        return this;
+      }
+      public Builder ClearCreateAccountResponse() {
+        PrepareBuilder();
+        result.hasCreateAccountResponse = false;
+        result.createAccountResponse_ = null;
+        return this;
+      }
+      
+      public bool HasChangePasswordRequest {
+       get { return result.hasChangePasswordRequest; }
+      }
+      public global::com.richardpianka.chess.network.ChangePasswordRequest ChangePasswordRequest {
+        get { return result.ChangePasswordRequest; }
+        set { SetChangePasswordRequest(value); }
+      }
+      public Builder SetChangePasswordRequest(global::com.richardpianka.chess.network.ChangePasswordRequest value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasChangePasswordRequest = true;
+        result.changePasswordRequest_ = value;
+        return this;
+      }
+      public Builder SetChangePasswordRequest(global::com.richardpianka.chess.network.ChangePasswordRequest.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasChangePasswordRequest = true;
+        result.changePasswordRequest_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeChangePasswordRequest(global::com.richardpianka.chess.network.ChangePasswordRequest value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasChangePasswordRequest &&
+            result.changePasswordRequest_ != global::com.richardpianka.chess.network.ChangePasswordRequest.DefaultInstance) {
+            result.changePasswordRequest_ = global::com.richardpianka.chess.network.ChangePasswordRequest.CreateBuilder(result.changePasswordRequest_).MergeFrom(value).BuildPartial();
+        } else {
+          result.changePasswordRequest_ = value;
+        }
+        result.hasChangePasswordRequest = true;
+        return this;
+      }
+      public Builder ClearChangePasswordRequest() {
+        PrepareBuilder();
+        result.hasChangePasswordRequest = false;
+        result.changePasswordRequest_ = null;
+        return this;
+      }
+      
+      public bool HasChangePasswordResponse {
+       get { return result.hasChangePasswordResponse; }
+      }
+      public global::com.richardpianka.chess.network.ChangePasswordResponse ChangePasswordResponse {
+        get { return result.ChangePasswordResponse; }
+        set { SetChangePasswordResponse(value); }
+      }
+      public Builder SetChangePasswordResponse(global::com.richardpianka.chess.network.ChangePasswordResponse value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasChangePasswordResponse = true;
+        result.changePasswordResponse_ = value;
+        return this;
+      }
+      public Builder SetChangePasswordResponse(global::com.richardpianka.chess.network.ChangePasswordResponse.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasChangePasswordResponse = true;
+        result.changePasswordResponse_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeChangePasswordResponse(global::com.richardpianka.chess.network.ChangePasswordResponse value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasChangePasswordResponse &&
+            result.changePasswordResponse_ != global::com.richardpianka.chess.network.ChangePasswordResponse.DefaultInstance) {
+            result.changePasswordResponse_ = global::com.richardpianka.chess.network.ChangePasswordResponse.CreateBuilder(result.changePasswordResponse_).MergeFrom(value).BuildPartial();
+        } else {
+          result.changePasswordResponse_ = value;
+        }
+        result.hasChangePasswordResponse = true;
+        return this;
+      }
+      public Builder ClearChangePasswordResponse() {
+        PrepareBuilder();
+        result.hasChangePasswordResponse = false;
+        result.changePasswordResponse_ = null;
         return this;
       }
       
@@ -6171,7 +6495,7 @@ namespace com.richardpianka.chess.network {
     private User() { }
     private static readonly User defaultInstance = new User().MakeReadOnly();
     private static readonly string[] _userFieldNames = new string[] { "Flags", "Name", "Record" };
-    private static readonly uint[] _userFieldTags = new uint[] { 16, 10, 26 };
+    private static readonly uint[] _userFieldTags = new uint[] { 24, 10, 18 };
     public static User DefaultInstance {
       get { return defaultInstance; }
     }
@@ -6202,17 +6526,7 @@ namespace com.richardpianka.chess.network {
       get { return name_; }
     }
     
-    public const int FlagsFieldNumber = 2;
-    private bool hasFlags;
-    private global::com.richardpianka.chess.network.UserFlags flags_ = global::com.richardpianka.chess.network.UserFlags.Pedestrian;
-    public bool HasFlags {
-      get { return hasFlags; }
-    }
-    public global::com.richardpianka.chess.network.UserFlags Flags {
-      get { return flags_; }
-    }
-    
-    public const int RecordFieldNumber = 3;
+    public const int RecordFieldNumber = 2;
     private bool hasRecord;
     private global::com.richardpianka.chess.network.Record record_;
     public bool HasRecord {
@@ -6222,10 +6536,19 @@ namespace com.richardpianka.chess.network {
       get { return record_ ?? global::com.richardpianka.chess.network.Record.DefaultInstance; }
     }
     
+    public const int FlagsFieldNumber = 3;
+    private bool hasFlags;
+    private global::com.richardpianka.chess.network.UserFlags flags_ = global::com.richardpianka.chess.network.UserFlags.Pedestrian;
+    public bool HasFlags {
+      get { return hasFlags; }
+    }
+    public global::com.richardpianka.chess.network.UserFlags Flags {
+      get { return flags_; }
+    }
+    
     public override bool IsInitialized {
       get {
         if (!hasName) return false;
-        if (!hasFlags) return false;
         if (!hasRecord) return false;
         if (!Record.IsInitialized) return false;
         return true;
@@ -6238,11 +6561,11 @@ namespace com.richardpianka.chess.network {
       if (hasName) {
         output.WriteString(1, field_names[1], Name);
       }
-      if (hasFlags) {
-        output.WriteEnum(2, field_names[0], (int) Flags, Flags);
-      }
       if (hasRecord) {
-        output.WriteMessage(3, field_names[2], Record);
+        output.WriteMessage(2, field_names[2], Record);
+      }
+      if (hasFlags) {
+        output.WriteEnum(3, field_names[0], (int) Flags, Flags);
       }
       UnknownFields.WriteTo(output);
     }
@@ -6257,11 +6580,11 @@ namespace com.richardpianka.chess.network {
         if (hasName) {
           size += pb::CodedOutputStream.ComputeStringSize(1, Name);
         }
-        if (hasFlags) {
-          size += pb::CodedOutputStream.ComputeEnumSize(2, (int) Flags);
-        }
         if (hasRecord) {
-          size += pb::CodedOutputStream.ComputeMessageSize(3, Record);
+          size += pb::CodedOutputStream.ComputeMessageSize(2, Record);
+        }
+        if (hasFlags) {
+          size += pb::CodedOutputStream.ComputeEnumSize(3, (int) Flags);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -6392,11 +6715,11 @@ namespace com.richardpianka.chess.network {
         if (other.HasName) {
           Name = other.Name;
         }
-        if (other.HasFlags) {
-          Flags = other.Flags;
-        }
         if (other.HasRecord) {
           MergeRecord(other.Record);
+        }
+        if (other.HasFlags) {
+          Flags = other.Flags;
         }
         this.MergeUnknownFields(other.UnknownFields);
         return this;
@@ -6445,7 +6768,16 @@ namespace com.richardpianka.chess.network {
               result.hasName = input.ReadString(ref result.name_);
               break;
             }
-            case 16: {
+            case 18: {
+              global::com.richardpianka.chess.network.Record.Builder subBuilder = global::com.richardpianka.chess.network.Record.CreateBuilder();
+              if (result.hasRecord) {
+                subBuilder.MergeFrom(Record);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              Record = subBuilder.BuildPartial();
+              break;
+            }
+            case 24: {
               object unknown;
               if(input.ReadEnum(ref result.flags_, out unknown)) {
                 result.hasFlags = true;
@@ -6453,17 +6785,8 @@ namespace com.richardpianka.chess.network {
                 if (unknownFields == null) {
                   unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
                 }
-                unknownFields.MergeVarintField(2, (ulong)(int)unknown);
+                unknownFields.MergeVarintField(3, (ulong)(int)unknown);
               }
-              break;
-            }
-            case 26: {
-              global::com.richardpianka.chess.network.Record.Builder subBuilder = global::com.richardpianka.chess.network.Record.CreateBuilder();
-              if (result.hasRecord) {
-                subBuilder.MergeFrom(Record);
-              }
-              input.ReadMessage(subBuilder, extensionRegistry);
-              Record = subBuilder.BuildPartial();
               break;
             }
           }
@@ -6494,26 +6817,6 @@ namespace com.richardpianka.chess.network {
         PrepareBuilder();
         result.hasName = false;
         result.name_ = "";
-        return this;
-      }
-      
-      public bool HasFlags {
-       get { return result.hasFlags; }
-      }
-      public global::com.richardpianka.chess.network.UserFlags Flags {
-        get { return result.Flags; }
-        set { SetFlags(value); }
-      }
-      public Builder SetFlags(global::com.richardpianka.chess.network.UserFlags value) {
-        PrepareBuilder();
-        result.hasFlags = true;
-        result.flags_ = value;
-        return this;
-      }
-      public Builder ClearFlags() {
-        PrepareBuilder();
-        result.hasFlags = false;
-        result.flags_ = global::com.richardpianka.chess.network.UserFlags.Pedestrian;
         return this;
       }
       
@@ -6554,6 +6857,26 @@ namespace com.richardpianka.chess.network {
         PrepareBuilder();
         result.hasRecord = false;
         result.record_ = null;
+        return this;
+      }
+      
+      public bool HasFlags {
+       get { return result.hasFlags; }
+      }
+      public global::com.richardpianka.chess.network.UserFlags Flags {
+        get { return result.Flags; }
+        set { SetFlags(value); }
+      }
+      public Builder SetFlags(global::com.richardpianka.chess.network.UserFlags value) {
+        PrepareBuilder();
+        result.hasFlags = true;
+        result.flags_ = value;
+        return this;
+      }
+      public Builder ClearFlags() {
+        PrepareBuilder();
+        result.hasFlags = false;
+        result.flags_ = global::com.richardpianka.chess.network.UserFlags.Pedestrian;
         return this;
       }
     }
@@ -8989,6 +9312,1347 @@ namespace com.richardpianka.chess.network {
       }
     }
     static IdentifyResponse() {
+      object.ReferenceEquals(global::com.richardpianka.chess.network.Contracts.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+  public sealed partial class CreateAccountRequest : pb::GeneratedMessage<CreateAccountRequest, CreateAccountRequest.Builder> {
+    private CreateAccountRequest() { }
+    private static readonly CreateAccountRequest defaultInstance = new CreateAccountRequest().MakeReadOnly();
+    private static readonly string[] _createAccountRequestFieldNames = new string[] { "Password", "Username" };
+    private static readonly uint[] _createAccountRequestFieldTags = new uint[] { 18, 10 };
+    public static CreateAccountRequest DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override CreateAccountRequest DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override CreateAccountRequest ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_CreateAccountRequest__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<CreateAccountRequest, CreateAccountRequest.Builder> InternalFieldAccessors {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_CreateAccountRequest__FieldAccessorTable; }
+    }
+    
+    public const int UsernameFieldNumber = 1;
+    private bool hasUsername;
+    private string username_ = "";
+    public bool HasUsername {
+      get { return hasUsername; }
+    }
+    public string Username {
+      get { return username_; }
+    }
+    
+    public const int PasswordFieldNumber = 2;
+    private bool hasPassword;
+    private string password_ = "";
+    public bool HasPassword {
+      get { return hasPassword; }
+    }
+    public string Password {
+      get { return password_; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasUsername) return false;
+        if (!hasPassword) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _createAccountRequestFieldNames;
+      if (hasUsername) {
+        output.WriteString(1, field_names[1], Username);
+      }
+      if (hasPassword) {
+        output.WriteString(2, field_names[0], Password);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasUsername) {
+          size += pb::CodedOutputStream.ComputeStringSize(1, Username);
+        }
+        if (hasPassword) {
+          size += pb::CodedOutputStream.ComputeStringSize(2, Password);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static CreateAccountRequest ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CreateAccountRequest ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CreateAccountRequest ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CreateAccountRequest ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CreateAccountRequest ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CreateAccountRequest ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static CreateAccountRequest ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static CreateAccountRequest ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static CreateAccountRequest ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CreateAccountRequest ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private CreateAccountRequest MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(CreateAccountRequest prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+    public sealed partial class Builder : pb::GeneratedBuilder<CreateAccountRequest, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(CreateAccountRequest cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private CreateAccountRequest result;
+      
+      private CreateAccountRequest PrepareBuilder() {
+        if (resultIsReadOnly) {
+          CreateAccountRequest original = result;
+          result = new CreateAccountRequest();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override CreateAccountRequest MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::com.richardpianka.chess.network.CreateAccountRequest.Descriptor; }
+      }
+      
+      public override CreateAccountRequest DefaultInstanceForType {
+        get { return global::com.richardpianka.chess.network.CreateAccountRequest.DefaultInstance; }
+      }
+      
+      public override CreateAccountRequest BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is CreateAccountRequest) {
+          return MergeFrom((CreateAccountRequest) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(CreateAccountRequest other) {
+        if (other == global::com.richardpianka.chess.network.CreateAccountRequest.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasUsername) {
+          Username = other.Username;
+        }
+        if (other.HasPassword) {
+          Password = other.Password;
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_createAccountRequestFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _createAccountRequestFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              result.hasUsername = input.ReadString(ref result.username_);
+              break;
+            }
+            case 18: {
+              result.hasPassword = input.ReadString(ref result.password_);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasUsername {
+        get { return result.hasUsername; }
+      }
+      public string Username {
+        get { return result.Username; }
+        set { SetUsername(value); }
+      }
+      public Builder SetUsername(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasUsername = true;
+        result.username_ = value;
+        return this;
+      }
+      public Builder ClearUsername() {
+        PrepareBuilder();
+        result.hasUsername = false;
+        result.username_ = "";
+        return this;
+      }
+      
+      public bool HasPassword {
+        get { return result.hasPassword; }
+      }
+      public string Password {
+        get { return result.Password; }
+        set { SetPassword(value); }
+      }
+      public Builder SetPassword(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPassword = true;
+        result.password_ = value;
+        return this;
+      }
+      public Builder ClearPassword() {
+        PrepareBuilder();
+        result.hasPassword = false;
+        result.password_ = "";
+        return this;
+      }
+    }
+    static CreateAccountRequest() {
+      object.ReferenceEquals(global::com.richardpianka.chess.network.Contracts.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+  public sealed partial class CreateAccountResponse : pb::GeneratedMessage<CreateAccountResponse, CreateAccountResponse.Builder> {
+    private CreateAccountResponse() { }
+    private static readonly CreateAccountResponse defaultInstance = new CreateAccountResponse().MakeReadOnly();
+    private static readonly string[] _createAccountResponseFieldNames = new string[] { "Message", "Result" };
+    private static readonly uint[] _createAccountResponseFieldTags = new uint[] { 18, 8 };
+    public static CreateAccountResponse DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override CreateAccountResponse DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override CreateAccountResponse ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_CreateAccountResponse__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<CreateAccountResponse, CreateAccountResponse.Builder> InternalFieldAccessors {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_CreateAccountResponse__FieldAccessorTable; }
+    }
+    
+    public const int ResultFieldNumber = 1;
+    private bool hasResult;
+    private global::com.richardpianka.chess.network.Result result_ = global::com.richardpianka.chess.network.Result.Success;
+    public bool HasResult {
+      get { return hasResult; }
+    }
+    public global::com.richardpianka.chess.network.Result Result {
+      get { return result_; }
+    }
+    
+    public const int MessageFieldNumber = 2;
+    private bool hasMessage;
+    private string message_ = "";
+    public bool HasMessage {
+      get { return hasMessage; }
+    }
+    public string Message {
+      get { return message_; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasResult) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _createAccountResponseFieldNames;
+      if (hasResult) {
+        output.WriteEnum(1, field_names[1], (int) Result, Result);
+      }
+      if (hasMessage) {
+        output.WriteString(2, field_names[0], Message);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasResult) {
+          size += pb::CodedOutputStream.ComputeEnumSize(1, (int) Result);
+        }
+        if (hasMessage) {
+          size += pb::CodedOutputStream.ComputeStringSize(2, Message);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static CreateAccountResponse ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CreateAccountResponse ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CreateAccountResponse ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CreateAccountResponse ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CreateAccountResponse ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CreateAccountResponse ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static CreateAccountResponse ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static CreateAccountResponse ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static CreateAccountResponse ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CreateAccountResponse ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private CreateAccountResponse MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(CreateAccountResponse prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+    public sealed partial class Builder : pb::GeneratedBuilder<CreateAccountResponse, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(CreateAccountResponse cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private CreateAccountResponse result;
+      
+      private CreateAccountResponse PrepareBuilder() {
+        if (resultIsReadOnly) {
+          CreateAccountResponse original = result;
+          result = new CreateAccountResponse();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override CreateAccountResponse MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::com.richardpianka.chess.network.CreateAccountResponse.Descriptor; }
+      }
+      
+      public override CreateAccountResponse DefaultInstanceForType {
+        get { return global::com.richardpianka.chess.network.CreateAccountResponse.DefaultInstance; }
+      }
+      
+      public override CreateAccountResponse BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is CreateAccountResponse) {
+          return MergeFrom((CreateAccountResponse) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(CreateAccountResponse other) {
+        if (other == global::com.richardpianka.chess.network.CreateAccountResponse.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasResult) {
+          Result = other.Result;
+        }
+        if (other.HasMessage) {
+          Message = other.Message;
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_createAccountResponseFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _createAccountResponseFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 8: {
+              object unknown;
+              if(input.ReadEnum(ref result.result_, out unknown)) {
+                result.hasResult = true;
+              } else if(unknown is int) {
+                if (unknownFields == null) {
+                  unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+                }
+                unknownFields.MergeVarintField(1, (ulong)(int)unknown);
+              }
+              break;
+            }
+            case 18: {
+              result.hasMessage = input.ReadString(ref result.message_);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasResult {
+       get { return result.hasResult; }
+      }
+      public global::com.richardpianka.chess.network.Result Result {
+        get { return result.Result; }
+        set { SetResult(value); }
+      }
+      public Builder SetResult(global::com.richardpianka.chess.network.Result value) {
+        PrepareBuilder();
+        result.hasResult = true;
+        result.result_ = value;
+        return this;
+      }
+      public Builder ClearResult() {
+        PrepareBuilder();
+        result.hasResult = false;
+        result.result_ = global::com.richardpianka.chess.network.Result.Success;
+        return this;
+      }
+      
+      public bool HasMessage {
+        get { return result.hasMessage; }
+      }
+      public string Message {
+        get { return result.Message; }
+        set { SetMessage(value); }
+      }
+      public Builder SetMessage(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasMessage = true;
+        result.message_ = value;
+        return this;
+      }
+      public Builder ClearMessage() {
+        PrepareBuilder();
+        result.hasMessage = false;
+        result.message_ = "";
+        return this;
+      }
+    }
+    static CreateAccountResponse() {
+      object.ReferenceEquals(global::com.richardpianka.chess.network.Contracts.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+  public sealed partial class ChangePasswordRequest : pb::GeneratedMessage<ChangePasswordRequest, ChangePasswordRequest.Builder> {
+    private ChangePasswordRequest() { }
+    private static readonly ChangePasswordRequest defaultInstance = new ChangePasswordRequest().MakeReadOnly();
+    private static readonly string[] _changePasswordRequestFieldNames = new string[] { "NewPassword", "OldPassword", "Username" };
+    private static readonly uint[] _changePasswordRequestFieldTags = new uint[] { 26, 18, 10 };
+    public static ChangePasswordRequest DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override ChangePasswordRequest DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override ChangePasswordRequest ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_ChangePasswordRequest__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<ChangePasswordRequest, ChangePasswordRequest.Builder> InternalFieldAccessors {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_ChangePasswordRequest__FieldAccessorTable; }
+    }
+    
+    public const int UsernameFieldNumber = 1;
+    private bool hasUsername;
+    private string username_ = "";
+    public bool HasUsername {
+      get { return hasUsername; }
+    }
+    public string Username {
+      get { return username_; }
+    }
+    
+    public const int OldPasswordFieldNumber = 2;
+    private bool hasOldPassword;
+    private string oldPassword_ = "";
+    public bool HasOldPassword {
+      get { return hasOldPassword; }
+    }
+    public string OldPassword {
+      get { return oldPassword_; }
+    }
+    
+    public const int NewPasswordFieldNumber = 3;
+    private bool hasNewPassword;
+    private string newPassword_ = "";
+    public bool HasNewPassword {
+      get { return hasNewPassword; }
+    }
+    public string NewPassword {
+      get { return newPassword_; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasUsername) return false;
+        if (!hasOldPassword) return false;
+        if (!hasNewPassword) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _changePasswordRequestFieldNames;
+      if (hasUsername) {
+        output.WriteString(1, field_names[2], Username);
+      }
+      if (hasOldPassword) {
+        output.WriteString(2, field_names[1], OldPassword);
+      }
+      if (hasNewPassword) {
+        output.WriteString(3, field_names[0], NewPassword);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasUsername) {
+          size += pb::CodedOutputStream.ComputeStringSize(1, Username);
+        }
+        if (hasOldPassword) {
+          size += pb::CodedOutputStream.ComputeStringSize(2, OldPassword);
+        }
+        if (hasNewPassword) {
+          size += pb::CodedOutputStream.ComputeStringSize(3, NewPassword);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static ChangePasswordRequest ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static ChangePasswordRequest ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private ChangePasswordRequest MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(ChangePasswordRequest prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+    public sealed partial class Builder : pb::GeneratedBuilder<ChangePasswordRequest, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(ChangePasswordRequest cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private ChangePasswordRequest result;
+      
+      private ChangePasswordRequest PrepareBuilder() {
+        if (resultIsReadOnly) {
+          ChangePasswordRequest original = result;
+          result = new ChangePasswordRequest();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override ChangePasswordRequest MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::com.richardpianka.chess.network.ChangePasswordRequest.Descriptor; }
+      }
+      
+      public override ChangePasswordRequest DefaultInstanceForType {
+        get { return global::com.richardpianka.chess.network.ChangePasswordRequest.DefaultInstance; }
+      }
+      
+      public override ChangePasswordRequest BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is ChangePasswordRequest) {
+          return MergeFrom((ChangePasswordRequest) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(ChangePasswordRequest other) {
+        if (other == global::com.richardpianka.chess.network.ChangePasswordRequest.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasUsername) {
+          Username = other.Username;
+        }
+        if (other.HasOldPassword) {
+          OldPassword = other.OldPassword;
+        }
+        if (other.HasNewPassword) {
+          NewPassword = other.NewPassword;
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_changePasswordRequestFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _changePasswordRequestFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              result.hasUsername = input.ReadString(ref result.username_);
+              break;
+            }
+            case 18: {
+              result.hasOldPassword = input.ReadString(ref result.oldPassword_);
+              break;
+            }
+            case 26: {
+              result.hasNewPassword = input.ReadString(ref result.newPassword_);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasUsername {
+        get { return result.hasUsername; }
+      }
+      public string Username {
+        get { return result.Username; }
+        set { SetUsername(value); }
+      }
+      public Builder SetUsername(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasUsername = true;
+        result.username_ = value;
+        return this;
+      }
+      public Builder ClearUsername() {
+        PrepareBuilder();
+        result.hasUsername = false;
+        result.username_ = "";
+        return this;
+      }
+      
+      public bool HasOldPassword {
+        get { return result.hasOldPassword; }
+      }
+      public string OldPassword {
+        get { return result.OldPassword; }
+        set { SetOldPassword(value); }
+      }
+      public Builder SetOldPassword(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasOldPassword = true;
+        result.oldPassword_ = value;
+        return this;
+      }
+      public Builder ClearOldPassword() {
+        PrepareBuilder();
+        result.hasOldPassword = false;
+        result.oldPassword_ = "";
+        return this;
+      }
+      
+      public bool HasNewPassword {
+        get { return result.hasNewPassword; }
+      }
+      public string NewPassword {
+        get { return result.NewPassword; }
+        set { SetNewPassword(value); }
+      }
+      public Builder SetNewPassword(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasNewPassword = true;
+        result.newPassword_ = value;
+        return this;
+      }
+      public Builder ClearNewPassword() {
+        PrepareBuilder();
+        result.hasNewPassword = false;
+        result.newPassword_ = "";
+        return this;
+      }
+    }
+    static ChangePasswordRequest() {
+      object.ReferenceEquals(global::com.richardpianka.chess.network.Contracts.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+  public sealed partial class ChangePasswordResponse : pb::GeneratedMessage<ChangePasswordResponse, ChangePasswordResponse.Builder> {
+    private ChangePasswordResponse() { }
+    private static readonly ChangePasswordResponse defaultInstance = new ChangePasswordResponse().MakeReadOnly();
+    private static readonly string[] _changePasswordResponseFieldNames = new string[] { "Message", "Result" };
+    private static readonly uint[] _changePasswordResponseFieldTags = new uint[] { 18, 8 };
+    public static ChangePasswordResponse DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override ChangePasswordResponse DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override ChangePasswordResponse ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_ChangePasswordResponse__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<ChangePasswordResponse, ChangePasswordResponse.Builder> InternalFieldAccessors {
+      get { return global::com.richardpianka.chess.network.Contracts.internal__static_com_richardpianka_chess_network_ChangePasswordResponse__FieldAccessorTable; }
+    }
+    
+    public const int ResultFieldNumber = 1;
+    private bool hasResult;
+    private global::com.richardpianka.chess.network.Result result_ = global::com.richardpianka.chess.network.Result.Success;
+    public bool HasResult {
+      get { return hasResult; }
+    }
+    public global::com.richardpianka.chess.network.Result Result {
+      get { return result_; }
+    }
+    
+    public const int MessageFieldNumber = 2;
+    private bool hasMessage;
+    private string message_ = "";
+    public bool HasMessage {
+      get { return hasMessage; }
+    }
+    public string Message {
+      get { return message_; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasResult) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _changePasswordResponseFieldNames;
+      if (hasResult) {
+        output.WriteEnum(1, field_names[1], (int) Result, Result);
+      }
+      if (hasMessage) {
+        output.WriteString(2, field_names[0], Message);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasResult) {
+          size += pb::CodedOutputStream.ComputeEnumSize(1, (int) Result);
+        }
+        if (hasMessage) {
+          size += pb::CodedOutputStream.ComputeStringSize(2, Message);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static ChangePasswordResponse ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static ChangePasswordResponse ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private ChangePasswordResponse MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(ChangePasswordResponse prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ProtoGen", "2.4.1.473")]
+    public sealed partial class Builder : pb::GeneratedBuilder<ChangePasswordResponse, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(ChangePasswordResponse cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private ChangePasswordResponse result;
+      
+      private ChangePasswordResponse PrepareBuilder() {
+        if (resultIsReadOnly) {
+          ChangePasswordResponse original = result;
+          result = new ChangePasswordResponse();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override ChangePasswordResponse MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::com.richardpianka.chess.network.ChangePasswordResponse.Descriptor; }
+      }
+      
+      public override ChangePasswordResponse DefaultInstanceForType {
+        get { return global::com.richardpianka.chess.network.ChangePasswordResponse.DefaultInstance; }
+      }
+      
+      public override ChangePasswordResponse BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is ChangePasswordResponse) {
+          return MergeFrom((ChangePasswordResponse) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(ChangePasswordResponse other) {
+        if (other == global::com.richardpianka.chess.network.ChangePasswordResponse.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasResult) {
+          Result = other.Result;
+        }
+        if (other.HasMessage) {
+          Message = other.Message;
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_changePasswordResponseFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _changePasswordResponseFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 8: {
+              object unknown;
+              if(input.ReadEnum(ref result.result_, out unknown)) {
+                result.hasResult = true;
+              } else if(unknown is int) {
+                if (unknownFields == null) {
+                  unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+                }
+                unknownFields.MergeVarintField(1, (ulong)(int)unknown);
+              }
+              break;
+            }
+            case 18: {
+              result.hasMessage = input.ReadString(ref result.message_);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasResult {
+       get { return result.hasResult; }
+      }
+      public global::com.richardpianka.chess.network.Result Result {
+        get { return result.Result; }
+        set { SetResult(value); }
+      }
+      public Builder SetResult(global::com.richardpianka.chess.network.Result value) {
+        PrepareBuilder();
+        result.hasResult = true;
+        result.result_ = value;
+        return this;
+      }
+      public Builder ClearResult() {
+        PrepareBuilder();
+        result.hasResult = false;
+        result.result_ = global::com.richardpianka.chess.network.Result.Success;
+        return this;
+      }
+      
+      public bool HasMessage {
+        get { return result.hasMessage; }
+      }
+      public string Message {
+        get { return result.Message; }
+        set { SetMessage(value); }
+      }
+      public Builder SetMessage(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasMessage = true;
+        result.message_ = value;
+        return this;
+      }
+      public Builder ClearMessage() {
+        PrepareBuilder();
+        result.hasMessage = false;
+        result.message_ = "";
+        return this;
+      }
+    }
+    static ChangePasswordResponse() {
       object.ReferenceEquals(global::com.richardpianka.chess.network.Contracts.Descriptor, null);
     }
   }

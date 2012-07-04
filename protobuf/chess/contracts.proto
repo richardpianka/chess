@@ -14,40 +14,44 @@ option java_outer_classname = "Contracts";
  */
 //The message type and name must be identical
 message Envelope {
-    optional HandshakeRequest HandshakeRequest = 1;
-    optional HandshakeResponse HandshakeResponse = 2;
-    optional IdentifyRequest IdentifyRequest = 3;
-    optional IdentifyResponse IdentifyResponse = 4;
-    optional JoinChatRequest JoinChatRequest = 5;
-    optional JoinChatResponse JoinChatResponse = 6;
-    optional RoomListRequest RoomListRequest = 7;
-    optional RoomListResponse RoomListResponse = 8;
-    optional JoinRoomRequest JoinRoomRequest = 9;
-    optional JoinRoomResponse JoinRoomResponse = 10;
-    optional SpeakRequest SpeakRequest = 11;
-    optional OperatorRequest OperatorRequest = 12;
-    optional OperatorResponse OperatorResponse = 13;
-    optional ChatRoomEvent ChatRoomEvent = 14;
-    optional ChatUserEvent ChatUserEvent = 15;
-    optional ChatSpeakEvent ChatSpeakEvent = 16;
-    optional GameListRequest GameListRequest = 17;
-    optional GameListResponse GameListResponse = 18;
-    optional CreateGameRequest CreateGameRequest = 19;
-    optional CreateGameResponse CreateGameResponse = 20;
-    optional JoinGameRequest JoinGameRequest = 21;
-    optional JoinGameResponse JoinGameResponse = 22;
-    optional LeaveGameRequest LeaveGameRequest = 23;
-    optional StartGameRequest StartGameRequest = 24;
-    optional StartGameResponse StartGameResponse = 25;
-    optional GameStartedEvent GameStartedEvent = 26;
-    optional MovePieceRequest MovePieceRequest = 27;
-    optional MovePieceResponse MovePieceResponse = 28;
-    optional MovePieceEvent MovePieceEvent = 29;
-    optional SpecialMovePieceRequest SpecialMovePieceRequest = 30;
-    optional SpecialMovePieceResponse SpecialMovePieceResponse = 31;
-    optional SpecialMovePieceEvent SpecialMovePieceEvent = 32;
-    optional GameStatusEvent GameStatusEvent = 34;
-    optional TimeLeftEvent TimeLeftEvent = 35;
+    optional HandshakeRequest HandshakeRequest                  = 1;
+    optional HandshakeResponse HandshakeResponse                = 2;
+    optional IdentifyRequest IdentifyRequest                    = 3;
+    optional IdentifyResponse IdentifyResponse                  = 4;
+    optional CreateAccountRequest CreateAccountRequest          = 5;
+    optional CreateAccountResponse CreateAccountResponse        = 6;
+    optional ChangePasswordRequest ChangePasswordRequest        = 7;
+    optional ChangePasswordResponse ChangePasswordResponse      = 8;
+    optional JoinChatRequest JoinChatRequest                    = 9;
+    optional JoinChatResponse JoinChatResponse                  = 10;
+    optional RoomListRequest RoomListRequest                    = 11;
+    optional RoomListResponse RoomListResponse                  = 12;
+    optional JoinRoomRequest JoinRoomRequest                    = 13;
+    optional JoinRoomResponse JoinRoomResponse                  = 14;
+    optional SpeakRequest SpeakRequest                          = 15;
+    optional OperatorRequest OperatorRequest                    = 16;
+    optional OperatorResponse OperatorResponse                  = 17;
+    optional ChatRoomEvent ChatRoomEvent                        = 18;
+    optional ChatUserEvent ChatUserEvent                        = 19;
+    optional ChatSpeakEvent ChatSpeakEvent                      = 20;
+    optional GameListRequest GameListRequest                    = 21;
+    optional GameListResponse GameListResponse                  = 22;
+    optional CreateGameRequest CreateGameRequest                = 23;
+    optional CreateGameResponse CreateGameResponse              = 24;
+    optional JoinGameRequest JoinGameRequest                    = 25;
+    optional JoinGameResponse JoinGameResponse                  = 26;
+    optional LeaveGameRequest LeaveGameRequest                  = 27;
+    optional StartGameRequest StartGameRequest                  = 28;
+    optional StartGameResponse StartGameResponse                = 29;
+    optional GameStartedEvent GameStartedEvent                  = 30;
+    optional MovePieceRequest MovePieceRequest                  = 31;
+    optional MovePieceResponse MovePieceResponse                = 32;
+    optional MovePieceEvent MovePieceEvent                      = 33;
+    optional SpecialMovePieceRequest SpecialMovePieceRequest    = 34;
+    optional SpecialMovePieceResponse SpecialMovePieceResponse  = 35;
+    optional SpecialMovePieceEvent SpecialMovePieceEvent        = 36;
+    optional GameStatusEvent GameStatusEvent                    = 37;
+    optional TimeLeftEvent TimeLeftEvent                        = 38;
 }
 
 /**
@@ -180,8 +184,8 @@ message Record {
 
 message User {
     required string Name = 1;
-    required UserFlags Flags = 2;
-    required Record Record = 3;
+    required Record Record = 2;
+    optional UserFlags Flags = 3;
 }
 
 message Game {
@@ -221,6 +225,27 @@ message IdentifyRequest {
 }
 
 message IdentifyResponse {
+    required Result Result = 1;
+    optional string Message = 2;
+}
+
+message CreateAccountRequest {
+    required string Username = 1;
+    required string Password = 2;
+}
+
+message CreateAccountResponse {
+    required Result Result = 1;
+    optional string Message = 2;
+}
+
+message ChangePasswordRequest {
+    required string Username = 1;
+    required string OldPassword = 2;
+    required string NewPassword = 3;
+}
+
+message ChangePasswordResponse {
     required Result Result = 1;
     optional string Message = 2;
 }

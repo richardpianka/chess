@@ -47,8 +47,6 @@ class Connection(socket: Socket, private[this] val distribution: PostalService[C
       while (true) {
         val data = Envelope.parseDelimitedFrom(in)
         distribution.deliver(this, data)
-
-        Envelope.newBuilder().build().writeTo(out)
       }
     } catch {
       case e: SocketException => log.info("Connection closed from %s", socket.getRemoteSocketAddress.toString)
@@ -56,6 +54,7 @@ class Connection(socket: Socket, private[this] val distribution: PostalService[C
   }
 
   def send(envelope: Envelope) {
-    envelope.writeTo(out)
+    envelope.writeDelimitedTo(out)
+    out.flush()
   }
 }

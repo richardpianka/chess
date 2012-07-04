@@ -14,6 +14,10 @@ abstract class Warehouse[A <: AbstractMessageLite](val file: String, private[thi
 
   def load() {
     synchronized {
+      if (!new File(file).exists()) {
+        return
+      }
+
       val in = new FileInputStream(new File(file))
       allItems.clear()
 

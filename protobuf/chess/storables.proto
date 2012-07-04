@@ -1,6 +1,6 @@
-package com.richardpianka.chess.server.storage;
+package com.richardpianka.chess.server.storables;
 
-option java_package = "com.richardpianka.chess.server.storage";
+option java_package = "com.richardpianka.chess.server.storables";
 option java_outer_classname = "Storables";
 
 message Account {
@@ -12,7 +12,7 @@ message Account {
 
 message Record {
     required uint32 Wins = 1;
-    required uint32 Loses = 2;
+    required uint32 Losses = 2;
     required uint32 Stalemates = 3;
     required uint32 Disconnects = 4;
 }

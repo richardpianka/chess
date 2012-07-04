@@ -4,6 +4,7 @@
 build/
 csharp/Chess.Contracts/bin/
 csharp/Chess.Contracts/obj/
+data/
 deploy/
 docs/
 logs/

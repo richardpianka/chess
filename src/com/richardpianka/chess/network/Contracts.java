@@ -793,152 +793,172 @@ public final class Contracts {
     com.richardpianka.chess.network.Contracts.IdentifyResponse getIdentifyResponse();
     com.richardpianka.chess.network.Contracts.IdentifyResponseOrBuilder getIdentifyResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 5;
+    // optional .com.richardpianka.chess.network.CreateAccountRequest CreateAccountRequest = 5;
+    boolean hasCreateAccountRequest();
+    com.richardpianka.chess.network.Contracts.CreateAccountRequest getCreateAccountRequest();
+    com.richardpianka.chess.network.Contracts.CreateAccountRequestOrBuilder getCreateAccountRequestOrBuilder();
+    
+    // optional .com.richardpianka.chess.network.CreateAccountResponse CreateAccountResponse = 6;
+    boolean hasCreateAccountResponse();
+    com.richardpianka.chess.network.Contracts.CreateAccountResponse getCreateAccountResponse();
+    com.richardpianka.chess.network.Contracts.CreateAccountResponseOrBuilder getCreateAccountResponseOrBuilder();
+    
+    // optional .com.richardpianka.chess.network.ChangePasswordRequest ChangePasswordRequest = 7;
+    boolean hasChangePasswordRequest();
+    com.richardpianka.chess.network.Contracts.ChangePasswordRequest getChangePasswordRequest();
+    com.richardpianka.chess.network.Contracts.ChangePasswordRequestOrBuilder getChangePasswordRequestOrBuilder();
+    
+    // optional .com.richardpianka.chess.network.ChangePasswordResponse ChangePasswordResponse = 8;
+    boolean hasChangePasswordResponse();
+    com.richardpianka.chess.network.Contracts.ChangePasswordResponse getChangePasswordResponse();
+    com.richardpianka.chess.network.Contracts.ChangePasswordResponseOrBuilder getChangePasswordResponseOrBuilder();
+    
+    // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 9;
     boolean hasJoinChatRequest();
     com.richardpianka.chess.network.Contracts.JoinChatRequest getJoinChatRequest();
     com.richardpianka.chess.network.Contracts.JoinChatRequestOrBuilder getJoinChatRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 6;
+    // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 10;
     boolean hasJoinChatResponse();
     com.richardpianka.chess.network.Contracts.JoinChatResponse getJoinChatResponse();
     com.richardpianka.chess.network.Contracts.JoinChatResponseOrBuilder getJoinChatResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.RoomListRequest RoomListRequest = 7;
+    // optional .com.richardpianka.chess.network.RoomListRequest RoomListRequest = 11;
     boolean hasRoomListRequest();
     com.richardpianka.chess.network.Contracts.RoomListRequest getRoomListRequest();
     com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder getRoomListRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.RoomListResponse RoomListResponse = 8;
+    // optional .com.richardpianka.chess.network.RoomListResponse RoomListResponse = 12;
     boolean hasRoomListResponse();
     com.richardpianka.chess.network.Contracts.RoomListResponse getRoomListResponse();
     com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder getRoomListResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 9;
+    // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 13;
     boolean hasJoinRoomRequest();
     com.richardpianka.chess.network.Contracts.JoinRoomRequest getJoinRoomRequest();
     com.richardpianka.chess.network.Contracts.JoinRoomRequestOrBuilder getJoinRoomRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 10;
+    // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 14;
     boolean hasJoinRoomResponse();
     com.richardpianka.chess.network.Contracts.JoinRoomResponse getJoinRoomResponse();
     com.richardpianka.chess.network.Contracts.JoinRoomResponseOrBuilder getJoinRoomResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 11;
+    // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 15;
     boolean hasSpeakRequest();
     com.richardpianka.chess.network.Contracts.SpeakRequest getSpeakRequest();
     com.richardpianka.chess.network.Contracts.SpeakRequestOrBuilder getSpeakRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.OperatorRequest OperatorRequest = 12;
+    // optional .com.richardpianka.chess.network.OperatorRequest OperatorRequest = 16;
     boolean hasOperatorRequest();
     com.richardpianka.chess.network.Contracts.OperatorRequest getOperatorRequest();
     com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder getOperatorRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.OperatorResponse OperatorResponse = 13;
+    // optional .com.richardpianka.chess.network.OperatorResponse OperatorResponse = 17;
     boolean hasOperatorResponse();
     com.richardpianka.chess.network.Contracts.OperatorResponse getOperatorResponse();
     com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder getOperatorResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 14;
+    // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 18;
     boolean hasChatRoomEvent();
     com.richardpianka.chess.network.Contracts.ChatRoomEvent getChatRoomEvent();
     com.richardpianka.chess.network.Contracts.ChatRoomEventOrBuilder getChatRoomEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 15;
+    // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 19;
     boolean hasChatUserEvent();
     com.richardpianka.chess.network.Contracts.ChatUserEvent getChatUserEvent();
     com.richardpianka.chess.network.Contracts.ChatUserEventOrBuilder getChatUserEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 16;
+    // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 20;
     boolean hasChatSpeakEvent();
     com.richardpianka.chess.network.Contracts.ChatSpeakEvent getChatSpeakEvent();
     com.richardpianka.chess.network.Contracts.ChatSpeakEventOrBuilder getChatSpeakEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.GameListRequest GameListRequest = 17;
+    // optional .com.richardpianka.chess.network.GameListRequest GameListRequest = 21;
     boolean hasGameListRequest();
     com.richardpianka.chess.network.Contracts.GameListRequest getGameListRequest();
     com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder getGameListRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.GameListResponse GameListResponse = 18;
+    // optional .com.richardpianka.chess.network.GameListResponse GameListResponse = 22;
     boolean hasGameListResponse();
     com.richardpianka.chess.network.Contracts.GameListResponse getGameListResponse();
     com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder getGameListResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.CreateGameRequest CreateGameRequest = 19;
+    // optional .com.richardpianka.chess.network.CreateGameRequest CreateGameRequest = 23;
     boolean hasCreateGameRequest();
     com.richardpianka.chess.network.Contracts.CreateGameRequest getCreateGameRequest();
     com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder getCreateGameRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.CreateGameResponse CreateGameResponse = 20;
+    // optional .com.richardpianka.chess.network.CreateGameResponse CreateGameResponse = 24;
     boolean hasCreateGameResponse();
     com.richardpianka.chess.network.Contracts.CreateGameResponse getCreateGameResponse();
     com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder getCreateGameResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinGameRequest JoinGameRequest = 21;
+    // optional .com.richardpianka.chess.network.JoinGameRequest JoinGameRequest = 25;
     boolean hasJoinGameRequest();
     com.richardpianka.chess.network.Contracts.JoinGameRequest getJoinGameRequest();
     com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder getJoinGameRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.JoinGameResponse JoinGameResponse = 22;
+    // optional .com.richardpianka.chess.network.JoinGameResponse JoinGameResponse = 26;
     boolean hasJoinGameResponse();
     com.richardpianka.chess.network.Contracts.JoinGameResponse getJoinGameResponse();
     com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder getJoinGameResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.LeaveGameRequest LeaveGameRequest = 23;
+    // optional .com.richardpianka.chess.network.LeaveGameRequest LeaveGameRequest = 27;
     boolean hasLeaveGameRequest();
     com.richardpianka.chess.network.Contracts.LeaveGameRequest getLeaveGameRequest();
     com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder getLeaveGameRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.StartGameRequest StartGameRequest = 24;
+    // optional .com.richardpianka.chess.network.StartGameRequest StartGameRequest = 28;
     boolean hasStartGameRequest();
     com.richardpianka.chess.network.Contracts.StartGameRequest getStartGameRequest();
     com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder getStartGameRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.StartGameResponse StartGameResponse = 25;
+    // optional .com.richardpianka.chess.network.StartGameResponse StartGameResponse = 29;
     boolean hasStartGameResponse();
     com.richardpianka.chess.network.Contracts.StartGameResponse getStartGameResponse();
     com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder getStartGameResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.GameStartedEvent GameStartedEvent = 26;
+    // optional .com.richardpianka.chess.network.GameStartedEvent GameStartedEvent = 30;
     boolean hasGameStartedEvent();
     com.richardpianka.chess.network.Contracts.GameStartedEvent getGameStartedEvent();
     com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder getGameStartedEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.MovePieceRequest MovePieceRequest = 27;
+    // optional .com.richardpianka.chess.network.MovePieceRequest MovePieceRequest = 31;
     boolean hasMovePieceRequest();
     com.richardpianka.chess.network.Contracts.MovePieceRequest getMovePieceRequest();
     com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder getMovePieceRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.MovePieceResponse MovePieceResponse = 28;
+    // optional .com.richardpianka.chess.network.MovePieceResponse MovePieceResponse = 32;
     boolean hasMovePieceResponse();
     com.richardpianka.chess.network.Contracts.MovePieceResponse getMovePieceResponse();
     com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder getMovePieceResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.MovePieceEvent MovePieceEvent = 29;
+    // optional .com.richardpianka.chess.network.MovePieceEvent MovePieceEvent = 33;
     boolean hasMovePieceEvent();
     com.richardpianka.chess.network.Contracts.MovePieceEvent getMovePieceEvent();
     com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder getMovePieceEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.SpecialMovePieceRequest SpecialMovePieceRequest = 30;
+    // optional .com.richardpianka.chess.network.SpecialMovePieceRequest SpecialMovePieceRequest = 34;
     boolean hasSpecialMovePieceRequest();
     com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest getSpecialMovePieceRequest();
     com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder getSpecialMovePieceRequestOrBuilder();
     
-    // optional .com.richardpianka.chess.network.SpecialMovePieceResponse SpecialMovePieceResponse = 31;
+    // optional .com.richardpianka.chess.network.SpecialMovePieceResponse SpecialMovePieceResponse = 35;
     boolean hasSpecialMovePieceResponse();
     com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse getSpecialMovePieceResponse();
     com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder getSpecialMovePieceResponseOrBuilder();
     
-    // optional .com.richardpianka.chess.network.SpecialMovePieceEvent SpecialMovePieceEvent = 32;
+    // optional .com.richardpianka.chess.network.SpecialMovePieceEvent SpecialMovePieceEvent = 36;
     boolean hasSpecialMovePieceEvent();
     com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent getSpecialMovePieceEvent();
     com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder getSpecialMovePieceEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.GameStatusEvent GameStatusEvent = 34;
+    // optional .com.richardpianka.chess.network.GameStatusEvent GameStatusEvent = 37;
     boolean hasGameStatusEvent();
     com.richardpianka.chess.network.Contracts.GameStatusEvent getGameStatusEvent();
     com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder getGameStatusEventOrBuilder();
     
-    // optional .com.richardpianka.chess.network.TimeLeftEvent TimeLeftEvent = 35;
+    // optional .com.richardpianka.chess.network.TimeLeftEvent TimeLeftEvent = 38;
     boolean hasTimeLeftEvent();
     com.richardpianka.chess.network.Contracts.TimeLeftEvent getTimeLeftEvent();
     com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder getTimeLeftEventOrBuilder();
@@ -1025,11 +1045,63 @@ public final class Contracts {
       return identifyResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 5;
-    public static final int JOINCHATREQUEST_FIELD_NUMBER = 5;
+    // optional .com.richardpianka.chess.network.CreateAccountRequest CreateAccountRequest = 5;
+    public static final int CREATEACCOUNTREQUEST_FIELD_NUMBER = 5;
+    private com.richardpianka.chess.network.Contracts.CreateAccountRequest createAccountRequest_;
+    public boolean hasCreateAccountRequest() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    public com.richardpianka.chess.network.Contracts.CreateAccountRequest getCreateAccountRequest() {
+      return createAccountRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.CreateAccountRequestOrBuilder getCreateAccountRequestOrBuilder() {
+      return createAccountRequest_;
+    }
+    
+    // optional .com.richardpianka.chess.network.CreateAccountResponse CreateAccountResponse = 6;
+    public static final int CREATEACCOUNTRESPONSE_FIELD_NUMBER = 6;
+    private com.richardpianka.chess.network.Contracts.CreateAccountResponse createAccountResponse_;
+    public boolean hasCreateAccountResponse() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    public com.richardpianka.chess.network.Contracts.CreateAccountResponse getCreateAccountResponse() {
+      return createAccountResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.CreateAccountResponseOrBuilder getCreateAccountResponseOrBuilder() {
+      return createAccountResponse_;
+    }
+    
+    // optional .com.richardpianka.chess.network.ChangePasswordRequest ChangePasswordRequest = 7;
+    public static final int CHANGEPASSWORDREQUEST_FIELD_NUMBER = 7;
+    private com.richardpianka.chess.network.Contracts.ChangePasswordRequest changePasswordRequest_;
+    public boolean hasChangePasswordRequest() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordRequest getChangePasswordRequest() {
+      return changePasswordRequest_;
+    }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordRequestOrBuilder getChangePasswordRequestOrBuilder() {
+      return changePasswordRequest_;
+    }
+    
+    // optional .com.richardpianka.chess.network.ChangePasswordResponse ChangePasswordResponse = 8;
+    public static final int CHANGEPASSWORDRESPONSE_FIELD_NUMBER = 8;
+    private com.richardpianka.chess.network.Contracts.ChangePasswordResponse changePasswordResponse_;
+    public boolean hasChangePasswordResponse() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordResponse getChangePasswordResponse() {
+      return changePasswordResponse_;
+    }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordResponseOrBuilder getChangePasswordResponseOrBuilder() {
+      return changePasswordResponse_;
+    }
+    
+    // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 9;
+    public static final int JOINCHATREQUEST_FIELD_NUMBER = 9;
     private com.richardpianka.chess.network.Contracts.JoinChatRequest joinChatRequest_;
     public boolean hasJoinChatRequest() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
+      return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     public com.richardpianka.chess.network.Contracts.JoinChatRequest getJoinChatRequest() {
       return joinChatRequest_;
@@ -1038,11 +1110,11 @@ public final class Contracts {
       return joinChatRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 6;
-    public static final int JOINCHATRESPONSE_FIELD_NUMBER = 6;
+    // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 10;
+    public static final int JOINCHATRESPONSE_FIELD_NUMBER = 10;
     private com.richardpianka.chess.network.Contracts.JoinChatResponse joinChatResponse_;
     public boolean hasJoinChatResponse() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
+      return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     public com.richardpianka.chess.network.Contracts.JoinChatResponse getJoinChatResponse() {
       return joinChatResponse_;
@@ -1051,11 +1123,11 @@ public final class Contracts {
       return joinChatResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.RoomListRequest RoomListRequest = 7;
-    public static final int ROOMLISTREQUEST_FIELD_NUMBER = 7;
+    // optional .com.richardpianka.chess.network.RoomListRequest RoomListRequest = 11;
+    public static final int ROOMLISTREQUEST_FIELD_NUMBER = 11;
     private com.richardpianka.chess.network.Contracts.RoomListRequest roomListRequest_;
     public boolean hasRoomListRequest() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
+      return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     public com.richardpianka.chess.network.Contracts.RoomListRequest getRoomListRequest() {
       return roomListRequest_;
@@ -1064,11 +1136,11 @@ public final class Contracts {
       return roomListRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.RoomListResponse RoomListResponse = 8;
-    public static final int ROOMLISTRESPONSE_FIELD_NUMBER = 8;
+    // optional .com.richardpianka.chess.network.RoomListResponse RoomListResponse = 12;
+    public static final int ROOMLISTRESPONSE_FIELD_NUMBER = 12;
     private com.richardpianka.chess.network.Contracts.RoomListResponse roomListResponse_;
     public boolean hasRoomListResponse() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
+      return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     public com.richardpianka.chess.network.Contracts.RoomListResponse getRoomListResponse() {
       return roomListResponse_;
@@ -1077,11 +1149,11 @@ public final class Contracts {
       return roomListResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 9;
-    public static final int JOINROOMREQUEST_FIELD_NUMBER = 9;
+    // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 13;
+    public static final int JOINROOMREQUEST_FIELD_NUMBER = 13;
     private com.richardpianka.chess.network.Contracts.JoinRoomRequest joinRoomRequest_;
     public boolean hasJoinRoomRequest() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
+      return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     public com.richardpianka.chess.network.Contracts.JoinRoomRequest getJoinRoomRequest() {
       return joinRoomRequest_;
@@ -1090,11 +1162,11 @@ public final class Contracts {
       return joinRoomRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 10;
-    public static final int JOINROOMRESPONSE_FIELD_NUMBER = 10;
+    // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 14;
+    public static final int JOINROOMRESPONSE_FIELD_NUMBER = 14;
     private com.richardpianka.chess.network.Contracts.JoinRoomResponse joinRoomResponse_;
     public boolean hasJoinRoomResponse() {
-      return ((bitField0_ & 0x00000200) == 0x00000200);
+      return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     public com.richardpianka.chess.network.Contracts.JoinRoomResponse getJoinRoomResponse() {
       return joinRoomResponse_;
@@ -1103,11 +1175,11 @@ public final class Contracts {
       return joinRoomResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 11;
-    public static final int SPEAKREQUEST_FIELD_NUMBER = 11;
+    // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 15;
+    public static final int SPEAKREQUEST_FIELD_NUMBER = 15;
     private com.richardpianka.chess.network.Contracts.SpeakRequest speakRequest_;
     public boolean hasSpeakRequest() {
-      return ((bitField0_ & 0x00000400) == 0x00000400);
+      return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     public com.richardpianka.chess.network.Contracts.SpeakRequest getSpeakRequest() {
       return speakRequest_;
@@ -1116,11 +1188,11 @@ public final class Contracts {
       return speakRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.OperatorRequest OperatorRequest = 12;
-    public static final int OPERATORREQUEST_FIELD_NUMBER = 12;
+    // optional .com.richardpianka.chess.network.OperatorRequest OperatorRequest = 16;
+    public static final int OPERATORREQUEST_FIELD_NUMBER = 16;
     private com.richardpianka.chess.network.Contracts.OperatorRequest operatorRequest_;
     public boolean hasOperatorRequest() {
-      return ((bitField0_ & 0x00000800) == 0x00000800);
+      return ((bitField0_ & 0x00008000) == 0x00008000);
     }
     public com.richardpianka.chess.network.Contracts.OperatorRequest getOperatorRequest() {
       return operatorRequest_;
@@ -1129,11 +1201,11 @@ public final class Contracts {
       return operatorRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.OperatorResponse OperatorResponse = 13;
-    public static final int OPERATORRESPONSE_FIELD_NUMBER = 13;
+    // optional .com.richardpianka.chess.network.OperatorResponse OperatorResponse = 17;
+    public static final int OPERATORRESPONSE_FIELD_NUMBER = 17;
     private com.richardpianka.chess.network.Contracts.OperatorResponse operatorResponse_;
     public boolean hasOperatorResponse() {
-      return ((bitField0_ & 0x00001000) == 0x00001000);
+      return ((bitField0_ & 0x00010000) == 0x00010000);
     }
     public com.richardpianka.chess.network.Contracts.OperatorResponse getOperatorResponse() {
       return operatorResponse_;
@@ -1142,11 +1214,11 @@ public final class Contracts {
       return operatorResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 14;
-    public static final int CHATROOMEVENT_FIELD_NUMBER = 14;
+    // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 18;
+    public static final int CHATROOMEVENT_FIELD_NUMBER = 18;
     private com.richardpianka.chess.network.Contracts.ChatRoomEvent chatRoomEvent_;
     public boolean hasChatRoomEvent() {
-      return ((bitField0_ & 0x00002000) == 0x00002000);
+      return ((bitField0_ & 0x00020000) == 0x00020000);
     }
     public com.richardpianka.chess.network.Contracts.ChatRoomEvent getChatRoomEvent() {
       return chatRoomEvent_;
@@ -1155,11 +1227,11 @@ public final class Contracts {
       return chatRoomEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 15;
-    public static final int CHATUSEREVENT_FIELD_NUMBER = 15;
+    // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 19;
+    public static final int CHATUSEREVENT_FIELD_NUMBER = 19;
     private com.richardpianka.chess.network.Contracts.ChatUserEvent chatUserEvent_;
     public boolean hasChatUserEvent() {
-      return ((bitField0_ & 0x00004000) == 0x00004000);
+      return ((bitField0_ & 0x00040000) == 0x00040000);
     }
     public com.richardpianka.chess.network.Contracts.ChatUserEvent getChatUserEvent() {
       return chatUserEvent_;
@@ -1168,11 +1240,11 @@ public final class Contracts {
       return chatUserEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 16;
-    public static final int CHATSPEAKEVENT_FIELD_NUMBER = 16;
+    // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 20;
+    public static final int CHATSPEAKEVENT_FIELD_NUMBER = 20;
     private com.richardpianka.chess.network.Contracts.ChatSpeakEvent chatSpeakEvent_;
     public boolean hasChatSpeakEvent() {
-      return ((bitField0_ & 0x00008000) == 0x00008000);
+      return ((bitField0_ & 0x00080000) == 0x00080000);
     }
     public com.richardpianka.chess.network.Contracts.ChatSpeakEvent getChatSpeakEvent() {
       return chatSpeakEvent_;
@@ -1181,11 +1253,11 @@ public final class Contracts {
       return chatSpeakEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.GameListRequest GameListRequest = 17;
-    public static final int GAMELISTREQUEST_FIELD_NUMBER = 17;
+    // optional .com.richardpianka.chess.network.GameListRequest GameListRequest = 21;
+    public static final int GAMELISTREQUEST_FIELD_NUMBER = 21;
     private com.richardpianka.chess.network.Contracts.GameListRequest gameListRequest_;
     public boolean hasGameListRequest() {
-      return ((bitField0_ & 0x00010000) == 0x00010000);
+      return ((bitField0_ & 0x00100000) == 0x00100000);
     }
     public com.richardpianka.chess.network.Contracts.GameListRequest getGameListRequest() {
       return gameListRequest_;
@@ -1194,11 +1266,11 @@ public final class Contracts {
       return gameListRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.GameListResponse GameListResponse = 18;
-    public static final int GAMELISTRESPONSE_FIELD_NUMBER = 18;
+    // optional .com.richardpianka.chess.network.GameListResponse GameListResponse = 22;
+    public static final int GAMELISTRESPONSE_FIELD_NUMBER = 22;
     private com.richardpianka.chess.network.Contracts.GameListResponse gameListResponse_;
     public boolean hasGameListResponse() {
-      return ((bitField0_ & 0x00020000) == 0x00020000);
+      return ((bitField0_ & 0x00200000) == 0x00200000);
     }
     public com.richardpianka.chess.network.Contracts.GameListResponse getGameListResponse() {
       return gameListResponse_;
@@ -1207,11 +1279,11 @@ public final class Contracts {
       return gameListResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.CreateGameRequest CreateGameRequest = 19;
-    public static final int CREATEGAMEREQUEST_FIELD_NUMBER = 19;
+    // optional .com.richardpianka.chess.network.CreateGameRequest CreateGameRequest = 23;
+    public static final int CREATEGAMEREQUEST_FIELD_NUMBER = 23;
     private com.richardpianka.chess.network.Contracts.CreateGameRequest createGameRequest_;
     public boolean hasCreateGameRequest() {
-      return ((bitField0_ & 0x00040000) == 0x00040000);
+      return ((bitField0_ & 0x00400000) == 0x00400000);
     }
     public com.richardpianka.chess.network.Contracts.CreateGameRequest getCreateGameRequest() {
       return createGameRequest_;
@@ -1220,11 +1292,11 @@ public final class Contracts {
       return createGameRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.CreateGameResponse CreateGameResponse = 20;
-    public static final int CREATEGAMERESPONSE_FIELD_NUMBER = 20;
+    // optional .com.richardpianka.chess.network.CreateGameResponse CreateGameResponse = 24;
+    public static final int CREATEGAMERESPONSE_FIELD_NUMBER = 24;
     private com.richardpianka.chess.network.Contracts.CreateGameResponse createGameResponse_;
     public boolean hasCreateGameResponse() {
-      return ((bitField0_ & 0x00080000) == 0x00080000);
+      return ((bitField0_ & 0x00800000) == 0x00800000);
     }
     public com.richardpianka.chess.network.Contracts.CreateGameResponse getCreateGameResponse() {
       return createGameResponse_;
@@ -1233,11 +1305,11 @@ public final class Contracts {
       return createGameResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinGameRequest JoinGameRequest = 21;
-    public static final int JOINGAMEREQUEST_FIELD_NUMBER = 21;
+    // optional .com.richardpianka.chess.network.JoinGameRequest JoinGameRequest = 25;
+    public static final int JOINGAMEREQUEST_FIELD_NUMBER = 25;
     private com.richardpianka.chess.network.Contracts.JoinGameRequest joinGameRequest_;
     public boolean hasJoinGameRequest() {
-      return ((bitField0_ & 0x00100000) == 0x00100000);
+      return ((bitField0_ & 0x01000000) == 0x01000000);
     }
     public com.richardpianka.chess.network.Contracts.JoinGameRequest getJoinGameRequest() {
       return joinGameRequest_;
@@ -1246,11 +1318,11 @@ public final class Contracts {
       return joinGameRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.JoinGameResponse JoinGameResponse = 22;
-    public static final int JOINGAMERESPONSE_FIELD_NUMBER = 22;
+    // optional .com.richardpianka.chess.network.JoinGameResponse JoinGameResponse = 26;
+    public static final int JOINGAMERESPONSE_FIELD_NUMBER = 26;
     private com.richardpianka.chess.network.Contracts.JoinGameResponse joinGameResponse_;
     public boolean hasJoinGameResponse() {
-      return ((bitField0_ & 0x00200000) == 0x00200000);
+      return ((bitField0_ & 0x02000000) == 0x02000000);
     }
     public com.richardpianka.chess.network.Contracts.JoinGameResponse getJoinGameResponse() {
       return joinGameResponse_;
@@ -1259,11 +1331,11 @@ public final class Contracts {
       return joinGameResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.LeaveGameRequest LeaveGameRequest = 23;
-    public static final int LEAVEGAMEREQUEST_FIELD_NUMBER = 23;
+    // optional .com.richardpianka.chess.network.LeaveGameRequest LeaveGameRequest = 27;
+    public static final int LEAVEGAMEREQUEST_FIELD_NUMBER = 27;
     private com.richardpianka.chess.network.Contracts.LeaveGameRequest leaveGameRequest_;
     public boolean hasLeaveGameRequest() {
-      return ((bitField0_ & 0x00400000) == 0x00400000);
+      return ((bitField0_ & 0x04000000) == 0x04000000);
     }
     public com.richardpianka.chess.network.Contracts.LeaveGameRequest getLeaveGameRequest() {
       return leaveGameRequest_;
@@ -1272,11 +1344,11 @@ public final class Contracts {
       return leaveGameRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.StartGameRequest StartGameRequest = 24;
-    public static final int STARTGAMEREQUEST_FIELD_NUMBER = 24;
+    // optional .com.richardpianka.chess.network.StartGameRequest StartGameRequest = 28;
+    public static final int STARTGAMEREQUEST_FIELD_NUMBER = 28;
     private com.richardpianka.chess.network.Contracts.StartGameRequest startGameRequest_;
     public boolean hasStartGameRequest() {
-      return ((bitField0_ & 0x00800000) == 0x00800000);
+      return ((bitField0_ & 0x08000000) == 0x08000000);
     }
     public com.richardpianka.chess.network.Contracts.StartGameRequest getStartGameRequest() {
       return startGameRequest_;
@@ -1285,11 +1357,11 @@ public final class Contracts {
       return startGameRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.StartGameResponse StartGameResponse = 25;
-    public static final int STARTGAMERESPONSE_FIELD_NUMBER = 25;
+    // optional .com.richardpianka.chess.network.StartGameResponse StartGameResponse = 29;
+    public static final int STARTGAMERESPONSE_FIELD_NUMBER = 29;
     private com.richardpianka.chess.network.Contracts.StartGameResponse startGameResponse_;
     public boolean hasStartGameResponse() {
-      return ((bitField0_ & 0x01000000) == 0x01000000);
+      return ((bitField0_ & 0x10000000) == 0x10000000);
     }
     public com.richardpianka.chess.network.Contracts.StartGameResponse getStartGameResponse() {
       return startGameResponse_;
@@ -1298,11 +1370,11 @@ public final class Contracts {
       return startGameResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.GameStartedEvent GameStartedEvent = 26;
-    public static final int GAMESTARTEDEVENT_FIELD_NUMBER = 26;
+    // optional .com.richardpianka.chess.network.GameStartedEvent GameStartedEvent = 30;
+    public static final int GAMESTARTEDEVENT_FIELD_NUMBER = 30;
     private com.richardpianka.chess.network.Contracts.GameStartedEvent gameStartedEvent_;
     public boolean hasGameStartedEvent() {
-      return ((bitField0_ & 0x02000000) == 0x02000000);
+      return ((bitField0_ & 0x20000000) == 0x20000000);
     }
     public com.richardpianka.chess.network.Contracts.GameStartedEvent getGameStartedEvent() {
       return gameStartedEvent_;
@@ -1311,11 +1383,11 @@ public final class Contracts {
       return gameStartedEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.MovePieceRequest MovePieceRequest = 27;
-    public static final int MOVEPIECEREQUEST_FIELD_NUMBER = 27;
+    // optional .com.richardpianka.chess.network.MovePieceRequest MovePieceRequest = 31;
+    public static final int MOVEPIECEREQUEST_FIELD_NUMBER = 31;
     private com.richardpianka.chess.network.Contracts.MovePieceRequest movePieceRequest_;
     public boolean hasMovePieceRequest() {
-      return ((bitField0_ & 0x04000000) == 0x04000000);
+      return ((bitField0_ & 0x40000000) == 0x40000000);
     }
     public com.richardpianka.chess.network.Contracts.MovePieceRequest getMovePieceRequest() {
       return movePieceRequest_;
@@ -1324,11 +1396,11 @@ public final class Contracts {
       return movePieceRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.MovePieceResponse MovePieceResponse = 28;
-    public static final int MOVEPIECERESPONSE_FIELD_NUMBER = 28;
+    // optional .com.richardpianka.chess.network.MovePieceResponse MovePieceResponse = 32;
+    public static final int MOVEPIECERESPONSE_FIELD_NUMBER = 32;
     private com.richardpianka.chess.network.Contracts.MovePieceResponse movePieceResponse_;
     public boolean hasMovePieceResponse() {
-      return ((bitField0_ & 0x08000000) == 0x08000000);
+      return ((bitField0_ & 0x80000000) == 0x80000000);
     }
     public com.richardpianka.chess.network.Contracts.MovePieceResponse getMovePieceResponse() {
       return movePieceResponse_;
@@ -1337,11 +1409,11 @@ public final class Contracts {
       return movePieceResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.MovePieceEvent MovePieceEvent = 29;
-    public static final int MOVEPIECEEVENT_FIELD_NUMBER = 29;
+    // optional .com.richardpianka.chess.network.MovePieceEvent MovePieceEvent = 33;
+    public static final int MOVEPIECEEVENT_FIELD_NUMBER = 33;
     private com.richardpianka.chess.network.Contracts.MovePieceEvent movePieceEvent_;
     public boolean hasMovePieceEvent() {
-      return ((bitField0_ & 0x10000000) == 0x10000000);
+      return ((bitField1_ & 0x00000001) == 0x00000001);
     }
     public com.richardpianka.chess.network.Contracts.MovePieceEvent getMovePieceEvent() {
       return movePieceEvent_;
@@ -1350,11 +1422,11 @@ public final class Contracts {
       return movePieceEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.SpecialMovePieceRequest SpecialMovePieceRequest = 30;
-    public static final int SPECIALMOVEPIECEREQUEST_FIELD_NUMBER = 30;
+    // optional .com.richardpianka.chess.network.SpecialMovePieceRequest SpecialMovePieceRequest = 34;
+    public static final int SPECIALMOVEPIECEREQUEST_FIELD_NUMBER = 34;
     private com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest specialMovePieceRequest_;
     public boolean hasSpecialMovePieceRequest() {
-      return ((bitField0_ & 0x20000000) == 0x20000000);
+      return ((bitField1_ & 0x00000002) == 0x00000002);
     }
     public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest getSpecialMovePieceRequest() {
       return specialMovePieceRequest_;
@@ -1363,11 +1435,11 @@ public final class Contracts {
       return specialMovePieceRequest_;
     }
     
-    // optional .com.richardpianka.chess.network.SpecialMovePieceResponse SpecialMovePieceResponse = 31;
-    public static final int SPECIALMOVEPIECERESPONSE_FIELD_NUMBER = 31;
+    // optional .com.richardpianka.chess.network.SpecialMovePieceResponse SpecialMovePieceResponse = 35;
+    public static final int SPECIALMOVEPIECERESPONSE_FIELD_NUMBER = 35;
     private com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse specialMovePieceResponse_;
     public boolean hasSpecialMovePieceResponse() {
-      return ((bitField0_ & 0x40000000) == 0x40000000);
+      return ((bitField1_ & 0x00000004) == 0x00000004);
     }
     public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse getSpecialMovePieceResponse() {
       return specialMovePieceResponse_;
@@ -1376,11 +1448,11 @@ public final class Contracts {
       return specialMovePieceResponse_;
     }
     
-    // optional .com.richardpianka.chess.network.SpecialMovePieceEvent SpecialMovePieceEvent = 32;
-    public static final int SPECIALMOVEPIECEEVENT_FIELD_NUMBER = 32;
+    // optional .com.richardpianka.chess.network.SpecialMovePieceEvent SpecialMovePieceEvent = 36;
+    public static final int SPECIALMOVEPIECEEVENT_FIELD_NUMBER = 36;
     private com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent specialMovePieceEvent_;
     public boolean hasSpecialMovePieceEvent() {
-      return ((bitField0_ & 0x80000000) == 0x80000000);
+      return ((bitField1_ & 0x00000008) == 0x00000008);
     }
     public com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent getSpecialMovePieceEvent() {
       return specialMovePieceEvent_;
@@ -1389,11 +1461,11 @@ public final class Contracts {
       return specialMovePieceEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.GameStatusEvent GameStatusEvent = 34;
-    public static final int GAMESTATUSEVENT_FIELD_NUMBER = 34;
+    // optional .com.richardpianka.chess.network.GameStatusEvent GameStatusEvent = 37;
+    public static final int GAMESTATUSEVENT_FIELD_NUMBER = 37;
     private com.richardpianka.chess.network.Contracts.GameStatusEvent gameStatusEvent_;
     public boolean hasGameStatusEvent() {
-      return ((bitField1_ & 0x00000001) == 0x00000001);
+      return ((bitField1_ & 0x00000010) == 0x00000010);
     }
     public com.richardpianka.chess.network.Contracts.GameStatusEvent getGameStatusEvent() {
       return gameStatusEvent_;
@@ -1402,11 +1474,11 @@ public final class Contracts {
       return gameStatusEvent_;
     }
     
-    // optional .com.richardpianka.chess.network.TimeLeftEvent TimeLeftEvent = 35;
-    public static final int TIMELEFTEVENT_FIELD_NUMBER = 35;
+    // optional .com.richardpianka.chess.network.TimeLeftEvent TimeLeftEvent = 38;
+    public static final int TIMELEFTEVENT_FIELD_NUMBER = 38;
     private com.richardpianka.chess.network.Contracts.TimeLeftEvent timeLeftEvent_;
     public boolean hasTimeLeftEvent() {
-      return ((bitField1_ & 0x00000002) == 0x00000002);
+      return ((bitField1_ & 0x00000020) == 0x00000020);
     }
     public com.richardpianka.chess.network.Contracts.TimeLeftEvent getTimeLeftEvent() {
       return timeLeftEvent_;
@@ -1420,6 +1492,10 @@ public final class Contracts {
       handshakeResponse_ = com.richardpianka.chess.network.Contracts.HandshakeResponse.getDefaultInstance();
       identifyRequest_ = com.richardpianka.chess.network.Contracts.IdentifyRequest.getDefaultInstance();
       identifyResponse_ = com.richardpianka.chess.network.Contracts.IdentifyResponse.getDefaultInstance();
+      createAccountRequest_ = com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDefaultInstance();
+      createAccountResponse_ = com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDefaultInstance();
+      changePasswordRequest_ = com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDefaultInstance();
+      changePasswordResponse_ = com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDefaultInstance();
       joinChatRequest_ = com.richardpianka.chess.network.Contracts.JoinChatRequest.getDefaultInstance();
       joinChatResponse_ = com.richardpianka.chess.network.Contracts.JoinChatResponse.getDefaultInstance();
       roomListRequest_ = com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance();
@@ -1476,6 +1552,30 @@ public final class Contracts {
       }
       if (hasIdentifyResponse()) {
         if (!getIdentifyResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasCreateAccountRequest()) {
+        if (!getCreateAccountRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasCreateAccountResponse()) {
+        if (!getCreateAccountResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasChangePasswordRequest()) {
+        if (!getChangePasswordRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasChangePasswordResponse()) {
+        if (!getChangePasswordResponse().isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -1650,94 +1750,106 @@ public final class Contracts {
         output.writeMessage(4, identifyResponse_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(5, joinChatRequest_);
+        output.writeMessage(5, createAccountRequest_);
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeMessage(6, joinChatResponse_);
+        output.writeMessage(6, createAccountResponse_);
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeMessage(7, roomListRequest_);
+        output.writeMessage(7, changePasswordRequest_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeMessage(8, roomListResponse_);
+        output.writeMessage(8, changePasswordResponse_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeMessage(9, joinRoomRequest_);
+        output.writeMessage(9, joinChatRequest_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeMessage(10, joinRoomResponse_);
+        output.writeMessage(10, joinChatResponse_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        output.writeMessage(11, speakRequest_);
+        output.writeMessage(11, roomListRequest_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeMessage(12, operatorRequest_);
+        output.writeMessage(12, roomListResponse_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
-        output.writeMessage(13, operatorResponse_);
+        output.writeMessage(13, joinRoomRequest_);
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
-        output.writeMessage(14, chatRoomEvent_);
+        output.writeMessage(14, joinRoomResponse_);
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
-        output.writeMessage(15, chatUserEvent_);
+        output.writeMessage(15, speakRequest_);
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
-        output.writeMessage(16, chatSpeakEvent_);
+        output.writeMessage(16, operatorRequest_);
       }
       if (((bitField0_ & 0x00010000) == 0x00010000)) {
-        output.writeMessage(17, gameListRequest_);
+        output.writeMessage(17, operatorResponse_);
       }
       if (((bitField0_ & 0x00020000) == 0x00020000)) {
-        output.writeMessage(18, gameListResponse_);
+        output.writeMessage(18, chatRoomEvent_);
       }
       if (((bitField0_ & 0x00040000) == 0x00040000)) {
-        output.writeMessage(19, createGameRequest_);
+        output.writeMessage(19, chatUserEvent_);
       }
       if (((bitField0_ & 0x00080000) == 0x00080000)) {
-        output.writeMessage(20, createGameResponse_);
+        output.writeMessage(20, chatSpeakEvent_);
       }
       if (((bitField0_ & 0x00100000) == 0x00100000)) {
-        output.writeMessage(21, joinGameRequest_);
+        output.writeMessage(21, gameListRequest_);
       }
       if (((bitField0_ & 0x00200000) == 0x00200000)) {
-        output.writeMessage(22, joinGameResponse_);
+        output.writeMessage(22, gameListResponse_);
       }
       if (((bitField0_ & 0x00400000) == 0x00400000)) {
-        output.writeMessage(23, leaveGameRequest_);
+        output.writeMessage(23, createGameRequest_);
       }
       if (((bitField0_ & 0x00800000) == 0x00800000)) {
-        output.writeMessage(24, startGameRequest_);
+        output.writeMessage(24, createGameResponse_);
       }
       if (((bitField0_ & 0x01000000) == 0x01000000)) {
-        output.writeMessage(25, startGameResponse_);
+        output.writeMessage(25, joinGameRequest_);
       }
       if (((bitField0_ & 0x02000000) == 0x02000000)) {
-        output.writeMessage(26, gameStartedEvent_);
+        output.writeMessage(26, joinGameResponse_);
       }
       if (((bitField0_ & 0x04000000) == 0x04000000)) {
-        output.writeMessage(27, movePieceRequest_);
+        output.writeMessage(27, leaveGameRequest_);
       }
       if (((bitField0_ & 0x08000000) == 0x08000000)) {
-        output.writeMessage(28, movePieceResponse_);
+        output.writeMessage(28, startGameRequest_);
       }
       if (((bitField0_ & 0x10000000) == 0x10000000)) {
-        output.writeMessage(29, movePieceEvent_);
+        output.writeMessage(29, startGameResponse_);
       }
       if (((bitField0_ & 0x20000000) == 0x20000000)) {
-        output.writeMessage(30, specialMovePieceRequest_);
+        output.writeMessage(30, gameStartedEvent_);
       }
       if (((bitField0_ & 0x40000000) == 0x40000000)) {
-        output.writeMessage(31, specialMovePieceResponse_);
+        output.writeMessage(31, movePieceRequest_);
       }
       if (((bitField0_ & 0x80000000) == 0x80000000)) {
-        output.writeMessage(32, specialMovePieceEvent_);
+        output.writeMessage(32, movePieceResponse_);
       }
       if (((bitField1_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(34, gameStatusEvent_);
+        output.writeMessage(33, movePieceEvent_);
       }
       if (((bitField1_ & 0x00000002) == 0x00000002)) {
-        output.writeMessage(35, timeLeftEvent_);
+        output.writeMessage(34, specialMovePieceRequest_);
+      }
+      if (((bitField1_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(35, specialMovePieceResponse_);
+      }
+      if (((bitField1_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(36, specialMovePieceEvent_);
+      }
+      if (((bitField1_ & 0x00000010) == 0x00000010)) {
+        output.writeMessage(37, gameStatusEvent_);
+      }
+      if (((bitField1_ & 0x00000020) == 0x00000020)) {
+        output.writeMessage(38, timeLeftEvent_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1766,123 +1878,139 @@ public final class Contracts {
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, joinChatRequest_);
+          .computeMessageSize(5, createAccountRequest_);
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, joinChatResponse_);
+          .computeMessageSize(6, createAccountResponse_);
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, roomListRequest_);
+          .computeMessageSize(7, changePasswordRequest_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, roomListResponse_);
+          .computeMessageSize(8, changePasswordResponse_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, joinRoomRequest_);
+          .computeMessageSize(9, joinChatRequest_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, joinRoomResponse_);
+          .computeMessageSize(10, joinChatResponse_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, speakRequest_);
+          .computeMessageSize(11, roomListRequest_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, operatorRequest_);
+          .computeMessageSize(12, roomListResponse_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, operatorResponse_);
+          .computeMessageSize(13, joinRoomRequest_);
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, chatRoomEvent_);
+          .computeMessageSize(14, joinRoomResponse_);
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, chatUserEvent_);
+          .computeMessageSize(15, speakRequest_);
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(16, chatSpeakEvent_);
+          .computeMessageSize(16, operatorRequest_);
       }
       if (((bitField0_ & 0x00010000) == 0x00010000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(17, gameListRequest_);
+          .computeMessageSize(17, operatorResponse_);
       }
       if (((bitField0_ & 0x00020000) == 0x00020000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(18, gameListResponse_);
+          .computeMessageSize(18, chatRoomEvent_);
       }
       if (((bitField0_ & 0x00040000) == 0x00040000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(19, createGameRequest_);
+          .computeMessageSize(19, chatUserEvent_);
       }
       if (((bitField0_ & 0x00080000) == 0x00080000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(20, createGameResponse_);
+          .computeMessageSize(20, chatSpeakEvent_);
       }
       if (((bitField0_ & 0x00100000) == 0x00100000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(21, joinGameRequest_);
+          .computeMessageSize(21, gameListRequest_);
       }
       if (((bitField0_ & 0x00200000) == 0x00200000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(22, joinGameResponse_);
+          .computeMessageSize(22, gameListResponse_);
       }
       if (((bitField0_ & 0x00400000) == 0x00400000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(23, leaveGameRequest_);
+          .computeMessageSize(23, createGameRequest_);
       }
       if (((bitField0_ & 0x00800000) == 0x00800000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(24, startGameRequest_);
+          .computeMessageSize(24, createGameResponse_);
       }
       if (((bitField0_ & 0x01000000) == 0x01000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(25, startGameResponse_);
+          .computeMessageSize(25, joinGameRequest_);
       }
       if (((bitField0_ & 0x02000000) == 0x02000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(26, gameStartedEvent_);
+          .computeMessageSize(26, joinGameResponse_);
       }
       if (((bitField0_ & 0x04000000) == 0x04000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(27, movePieceRequest_);
+          .computeMessageSize(27, leaveGameRequest_);
       }
       if (((bitField0_ & 0x08000000) == 0x08000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(28, movePieceResponse_);
+          .computeMessageSize(28, startGameRequest_);
       }
       if (((bitField0_ & 0x10000000) == 0x10000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(29, movePieceEvent_);
+          .computeMessageSize(29, startGameResponse_);
       }
       if (((bitField0_ & 0x20000000) == 0x20000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(30, specialMovePieceRequest_);
+          .computeMessageSize(30, gameStartedEvent_);
       }
       if (((bitField0_ & 0x40000000) == 0x40000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(31, specialMovePieceResponse_);
+          .computeMessageSize(31, movePieceRequest_);
       }
       if (((bitField0_ & 0x80000000) == 0x80000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(32, specialMovePieceEvent_);
+          .computeMessageSize(32, movePieceResponse_);
       }
       if (((bitField1_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(34, gameStatusEvent_);
+          .computeMessageSize(33, movePieceEvent_);
       }
       if (((bitField1_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(35, timeLeftEvent_);
+          .computeMessageSize(34, specialMovePieceRequest_);
+      }
+      if (((bitField1_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(35, specialMovePieceResponse_);
+      }
+      if (((bitField1_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(36, specialMovePieceEvent_);
+      }
+      if (((bitField1_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(37, gameStatusEvent_);
+      }
+      if (((bitField1_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(38, timeLeftEvent_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2004,6 +2132,10 @@ public final class Contracts {
           getHandshakeResponseFieldBuilder();
           getIdentifyRequestFieldBuilder();
           getIdentifyResponseFieldBuilder();
+          getCreateAccountRequestFieldBuilder();
+          getCreateAccountResponseFieldBuilder();
+          getChangePasswordRequestFieldBuilder();
+          getChangePasswordResponseFieldBuilder();
           getJoinChatRequestFieldBuilder();
           getJoinChatResponseFieldBuilder();
           getRoomListRequestFieldBuilder();
@@ -2066,186 +2198,210 @@ public final class Contracts {
           identifyResponseBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000008);
+        if (createAccountRequestBuilder_ == null) {
+          createAccountRequest_ = com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDefaultInstance();
+        } else {
+          createAccountRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        if (createAccountResponseBuilder_ == null) {
+          createAccountResponse_ = com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDefaultInstance();
+        } else {
+          createAccountResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        if (changePasswordRequestBuilder_ == null) {
+          changePasswordRequest_ = com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDefaultInstance();
+        } else {
+          changePasswordRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
+        if (changePasswordResponseBuilder_ == null) {
+          changePasswordResponse_ = com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDefaultInstance();
+        } else {
+          changePasswordResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
         if (joinChatRequestBuilder_ == null) {
           joinChatRequest_ = com.richardpianka.chess.network.Contracts.JoinChatRequest.getDefaultInstance();
         } else {
           joinChatRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000100);
         if (joinChatResponseBuilder_ == null) {
           joinChatResponse_ = com.richardpianka.chess.network.Contracts.JoinChatResponse.getDefaultInstance();
         } else {
           joinChatResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000200);
         if (roomListRequestBuilder_ == null) {
           roomListRequest_ = com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance();
         } else {
           roomListRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000400);
         if (roomListResponseBuilder_ == null) {
           roomListResponse_ = com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance();
         } else {
           roomListResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000800);
         if (joinRoomRequestBuilder_ == null) {
           joinRoomRequest_ = com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance();
         } else {
           joinRoomRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00001000);
         if (joinRoomResponseBuilder_ == null) {
           joinRoomResponse_ = com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance();
         } else {
           joinRoomResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00002000);
         if (speakRequestBuilder_ == null) {
           speakRequest_ = com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance();
         } else {
           speakRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00004000);
         if (operatorRequestBuilder_ == null) {
           operatorRequest_ = com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance();
         } else {
           operatorRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00008000);
         if (operatorResponseBuilder_ == null) {
           operatorResponse_ = com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance();
         } else {
           operatorResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00010000);
         if (chatRoomEventBuilder_ == null) {
           chatRoomEvent_ = com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance();
         } else {
           chatRoomEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00020000);
         if (chatUserEventBuilder_ == null) {
           chatUserEvent_ = com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance();
         } else {
           chatUserEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00004000);
+        bitField0_ = (bitField0_ & ~0x00040000);
         if (chatSpeakEventBuilder_ == null) {
           chatSpeakEvent_ = com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance();
         } else {
           chatSpeakEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00080000);
         if (gameListRequestBuilder_ == null) {
           gameListRequest_ = com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance();
         } else {
           gameListRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x00100000);
         if (gameListResponseBuilder_ == null) {
           gameListResponse_ = com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance();
         } else {
           gameListResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField0_ = (bitField0_ & ~0x00200000);
         if (createGameRequestBuilder_ == null) {
           createGameRequest_ = com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance();
         } else {
           createGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00040000);
+        bitField0_ = (bitField0_ & ~0x00400000);
         if (createGameResponseBuilder_ == null) {
           createGameResponse_ = com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance();
         } else {
           createGameResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00080000);
+        bitField0_ = (bitField0_ & ~0x00800000);
         if (joinGameRequestBuilder_ == null) {
           joinGameRequest_ = com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance();
         } else {
           joinGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00100000);
+        bitField0_ = (bitField0_ & ~0x01000000);
         if (joinGameResponseBuilder_ == null) {
           joinGameResponse_ = com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance();
         } else {
           joinGameResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00200000);
+        bitField0_ = (bitField0_ & ~0x02000000);
         if (leaveGameRequestBuilder_ == null) {
           leaveGameRequest_ = com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance();
         } else {
           leaveGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00400000);
+        bitField0_ = (bitField0_ & ~0x04000000);
         if (startGameRequestBuilder_ == null) {
           startGameRequest_ = com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance();
         } else {
           startGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00800000);
+        bitField0_ = (bitField0_ & ~0x08000000);
         if (startGameResponseBuilder_ == null) {
           startGameResponse_ = com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance();
         } else {
           startGameResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x01000000);
+        bitField0_ = (bitField0_ & ~0x10000000);
         if (gameStartedEventBuilder_ == null) {
           gameStartedEvent_ = com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance();
         } else {
           gameStartedEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x02000000);
+        bitField0_ = (bitField0_ & ~0x20000000);
         if (movePieceRequestBuilder_ == null) {
           movePieceRequest_ = com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance();
         } else {
           movePieceRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x04000000);
+        bitField0_ = (bitField0_ & ~0x40000000);
         if (movePieceResponseBuilder_ == null) {
           movePieceResponse_ = com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance();
         } else {
           movePieceResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x08000000);
+        bitField0_ = (bitField0_ & ~0x80000000);
         if (movePieceEventBuilder_ == null) {
           movePieceEvent_ = com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance();
         } else {
           movePieceEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x10000000);
+        bitField1_ = (bitField1_ & ~0x00000001);
         if (specialMovePieceRequestBuilder_ == null) {
           specialMovePieceRequest_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance();
         } else {
           specialMovePieceRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x20000000);
+        bitField1_ = (bitField1_ & ~0x00000002);
         if (specialMovePieceResponseBuilder_ == null) {
           specialMovePieceResponse_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance();
         } else {
           specialMovePieceResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x40000000);
+        bitField1_ = (bitField1_ & ~0x00000004);
         if (specialMovePieceEventBuilder_ == null) {
           specialMovePieceEvent_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance();
         } else {
           specialMovePieceEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x80000000);
+        bitField1_ = (bitField1_ & ~0x00000008);
         if (gameStatusEventBuilder_ == null) {
           gameStatusEvent_ = com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance();
         } else {
           gameStatusEventBuilder_.clear();
         }
-        bitField1_ = (bitField1_ & ~0x00000001);
+        bitField1_ = (bitField1_ & ~0x00000010);
         if (timeLeftEventBuilder_ == null) {
           timeLeftEvent_ = com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance();
         } else {
           timeLeftEventBuilder_.clear();
         }
-        bitField1_ = (bitField1_ & ~0x00000002);
+        bitField1_ = (bitField1_ & ~0x00000020);
         return this;
       }
       
@@ -2321,237 +2477,269 @@ public final class Contracts {
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
+        if (createAccountRequestBuilder_ == null) {
+          result.createAccountRequest_ = createAccountRequest_;
+        } else {
+          result.createAccountRequest_ = createAccountRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        if (createAccountResponseBuilder_ == null) {
+          result.createAccountResponse_ = createAccountResponse_;
+        } else {
+          result.createAccountResponse_ = createAccountResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        if (changePasswordRequestBuilder_ == null) {
+          result.changePasswordRequest_ = changePasswordRequest_;
+        } else {
+          result.changePasswordRequest_ = changePasswordRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        if (changePasswordResponseBuilder_ == null) {
+          result.changePasswordResponse_ = changePasswordResponse_;
+        } else {
+          result.changePasswordResponse_ = changePasswordResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
         if (joinChatRequestBuilder_ == null) {
           result.joinChatRequest_ = joinChatRequest_;
         } else {
           result.joinChatRequest_ = joinChatRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
         }
         if (joinChatResponseBuilder_ == null) {
           result.joinChatResponse_ = joinChatResponse_;
         } else {
           result.joinChatResponse_ = joinChatResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
         }
         if (roomListRequestBuilder_ == null) {
           result.roomListRequest_ = roomListRequest_;
         } else {
           result.roomListRequest_ = roomListRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
-          to_bitField0_ |= 0x00000080;
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
         }
         if (roomListResponseBuilder_ == null) {
           result.roomListResponse_ = roomListResponse_;
         } else {
           result.roomListResponse_ = roomListResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
-          to_bitField0_ |= 0x00000100;
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00001000;
         }
         if (joinRoomRequestBuilder_ == null) {
           result.joinRoomRequest_ = joinRoomRequest_;
         } else {
           result.joinRoomRequest_ = joinRoomRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
-          to_bitField0_ |= 0x00000200;
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00002000;
         }
         if (joinRoomResponseBuilder_ == null) {
           result.joinRoomResponse_ = joinRoomResponse_;
         } else {
           result.joinRoomResponse_ = joinRoomResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
-          to_bitField0_ |= 0x00000400;
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00004000;
         }
         if (speakRequestBuilder_ == null) {
           result.speakRequest_ = speakRequest_;
         } else {
           result.speakRequest_ = speakRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
-          to_bitField0_ |= 0x00000800;
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00008000;
         }
         if (operatorRequestBuilder_ == null) {
           result.operatorRequest_ = operatorRequest_;
         } else {
           result.operatorRequest_ = operatorRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
-          to_bitField0_ |= 0x00001000;
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00010000;
         }
         if (operatorResponseBuilder_ == null) {
           result.operatorResponse_ = operatorResponse_;
         } else {
           result.operatorResponse_ = operatorResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
-          to_bitField0_ |= 0x00002000;
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00020000;
         }
         if (chatRoomEventBuilder_ == null) {
           result.chatRoomEvent_ = chatRoomEvent_;
         } else {
           result.chatRoomEvent_ = chatRoomEventBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
-          to_bitField0_ |= 0x00004000;
+        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
+          to_bitField0_ |= 0x00040000;
         }
         if (chatUserEventBuilder_ == null) {
           result.chatUserEvent_ = chatUserEvent_;
         } else {
           result.chatUserEvent_ = chatUserEventBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
-          to_bitField0_ |= 0x00008000;
+        if (((from_bitField0_ & 0x00080000) == 0x00080000)) {
+          to_bitField0_ |= 0x00080000;
         }
         if (chatSpeakEventBuilder_ == null) {
           result.chatSpeakEvent_ = chatSpeakEvent_;
         } else {
           result.chatSpeakEvent_ = chatSpeakEventBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
-          to_bitField0_ |= 0x00010000;
+        if (((from_bitField0_ & 0x00100000) == 0x00100000)) {
+          to_bitField0_ |= 0x00100000;
         }
         if (gameListRequestBuilder_ == null) {
           result.gameListRequest_ = gameListRequest_;
         } else {
           result.gameListRequest_ = gameListRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
-          to_bitField0_ |= 0x00020000;
+        if (((from_bitField0_ & 0x00200000) == 0x00200000)) {
+          to_bitField0_ |= 0x00200000;
         }
         if (gameListResponseBuilder_ == null) {
           result.gameListResponse_ = gameListResponse_;
         } else {
           result.gameListResponse_ = gameListResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
-          to_bitField0_ |= 0x00040000;
+        if (((from_bitField0_ & 0x00400000) == 0x00400000)) {
+          to_bitField0_ |= 0x00400000;
         }
         if (createGameRequestBuilder_ == null) {
           result.createGameRequest_ = createGameRequest_;
         } else {
           result.createGameRequest_ = createGameRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00080000) == 0x00080000)) {
-          to_bitField0_ |= 0x00080000;
+        if (((from_bitField0_ & 0x00800000) == 0x00800000)) {
+          to_bitField0_ |= 0x00800000;
         }
         if (createGameResponseBuilder_ == null) {
           result.createGameResponse_ = createGameResponse_;
         } else {
           result.createGameResponse_ = createGameResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00100000) == 0x00100000)) {
-          to_bitField0_ |= 0x00100000;
+        if (((from_bitField0_ & 0x01000000) == 0x01000000)) {
+          to_bitField0_ |= 0x01000000;
         }
         if (joinGameRequestBuilder_ == null) {
           result.joinGameRequest_ = joinGameRequest_;
         } else {
           result.joinGameRequest_ = joinGameRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00200000) == 0x00200000)) {
-          to_bitField0_ |= 0x00200000;
+        if (((from_bitField0_ & 0x02000000) == 0x02000000)) {
+          to_bitField0_ |= 0x02000000;
         }
         if (joinGameResponseBuilder_ == null) {
           result.joinGameResponse_ = joinGameResponse_;
         } else {
           result.joinGameResponse_ = joinGameResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00400000) == 0x00400000)) {
-          to_bitField0_ |= 0x00400000;
+        if (((from_bitField0_ & 0x04000000) == 0x04000000)) {
+          to_bitField0_ |= 0x04000000;
         }
         if (leaveGameRequestBuilder_ == null) {
           result.leaveGameRequest_ = leaveGameRequest_;
         } else {
           result.leaveGameRequest_ = leaveGameRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00800000) == 0x00800000)) {
-          to_bitField0_ |= 0x00800000;
+        if (((from_bitField0_ & 0x08000000) == 0x08000000)) {
+          to_bitField0_ |= 0x08000000;
         }
         if (startGameRequestBuilder_ == null) {
           result.startGameRequest_ = startGameRequest_;
         } else {
           result.startGameRequest_ = startGameRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x01000000) == 0x01000000)) {
-          to_bitField0_ |= 0x01000000;
+        if (((from_bitField0_ & 0x10000000) == 0x10000000)) {
+          to_bitField0_ |= 0x10000000;
         }
         if (startGameResponseBuilder_ == null) {
           result.startGameResponse_ = startGameResponse_;
         } else {
           result.startGameResponse_ = startGameResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x02000000) == 0x02000000)) {
-          to_bitField0_ |= 0x02000000;
+        if (((from_bitField0_ & 0x20000000) == 0x20000000)) {
+          to_bitField0_ |= 0x20000000;
         }
         if (gameStartedEventBuilder_ == null) {
           result.gameStartedEvent_ = gameStartedEvent_;
         } else {
           result.gameStartedEvent_ = gameStartedEventBuilder_.build();
         }
-        if (((from_bitField0_ & 0x04000000) == 0x04000000)) {
-          to_bitField0_ |= 0x04000000;
+        if (((from_bitField0_ & 0x40000000) == 0x40000000)) {
+          to_bitField0_ |= 0x40000000;
         }
         if (movePieceRequestBuilder_ == null) {
           result.movePieceRequest_ = movePieceRequest_;
         } else {
           result.movePieceRequest_ = movePieceRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x08000000) == 0x08000000)) {
-          to_bitField0_ |= 0x08000000;
+        if (((from_bitField0_ & 0x80000000) == 0x80000000)) {
+          to_bitField0_ |= 0x80000000;
         }
         if (movePieceResponseBuilder_ == null) {
           result.movePieceResponse_ = movePieceResponse_;
         } else {
           result.movePieceResponse_ = movePieceResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x10000000) == 0x10000000)) {
-          to_bitField0_ |= 0x10000000;
+        if (((from_bitField1_ & 0x00000001) == 0x00000001)) {
+          to_bitField1_ |= 0x00000001;
         }
         if (movePieceEventBuilder_ == null) {
           result.movePieceEvent_ = movePieceEvent_;
         } else {
           result.movePieceEvent_ = movePieceEventBuilder_.build();
         }
-        if (((from_bitField0_ & 0x20000000) == 0x20000000)) {
-          to_bitField0_ |= 0x20000000;
+        if (((from_bitField1_ & 0x00000002) == 0x00000002)) {
+          to_bitField1_ |= 0x00000002;
         }
         if (specialMovePieceRequestBuilder_ == null) {
           result.specialMovePieceRequest_ = specialMovePieceRequest_;
         } else {
           result.specialMovePieceRequest_ = specialMovePieceRequestBuilder_.build();
         }
-        if (((from_bitField0_ & 0x40000000) == 0x40000000)) {
-          to_bitField0_ |= 0x40000000;
+        if (((from_bitField1_ & 0x00000004) == 0x00000004)) {
+          to_bitField1_ |= 0x00000004;
         }
         if (specialMovePieceResponseBuilder_ == null) {
           result.specialMovePieceResponse_ = specialMovePieceResponse_;
         } else {
           result.specialMovePieceResponse_ = specialMovePieceResponseBuilder_.build();
         }
-        if (((from_bitField0_ & 0x80000000) == 0x80000000)) {
-          to_bitField0_ |= 0x80000000;
+        if (((from_bitField1_ & 0x00000008) == 0x00000008)) {
+          to_bitField1_ |= 0x00000008;
         }
         if (specialMovePieceEventBuilder_ == null) {
           result.specialMovePieceEvent_ = specialMovePieceEvent_;
         } else {
           result.specialMovePieceEvent_ = specialMovePieceEventBuilder_.build();
         }
-        if (((from_bitField1_ & 0x00000001) == 0x00000001)) {
-          to_bitField1_ |= 0x00000001;
+        if (((from_bitField1_ & 0x00000010) == 0x00000010)) {
+          to_bitField1_ |= 0x00000010;
         }
         if (gameStatusEventBuilder_ == null) {
           result.gameStatusEvent_ = gameStatusEvent_;
         } else {
           result.gameStatusEvent_ = gameStatusEventBuilder_.build();
         }
-        if (((from_bitField1_ & 0x00000002) == 0x00000002)) {
-          to_bitField1_ |= 0x00000002;
+        if (((from_bitField1_ & 0x00000020) == 0x00000020)) {
+          to_bitField1_ |= 0x00000020;
         }
         if (timeLeftEventBuilder_ == null) {
           result.timeLeftEvent_ = timeLeftEvent_;
@@ -2586,6 +2774,18 @@ public final class Contracts {
         }
         if (other.hasIdentifyResponse()) {
           mergeIdentifyResponse(other.getIdentifyResponse());
+        }
+        if (other.hasCreateAccountRequest()) {
+          mergeCreateAccountRequest(other.getCreateAccountRequest());
+        }
+        if (other.hasCreateAccountResponse()) {
+          mergeCreateAccountResponse(other.getCreateAccountResponse());
+        }
+        if (other.hasChangePasswordRequest()) {
+          mergeChangePasswordRequest(other.getChangePasswordRequest());
+        }
+        if (other.hasChangePasswordResponse()) {
+          mergeChangePasswordResponse(other.getChangePasswordResponse());
         }
         if (other.hasJoinChatRequest()) {
           mergeJoinChatRequest(other.getJoinChatRequest());
@@ -2702,6 +2902,30 @@ public final class Contracts {
         }
         if (hasIdentifyResponse()) {
           if (!getIdentifyResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasCreateAccountRequest()) {
+          if (!getCreateAccountRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasCreateAccountResponse()) {
+          if (!getCreateAccountResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasChangePasswordRequest()) {
+          if (!getChangePasswordRequest().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasChangePasswordResponse()) {
+          if (!getChangePasswordResponse().isInitialized()) {
             
             return false;
           }
@@ -2919,6 +3143,42 @@ public final class Contracts {
               break;
             }
             case 42: {
+              com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.CreateAccountRequest.newBuilder();
+              if (hasCreateAccountRequest()) {
+                subBuilder.mergeFrom(getCreateAccountRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setCreateAccountRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 50: {
+              com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.CreateAccountResponse.newBuilder();
+              if (hasCreateAccountResponse()) {
+                subBuilder.mergeFrom(getCreateAccountResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setCreateAccountResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 58: {
+              com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChangePasswordRequest.newBuilder();
+              if (hasChangePasswordRequest()) {
+                subBuilder.mergeFrom(getChangePasswordRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setChangePasswordRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 66: {
+              com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChangePasswordResponse.newBuilder();
+              if (hasChangePasswordResponse()) {
+                subBuilder.mergeFrom(getChangePasswordResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setChangePasswordResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 74: {
               com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinChatRequest.newBuilder();
               if (hasJoinChatRequest()) {
                 subBuilder.mergeFrom(getJoinChatRequest());
@@ -2927,7 +3187,7 @@ public final class Contracts {
               setJoinChatRequest(subBuilder.buildPartial());
               break;
             }
-            case 50: {
+            case 82: {
               com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinChatResponse.newBuilder();
               if (hasJoinChatResponse()) {
                 subBuilder.mergeFrom(getJoinChatResponse());
@@ -2936,7 +3196,7 @@ public final class Contracts {
               setJoinChatResponse(subBuilder.buildPartial());
               break;
             }
-            case 58: {
+            case 90: {
               com.richardpianka.chess.network.Contracts.RoomListRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.RoomListRequest.newBuilder();
               if (hasRoomListRequest()) {
                 subBuilder.mergeFrom(getRoomListRequest());
@@ -2945,7 +3205,7 @@ public final class Contracts {
               setRoomListRequest(subBuilder.buildPartial());
               break;
             }
-            case 66: {
+            case 98: {
               com.richardpianka.chess.network.Contracts.RoomListResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.RoomListResponse.newBuilder();
               if (hasRoomListResponse()) {
                 subBuilder.mergeFrom(getRoomListResponse());
@@ -2954,7 +3214,7 @@ public final class Contracts {
               setRoomListResponse(subBuilder.buildPartial());
               break;
             }
-            case 74: {
+            case 106: {
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinRoomRequest.newBuilder();
               if (hasJoinRoomRequest()) {
                 subBuilder.mergeFrom(getJoinRoomRequest());
@@ -2963,7 +3223,7 @@ public final class Contracts {
               setJoinRoomRequest(subBuilder.buildPartial());
               break;
             }
-            case 82: {
+            case 114: {
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinRoomResponse.newBuilder();
               if (hasJoinRoomResponse()) {
                 subBuilder.mergeFrom(getJoinRoomResponse());
@@ -2972,7 +3232,7 @@ public final class Contracts {
               setJoinRoomResponse(subBuilder.buildPartial());
               break;
             }
-            case 90: {
+            case 122: {
               com.richardpianka.chess.network.Contracts.SpeakRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpeakRequest.newBuilder();
               if (hasSpeakRequest()) {
                 subBuilder.mergeFrom(getSpeakRequest());
@@ -2981,7 +3241,7 @@ public final class Contracts {
               setSpeakRequest(subBuilder.buildPartial());
               break;
             }
-            case 98: {
+            case 130: {
               com.richardpianka.chess.network.Contracts.OperatorRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.OperatorRequest.newBuilder();
               if (hasOperatorRequest()) {
                 subBuilder.mergeFrom(getOperatorRequest());
@@ -2990,7 +3250,7 @@ public final class Contracts {
               setOperatorRequest(subBuilder.buildPartial());
               break;
             }
-            case 106: {
+            case 138: {
               com.richardpianka.chess.network.Contracts.OperatorResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.OperatorResponse.newBuilder();
               if (hasOperatorResponse()) {
                 subBuilder.mergeFrom(getOperatorResponse());
@@ -2999,7 +3259,7 @@ public final class Contracts {
               setOperatorResponse(subBuilder.buildPartial());
               break;
             }
-            case 114: {
+            case 146: {
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChatRoomEvent.newBuilder();
               if (hasChatRoomEvent()) {
                 subBuilder.mergeFrom(getChatRoomEvent());
@@ -3008,7 +3268,7 @@ public final class Contracts {
               setChatRoomEvent(subBuilder.buildPartial());
               break;
             }
-            case 122: {
+            case 154: {
               com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChatUserEvent.newBuilder();
               if (hasChatUserEvent()) {
                 subBuilder.mergeFrom(getChatUserEvent());
@@ -3017,7 +3277,7 @@ public final class Contracts {
               setChatUserEvent(subBuilder.buildPartial());
               break;
             }
-            case 130: {
+            case 162: {
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.ChatSpeakEvent.newBuilder();
               if (hasChatSpeakEvent()) {
                 subBuilder.mergeFrom(getChatSpeakEvent());
@@ -3026,7 +3286,7 @@ public final class Contracts {
               setChatSpeakEvent(subBuilder.buildPartial());
               break;
             }
-            case 138: {
+            case 170: {
               com.richardpianka.chess.network.Contracts.GameListRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameListRequest.newBuilder();
               if (hasGameListRequest()) {
                 subBuilder.mergeFrom(getGameListRequest());
@@ -3035,7 +3295,7 @@ public final class Contracts {
               setGameListRequest(subBuilder.buildPartial());
               break;
             }
-            case 146: {
+            case 178: {
               com.richardpianka.chess.network.Contracts.GameListResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameListResponse.newBuilder();
               if (hasGameListResponse()) {
                 subBuilder.mergeFrom(getGameListResponse());
@@ -3044,7 +3304,7 @@ public final class Contracts {
               setGameListResponse(subBuilder.buildPartial());
               break;
             }
-            case 154: {
+            case 186: {
               com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.CreateGameRequest.newBuilder();
               if (hasCreateGameRequest()) {
                 subBuilder.mergeFrom(getCreateGameRequest());
@@ -3053,7 +3313,7 @@ public final class Contracts {
               setCreateGameRequest(subBuilder.buildPartial());
               break;
             }
-            case 162: {
+            case 194: {
               com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.CreateGameResponse.newBuilder();
               if (hasCreateGameResponse()) {
                 subBuilder.mergeFrom(getCreateGameResponse());
@@ -3062,7 +3322,7 @@ public final class Contracts {
               setCreateGameResponse(subBuilder.buildPartial());
               break;
             }
-            case 170: {
+            case 202: {
               com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinGameRequest.newBuilder();
               if (hasJoinGameRequest()) {
                 subBuilder.mergeFrom(getJoinGameRequest());
@@ -3071,7 +3331,7 @@ public final class Contracts {
               setJoinGameRequest(subBuilder.buildPartial());
               break;
             }
-            case 178: {
+            case 210: {
               com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.JoinGameResponse.newBuilder();
               if (hasJoinGameResponse()) {
                 subBuilder.mergeFrom(getJoinGameResponse());
@@ -3080,7 +3340,7 @@ public final class Contracts {
               setJoinGameResponse(subBuilder.buildPartial());
               break;
             }
-            case 186: {
+            case 218: {
               com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.LeaveGameRequest.newBuilder();
               if (hasLeaveGameRequest()) {
                 subBuilder.mergeFrom(getLeaveGameRequest());
@@ -3089,7 +3349,7 @@ public final class Contracts {
               setLeaveGameRequest(subBuilder.buildPartial());
               break;
             }
-            case 194: {
+            case 226: {
               com.richardpianka.chess.network.Contracts.StartGameRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.StartGameRequest.newBuilder();
               if (hasStartGameRequest()) {
                 subBuilder.mergeFrom(getStartGameRequest());
@@ -3098,7 +3358,7 @@ public final class Contracts {
               setStartGameRequest(subBuilder.buildPartial());
               break;
             }
-            case 202: {
+            case 234: {
               com.richardpianka.chess.network.Contracts.StartGameResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.StartGameResponse.newBuilder();
               if (hasStartGameResponse()) {
                 subBuilder.mergeFrom(getStartGameResponse());
@@ -3107,7 +3367,7 @@ public final class Contracts {
               setStartGameResponse(subBuilder.buildPartial());
               break;
             }
-            case 210: {
+            case 242: {
               com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameStartedEvent.newBuilder();
               if (hasGameStartedEvent()) {
                 subBuilder.mergeFrom(getGameStartedEvent());
@@ -3116,7 +3376,7 @@ public final class Contracts {
               setGameStartedEvent(subBuilder.buildPartial());
               break;
             }
-            case 218: {
+            case 250: {
               com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.MovePieceRequest.newBuilder();
               if (hasMovePieceRequest()) {
                 subBuilder.mergeFrom(getMovePieceRequest());
@@ -3125,7 +3385,7 @@ public final class Contracts {
               setMovePieceRequest(subBuilder.buildPartial());
               break;
             }
-            case 226: {
+            case 258: {
               com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.MovePieceResponse.newBuilder();
               if (hasMovePieceResponse()) {
                 subBuilder.mergeFrom(getMovePieceResponse());
@@ -3134,7 +3394,7 @@ public final class Contracts {
               setMovePieceResponse(subBuilder.buildPartial());
               break;
             }
-            case 234: {
+            case 266: {
               com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.MovePieceEvent.newBuilder();
               if (hasMovePieceEvent()) {
                 subBuilder.mergeFrom(getMovePieceEvent());
@@ -3143,7 +3403,7 @@ public final class Contracts {
               setMovePieceEvent(subBuilder.buildPartial());
               break;
             }
-            case 242: {
+            case 274: {
               com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.newBuilder();
               if (hasSpecialMovePieceRequest()) {
                 subBuilder.mergeFrom(getSpecialMovePieceRequest());
@@ -3152,7 +3412,7 @@ public final class Contracts {
               setSpecialMovePieceRequest(subBuilder.buildPartial());
               break;
             }
-            case 250: {
+            case 282: {
               com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.newBuilder();
               if (hasSpecialMovePieceResponse()) {
                 subBuilder.mergeFrom(getSpecialMovePieceResponse());
@@ -3161,7 +3421,7 @@ public final class Contracts {
               setSpecialMovePieceResponse(subBuilder.buildPartial());
               break;
             }
-            case 258: {
+            case 290: {
               com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.newBuilder();
               if (hasSpecialMovePieceEvent()) {
                 subBuilder.mergeFrom(getSpecialMovePieceEvent());
@@ -3170,7 +3430,7 @@ public final class Contracts {
               setSpecialMovePieceEvent(subBuilder.buildPartial());
               break;
             }
-            case 274: {
+            case 298: {
               com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.GameStatusEvent.newBuilder();
               if (hasGameStatusEvent()) {
                 subBuilder.mergeFrom(getGameStatusEvent());
@@ -3179,7 +3439,7 @@ public final class Contracts {
               setGameStatusEvent(subBuilder.buildPartial());
               break;
             }
-            case 282: {
+            case 306: {
               com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder subBuilder = com.richardpianka.chess.network.Contracts.TimeLeftEvent.newBuilder();
               if (hasTimeLeftEvent()) {
                 subBuilder.mergeFrom(getTimeLeftEvent());
@@ -3555,12 +3815,372 @@ public final class Contracts {
         return identifyResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 5;
+      // optional .com.richardpianka.chess.network.CreateAccountRequest CreateAccountRequest = 5;
+      private com.richardpianka.chess.network.Contracts.CreateAccountRequest createAccountRequest_ = com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateAccountRequest, com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder, com.richardpianka.chess.network.Contracts.CreateAccountRequestOrBuilder> createAccountRequestBuilder_;
+      public boolean hasCreateAccountRequest() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequest getCreateAccountRequest() {
+        if (createAccountRequestBuilder_ == null) {
+          return createAccountRequest_;
+        } else {
+          return createAccountRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setCreateAccountRequest(com.richardpianka.chess.network.Contracts.CreateAccountRequest value) {
+        if (createAccountRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          createAccountRequest_ = value;
+          onChanged();
+        } else {
+          createAccountRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      public Builder setCreateAccountRequest(
+          com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder builderForValue) {
+        if (createAccountRequestBuilder_ == null) {
+          createAccountRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          createAccountRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      public Builder mergeCreateAccountRequest(com.richardpianka.chess.network.Contracts.CreateAccountRequest value) {
+        if (createAccountRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010) &&
+              createAccountRequest_ != com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDefaultInstance()) {
+            createAccountRequest_ =
+              com.richardpianka.chess.network.Contracts.CreateAccountRequest.newBuilder(createAccountRequest_).mergeFrom(value).buildPartial();
+          } else {
+            createAccountRequest_ = value;
+          }
+          onChanged();
+        } else {
+          createAccountRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      public Builder clearCreateAccountRequest() {
+        if (createAccountRequestBuilder_ == null) {
+          createAccountRequest_ = com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          createAccountRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder getCreateAccountRequestBuilder() {
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return getCreateAccountRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequestOrBuilder getCreateAccountRequestOrBuilder() {
+        if (createAccountRequestBuilder_ != null) {
+          return createAccountRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return createAccountRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateAccountRequest, com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder, com.richardpianka.chess.network.Contracts.CreateAccountRequestOrBuilder> 
+          getCreateAccountRequestFieldBuilder() {
+        if (createAccountRequestBuilder_ == null) {
+          createAccountRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.CreateAccountRequest, com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder, com.richardpianka.chess.network.Contracts.CreateAccountRequestOrBuilder>(
+                  createAccountRequest_,
+                  getParentForChildren(),
+                  isClean());
+          createAccountRequest_ = null;
+        }
+        return createAccountRequestBuilder_;
+      }
+      
+      // optional .com.richardpianka.chess.network.CreateAccountResponse CreateAccountResponse = 6;
+      private com.richardpianka.chess.network.Contracts.CreateAccountResponse createAccountResponse_ = com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateAccountResponse, com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder, com.richardpianka.chess.network.Contracts.CreateAccountResponseOrBuilder> createAccountResponseBuilder_;
+      public boolean hasCreateAccountResponse() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponse getCreateAccountResponse() {
+        if (createAccountResponseBuilder_ == null) {
+          return createAccountResponse_;
+        } else {
+          return createAccountResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setCreateAccountResponse(com.richardpianka.chess.network.Contracts.CreateAccountResponse value) {
+        if (createAccountResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          createAccountResponse_ = value;
+          onChanged();
+        } else {
+          createAccountResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder setCreateAccountResponse(
+          com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder builderForValue) {
+        if (createAccountResponseBuilder_ == null) {
+          createAccountResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          createAccountResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder mergeCreateAccountResponse(com.richardpianka.chess.network.Contracts.CreateAccountResponse value) {
+        if (createAccountResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020) &&
+              createAccountResponse_ != com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDefaultInstance()) {
+            createAccountResponse_ =
+              com.richardpianka.chess.network.Contracts.CreateAccountResponse.newBuilder(createAccountResponse_).mergeFrom(value).buildPartial();
+          } else {
+            createAccountResponse_ = value;
+          }
+          onChanged();
+        } else {
+          createAccountResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder clearCreateAccountResponse() {
+        if (createAccountResponseBuilder_ == null) {
+          createAccountResponse_ = com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          createAccountResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder getCreateAccountResponseBuilder() {
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return getCreateAccountResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponseOrBuilder getCreateAccountResponseOrBuilder() {
+        if (createAccountResponseBuilder_ != null) {
+          return createAccountResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return createAccountResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.CreateAccountResponse, com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder, com.richardpianka.chess.network.Contracts.CreateAccountResponseOrBuilder> 
+          getCreateAccountResponseFieldBuilder() {
+        if (createAccountResponseBuilder_ == null) {
+          createAccountResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.CreateAccountResponse, com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder, com.richardpianka.chess.network.Contracts.CreateAccountResponseOrBuilder>(
+                  createAccountResponse_,
+                  getParentForChildren(),
+                  isClean());
+          createAccountResponse_ = null;
+        }
+        return createAccountResponseBuilder_;
+      }
+      
+      // optional .com.richardpianka.chess.network.ChangePasswordRequest ChangePasswordRequest = 7;
+      private com.richardpianka.chess.network.Contracts.ChangePasswordRequest changePasswordRequest_ = com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.ChangePasswordRequest, com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder, com.richardpianka.chess.network.Contracts.ChangePasswordRequestOrBuilder> changePasswordRequestBuilder_;
+      public boolean hasChangePasswordRequest() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequest getChangePasswordRequest() {
+        if (changePasswordRequestBuilder_ == null) {
+          return changePasswordRequest_;
+        } else {
+          return changePasswordRequestBuilder_.getMessage();
+        }
+      }
+      public Builder setChangePasswordRequest(com.richardpianka.chess.network.Contracts.ChangePasswordRequest value) {
+        if (changePasswordRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          changePasswordRequest_ = value;
+          onChanged();
+        } else {
+          changePasswordRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder setChangePasswordRequest(
+          com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder builderForValue) {
+        if (changePasswordRequestBuilder_ == null) {
+          changePasswordRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          changePasswordRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder mergeChangePasswordRequest(com.richardpianka.chess.network.Contracts.ChangePasswordRequest value) {
+        if (changePasswordRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040) &&
+              changePasswordRequest_ != com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDefaultInstance()) {
+            changePasswordRequest_ =
+              com.richardpianka.chess.network.Contracts.ChangePasswordRequest.newBuilder(changePasswordRequest_).mergeFrom(value).buildPartial();
+          } else {
+            changePasswordRequest_ = value;
+          }
+          onChanged();
+        } else {
+          changePasswordRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder clearChangePasswordRequest() {
+        if (changePasswordRequestBuilder_ == null) {
+          changePasswordRequest_ = com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDefaultInstance();
+          onChanged();
+        } else {
+          changePasswordRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder getChangePasswordRequestBuilder() {
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return getChangePasswordRequestFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequestOrBuilder getChangePasswordRequestOrBuilder() {
+        if (changePasswordRequestBuilder_ != null) {
+          return changePasswordRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return changePasswordRequest_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.ChangePasswordRequest, com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder, com.richardpianka.chess.network.Contracts.ChangePasswordRequestOrBuilder> 
+          getChangePasswordRequestFieldBuilder() {
+        if (changePasswordRequestBuilder_ == null) {
+          changePasswordRequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.ChangePasswordRequest, com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder, com.richardpianka.chess.network.Contracts.ChangePasswordRequestOrBuilder>(
+                  changePasswordRequest_,
+                  getParentForChildren(),
+                  isClean());
+          changePasswordRequest_ = null;
+        }
+        return changePasswordRequestBuilder_;
+      }
+      
+      // optional .com.richardpianka.chess.network.ChangePasswordResponse ChangePasswordResponse = 8;
+      private com.richardpianka.chess.network.Contracts.ChangePasswordResponse changePasswordResponse_ = com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.ChangePasswordResponse, com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder, com.richardpianka.chess.network.Contracts.ChangePasswordResponseOrBuilder> changePasswordResponseBuilder_;
+      public boolean hasChangePasswordResponse() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponse getChangePasswordResponse() {
+        if (changePasswordResponseBuilder_ == null) {
+          return changePasswordResponse_;
+        } else {
+          return changePasswordResponseBuilder_.getMessage();
+        }
+      }
+      public Builder setChangePasswordResponse(com.richardpianka.chess.network.Contracts.ChangePasswordResponse value) {
+        if (changePasswordResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          changePasswordResponse_ = value;
+          onChanged();
+        } else {
+          changePasswordResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder setChangePasswordResponse(
+          com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder builderForValue) {
+        if (changePasswordResponseBuilder_ == null) {
+          changePasswordResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          changePasswordResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder mergeChangePasswordResponse(com.richardpianka.chess.network.Contracts.ChangePasswordResponse value) {
+        if (changePasswordResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) == 0x00000080) &&
+              changePasswordResponse_ != com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDefaultInstance()) {
+            changePasswordResponse_ =
+              com.richardpianka.chess.network.Contracts.ChangePasswordResponse.newBuilder(changePasswordResponse_).mergeFrom(value).buildPartial();
+          } else {
+            changePasswordResponse_ = value;
+          }
+          onChanged();
+        } else {
+          changePasswordResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      public Builder clearChangePasswordResponse() {
+        if (changePasswordResponseBuilder_ == null) {
+          changePasswordResponse_ = com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDefaultInstance();
+          onChanged();
+        } else {
+          changePasswordResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
+        return this;
+      }
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder getChangePasswordResponseBuilder() {
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return getChangePasswordResponseFieldBuilder().getBuilder();
+      }
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponseOrBuilder getChangePasswordResponseOrBuilder() {
+        if (changePasswordResponseBuilder_ != null) {
+          return changePasswordResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return changePasswordResponse_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          com.richardpianka.chess.network.Contracts.ChangePasswordResponse, com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder, com.richardpianka.chess.network.Contracts.ChangePasswordResponseOrBuilder> 
+          getChangePasswordResponseFieldBuilder() {
+        if (changePasswordResponseBuilder_ == null) {
+          changePasswordResponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.richardpianka.chess.network.Contracts.ChangePasswordResponse, com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder, com.richardpianka.chess.network.Contracts.ChangePasswordResponseOrBuilder>(
+                  changePasswordResponse_,
+                  getParentForChildren(),
+                  isClean());
+          changePasswordResponse_ = null;
+        }
+        return changePasswordResponseBuilder_;
+      }
+      
+      // optional .com.richardpianka.chess.network.JoinChatRequest JoinChatRequest = 9;
       private com.richardpianka.chess.network.Contracts.JoinChatRequest joinChatRequest_ = com.richardpianka.chess.network.Contracts.JoinChatRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinChatRequest, com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder, com.richardpianka.chess.network.Contracts.JoinChatRequestOrBuilder> joinChatRequestBuilder_;
       public boolean hasJoinChatRequest() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
+        return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       public com.richardpianka.chess.network.Contracts.JoinChatRequest getJoinChatRequest() {
         if (joinChatRequestBuilder_ == null) {
@@ -3579,7 +4199,7 @@ public final class Contracts {
         } else {
           joinChatRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000100;
         return this;
       }
       public Builder setJoinChatRequest(
@@ -3590,12 +4210,12 @@ public final class Contracts {
         } else {
           joinChatRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000100;
         return this;
       }
       public Builder mergeJoinChatRequest(com.richardpianka.chess.network.Contracts.JoinChatRequest value) {
         if (joinChatRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010) &&
+          if (((bitField0_ & 0x00000100) == 0x00000100) &&
               joinChatRequest_ != com.richardpianka.chess.network.Contracts.JoinChatRequest.getDefaultInstance()) {
             joinChatRequest_ =
               com.richardpianka.chess.network.Contracts.JoinChatRequest.newBuilder(joinChatRequest_).mergeFrom(value).buildPartial();
@@ -3606,7 +4226,7 @@ public final class Contracts {
         } else {
           joinChatRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000100;
         return this;
       }
       public Builder clearJoinChatRequest() {
@@ -3616,11 +4236,11 @@ public final class Contracts {
         } else {
           joinChatRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder getJoinChatRequestBuilder() {
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000100;
         onChanged();
         return getJoinChatRequestFieldBuilder().getBuilder();
       }
@@ -3645,12 +4265,12 @@ public final class Contracts {
         return joinChatRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 6;
+      // optional .com.richardpianka.chess.network.JoinChatResponse JoinChatResponse = 10;
       private com.richardpianka.chess.network.Contracts.JoinChatResponse joinChatResponse_ = com.richardpianka.chess.network.Contracts.JoinChatResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinChatResponse, com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder, com.richardpianka.chess.network.Contracts.JoinChatResponseOrBuilder> joinChatResponseBuilder_;
       public boolean hasJoinChatResponse() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
+        return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       public com.richardpianka.chess.network.Contracts.JoinChatResponse getJoinChatResponse() {
         if (joinChatResponseBuilder_ == null) {
@@ -3669,7 +4289,7 @@ public final class Contracts {
         } else {
           joinChatResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000200;
         return this;
       }
       public Builder setJoinChatResponse(
@@ -3680,12 +4300,12 @@ public final class Contracts {
         } else {
           joinChatResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000200;
         return this;
       }
       public Builder mergeJoinChatResponse(com.richardpianka.chess.network.Contracts.JoinChatResponse value) {
         if (joinChatResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) == 0x00000020) &&
+          if (((bitField0_ & 0x00000200) == 0x00000200) &&
               joinChatResponse_ != com.richardpianka.chess.network.Contracts.JoinChatResponse.getDefaultInstance()) {
             joinChatResponse_ =
               com.richardpianka.chess.network.Contracts.JoinChatResponse.newBuilder(joinChatResponse_).mergeFrom(value).buildPartial();
@@ -3696,7 +4316,7 @@ public final class Contracts {
         } else {
           joinChatResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000200;
         return this;
       }
       public Builder clearJoinChatResponse() {
@@ -3706,11 +4326,11 @@ public final class Contracts {
         } else {
           joinChatResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000200);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder getJoinChatResponseBuilder() {
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000200;
         onChanged();
         return getJoinChatResponseFieldBuilder().getBuilder();
       }
@@ -3735,12 +4355,12 @@ public final class Contracts {
         return joinChatResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.RoomListRequest RoomListRequest = 7;
+      // optional .com.richardpianka.chess.network.RoomListRequest RoomListRequest = 11;
       private com.richardpianka.chess.network.Contracts.RoomListRequest roomListRequest_ = com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.RoomListRequest, com.richardpianka.chess.network.Contracts.RoomListRequest.Builder, com.richardpianka.chess.network.Contracts.RoomListRequestOrBuilder> roomListRequestBuilder_;
       public boolean hasRoomListRequest() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
+        return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       public com.richardpianka.chess.network.Contracts.RoomListRequest getRoomListRequest() {
         if (roomListRequestBuilder_ == null) {
@@ -3759,7 +4379,7 @@ public final class Contracts {
         } else {
           roomListRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000400;
         return this;
       }
       public Builder setRoomListRequest(
@@ -3770,12 +4390,12 @@ public final class Contracts {
         } else {
           roomListRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000400;
         return this;
       }
       public Builder mergeRoomListRequest(com.richardpianka.chess.network.Contracts.RoomListRequest value) {
         if (roomListRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) == 0x00000040) &&
+          if (((bitField0_ & 0x00000400) == 0x00000400) &&
               roomListRequest_ != com.richardpianka.chess.network.Contracts.RoomListRequest.getDefaultInstance()) {
             roomListRequest_ =
               com.richardpianka.chess.network.Contracts.RoomListRequest.newBuilder(roomListRequest_).mergeFrom(value).buildPartial();
@@ -3786,7 +4406,7 @@ public final class Contracts {
         } else {
           roomListRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000400;
         return this;
       }
       public Builder clearRoomListRequest() {
@@ -3796,11 +4416,11 @@ public final class Contracts {
         } else {
           roomListRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000400);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.RoomListRequest.Builder getRoomListRequestBuilder() {
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000400;
         onChanged();
         return getRoomListRequestFieldBuilder().getBuilder();
       }
@@ -3825,12 +4445,12 @@ public final class Contracts {
         return roomListRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.RoomListResponse RoomListResponse = 8;
+      // optional .com.richardpianka.chess.network.RoomListResponse RoomListResponse = 12;
       private com.richardpianka.chess.network.Contracts.RoomListResponse roomListResponse_ = com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.RoomListResponse, com.richardpianka.chess.network.Contracts.RoomListResponse.Builder, com.richardpianka.chess.network.Contracts.RoomListResponseOrBuilder> roomListResponseBuilder_;
       public boolean hasRoomListResponse() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
+        return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       public com.richardpianka.chess.network.Contracts.RoomListResponse getRoomListResponse() {
         if (roomListResponseBuilder_ == null) {
@@ -3849,7 +4469,7 @@ public final class Contracts {
         } else {
           roomListResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000800;
         return this;
       }
       public Builder setRoomListResponse(
@@ -3860,12 +4480,12 @@ public final class Contracts {
         } else {
           roomListResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000800;
         return this;
       }
       public Builder mergeRoomListResponse(com.richardpianka.chess.network.Contracts.RoomListResponse value) {
         if (roomListResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00000080) == 0x00000080) &&
+          if (((bitField0_ & 0x00000800) == 0x00000800) &&
               roomListResponse_ != com.richardpianka.chess.network.Contracts.RoomListResponse.getDefaultInstance()) {
             roomListResponse_ =
               com.richardpianka.chess.network.Contracts.RoomListResponse.newBuilder(roomListResponse_).mergeFrom(value).buildPartial();
@@ -3876,7 +4496,7 @@ public final class Contracts {
         } else {
           roomListResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000800;
         return this;
       }
       public Builder clearRoomListResponse() {
@@ -3886,11 +4506,11 @@ public final class Contracts {
         } else {
           roomListResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000800);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.RoomListResponse.Builder getRoomListResponseBuilder() {
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000800;
         onChanged();
         return getRoomListResponseFieldBuilder().getBuilder();
       }
@@ -3915,12 +4535,12 @@ public final class Contracts {
         return roomListResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 9;
+      // optional .com.richardpianka.chess.network.JoinRoomRequest JoinRoomRequest = 13;
       private com.richardpianka.chess.network.Contracts.JoinRoomRequest joinRoomRequest_ = com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinRoomRequest, com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder, com.richardpianka.chess.network.Contracts.JoinRoomRequestOrBuilder> joinRoomRequestBuilder_;
       public boolean hasJoinRoomRequest() {
-        return ((bitField0_ & 0x00000100) == 0x00000100);
+        return ((bitField0_ & 0x00001000) == 0x00001000);
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomRequest getJoinRoomRequest() {
         if (joinRoomRequestBuilder_ == null) {
@@ -3939,7 +4559,7 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00001000;
         return this;
       }
       public Builder setJoinRoomRequest(
@@ -3950,12 +4570,12 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00001000;
         return this;
       }
       public Builder mergeJoinRoomRequest(com.richardpianka.chess.network.Contracts.JoinRoomRequest value) {
         if (joinRoomRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00000100) == 0x00000100) &&
+          if (((bitField0_ & 0x00001000) == 0x00001000) &&
               joinRoomRequest_ != com.richardpianka.chess.network.Contracts.JoinRoomRequest.getDefaultInstance()) {
             joinRoomRequest_ =
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.newBuilder(joinRoomRequest_).mergeFrom(value).buildPartial();
@@ -3966,7 +4586,7 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00001000;
         return this;
       }
       public Builder clearJoinRoomRequest() {
@@ -3976,11 +4596,11 @@ public final class Contracts {
         } else {
           joinRoomRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00001000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder getJoinRoomRequestBuilder() {
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00001000;
         onChanged();
         return getJoinRoomRequestFieldBuilder().getBuilder();
       }
@@ -4005,12 +4625,12 @@ public final class Contracts {
         return joinRoomRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 10;
+      // optional .com.richardpianka.chess.network.JoinRoomResponse JoinRoomResponse = 14;
       private com.richardpianka.chess.network.Contracts.JoinRoomResponse joinRoomResponse_ = com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinRoomResponse, com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder, com.richardpianka.chess.network.Contracts.JoinRoomResponseOrBuilder> joinRoomResponseBuilder_;
       public boolean hasJoinRoomResponse() {
-        return ((bitField0_ & 0x00000200) == 0x00000200);
+        return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomResponse getJoinRoomResponse() {
         if (joinRoomResponseBuilder_ == null) {
@@ -4029,7 +4649,7 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         return this;
       }
       public Builder setJoinRoomResponse(
@@ -4040,12 +4660,12 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         return this;
       }
       public Builder mergeJoinRoomResponse(com.richardpianka.chess.network.Contracts.JoinRoomResponse value) {
         if (joinRoomResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) == 0x00000200) &&
+          if (((bitField0_ & 0x00002000) == 0x00002000) &&
               joinRoomResponse_ != com.richardpianka.chess.network.Contracts.JoinRoomResponse.getDefaultInstance()) {
             joinRoomResponse_ =
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.newBuilder(joinRoomResponse_).mergeFrom(value).buildPartial();
@@ -4056,7 +4676,7 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         return this;
       }
       public Builder clearJoinRoomResponse() {
@@ -4066,11 +4686,11 @@ public final class Contracts {
         } else {
           joinRoomResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00002000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder getJoinRoomResponseBuilder() {
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00002000;
         onChanged();
         return getJoinRoomResponseFieldBuilder().getBuilder();
       }
@@ -4095,12 +4715,12 @@ public final class Contracts {
         return joinRoomResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 11;
+      // optional .com.richardpianka.chess.network.SpeakRequest SpeakRequest = 15;
       private com.richardpianka.chess.network.Contracts.SpeakRequest speakRequest_ = com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.SpeakRequest, com.richardpianka.chess.network.Contracts.SpeakRequest.Builder, com.richardpianka.chess.network.Contracts.SpeakRequestOrBuilder> speakRequestBuilder_;
       public boolean hasSpeakRequest() {
-        return ((bitField0_ & 0x00000400) == 0x00000400);
+        return ((bitField0_ & 0x00004000) == 0x00004000);
       }
       public com.richardpianka.chess.network.Contracts.SpeakRequest getSpeakRequest() {
         if (speakRequestBuilder_ == null) {
@@ -4119,7 +4739,7 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         return this;
       }
       public Builder setSpeakRequest(
@@ -4130,12 +4750,12 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         return this;
       }
       public Builder mergeSpeakRequest(com.richardpianka.chess.network.Contracts.SpeakRequest value) {
         if (speakRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00000400) == 0x00000400) &&
+          if (((bitField0_ & 0x00004000) == 0x00004000) &&
               speakRequest_ != com.richardpianka.chess.network.Contracts.SpeakRequest.getDefaultInstance()) {
             speakRequest_ =
               com.richardpianka.chess.network.Contracts.SpeakRequest.newBuilder(speakRequest_).mergeFrom(value).buildPartial();
@@ -4146,7 +4766,7 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         return this;
       }
       public Builder clearSpeakRequest() {
@@ -4156,11 +4776,11 @@ public final class Contracts {
         } else {
           speakRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00004000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.SpeakRequest.Builder getSpeakRequestBuilder() {
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00004000;
         onChanged();
         return getSpeakRequestFieldBuilder().getBuilder();
       }
@@ -4185,12 +4805,12 @@ public final class Contracts {
         return speakRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.OperatorRequest OperatorRequest = 12;
+      // optional .com.richardpianka.chess.network.OperatorRequest OperatorRequest = 16;
       private com.richardpianka.chess.network.Contracts.OperatorRequest operatorRequest_ = com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.OperatorRequest, com.richardpianka.chess.network.Contracts.OperatorRequest.Builder, com.richardpianka.chess.network.Contracts.OperatorRequestOrBuilder> operatorRequestBuilder_;
       public boolean hasOperatorRequest() {
-        return ((bitField0_ & 0x00000800) == 0x00000800);
+        return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       public com.richardpianka.chess.network.Contracts.OperatorRequest getOperatorRequest() {
         if (operatorRequestBuilder_ == null) {
@@ -4209,7 +4829,7 @@ public final class Contracts {
         } else {
           operatorRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         return this;
       }
       public Builder setOperatorRequest(
@@ -4220,12 +4840,12 @@ public final class Contracts {
         } else {
           operatorRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         return this;
       }
       public Builder mergeOperatorRequest(com.richardpianka.chess.network.Contracts.OperatorRequest value) {
         if (operatorRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00000800) == 0x00000800) &&
+          if (((bitField0_ & 0x00008000) == 0x00008000) &&
               operatorRequest_ != com.richardpianka.chess.network.Contracts.OperatorRequest.getDefaultInstance()) {
             operatorRequest_ =
               com.richardpianka.chess.network.Contracts.OperatorRequest.newBuilder(operatorRequest_).mergeFrom(value).buildPartial();
@@ -4236,7 +4856,7 @@ public final class Contracts {
         } else {
           operatorRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         return this;
       }
       public Builder clearOperatorRequest() {
@@ -4246,11 +4866,11 @@ public final class Contracts {
         } else {
           operatorRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00008000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.OperatorRequest.Builder getOperatorRequestBuilder() {
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00008000;
         onChanged();
         return getOperatorRequestFieldBuilder().getBuilder();
       }
@@ -4275,12 +4895,12 @@ public final class Contracts {
         return operatorRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.OperatorResponse OperatorResponse = 13;
+      // optional .com.richardpianka.chess.network.OperatorResponse OperatorResponse = 17;
       private com.richardpianka.chess.network.Contracts.OperatorResponse operatorResponse_ = com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.OperatorResponse, com.richardpianka.chess.network.Contracts.OperatorResponse.Builder, com.richardpianka.chess.network.Contracts.OperatorResponseOrBuilder> operatorResponseBuilder_;
       public boolean hasOperatorResponse() {
-        return ((bitField0_ & 0x00001000) == 0x00001000);
+        return ((bitField0_ & 0x00010000) == 0x00010000);
       }
       public com.richardpianka.chess.network.Contracts.OperatorResponse getOperatorResponse() {
         if (operatorResponseBuilder_ == null) {
@@ -4299,7 +4919,7 @@ public final class Contracts {
         } else {
           operatorResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00010000;
         return this;
       }
       public Builder setOperatorResponse(
@@ -4310,12 +4930,12 @@ public final class Contracts {
         } else {
           operatorResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00010000;
         return this;
       }
       public Builder mergeOperatorResponse(com.richardpianka.chess.network.Contracts.OperatorResponse value) {
         if (operatorResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00001000) == 0x00001000) &&
+          if (((bitField0_ & 0x00010000) == 0x00010000) &&
               operatorResponse_ != com.richardpianka.chess.network.Contracts.OperatorResponse.getDefaultInstance()) {
             operatorResponse_ =
               com.richardpianka.chess.network.Contracts.OperatorResponse.newBuilder(operatorResponse_).mergeFrom(value).buildPartial();
@@ -4326,7 +4946,7 @@ public final class Contracts {
         } else {
           operatorResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00010000;
         return this;
       }
       public Builder clearOperatorResponse() {
@@ -4336,11 +4956,11 @@ public final class Contracts {
         } else {
           operatorResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00010000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.OperatorResponse.Builder getOperatorResponseBuilder() {
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00010000;
         onChanged();
         return getOperatorResponseFieldBuilder().getBuilder();
       }
@@ -4365,12 +4985,12 @@ public final class Contracts {
         return operatorResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 14;
+      // optional .com.richardpianka.chess.network.ChatRoomEvent ChatRoomEvent = 18;
       private com.richardpianka.chess.network.Contracts.ChatRoomEvent chatRoomEvent_ = com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.ChatRoomEvent, com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder, com.richardpianka.chess.network.Contracts.ChatRoomEventOrBuilder> chatRoomEventBuilder_;
       public boolean hasChatRoomEvent() {
-        return ((bitField0_ & 0x00002000) == 0x00002000);
+        return ((bitField0_ & 0x00020000) == 0x00020000);
       }
       public com.richardpianka.chess.network.Contracts.ChatRoomEvent getChatRoomEvent() {
         if (chatRoomEventBuilder_ == null) {
@@ -4389,7 +5009,7 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00020000;
         return this;
       }
       public Builder setChatRoomEvent(
@@ -4400,12 +5020,12 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00020000;
         return this;
       }
       public Builder mergeChatRoomEvent(com.richardpianka.chess.network.Contracts.ChatRoomEvent value) {
         if (chatRoomEventBuilder_ == null) {
-          if (((bitField0_ & 0x00002000) == 0x00002000) &&
+          if (((bitField0_ & 0x00020000) == 0x00020000) &&
               chatRoomEvent_ != com.richardpianka.chess.network.Contracts.ChatRoomEvent.getDefaultInstance()) {
             chatRoomEvent_ =
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.newBuilder(chatRoomEvent_).mergeFrom(value).buildPartial();
@@ -4416,7 +5036,7 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00020000;
         return this;
       }
       public Builder clearChatRoomEvent() {
@@ -4426,11 +5046,11 @@ public final class Contracts {
         } else {
           chatRoomEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00020000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder getChatRoomEventBuilder() {
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00020000;
         onChanged();
         return getChatRoomEventFieldBuilder().getBuilder();
       }
@@ -4455,12 +5075,12 @@ public final class Contracts {
         return chatRoomEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 15;
+      // optional .com.richardpianka.chess.network.ChatUserEvent ChatUserEvent = 19;
       private com.richardpianka.chess.network.Contracts.ChatUserEvent chatUserEvent_ = com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.ChatUserEvent, com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder, com.richardpianka.chess.network.Contracts.ChatUserEventOrBuilder> chatUserEventBuilder_;
       public boolean hasChatUserEvent() {
-        return ((bitField0_ & 0x00004000) == 0x00004000);
+        return ((bitField0_ & 0x00040000) == 0x00040000);
       }
       public com.richardpianka.chess.network.Contracts.ChatUserEvent getChatUserEvent() {
         if (chatUserEventBuilder_ == null) {
@@ -4479,7 +5099,7 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x00040000;
         return this;
       }
       public Builder setChatUserEvent(
@@ -4490,12 +5110,12 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x00040000;
         return this;
       }
       public Builder mergeChatUserEvent(com.richardpianka.chess.network.Contracts.ChatUserEvent value) {
         if (chatUserEventBuilder_ == null) {
-          if (((bitField0_ & 0x00004000) == 0x00004000) &&
+          if (((bitField0_ & 0x00040000) == 0x00040000) &&
               chatUserEvent_ != com.richardpianka.chess.network.Contracts.ChatUserEvent.getDefaultInstance()) {
             chatUserEvent_ =
               com.richardpianka.chess.network.Contracts.ChatUserEvent.newBuilder(chatUserEvent_).mergeFrom(value).buildPartial();
@@ -4506,7 +5126,7 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x00040000;
         return this;
       }
       public Builder clearChatUserEvent() {
@@ -4516,11 +5136,11 @@ public final class Contracts {
         } else {
           chatUserEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00004000);
+        bitField0_ = (bitField0_ & ~0x00040000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder getChatUserEventBuilder() {
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x00040000;
         onChanged();
         return getChatUserEventFieldBuilder().getBuilder();
       }
@@ -4545,12 +5165,12 @@ public final class Contracts {
         return chatUserEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 16;
+      // optional .com.richardpianka.chess.network.ChatSpeakEvent ChatSpeakEvent = 20;
       private com.richardpianka.chess.network.Contracts.ChatSpeakEvent chatSpeakEvent_ = com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.ChatSpeakEvent, com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder, com.richardpianka.chess.network.Contracts.ChatSpeakEventOrBuilder> chatSpeakEventBuilder_;
       public boolean hasChatSpeakEvent() {
-        return ((bitField0_ & 0x00008000) == 0x00008000);
+        return ((bitField0_ & 0x00080000) == 0x00080000);
       }
       public com.richardpianka.chess.network.Contracts.ChatSpeakEvent getChatSpeakEvent() {
         if (chatSpeakEventBuilder_ == null) {
@@ -4569,7 +5189,7 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x00080000;
         return this;
       }
       public Builder setChatSpeakEvent(
@@ -4580,12 +5200,12 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x00080000;
         return this;
       }
       public Builder mergeChatSpeakEvent(com.richardpianka.chess.network.Contracts.ChatSpeakEvent value) {
         if (chatSpeakEventBuilder_ == null) {
-          if (((bitField0_ & 0x00008000) == 0x00008000) &&
+          if (((bitField0_ & 0x00080000) == 0x00080000) &&
               chatSpeakEvent_ != com.richardpianka.chess.network.Contracts.ChatSpeakEvent.getDefaultInstance()) {
             chatSpeakEvent_ =
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.newBuilder(chatSpeakEvent_).mergeFrom(value).buildPartial();
@@ -4596,7 +5216,7 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x00080000;
         return this;
       }
       public Builder clearChatSpeakEvent() {
@@ -4606,11 +5226,11 @@ public final class Contracts {
         } else {
           chatSpeakEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00080000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder getChatSpeakEventBuilder() {
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x00080000;
         onChanged();
         return getChatSpeakEventFieldBuilder().getBuilder();
       }
@@ -4635,12 +5255,12 @@ public final class Contracts {
         return chatSpeakEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.GameListRequest GameListRequest = 17;
+      // optional .com.richardpianka.chess.network.GameListRequest GameListRequest = 21;
       private com.richardpianka.chess.network.Contracts.GameListRequest gameListRequest_ = com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.GameListRequest, com.richardpianka.chess.network.Contracts.GameListRequest.Builder, com.richardpianka.chess.network.Contracts.GameListRequestOrBuilder> gameListRequestBuilder_;
       public boolean hasGameListRequest() {
-        return ((bitField0_ & 0x00010000) == 0x00010000);
+        return ((bitField0_ & 0x00100000) == 0x00100000);
       }
       public com.richardpianka.chess.network.Contracts.GameListRequest getGameListRequest() {
         if (gameListRequestBuilder_ == null) {
@@ -4659,7 +5279,7 @@ public final class Contracts {
         } else {
           gameListRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00100000;
         return this;
       }
       public Builder setGameListRequest(
@@ -4670,12 +5290,12 @@ public final class Contracts {
         } else {
           gameListRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00100000;
         return this;
       }
       public Builder mergeGameListRequest(com.richardpianka.chess.network.Contracts.GameListRequest value) {
         if (gameListRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00010000) == 0x00010000) &&
+          if (((bitField0_ & 0x00100000) == 0x00100000) &&
               gameListRequest_ != com.richardpianka.chess.network.Contracts.GameListRequest.getDefaultInstance()) {
             gameListRequest_ =
               com.richardpianka.chess.network.Contracts.GameListRequest.newBuilder(gameListRequest_).mergeFrom(value).buildPartial();
@@ -4686,7 +5306,7 @@ public final class Contracts {
         } else {
           gameListRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00100000;
         return this;
       }
       public Builder clearGameListRequest() {
@@ -4696,11 +5316,11 @@ public final class Contracts {
         } else {
           gameListRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x00100000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.GameListRequest.Builder getGameListRequestBuilder() {
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00100000;
         onChanged();
         return getGameListRequestFieldBuilder().getBuilder();
       }
@@ -4725,12 +5345,12 @@ public final class Contracts {
         return gameListRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.GameListResponse GameListResponse = 18;
+      // optional .com.richardpianka.chess.network.GameListResponse GameListResponse = 22;
       private com.richardpianka.chess.network.Contracts.GameListResponse gameListResponse_ = com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.GameListResponse, com.richardpianka.chess.network.Contracts.GameListResponse.Builder, com.richardpianka.chess.network.Contracts.GameListResponseOrBuilder> gameListResponseBuilder_;
       public boolean hasGameListResponse() {
-        return ((bitField0_ & 0x00020000) == 0x00020000);
+        return ((bitField0_ & 0x00200000) == 0x00200000);
       }
       public com.richardpianka.chess.network.Contracts.GameListResponse getGameListResponse() {
         if (gameListResponseBuilder_ == null) {
@@ -4749,7 +5369,7 @@ public final class Contracts {
         } else {
           gameListResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00200000;
         return this;
       }
       public Builder setGameListResponse(
@@ -4760,12 +5380,12 @@ public final class Contracts {
         } else {
           gameListResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00200000;
         return this;
       }
       public Builder mergeGameListResponse(com.richardpianka.chess.network.Contracts.GameListResponse value) {
         if (gameListResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00020000) == 0x00020000) &&
+          if (((bitField0_ & 0x00200000) == 0x00200000) &&
               gameListResponse_ != com.richardpianka.chess.network.Contracts.GameListResponse.getDefaultInstance()) {
             gameListResponse_ =
               com.richardpianka.chess.network.Contracts.GameListResponse.newBuilder(gameListResponse_).mergeFrom(value).buildPartial();
@@ -4776,7 +5396,7 @@ public final class Contracts {
         } else {
           gameListResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00200000;
         return this;
       }
       public Builder clearGameListResponse() {
@@ -4786,11 +5406,11 @@ public final class Contracts {
         } else {
           gameListResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField0_ = (bitField0_ & ~0x00200000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.GameListResponse.Builder getGameListResponseBuilder() {
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00200000;
         onChanged();
         return getGameListResponseFieldBuilder().getBuilder();
       }
@@ -4815,12 +5435,12 @@ public final class Contracts {
         return gameListResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.CreateGameRequest CreateGameRequest = 19;
+      // optional .com.richardpianka.chess.network.CreateGameRequest CreateGameRequest = 23;
       private com.richardpianka.chess.network.Contracts.CreateGameRequest createGameRequest_ = com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.CreateGameRequest, com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder, com.richardpianka.chess.network.Contracts.CreateGameRequestOrBuilder> createGameRequestBuilder_;
       public boolean hasCreateGameRequest() {
-        return ((bitField0_ & 0x00040000) == 0x00040000);
+        return ((bitField0_ & 0x00400000) == 0x00400000);
       }
       public com.richardpianka.chess.network.Contracts.CreateGameRequest getCreateGameRequest() {
         if (createGameRequestBuilder_ == null) {
@@ -4839,7 +5459,7 @@ public final class Contracts {
         } else {
           createGameRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00040000;
+        bitField0_ |= 0x00400000;
         return this;
       }
       public Builder setCreateGameRequest(
@@ -4850,12 +5470,12 @@ public final class Contracts {
         } else {
           createGameRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00040000;
+        bitField0_ |= 0x00400000;
         return this;
       }
       public Builder mergeCreateGameRequest(com.richardpianka.chess.network.Contracts.CreateGameRequest value) {
         if (createGameRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00040000) == 0x00040000) &&
+          if (((bitField0_ & 0x00400000) == 0x00400000) &&
               createGameRequest_ != com.richardpianka.chess.network.Contracts.CreateGameRequest.getDefaultInstance()) {
             createGameRequest_ =
               com.richardpianka.chess.network.Contracts.CreateGameRequest.newBuilder(createGameRequest_).mergeFrom(value).buildPartial();
@@ -4866,7 +5486,7 @@ public final class Contracts {
         } else {
           createGameRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00040000;
+        bitField0_ |= 0x00400000;
         return this;
       }
       public Builder clearCreateGameRequest() {
@@ -4876,11 +5496,11 @@ public final class Contracts {
         } else {
           createGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00040000);
+        bitField0_ = (bitField0_ & ~0x00400000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder getCreateGameRequestBuilder() {
-        bitField0_ |= 0x00040000;
+        bitField0_ |= 0x00400000;
         onChanged();
         return getCreateGameRequestFieldBuilder().getBuilder();
       }
@@ -4905,12 +5525,12 @@ public final class Contracts {
         return createGameRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.CreateGameResponse CreateGameResponse = 20;
+      // optional .com.richardpianka.chess.network.CreateGameResponse CreateGameResponse = 24;
       private com.richardpianka.chess.network.Contracts.CreateGameResponse createGameResponse_ = com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.CreateGameResponse, com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder, com.richardpianka.chess.network.Contracts.CreateGameResponseOrBuilder> createGameResponseBuilder_;
       public boolean hasCreateGameResponse() {
-        return ((bitField0_ & 0x00080000) == 0x00080000);
+        return ((bitField0_ & 0x00800000) == 0x00800000);
       }
       public com.richardpianka.chess.network.Contracts.CreateGameResponse getCreateGameResponse() {
         if (createGameResponseBuilder_ == null) {
@@ -4929,7 +5549,7 @@ public final class Contracts {
         } else {
           createGameResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00080000;
+        bitField0_ |= 0x00800000;
         return this;
       }
       public Builder setCreateGameResponse(
@@ -4940,12 +5560,12 @@ public final class Contracts {
         } else {
           createGameResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00080000;
+        bitField0_ |= 0x00800000;
         return this;
       }
       public Builder mergeCreateGameResponse(com.richardpianka.chess.network.Contracts.CreateGameResponse value) {
         if (createGameResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00080000) == 0x00080000) &&
+          if (((bitField0_ & 0x00800000) == 0x00800000) &&
               createGameResponse_ != com.richardpianka.chess.network.Contracts.CreateGameResponse.getDefaultInstance()) {
             createGameResponse_ =
               com.richardpianka.chess.network.Contracts.CreateGameResponse.newBuilder(createGameResponse_).mergeFrom(value).buildPartial();
@@ -4956,7 +5576,7 @@ public final class Contracts {
         } else {
           createGameResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00080000;
+        bitField0_ |= 0x00800000;
         return this;
       }
       public Builder clearCreateGameResponse() {
@@ -4966,11 +5586,11 @@ public final class Contracts {
         } else {
           createGameResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00080000);
+        bitField0_ = (bitField0_ & ~0x00800000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder getCreateGameResponseBuilder() {
-        bitField0_ |= 0x00080000;
+        bitField0_ |= 0x00800000;
         onChanged();
         return getCreateGameResponseFieldBuilder().getBuilder();
       }
@@ -4995,12 +5615,12 @@ public final class Contracts {
         return createGameResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinGameRequest JoinGameRequest = 21;
+      // optional .com.richardpianka.chess.network.JoinGameRequest JoinGameRequest = 25;
       private com.richardpianka.chess.network.Contracts.JoinGameRequest joinGameRequest_ = com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinGameRequest, com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder, com.richardpianka.chess.network.Contracts.JoinGameRequestOrBuilder> joinGameRequestBuilder_;
       public boolean hasJoinGameRequest() {
-        return ((bitField0_ & 0x00100000) == 0x00100000);
+        return ((bitField0_ & 0x01000000) == 0x01000000);
       }
       public com.richardpianka.chess.network.Contracts.JoinGameRequest getJoinGameRequest() {
         if (joinGameRequestBuilder_ == null) {
@@ -5019,7 +5639,7 @@ public final class Contracts {
         } else {
           joinGameRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00100000;
+        bitField0_ |= 0x01000000;
         return this;
       }
       public Builder setJoinGameRequest(
@@ -5030,12 +5650,12 @@ public final class Contracts {
         } else {
           joinGameRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00100000;
+        bitField0_ |= 0x01000000;
         return this;
       }
       public Builder mergeJoinGameRequest(com.richardpianka.chess.network.Contracts.JoinGameRequest value) {
         if (joinGameRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00100000) == 0x00100000) &&
+          if (((bitField0_ & 0x01000000) == 0x01000000) &&
               joinGameRequest_ != com.richardpianka.chess.network.Contracts.JoinGameRequest.getDefaultInstance()) {
             joinGameRequest_ =
               com.richardpianka.chess.network.Contracts.JoinGameRequest.newBuilder(joinGameRequest_).mergeFrom(value).buildPartial();
@@ -5046,7 +5666,7 @@ public final class Contracts {
         } else {
           joinGameRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00100000;
+        bitField0_ |= 0x01000000;
         return this;
       }
       public Builder clearJoinGameRequest() {
@@ -5056,11 +5676,11 @@ public final class Contracts {
         } else {
           joinGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00100000);
+        bitField0_ = (bitField0_ & ~0x01000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder getJoinGameRequestBuilder() {
-        bitField0_ |= 0x00100000;
+        bitField0_ |= 0x01000000;
         onChanged();
         return getJoinGameRequestFieldBuilder().getBuilder();
       }
@@ -5085,12 +5705,12 @@ public final class Contracts {
         return joinGameRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.JoinGameResponse JoinGameResponse = 22;
+      // optional .com.richardpianka.chess.network.JoinGameResponse JoinGameResponse = 26;
       private com.richardpianka.chess.network.Contracts.JoinGameResponse joinGameResponse_ = com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.JoinGameResponse, com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder, com.richardpianka.chess.network.Contracts.JoinGameResponseOrBuilder> joinGameResponseBuilder_;
       public boolean hasJoinGameResponse() {
-        return ((bitField0_ & 0x00200000) == 0x00200000);
+        return ((bitField0_ & 0x02000000) == 0x02000000);
       }
       public com.richardpianka.chess.network.Contracts.JoinGameResponse getJoinGameResponse() {
         if (joinGameResponseBuilder_ == null) {
@@ -5109,7 +5729,7 @@ public final class Contracts {
         } else {
           joinGameResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00200000;
+        bitField0_ |= 0x02000000;
         return this;
       }
       public Builder setJoinGameResponse(
@@ -5120,12 +5740,12 @@ public final class Contracts {
         } else {
           joinGameResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00200000;
+        bitField0_ |= 0x02000000;
         return this;
       }
       public Builder mergeJoinGameResponse(com.richardpianka.chess.network.Contracts.JoinGameResponse value) {
         if (joinGameResponseBuilder_ == null) {
-          if (((bitField0_ & 0x00200000) == 0x00200000) &&
+          if (((bitField0_ & 0x02000000) == 0x02000000) &&
               joinGameResponse_ != com.richardpianka.chess.network.Contracts.JoinGameResponse.getDefaultInstance()) {
             joinGameResponse_ =
               com.richardpianka.chess.network.Contracts.JoinGameResponse.newBuilder(joinGameResponse_).mergeFrom(value).buildPartial();
@@ -5136,7 +5756,7 @@ public final class Contracts {
         } else {
           joinGameResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00200000;
+        bitField0_ |= 0x02000000;
         return this;
       }
       public Builder clearJoinGameResponse() {
@@ -5146,11 +5766,11 @@ public final class Contracts {
         } else {
           joinGameResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00200000);
+        bitField0_ = (bitField0_ & ~0x02000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder getJoinGameResponseBuilder() {
-        bitField0_ |= 0x00200000;
+        bitField0_ |= 0x02000000;
         onChanged();
         return getJoinGameResponseFieldBuilder().getBuilder();
       }
@@ -5175,12 +5795,12 @@ public final class Contracts {
         return joinGameResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.LeaveGameRequest LeaveGameRequest = 23;
+      // optional .com.richardpianka.chess.network.LeaveGameRequest LeaveGameRequest = 27;
       private com.richardpianka.chess.network.Contracts.LeaveGameRequest leaveGameRequest_ = com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.LeaveGameRequest, com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder, com.richardpianka.chess.network.Contracts.LeaveGameRequestOrBuilder> leaveGameRequestBuilder_;
       public boolean hasLeaveGameRequest() {
-        return ((bitField0_ & 0x00400000) == 0x00400000);
+        return ((bitField0_ & 0x04000000) == 0x04000000);
       }
       public com.richardpianka.chess.network.Contracts.LeaveGameRequest getLeaveGameRequest() {
         if (leaveGameRequestBuilder_ == null) {
@@ -5199,7 +5819,7 @@ public final class Contracts {
         } else {
           leaveGameRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00400000;
+        bitField0_ |= 0x04000000;
         return this;
       }
       public Builder setLeaveGameRequest(
@@ -5210,12 +5830,12 @@ public final class Contracts {
         } else {
           leaveGameRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00400000;
+        bitField0_ |= 0x04000000;
         return this;
       }
       public Builder mergeLeaveGameRequest(com.richardpianka.chess.network.Contracts.LeaveGameRequest value) {
         if (leaveGameRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00400000) == 0x00400000) &&
+          if (((bitField0_ & 0x04000000) == 0x04000000) &&
               leaveGameRequest_ != com.richardpianka.chess.network.Contracts.LeaveGameRequest.getDefaultInstance()) {
             leaveGameRequest_ =
               com.richardpianka.chess.network.Contracts.LeaveGameRequest.newBuilder(leaveGameRequest_).mergeFrom(value).buildPartial();
@@ -5226,7 +5846,7 @@ public final class Contracts {
         } else {
           leaveGameRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00400000;
+        bitField0_ |= 0x04000000;
         return this;
       }
       public Builder clearLeaveGameRequest() {
@@ -5236,11 +5856,11 @@ public final class Contracts {
         } else {
           leaveGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00400000);
+        bitField0_ = (bitField0_ & ~0x04000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder getLeaveGameRequestBuilder() {
-        bitField0_ |= 0x00400000;
+        bitField0_ |= 0x04000000;
         onChanged();
         return getLeaveGameRequestFieldBuilder().getBuilder();
       }
@@ -5265,12 +5885,12 @@ public final class Contracts {
         return leaveGameRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.StartGameRequest StartGameRequest = 24;
+      // optional .com.richardpianka.chess.network.StartGameRequest StartGameRequest = 28;
       private com.richardpianka.chess.network.Contracts.StartGameRequest startGameRequest_ = com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.StartGameRequest, com.richardpianka.chess.network.Contracts.StartGameRequest.Builder, com.richardpianka.chess.network.Contracts.StartGameRequestOrBuilder> startGameRequestBuilder_;
       public boolean hasStartGameRequest() {
-        return ((bitField0_ & 0x00800000) == 0x00800000);
+        return ((bitField0_ & 0x08000000) == 0x08000000);
       }
       public com.richardpianka.chess.network.Contracts.StartGameRequest getStartGameRequest() {
         if (startGameRequestBuilder_ == null) {
@@ -5289,7 +5909,7 @@ public final class Contracts {
         } else {
           startGameRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00800000;
+        bitField0_ |= 0x08000000;
         return this;
       }
       public Builder setStartGameRequest(
@@ -5300,12 +5920,12 @@ public final class Contracts {
         } else {
           startGameRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00800000;
+        bitField0_ |= 0x08000000;
         return this;
       }
       public Builder mergeStartGameRequest(com.richardpianka.chess.network.Contracts.StartGameRequest value) {
         if (startGameRequestBuilder_ == null) {
-          if (((bitField0_ & 0x00800000) == 0x00800000) &&
+          if (((bitField0_ & 0x08000000) == 0x08000000) &&
               startGameRequest_ != com.richardpianka.chess.network.Contracts.StartGameRequest.getDefaultInstance()) {
             startGameRequest_ =
               com.richardpianka.chess.network.Contracts.StartGameRequest.newBuilder(startGameRequest_).mergeFrom(value).buildPartial();
@@ -5316,7 +5936,7 @@ public final class Contracts {
         } else {
           startGameRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00800000;
+        bitField0_ |= 0x08000000;
         return this;
       }
       public Builder clearStartGameRequest() {
@@ -5326,11 +5946,11 @@ public final class Contracts {
         } else {
           startGameRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00800000);
+        bitField0_ = (bitField0_ & ~0x08000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.StartGameRequest.Builder getStartGameRequestBuilder() {
-        bitField0_ |= 0x00800000;
+        bitField0_ |= 0x08000000;
         onChanged();
         return getStartGameRequestFieldBuilder().getBuilder();
       }
@@ -5355,12 +5975,12 @@ public final class Contracts {
         return startGameRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.StartGameResponse StartGameResponse = 25;
+      // optional .com.richardpianka.chess.network.StartGameResponse StartGameResponse = 29;
       private com.richardpianka.chess.network.Contracts.StartGameResponse startGameResponse_ = com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.StartGameResponse, com.richardpianka.chess.network.Contracts.StartGameResponse.Builder, com.richardpianka.chess.network.Contracts.StartGameResponseOrBuilder> startGameResponseBuilder_;
       public boolean hasStartGameResponse() {
-        return ((bitField0_ & 0x01000000) == 0x01000000);
+        return ((bitField0_ & 0x10000000) == 0x10000000);
       }
       public com.richardpianka.chess.network.Contracts.StartGameResponse getStartGameResponse() {
         if (startGameResponseBuilder_ == null) {
@@ -5379,7 +5999,7 @@ public final class Contracts {
         } else {
           startGameResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x01000000;
+        bitField0_ |= 0x10000000;
         return this;
       }
       public Builder setStartGameResponse(
@@ -5390,12 +6010,12 @@ public final class Contracts {
         } else {
           startGameResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x01000000;
+        bitField0_ |= 0x10000000;
         return this;
       }
       public Builder mergeStartGameResponse(com.richardpianka.chess.network.Contracts.StartGameResponse value) {
         if (startGameResponseBuilder_ == null) {
-          if (((bitField0_ & 0x01000000) == 0x01000000) &&
+          if (((bitField0_ & 0x10000000) == 0x10000000) &&
               startGameResponse_ != com.richardpianka.chess.network.Contracts.StartGameResponse.getDefaultInstance()) {
             startGameResponse_ =
               com.richardpianka.chess.network.Contracts.StartGameResponse.newBuilder(startGameResponse_).mergeFrom(value).buildPartial();
@@ -5406,7 +6026,7 @@ public final class Contracts {
         } else {
           startGameResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x01000000;
+        bitField0_ |= 0x10000000;
         return this;
       }
       public Builder clearStartGameResponse() {
@@ -5416,11 +6036,11 @@ public final class Contracts {
         } else {
           startGameResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x01000000);
+        bitField0_ = (bitField0_ & ~0x10000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.StartGameResponse.Builder getStartGameResponseBuilder() {
-        bitField0_ |= 0x01000000;
+        bitField0_ |= 0x10000000;
         onChanged();
         return getStartGameResponseFieldBuilder().getBuilder();
       }
@@ -5445,12 +6065,12 @@ public final class Contracts {
         return startGameResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.GameStartedEvent GameStartedEvent = 26;
+      // optional .com.richardpianka.chess.network.GameStartedEvent GameStartedEvent = 30;
       private com.richardpianka.chess.network.Contracts.GameStartedEvent gameStartedEvent_ = com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.GameStartedEvent, com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder, com.richardpianka.chess.network.Contracts.GameStartedEventOrBuilder> gameStartedEventBuilder_;
       public boolean hasGameStartedEvent() {
-        return ((bitField0_ & 0x02000000) == 0x02000000);
+        return ((bitField0_ & 0x20000000) == 0x20000000);
       }
       public com.richardpianka.chess.network.Contracts.GameStartedEvent getGameStartedEvent() {
         if (gameStartedEventBuilder_ == null) {
@@ -5469,7 +6089,7 @@ public final class Contracts {
         } else {
           gameStartedEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x02000000;
+        bitField0_ |= 0x20000000;
         return this;
       }
       public Builder setGameStartedEvent(
@@ -5480,12 +6100,12 @@ public final class Contracts {
         } else {
           gameStartedEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x02000000;
+        bitField0_ |= 0x20000000;
         return this;
       }
       public Builder mergeGameStartedEvent(com.richardpianka.chess.network.Contracts.GameStartedEvent value) {
         if (gameStartedEventBuilder_ == null) {
-          if (((bitField0_ & 0x02000000) == 0x02000000) &&
+          if (((bitField0_ & 0x20000000) == 0x20000000) &&
               gameStartedEvent_ != com.richardpianka.chess.network.Contracts.GameStartedEvent.getDefaultInstance()) {
             gameStartedEvent_ =
               com.richardpianka.chess.network.Contracts.GameStartedEvent.newBuilder(gameStartedEvent_).mergeFrom(value).buildPartial();
@@ -5496,7 +6116,7 @@ public final class Contracts {
         } else {
           gameStartedEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x02000000;
+        bitField0_ |= 0x20000000;
         return this;
       }
       public Builder clearGameStartedEvent() {
@@ -5506,11 +6126,11 @@ public final class Contracts {
         } else {
           gameStartedEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x02000000);
+        bitField0_ = (bitField0_ & ~0x20000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder getGameStartedEventBuilder() {
-        bitField0_ |= 0x02000000;
+        bitField0_ |= 0x20000000;
         onChanged();
         return getGameStartedEventFieldBuilder().getBuilder();
       }
@@ -5535,12 +6155,12 @@ public final class Contracts {
         return gameStartedEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.MovePieceRequest MovePieceRequest = 27;
+      // optional .com.richardpianka.chess.network.MovePieceRequest MovePieceRequest = 31;
       private com.richardpianka.chess.network.Contracts.MovePieceRequest movePieceRequest_ = com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.MovePieceRequest, com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.MovePieceRequestOrBuilder> movePieceRequestBuilder_;
       public boolean hasMovePieceRequest() {
-        return ((bitField0_ & 0x04000000) == 0x04000000);
+        return ((bitField0_ & 0x40000000) == 0x40000000);
       }
       public com.richardpianka.chess.network.Contracts.MovePieceRequest getMovePieceRequest() {
         if (movePieceRequestBuilder_ == null) {
@@ -5559,7 +6179,7 @@ public final class Contracts {
         } else {
           movePieceRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x04000000;
+        bitField0_ |= 0x40000000;
         return this;
       }
       public Builder setMovePieceRequest(
@@ -5570,12 +6190,12 @@ public final class Contracts {
         } else {
           movePieceRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x04000000;
+        bitField0_ |= 0x40000000;
         return this;
       }
       public Builder mergeMovePieceRequest(com.richardpianka.chess.network.Contracts.MovePieceRequest value) {
         if (movePieceRequestBuilder_ == null) {
-          if (((bitField0_ & 0x04000000) == 0x04000000) &&
+          if (((bitField0_ & 0x40000000) == 0x40000000) &&
               movePieceRequest_ != com.richardpianka.chess.network.Contracts.MovePieceRequest.getDefaultInstance()) {
             movePieceRequest_ =
               com.richardpianka.chess.network.Contracts.MovePieceRequest.newBuilder(movePieceRequest_).mergeFrom(value).buildPartial();
@@ -5586,7 +6206,7 @@ public final class Contracts {
         } else {
           movePieceRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x04000000;
+        bitField0_ |= 0x40000000;
         return this;
       }
       public Builder clearMovePieceRequest() {
@@ -5596,11 +6216,11 @@ public final class Contracts {
         } else {
           movePieceRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x04000000);
+        bitField0_ = (bitField0_ & ~0x40000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder getMovePieceRequestBuilder() {
-        bitField0_ |= 0x04000000;
+        bitField0_ |= 0x40000000;
         onChanged();
         return getMovePieceRequestFieldBuilder().getBuilder();
       }
@@ -5625,12 +6245,12 @@ public final class Contracts {
         return movePieceRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.MovePieceResponse MovePieceResponse = 28;
+      // optional .com.richardpianka.chess.network.MovePieceResponse MovePieceResponse = 32;
       private com.richardpianka.chess.network.Contracts.MovePieceResponse movePieceResponse_ = com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.MovePieceResponse, com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.MovePieceResponseOrBuilder> movePieceResponseBuilder_;
       public boolean hasMovePieceResponse() {
-        return ((bitField0_ & 0x08000000) == 0x08000000);
+        return ((bitField0_ & 0x80000000) == 0x80000000);
       }
       public com.richardpianka.chess.network.Contracts.MovePieceResponse getMovePieceResponse() {
         if (movePieceResponseBuilder_ == null) {
@@ -5649,7 +6269,7 @@ public final class Contracts {
         } else {
           movePieceResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x08000000;
+        bitField0_ |= 0x80000000;
         return this;
       }
       public Builder setMovePieceResponse(
@@ -5660,12 +6280,12 @@ public final class Contracts {
         } else {
           movePieceResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x08000000;
+        bitField0_ |= 0x80000000;
         return this;
       }
       public Builder mergeMovePieceResponse(com.richardpianka.chess.network.Contracts.MovePieceResponse value) {
         if (movePieceResponseBuilder_ == null) {
-          if (((bitField0_ & 0x08000000) == 0x08000000) &&
+          if (((bitField0_ & 0x80000000) == 0x80000000) &&
               movePieceResponse_ != com.richardpianka.chess.network.Contracts.MovePieceResponse.getDefaultInstance()) {
             movePieceResponse_ =
               com.richardpianka.chess.network.Contracts.MovePieceResponse.newBuilder(movePieceResponse_).mergeFrom(value).buildPartial();
@@ -5676,7 +6296,7 @@ public final class Contracts {
         } else {
           movePieceResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x08000000;
+        bitField0_ |= 0x80000000;
         return this;
       }
       public Builder clearMovePieceResponse() {
@@ -5686,11 +6306,11 @@ public final class Contracts {
         } else {
           movePieceResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x08000000);
+        bitField0_ = (bitField0_ & ~0x80000000);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder getMovePieceResponseBuilder() {
-        bitField0_ |= 0x08000000;
+        bitField0_ |= 0x80000000;
         onChanged();
         return getMovePieceResponseFieldBuilder().getBuilder();
       }
@@ -5715,12 +6335,12 @@ public final class Contracts {
         return movePieceResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.MovePieceEvent MovePieceEvent = 29;
+      // optional .com.richardpianka.chess.network.MovePieceEvent MovePieceEvent = 33;
       private com.richardpianka.chess.network.Contracts.MovePieceEvent movePieceEvent_ = com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.MovePieceEvent, com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.MovePieceEventOrBuilder> movePieceEventBuilder_;
       public boolean hasMovePieceEvent() {
-        return ((bitField0_ & 0x10000000) == 0x10000000);
+        return ((bitField1_ & 0x00000001) == 0x00000001);
       }
       public com.richardpianka.chess.network.Contracts.MovePieceEvent getMovePieceEvent() {
         if (movePieceEventBuilder_ == null) {
@@ -5739,7 +6359,7 @@ public final class Contracts {
         } else {
           movePieceEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x10000000;
+        bitField1_ |= 0x00000001;
         return this;
       }
       public Builder setMovePieceEvent(
@@ -5750,12 +6370,12 @@ public final class Contracts {
         } else {
           movePieceEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x10000000;
+        bitField1_ |= 0x00000001;
         return this;
       }
       public Builder mergeMovePieceEvent(com.richardpianka.chess.network.Contracts.MovePieceEvent value) {
         if (movePieceEventBuilder_ == null) {
-          if (((bitField0_ & 0x10000000) == 0x10000000) &&
+          if (((bitField1_ & 0x00000001) == 0x00000001) &&
               movePieceEvent_ != com.richardpianka.chess.network.Contracts.MovePieceEvent.getDefaultInstance()) {
             movePieceEvent_ =
               com.richardpianka.chess.network.Contracts.MovePieceEvent.newBuilder(movePieceEvent_).mergeFrom(value).buildPartial();
@@ -5766,7 +6386,7 @@ public final class Contracts {
         } else {
           movePieceEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x10000000;
+        bitField1_ |= 0x00000001;
         return this;
       }
       public Builder clearMovePieceEvent() {
@@ -5776,11 +6396,11 @@ public final class Contracts {
         } else {
           movePieceEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x10000000);
+        bitField1_ = (bitField1_ & ~0x00000001);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder getMovePieceEventBuilder() {
-        bitField0_ |= 0x10000000;
+        bitField1_ |= 0x00000001;
         onChanged();
         return getMovePieceEventFieldBuilder().getBuilder();
       }
@@ -5805,12 +6425,12 @@ public final class Contracts {
         return movePieceEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.SpecialMovePieceRequest SpecialMovePieceRequest = 30;
+      // optional .com.richardpianka.chess.network.SpecialMovePieceRequest SpecialMovePieceRequest = 34;
       private com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest specialMovePieceRequest_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceRequestOrBuilder> specialMovePieceRequestBuilder_;
       public boolean hasSpecialMovePieceRequest() {
-        return ((bitField0_ & 0x20000000) == 0x20000000);
+        return ((bitField1_ & 0x00000002) == 0x00000002);
       }
       public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest getSpecialMovePieceRequest() {
         if (specialMovePieceRequestBuilder_ == null) {
@@ -5829,7 +6449,7 @@ public final class Contracts {
         } else {
           specialMovePieceRequestBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x20000000;
+        bitField1_ |= 0x00000002;
         return this;
       }
       public Builder setSpecialMovePieceRequest(
@@ -5840,12 +6460,12 @@ public final class Contracts {
         } else {
           specialMovePieceRequestBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x20000000;
+        bitField1_ |= 0x00000002;
         return this;
       }
       public Builder mergeSpecialMovePieceRequest(com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest value) {
         if (specialMovePieceRequestBuilder_ == null) {
-          if (((bitField0_ & 0x20000000) == 0x20000000) &&
+          if (((bitField1_ & 0x00000002) == 0x00000002) &&
               specialMovePieceRequest_ != com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.getDefaultInstance()) {
             specialMovePieceRequest_ =
               com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.newBuilder(specialMovePieceRequest_).mergeFrom(value).buildPartial();
@@ -5856,7 +6476,7 @@ public final class Contracts {
         } else {
           specialMovePieceRequestBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x20000000;
+        bitField1_ |= 0x00000002;
         return this;
       }
       public Builder clearSpecialMovePieceRequest() {
@@ -5866,11 +6486,11 @@ public final class Contracts {
         } else {
           specialMovePieceRequestBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x20000000);
+        bitField1_ = (bitField1_ & ~0x00000002);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder getSpecialMovePieceRequestBuilder() {
-        bitField0_ |= 0x20000000;
+        bitField1_ |= 0x00000002;
         onChanged();
         return getSpecialMovePieceRequestFieldBuilder().getBuilder();
       }
@@ -5895,12 +6515,12 @@ public final class Contracts {
         return specialMovePieceRequestBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.SpecialMovePieceResponse SpecialMovePieceResponse = 31;
+      // optional .com.richardpianka.chess.network.SpecialMovePieceResponse SpecialMovePieceResponse = 35;
       private com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse specialMovePieceResponse_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceResponseOrBuilder> specialMovePieceResponseBuilder_;
       public boolean hasSpecialMovePieceResponse() {
-        return ((bitField0_ & 0x40000000) == 0x40000000);
+        return ((bitField1_ & 0x00000004) == 0x00000004);
       }
       public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse getSpecialMovePieceResponse() {
         if (specialMovePieceResponseBuilder_ == null) {
@@ -5919,7 +6539,7 @@ public final class Contracts {
         } else {
           specialMovePieceResponseBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x40000000;
+        bitField1_ |= 0x00000004;
         return this;
       }
       public Builder setSpecialMovePieceResponse(
@@ -5930,12 +6550,12 @@ public final class Contracts {
         } else {
           specialMovePieceResponseBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x40000000;
+        bitField1_ |= 0x00000004;
         return this;
       }
       public Builder mergeSpecialMovePieceResponse(com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse value) {
         if (specialMovePieceResponseBuilder_ == null) {
-          if (((bitField0_ & 0x40000000) == 0x40000000) &&
+          if (((bitField1_ & 0x00000004) == 0x00000004) &&
               specialMovePieceResponse_ != com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.getDefaultInstance()) {
             specialMovePieceResponse_ =
               com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.newBuilder(specialMovePieceResponse_).mergeFrom(value).buildPartial();
@@ -5946,7 +6566,7 @@ public final class Contracts {
         } else {
           specialMovePieceResponseBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x40000000;
+        bitField1_ |= 0x00000004;
         return this;
       }
       public Builder clearSpecialMovePieceResponse() {
@@ -5956,11 +6576,11 @@ public final class Contracts {
         } else {
           specialMovePieceResponseBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x40000000);
+        bitField1_ = (bitField1_ & ~0x00000004);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder getSpecialMovePieceResponseBuilder() {
-        bitField0_ |= 0x40000000;
+        bitField1_ |= 0x00000004;
         onChanged();
         return getSpecialMovePieceResponseFieldBuilder().getBuilder();
       }
@@ -5985,12 +6605,12 @@ public final class Contracts {
         return specialMovePieceResponseBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.SpecialMovePieceEvent SpecialMovePieceEvent = 32;
+      // optional .com.richardpianka.chess.network.SpecialMovePieceEvent SpecialMovePieceEvent = 36;
       private com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent specialMovePieceEvent_ = com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent, com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder, com.richardpianka.chess.network.Contracts.SpecialMovePieceEventOrBuilder> specialMovePieceEventBuilder_;
       public boolean hasSpecialMovePieceEvent() {
-        return ((bitField0_ & 0x80000000) == 0x80000000);
+        return ((bitField1_ & 0x00000008) == 0x00000008);
       }
       public com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent getSpecialMovePieceEvent() {
         if (specialMovePieceEventBuilder_ == null) {
@@ -6009,7 +6629,7 @@ public final class Contracts {
         } else {
           specialMovePieceEventBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x80000000;
+        bitField1_ |= 0x00000008;
         return this;
       }
       public Builder setSpecialMovePieceEvent(
@@ -6020,12 +6640,12 @@ public final class Contracts {
         } else {
           specialMovePieceEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x80000000;
+        bitField1_ |= 0x00000008;
         return this;
       }
       public Builder mergeSpecialMovePieceEvent(com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent value) {
         if (specialMovePieceEventBuilder_ == null) {
-          if (((bitField0_ & 0x80000000) == 0x80000000) &&
+          if (((bitField1_ & 0x00000008) == 0x00000008) &&
               specialMovePieceEvent_ != com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.getDefaultInstance()) {
             specialMovePieceEvent_ =
               com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.newBuilder(specialMovePieceEvent_).mergeFrom(value).buildPartial();
@@ -6036,7 +6656,7 @@ public final class Contracts {
         } else {
           specialMovePieceEventBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x80000000;
+        bitField1_ |= 0x00000008;
         return this;
       }
       public Builder clearSpecialMovePieceEvent() {
@@ -6046,11 +6666,11 @@ public final class Contracts {
         } else {
           specialMovePieceEventBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x80000000);
+        bitField1_ = (bitField1_ & ~0x00000008);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder getSpecialMovePieceEventBuilder() {
-        bitField0_ |= 0x80000000;
+        bitField1_ |= 0x00000008;
         onChanged();
         return getSpecialMovePieceEventFieldBuilder().getBuilder();
       }
@@ -6075,12 +6695,12 @@ public final class Contracts {
         return specialMovePieceEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.GameStatusEvent GameStatusEvent = 34;
+      // optional .com.richardpianka.chess.network.GameStatusEvent GameStatusEvent = 37;
       private com.richardpianka.chess.network.Contracts.GameStatusEvent gameStatusEvent_ = com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.GameStatusEvent, com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder, com.richardpianka.chess.network.Contracts.GameStatusEventOrBuilder> gameStatusEventBuilder_;
       public boolean hasGameStatusEvent() {
-        return ((bitField1_ & 0x00000001) == 0x00000001);
+        return ((bitField1_ & 0x00000010) == 0x00000010);
       }
       public com.richardpianka.chess.network.Contracts.GameStatusEvent getGameStatusEvent() {
         if (gameStatusEventBuilder_ == null) {
@@ -6099,7 +6719,7 @@ public final class Contracts {
         } else {
           gameStatusEventBuilder_.setMessage(value);
         }
-        bitField1_ |= 0x00000001;
+        bitField1_ |= 0x00000010;
         return this;
       }
       public Builder setGameStatusEvent(
@@ -6110,12 +6730,12 @@ public final class Contracts {
         } else {
           gameStatusEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField1_ |= 0x00000001;
+        bitField1_ |= 0x00000010;
         return this;
       }
       public Builder mergeGameStatusEvent(com.richardpianka.chess.network.Contracts.GameStatusEvent value) {
         if (gameStatusEventBuilder_ == null) {
-          if (((bitField1_ & 0x00000001) == 0x00000001) &&
+          if (((bitField1_ & 0x00000010) == 0x00000010) &&
               gameStatusEvent_ != com.richardpianka.chess.network.Contracts.GameStatusEvent.getDefaultInstance()) {
             gameStatusEvent_ =
               com.richardpianka.chess.network.Contracts.GameStatusEvent.newBuilder(gameStatusEvent_).mergeFrom(value).buildPartial();
@@ -6126,7 +6746,7 @@ public final class Contracts {
         } else {
           gameStatusEventBuilder_.mergeFrom(value);
         }
-        bitField1_ |= 0x00000001;
+        bitField1_ |= 0x00000010;
         return this;
       }
       public Builder clearGameStatusEvent() {
@@ -6136,11 +6756,11 @@ public final class Contracts {
         } else {
           gameStatusEventBuilder_.clear();
         }
-        bitField1_ = (bitField1_ & ~0x00000001);
+        bitField1_ = (bitField1_ & ~0x00000010);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder getGameStatusEventBuilder() {
-        bitField1_ |= 0x00000001;
+        bitField1_ |= 0x00000010;
         onChanged();
         return getGameStatusEventFieldBuilder().getBuilder();
       }
@@ -6165,12 +6785,12 @@ public final class Contracts {
         return gameStatusEventBuilder_;
       }
       
-      // optional .com.richardpianka.chess.network.TimeLeftEvent TimeLeftEvent = 35;
+      // optional .com.richardpianka.chess.network.TimeLeftEvent TimeLeftEvent = 38;
       private com.richardpianka.chess.network.Contracts.TimeLeftEvent timeLeftEvent_ = com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.TimeLeftEvent, com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder, com.richardpianka.chess.network.Contracts.TimeLeftEventOrBuilder> timeLeftEventBuilder_;
       public boolean hasTimeLeftEvent() {
-        return ((bitField1_ & 0x00000002) == 0x00000002);
+        return ((bitField1_ & 0x00000020) == 0x00000020);
       }
       public com.richardpianka.chess.network.Contracts.TimeLeftEvent getTimeLeftEvent() {
         if (timeLeftEventBuilder_ == null) {
@@ -6189,7 +6809,7 @@ public final class Contracts {
         } else {
           timeLeftEventBuilder_.setMessage(value);
         }
-        bitField1_ |= 0x00000002;
+        bitField1_ |= 0x00000020;
         return this;
       }
       public Builder setTimeLeftEvent(
@@ -6200,12 +6820,12 @@ public final class Contracts {
         } else {
           timeLeftEventBuilder_.setMessage(builderForValue.build());
         }
-        bitField1_ |= 0x00000002;
+        bitField1_ |= 0x00000020;
         return this;
       }
       public Builder mergeTimeLeftEvent(com.richardpianka.chess.network.Contracts.TimeLeftEvent value) {
         if (timeLeftEventBuilder_ == null) {
-          if (((bitField1_ & 0x00000002) == 0x00000002) &&
+          if (((bitField1_ & 0x00000020) == 0x00000020) &&
               timeLeftEvent_ != com.richardpianka.chess.network.Contracts.TimeLeftEvent.getDefaultInstance()) {
             timeLeftEvent_ =
               com.richardpianka.chess.network.Contracts.TimeLeftEvent.newBuilder(timeLeftEvent_).mergeFrom(value).buildPartial();
@@ -6216,7 +6836,7 @@ public final class Contracts {
         } else {
           timeLeftEventBuilder_.mergeFrom(value);
         }
-        bitField1_ |= 0x00000002;
+        bitField1_ |= 0x00000020;
         return this;
       }
       public Builder clearTimeLeftEvent() {
@@ -6226,11 +6846,11 @@ public final class Contracts {
         } else {
           timeLeftEventBuilder_.clear();
         }
-        bitField1_ = (bitField1_ & ~0x00000002);
+        bitField1_ = (bitField1_ & ~0x00000020);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.TimeLeftEvent.Builder getTimeLeftEventBuilder() {
-        bitField1_ |= 0x00000002;
+        bitField1_ |= 0x00000020;
         onChanged();
         return getTimeLeftEventFieldBuilder().getBuilder();
       }
@@ -10439,14 +11059,14 @@ public final class Contracts {
     boolean hasName();
     String getName();
     
-    // required .com.richardpianka.chess.network.UserFlags Flags = 2;
-    boolean hasFlags();
-    com.richardpianka.chess.network.Contracts.UserFlags getFlags();
-    
-    // required .com.richardpianka.chess.network.Record Record = 3;
+    // required .com.richardpianka.chess.network.Record Record = 2;
     boolean hasRecord();
     com.richardpianka.chess.network.Contracts.Record getRecord();
     com.richardpianka.chess.network.Contracts.RecordOrBuilder getRecordOrBuilder();
+    
+    // optional .com.richardpianka.chess.network.UserFlags Flags = 3;
+    boolean hasFlags();
+    com.richardpianka.chess.network.Contracts.UserFlags getFlags();
   }
   public static final class User extends
       com.google.protobuf.GeneratedMessage
@@ -10509,21 +11129,11 @@ public final class Contracts {
       }
     }
     
-    // required .com.richardpianka.chess.network.UserFlags Flags = 2;
-    public static final int FLAGS_FIELD_NUMBER = 2;
-    private com.richardpianka.chess.network.Contracts.UserFlags flags_;
-    public boolean hasFlags() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public com.richardpianka.chess.network.Contracts.UserFlags getFlags() {
-      return flags_;
-    }
-    
-    // required .com.richardpianka.chess.network.Record Record = 3;
-    public static final int RECORD_FIELD_NUMBER = 3;
+    // required .com.richardpianka.chess.network.Record Record = 2;
+    public static final int RECORD_FIELD_NUMBER = 2;
     private com.richardpianka.chess.network.Contracts.Record record_;
     public boolean hasRecord() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+      return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     public com.richardpianka.chess.network.Contracts.Record getRecord() {
       return record_;
@@ -10532,10 +11142,20 @@ public final class Contracts {
       return record_;
     }
     
+    // optional .com.richardpianka.chess.network.UserFlags Flags = 3;
+    public static final int FLAGS_FIELD_NUMBER = 3;
+    private com.richardpianka.chess.network.Contracts.UserFlags flags_;
+    public boolean hasFlags() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public com.richardpianka.chess.network.Contracts.UserFlags getFlags() {
+      return flags_;
+    }
+    
     private void initFields() {
       name_ = "";
-      flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
       record_ = com.richardpianka.chess.network.Contracts.Record.getDefaultInstance();
+      flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -10543,10 +11163,6 @@ public final class Contracts {
       if (isInitialized != -1) return isInitialized == 1;
       
       if (!hasName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasFlags()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -10569,10 +11185,10 @@ public final class Contracts {
         output.writeBytes(1, getNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeEnum(2, flags_.getNumber());
+        output.writeMessage(2, record_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(3, record_);
+        output.writeEnum(3, flags_.getNumber());
       }
       getUnknownFields().writeTo(output);
     }
@@ -10589,11 +11205,11 @@ public final class Contracts {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, flags_.getNumber());
+          .computeMessageSize(2, record_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, record_);
+          .computeEnumSize(3, flags_.getNumber());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -10722,13 +11338,13 @@ public final class Contracts {
         super.clear();
         name_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
-        bitField0_ = (bitField0_ & ~0x00000002);
         if (recordBuilder_ == null) {
           record_ = com.richardpianka.chess.network.Contracts.Record.getDefaultInstance();
         } else {
           recordBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
@@ -10775,15 +11391,15 @@ public final class Contracts {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.flags_ = flags_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
         if (recordBuilder_ == null) {
           result.record_ = record_;
         } else {
           result.record_ = recordBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.flags_ = flags_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -10803,11 +11419,11 @@ public final class Contracts {
         if (other.hasName()) {
           setName(other.getName());
         }
-        if (other.hasFlags()) {
-          setFlags(other.getFlags());
-        }
         if (other.hasRecord()) {
           mergeRecord(other.getRecord());
+        }
+        if (other.hasFlags()) {
+          setFlags(other.getFlags());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -10815,10 +11431,6 @@ public final class Contracts {
       
       public final boolean isInitialized() {
         if (!hasName()) {
-          
-          return false;
-        }
-        if (!hasFlags()) {
           
           return false;
         }
@@ -10861,24 +11473,24 @@ public final class Contracts {
               name_ = input.readBytes();
               break;
             }
-            case 16: {
-              int rawValue = input.readEnum();
-              com.richardpianka.chess.network.Contracts.UserFlags value = com.richardpianka.chess.network.Contracts.UserFlags.valueOf(rawValue);
-              if (value == null) {
-                unknownFields.mergeVarintField(2, rawValue);
-              } else {
-                bitField0_ |= 0x00000002;
-                flags_ = value;
-              }
-              break;
-            }
-            case 26: {
+            case 18: {
               com.richardpianka.chess.network.Contracts.Record.Builder subBuilder = com.richardpianka.chess.network.Contracts.Record.newBuilder();
               if (hasRecord()) {
                 subBuilder.mergeFrom(getRecord());
               }
               input.readMessage(subBuilder, extensionRegistry);
               setRecord(subBuilder.buildPartial());
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+              com.richardpianka.chess.network.Contracts.UserFlags value = com.richardpianka.chess.network.Contracts.UserFlags.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(3, rawValue);
+              } else {
+                bitField0_ |= 0x00000004;
+                flags_ = value;
+              }
               break;
             }
           }
@@ -10923,36 +11535,12 @@ public final class Contracts {
         onChanged();
       }
       
-      // required .com.richardpianka.chess.network.UserFlags Flags = 2;
-      private com.richardpianka.chess.network.Contracts.UserFlags flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
-      public boolean hasFlags() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public com.richardpianka.chess.network.Contracts.UserFlags getFlags() {
-        return flags_;
-      }
-      public Builder setFlags(com.richardpianka.chess.network.Contracts.UserFlags value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        bitField0_ |= 0x00000002;
-        flags_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearFlags() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
-        onChanged();
-        return this;
-      }
-      
-      // required .com.richardpianka.chess.network.Record Record = 3;
+      // required .com.richardpianka.chess.network.Record Record = 2;
       private com.richardpianka.chess.network.Contracts.Record record_ = com.richardpianka.chess.network.Contracts.Record.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.richardpianka.chess.network.Contracts.Record, com.richardpianka.chess.network.Contracts.Record.Builder, com.richardpianka.chess.network.Contracts.RecordOrBuilder> recordBuilder_;
       public boolean hasRecord() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public com.richardpianka.chess.network.Contracts.Record getRecord() {
         if (recordBuilder_ == null) {
@@ -10971,7 +11559,7 @@ public final class Contracts {
         } else {
           recordBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000002;
         return this;
       }
       public Builder setRecord(
@@ -10982,12 +11570,12 @@ public final class Contracts {
         } else {
           recordBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000002;
         return this;
       }
       public Builder mergeRecord(com.richardpianka.chess.network.Contracts.Record value) {
         if (recordBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
               record_ != com.richardpianka.chess.network.Contracts.Record.getDefaultInstance()) {
             record_ =
               com.richardpianka.chess.network.Contracts.Record.newBuilder(record_).mergeFrom(value).buildPartial();
@@ -10998,7 +11586,7 @@ public final class Contracts {
         } else {
           recordBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000002;
         return this;
       }
       public Builder clearRecord() {
@@ -11008,11 +11596,11 @@ public final class Contracts {
         } else {
           recordBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
       public com.richardpianka.chess.network.Contracts.Record.Builder getRecordBuilder() {
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000002;
         onChanged();
         return getRecordFieldBuilder().getBuilder();
       }
@@ -11035,6 +11623,30 @@ public final class Contracts {
           record_ = null;
         }
         return recordBuilder_;
+      }
+      
+      // optional .com.richardpianka.chess.network.UserFlags Flags = 3;
+      private com.richardpianka.chess.network.Contracts.UserFlags flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
+      public boolean hasFlags() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public com.richardpianka.chess.network.Contracts.UserFlags getFlags() {
+        return flags_;
+      }
+      public Builder setFlags(com.richardpianka.chess.network.Contracts.UserFlags value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000004;
+        flags_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearFlags() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        flags_ = com.richardpianka.chess.network.Contracts.UserFlags.Pedestrian;
+        onChanged();
+        return this;
       }
       
       // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.User)
@@ -14613,6 +15225,1976 @@ public final class Contracts {
     }
     
     // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.IdentifyResponse)
+  }
+  
+  public interface CreateAccountRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string Username = 1;
+    boolean hasUsername();
+    String getUsername();
+    
+    // required string Password = 2;
+    boolean hasPassword();
+    String getPassword();
+  }
+  public static final class CreateAccountRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements CreateAccountRequestOrBuilder {
+    // Use CreateAccountRequest.newBuilder() to construct.
+    private CreateAccountRequest(CreateAccountRequest.Builder builder) {
+      super(builder);
+    }
+    private CreateAccountRequest(boolean noInit) {}
+    
+    private static final CreateAccountRequest defaultInstance;
+    public static CreateAccountRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public CreateAccountRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountRequest_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string Username = 1;
+    public static final int USERNAME_FIELD_NUMBER = 1;
+    private java.lang.Object username_;
+    public boolean hasUsername() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          username_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getUsernameBytes() {
+      java.lang.Object ref = username_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        username_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string Password = 2;
+    public static final int PASSWORD_FIELD_NUMBER = 2;
+    private java.lang.Object password_;
+    public boolean hasPassword() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getPassword() {
+      java.lang.Object ref = password_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          password_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getPasswordBytes() {
+      java.lang.Object ref = password_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        password_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      username_ = "";
+      password_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasUsername()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPassword()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getUsernameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getPasswordBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getUsernameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getPasswordBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.CreateAccountRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder builder = new com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.chess.network.Contracts.CreateAccountRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.chess.network.Contracts.CreateAccountRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        username_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        password_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequest getDefaultInstanceForType() {
+        return com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequest build() {
+        com.richardpianka.chess.network.Contracts.CreateAccountRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.chess.network.Contracts.CreateAccountRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.chess.network.Contracts.CreateAccountRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequest buildPartial() {
+        com.richardpianka.chess.network.Contracts.CreateAccountRequest result = new com.richardpianka.chess.network.Contracts.CreateAccountRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.username_ = username_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.password_ = password_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.chess.network.Contracts.CreateAccountRequest) {
+          return mergeFrom((com.richardpianka.chess.network.Contracts.CreateAccountRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.CreateAccountRequest other) {
+        if (other == com.richardpianka.chess.network.Contracts.CreateAccountRequest.getDefaultInstance()) return this;
+        if (other.hasUsername()) {
+          setUsername(other.getUsername());
+        }
+        if (other.hasPassword()) {
+          setPassword(other.getPassword());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasUsername()) {
+          
+          return false;
+        }
+        if (!hasPassword()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              username_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              password_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string Username = 1;
+      private java.lang.Object username_ = "";
+      public boolean hasUsername() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          username_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setUsername(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        username_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearUsername() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        username_ = getDefaultInstance().getUsername();
+        onChanged();
+        return this;
+      }
+      void setUsername(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        username_ = value;
+        onChanged();
+      }
+      
+      // required string Password = 2;
+      private java.lang.Object password_ = "";
+      public boolean hasPassword() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getPassword() {
+        java.lang.Object ref = password_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          password_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setPassword(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        password_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearPassword() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        password_ = getDefaultInstance().getPassword();
+        onChanged();
+        return this;
+      }
+      void setPassword(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        password_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.CreateAccountRequest)
+    }
+    
+    static {
+      defaultInstance = new CreateAccountRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.CreateAccountRequest)
+  }
+  
+  public interface CreateAccountResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.chess.network.Result Result = 1;
+    boolean hasResult();
+    com.richardpianka.chess.network.Contracts.Result getResult();
+    
+    // optional string Message = 2;
+    boolean hasMessage();
+    String getMessage();
+  }
+  public static final class CreateAccountResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements CreateAccountResponseOrBuilder {
+    // Use CreateAccountResponse.newBuilder() to construct.
+    private CreateAccountResponse(CreateAccountResponse.Builder builder) {
+      super(builder);
+    }
+    private CreateAccountResponse(boolean noInit) {}
+    
+    private static final CreateAccountResponse defaultInstance;
+    public static CreateAccountResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public CreateAccountResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountResponse_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.chess.network.Result Result = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private com.richardpianka.chess.network.Contracts.Result result_;
+    public boolean hasResult() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.chess.network.Contracts.Result getResult() {
+      return result_;
+    }
+    
+    // optional string Message = 2;
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private java.lang.Object message_;
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+      message_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, result_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getMessageBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, result_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getMessageBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.CreateAccountResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder builder = new com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.chess.network.Contracts.CreateAccountResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_CreateAccountResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.chess.network.Contracts.CreateAccountResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponse getDefaultInstanceForType() {
+        return com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponse build() {
+        com.richardpianka.chess.network.Contracts.CreateAccountResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.chess.network.Contracts.CreateAccountResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.chess.network.Contracts.CreateAccountResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponse buildPartial() {
+        com.richardpianka.chess.network.Contracts.CreateAccountResponse result = new com.richardpianka.chess.network.Contracts.CreateAccountResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.result_ = result_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.message_ = message_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.chess.network.Contracts.CreateAccountResponse) {
+          return mergeFrom((com.richardpianka.chess.network.Contracts.CreateAccountResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.CreateAccountResponse other) {
+        if (other == com.richardpianka.chess.network.Contracts.CreateAccountResponse.getDefaultInstance()) return this;
+        if (other.hasResult()) {
+          setResult(other.getResult());
+        }
+        if (other.hasMessage()) {
+          setMessage(other.getMessage());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasResult()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.chess.network.Contracts.Result value = com.richardpianka.chess.network.Contracts.Result.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                result_ = value;
+              }
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              message_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.chess.network.Result Result = 1;
+      private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+      public boolean hasResult() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.chess.network.Contracts.Result getResult() {
+        return result_;
+      }
+      public Builder setResult(com.richardpianka.chess.network.Contracts.Result value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearResult() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+        onChanged();
+        return this;
+      }
+      
+      // optional string Message = 2;
+      private java.lang.Object message_ = "";
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setMessage(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.CreateAccountResponse)
+    }
+    
+    static {
+      defaultInstance = new CreateAccountResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.CreateAccountResponse)
+  }
+  
+  public interface ChangePasswordRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string Username = 1;
+    boolean hasUsername();
+    String getUsername();
+    
+    // required string OldPassword = 2;
+    boolean hasOldPassword();
+    String getOldPassword();
+    
+    // required string NewPassword = 3;
+    boolean hasNewPassword();
+    String getNewPassword();
+  }
+  public static final class ChangePasswordRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements ChangePasswordRequestOrBuilder {
+    // Use ChangePasswordRequest.newBuilder() to construct.
+    private ChangePasswordRequest(ChangePasswordRequest.Builder builder) {
+      super(builder);
+    }
+    private ChangePasswordRequest(boolean noInit) {}
+    
+    private static final ChangePasswordRequest defaultInstance;
+    public static ChangePasswordRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public ChangePasswordRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordRequest_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string Username = 1;
+    public static final int USERNAME_FIELD_NUMBER = 1;
+    private java.lang.Object username_;
+    public boolean hasUsername() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          username_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getUsernameBytes() {
+      java.lang.Object ref = username_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        username_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string OldPassword = 2;
+    public static final int OLDPASSWORD_FIELD_NUMBER = 2;
+    private java.lang.Object oldPassword_;
+    public boolean hasOldPassword() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getOldPassword() {
+      java.lang.Object ref = oldPassword_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          oldPassword_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getOldPasswordBytes() {
+      java.lang.Object ref = oldPassword_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        oldPassword_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string NewPassword = 3;
+    public static final int NEWPASSWORD_FIELD_NUMBER = 3;
+    private java.lang.Object newPassword_;
+    public boolean hasNewPassword() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getNewPassword() {
+      java.lang.Object ref = newPassword_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          newPassword_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getNewPasswordBytes() {
+      java.lang.Object ref = newPassword_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        newPassword_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      username_ = "";
+      oldPassword_ = "";
+      newPassword_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasUsername()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOldPassword()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasNewPassword()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getUsernameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getOldPasswordBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getNewPasswordBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getUsernameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getOldPasswordBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getNewPasswordBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder newBuilder(com.richardpianka.chess.network.Contracts.ChangePasswordRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder builder = new com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.chess.network.Contracts.ChangePasswordRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordRequest_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.chess.network.Contracts.ChangePasswordRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        username_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        oldPassword_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        newPassword_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDescriptor();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequest getDefaultInstanceForType() {
+        return com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDefaultInstance();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequest build() {
+        com.richardpianka.chess.network.Contracts.ChangePasswordRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.chess.network.Contracts.ChangePasswordRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.chess.network.Contracts.ChangePasswordRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequest buildPartial() {
+        com.richardpianka.chess.network.Contracts.ChangePasswordRequest result = new com.richardpianka.chess.network.Contracts.ChangePasswordRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.username_ = username_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.oldPassword_ = oldPassword_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.newPassword_ = newPassword_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.chess.network.Contracts.ChangePasswordRequest) {
+          return mergeFrom((com.richardpianka.chess.network.Contracts.ChangePasswordRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChangePasswordRequest other) {
+        if (other == com.richardpianka.chess.network.Contracts.ChangePasswordRequest.getDefaultInstance()) return this;
+        if (other.hasUsername()) {
+          setUsername(other.getUsername());
+        }
+        if (other.hasOldPassword()) {
+          setOldPassword(other.getOldPassword());
+        }
+        if (other.hasNewPassword()) {
+          setNewPassword(other.getNewPassword());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasUsername()) {
+          
+          return false;
+        }
+        if (!hasOldPassword()) {
+          
+          return false;
+        }
+        if (!hasNewPassword()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              username_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              oldPassword_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              newPassword_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string Username = 1;
+      private java.lang.Object username_ = "";
+      public boolean hasUsername() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          username_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setUsername(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        username_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearUsername() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        username_ = getDefaultInstance().getUsername();
+        onChanged();
+        return this;
+      }
+      void setUsername(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        username_ = value;
+        onChanged();
+      }
+      
+      // required string OldPassword = 2;
+      private java.lang.Object oldPassword_ = "";
+      public boolean hasOldPassword() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getOldPassword() {
+        java.lang.Object ref = oldPassword_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          oldPassword_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setOldPassword(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        oldPassword_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearOldPassword() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        oldPassword_ = getDefaultInstance().getOldPassword();
+        onChanged();
+        return this;
+      }
+      void setOldPassword(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        oldPassword_ = value;
+        onChanged();
+      }
+      
+      // required string NewPassword = 3;
+      private java.lang.Object newPassword_ = "";
+      public boolean hasNewPassword() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getNewPassword() {
+        java.lang.Object ref = newPassword_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          newPassword_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setNewPassword(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        newPassword_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearNewPassword() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        newPassword_ = getDefaultInstance().getNewPassword();
+        onChanged();
+        return this;
+      }
+      void setNewPassword(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        newPassword_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.ChangePasswordRequest)
+    }
+    
+    static {
+      defaultInstance = new ChangePasswordRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.ChangePasswordRequest)
+  }
+  
+  public interface ChangePasswordResponseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .com.richardpianka.chess.network.Result Result = 1;
+    boolean hasResult();
+    com.richardpianka.chess.network.Contracts.Result getResult();
+    
+    // optional string Message = 2;
+    boolean hasMessage();
+    String getMessage();
+  }
+  public static final class ChangePasswordResponse extends
+      com.google.protobuf.GeneratedMessage
+      implements ChangePasswordResponseOrBuilder {
+    // Use ChangePasswordResponse.newBuilder() to construct.
+    private ChangePasswordResponse(ChangePasswordResponse.Builder builder) {
+      super(builder);
+    }
+    private ChangePasswordResponse(boolean noInit) {}
+    
+    private static final ChangePasswordResponse defaultInstance;
+    public static ChangePasswordResponse getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public ChangePasswordResponse getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordResponse_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordResponse_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .com.richardpianka.chess.network.Result Result = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private com.richardpianka.chess.network.Contracts.Result result_;
+    public boolean hasResult() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public com.richardpianka.chess.network.Contracts.Result getResult() {
+      return result_;
+    }
+    
+    // optional string Message = 2;
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private java.lang.Object message_;
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    private void initFields() {
+      result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+      message_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, result_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getMessageBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, result_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getMessageBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder newBuilder() { return com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder.create(); }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder newBuilderForType() { return newBuilder(); }
+    public static com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder newBuilder(com.richardpianka.chess.network.Contracts.ChangePasswordResponse prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder builder = new com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.richardpianka.chess.network.Contracts.ChangePasswordResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordResponse_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.richardpianka.chess.network.Contracts.internal_static_com_richardpianka_chess_network_ChangePasswordResponse_fieldAccessorTable;
+      }
+      
+      // Construct using com.richardpianka.chess.network.Contracts.ChangePasswordResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDescriptor();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponse getDefaultInstanceForType() {
+        return com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDefaultInstance();
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponse build() {
+        com.richardpianka.chess.network.Contracts.ChangePasswordResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private com.richardpianka.chess.network.Contracts.ChangePasswordResponse buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        com.richardpianka.chess.network.Contracts.ChangePasswordResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponse buildPartial() {
+        com.richardpianka.chess.network.Contracts.ChangePasswordResponse result = new com.richardpianka.chess.network.Contracts.ChangePasswordResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.result_ = result_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.message_ = message_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.richardpianka.chess.network.Contracts.ChangePasswordResponse) {
+          return mergeFrom((com.richardpianka.chess.network.Contracts.ChangePasswordResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder mergeFrom(com.richardpianka.chess.network.Contracts.ChangePasswordResponse other) {
+        if (other == com.richardpianka.chess.network.Contracts.ChangePasswordResponse.getDefaultInstance()) return this;
+        if (other.hasResult()) {
+          setResult(other.getResult());
+        }
+        if (other.hasMessage()) {
+          setMessage(other.getMessage());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasResult()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              com.richardpianka.chess.network.Contracts.Result value = com.richardpianka.chess.network.Contracts.Result.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                result_ = value;
+              }
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              message_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .com.richardpianka.chess.network.Result Result = 1;
+      private com.richardpianka.chess.network.Contracts.Result result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+      public boolean hasResult() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public com.richardpianka.chess.network.Contracts.Result getResult() {
+        return result_;
+      }
+      public Builder setResult(com.richardpianka.chess.network.Contracts.Result value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearResult() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        result_ = com.richardpianka.chess.network.Contracts.Result.Success;
+        onChanged();
+        return this;
+      }
+      
+      // optional string Message = 2;
+      private java.lang.Object message_ = "";
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setMessage(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:com.richardpianka.chess.network.ChangePasswordResponse)
+    }
+    
+    static {
+      defaultInstance = new ChangePasswordResponse(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:com.richardpianka.chess.network.ChangePasswordResponse)
   }
   
   public interface JoinChatRequestOrBuilder
@@ -28077,6 +30659,26 @@ public final class Contracts {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_richardpianka_chess_network_IdentifyResponse_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_chess_network_CreateAccountRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_chess_network_CreateAccountRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_chess_network_CreateAccountResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_chess_network_CreateAccountResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_chess_network_ChangePasswordRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_chess_network_ChangePasswordRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_richardpianka_chess_network_ChangePasswordResponse_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_richardpianka_chess_network_ChangePasswordResponse_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -28236,7 +30838,7 @@ public final class Contracts {
   static {
     java.lang.String[] descriptorData = {
       "\n\036protobuf/chess/contracts.proto\022\037com.ri" +
-      "chardpianka.chess.network\"\306\024\n\010Envelope\022K" +
+      "chardpianka.chess.network\"\242\027\n\010Envelope\022K" +
       "\n\020HandshakeRequest\030\001 \001(\01321.com.richardpi" +
       "anka.chess.network.HandshakeRequest\022M\n\021H" +
       "andshakeResponse\030\002 \001(\01322.com.richardpian" +
@@ -28244,187 +30846,205 @@ public final class Contracts {
       "entifyRequest\030\003 \001(\01320.com.richardpianka." +
       "chess.network.IdentifyRequest\022K\n\020Identif" +
       "yResponse\030\004 \001(\01321.com.richardpianka.ches" +
-      "s.network.IdentifyResponse\022I\n\017JoinChatRe",
-      "quest\030\005 \001(\01320.com.richardpianka.chess.ne" +
-      "twork.JoinChatRequest\022K\n\020JoinChatRespons" +
-      "e\030\006 \001(\01321.com.richardpianka.chess.networ" +
-      "k.JoinChatResponse\022I\n\017RoomListRequest\030\007 " +
-      "\001(\01320.com.richardpianka.chess.network.Ro" +
-      "omListRequest\022K\n\020RoomListResponse\030\010 \001(\0132" +
-      "1.com.richardpianka.chess.network.RoomLi" +
-      "stResponse\022I\n\017JoinRoomRequest\030\t \001(\01320.co" +
-      "m.richardpianka.chess.network.JoinRoomRe" +
-      "quest\022K\n\020JoinRoomResponse\030\n \001(\01321.com.ri",
-      "chardpianka.chess.network.JoinRoomRespon" +
-      "se\022C\n\014SpeakRequest\030\013 \001(\0132-.com.richardpi" +
-      "anka.chess.network.SpeakRequest\022I\n\017Opera" +
-      "torRequest\030\014 \001(\01320.com.richardpianka.che" +
-      "ss.network.OperatorRequest\022K\n\020OperatorRe" +
-      "sponse\030\r \001(\01321.com.richardpianka.chess.n" +
-      "etwork.OperatorResponse\022E\n\rChatRoomEvent" +
-      "\030\016 \001(\0132..com.richardpianka.chess.network" +
-      ".ChatRoomEvent\022E\n\rChatUserEvent\030\017 \001(\0132.." +
-      "com.richardpianka.chess.network.ChatUser",
-      "Event\022G\n\016ChatSpeakEvent\030\020 \001(\0132/.com.rich" +
-      "ardpianka.chess.network.ChatSpeakEvent\022I" +
-      "\n\017GameListRequest\030\021 \001(\01320.com.richardpia" +
-      "nka.chess.network.GameListRequest\022K\n\020Gam" +
-      "eListResponse\030\022 \001(\01321.com.richardpianka." +
-      "chess.network.GameListResponse\022M\n\021Create" +
-      "GameRequest\030\023 \001(\01322.com.richardpianka.ch" +
-      "ess.network.CreateGameRequest\022O\n\022CreateG" +
-      "ameResponse\030\024 \001(\01323.com.richardpianka.ch" +
-      "ess.network.CreateGameResponse\022I\n\017JoinGa",
-      "meRequest\030\025 \001(\01320.com.richardpianka.ches" +
-      "s.network.JoinGameRequest\022K\n\020JoinGameRes" +
-      "ponse\030\026 \001(\01321.com.richardpianka.chess.ne" +
-      "twork.JoinGameResponse\022K\n\020LeaveGameReque" +
-      "st\030\027 \001(\01321.com.richardpianka.chess.netwo" +
-      "rk.LeaveGameRequest\022K\n\020StartGameRequest\030" +
-      "\030 \001(\01321.com.richardpianka.chess.network." +
-      "StartGameRequest\022M\n\021StartGameResponse\030\031 " +
-      "\001(\01322.com.richardpianka.chess.network.St" +
-      "artGameResponse\022K\n\020GameStartedEvent\030\032 \001(",
-      "\01321.com.richardpianka.chess.network.Game" +
-      "StartedEvent\022K\n\020MovePieceRequest\030\033 \001(\01321" +
-      ".com.richardpianka.chess.network.MovePie" +
-      "ceRequest\022M\n\021MovePieceResponse\030\034 \001(\01322.c" +
-      "om.richardpianka.chess.network.MovePiece" +
-      "Response\022G\n\016MovePieceEvent\030\035 \001(\0132/.com.r" +
-      "ichardpianka.chess.network.MovePieceEven" +
-      "t\022Y\n\027SpecialMovePieceRequest\030\036 \001(\01328.com" +
-      ".richardpianka.chess.network.SpecialMove" +
-      "PieceRequest\022[\n\030SpecialMovePieceResponse",
-      "\030\037 \001(\01329.com.richardpianka.chess.network" +
-      ".SpecialMovePieceResponse\022U\n\025SpecialMove" +
-      "PieceEvent\030  \001(\01326.com.richardpianka.che" +
-      "ss.network.SpecialMovePieceEvent\022I\n\017Game" +
-      "StatusEvent\030\" \001(\01320.com.richardpianka.ch" +
-      "ess.network.GameStatusEvent\022E\n\rTimeLeftE" +
-      "vent\030# \001(\0132..com.richardpianka.chess.net" +
-      "work.TimeLeftEvent\"v\n\nCoordinate\0223\n\004File" +
-      "\030\001 \002(\0162%.com.richardpianka.chess.network" +
-      ".File\0223\n\004Rank\030\002 \002(\0162%.com.richardpianka.",
-      "chess.network.Rank\"\213\001\n\005Piece\0225\n\005Color\030\001 " +
-      "\002(\0162&.com.richardpianka.chess.network.Co" +
-      "lor\022;\n\010Figurine\030\002 \002(\0162).com.richardpiank" +
-      "a.chess.network.Figurine\022\016\n\006Number\030\003 \002(\r" +
-      "\"\263\001\n\004Move\0225\n\005Piece\030\001 \002(\0132&.com.richardpi" +
-      "anka.chess.network.Piece\022:\n\005Start\030\002 \002(\0132" +
-      "+.com.richardpianka.chess.network.Coordi" +
-      "nate\0228\n\003End\030\003 \002(\0132+.com.richardpianka.ch" +
-      "ess.network.Coordinate\"F\n\013SpecialMove\0227\n" +
-      "\006Castle\030\001 \001(\0132\'.com.richardpianka.chess.",
-      "network.Castle\"t\n\006Castle\0224\n\004Rook\030\001 \002(\0132&" +
-      ".com.richardpianka.chess.network.Piece\0224" +
-      "\n\004King\030\002 \002(\0132&.com.richardpianka.chess.n" +
-      "etwork.Piece\"W\n\007Version\022\027\n\014VersionMajor\030" +
-      "\001 \001(\r:\0011\022\027\n\014VersionMinor\030\002 \001(\r:\0010\022\032\n\017Ver" +
-      "sionRevision\030\003 \001(\r:\0010\"O\n\004Room\022\014\n\004Name\030\001 " +
-      "\002(\t\0229\n\005Flags\030\002 \002(\0162*.com.richardpianka.c" +
-      "hess.network.RoomFlags\"O\n\006Record\022\014\n\004Wins" +
-      "\030\001 \002(\r\022\016\n\006Losses\030\002 \002(\r\022\022\n\nStalemates\030\003 \002" +
-      "(\r\022\023\n\013Disconnects\030\004 \002(\r\"\210\001\n\004User\022\014\n\004Name",
-      "\030\001 \002(\t\0229\n\005Flags\030\002 \002(\0162*.com.richardpiank" +
-      "a.chess.network.UserFlags\0227\n\006Record\030\003 \002(" +
-      "\0132\'.com.richardpianka.chess.network.Reco" +
-      "rd\"x\n\004Game\022\014\n\004Name\030\001 \002(\t\022\020\n\010Password\030\002 \001" +
-      "(\t\022\017\n\007Private\030\003 \002(\010\022?\n\010MetaData\030\004 \001(\0132-." +
-      "com.richardpianka.chess.network.GameMeta" +
-      "data\"\272\001\n\014GameMetadata\0226\n\007Created\030\001 \001(\0132%" +
-      ".com.richardpianka.chess.network.User\0225\n" +
-      "\006Joined\030\002 \001(\0132%.com.richardpianka.chess." +
-      "network.User\022;\n\010UserTime\030\003 \001(\0132).com.ric",
-      "hardpianka.chess.network.UserTime\"1\n\010Use" +
-      "rTime\022\r\n\005Timed\030\001 \002(\010\022\026\n\016SecondsPerUser\030\002" +
-      " \002(\r\"M\n\020HandshakeRequest\0229\n\007Version\030\001 \002(" +
-      "\0132(.com.richardpianka.chess.network.Vers" +
-      "ion\"L\n\021HandshakeResponse\0227\n\006Result\030\001 \002(\016" +
+      "s.network.IdentifyResponse\022S\n\024CreateAcco",
+      "untRequest\030\005 \001(\01325.com.richardpianka.che" +
+      "ss.network.CreateAccountRequest\022U\n\025Creat" +
+      "eAccountResponse\030\006 \001(\01326.com.richardpian" +
+      "ka.chess.network.CreateAccountResponse\022U" +
+      "\n\025ChangePasswordRequest\030\007 \001(\01326.com.rich" +
+      "ardpianka.chess.network.ChangePasswordRe" +
+      "quest\022W\n\026ChangePasswordResponse\030\010 \001(\01327." +
+      "com.richardpianka.chess.network.ChangePa" +
+      "sswordResponse\022I\n\017JoinChatRequest\030\t \001(\0132" +
+      "0.com.richardpianka.chess.network.JoinCh",
+      "atRequest\022K\n\020JoinChatResponse\030\n \001(\01321.co" +
+      "m.richardpianka.chess.network.JoinChatRe" +
+      "sponse\022I\n\017RoomListRequest\030\013 \001(\01320.com.ri" +
+      "chardpianka.chess.network.RoomListReques" +
+      "t\022K\n\020RoomListResponse\030\014 \001(\01321.com.richar" +
+      "dpianka.chess.network.RoomListResponse\022I" +
+      "\n\017JoinRoomRequest\030\r \001(\01320.com.richardpia" +
+      "nka.chess.network.JoinRoomRequest\022K\n\020Joi" +
+      "nRoomResponse\030\016 \001(\01321.com.richardpianka." +
+      "chess.network.JoinRoomResponse\022C\n\014SpeakR",
+      "equest\030\017 \001(\0132-.com.richardpianka.chess.n" +
+      "etwork.SpeakRequest\022I\n\017OperatorRequest\030\020" +
+      " \001(\01320.com.richardpianka.chess.network.O" +
+      "peratorRequest\022K\n\020OperatorResponse\030\021 \001(\013" +
+      "21.com.richardpianka.chess.network.Opera" +
+      "torResponse\022E\n\rChatRoomEvent\030\022 \001(\0132..com" +
+      ".richardpianka.chess.network.ChatRoomEve" +
+      "nt\022E\n\rChatUserEvent\030\023 \001(\0132..com.richardp" +
+      "ianka.chess.network.ChatUserEvent\022G\n\016Cha" +
+      "tSpeakEvent\030\024 \001(\0132/.com.richardpianka.ch",
+      "ess.network.ChatSpeakEvent\022I\n\017GameListRe" +
+      "quest\030\025 \001(\01320.com.richardpianka.chess.ne" +
+      "twork.GameListRequest\022K\n\020GameListRespons" +
+      "e\030\026 \001(\01321.com.richardpianka.chess.networ" +
+      "k.GameListResponse\022M\n\021CreateGameRequest\030" +
+      "\027 \001(\01322.com.richardpianka.chess.network." +
+      "CreateGameRequest\022O\n\022CreateGameResponse\030" +
+      "\030 \001(\01323.com.richardpianka.chess.network." +
+      "CreateGameResponse\022I\n\017JoinGameRequest\030\031 " +
+      "\001(\01320.com.richardpianka.chess.network.Jo",
+      "inGameRequest\022K\n\020JoinGameResponse\030\032 \001(\0132" +
+      "1.com.richardpianka.chess.network.JoinGa" +
+      "meResponse\022K\n\020LeaveGameRequest\030\033 \001(\01321.c" +
+      "om.richardpianka.chess.network.LeaveGame" +
+      "Request\022K\n\020StartGameRequest\030\034 \001(\01321.com." +
+      "richardpianka.chess.network.StartGameReq" +
+      "uest\022M\n\021StartGameResponse\030\035 \001(\01322.com.ri" +
+      "chardpianka.chess.network.StartGameRespo" +
+      "nse\022K\n\020GameStartedEvent\030\036 \001(\01321.com.rich" +
+      "ardpianka.chess.network.GameStartedEvent",
+      "\022K\n\020MovePieceRequest\030\037 \001(\01321.com.richard" +
+      "pianka.chess.network.MovePieceRequest\022M\n" +
+      "\021MovePieceResponse\030  \001(\01322.com.richardpi" +
+      "anka.chess.network.MovePieceResponse\022G\n\016" +
+      "MovePieceEvent\030! \001(\0132/.com.richardpianka" +
+      ".chess.network.MovePieceEvent\022Y\n\027Special" +
+      "MovePieceRequest\030\" \001(\01328.com.richardpian" +
+      "ka.chess.network.SpecialMovePieceRequest" +
+      "\022[\n\030SpecialMovePieceResponse\030# \001(\01329.com" +
+      ".richardpianka.chess.network.SpecialMove",
+      "PieceResponse\022U\n\025SpecialMovePieceEvent\030$" +
+      " \001(\01326.com.richardpianka.chess.network.S" +
+      "pecialMovePieceEvent\022I\n\017GameStatusEvent\030" +
+      "% \001(\01320.com.richardpianka.chess.network." +
+      "GameStatusEvent\022E\n\rTimeLeftEvent\030& \001(\0132." +
+      ".com.richardpianka.chess.network.TimeLef" +
+      "tEvent\"v\n\nCoordinate\0223\n\004File\030\001 \002(\0162%.com" +
+      ".richardpianka.chess.network.File\0223\n\004Ran" +
+      "k\030\002 \002(\0162%.com.richardpianka.chess.networ" +
+      "k.Rank\"\213\001\n\005Piece\0225\n\005Color\030\001 \002(\0162&.com.ri",
+      "chardpianka.chess.network.Color\022;\n\010Figur" +
+      "ine\030\002 \002(\0162).com.richardpianka.chess.netw" +
+      "ork.Figurine\022\016\n\006Number\030\003 \002(\r\"\263\001\n\004Move\0225\n" +
+      "\005Piece\030\001 \002(\0132&.com.richardpianka.chess.n" +
+      "etwork.Piece\022:\n\005Start\030\002 \002(\0132+.com.richar" +
+      "dpianka.chess.network.Coordinate\0228\n\003End\030" +
+      "\003 \002(\0132+.com.richardpianka.chess.network." +
+      "Coordinate\"F\n\013SpecialMove\0227\n\006Castle\030\001 \001(" +
+      "\0132\'.com.richardpianka.chess.network.Cast" +
+      "le\"t\n\006Castle\0224\n\004Rook\030\001 \002(\0132&.com.richard",
+      "pianka.chess.network.Piece\0224\n\004King\030\002 \002(\013" +
+      "2&.com.richardpianka.chess.network.Piece" +
+      "\"W\n\007Version\022\027\n\014VersionMajor\030\001 \001(\r:\0011\022\027\n\014" +
+      "VersionMinor\030\002 \001(\r:\0010\022\032\n\017VersionRevision" +
+      "\030\003 \001(\r:\0010\"O\n\004Room\022\014\n\004Name\030\001 \002(\t\0229\n\005Flags" +
+      "\030\002 \002(\0162*.com.richardpianka.chess.network" +
+      ".RoomFlags\"O\n\006Record\022\014\n\004Wins\030\001 \002(\r\022\016\n\006Lo" +
+      "sses\030\002 \002(\r\022\022\n\nStalemates\030\003 \002(\r\022\023\n\013Discon" +
+      "nects\030\004 \002(\r\"\210\001\n\004User\022\014\n\004Name\030\001 \002(\t\0227\n\006Re" +
+      "cord\030\002 \002(\0132\'.com.richardpianka.chess.net",
+      "work.Record\0229\n\005Flags\030\003 \001(\0162*.com.richard" +
+      "pianka.chess.network.UserFlags\"x\n\004Game\022\014" +
+      "\n\004Name\030\001 \002(\t\022\020\n\010Password\030\002 \001(\t\022\017\n\007Privat" +
+      "e\030\003 \002(\010\022?\n\010MetaData\030\004 \001(\0132-.com.richardp" +
+      "ianka.chess.network.GameMetadata\"\272\001\n\014Gam" +
+      "eMetadata\0226\n\007Created\030\001 \001(\0132%.com.richard" +
+      "pianka.chess.network.User\0225\n\006Joined\030\002 \001(" +
+      "\0132%.com.richardpianka.chess.network.User" +
+      "\022;\n\010UserTime\030\003 \001(\0132).com.richardpianka.c" +
+      "hess.network.UserTime\"1\n\010UserTime\022\r\n\005Tim",
+      "ed\030\001 \002(\010\022\026\n\016SecondsPerUser\030\002 \002(\r\"M\n\020Hand" +
+      "shakeRequest\0229\n\007Version\030\001 \002(\0132(.com.rich" +
+      "ardpianka.chess.network.Version\"L\n\021Hands" +
+      "hakeResponse\0227\n\006Result\030\001 \002(\0162\'.com.richa" +
+      "rdpianka.chess.network.Result\"5\n\017Identif" +
+      "yRequest\022\020\n\010Username\030\001 \002(\t\022\020\n\010Password\030\002" +
+      " \001(\t\"\\\n\020IdentifyResponse\0227\n\006Result\030\001 \002(\016" +
       "2\'.com.richardpianka.chess.network.Resul" +
-      "t\"5\n\017IdentifyRequest\022\020\n\010Username\030\001 \002(\t\022\020" +
-      "\n\010Password\030\002 \001(\t\"\\\n\020IdentifyResponse\0227\n\006" +
+      "t\022\017\n\007Message\030\002 \001(\t\":\n\024CreateAccountReque" +
+      "st\022\020\n\010Username\030\001 \002(\t\022\020\n\010Password\030\002 \002(\t\"a",
+      "\n\025CreateAccountResponse\0227\n\006Result\030\001 \002(\0162" +
+      "\'.com.richardpianka.chess.network.Result" +
+      "\022\017\n\007Message\030\002 \001(\t\"S\n\025ChangePasswordReque" +
+      "st\022\020\n\010Username\030\001 \002(\t\022\023\n\013OldPassword\030\002 \002(" +
+      "\t\022\023\n\013NewPassword\030\003 \002(\t\"b\n\026ChangePassword" +
+      "Response\0227\n\006Result\030\001 \002(\0162\'.com.richardpi" +
+      "anka.chess.network.Result\022\017\n\007Message\030\002 \001" +
+      "(\t\"\021\n\017JoinChatRequest\"K\n\020JoinChatRespons" +
+      "e\0227\n\006Result\030\001 \002(\0162\'.com.richardpianka.ch" +
+      "ess.network.Result\"\021\n\017RoomListRequest\"H\n",
+      "\020RoomListResponse\0224\n\005Rooms\030\001 \003(\0132%.com.r" +
+      "ichardpianka.chess.network.Room\"F\n\017JoinR" +
+      "oomRequest\0223\n\004Room\030\001 \002(\0132%.com.richardpi" +
+      "anka.chess.network.Room\"K\n\020JoinRoomRespo" +
+      "nse\0227\n\006Result\030\001 \002(\0162\'.com.richardpianka." +
+      "chess.network.Result\"\223\001\n\014SpeakRequest\0228\n" +
+      "\004Mode\030\001 \002(\0162*.com.richardpianka.chess.ne" +
+      "twork.SpeakMode\022\017\n\007Message\030\002 \002(\t\0228\n\tReci" +
+      "pient\030\003 \001(\0132%.com.richardpianka.chess.ne" +
+      "twork.User\"\207\001\n\017OperatorRequest\022?\n\006Action",
+      "\030\001 \002(\0162/.com.richardpianka.chess.network" +
+      ".OperatorAction\0223\n\004User\030\002 \001(\0132%.com.rich" +
+      "ardpianka.chess.network.User\"K\n\020Operator" +
+      "Response\0227\n\006Result\030\001 \002(\0162\'.com.richardpi" +
+      "anka.chess.network.Result\"z\n\rChatRoomEve" +
+      "nt\0223\n\004Room\030\001 \002(\0132%.com.richardpianka.che" +
+      "ss.network.Room\0224\n\005Users\030\002 \003(\0132%.com.ric" +
+      "hardpianka.chess.network.User\"\320\001\n\rChatUs" +
+      "erEvent\0223\n\004User\030\001 \002(\0132%.com.richardpiank" +
+      "a.chess.network.User\022I\n\006Status\030\002 \002(\01629.c",
+      "om.richardpianka.chess.network.ChatUserE" +
+      "vent.UserStatus\022\017\n\007Message\030\003 \001(\t\".\n\nUser" +
+      "Status\022\n\n\006Joined\020\000\022\010\n\004Left\020\001\022\n\n\006Update\020\002" +
+      "\"\220\001\n\016ChatSpeakEvent\0223\n\004User\030\001 \002(\0132%.com." +
+      "richardpianka.chess.network.User\022\017\n\007Mess" +
+      "age\030\002 \002(\t\0228\n\004Mode\030\003 \002(\0162*.com.richardpia" +
+      "nka.chess.network.SpeakMode\"\021\n\017GameListR" +
+      "equest\"H\n\020GameListResponse\0224\n\005Games\030\001 \003(" +
+      "\0132%.com.richardpianka.chess.network.Game" +
+      "\"3\n\021CreateGameRequest\022\014\n\004Name\030\001 \002(\t\022\020\n\010P",
+      "assword\030\002 \001(\t\"\223\001\n\022CreateGameResponse\0227\n\006" +
       "Result\030\001 \002(\0162\'.com.richardpianka.chess.n" +
-      "etwork.Result\022\017\n\007Message\030\002 \001(\t\"\021\n\017JoinCh",
-      "atRequest\"K\n\020JoinChatResponse\0227\n\006Result\030" +
-      "\001 \002(\0162\'.com.richardpianka.chess.network." +
-      "Result\"\021\n\017RoomListRequest\"H\n\020RoomListRes" +
-      "ponse\0224\n\005Rooms\030\001 \003(\0132%.com.richardpianka" +
-      ".chess.network.Room\"F\n\017JoinRoomRequest\0223" +
-      "\n\004Room\030\001 \002(\0132%.com.richardpianka.chess.n" +
-      "etwork.Room\"K\n\020JoinRoomResponse\0227\n\006Resul" +
+      "etwork.Result\0223\n\004Game\030\002 \001(\0132%.com.richar" +
+      "dpianka.chess.network.Game\022\017\n\007Message\030\003 " +
+      "\001(\t\"X\n\017JoinGameRequest\0223\n\004Game\030\001 \002(\0132%.c" +
+      "om.richardpianka.chess.network.Game\022\020\n\010P" +
+      "assword\030\002 \001(\t\"\200\001\n\020JoinGameResponse\0223\n\004Ga" +
+      "me\030\001 \002(\0132%.com.richardpianka.chess.netwo" +
+      "rk.Game\0227\n\006Result\030\002 \002(\0162\'.com.richardpia" +
+      "nka.chess.network.Result\"\022\n\020LeaveGameReq",
+      "uest\"\022\n\020StartGameRequest\"L\n\021StartGameRes" +
+      "ponse\0227\n\006Result\030\001 \002(\0162\'.com.richardpiank" +
+      "a.chess.network.Result\"I\n\020GameStartedEve" +
+      "nt\0225\n\005Color\030\001 \002(\0162&.com.richardpianka.ch" +
+      "ess.network.Color\"G\n\020MovePieceRequest\0223\n" +
+      "\004Move\030\001 \002(\0132%.com.richardpianka.chess.ne" +
+      "twork.Move\"L\n\021MovePieceResponse\0227\n\006Resul" +
       "t\030\001 \002(\0162\'.com.richardpianka.chess.networ" +
-      "k.Result\"\223\001\n\014SpeakRequest\0228\n\004Mode\030\001 \002(\0162" +
-      "*.com.richardpianka.chess.network.SpeakM",
-      "ode\022\017\n\007Message\030\002 \002(\t\0228\n\tRecipient\030\003 \001(\0132" +
-      "%.com.richardpianka.chess.network.User\"\207" +
-      "\001\n\017OperatorRequest\022?\n\006Action\030\001 \002(\0162/.com" +
-      ".richardpianka.chess.network.OperatorAct" +
-      "ion\0223\n\004User\030\002 \001(\0132%.com.richardpianka.ch" +
-      "ess.network.User\"K\n\020OperatorResponse\0227\n\006" +
-      "Result\030\001 \002(\0162\'.com.richardpianka.chess.n" +
-      "etwork.Result\"z\n\rChatRoomEvent\0223\n\004Room\030\001" +
-      " \002(\0132%.com.richardpianka.chess.network.R" +
-      "oom\0224\n\005Users\030\002 \003(\0132%.com.richardpianka.c",
-      "hess.network.User\"\320\001\n\rChatUserEvent\0223\n\004U" +
-      "ser\030\001 \002(\0132%.com.richardpianka.chess.netw" +
-      "ork.User\022I\n\006Status\030\002 \002(\01629.com.richardpi" +
-      "anka.chess.network.ChatUserEvent.UserSta" +
-      "tus\022\017\n\007Message\030\003 \001(\t\".\n\nUserStatus\022\n\n\006Jo" +
-      "ined\020\000\022\010\n\004Left\020\001\022\n\n\006Update\020\002\"\220\001\n\016ChatSpe" +
-      "akEvent\0223\n\004User\030\001 \002(\0132%.com.richardpiank" +
-      "a.chess.network.User\022\017\n\007Message\030\002 \002(\t\0228\n" +
-      "\004Mode\030\003 \002(\0162*.com.richardpianka.chess.ne" +
-      "twork.SpeakMode\"\021\n\017GameListRequest\"H\n\020Ga",
-      "meListResponse\0224\n\005Games\030\001 \003(\0132%.com.rich" +
-      "ardpianka.chess.network.Game\"3\n\021CreateGa" +
-      "meRequest\022\014\n\004Name\030\001 \002(\t\022\020\n\010Password\030\002 \001(" +
-      "\t\"\223\001\n\022CreateGameResponse\0227\n\006Result\030\001 \002(\016" +
-      "2\'.com.richardpianka.chess.network.Resul" +
-      "t\0223\n\004Game\030\002 \001(\0132%.com.richardpianka.ches" +
-      "s.network.Game\022\017\n\007Message\030\003 \001(\t\"X\n\017JoinG" +
-      "ameRequest\0223\n\004Game\030\001 \002(\0132%.com.richardpi" +
-      "anka.chess.network.Game\022\020\n\010Password\030\002 \001(" +
-      "\t\"\200\001\n\020JoinGameResponse\0223\n\004Game\030\001 \002(\0132%.c",
-      "om.richardpianka.chess.network.Game\0227\n\006R" +
-      "esult\030\002 \002(\0162\'.com.richardpianka.chess.ne" +
-      "twork.Result\"\022\n\020LeaveGameRequest\"\022\n\020Star" +
-      "tGameRequest\"L\n\021StartGameResponse\0227\n\006Res" +
-      "ult\030\001 \002(\0162\'.com.richardpianka.chess.netw" +
-      "ork.Result\"I\n\020GameStartedEvent\0225\n\005Color\030" +
-      "\001 \002(\0162&.com.richardpianka.chess.network." +
-      "Color\"G\n\020MovePieceRequest\0223\n\004Move\030\001 \002(\0132" +
-      "%.com.richardpianka.chess.network.Move\"L" +
-      "\n\021MovePieceResponse\0227\n\006Result\030\001 \002(\0162\'.co",
-      "m.richardpianka.chess.network.Result\"E\n\016" +
-      "MovePieceEvent\0223\n\004Move\030\001 \002(\0132%.com.richa" +
-      "rdpianka.chess.network.Move\"U\n\027SpecialMo" +
-      "vePieceRequest\022:\n\004Move\030\001 \002(\0132,.com.richa" +
-      "rdpianka.chess.network.SpecialMove\"S\n\030Sp" +
-      "ecialMovePieceResponse\0227\n\006Result\030\001 \002(\0162\'" +
-      ".com.richardpianka.chess.network.Result\"" +
-      "S\n\025SpecialMovePieceEvent\022:\n\004Move\030\001 \002(\0132," +
-      ".com.richardpianka.chess.network.Special" +
-      "Move\"\203\001\n\017GameStatusEvent\022;\n\006Status\030\001 \001(\016",
-      "2+.com.richardpianka.chess.network.GameS" +
-      "tatus\0223\n\004User\030\002 \001(\0132%.com.richardpianka." +
-      "chess.network.User\";\n\rTimeLeftEvent\022\024\n\014W" +
-      "hiteSeconds\030\001 \002(\r\022\024\n\014BlackSeconds\030\002 \002(\r*" +
-      "\035\n\005Color\022\t\n\005White\020\000\022\t\n\005Black\020\001*K\n\010Figuri" +
-      "ne\022\010\n\004King\020\000\022\t\n\005Queen\020\001\022\n\n\006Bishop\020\002\022\n\n\006K" +
-      "night\020\003\022\010\n\004Rook\020\004\022\010\n\004Pawn\020\005*F\n\004Rank\022\006\n\002_" +
-      "1\020\000\022\006\n\002_2\020\001\022\006\n\002_3\020\002\022\006\n\002_4\020\003\022\006\n\002_5\020\004\022\006\n\002_" +
-      "6\020\005\022\006\n\002_7\020\006\022\006\n\002_8\020\007*F\n\004File\022\006\n\002_A\020\000\022\006\n\002_" +
-      "B\020\001\022\006\n\002_C\020\002\022\006\n\002_D\020\003\022\006\n\002_E\020\004\022\006\n\002_F\020\005\022\006\n\002_",
-      "G\020\006\022\006\n\002_H\020\007*\"\n\006Result\022\013\n\007Success\020\000\022\013\n\007Fa" +
-      "ilure\020\001*4\n\tRoomFlags\022\n\n\006Public\020\000\022\013\n\007Priv" +
-      "ate\020\001\022\016\n\nRestricted\020\002*4\n\tUserFlags\022\016\n\nPe" +
-      "destrian\020\000\022\014\n\010Operator\020\001\022\t\n\005Admin\020\002*/\n\tS" +
-      "peakMode\022\n\n\006Normal\020\000\022\013\n\007Whisper\020\001\022\t\n\005Emo" +
-      "te\020\002*>\n\016OperatorAction\022\r\n\tDesignate\020\000\022\n\n" +
-      "\006Resign\020\001\022\010\n\004Kick\020\002\022\007\n\003Ban\020\003*K\n\nGameStat" +
-      "us\022\010\n\004Play\020\000\022\n\n\006Paused\020\001\022\013\n\007Victory\020\002\022\013\n" +
-      "\007Forfeit\020\003\022\r\n\tStalemate\020\004B,\n\037com.richard" +
-      "pianka.chess.networkB\tContracts"
+      "k.Result\"E\n\016MovePieceEvent\0223\n\004Move\030\001 \002(\013" +
+      "2%.com.richardpianka.chess.network.Move\"",
+      "U\n\027SpecialMovePieceRequest\022:\n\004Move\030\001 \002(\013" +
+      "2,.com.richardpianka.chess.network.Speci" +
+      "alMove\"S\n\030SpecialMovePieceResponse\0227\n\006Re" +
+      "sult\030\001 \002(\0162\'.com.richardpianka.chess.net" +
+      "work.Result\"S\n\025SpecialMovePieceEvent\022:\n\004" +
+      "Move\030\001 \002(\0132,.com.richardpianka.chess.net" +
+      "work.SpecialMove\"\203\001\n\017GameStatusEvent\022;\n\006" +
+      "Status\030\001 \001(\0162+.com.richardpianka.chess.n" +
+      "etwork.GameStatus\0223\n\004User\030\002 \001(\0132%.com.ri" +
+      "chardpianka.chess.network.User\";\n\rTimeLe",
+      "ftEvent\022\024\n\014WhiteSeconds\030\001 \002(\r\022\024\n\014BlackSe" +
+      "conds\030\002 \002(\r*\035\n\005Color\022\t\n\005White\020\000\022\t\n\005Black" +
+      "\020\001*K\n\010Figurine\022\010\n\004King\020\000\022\t\n\005Queen\020\001\022\n\n\006B" +
+      "ishop\020\002\022\n\n\006Knight\020\003\022\010\n\004Rook\020\004\022\010\n\004Pawn\020\005*" +
+      "F\n\004Rank\022\006\n\002_1\020\000\022\006\n\002_2\020\001\022\006\n\002_3\020\002\022\006\n\002_4\020\003\022" +
+      "\006\n\002_5\020\004\022\006\n\002_6\020\005\022\006\n\002_7\020\006\022\006\n\002_8\020\007*F\n\004File\022" +
+      "\006\n\002_A\020\000\022\006\n\002_B\020\001\022\006\n\002_C\020\002\022\006\n\002_D\020\003\022\006\n\002_E\020\004\022" +
+      "\006\n\002_F\020\005\022\006\n\002_G\020\006\022\006\n\002_H\020\007*\"\n\006Result\022\013\n\007Suc" +
+      "cess\020\000\022\013\n\007Failure\020\001*4\n\tRoomFlags\022\n\n\006Publ" +
+      "ic\020\000\022\013\n\007Private\020\001\022\016\n\nRestricted\020\002*4\n\tUse",
+      "rFlags\022\016\n\nPedestrian\020\000\022\014\n\010Operator\020\001\022\t\n\005" +
+      "Admin\020\002*/\n\tSpeakMode\022\n\n\006Normal\020\000\022\013\n\007Whis" +
+      "per\020\001\022\t\n\005Emote\020\002*>\n\016OperatorAction\022\r\n\tDe" +
+      "signate\020\000\022\n\n\006Resign\020\001\022\010\n\004Kick\020\002\022\007\n\003Ban\020\003" +
+      "*K\n\nGameStatus\022\010\n\004Play\020\000\022\n\n\006Paused\020\001\022\013\n\007" +
+      "Victory\020\002\022\013\n\007Forfeit\020\003\022\r\n\tStalemate\020\004B,\n" +
+      "\037com.richardpianka.chess.networkB\tContra" +
+      "cts"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -28436,7 +31056,7 @@ public final class Contracts {
           internal_static_com_richardpianka_chess_network_Envelope_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_Envelope_descriptor,
-              new java.lang.String[] { "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "JoinChatRequest", "JoinChatResponse", "RoomListRequest", "RoomListResponse", "JoinRoomRequest", "JoinRoomResponse", "SpeakRequest", "OperatorRequest", "OperatorResponse", "ChatRoomEvent", "ChatUserEvent", "ChatSpeakEvent", "GameListRequest", "GameListResponse", "CreateGameRequest", "CreateGameResponse", "JoinGameRequest", "JoinGameResponse", "LeaveGameRequest", "StartGameRequest", "StartGameResponse", "GameStartedEvent", "MovePieceRequest", "MovePieceResponse", "MovePieceEvent", "SpecialMovePieceRequest", "SpecialMovePieceResponse", "SpecialMovePieceEvent", "GameStatusEvent", "TimeLeftEvent", },
+              new java.lang.String[] { "HandshakeRequest", "HandshakeResponse", "IdentifyRequest", "IdentifyResponse", "CreateAccountRequest", "CreateAccountResponse", "ChangePasswordRequest", "ChangePasswordResponse", "JoinChatRequest", "JoinChatResponse", "RoomListRequest", "RoomListResponse", "JoinRoomRequest", "JoinRoomResponse", "SpeakRequest", "OperatorRequest", "OperatorResponse", "ChatRoomEvent", "ChatUserEvent", "ChatSpeakEvent", "GameListRequest", "GameListResponse", "CreateGameRequest", "CreateGameResponse", "JoinGameRequest", "JoinGameResponse", "LeaveGameRequest", "StartGameRequest", "StartGameResponse", "GameStartedEvent", "MovePieceRequest", "MovePieceResponse", "MovePieceEvent", "SpecialMovePieceRequest", "SpecialMovePieceResponse", "SpecialMovePieceEvent", "GameStatusEvent", "TimeLeftEvent", },
               com.richardpianka.chess.network.Contracts.Envelope.class,
               com.richardpianka.chess.network.Contracts.Envelope.Builder.class);
           internal_static_com_richardpianka_chess_network_Coordinate_descriptor =
@@ -28508,7 +31128,7 @@ public final class Contracts {
           internal_static_com_richardpianka_chess_network_User_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_User_descriptor,
-              new java.lang.String[] { "Name", "Flags", "Record", },
+              new java.lang.String[] { "Name", "Record", "Flags", },
               com.richardpianka.chess.network.Contracts.User.class,
               com.richardpianka.chess.network.Contracts.User.Builder.class);
           internal_static_com_richardpianka_chess_network_Game_descriptor =
@@ -28567,8 +31187,40 @@ public final class Contracts {
               new java.lang.String[] { "Result", "Message", },
               com.richardpianka.chess.network.Contracts.IdentifyResponse.class,
               com.richardpianka.chess.network.Contracts.IdentifyResponse.Builder.class);
-          internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor =
+          internal_static_com_richardpianka_chess_network_CreateAccountRequest_descriptor =
             getDescriptor().getMessageTypes().get(17);
+          internal_static_com_richardpianka_chess_network_CreateAccountRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_chess_network_CreateAccountRequest_descriptor,
+              new java.lang.String[] { "Username", "Password", },
+              com.richardpianka.chess.network.Contracts.CreateAccountRequest.class,
+              com.richardpianka.chess.network.Contracts.CreateAccountRequest.Builder.class);
+          internal_static_com_richardpianka_chess_network_CreateAccountResponse_descriptor =
+            getDescriptor().getMessageTypes().get(18);
+          internal_static_com_richardpianka_chess_network_CreateAccountResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_chess_network_CreateAccountResponse_descriptor,
+              new java.lang.String[] { "Result", "Message", },
+              com.richardpianka.chess.network.Contracts.CreateAccountResponse.class,
+              com.richardpianka.chess.network.Contracts.CreateAccountResponse.Builder.class);
+          internal_static_com_richardpianka_chess_network_ChangePasswordRequest_descriptor =
+            getDescriptor().getMessageTypes().get(19);
+          internal_static_com_richardpianka_chess_network_ChangePasswordRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_chess_network_ChangePasswordRequest_descriptor,
+              new java.lang.String[] { "Username", "OldPassword", "NewPassword", },
+              com.richardpianka.chess.network.Contracts.ChangePasswordRequest.class,
+              com.richardpianka.chess.network.Contracts.ChangePasswordRequest.Builder.class);
+          internal_static_com_richardpianka_chess_network_ChangePasswordResponse_descriptor =
+            getDescriptor().getMessageTypes().get(20);
+          internal_static_com_richardpianka_chess_network_ChangePasswordResponse_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_com_richardpianka_chess_network_ChangePasswordResponse_descriptor,
+              new java.lang.String[] { "Result", "Message", },
+              com.richardpianka.chess.network.Contracts.ChangePasswordResponse.class,
+              com.richardpianka.chess.network.Contracts.ChangePasswordResponse.Builder.class);
+          internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor =
+            getDescriptor().getMessageTypes().get(21);
           internal_static_com_richardpianka_chess_network_JoinChatRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_JoinChatRequest_descriptor,
@@ -28576,7 +31228,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.JoinChatRequest.class,
               com.richardpianka.chess.network.Contracts.JoinChatRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_JoinChatResponse_descriptor =
-            getDescriptor().getMessageTypes().get(18);
+            getDescriptor().getMessageTypes().get(22);
           internal_static_com_richardpianka_chess_network_JoinChatResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_JoinChatResponse_descriptor,
@@ -28584,7 +31236,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.JoinChatResponse.class,
               com.richardpianka.chess.network.Contracts.JoinChatResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_RoomListRequest_descriptor =
-            getDescriptor().getMessageTypes().get(19);
+            getDescriptor().getMessageTypes().get(23);
           internal_static_com_richardpianka_chess_network_RoomListRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_RoomListRequest_descriptor,
@@ -28592,7 +31244,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.RoomListRequest.class,
               com.richardpianka.chess.network.Contracts.RoomListRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_RoomListResponse_descriptor =
-            getDescriptor().getMessageTypes().get(20);
+            getDescriptor().getMessageTypes().get(24);
           internal_static_com_richardpianka_chess_network_RoomListResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_RoomListResponse_descriptor,
@@ -28600,7 +31252,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.RoomListResponse.class,
               com.richardpianka.chess.network.Contracts.RoomListResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_JoinRoomRequest_descriptor =
-            getDescriptor().getMessageTypes().get(21);
+            getDescriptor().getMessageTypes().get(25);
           internal_static_com_richardpianka_chess_network_JoinRoomRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_JoinRoomRequest_descriptor,
@@ -28608,7 +31260,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.class,
               com.richardpianka.chess.network.Contracts.JoinRoomRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_JoinRoomResponse_descriptor =
-            getDescriptor().getMessageTypes().get(22);
+            getDescriptor().getMessageTypes().get(26);
           internal_static_com_richardpianka_chess_network_JoinRoomResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_JoinRoomResponse_descriptor,
@@ -28616,7 +31268,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.class,
               com.richardpianka.chess.network.Contracts.JoinRoomResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_SpeakRequest_descriptor =
-            getDescriptor().getMessageTypes().get(23);
+            getDescriptor().getMessageTypes().get(27);
           internal_static_com_richardpianka_chess_network_SpeakRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_SpeakRequest_descriptor,
@@ -28624,7 +31276,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.SpeakRequest.class,
               com.richardpianka.chess.network.Contracts.SpeakRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_OperatorRequest_descriptor =
-            getDescriptor().getMessageTypes().get(24);
+            getDescriptor().getMessageTypes().get(28);
           internal_static_com_richardpianka_chess_network_OperatorRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_OperatorRequest_descriptor,
@@ -28632,7 +31284,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.OperatorRequest.class,
               com.richardpianka.chess.network.Contracts.OperatorRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_OperatorResponse_descriptor =
-            getDescriptor().getMessageTypes().get(25);
+            getDescriptor().getMessageTypes().get(29);
           internal_static_com_richardpianka_chess_network_OperatorResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_OperatorResponse_descriptor,
@@ -28640,7 +31292,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.OperatorResponse.class,
               com.richardpianka.chess.network.Contracts.OperatorResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_ChatRoomEvent_descriptor =
-            getDescriptor().getMessageTypes().get(26);
+            getDescriptor().getMessageTypes().get(30);
           internal_static_com_richardpianka_chess_network_ChatRoomEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_ChatRoomEvent_descriptor,
@@ -28648,7 +31300,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.class,
               com.richardpianka.chess.network.Contracts.ChatRoomEvent.Builder.class);
           internal_static_com_richardpianka_chess_network_ChatUserEvent_descriptor =
-            getDescriptor().getMessageTypes().get(27);
+            getDescriptor().getMessageTypes().get(31);
           internal_static_com_richardpianka_chess_network_ChatUserEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_ChatUserEvent_descriptor,
@@ -28656,7 +31308,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.ChatUserEvent.class,
               com.richardpianka.chess.network.Contracts.ChatUserEvent.Builder.class);
           internal_static_com_richardpianka_chess_network_ChatSpeakEvent_descriptor =
-            getDescriptor().getMessageTypes().get(28);
+            getDescriptor().getMessageTypes().get(32);
           internal_static_com_richardpianka_chess_network_ChatSpeakEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_ChatSpeakEvent_descriptor,
@@ -28664,7 +31316,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.class,
               com.richardpianka.chess.network.Contracts.ChatSpeakEvent.Builder.class);
           internal_static_com_richardpianka_chess_network_GameListRequest_descriptor =
-            getDescriptor().getMessageTypes().get(29);
+            getDescriptor().getMessageTypes().get(33);
           internal_static_com_richardpianka_chess_network_GameListRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_GameListRequest_descriptor,
@@ -28672,7 +31324,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.GameListRequest.class,
               com.richardpianka.chess.network.Contracts.GameListRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_GameListResponse_descriptor =
-            getDescriptor().getMessageTypes().get(30);
+            getDescriptor().getMessageTypes().get(34);
           internal_static_com_richardpianka_chess_network_GameListResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_GameListResponse_descriptor,
@@ -28680,7 +31332,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.GameListResponse.class,
               com.richardpianka.chess.network.Contracts.GameListResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_CreateGameRequest_descriptor =
-            getDescriptor().getMessageTypes().get(31);
+            getDescriptor().getMessageTypes().get(35);
           internal_static_com_richardpianka_chess_network_CreateGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_CreateGameRequest_descriptor,
@@ -28688,7 +31340,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.CreateGameRequest.class,
               com.richardpianka.chess.network.Contracts.CreateGameRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_CreateGameResponse_descriptor =
-            getDescriptor().getMessageTypes().get(32);
+            getDescriptor().getMessageTypes().get(36);
           internal_static_com_richardpianka_chess_network_CreateGameResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_CreateGameResponse_descriptor,
@@ -28696,7 +31348,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.CreateGameResponse.class,
               com.richardpianka.chess.network.Contracts.CreateGameResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_JoinGameRequest_descriptor =
-            getDescriptor().getMessageTypes().get(33);
+            getDescriptor().getMessageTypes().get(37);
           internal_static_com_richardpianka_chess_network_JoinGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_JoinGameRequest_descriptor,
@@ -28704,7 +31356,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.JoinGameRequest.class,
               com.richardpianka.chess.network.Contracts.JoinGameRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_JoinGameResponse_descriptor =
-            getDescriptor().getMessageTypes().get(34);
+            getDescriptor().getMessageTypes().get(38);
           internal_static_com_richardpianka_chess_network_JoinGameResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_JoinGameResponse_descriptor,
@@ -28712,7 +31364,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.JoinGameResponse.class,
               com.richardpianka.chess.network.Contracts.JoinGameResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_LeaveGameRequest_descriptor =
-            getDescriptor().getMessageTypes().get(35);
+            getDescriptor().getMessageTypes().get(39);
           internal_static_com_richardpianka_chess_network_LeaveGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_LeaveGameRequest_descriptor,
@@ -28720,7 +31372,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.LeaveGameRequest.class,
               com.richardpianka.chess.network.Contracts.LeaveGameRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_StartGameRequest_descriptor =
-            getDescriptor().getMessageTypes().get(36);
+            getDescriptor().getMessageTypes().get(40);
           internal_static_com_richardpianka_chess_network_StartGameRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_StartGameRequest_descriptor,
@@ -28728,7 +31380,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.StartGameRequest.class,
               com.richardpianka.chess.network.Contracts.StartGameRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_StartGameResponse_descriptor =
-            getDescriptor().getMessageTypes().get(37);
+            getDescriptor().getMessageTypes().get(41);
           internal_static_com_richardpianka_chess_network_StartGameResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_StartGameResponse_descriptor,
@@ -28736,7 +31388,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.StartGameResponse.class,
               com.richardpianka.chess.network.Contracts.StartGameResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_GameStartedEvent_descriptor =
-            getDescriptor().getMessageTypes().get(38);
+            getDescriptor().getMessageTypes().get(42);
           internal_static_com_richardpianka_chess_network_GameStartedEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_GameStartedEvent_descriptor,
@@ -28744,7 +31396,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.GameStartedEvent.class,
               com.richardpianka.chess.network.Contracts.GameStartedEvent.Builder.class);
           internal_static_com_richardpianka_chess_network_MovePieceRequest_descriptor =
-            getDescriptor().getMessageTypes().get(39);
+            getDescriptor().getMessageTypes().get(43);
           internal_static_com_richardpianka_chess_network_MovePieceRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_MovePieceRequest_descriptor,
@@ -28752,7 +31404,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.MovePieceRequest.class,
               com.richardpianka.chess.network.Contracts.MovePieceRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_MovePieceResponse_descriptor =
-            getDescriptor().getMessageTypes().get(40);
+            getDescriptor().getMessageTypes().get(44);
           internal_static_com_richardpianka_chess_network_MovePieceResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_MovePieceResponse_descriptor,
@@ -28760,7 +31412,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.MovePieceResponse.class,
               com.richardpianka.chess.network.Contracts.MovePieceResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_MovePieceEvent_descriptor =
-            getDescriptor().getMessageTypes().get(41);
+            getDescriptor().getMessageTypes().get(45);
           internal_static_com_richardpianka_chess_network_MovePieceEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_MovePieceEvent_descriptor,
@@ -28768,7 +31420,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.MovePieceEvent.class,
               com.richardpianka.chess.network.Contracts.MovePieceEvent.Builder.class);
           internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_descriptor =
-            getDescriptor().getMessageTypes().get(42);
+            getDescriptor().getMessageTypes().get(46);
           internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_SpecialMovePieceRequest_descriptor,
@@ -28776,7 +31428,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.class,
               com.richardpianka.chess.network.Contracts.SpecialMovePieceRequest.Builder.class);
           internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_descriptor =
-            getDescriptor().getMessageTypes().get(43);
+            getDescriptor().getMessageTypes().get(47);
           internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_SpecialMovePieceResponse_descriptor,
@@ -28784,7 +31436,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.class,
               com.richardpianka.chess.network.Contracts.SpecialMovePieceResponse.Builder.class);
           internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_descriptor =
-            getDescriptor().getMessageTypes().get(44);
+            getDescriptor().getMessageTypes().get(48);
           internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_SpecialMovePieceEvent_descriptor,
@@ -28792,7 +31444,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.class,
               com.richardpianka.chess.network.Contracts.SpecialMovePieceEvent.Builder.class);
           internal_static_com_richardpianka_chess_network_GameStatusEvent_descriptor =
-            getDescriptor().getMessageTypes().get(45);
+            getDescriptor().getMessageTypes().get(49);
           internal_static_com_richardpianka_chess_network_GameStatusEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_GameStatusEvent_descriptor,
@@ -28800,7 +31452,7 @@ public final class Contracts {
               com.richardpianka.chess.network.Contracts.GameStatusEvent.class,
               com.richardpianka.chess.network.Contracts.GameStatusEvent.Builder.class);
           internal_static_com_richardpianka_chess_network_TimeLeftEvent_descriptor =
-            getDescriptor().getMessageTypes().get(46);
+            getDescriptor().getMessageTypes().get(50);
           internal_static_com_richardpianka_chess_network_TimeLeftEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_richardpianka_chess_network_TimeLeftEvent_descriptor,

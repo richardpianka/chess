@@ -68,7 +68,7 @@
             <arg value="--java_out=src" />
             <arg value="--proto_path=." />
             <arg value="protobuf/chess/contracts.proto" />
-            <arg value="protobuf/chess/storage.proto" />
+            <arg value="protobuf/chess/storables.proto" />
         </exec>
         <exec executable="tools/ProtoGen.exe" failonerror="true">
             <arg value="--proto_path=." />
