@@ -1,6 +1,6 @@
-package com.richardpianka.chess.server.storables;
+package com.richardpianka.chess.server.storage;
 
-option java_package = "com.richardpianka.chess.server.storables";
+option java_package = "com.richardpianka.chess.server.storage";
 option java_outer_classname = "Storables";
 
 message Account {
