@@ -6,6 +6,7 @@ import collection.mutable._
 import com.codehale.logula.Logging
 import com.richardpianka.chess.common.PostalService
 import com.richardpianka.chess.network.Contracts.{EnvelopeOrBuilder, Envelope}
+import com.richardpianka.chess.server.state.Sessions
 
 /**
  * A tcp server that uses [[com.richardpianka.chess.network.Contracts.Envelope]] as a transport.
@@ -40,6 +41,8 @@ class Connection(socket: Socket, private[this] val distribution: PostalService[C
   private[this] val in = socket.getInputStream
   private[this] val out = socket.getOutputStream
 
+  val session = Sessions.create(this)
+
   def act() {
     log.info("Connection accepted from %s", socket.getRemoteSocketAddress.toString)
 
@@ -49,7 +52,10 @@ class Connection(socket: Socket, private[this] val distribution: PostalService[C
         distribution.deliver(this, data)
       }
     } catch {
-      case e: SocketException => log.info("Connection closed from %s", socket.getRemoteSocketAddress.toString)
+      case e: SocketException => {
+        log.info("Connection closed from %s", socket.getRemoteSocketAddress.toString)
+        Sessions.kill(session.id)
+      }
     }
   }
 

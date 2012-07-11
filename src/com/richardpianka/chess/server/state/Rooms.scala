@@ -1,13 +1,30 @@
 package com.richardpianka.chess.server.state
 
-/**
- * Created with IntelliJ IDEA.
- * User: pianka
- * Date: 7/4/12
- * Time: 5:14 PM
- * To change this template use File | Settings | File Templates.
- */
+import collection.mutable
+import com.richardpianka.chess.network.Contracts.RoomFlags
 
-class Rooms {
+class Room(val name: String, val flags: RoomFlags)
 
+object Rooms {
+  private[this] val allItems = new mutable.HashSet[Room]
+                               with mutable.SynchronizedSet[Room]
+  private[this] def map = all.map(x => x.name.toLowerCase -> x).toMap
+
+  create("Lobby", RoomFlags.Public)
+  create("Beginner", RoomFlags.Public)
+  create("Intermediate", RoomFlags.Public)
+  create("Expert", RoomFlags.Public)
+
+  def all = allItems.toIterable
+
+  def apply(name: String) = map(name.toLowerCase)
+
+  def exists(name: String) = map.contains(name.toLowerCase)
+
+  def create(name: String, flags: RoomFlags = RoomFlags.Private) =
+    synchronized {
+      val room = new Room(name, flags)
+      allItems += room
+      room
+    }
 }

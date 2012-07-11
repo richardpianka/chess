@@ -8,7 +8,7 @@ abstract class Warehouse[A <: AbstractMessageLite](val file: String, private[thi
   private[this] val allItems = Set[A]()
   private[this] var _dirty = false
 
-  def all: Iterable[A] = allItems.toIterable
+  def all = allItems.toIterable
 
   def dirty: Boolean = _dirty
 

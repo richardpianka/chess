@@ -5,6 +5,7 @@ import com.richardpianka.chess.common.PostalService
 import com.richardpianka.chess.network.Contracts._
 import com.codehale.logula.Logging
 import com.google.protobuf.AbstractMessageLite
+import state.Sessions
 import storage.{AccountException, Accounts}
 
 object Handler extends Logging {
@@ -77,7 +78,11 @@ object Handler extends Logging {
 
         if (Accounts.matches(username, password)) {
           //TODO: check for existing sessions
-          pass()
+          if (Sessions.exists(username)) {
+            fail("That account is already in use")
+          } else {
+            pass()
+          }
         } else {
           fail("That password is incorrect")
         }
