@@ -1,24 +1,57 @@
 package com.richardpianka.chess.server.state
 
-import collection.mutable
+import com.richardpianka.chess.common.WarehouseLite
 
-class Game(val name: String)
+/**
+ * A chess game
+ *
+ * @param name The name of the game
+ * @param password The password for the game
+ */
+class Game(val name: String, val password: Option[String])
 
-object Games {
-  private[this] val allItems = new mutable.HashSet[Game]
-                               with mutable.SynchronizedSet[Game]
-  private[this] def map = all.map(x => x.name.toLowerCase -> x).toMap
+/**
+ * An exception relating to games
+ *
+ * @param message The description for the exception
+ */
+class GameException(message: String) extends Exception(message)
 
-  def all = allItems.toIterable
+/**
+* Manages the list of chess games
+ */
+object Games extends WarehouseLite[String, Game] {
+  /**
+   * Defines the function for producing a key from an item
+   *
+   * @param item The item to be keyed
+   * @return A key for the item
+   */
+  protected def key(item: Game) = item.name
 
-  def apply(name: String) = map(name.toLowerCase)
+  /**
+   * A function for ensuring keys fit a standard pattern
+   *
+   * For example, all strings to a specific casing.
+   *
+   * @param id The key to normalize
+   * @return The true key
+   */
+  override protected def keyNormalize(id: String) = id.toLowerCase
 
-  def exists(name: String) = map.contains(name.toLowerCase)
-
-  def create(name: String, password: Option[String]) =
+  /**
+   * Creates a new game and adds it to the list of games
+   *
+   * @param name The name of the game
+   * @param password If the game is passworded, and if so, the password
+   * @return The new game object
+   */
+  def create(name: String, password: Option[String]): Game =
     synchronized {
-      val game = new Game(name)
-      allItems += game
-      game
+      if (exists(name)) {
+        throw new GameException("That game already exists.")
+      }
+
+      add(new Game(name, password))
     }
 }

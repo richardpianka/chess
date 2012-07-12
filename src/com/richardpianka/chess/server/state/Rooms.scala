@@ -1,30 +1,65 @@
 package com.richardpianka.chess.server.state
 
-import collection.mutable
 import com.richardpianka.chess.network.Contracts.RoomFlags
+import com.richardpianka.chess.common.WarehouseLite
 
+/**
+ * A room in the chat environment
+ *
+ * @param name The name of the room
+ * @param flags The flags of the room
+ */
 class Room(val name: String, val flags: RoomFlags)
 
-object Rooms {
-  private[this] val allItems = new mutable.HashSet[Room]
-                               with mutable.SynchronizedSet[Room]
-  private[this] def map = all.map(x => x.name.toLowerCase -> x).toMap
+/**
+ * An exception related to rooms
+ *
+ * @param message The description for the exception
+ */
+class RoomException(message: String) extends Exception(message)
 
+/**
+ * Manages the list of rooms
+ */
+object Rooms extends WarehouseLite[String, Room] {
+  // Create the default public rooms
   create("Lobby", RoomFlags.Public)
   create("Beginner", RoomFlags.Public)
   create("Intermediate", RoomFlags.Public)
   create("Expert", RoomFlags.Public)
 
-  def all = allItems.toIterable
+  /**
+   * Defines the function for producing a key from an item
+   *
+   * @param item The item to be keyed
+   * @return A key for the item
+   */
+  protected def key(item: Room) = item.name
 
-  def apply(name: String) = map(name.toLowerCase)
+  /**
+   * A function for ensuring keys fit a standard pattern.  This function
+   * should be idempotent.
+   *
+   * For example, all strings to a specific casing.
+   *
+   * @param id The key to normalize
+   * @return The true key
+   */
+  override protected def keyNormalize(id: String) = id.toLowerCase
 
-  def exists(name: String) = map.contains(name.toLowerCase)
-
+  /**
+   * Creates a new room and adds it to the list of rooms
+   *
+   * @param name The name of the room
+   * @param flags The flags of the room
+   * @return The new room
+   */
   def create(name: String, flags: RoomFlags = RoomFlags.Private) =
     synchronized {
-      val room = new Room(name, flags)
-      allItems += room
-      room
+      if (exists(name)) {
+        throw new RoomException("That room already exists.")
+      }
+
+      add(new Room(name, flags))
     }
 }

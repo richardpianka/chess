@@ -54,7 +54,7 @@ class Connection(socket: Socket, private[this] val distribution: PostalService[C
     } catch {
       case e: SocketException => {
         log.info("Connection closed from %s", socket.getRemoteSocketAddress.toString)
-        Sessions.kill(session.id)
+        Sessions.kill(session.connection)
       }
     }
   }

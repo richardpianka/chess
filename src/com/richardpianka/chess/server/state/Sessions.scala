@@ -3,44 +3,70 @@ package com.richardpianka.chess.server.state
 import com.richardpianka.chess.network.Connection
 import com.richardpianka.chess.server.storage.Storables.Account
 import collection.mutable
+import com.richardpianka.chess.common.WarehouseLite
 
+/**
+ * A user session
+ *
+ * @param id The unique identifier for this session
+ * @param connection The connection for this session
+ */
 class Session(val id: Long, val connection: Connection) {
   var username: String = null
   var account: Account = null
 }
 
-object Sessions {
+/**
+ * Manages the list of sessions
+ */
+object Sessions extends WarehouseLite[Connection, Session] {
   private[this] var id = 0
-  private[this] val allItems = new mutable.HashSet[Session]
-                               with mutable.SynchronizedSet[Session]
-  private[this] def map = all.map(x => x.id -> x).toMap
-  private[this] def usernameMap = all.filter(_.account != null)
-                                              .map(x => x.account.getUsername.toLowerCase -> x).toMap
-  private[this] def connectionMap = all.filter(_.connection != null)
-                                                .map(x => x.connection -> x).toMap
 
-  def all = allItems.toIterable
+  /**
+   * Defines the function for producing a key from an item
+   *
+   * @param item The item to be keyed
+   * @return A key for the item
+   */
+  protected def key(item: Session) = item.connection
 
-  def apply(id: Long) = map(id)
+  //TODO: this implementation is flimsy
+  // used by the following two methods
+  private[this] def usernameMap = all.map(x => x.username.toLowerCase -> x).toMap
 
-  def apply(username: String) = usernameMap(username.toLowerCase)
+  /**
+   * Gets a session by username
+   *
+   * @param username The username by which to retrieve a session
+   * @return The session
+   */
+  def apply(username: String) = usernameMap(username)
 
-  def apply(connection: Connection) = connectionMap(connection)
+  /**
+   * Whether or not a username is currently in use
+   *
+   * @param username The username to check
+   * @return Whether or not the username is currently in use
+   */
+  def exists(username: String) = usernameMap.contains(username)
 
-  def exists(id: Long) = map.contains(id)
-
-  def exists(username: String) = usernameMap.contains(username.toLowerCase)
-
+  /**
+   * Creates a new session
+   *
+   * @param connection The connection for this session
+   * @return The new session
+   */
   def create(connection: Connection) =
     synchronized {
       id += 1
-      val session = new Session(id, connection)
-      allItems += session
-      session
+      add(new Session(id, connection))
     }
 
-  //TODO: this might not make sense
-  def kill(id: Long) {
-    allItems -= map(id)
-  }
+  /**
+   * Removes a session from the list by its connection
+   *
+   * @param connection The connection whose session to kill
+   * @return The session that was killed
+   */
+  def kill(connection: Connection) = remove(this(connection))
 }
