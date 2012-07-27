@@ -51,7 +51,7 @@ object Accounts {
                            .setUsername(username)
                            .setPassword(password)
                            .setRecord(Record.newBuilder.setWins(0)
-                                                       .setLoses(0)
+                                                       .setLosses(0)
                                                        .setStalemates(0)
                                                        .setDisconnects(0).build)
                            .build
