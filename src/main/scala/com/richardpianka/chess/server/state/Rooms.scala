@@ -2,7 +2,6 @@ package com.richardpianka.chess.server.state
 
 import com.richardpianka.chess.network.Contracts.{Room, RoomFlags}
 import com.richardpianka.chess.common.WarehouseLite
-import com.richardpianka.chess.network.Contracts
 
 /**
  * A room in the chat environment

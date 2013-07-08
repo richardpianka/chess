@@ -65,7 +65,7 @@
 
     <target name="protobuf" depends="" description="Generate protobuf objects">
         <exec executable="tools/protoc.exe" failonerror="true">
-            <arg value="--java_out=src" />
+            <arg value="--java_out=src/main/java" />
             <arg value="--proto_path=." />
             <arg value="protobuf/chess/contracts.proto" />
             <arg value="protobuf/chess/storables.proto" />
