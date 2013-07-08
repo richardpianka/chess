@@ -1,7 +1,8 @@
 package com.richardpianka.chess.server.state
 
-import com.richardpianka.chess.network.Contracts.RoomFlags
+import com.richardpianka.chess.network.Contracts.{Room, RoomFlags}
 import com.richardpianka.chess.common.WarehouseLite
+import com.richardpianka.chess.network.Contracts
 
 /**
  * A room in the chat environment
@@ -9,7 +10,12 @@ import com.richardpianka.chess.common.WarehouseLite
  * @param name The name of the room
  * @param flags The flags of the room
  */
-class Room(val name: String, val flags: RoomFlags)
+class Room(val name: String, val flags: RoomFlags) {
+
+  def asProtobuf = Room.newBuilder().setName(name)
+                                    .setFlags(flags)
+                                    .build
+}
 
 /**
  * An exception related to rooms

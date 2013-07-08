@@ -2,8 +2,11 @@
 .idea/tasks.xml
 .idea/workspace.xml
 build/
+csharp/Chess.suo
+csharp/Chess.5.1.ReSharper.user
 csharp/Chess.Contracts/bin/
 csharp/Chess.Contracts/obj/
+csharp/_ReSharper.Chess/
 data/
 deploy/
 docs/

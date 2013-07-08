@@ -34,7 +34,7 @@ object Accounts {
 
   def matches(username: String, password: String) =
     synchronized {
-      this(username).getPassword.equalsIgnoreCase(password)
+      this(username).getPassword.equals(password)
     }
 
   def create(username: String, password: String) =

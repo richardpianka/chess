@@ -1,6 +1,6 @@
 package com.richardpianka.chess.server.state
 
-import com.richardpianka.chess.network.Connection
+import com.richardpianka.chess.network.ServerConnection
 import com.richardpianka.chess.server.storage.Storables.Account
 import collection.mutable
 import com.richardpianka.chess.common.WarehouseLite
@@ -11,7 +11,7 @@ import com.richardpianka.chess.common.WarehouseLite
  * @param id The unique identifier for this session
  * @param connection The connection for this session
  */
-class Session(val id: Long, val connection: Connection) {
+class Session(val id: Long, val connection: ServerConnection) {
   var username: String = null
   var account: Account = null
 }
@@ -19,7 +19,7 @@ class Session(val id: Long, val connection: Connection) {
 /**
  * Manages the list of sessions
  */
-object Sessions extends WarehouseLite[Connection, Session] {
+object Sessions extends WarehouseLite[ServerConnection, Session] {
   private[this] var id = 0
 
   /**
@@ -56,7 +56,7 @@ object Sessions extends WarehouseLite[Connection, Session] {
    * @param connection The connection for this session
    * @return The new session
    */
-  def create(connection: Connection) =
+  def create(connection: ServerConnection) =
     synchronized {
       id += 1
       add(new Session(id, connection))
@@ -68,5 +68,5 @@ object Sessions extends WarehouseLite[Connection, Session] {
    * @param connection The connection whose session to kill
    * @return The session that was killed
    */
-  def kill(connection: Connection) = remove(this(connection))
+  def kill(connection: ServerConnection) = remove(this(connection))
 }

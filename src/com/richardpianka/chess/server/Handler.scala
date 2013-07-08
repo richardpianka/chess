@@ -1,21 +1,22 @@
 package com.richardpianka.chess.server
 
-import com.richardpianka.chess.network.Connection
+import com.richardpianka.chess.network.ServerConnection
 import com.richardpianka.chess.common.PostalService
 import com.richardpianka.chess.network.Contracts._
 import com.codehale.logula.Logging
-import com.google.protobuf.AbstractMessageLite
-import state.Sessions
+import state.{Rooms, Sessions}
 import storage.{AccountException, Accounts}
+import collection.JavaConverters._
 
 object Handler extends Logging {
-  val distribution = new PostalService[Connection]
+  val distribution = new PostalService[ServerConnection]
 
   distribution.address(classOf[HandshakeRequest], Handshake)
   distribution.address(classOf[IdentifyRequest], Identify)
   distribution.address(classOf[CreateAccountRequest], CreateAccount)
   distribution.address(classOf[ChangePasswordRequest], ChangePassword)
   distribution.address(classOf[JoinChatRequest], JoinChat)
+  distribution.address(classOf[RoomListRequest], RoomList)
   distribution.address(classOf[JoinRoomRequest], JoinRoom)
 
   def Success = Result.Success
@@ -26,7 +27,7 @@ object Handler extends Logging {
    * @param connection
    * @param envelope
    */
-  def Handshake(connection: Connection, envelope: Envelope) {
+  def Handshake(connection: ServerConnection, envelope: Envelope) {
     val builder = envelope.newBuilderForType
 
     val version = envelope.getHandshakeRequest.getVersion
@@ -50,7 +51,7 @@ object Handler extends Logging {
    * @param connection
    * @param envelope
    */
-  def Identify(connection: Connection, envelope: Envelope) {
+  def Identify(connection: ServerConnection, envelope: Envelope) {
     val builder = envelope.newBuilderForType
     val request = envelope.getIdentifyRequest
 
@@ -105,7 +106,7 @@ object Handler extends Logging {
    * @param connection
    * @param envelope
    */
-  def CreateAccount(connection: Connection, envelope: Envelope) {
+  def CreateAccount(connection: ServerConnection, envelope: Envelope) {
     val builder = envelope.newBuilderForType
     val request = envelope.getCreateAccountRequest
 
@@ -141,7 +142,7 @@ object Handler extends Logging {
    * @param connection
    * @param envelope
    */
-  def ChangePassword(connection: Connection, envelope: Envelope) {
+  def ChangePassword(connection: ServerConnection, envelope: Envelope) {
 
   }
 
@@ -150,7 +151,7 @@ object Handler extends Logging {
    * @param connection
    * @param envelope
    */
-  def JoinChat(connection: Connection, envelope: Envelope) {
+  def JoinChat(connection: ServerConnection, envelope: Envelope) {
 
   }
 
@@ -159,7 +160,21 @@ object Handler extends Logging {
    * @param connection
    * @param envelope
    */
-  def JoinRoom(connection: Connection, envelope: Envelope) {
+  def RoomList(connection: ServerConnection, envelope: Envelope) {
+    val builder = envelope.newBuilderForType
+    val response = RoomListResponse.newBuilder
+
+    response.addAllRooms(Rooms.all.map(_.asProtobuf).asJava)
+
+    connection.send(builder.setRoomListResponse(response).build)
+  }
+
+  /**
+   *
+   * @param connection
+   * @param envelope
+   */
+  def JoinRoom(connection: ServerConnection, envelope: Envelope) {
 
   }
 }

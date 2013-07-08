@@ -1,7 +1,7 @@
 package com.richardpianka.chess.common
 
-import collection.mutable._
 import com.richardpianka.chess.network.Contracts._
+import collection.mutable
 
 /**
  * Routes Envelopes
@@ -15,13 +15,13 @@ class PostalService[A] {
 
   private[this] def envelopeMethods = envelopeClass.getDeclaredMethods.filter(_.getName.startsWith("has"))
 
-  private[this] val directory = HashMap[Class[_], Function2[A, Envelope, Unit]]()
+  private[this] val directory = mutable.HashMap[Class[_], Function2[A, Envelope, Unit]]()
 
   private[this] def getClass(name: String) = Class.forName(classTrail + "$" + name)
 
   private[this] def messages(envelope: Envelope) = {
     envelopeMethods.filter(_.invoke(envelope).asInstanceOf[Boolean])
-      .map(_.getName.substring(3))
+                   .map(_.getName.substring(3))
   }
 
   /**
@@ -42,7 +42,7 @@ class PostalService[A] {
    */
   def deliver(source: A, envelope: Envelope) {
     messages(envelope).map(getClass(_))
-      .filter(directory.contains(_))
-      .foreach(directory(_).apply(source, envelope))
+                      .filter(directory.contains(_))
+                      .foreach(directory(_).apply(source, envelope))
   }
 }

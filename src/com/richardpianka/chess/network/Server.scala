@@ -5,7 +5,7 @@ import java.net._
 import collection.mutable._
 import com.codehale.logula.Logging
 import com.richardpianka.chess.common.PostalService
-import com.richardpianka.chess.network.Contracts.{EnvelopeOrBuilder, Envelope}
+import com.richardpianka.chess.network.Contracts.Envelope
 import com.richardpianka.chess.server.state.Sessions
 
 /**
@@ -14,8 +14,8 @@ import com.richardpianka.chess.server.state.Sessions
  * @param distribution The postal service instance for routing envelopes
  * @param port The port on which to accept connection
  */
-class Server(val distribution: PostalService[Connection], val port: Int = 1000) extends Actor with Logging {
-  val clients = new ListBuffer[Connection]
+class Server(val distribution: PostalService[ServerConnection], val port: Int = 1000) extends Actor with Logging {
+  val clients = new ListBuffer[ServerConnection]
 
   /**
    * Begins listening for connections on its own thread
@@ -27,7 +27,7 @@ class Server(val distribution: PostalService[Connection], val port: Int = 1000) 
 
     while (true) {
       val socket = sockets.accept()
-      val connection = new Connection(socket, distribution)
+      val connection = new ServerConnection(socket, distribution)
       clients += connection
       connection.start()
     }
@@ -37,9 +37,9 @@ class Server(val distribution: PostalService[Connection], val port: Int = 1000) 
 /**
  * An incoming tcp client connection
  */
-class Connection(socket: Socket, private[this] val distribution: PostalService[Connection]) extends Actor with Logging {
-  private[this] val in = socket.getInputStream
-  private[this] val out = socket.getOutputStream
+class ServerConnection(socket: Socket, private[this] val distribution: PostalService[ServerConnection]) extends Actor with Logging {
+  private[this] def in = socket.getInputStream
+  private[this] def out = socket.getOutputStream
 
   val session = Sessions.create(this)
 
