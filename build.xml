@@ -13,8 +13,8 @@
     <path id="build.classpath">
         <fileset dir="${lib.dir}">
             <include name="*.jar" />
-            <exclude name="junit-4.10.jar" />
         </fileset>
+        <pathelement path="${build.dir}" />
     </path>
 
     <target name="all" depends="package"/>
